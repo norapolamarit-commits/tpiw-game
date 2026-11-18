@@ -1,0 +1,2923 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Phase6_Elder",
+  "phase_id": "phase_6_elder",
+  "age_range": {
+    "min_age": 60,
+    "max_age": 100
+  },
+  "total_events": 42,
+  "quota_breakdown": {
+    "total": 42,
+    "shared_total": 32,
+    "poor_class_1_2_total": 4,
+    "rich_class_4_5_total": 4
+  },
+  "events": [
+    {
+      "event_id": "evt_p6_age60_01",
+      "title_th": "เช้าวันจันทร์แรกหลังเกษียณอายุ 60 ปี! ไม่มีนาฬิกาปลุกไปทำงานอีกต่อไป",
+      "trigger_age": 60,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุครบ 60 ปีบริบูรณ์! ค่าครองชีพพื้นฐานลดลงเหลือ 72,000 บาท/ปี และคุณได้รับเบี้ยยังชีพผู้สูงอายุ 7,200 บาท/ปี เช้าวันจันทร์แรกที่ไม่ต้องรีบตื่นไปทำงาน คุณจะเริ่มต้นชีวิตวัยเกษียณอย่างไร?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตื่นรับอรุณไปเดิน-รำไทเก็กที่สวนสาธารณะและจิบกาแฟโบราณกับก๊วนเพื่อนวัยเก๋า",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +6 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีสิทธิ์บำนาญข้าราชการ] ตรวจสอบยอดเงินบำนาญรายเดือนเข้าบัญชีอัตโนมัติตลอดชีพ สบายใจหายห่วง!",
+          "hint_th": "🪙 เงินบำนาญพิเศษ +24,000 ฿ , 😊 ความสุข +8 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [
+            "flag_gov_pension_right"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 24000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "จัดระเบียบเงินก้อนเกษียณ แบ่งฝากออมสินและซื้อสลากออมสินกินดอกเบี้ยปลอดภัย",
+          "hint_th": "🪙 ดอกเบี้ยรับ +10,000 ฿ , 🧠 สมอง +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age60_02_poor",
+      "title_th": "ลงทะเบียนรับเบี้ยยังชีพผู้สูงอายุ 600 บาท/เดือน ที่เทศบาล/อบต.!",
+      "trigger_age": 60,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แม้จะอายุครบ 60 ปีแล้ว แต่สำหรับคนหาเช้ากินค่ำ เงินเก็บอาจมีไม่มาก คุณเดินทางไปยื่นเอกสารรับเบี้ยยังชีพผู้สูงอายุและสิทธิ์สวัสดิการแห่งรัฐ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ผูกบัญชีพร้อมเพย์รับเบี้ยยังชีพตรงเวลาทุกวันที่ 10 ของเดือน และรับงานฝีมือเบาๆ ทำที่บ้าน",
+          "hint_th": "🪙 รายได้เสริม +6,000 ฿ , 😊 ความสุข +4 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_welfare_card"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปลูกผักสวนครัวและเพาะต้นกล้าขายหน้าบ้าน ได้ทั้งออกกำลังกายและค่ากับข้าวรายวัน",
+          "hint_th": "🪙 รายได้ +4,500 ฿ , ❤️ สุขภาพ +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 4500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 5,
+            "cash": 5250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age61_01",
+      "title_th": "ธรรมเนียมส่งภาพ 'สวัสดีวันจันทร์-วันอาทิตย์' ดอกไม้หลากสีในกลุ่มไลน์!",
+      "trigger_age": 61,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่วัย 61 ปี กิจกรรมยามเช้าสุดฮิตของผู้สูงวัยไทยคือการส่งรูปดอกไม้พร้อมคำอวยพรประจำวัน 7 สี 7 วัน ไปให้ลูกหลานและเพื่อนฝูงในกลุ่มไลน์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "หัดใช้แอปแต่งรูปใส่คำอวยพรทำเองส่งให้เพื่อนๆ จนกลายเป็นตัวตึงประจำกลุ่มไลน์!",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ส่งข้อความสั้นๆ ถามไถ่สารทุกข์สุกดิบลูกหลานแบบอบอุ่น ไม่สแปมรูปจนล้นแชท",
+          "hint_th": "🤝 เส้นสาย +5 , 😊 ความสุข +4 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age62_01",
+      "title_th": "สภากาแฟยามเช้าและศึกโขกหมากรุกไทยใต้ร่มไม้!",
+      "trigger_age": 62,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ที่ศาลาริมทางและร้านกาแฟโบราณในชุมชน ก๊วนผู้สูงวัยตั้งกระดานหมากรุกไทยเสียงโขกตัวม้าตัวเรือดังปังๆ พร้อมถกข่าวบ้านการเมืองอย่างออกรส",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมวงโขกหมากรุกวางกลยุทธ์รุกฆาต ลับสมองป้องกันโรคอัลไซเมอร์ได้ชะงัด!",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +5 , 🤝 เส้นสาย +5 , ✨ ล้างสถานะ [ภาวะหลงลืมวัยชรา]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_alzheimer_risk"
+          ],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สั่งไข่ลวก 2 ฟองกับชาร้อนนั่งฟังเพื่อนคุยเรื่องสุขภาพและแลกเปลี่ยนเคล็ดลับสมุนไพร (-50฿)",
+          "hint_th": "🪙 เงินสด -50 ฿ , ❤️ สุขภาพ +4 , 😊 ความสุข +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -50,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": -25
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age63_01",
+      "title_th": "เสียงร้องของหลานตัวน้อย! ลูกๆ ขอนำหลานมาฝากให้คุณปู่คุณย่า/คุณตาคุณยายช่วยเลี้ยง",
+      "trigger_age": 63,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วัย 63 ปี คุณมีหลานตัวน้อยวัยกำลังน่ารักน่าชัง! ลูกๆ ที่ต้องออกไปทำงานประจำจึงมาขอให้คุณช่วยดูแลหลานในช่วงกลางวันพร้อมให้ค่าขนม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับขวัญหลานรัก! ช่วยเล่านิทานและดูแลหลานอย่างมีความสุข บ้านกลับมาคึกคักมีชีวิตชีวา!",
+          "hint_th": "🪙 ลูกให้ค่าดูแล +12,000 ฿ , 😊 ความสุข +9 , 🤝 เส้นสาย +5 , ❤️ สุขภาพ -2 (เหนื่อยแต่มีความสุข)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 12000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับฝากเลี้ยงเฉพาะวันเสาร์-อาทิตย์ เพื่อให้ตัวเองยังมีเวลาไปออกกำลังกายและพักผ่อน",
+          "hint_th": "😊 ความสุข +7 , ❤️ สุขภาพ +3 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 8,
+            "connections": 5,
+            "cash": 6000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age63_02_rich",
+      "title_th": "ทัวร์ล่องเรือสำราญยุโรป/ญี่ปุ่นระดับ Luxury สำหรับวัยเกษียณไฮคลาส!",
+      "trigger_age": 63,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อมีทั้งเวลาว่างและอิสรภาพทางการเงิน คุณได้รับเชิญร่วมทริปล่องเรือสำราญระดับ 6 ดาว ท่องเที่ยวรอบโลกพร้อมบริการทางการแพทย์ส่วนตัวบนเรือ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จองห้องสวีทล่องเรือสำราญ ชมวิวฟยอร์ดและจิบไวน์ชั้นเลิศ ชาร์จพลังชีวิตขั้นสุด! (-40,000฿)",
+          "hint_th": "🪙 ค่าทริปหรู -40,000 ฿ , 😊 ความสุข +15 , ❤️ สุขภาพ +6 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -40000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปลี่ยนเป็นทริปแสวงบุญสังเวชนียสถาน/ไหว้พระวัดดังระดับ VIP สะสมแต้มบุญก้อนใหญ่ (-25,000฿)",
+          "hint_th": "🪙 ค่าทริปบุญ -25,000 ฿ , ✨ แต้มบุญ +45 , 😊 ความสุข +12 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -25000,
+            "merit": 45,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 14,
+            "connections": 4,
+            "cash": -32500,
+            "merit": 23,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age64_01",
+      "title_th": "แก๊งคอลเซ็นเตอร์อัปเกรดใช้ AI ปลอมเสียงลูกหลานโทรมาขอเงินด่วน!",
+      "trigger_age": 64,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มิจฉาชีพพุ่งเป้าโจมตีเงินเก็บผู้สูงอายุ! มีสายโทรเข้ามาด้วยเสียงที่เหมือนลูกหลานของคุณเป๊ะ ร้องไห้บอกว่าขับรถชนคนต้องโอนเงินค่าประกันตัว 50,000 บาทเดี๋ยวนี้!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งสติ! กดวางสายแล้วโทรเช็กเบอร์จริงของลูกหลานโดยตรง พบว่าเป็นมิจฉาชีพ รอดตัวหวุดหวิด!",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +5 , 🤝 เส้นสาย +3 (เงินเกษียณปลอดภัย 100%!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตกใจรักหลานจนขาดสติ รีบกดโอนเงินไปให้มิจฉาชีพจนสูญเงินเก็บก้อนโต! (-50,000฿)",
+          "hint_th": "🪙 ถูกหลอกโอนเงิน -50,000 ฿ , 😊 ความสุข -12 , ❤️ สุขภาพ -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": -12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -50000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": -3,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": -25000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age64_02",
+      "title_th": "เรียนคอร์สมหาวิทยาลัยผู้สูงอายุประจำเขต! หัดใช้สมาร์ทโฟนและเต้นไลน์แดนซ์",
+      "trigger_age": 64,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เทศบาลเปิดโครงการ 'โรงเรียนผู้สูงอายุ' สัปดาห์ละ 1 วัน ให้ผู้สูงวัยมาใส่ชุดนักเรียนย้อนวัย หัดถ่ายคลิปมือถือ স্কแกนจ่ายเงิน และเต้นแอโรบิกด้วยกัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สมัครเข้าเรียน ได้เพื่อนใหม่วัยเดียวกันเพียบและรู้เท่าทันเทคโนโลยี!",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +7 , 😊 ความสุข +7 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อาสาเป็นวิทยากรผู้สูงวัยช่วยสอนวิชาชีพ/ทำขนมไทยให้เพื่อนๆ ในคลาสเรียน",
+          "hint_th": "🤝 เส้นสาย +8 , ✨ แต้มบุญ +8 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 8,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 4,
+            "connections": 8,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age65_01",
+      "title_th": "ตาเริ่มพร่ามัวเหมือนมองผ่านหมอก! ผ่าตัดต้อกระจกเปลี่ยนเลนส์ตาเทียมวัย 65",
+      "trigger_age": 65,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 65 ปี เลนส์แก้วตาเริ่มขุ่นมัวตามธรรมชาติทำให้แพ้แสงและมองภาพไม่ชัด จักษุแพทย์แนะนำให้ผ่าตัดสลายต้อกระจกใส่เลนส์เทียม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีสิทธิ์บัตรทอง / ข้าราชการ / ประกัน รพ.เอกชน] เข้ารับการผ่าตัดเปลี่ยนเลนส์ตาเทียมโดยใช้สิทธิ์เบิกได้ กลับมามองเห็นชัดแจ๋วเหมือนหนุ่มสาว!",
+          "hint_th": "❤️ สุขภาพ +8 , 😊 ความสุข +8 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [
+            "flag_welfare_card"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จ่ายเงินเลือกเลนส์เทียมเกรดพรีเมียม ผ่าตัดเสร็จมองชัดทุกระยะไม่ต้องพึ่งแว่น! (-15,000฿)",
+          "hint_th": "🪙 ค่าผ่าตัดเลนส์พิเศษ -15,000 ฿ , ❤️ สุขภาพ +9 , 😊 ความสุข +9 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 9,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -15000,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "กลัวการผ่าตัดตา ปล่อยทิ้งไว้จนมองเห็นลำบากและเดินสะดุดง่าย",
+          "hint_th": "❤️ สุขภาพ -5 , 😊 ความสุข -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -5,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age65_02",
+      "title_th": "ต่ออายุใบขับขี่ผู้สูงวัย & ทดสอบสมรรถภาพสายตา-การเหยียบเบรกวัย 65!",
+      "trigger_age": 65,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่ออายุ 65 ปี ปฏิกิริยาการตอบสนองในการขับรถอาจช้าลง ลูกหลานเริ่มเป็นห่วงเวลาคุณขับรถออกถนนใหญ่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปทดสอบสมรรถภาพร่างกายและขับรถเฉพาะเส้นทางใกล้บ้านในเวลากลางวันอย่างปลอดภัย",
+          "hint_th": "🧠 สมอง +4 , ❤️ สุขภาพ +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "วางกุญแจรถให้ลูกหลานเป็นคนขับให้ หรือใช้บริการรถไฟฟ้าส่วนลดผู้สูงอายุครึ่งราคา!",
+          "hint_th": "🪙 ประหยัดค่าน้ำมัน +4,000 ฿ , ❤️ สุขภาพ +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 4000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 5,
+            "intelligence": 2,
+            "cash": 2000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age66_01",
+      "title_th": "ถือศีล 8 ปฏิบัติธรรมวันพระที่วัดป่า / ศูนย์วิปัสสนาธรรมชาติ",
+      "trigger_age": 66,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ก๊วนเพื่อนผู้สูงวัยชวนกันนุ่งขาวห่มขาวไปถือศีล 8 นั่งสมาธิเดินจงกรม และฟังธรรมเทศนาใต้ร่มไม้ใหญ่เป็นเวลา 3 วัน 2 คืน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งใจเจริญสติภาวนาและแผ่เมตตา จิตใจสงบร่มเย็นและปล่อยวางความเครียดได้ปลิดทิ้ง!",
+          "hint_th": "✨ แต้มบุญ +20 , 😊 ความสุข +8 , ❤️ สุขภาพ +4 , ✨ ล้างสถานะ [ซึมเศร้า/นอนไม่หลับ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression",
+            "status_chronic_insomnia"
+          ],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปช่วยโรงทานวัดหั่นผักทำอาหารเลี้ยงผู้มาปฏิบัติธรรม ได้ทั้งบุญและเพื่อนกัลยาณมิตร!",
+          "hint_th": "✨ แต้มบุญ +15 , 🤝 เส้นสาย +7 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "connections": 6,
+            "merit": 18
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age67_01",
+      "title_th": "ขบวนรถทัวร์ชมรมผู้สูงอายุ! ทริปไหว้พระ 9 วัดและช้อปสินค้า OTOP",
+      "trigger_age": 67,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ชมรมผู้สูงอายุประจำเขต/ตำบลจัดรถบัสปรับอากาศพาสมาชิกวัยเก๋าไปทัศนศึกษาดูงาน ร้องคาราโอเกะบนรถทัวร์ และแวะซื้อของฝากตลอดทาง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จับไมค์ร้องเพลงลูกทุ่ง/สุนทราภรณ์บนรถทัวร์ และเหมาของฝากมาแจกลูกหลาน (-1,000฿)",
+          "hint_th": "🪙 ค่าของฝาก -1,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": -1000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พกยาดมยาหม่องคอยดูแลเพื่อนๆ บนรถ และร่วมทำบุญทุกวัดที่แวะจอด (-500฿)",
+          "hint_th": "🪙 ทำบุญ -500 ฿ , ✨ แต้มบุญ +10 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -500,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "connections": 7,
+            "cash": -750,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age68_01",
+      "title_th": "ลืมกุญแจบ้านไว้ในตู้เย็น! สัญญาณเตือนภาวะหลงลืมวัยชรา (MCI)",
+      "trigger_age": 68,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 68 ปี คุณเดินหาแว่นตาทั้งที่สวมอยู่บนหัว และเผลอวางกุญแจบ้านไว้ในช่องแช่ผักตู้เย็น เริ่มกังวลเรื่องภาวะสมองเสื่อม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฝึกเล่นเกมปริศนาอักษรไขว้ ซูโดกุ อ่านหนังสือ และจดบันทึกประจำวันกระตุ้นเซลล์สมองทุกวัน!",
+          "hint_th": "🧠 สมอง +7 , 😊 ความสุข +4 , ✨ ล้างสถานะ [ภาวะหลงลืมวัยชรา]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_alzheimer_risk"
+          ],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปล่อยให้สมองว่างงานนั่งเหม่อดูทีวีทั้งวัน จนความจำเสื่อมถอยลงเรื่อยๆ!",
+          "hint_th": "🧠 สมอง -5 , 😊 ความสุข -3 , ⚠️ ติดสถานะ [ภาวะหลงลืมวัยชรา]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_alzheimer_risk"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -3,
+            "intelligence": -5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age68_02_poor",
+      "title_th": "ฝนตกพื้นปูนหน้าบ้านตะไคร่จับลื่น! อันตรายจากการพลัดตกหกล้มในผู้สูงอายุ",
+      "trigger_age": 68,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บ้านพักที่ทรุดโทรมและห้องน้ำที่ไม่มีราวจับเป็นภัยเงียบของผู้สูงวัย วันหนึ่งหลังฝนตก พื้นทางเดินเปียกลื่นมากขณะที่คุณกำลังก้าวเดิน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใช้ไม้เท้าช่วยพยุงเดินอย่างระมัดระวัง และขอให้อาสาสมัครสาธารณสุข (อสม.) ช่วยประสานทำราวจับให้ฟรี!",
+          "hint_th": "❤️ สุขภาพ +4 , 🤝 เส้นสาย +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ก้าวพลาดลื่นล้มก้นกระแทกพื้น ต้องนอนพักรักษาตัวนานหลายสัปดาห์!",
+          "hint_th": "❤️ สุขภาพ -8 , 😊 ความสุข -5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -8,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "connections": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age69_01",
+      "title_th": "เซลส์ขายตรงบุกถึงหน้าประตูบ้าน! ตื๊อขายเครื่องทำน้ำด่างและที่นอนแม่เหล็กไฟฟ้า",
+      "trigger_age": 69,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีพนักงานขายแต่งตัวดีมาพูดจาประจบเอาใจคุณถึงหน้าบ้าน โฆษณาอวดอ้างสรรพคุณที่นอนแม่เหล็กไฟฟ้าและเครื่องกรองน้ำวิเศษราคา 30,000 บาทว่าช่วยรักษาได้ทุกโรค!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รู้ทันกลยุทธ์หลอกขายของแพงเกินจริง ปฏิเสธเสียงแข็งและเชิญออกจากบ้านทันที!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +3 (เงินในกระเป๋าอยู่ครบ!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เกรงใจที่เขานั่งคุยนาน เลยเผลอเซ็นซื้อของแพงเกินคุณภาพไป! (-30,000฿)",
+          "hint_th": "🪙 เสียเงินซื้อของแพง -30,000 ฿ , 😊 ความสุข -6 , 🧠 สมอง -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": -2,
+            "connections": 0,
+            "cash": -30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": -1,
+            "intelligence": 2,
+            "cash": -15000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age70_01",
+      "title_th": "ฉลองอายุครบ 70 ปี! ปรับขึ้นอัตราเบี้ยยังชีพผู้สูงอายุขั้นบันไดเป็น 700 บาท/เดือน",
+      "trigger_age": 70,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ก้าวเข้าสู่วัย 70 ปีบริบูรณ์! รัฐบาลปรับเพิ่มเบี้ยยังชีพขั้นบันไดให้คุณ และลูกหลานญาติมิตรต่างมารวมตัวรดน้ำดำหัวขอพรจากคุณในฐานะร่มโพธิ์ร่มไทรของบ้าน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ให้ศีลให้พรลูกหลานด้วยความเมตตา และแจกซองอั่งเปา/แต๊ะเอียให้หลานๆ ตัวน้อย (-2,000฿)",
+          "hint_th": "🪙 แจกแต๊ะเอียหลาน -2,000 ฿ , 😊 ความสุข +10 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -2000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับซองของขวัญวันเกิดจากลูกหลานเก็บเข้าบัญชีออมทรัพย์ไว้ใช้ดูแลสุขภาพ (+5,000฿)",
+          "hint_th": "🪙 ลูกหลานมอบให้ +5,000 ฿ , 😊 ความสุข +8 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 9,
+            "connections": 4,
+            "cash": 1500,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age70_02_rich",
+      "title_th": "ร่างพินัยกรรมฉบับสมบูรณ์กับทนายความประจำตระกูล & จัดตั้งกองทุนมรดก!",
+      "trigger_age": 70,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 70 ปี เพื่อป้องกันไม่ให้ลูกหลานทะเลาะแย่งสมบัติกันในอนาคต คุณจึงเชิญทนายความมืออาชีพมาทำพินัยกรรมแบบเอกสารฝ่ายเมืองและจัดสรรทรัพย์สิน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ระบุสัดส่วนมรดกให้ทายาทแต่ละคนอย่างชัดเจนและยุติธรรมตามความกตัญญู พร้อมตั้งกองทุนตระกูล!",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +9 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_trust_fund"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งทรัพย์สินส่วนหนึ่งระบุในพินัยกรรมมอบให้โรงพยาบาลและมูลนิธิการกุศล (-30,000฿)",
+          "hint_th": "🪙 บริจาคเข้ามูลนิธิ -30,000 ฿ , ✨ แต้มบุญ +50 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -30000,
+            "merit": 50,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": -15000,
+            "merit": 30
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age71_01",
+      "title_th": "การได้ยินเริ่มลดลงวัย 71! เปิดทีวีเสียงดังลั่นบ้านจนคนข้างบ้านทัก",
+      "trigger_age": 71,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ประสาทหูเสื่อมตามวัยทำให้คุณมักจะถามซ้ำว่า 'หา? อะไรนะ?' เวลาคุยกับลูกหลาน และต้องเร่งเสียงโทรทัศน์จนดังไปถึงหน้าซอย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปตรวจการได้ยินที่โรงพยาบาลและรับเครื่องช่วยฟังขนาดเล็ก ช่วยให้คุยกับลูกหลานรู้เรื่องชัดเจน!",
+          "hint_th": "❤️ สุขภาพ +5 , 😊 ความสุข +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ฝึกอ่านริมฝีปากและให้ลูกหลานพูดช้าๆ ชัดๆ ใกล้ๆ แทน",
+          "hint_th": "😊 ความสุข +3 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "connections": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age72_01",
+      "title_th": "ฉลองอายุครบ 6 รอบนักษัตร (72 ปี)! พิธีทำบุญอายุวัฒนมงคล",
+      "trigger_age": 72,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ตามคติความเชื่อไทย อายุครบ 6 รอบ (72 ปี) ถือเป็นวาระมงคลใหญ่! มีการจัดพิธีเจริญพระพุทธมนต์ ถวายภัตตาหารเพล และปล่อยนกปล่อยปลาต่ออายุขัย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นิมนต์พระสงฆ์มาเจริญพระพุทธมนต์ที่บ้านและปล่อยปลาหน้าเขียง 72 ตัว (-3,000฿)",
+          "hint_th": "🪙 ทำบุญใหญ่ -3,000 ฿ , ✨ แต้มบุญ +25 , ❤️ สุขภาพ +6 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -3000,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทำบุญบริจาคโลงศพและผ้าห่อศพไร้ญาติที่มูลนิธิ เสริมดวงชะตาให้แข็งแรง (-1,000฿)",
+          "hint_th": "🪙 บริจาค -1,000 ฿ , ✨ แต้มบุญ +15 , ❤️ สุขภาพ +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 8,
+            "connections": 3,
+            "cash": -2000,
+            "merit": 20
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age73_01",
+      "title_th": "หลานรักสอบติดมหาวิทยาลัย / รับปริญญา! ความชื่นใจของคุณปู่คุณย่า",
+      "trigger_age": 73,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลานตัวน้อยที่คุณเคยช่วยอุ้มช่วยเลี้ยงเมื่อสิบปีก่อน วันนี้เติบโตขึ้นและวิ่งเอาใบเกรด/ชุดครุยมาสวมกอดอวดคุณถึงที่บ้าน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "หอมแก้มหลานด้วยความตื้นตันใจ และมอบเงินขวัญถุง/สร้อยทองที่เก็บไว้ให้หลาน (-3,000฿)",
+          "hint_th": "🪙 รับขวัญหลาน -3,000 ฿ , 😊 ความสุข +12 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -3000,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สอนเคล็ดลับวิชาชีวิตและการบริหารเงินให้หลานนำไปใช้เป็นเกราะป้องกันตัวในโลกผู้ใหญ่",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +8 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": -1500,
+            "merit": 7
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age74_01",
+      "title_th": "จัดตลับยาประจำสัปดาห์! วินัยการกินยาและโภชนาการผู้สูงวัย 74",
+      "trigger_age": 74,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 74 ปี คุณมีวิตามินและยาประจำตัวหลายเม็ด ทั้งก่อนอาหารและหลังอาหาร เช้า-เย็น จนบางวันจำสลับกันว่ากินไปหรือยัง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใช้กล่องแบ่งยา 7 วันแยกสีชัดเจนและตั้งนาฬิกาปลุกเตือน กินยาตรงเวลาเป๊ะสุขภาพแข็งแรง!",
+          "hint_th": "❤️ สุขภาพ +7 , 🧠 สมอง +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_hypertension"
+          ],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "กินยาบ้างลืมกินบ้าง หรือแอบหยุดยาเองเพราะคิดว่าหายแล้ว จนความดันพุ่งปรี๊ด!",
+          "hint_th": "❤️ สุขภาพ -6 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_hypertension"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -6,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 1,
+            "intelligence": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age75_01",
+      "title_th": "คลื่นความร้อน (Heatwave) เมษายนระอุ! ระวังภาวะฮีทสโตรกในผู้สูงอายุ",
+      "trigger_age": 75,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หน้าร้อนเมืองไทยปีนี้อุณหภูมิพุ่งทะลุ 42 องศาเซลเซียส! ร่างกายของผู้สูงวัยวัย 75 ปีระบายความร้อนได้ช้าลงและเสี่ยงต่อภาวะขาดน้ำ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จิบน้ำเปล่าบ่อยๆ ตลอดวัน เปิดแอร์/พัดลมระบายอากาศ และไม่ออกไปตากแดดตอนเที่ยง",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ฝืนออกไปเดินทำสวนตากแดดเปรี้ยงตอนบ่าย จนหน้ามืดเป็นลมแดดต้องหามส่งคลินิก!",
+          "hint_th": "❤️ สุขภาพ -8 , 😊 ความสุข -5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -8,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age75_02_poor",
+      "title_th": "ทีมหมอครอบครัวและ อสม. ลงพื้นที่เยี่ยมบ้านตรวจสุขภาพผู้สูงอายุถึงเตียง!",
+      "trigger_age": 75,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เจ้าหน้าที่โรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.) และพี่น้อง อสม. ถือกระเป๋ายาและเครื่องวัดความดันเดินมาเยี่ยมคุณถึงหน้าบ้าน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ต้อนรับทีมหมอและ อสม. ด้วยรอยยิ้ม รับยาและคำแนะนำการกายภาพบำบัดฟรีถึงบ้าน!",
+          "hint_th": "❤️ สุขภาพ +7 , 😊 ความสุข +6 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งกล้วยน้ำว้าและมะม่วงที่ปลูกไว้หน้าบ้านให้พี่ๆ อสม. นำกลับไปกินเป็นน้ำใจ",
+          "hint_th": "✨ แต้มบุญ +8 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "connections": 5,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age76_01",
+      "title_th": "บันทึกความทรงจำแห่งชีวิต! เขียนสมุดเล่าประวัติตระกูลและสูตรอาหารประจำบ้าน",
+      "trigger_age": 76,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 76 ปี คุณผ่านเรื่องราวมามากมาย ลูกหลานอยากฟังเรื่องเล่าสมัยคุณยังหนุ่มสาวและอยากจดสูตรแกงโบราณฝีมือคุณไว้สืบทอด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เขียนบันทึกเรื่องราวการสู้ชีวิตและจดสูตรอาหารลับประจำตระกูลมอบไว้ให้ลูกหลานรุ่นหลัง!",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +8 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้หลานช่วยอัดคลิปวิดีโอคุณเล่าเรื่องเก่าๆ ลงโซเชียล กลายเป็นคุณตา/คุณยายไวรัลขวัญใจชาวเน็ต!",
+          "hint_th": "😊 ความสุข +10 , 🤝 เส้นสาย +8 , 🪙 ค่าขนมจากยอดวิว +3,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 1500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age77_01",
+      "title_th": "ข่าวเศร้าในกลุ่มเพื่อนร่วมรุ่นวัย 77! ปลงตกในสัจธรรมเกิด-แก่-เจ็บ-ตาย",
+      "trigger_age": 77,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่ออายุย่างเข้า 77 ปี เพื่อนสนิทสมัยเรียนและเพื่อนร่วมงานเก่าแก่เริ่มทยอยจากไปทีละคน ทำให้คุณได้หันมาพิจารณาความไม่เที่ยงของชีวิต",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปร่วมงานสวดอภิธรรมเพื่อนรัก และกลับมาใช้ชีวิตทุกวันให้มีความสุขและมีคุณค่าที่สุด",
+          "hint_th": "✨ แต้มบุญ +12 , 😊 ความสุข +5 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทำบุญตักบาตรอุทิศส่วนกุศลให้เพื่อนๆ และโทรหาเพื่อนที่ยังมีชีวิตอยู่เพื่อให้กำลังใจกัน",
+          "hint_th": "✨ แต้มบุญ +10 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 3,
+            "merit": 11
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age78_01",
+      "title_th": "ศึกทายาทเปิดฉากถามหาส่วนแบ่งมรดกก่อนเวลาอันควร!",
+      "trigger_age": 78,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ลูกหลานบางคนเริ่มมาเลียบๆ เคียงๆ ถามเรื่องโฉนดที่ดินและเงินเก็บของคุณในวัย 78 ปี โดยอ้างว่าจะเอาไปลงทุนทำธุรกิจให้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยึดหลัก 'ถือโฉนดและเงินสดไว้กับตัวจนกว่าจะหลับตาลาโลก' แบ่งให้เฉพาะดอกผลตามความเหมาะสม!",
+          "hint_th": "🧠 สมอง +7 , 😊 ความสุข +6 , 🤝 เส้นสาย +4 (ไม่มีใครกล้าทอดทิ้งคุณแน่นอน!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใจอ่อนโอนทรัพย์สินทั้งหมดให้ลูกหลานไปก่อน สุดท้ายบางคนหายหน้าไม่ค่อยมาเยี่ยม!",
+          "hint_th": "😊 ความสุข -6 , 🤝 เส้นสาย -4 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": -4,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "intelligence": 4,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age78_02_rich",
+      "title_th": "ศูนย์ดูแลผู้สูงอายุระดับ Luxury Wellness Resort & พยาบาลส่วนตัวดูแลที่บ้าน!",
+      "trigger_age": 78,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ด้วยฐานะที่มั่งคั่งในวัย 78 ปี คุณสามารถเลือกบริการดูแลสุขภาพระดับ 5 ดาวที่มีทั้งนักโภชนาการ นักกายภาพบำบัด และพยาบาลวิชาชีพคอยดูแลประจำตัว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จ้างพยาบาลวิชาชีพและนักกายภาพบำบัดมาดูแลถึงคฤหาสน์/บ้านพักส่วนตัว ฟื้นฟูสุขภาพดีเยี่ยม! (-25,000฿)",
+          "hint_th": "🪙 ค่าดูแล VIP -25,000 ฿ , ❤️ สุขภาพ +12 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 12,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข้าคอร์สฟื้นฟูสุขภาพที่ Wellness Resort ริมทะเลสาบ ร่วมกับกลุ่มเพื่อนมหาเศรษฐีวัยเดียวกัน (-20,000฿)",
+          "hint_th": "🪙 ค่าคอร์ส -20,000 ฿ , ❤️ สุขภาพ +9 , 😊 ความสุข +10 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 9,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 11,
+            "happiness": 10,
+            "connections": 4,
+            "cash": -22500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age79_01",
+      "title_th": "ดนตรีบำบัดและรำวงย้อนยุคผู้สูงวัย! เตรียมตัวก้าวสู่หลักแปด (80 ปี)",
+      "trigger_age": 79,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานวัดและลานชุมชนจัดเวทีรำวงย้อนยุคและเพลงลูกกรุงอมตะ เปิดโอกาสให้ผู้สูงอายุวัยใกล้ 80 ออกมาขยับแข้งขยับขาตามจังหวะเพลง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แต่งชุดลายดอกออกไปฟ้อนรำขยับร่างกายเบาๆ หัวใจสูบฉีดและอารมณ์ดีสุดๆ!",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +8 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นั่งตบมือเข้าจังหวะอยู่ข้างเวทีและช่วยบริจาคเงินสนับสนุนชมรมดนตรีผู้สูงอายุ (-300฿)",
+          "hint_th": "🪙 บริจาค -300 ฿ , 😊 ความสุข +6 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -300,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "connections": 3,
+            "cash": -150,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age80_01",
+      "title_th": "ฉลองอายุครบ 80 ปีบริบูรณ์! เบี้ยยังชีพปรับขึ้นเป็น 800 บาท/เดือน & ร่มโพธิ์ทองของตระกูล",
+      "trigger_age": 80,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ยินดีด้วย! คุณมีอายุยืนยาวมาถึง 80 ปีแล้ว! ลูกหลานเหลนมารวมตัวกันเต็มบ้าน จัดพิธีสรงน้ำและขอพรวันเกิดปีที่ 80 อย่างยิ่งใหญ่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยิ้มรับพวงมาลัยจากลูกหลานเหลน และถ่ายภาพครอบครัวใหญ่ 4 เจเนอเรชันเป็นที่ระลึก!",
+          "hint_th": "😊 ความสุข +12 , ❤️ สุขภาพ +5 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "มอบพระเครื่อง/ของมงคลประจำตัวให้ลูกหลานที่คอยดูแลเรามาตลอดด้วยความรักใคร่",
+          "hint_th": "😊 ความสุข +10 , 🤝 เส้นสาย +10 , ✨ แต้มบุญ +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 11,
+            "connections": 9,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age80_02_poor",
+      "title_th": "น้ำใจคนไทยไม่ทิ้งกัน! เพื่อนบ้านและวัดแบ่งปันอาหาร-ดูแลผู้สูงอายุวัย 80",
+      "trigger_age": 80,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 80 ปีที่คุณเดินทางไปไหนมาไหนไม่สะดวกเหมือนเดิม เพื่อนบ้านและหลวงพ่อที่วัดมักจะให้เด็กวัดและลูกหลานนำกับข้าวร้อนๆ และผลไม้มาแบ่งปันให้เสมอ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยกมืออนุโมทนาขอบคุณน้ำใจเพื่อนบ้าน และให้พรด้วยรอยยิ้มเปี่ยมเมตตา",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +8 , ✨ แต้มบุญ +10 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สานพัดไม้ไผ่/พับเหรียญโปรยทานส่งกลับไปช่วยงานวัดเป็นการตอบแทนน้ำใจ",
+          "hint_th": "🧠 สมอง +5 , ✨ แต้มบุญ +12 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 3,
+            "merit": 11
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age82_01",
+      "title_th": "ป้องกันปอดอักเสบวัย 82! ฝึกบริหารการหายใจและรับแดดยามเช้า",
+      "trigger_age": 82,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อเข้าสู่วัย 82 ปี ระบบทางเดินหายใจและการกลืนอาหารต้องระมัดระวังเป็นพิเศษเพื่อป้องกันอาการสำลักและปอดอักเสบ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เคี้ยวอาหารช้าๆ กินอาหารอ่อนย่อยง่าย และฝึกสูดลมหายใจลึกๆ รับแสงแดดอ่อนทุกเช้า",
+          "hint_th": "❤️ สุขภาพ +7 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จิบน้ำขิงอุ่นๆ และนอนหนุนหมอนสูงเล็กน้อยตามคำแนะนำของแพทย์",
+          "hint_th": "❤️ สุขภาพ +6 , 🧠 สมอง +2 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 5,
+            "intelligence": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age84_01",
+      "title_th": "มหามงคลอายุครบ 7 รอบนักษัตร (84 ปี)! บุญใหญ่แห่งการมีอายุยืนยาว",
+      "trigger_age": 84,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุครบ 7 รอบ (84 ปี) ถือเป็นบุญบารมีอันยิ่งใหญ่ในสังคมไทย! ทุกคนในตระกูลและคนรู้จักมาร่วมทำบุญฉลองอายุวัฒนมงคล 84 ปีให้คุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทำบุญถวายภัตตาหารและมอบทุนการศึกษา/บริจาคโรงพยาบาล 84 ทุน ตามจำนวนอายุ! (-5,000฿)",
+          "hint_th": "🪙 ทำบุญ 7 รอบ -5,000 ฿ , ✨ แต้มบุญ +35 , 😊 ความสุข +12 , ❤️ สุขภาพ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -5000,
+            "merit": 35,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นั่งเก้าอี้ประธานรับการกราบขอพรจากลูกหลานเหลน พร้อมรับซองบำรุงสุขภาพ (+8,000฿)",
+          "hint_th": "🪙 ลูกหลานถวายเงินดูแล +8,000 ฿ , 😊 ความสุข +10 , ❤️ สุขภาพ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 8000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 11,
+            "connections": 7,
+            "cash": 1500,
+            "merit": 23
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age85_01_rich",
+      "title_th": "สร้างศาลาการเปรียญ / อาคารผู้ป่วยวิกฤต จารึกชื่อตระกูลไว้เป็นอนุสรณ์วัย 85!",
+      "trigger_age": 85,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 85 ปี คุณต้องการสร้างมหากุศลชิ้นใหญ่เพื่อฝากชื่อเสียงและคุณงามความดีของตระกูลไว้ให้แผ่นดินสืบไป",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "บริจาคเงินสร้างห้อง ICU และซื้อเครื่องมือแพทย์ช่วยชีวิตผู้ป่วยยากไร้ (-100,000฿)",
+          "hint_th": "🪙 มหากุศล -100,000 ฿ , ✨ แต้มบุญ +120 , 😊 ความสุข +15 , 🤝 เส้นสาย +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": -100000,
+            "merit": 120,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งกองทุนการศึกษาถาวร ดอกผลนำไปมอบให้นักเรียนยากจนเรียนดีทุกปี (-50,000฿)",
+          "hint_th": "🪙 ตั้งกองทุน -50,000 ฿ , ✨ แต้มบุญ +70 , 😊 ความสุข +12 , 🤝 เส้นสาย +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": -50000,
+            "merit": 70,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 14,
+            "connections": 11,
+            "cash": -75000,
+            "merit": 95
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age86_01",
+      "title_th": "อุ้มเหลนคนแรกของตระกูล (Great-Grandchild)! ภาพประวัติศาสตร์ 4 รุ่น",
+      "trigger_age": 86,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลานของคุณแต่งงานและเพิ่งคลอดลูกตัวน้อย ทำให้คุณได้เลื่อนขั้นขึ้นเป็น 'คุณทวด / คุณเทียด' ในวัย 86 ปี! เหลนตัวน้อยจับนิ้วมือเหี่ยวย่นของคุณแล้วยิ้มแป้น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ผูกสายสิญจน์รับขวัญเหลนตัวน้อย และอวยพรให้เติบโตเป็นคนดีของสังคม",
+          "hint_th": "😊 ความสุข +12 , ❤️ สุขภาพ +5 , ✨ แต้มบุญ +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "มอบเหรียญโบราณ/ทองคำเก็บสะสมรับขวัญเหลนรัก เป็นมรดกตกทอดจากคุณทวด!",
+          "hint_th": "😊 ความสุข +10 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 11,
+            "connections": 7,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age88_01",
+      "title_th": "เคล็ดลับอายุยืนวัย 88! อารมณ์ขัน ไม่โกรธง่าย และกินปลาทู-ผักต้ม",
+      "trigger_age": 88,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คนในหมู่บ้านและลูกหลานต่างพากันมาถามเคล็ดลับว่าทำไมคุณในวัย 88 ปีถึงยังหน้าตาผ่องใสและสุขภาพจิตดีเยี่ยม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แบ่งปันเคล็ดลับ 'กินน้ำพริกปลาทูผักต้ม นอนหัวค่ำตื่นเช้า และไม่เก็บเรื่องทุกข์มาคิด!'",
+          "hint_th": "❤️ สุขภาพ +8 , 😊 ความสุข +8 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โชว์สเต็ปแกว่งแขนวันละ 500 ครั้งและหัวเราะอารมณ์ดีให้เด็กๆ ดู!",
+          "hint_th": "❤️ สุขภาพ +7 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 9,
+            "connections": 3,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age90_01",
+      "title_th": "ก้าวสู่วัย 90 ปีบริบูรณ์! รับเบี้ยยังชีพสูงสุด 1,000 บาท/เดือน & ผู้เฒ่าเก้าแผ่นดิน",
+      "trigger_age": 90,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุครบ 90 ปี! คุณก้าวขึ้นสู่ขั้นสูงสุดของเบี้ยยังชีพผู้สูงอายุ (1,000 บาท/เดือน) และกลายเป็นคลังปัญญาที่มีชีวิตของชุมชน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นั่งฟังเพลงบรรเลงธรรมะและรับการดูแลเอาใจใส่จากลูกหลานอย่างสงบสุข (+12,000฿)",
+          "hint_th": "🪙 เบี้ยยังชีพและลูกหลานดูแล +12,000 ฿ , ❤️ สุขภาพ +6 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 12000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งจิตอธิษฐานแบ่งปันบุญกุศลที่สะสมมาทั้งชีวิตให้สรรพสัตว์ทั้งหลายมีความสุข",
+          "hint_th": "✨ แต้มบุญ +30 , 😊 ความสุข +12 , ❤️ สุขภาพ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 11,
+            "cash": 6000,
+            "merit": 20
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age92_01",
+      "title_th": "หนังสือแสดงเจตนาเลือกการรักษาระยะสุดท้าย (Living Will) อย่างสงบตามธรรมชาติ",
+      "trigger_age": 92,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 92 ปี คุณมีสติสัมปชัญญะสมบูรณ์และต้องการวางแผนล่วงหน้าตาม พ.ร.บ.สุขภาพแห่งชาติ มาตรา 12 เพื่อให้ลูกหลานไม่ต้องลำบากใจเมื่อถึงวาระสุดท้าย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงนามในเอกสาร Living Will และทบทวนพินัยกรรมครั้งสุดท้ายอย่างมีสติ ไม่กลัวความตาย",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +10 , ✨ แต้มบุญ +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เรียกตัวแทนลูกหลานมารับฟังคำสั่งเสียและคำอวยพร เพื่อให้ตระกูลรักใคร่ปรองดองกันสืบไป",
+          "hint_th": "🤝 เส้นสาย +10 , 😊 ความสุข +10 , ✨ แต้มบุญ +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "intelligence": 3,
+            "connections": 5,
+            "merit": 18
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age94_01",
+      "title_th": "นายกเทศมนตรี / ผู้ว่าราชการจังหวัด เดินทางมามอบโล่เกียรติคุณผู้สูงอายุต้นแบบวัย 94!",
+      "trigger_age": 94,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวันผู้สูงอายุแห่งชาติ วันที่ 13 เมษายน คณะผู้บริหารจังหวัดเดินทางมาที่บ้านของคุณเพื่อมอบโล่เชิดชูเกียรติผู้สูงอายุที่มีอายุยืนยาวและเป็นแบบอย่างที่ดี",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยิ้มรับโล่เกียรติคุณและกระเช้าสุขภาพ ท่ามกลางเสียงปรบมือของคนทั้งซอย!",
+          "hint_th": "🪙 เงินขวัญถุงจังหวัด +5,000 ฿ , 😊 ความสุข +12 , 🤝 เส้นสาย +10 , ❤️ สุขภาพ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้พรคณะผู้บริหารและชาวบ้าน ขอให้ทุกคนมีสุขภาพแข็งแรงอายุยืนยาวเหมือนคุณทวด!",
+          "hint_th": "✨ แต้มบุญ +25 , 😊 ความสุข +10 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 11,
+            "connections": 9,
+            "cash": 2500,
+            "merit": 13,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age96_01",
+      "title_th": "ฉลองอายุครบ 8 รอบนักษัตร (96 ปี)! ตำนานปูชนียบุคคลแห่งวงศ์ตระกูล",
+      "trigger_age": 96,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "น้อยคนนักที่จะมีบุญวาสนาอายุยืนยาวมาถึงครบ 8 รอบนักษัตร (96 ปี)! ลูกหลานเหลนโหลนจัดงานทำบุญใหญ่ฉลอง 8 รอบให้คุณอย่างอบอุ่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตื่นเช้ารับแสงตะวัน อธิษฐานจิตแผ่เมตตาและรับการดูแลจากลูกหลานอย่างอิ่มเอมใจ",
+          "hint_th": "✨ แต้มบุญ +40 , ❤️ สุขภาพ +8 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 40,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แจกสายสิญจน์และเหรียญขวัญถุง 8 รอบให้ลูกหลานนำไปบูชาเป็นสิริมงคล",
+          "hint_th": "😊 ความสุข +12 , 🤝 เส้นสาย +12 , ✨ แต้มบุญ +30",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 0,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 14,
+            "connections": 6,
+            "merit": 35
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age98_01",
+      "title_th": "ร่มไม้ชายคาในวัย 98 ปี! นั่งมองสายฝนและรำลึกถึงการเดินทางตลอดชีวิต",
+      "trigger_age": 98,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บ่ายวันหนึ่งที่สายฝนโปรยปรายเย็นฉ่ำ คุณนั่งอยู่บนเก้าอี้โยกตัวโปรด มองดูลูกหลานวิ่งเล่นอยู่ในบ้าน แล้วภาพความทรงจำตั้งแต่วัยทารก ประถม วัยรุ่น วัยทำงาน ก็ฉายชัดขึ้นมาในใจ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยิ้มอย่างอ่อนโยนให้กับทุกเรื่องราวที่ผ่านมา ทั้งความสุขและหยาดเหงื่อที่ทำให้มีวันนี้",
+          "hint_th": "😊 ความสุข +15 , ❤️ สุขภาพ +6 , ✨ แต้มบุญ +25",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จับมือคนในครอบครัวไว้แน่น ขอบคุณทุกคนที่ร่วมเดินทางในชีวิตนี้มาด้วยกัน",
+          "hint_th": "😊 ความสุข +15 , 🤝 เส้นสาย +10 , ✨ แต้มบุญ +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 15,
+            "connections": 5,
+            "merit": 23
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age99_01",
+      "title_th": "ก้าวที่ 99! เตรียมตัวต้อนรับศตวรรษแห่งชีวิต (100 ปี)",
+      "trigger_age": 99,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุ 99 ปี! เหลืออีกเพียง 1 ปีก็จะบรรลุเป้าหมายสูงสุดของอายุขัยมนุษย์ 100 ปี นักข่าวท้องถิ่นและสำนักทะเบียนอำเภอติดต่อขอมาบันทึกภาพบุคคล 2 ศตวรรษ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รักษาสุขภาพกายใจให้สงบผ่องใส เตรียมฉลองอายุครบ 100 ปีพร้อมหน้าลูกหลาน!",
+          "hint_th": "❤️ สุขภาพ +10 , 😊 ความสุข +15 , ✨ แต้มบุญ +30",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 10,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "บริจาคทานครั้งใหญ่ส่งท้ายวัย 99 ปี สะสมแต้มบุญสูงสุดเพื่อเตรียมตัวสำหรับภพภูมิ/การเกิดใหม่!",
+          "hint_th": "🪙 ทำบุญ -5,000 ฿ , ✨ แต้มบุญ +60 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -5000,
+            "merit": 60,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 15,
+            "cash": -2500,
+            "merit": 45
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p6_age100_01",
+      "title_th": "ตำนานบุคคล 100 ปี (Centenarian)! ปิดฉากการเดินทางแห่งชีวิตอย่างสมบูรณ์แบบ",
+      "trigger_age": 100,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณเดินทางมาถึงอายุ 100 ปีบริบูรณ์ (Max Age)! ท่ามกลางลูกหลานเหลนโหลนที่รายล้อมรอบเตียงด้วยความรักและเคารพอย่างสูงสุด คุณหลับตาลงอย่างสงบพร้อมรอยยิ้มเปี่ยมสุข ปิดฉากตำนาน 1 ใน 70 ล้านอย่างงดงาม!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ส่งมอบมรดกทั้งหมดตามพินัยกรรมให้ทายาท และนำแต้มบุญสะสมก้าวสู่การเกิดใหม่!",
+          "hint_th": "✨ แต้มบุญโบนัสฉลอง 100 ปี +100 , 😊 ความสุข +20 (จบเกมอย่างสมบูรณ์แบบ!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 20,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 100,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อธิษฐานจิตขอให้ผลบุญกุศลนำทางสู่ชีวิตใหม่ที่ดียิ่งกว่าเดิม!",
+          "hint_th": "✨ แต้มบุญโบนัสฉลอง 100 ปี +120 , 😊 ความสุข +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 20,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 120,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 20,
+            "connections": 5,
+            "merit": 110
+          }
+        }
+      ]
+    }
+  ]
+}

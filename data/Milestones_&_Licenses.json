@@ -1,0 +1,811 @@
+{
+  "version": "1.0.0",
+  "database_name": "Milestones_&_Licenses",
+  "mandatory_age_milestones": [
+    {
+      "milestone_id": "ms_piggy_bank_smash",
+      "name_th": "ทุบกระปุกออมสินลูกหมู & เปิดสมุดบัญชีเล่มแรก",
+      "trigger_age": 7,
+      "req_flags": [],
+      "grants_flags": [
+        "flag_bank_account",
+        "flag_thai_id_card"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 1,
+        "connections": 0,
+        "cash": 500,
+        "merit": 0
+      },
+      "special_action": "convert_piggy_bank_to_cash_and_unlock_gsb_saving_interest_1_5_percent",
+      "description_th": "อายุครบ 7 ปีบริบูรณ์ พ่อแม่พาไปทำบัตรประชาชนเด็กใบแรกที่เขต และทุบกระปุกออมสินลูกหมูเพื่อนำเงินแต๊ะเอียสะสมไปเปิดบัญชีธนาคารออมสิน (รับดอกเบี้ยเงินฝาก +1.50% ต่อปี)"
+    },
+    {
+      "milestone_id": "ms_primary_school_graduation",
+      "name_th": "จบชั้นประถมศึกษาปีที่ 6 & สอบเข้า ม.1",
+      "trigger_age": 12,
+      "req_flags": [],
+      "grants_flags": [
+        "flag_edu_primary_grad",
+        "flag_middle_school_student"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "special_action": "evaluate_middle_school_tier_by_intelligence_and_class",
+      "description_th": "ก้าวพ้นวัยเด็กประถมสู่รั้วมัธยมต้น เริ่มต้นวัยรุ่นและการเลือกชมรมเพื่อสะสมป้ายความถนัด"
+    },
+    {
+      "milestone_id": "ms_first_national_id_title_update",
+      "name_th": "เปลี่ยนคำนำหน้าเป็น นาย/นางสาว & ปลดล็อกพาร์ทไทม์",
+      "trigger_age": 15,
+      "req_flags": [
+        "flag_thai_id_card"
+      ],
+      "grants_flags": [
+        "flag_legal_youth_worker",
+        "flag_edu_middle_grad"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "special_action": "unlock_legal_part_time_jobs_and_motorcycle_license_exam",
+      "description_th": "อายุครบ 15 ปีบริบูรณ์ เปลี่ยนคำนำหน้าจาก เด็กชาย/เด็กหญิง เป็น นาย/นางสาว สามารถทำงานพาร์ทไทม์ร้านสะดวกซื้อและสอบใบขับขี่รถจักรยานยนต์ได้อย่างถูกกฎหมาย"
+    },
+    {
+      "milestone_id": "ms_education_branch_15",
+      "name_th": "ทางแยกชีวิตจบ ม.3 เลือกสายการเรียน",
+      "trigger_age": 15,
+      "req_flags": [
+        "flag_edu_middle_grad"
+      ],
+      "grants_flags": [],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "branch_options": [
+        {
+          "option_id": "opt_sci_math",
+          "name_th": "ม.ปลาย สายวิทย์-คณิต",
+          "req_stats": {
+            "intelligence": 60
+          },
+          "grants_flags": [
+            "flag_track_sci_math",
+            "flag_high_school_student"
+          ],
+          "stat_effects": {
+            "happiness": -2,
+            "intelligence": 3
+          },
+          "description_th": "เรียนหนักแต่เปิดกว้างทุกคณะในมหาวิทยาลัย โดยเฉพาะแพทย์ วิศวะ และไอที"
+        },
+        {
+          "option_id": "opt_arts",
+          "name_th": "ม.ปลาย สายศิลป์-คำนวณ/ภาษา",
+          "req_stats": {
+            "intelligence": 40
+          },
+          "grants_flags": [
+            "flag_track_arts",
+            "flag_high_school_student"
+          ],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 1,
+            "connections": 2
+          },
+          "description_th": "เน้นภาษาการสื่อสารและบริหารธุรกิจ มีเวลาทำกิจกรรมชมรมและเข้าสังคม"
+        },
+        {
+          "option_id": "opt_vocational",
+          "name_th": "อาชีวศึกษา สายอาชีพ (ปวช.)",
+          "req_stats": {
+            "intelligence": 25
+          },
+          "grants_flags": [
+            "flag_track_vocational",
+            "flag_high_school_student"
+          ],
+          "stat_effects": {
+            "happiness": 1,
+            "connections": 2
+          },
+          "description_th": "เน้นลงมือปฏิบัติจริงด้านช่างยนต์ อิเล็กทรอนิกส์ หรือพาณิชยการ พร้อมออกทำงานได้เร็ว"
+        },
+        {
+          "option_id": "opt_dropout_work",
+          "name_th": "ดรอปเรียนออกมาทำงานหาเงินเต็มตัว",
+          "req_stats": {},
+          "grants_flags": [
+            "flag_dropout_worker",
+            "flag_early_labor_force"
+          ],
+          "stat_effects": {
+            "health": -1,
+            "happiness": -2,
+            "connections": -1
+          },
+          "description_th": "หยุดเรียนในระบบที่วุฒิ ม.3 เพื่อออกมารับจ้างหาเงินจุนเจือตัวเองและครอบครัวทันที"
+        }
+      ],
+      "special_action": "force_player_choice_education_track_15",
+      "description_th": "จุดเปลี่ยนสำคัญหลังจบ ม.3 ที่ต้องตัดสินใจว่าจะเรียนต่อสายสามัญ สายอาชีพ หรือออกมาสู้ชีวิตทำงานตั้งแต่อายุยังน้อย"
+    },
+    {
+      "milestone_id": "ms_tcas_university_entrance",
+      "name_th": "จบ ม.6 / ปวช.3 & สนามสอบ TCAS เข้ามหาวิทยาลัย",
+      "trigger_age": 18,
+      "req_flags": [
+        "flag_high_school_student"
+      ],
+      "grants_flags": [
+        "flag_edu_high_school_grad",
+        "flag_legal_adult_18"
+      ],
+      "stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "special_action": "open_university_admission_or_full_time_work_portal",
+      "description_th": "อายุครบ 18 ปีบริบูรณ์ สิ้นสุดการซัพพอร์ตรายปีจากพ่อแม่ ต้องเลือกสอบเข้ามหาวิทยาลัย ต่อ ปวส. หรือก้าวเข้าสู่ตลาดแรงงานเต็มตัว"
+    },
+    {
+      "milestone_id": "ms_legal_sui_juris_20",
+      "name_th": "บรรลุนิติภาวะบริบูรณ์ตามกฎหมายไทย",
+      "trigger_age": 20,
+      "req_flags": [],
+      "grants_flags": [
+        "flag_sui_juris_20"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 1
+      },
+      "special_action": "unlock_monk_ordination_marriage_and_trust_fund",
+      "description_th": "อายุครบ 20 ปีบริบูรณ์ สามารถทำนิติกรรมสัญญาได้เองทุกชนิด ปลดล็อกการอุปสมบท การจดทะเบียนสมรส และการเปิดพอร์ตลงทุน"
+    },
+    {
+      "milestone_id": "ms_military_conscription",
+      "name_th": "ตรวจเลือกทหารกองเกิน (เกณฑ์ทหารจับใบดำ-ใบแดง)",
+      "trigger_age": 21,
+      "req_flags": [],
+      "grants_flags": [
+        "flag_military_status_cleared"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "branch_options": [
+        {
+          "option_id": "opt_rotc_exempt",
+          "name_th": "ยื่นสมุด สด.8 (เรียนจบ รด. ปี 3)",
+          "req_flags": [
+            "flag_rotc_completed"
+          ],
+          "grants_flags": [
+            "flag_military_exempt_rotc"
+          ],
+          "stat_effects": {
+            "happiness": 5
+          },
+          "description_th": "ผ่านการตรวจเลือกทันทีโดยไม่ต้องลุ้นจับสลาก สามารถเรียนต่อหรือทำงานได้ตามปกติ"
+        },
+        {
+          "option_id": "opt_draw_ballot",
+          "name_th": "วัดดวงล้วงไหจับใบดำ-ใบแดง",
+          "req_flags": [],
+          "red_card_chance_percent": 30,
+          "grants_flags_on_black": [
+            "flag_black_card_winner"
+          ],
+          "grants_flags_on_red": [
+            "flag_conscript_soldier_2yrs"
+          ],
+          "stat_effects_on_black": {
+            "happiness": 8
+          },
+          "stat_effects_on_red": {
+            "health": 8,
+            "happiness": -6,
+            "connections": 2,
+            "cash": 108000
+          },
+          "description_th": "ลุ้นระทึกกลางหอประชุมอำเภอ หากได้ใบดำรอดตัวทันที หากได้ใบแดงต้องเข้ากรมรับใช้ชาติ 2 ปีเต็ม (ล็อกงานประจำชั่วคราว แต่ได้เงินเดือนทหารเกณฑ์และร่างกายแข็งแรงขึ้น)"
+        },
+        {
+          "option_id": "opt_volunteer_soldier",
+          "name_th": "สมัครใจร้องขอเป็นทหารกองประจำการ",
+          "req_flags": [],
+          "grants_flags": [
+            "flag_conscript_soldier_1yr"
+          ],
+          "stat_effects": {
+            "health": 5,
+            "happiness": -2,
+            "connections": 3,
+            "cash": 60000,
+            "merit": 2
+          },
+          "description_th": "ตัดสินใจสมัครเองเพื่อรับสิทธิ์ลดหย่อนระยะเวลารับราชการทหาร (เหลือ 6 เดือนถึง 1 ปีหากมีวุฒิการศึกษา) และปลดล็อกโควตาสอบนายสิบ"
+        }
+      ],
+      "special_action": "process_thai_military_draft_for_male_characters",
+      "description_th": "หน้าที่ชายไทยวัย 21 ปีบริบูรณ์ ต้องเข้ารับการตรวจเลือกทหารกองเกินประจำปี ณ ที่ว่าการอำเภอภูมิลำเนา"
+    },
+    {
+      "milestone_id": "ms_benjapes_crisis",
+      "name_th": "อาถรรพ์วัยเบญจเพส (จุดเปลี่ยนวัย 25 ปี)",
+      "trigger_age": 25,
+      "req_flags": [],
+      "grants_flags": [
+        "flag_survived_benjapes"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "special_action": "evaluate_merit_threshold_50_for_big_luck_or_heavy_accident",
+      "description_th": "ความเชื่อไทยโบราณเรื่องวัยเบญจเพส อายุ 25 ปี ระบบจะตรวจสอบค่าแต้มบุญ (merit) หากแต้มบุญสูงจะมีโชคลาภก้อนใหญ่หรือได้เลื่อนขั้นก้าวกระโดด แต่หากแต้มบุญต่ำจะเสี่ยงเกิดอุบัติเหตุหนักหรือเสียทรัพย์"
+    },
+    {
+      "milestone_id": "ms_midlife_health_check",
+      "name_th": "ก้าวสู่วัยกลางคน & คัดกรองโรคเรื้อรัง",
+      "trigger_age": 40,
+      "req_flags": [],
+      "grants_flags": [
+        "flag_midlife_stage"
+      ],
+      "stat_effects": {
+        "health": -2,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "special_action": "check_health_stat_for_office_syndrome_or_hypertension",
+      "description_th": "อายุครบ 40 ปี ระบบเผาผลาญร่างกายเริ่มลดลง หากค่าสุขภาพสะสมต่ำกว่าเกณฑ์จะเริ่มมีอาการออฟฟิศซินโดรมหรือความดันโลหิตสูงถามหา"
+    },
+    {
+      "milestone_id": "ms_retirement_gate",
+      "name_th": "เกษียณอายุการทำงาน & รับเบี้ยยังชีพผู้สูงอายุ",
+      "trigger_age": 60,
+      "req_flags": [],
+      "grants_flags": [
+        "flag_retired_elder",
+        "flag_will_unlocked",
+        "flag_elder_allowance_active"
+      ],
+      "stat_effects": {
+        "health": -2,
+        "happiness": 3,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 7200,
+        "merit": 2
+      },
+      "special_action": "process_retirement_pension_and_unlock_will_testament_ui",
+      "description_th": "อายุครบ 60 ปีบริบูรณ์ สิ้นสุดการทำงานประจำในระบบองค์กร ได้รับเงินบำเหน็จ/บำนาญหรือกองทุนสำรองเลี้ยงชีพ ปลดล็อกเบี้ยยังชีพผู้สูงอายุ (+7,200 บาท/ปี) และเปิดระบบเขียนพินัยกรรมส่งต่อมรดกให้รุ่นลูก"
+    }
+  ],
+  "licenses_and_permits": [
+    {
+      "license_id": "lic_motorcycle",
+      "name_th": "สอบใบขับขี่รถจักรยานยนต์ส่วนบุคคล",
+      "min_age": 15,
+      "cost_cash": 200,
+      "req_stats": {
+        "intelligence": 30,
+        "health": 20
+      },
+      "req_flags": [
+        "flag_thai_id_card"
+      ],
+      "grants_flags": [
+        "flag_motor_license"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 0
+      },
+      "unlocks_description_th": "ปลดล็อกการขับขี่รถจักรยานยนต์อย่างถูกกฎหมาย (ไม่โดนด่านจับปรับ) และใช้สมัครงานไรเดอร์ส่งอาหาร/แมสเซ็นเจอร์ได้"
+    },
+    {
+      "license_id": "lic_car_standard",
+      "name_th": "สอบใบขับขี่รถยนต์ส่วนบุคคล (สอบเองที่ขนส่ง)",
+      "min_age": 18,
+      "cost_cash": 1500,
+      "req_stats": {
+        "intelligence": 40,
+        "health": 25
+      },
+      "req_flags": [
+        "flag_thai_id_card"
+      ],
+      "grants_flags": [
+        "flag_car_license"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 1,
+        "connections": 1
+      },
+      "unlocks_description_th": "จองคิวผ่านแอปไปสอบท่าปราบเซียนที่กรมการขนส่งทางบก ปลดล็อกการขับรถยนต์อย่างถูกกฎหมายและงานเซลส์ขายของ"
+    },
+    {
+      "license_id": "lic_car_driving_school",
+      "name_th": "เรียนและสอบใบขับขี่รถยนต์ (โรงเรียนสอนขับรถรับรอง)",
+      "min_age": 18,
+      "cost_cash": 4500,
+      "req_stats": {
+        "intelligence": 25,
+        "health": 25
+      },
+      "req_flags": [
+        "flag_thai_id_card"
+      ],
+      "grants_flags": [
+        "flag_car_license"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 4,
+        "intelligence": 2,
+        "connections": 1
+      },
+      "unlocks_description_th": "จ่ายแพงกว่าเพื่อเรียนและสอบที่โรงเรียนเอกชน การันตีสอบผ่านง่ายโดยไม่ต้องลุ้นคิวขนส่งนาน"
+    },
+    {
+      "license_id": "lic_public_transport",
+      "name_th": "สอบใบขับขี่รถยนต์สาธารณะ (ตรวจประวัติอาชญากรรม)",
+      "min_age": 22,
+      "cost_cash": 1000,
+      "req_stats": {
+        "intelligence": 35,
+        "health": 40
+      },
+      "req_flags": [
+        "flag_car_license"
+      ],
+      "grants_flags": [
+        "flag_public_driver_license"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 1
+      },
+      "unlocks_description_th": "ปลดล็อกการขับรถแท็กซี่ รถตู้โดยสาร และแอปพลิเคชันเรียกรถรับส่งผู้โดยสารอย่างถูกกฎหมาย"
+    },
+    {
+      "license_id": "lic_rotc_student",
+      "name_th": "สมัครเรียนนักศึกษาวิชาทหาร (รด. ปี 1-3)",
+      "min_age": 15,
+      "cost_cash": 3000,
+      "req_stats": {
+        "intelligence": 35,
+        "health": 50
+      },
+      "req_flags": [
+        "flag_high_school_student"
+      ],
+      "grants_flags": [
+        "flag_rotc_completed"
+      ],
+      "stat_effects": {
+        "health": 5,
+        "happiness": -1,
+        "intelligence": 1,
+        "connections": 2
+      },
+      "unlocks_description_th": "ฝึกวิชาทหารและเข้าค่ายเขาชนไก่ครบ 3 ปี ได้รับสิทธิ์ขึ้นทะเบียนกองประจำการและยกเว้นการเกณฑ์ทหารตอนอายุ 21 ปีทันที"
+    },
+    {
+      "license_id": "lic_stock_crypto_account",
+      "name_th": "ยืนยันตัวตน NDID เปิดพอร์ตหุ้น SET & กระดานคริปโต",
+      "min_age": 20,
+      "cost_cash": 0,
+      "req_stats": {
+        "intelligence": 35
+      },
+      "req_flags": [
+        "flag_bank_account",
+        "flag_smartphone",
+        "flag_sui_juris_20"
+      ],
+      "grants_flags": [
+        "flag_investment_account"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 0
+      },
+      "unlocks_description_th": "ปลดล็อกหน้าจอกระดานเทรดหุ้นไทย (SET), กองทุนรวม และคริปโตเคอร์เรนซี (BTC) เพื่อสร้างผลตอบแทนและเงินปันผล"
+    },
+    {
+      "license_id": "lic_medical_council",
+      "name_th": "สอบใบประกอบวิชาชีพเวชกรรม (แพทยสภา)",
+      "min_age": 24,
+      "cost_cash": 12000,
+      "req_stats": {
+        "intelligence": 80,
+        "health": 40
+      },
+      "req_flags": [
+        "flag_deg_medicine"
+      ],
+      "grants_flags": [
+        "flag_medical_license"
+      ],
+      "stat_effects": {
+        "health": -2,
+        "happiness": 5,
+        "intelligence": 3,
+        "connections": 4
+      },
+      "unlocks_description_th": "ผ่านการสอบ ศรว. ทั้ง 3 ขั้นตอน ปลดล็อกอาชีพแพทย์ใช้ทุน แพทย์เฉพาะทาง และการเปิดคลินิกเวชกรรมส่วนตัว"
+    },
+    {
+      "license_id": "lic_lawyer_council",
+      "name_th": "สอบตั๋วทนายความ & เนติบัณฑิตยสภา",
+      "min_age": 22,
+      "cost_cash": 6000,
+      "req_stats": {
+        "intelligence": 70
+      },
+      "req_flags": [
+        "flag_deg_law"
+      ],
+      "grants_flags": [
+        "flag_lawyer_license"
+      ],
+      "stat_effects": {
+        "health": -1,
+        "happiness": 4,
+        "intelligence": 3,
+        "connections": 3
+      },
+      "unlocks_description_th": "ปลดล็อกอาชีพทนายความว่าความในศาล ที่ปรึกษากฎหมายบริษัท และการสอบคัดเลือกผู้ช่วยผู้พิพากษา/อัยการ"
+    },
+    {
+      "license_id": "lic_engineering_council",
+      "name_th": "สอบใบอนุญาตประกอบวิชาชีพวิศวกรรมควบคุม (กว.)",
+      "min_age": 22,
+      "cost_cash": 3500,
+      "req_stats": {
+        "intelligence": 65
+      },
+      "req_flags": [
+        "flag_deg_engineering"
+      ],
+      "grants_flags": [
+        "flag_engineer_license"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 2,
+        "connections": 2
+      },
+      "unlocks_description_th": "ปลดล็อกการเซ็นรับรองแบบก่อสร้างและโรงงาน เลื่อนขั้นสู่วิศวกรอาวุโสและผู้จัดการโครงการเงินเดือนสูง"
+    },
+    {
+      "license_id": "lic_teacher_council",
+      "name_th": "สอบใบประกอบวิชาชีพครู (คุรุสภา)",
+      "min_age": 22,
+      "cost_cash": 2000,
+      "req_stats": {
+        "intelligence": 60
+      },
+      "req_flags": [
+        "flag_deg_education"
+      ],
+      "grants_flags": [
+        "flag_teacher_license"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 2,
+        "connections": 2
+      },
+      "unlocks_description_th": "ปลดล็อกการสอบบรรจุข้าราชการครู (ครูผู้ช่วย) และครูโรงเรียนเอกชน/นานาชาติ"
+    },
+    {
+      "license_id": "lic_civil_service_ocsc",
+      "name_th": "สอบผ่านภาค ก. (ก.พ.) สำนักงานคณะกรรมการข้าราชการพลเรือน",
+      "min_age": 20,
+      "cost_cash": 500,
+      "req_stats": {
+        "intelligence": 60
+      },
+      "req_flags": [
+        "flag_thai_id_card"
+      ],
+      "grants_flags": [
+        "flag_ocsc_passed"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 4,
+        "intelligence": 2,
+        "connections": 1
+      },
+      "unlocks_description_th": "ใบเบิกทางสำคัญในการสอบบรรจุรับราชการทุกกระทรวง กรม และหน่วยงานรัฐทั่วประเทศ"
+    },
+    {
+      "license_id": "lic_street_vendor_permit",
+      "name_th": "ลงทะเบียนแผงค้าจุดผ่อนผัน / จดทะเบียนพาณิชย์ร้านค้า",
+      "min_age": 18,
+      "cost_cash": 500,
+      "req_stats": {
+        "intelligence": 20
+      },
+      "req_flags": [
+        "flag_thai_id_card"
+      ],
+      "grants_flags": [
+        "flag_merchant_permit"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 1
+      },
+      "unlocks_description_th": "ปลดล็อกการตั้งแผงลอยและเปิดร้านค้าอย่างถูกกฎหมาย ป้องกันการถูกเทศกิจกวดขันจับปรับ"
+    }
+  ],
+  "system_feature_gates": [
+    {
+      "gate_id": "gate_chat_and_online_study",
+      "target_ui_tab": "social_chat_and_online_courses",
+      "name_th": "ระบบแชทจีบคนรัก & เรียนคอร์สออนไลน์",
+      "min_age": 12,
+      "req_flags": [
+        "flag_smartphone"
+      ],
+      "forbidden_flags": [],
+      "locked_message_th": "🔒 ต้องซื้อ 'สมาร์ทโฟน' จากร้านค้าก่อน จึงจะสามารถทักแชทโซเชียลและเรียนคอร์สออนไลน์ได้"
+    },
+    {
+      "gate_id": "gate_it_freelance_and_streaming",
+      "target_ui_tab": "career_digital_and_freelance",
+      "name_th": "ระบบรับงานฟรีแลนซ์ IT / กราฟิก / สตรีมเมอร์",
+      "min_age": 15,
+      "req_flags": [
+        "flag_pc_or_laptop"
+      ],
+      "forbidden_flags": [],
+      "locked_message_th": "🔒 ต้องมี 'คอมพิวเตอร์หรือโน้ตบุ๊ก' ในครอบครองก่อน จึงจะรับงานสายดิจิทัลและสตรีมเกมได้"
+    },
+    {
+      "gate_id": "gate_rider_delivery_job",
+      "target_ui_tab": "job_delivery_rider",
+      "name_th": "อาชีพไรเดอร์ส่งอาหารและพัสดุ",
+      "min_age": 18,
+      "req_flags": [
+        "flag_motor_license",
+        "flag_has_motorcycle",
+        "flag_smartphone"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "locked_message_th": "🔒 ต้องมีอายุ 18 ปีขึ้นไป, มีสมาร์ทโฟน, มีรถมอเตอร์ไซค์ และสอบใบขับขี่รถจักรยานยนต์แล้ว"
+    },
+    {
+      "gate_id": "gate_stock_and_crypto_trading",
+      "target_ui_tab": "assets_stock_and_crypto",
+      "name_th": "ระบบเทรดหุ้นไทย (SET) และคริปโต (BTC)",
+      "min_age": 20,
+      "req_flags": [
+        "flag_bank_account",
+        "flag_smartphone",
+        "flag_investment_account"
+      ],
+      "forbidden_flags": [],
+      "locked_message_th": "🔒 ต้องมีอายุ 20 ปีขึ้นไป, มีบัญชีธนาคาร, มีสมาร์ทโฟน และกดยืนยันเปิดพอร์ตลงทุนก่อน"
+    },
+    {
+      "gate_id": "gate_home_and_condo_mortgage",
+      "target_ui_tab": "real_estate_mortgage_loan",
+      "name_th": "ระบบกู้ธนาคารซื้อบ้านและคอนโดมิเนียม (ผ่อนดาวน์)",
+      "min_age": 22,
+      "req_flags": [
+        "flag_bank_account",
+        "flag_regular_income"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "locked_message_th": "🔒 ต้องมีอายุ 22 ปีขึ้นไป, มีรายได้ประจำสม่ำเสมอ และไม่ติดแบล็กลิสต์เครดิตบูโร (แต่สามารถซื้อด้วยเงินสดเต็มจำนวนได้ทันที)"
+    },
+    {
+      "gate_id": "gate_marriage_and_children",
+      "target_ui_tab": "family_marriage_ceremony",
+      "name_th": "ระบบแต่งงานจดทะเบียนสมรสและมีบุตร",
+      "min_age": 20,
+      "req_flags": [
+        "flag_sui_juris_20",
+        "flag_partner_hearts_5"
+      ],
+      "forbidden_flags": [
+        "flag_monkhood_active"
+      ],
+      "locked_message_th": "🔒 ต้องบรรลุนิติภาวะ (20 ปีขึ้นไป), มีความสัมพันธ์กับคนรักเต็ม 5 ดวง และมีเงินค่าสินสอดพร้อมจัดงาน"
+    },
+    {
+      "gate_id": "gate_sme_business_startup",
+      "target_ui_tab": "business_open_shop",
+      "name_th": "ระบบเปิดร้านค้าและธุรกิจ SME ส่วนตัว",
+      "min_age": 18,
+      "req_flags": [
+        "flag_bank_account",
+        "flag_merchant_permit"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "locked_message_th": "🔒 ต้องมีอายุ 18 ปีขึ้นไป, มีบัญชีธนาคาร และจดทะเบียนพาณิชย์/แผงค้าก่อนเปิดกิจการ"
+    }
+  ],
+  "illegal_bypass_penalties": [
+    {
+      "penalty_id": "penalty_riding_without_license",
+      "name_th": "ขี่มอเตอร์ไซค์โดยไม่มีใบขับขี่",
+      "active_when_has_flags": [
+        "flag_has_motorcycle"
+      ],
+      "active_when_missing_flags": [
+        "flag_motor_license"
+      ],
+      "annual_trigger_chance_percent": 25,
+      "cash_penalty_min": -500,
+      "cash_penalty_max": -1000,
+      "stat_effects": {
+        "health": 0,
+        "happiness": -2,
+        "intelligence": 0,
+        "connections": -1,
+        "merit": 0
+      },
+      "event_title_th": "เจอด่านตรวจจราจร!",
+      "description_th": "คุณขี่รถจักรยานยนต์ไปเจอด่านกวดขันวินัยจราจรแต่ไม่มีใบขับขี่แสดงต่อเจ้าหน้าที่ จึงถูกออกใบสั่งและเสียค่าปรับตามกฎหมาย"
+    },
+    {
+      "penalty_id": "penalty_driving_car_without_license",
+      "name_th": "ขับรถยนต์โดยไม่มีใบขับขี่",
+      "active_when_has_flags": [
+        "flag_has_car"
+      ],
+      "active_when_missing_flags": [
+        "flag_car_license"
+      ],
+      "annual_trigger_chance_percent": 20,
+      "cash_penalty_min": -1000,
+      "cash_penalty_max": -2000,
+      "stat_effects": {
+        "health": 0,
+        "happiness": -3,
+        "intelligence": 0,
+        "connections": -1,
+        "merit": 0
+      },
+      "event_title_th": "โดนเรียกตรวจใบขับขี่รถยนต์!",
+      "description_th": "คุณนำรถยนต์ออกมาขับโดยที่ยังไม่ได้สอบใบขับขี่ เมื่อเจอด่านตรวจจึงโดนใบสั่งเสียค่าปรับและเสียเวลาไปเปรียบเทียบปรับ"
+    },
+    {
+      "penalty_id": "penalty_unlicensed_street_stall",
+      "name_th": "ตั้งแผงลอยค้าขายริมทางโดยไม่มีใบอนุญาต",
+      "active_when_has_flags": [
+        "flag_active_street_vendor"
+      ],
+      "active_when_missing_flags": [
+        "flag_merchant_permit"
+      ],
+      "annual_trigger_chance_percent": 20,
+      "cash_penalty_min": -2000,
+      "cash_penalty_max": -2000,
+      "stat_effects": {
+        "health": -1,
+        "happiness": -3,
+        "intelligence": 0,
+        "connections": -1,
+        "merit": 0
+      },
+      "event_title_th": "เทศกิจลงตรวจพื้นที่!",
+      "description_th": "คุณตั้งแผงขายของบนทางเท้าในจุดที่ไม่ได้ลงทะเบียนผ่อนผัน เมื่อเจ้าหน้าที่เทศกิจมาตรวจจึงต้องเข็นรถหนีและเสียค่าปรับ"
+    },
+    {
+      "penalty_id": "penalty_student_loan_default",
+      "name_th": "เบี้ยวหนี้ กยศ. จนถูกฟ้องบังคับคดี",
+      "active_when_has_flags": [
+        "flag_student_loan_debt",
+        "flag_loan_payment_overdue"
+      ],
+      "active_when_missing_flags": [],
+      "annual_trigger_chance_percent": 35,
+      "cash_penalty_min": -5000,
+      "cash_penalty_max": -18000,
+      "grants_flags": [
+        "flag_credit_blacklist"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": -4,
+        "intelligence": 0,
+        "connections": -2,
+        "merit": -1
+      },
+      "event_title_th": "หมายศาลบังคับคดีหนี้ กยศ.!",
+      "description_th": "คุณค้างชำระหนี้ กยศ. ติดต่อกันหลายปีจนถูกหักเงินเดือนพร้อมเบี้ยปรับ และเสียประวัติทางการเงินจนติดแบล็กลิสต์"
+    },
+    {
+      "penalty_id": "penalty_military_draft_evasion",
+      "name_th": "หนีทหาร / ไม่ไปรายงานตัวหมายเรียก สด.35",
+      "active_when_has_flags": [
+        "flag_evaded_military_draft"
+      ],
+      "active_when_missing_flags": [
+        "flag_military_status_cleared"
+      ],
+      "annual_trigger_chance_percent": 40,
+      "cash_penalty_min": -5000,
+      "cash_penalty_max": -10000,
+      "grants_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "stat_effects": {
+        "health": 0,
+        "happiness": -6,
+        "intelligence": 0,
+        "connections": -4,
+        "merit": -2
+      },
+      "event_title_th": "ถูกดำเนินคดีหลีกเลี่ยงการเกณฑ์ทหาร!",
+      "description_th": "คุณไม่ไปรายงานตัวตรวจเลือกทหารตามหมายเรียก เมื่อถูกตรวจสอบประวัติจึงต้องโทษปรับและถูกส่งเข้าเป็นทหารกองประจำการทันทีโดยไม่ต้องจับสลาก"
+    }
+  ]
+}

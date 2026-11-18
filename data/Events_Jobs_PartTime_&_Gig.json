@@ -1,0 +1,2951 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Jobs_PartTime_&_Gig",
+  "category_group": "career_part_time_and_gig",
+  "total_events": 40,
+  "quota_breakdown": {
+    "total": 40,
+    "job_pt_convenience_store": 5,
+    "job_gig_food_rider": 5,
+    "job_daily_construction": 5,
+    "job_agricultural_helper": 5,
+    "job_freelance_coder_graphic": 5,
+    "job_esports_streamer": 5,
+    "job_taxi_app_driver": 5,
+    "any_part_time_or_gig": 5
+  },
+  "events": [
+    {
+      "event_id": "evt_job_pt_conv_01",
+      "title_th": "กะดึกตีสามร้านสะดวกซื้อ! ลูกค้าเมาโวยวายขอซื้อเครื่องดื่มแอลกอฮอล์นอกเวลา",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_pt_convenience_store",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เวลาตีสามขณะที่เสียงกริ่งประตูดัง 'ติ๊งต่อง!' ลูกค้าหน้าแดงก่ำเดินเซเข้ามาหยิบเบียร์วางบนเคาน์เตอร์ แล้วบังคับให้คุณสแกนขายทั้งที่เป็นเวลาห้ามจำหน่ายตามกฎหมาย!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ชี้ป้ายประกาศกฎหมายและปฏิเสธอย่างสุภาพแต่หนักแน่น เครื่องแคชเชียร์ล็อกสแกนไม่ได้จริงๆ",
+          "hint_th": "🧠 สมอง +3 , ✨ แต้มบุญ +3 , 😊 ความสุข +2 (ผู้จัดการชมเชยความซื่อสัตย์!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หลอกล่อชวนซื้อน้ำอัดลมและไส้กรอกเวฟร้อนๆ แก้แฮงก์แทน จนลูกค้าอารมณ์ดีเหมาของกินเพียบ!",
+          "hint_th": "🪙 ทิป/คอมมิชชัน +500 ฿ , 🤝 เส้นสาย +4 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แอบรับเงินสดใต้เคาน์เตอร์ขายให้ ปรากฏว่าเป็นสายล่อซื้อ! โดนหักเงินและตักเตือนหนัก!",
+          "hint_th": "🪙 โดนปรับ -2,000 ฿ , 😊 ความสุข -6 , ✨ แต้มบุญ -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -2000,
+            "merit": -3,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_pt_conv_02",
+      "title_th": "ปิดกะนับเงินสดหน้าเครื่อง POS! เงินในลิ้นชักขาดไป 500 บาท",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_pt_convenience_store",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงเปลี่ยนกะเช้า คุณกำลังนับธนบัตรและเหรียญในลิ้นชักแคชเชียร์ส่งมอบให้ผู้จัดการ แต่ยอดเงินจริงกลับขาดไปจากใบสรุปยอด 500 บาท!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งสติไล่เช็กสลิปบัตรเครดิตและซอกใต้ลิ้นชัก จนเจอแบงก์ห้าร้อยที่ตกค้างอยู่!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +4 (ไม่ต้องควักเนื้อชดใช้!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ยอมควักเงินค่าแรงตัวเองจ่ายชดใช้ 500 บาทเพื่อให้จบกะไวๆ แล้วรีบกลับไปนอน",
+          "hint_th": "🪙 ชดใช้เงินสด -500 ฿ , 😊 ความสุข -3 , ✨ แต้มบุญ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -500,
+            "merit": 1,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 3,
+            "cash": -250,
+            "merit": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_pt_conv_03",
+      "title_th": "ศึกออร์เดอร์เดลิเวอรีถล่มหน้าร้าน! ทั้งชงกาแฟ ปั่นน้ำ และเวฟข้าวกล่องพร้อมกัน",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_pt_convenience_store",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงเที่ยงวันฝนตก เครื่องรับออร์เดอร์ออนไลน์ดังรัวไม่หยุด ไรเดอร์ยืนรอรับของหน้าร้าน 6 คน แถมลูกค้าหน้าร้านต่อคิวสั่งกาแฟสดอีกยาวเหยียด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดลำดับงานขั้นเทพ ชงกาแฟ 2 มือพร้อมกดไมโครเวฟ เคลียร์คิวหมดใน 15 นาที!",
+          "hint_th": "🪙 โบนัสขยัน +1,200 ฿ , 🧠 สมอง +4 , ❤️ สุขภาพ -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 1200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลนลานจนทำแก้วกาแฟหกเลอะเคาน์เตอร์และเวฟไส้กรอกไหม้ ต้องทำใหม่หมด!",
+          "hint_th": "❤️ สุขภาพ -3 , 😊 ความสุข -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": 600
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_pt_conv_04",
+      "title_th": "เช็กวันหมดอายุสินค้า (ตัดจ่ายของเสีย)! อาหารกล่องใกล้หมดอายุเพียบ",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_pt_convenience_store",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะจัดเรียงสินค้าขึ้นเชลฟ์แบบ FIFO (เข้าก่อนออกก่อน) คุณพบแซนด์วิชและนมสดที่กำลังจะหมดอายุในคืนนี้หลายสิบชิ้น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขออนุญาตผู้จัดการแปะป้ายลดราคาป้ายเหลือง 50% และเชียร์ขายหน้าเคาน์เตอร์จนหมดเกลี้ยง!",
+          "hint_th": "🪙 โบนัสลดของเสีย +1,000 ฿ , 🧠 สมอง +4 , 🤝 เส้นสาย +4 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "คัดออกตามระเบียบและขอซื้อต่อในราคาพนักงานนำกลับไปกินที่บ้าน ประหยัดค่าข้าว!",
+          "hint_th": "🪙 ประหยัดค่าข้าว +600 ฿ , ❤️ สุขภาพ +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 600,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": 800
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_pt_conv_05",
+      "title_th": "ผู้ตรวจการ (Auditor) จากสำนักงานใหญ่ปลอมตัวเป็นลูกค้ามาตรวจมาตรฐานร้าน!",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_pt_convenience_store",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ชายใส่แว่นเดินถือตะกร้าสำรวจความสะอาดรอบร้าน ก่อนจะเดินมาคิดเงินที่เคาน์เตอร์ของคุณเพื่อประเมินการกล่าวทักทายและการแนะนำโปรโมชัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กล่าวสวัสดีด้วยรอยยิ้ม แนะนำโปรโมชันแลกซื้อ และทอนเงินสองมือ สาขาได้คะแนนประเมินเต็ม 100!",
+          "hint_th": "🪙 เงินรางวัลสาขาดีเด่น +2,500 ฿ , 🤝 เส้นสาย +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 2500,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "มัวแต่ง่วงนอนไม่ยอมทักทายและลืมถามสมาชิก โดนหักคะแนนประเมินสาขา!",
+          "hint_th": "😊 ความสุข -4 , 🤝 เส้นสาย -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": -3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "connections": 1,
+            "cash": 1250,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_rider_01",
+      "title_th": "พายุฝนถล่มเมืองช่วงค่ำ! ค่ารอบพิเศษ (Surge Price) พุ่ง 2 เท่าแลกกับถนนลื่น",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_gig_food_rider",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เวลาหนึ่งทุ่ม ฝนเทลงมาอย่างหนักจนน้ำท่วมขังผิวจราจร แอปไรเดอร์ประกาศบวกเงินอินเซนทีฟพิเศษออร์เดอร์ละ +40 บาท เพราะคนสั่งอาหารเยอะแต่ไม่มีรถวิ่ง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สวมเสื้อกันฝนลุยวิ่งรับงานพ่วง 2 ออร์เดอร์! (เสี่ยงอุบัติเหตุ 30% ถ้าพลาดรถล้มเสียค่าซ่อม)",
+          "hint_th": "🎲 โอกาสสำเร็จ 70% (สำเร็จ: รับทรัพย์ +4,500 ฿ | พลาด: รถแฉลบล้มบาดเจ็บ -3,000 ฿)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 4500,
+            "merit": 0,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 70,
+            "fail_outcome_text_th": "ถนนลื่นคราบน้ำมัน! มอเตอร์ไซค์แฉลบล้มกลางฝน ได้แผลถลอกและต้องซ่อมชุดสีรถ!",
+            "fail_stat_effects": {
+              "health": -12,
+              "happiness": -8,
+              "intelligence": 1,
+              "connections": 0,
+              "cash": -3000,
+              "merit": 0,
+              "appearance": -2
+            }
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จอดหลบฝนใต้สะพานลอยรอให้ฝนซาก่อน ปลอดภัยไว้ก่อนดีกว่าคุ้มค่ารักษา",
+          "hint_th": "❤️ สุขภาพ +3 , 🧠 สมอง +2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 4,
+            "intelligence": 1,
+            "cash": 2250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_rider_02",
+      "title_th": "มหากาพย์ลูกค้าปักหมุดผิดข้ามคลอง! แถมโทรไปไม่รับสาย",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_gig_food_rider",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณขี่รถมาถึงจุดปักหมุดในแผนที่แต่กลับเป็นทุ่งหญ้ารกร้าง พอโทรหาลูกค้าจึงรู้ว่าหมุดเพี้ยนไปอีกฝั่งของคลองซึ่งต้องขี่อ้อมไปอีก 8 กิโลเมตร!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยอมขี่อ้อมไปส่งให้ถึงมือด้วยรอยยิ้ม ลูกค้าเกรงใจเลยควักทิปใส่ซองให้พิเศษ!",
+          "hint_th": "🪙 ทิปพิเศษ +1,500 ฿ , ✨ แต้มบุญ +4 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 1500,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ถ่ายรูปแจ้งฝ่ายซัพพอร์ตของแอปตามขั้นตอน ได้ทั้งค่ารอบปกติและได้อาหารมื้อนั้นมากินฟรี!",
+          "hint_th": "🪙 ประหยัดค่าข้าว +500 ฿ , ❤️ สุขภาพ +3 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": 1000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_rider_03",
+      "title_th": "ออร์เดอร์ผีหลอกสั่งเก็บเงินสด 1,200 บาท แต่ไปถึงเป็นบ้านร้างและบล็อกเบอร์หนี!",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_gig_food_rider",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ฝันร้ายของไรเดอร์! คุณสำรองจ่ายเงินสดค่ากุ้งเผาและอาหารทะเลไปก่อน 1,200 บาท แต่เมื่อขี่ไปถึงจุดส่งกลับไม่มีคนรับและติดต่อไม่ได้!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รวบรวมหลักฐานแชทและพิกัด GPS ทำเรื่องเคลมเงินคืนจากบริษัทแพลตฟอร์มสำเร็จ 100%!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +4 , 🪙 ได้เงินคืนพร้อมโบนัสชดเชย +500 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โพสต์ขายอาหารชุดนั้นในกลุ่มเพื่อนไรเดอร์/ข้างบ้านในราคาครึ่งเดียวพอได้ทุนคืนบ้าง",
+          "hint_th": "🪙 ขาดทุนเล็กน้อย -400 ฿ , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -400,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 50
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_rider_04",
+      "title_th": "โซ่สเตอร์หย่อนและยางหลังรั่วกลางทาง! ค่าบำรุงรักษามอเตอร์ไซค์ทำมาหากิน",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_gig_food_rider",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วิ่งงานหนักวันละร้อยกว่ากิโลเมตรทำให้ยางหลังเหยียบตะปูรั่วแบนแต๊ดแต๋ และต้องเปลี่ยนถ่ายน้ำมันเครื่องพร้อมชุดโซ่สเตอร์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หัวช่าง] ลงมือปะยางแทงไหม เปลี่ยนถ่ายน้ำมันเครื่อง และตั้งโซ่เอง ประหยัดค่าแรงช่างสุดๆ!",
+          "hint_th": "🪙 ประหยัดค่าซ่อม +1,000 ฿ , 🧠 สมอง +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [
+            "tag_young_mechanic"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข็นเข้าร้านซ่อมมอเตอร์ไซค์ เปลี่ยนยางนอก-ยางในเกรดดีและเช็กเบรกให้ปลอดภัย (-1,500฿)",
+          "hint_th": "🪙 ค่าซ่อมบำรุง -1,500 ฿ , ❤️ สุขภาพ +4 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 2,
+            "cash": -250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_rider_05",
+      "title_th": "ฮีโร่เสื้อเขียว! ช่วยจับโจรวิ่งราวกระเป๋าคุณป้าขณะจอดรอรับงานริมถนน",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_gig_food_rider",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างจอดรถรอเสียงเด้งงานริมถนน คุณเห็นคนร้ายกำลังวิ่งราวกระเป๋าสตางค์ของคุณป้าคนหนึ่งแล้ววิ่งหนีตัดหน้าคุณไป!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "บิดมอเตอร์ไซค์ไล่กวดพร้อมบีบแตรเรียกเพื่อนไรเดอร์มาช่วยล้อมจับโจรส่งตำรวจได้สำเร็จ! ขึ้นข่าวดัง!",
+          "hint_th": "🪙 รางวัลพลเมืองดี +5,000 ฿ , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 5000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รีบเข้าไปช่วยพยุงคุณป้าที่หกล้มและโทรแจ้งสายด่วน 191 พร้อมจำป้ายทะเบียนคนร้ายให้ตำรวจ",
+          "hint_th": "✨ แต้มบุญ +10 , 🧠 สมอง +4 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 7,
+            "cash": 2500,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_const_01",
+      "title_th": "แบกปูนและผูกเหล็กกลางแดดเปรี้ยง 40 องศา! ทดสอบความอึดไซส์งานก่อสร้าง",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_daily_construction",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานเทพื้นคอนกรีตวันนี้เร่งด่วนมาก หัวหน้าโฟร์แมนประกาศว่าถ้าเทปูนเสร็จก่อนห้าโมงเย็น จะจ่ายค่าแรงพิเศษเพิ่มให้ทุกคนคนละ 500 บาท!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โพกผ้าคลุมหน้า ดื่มน้ำเกลือแร่ แล้วลุยแบกปูนผูกเหล็กจนเสร็จทันเวลาเป๊ะ!",
+          "hint_th": "🪙 ค่าแรงพิเศษ +2,000 ฿ , ❤️ สุขภาพ -3 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ลูกหลานคนสู้ชีวิต] พลังกายล้นเหลือ แบกปูนทีละ 2 ถุงชิลล์ๆ จนโฟร์แมนยกให้เป็นหัวหน้าชุด!",
+          "hint_th": "🪙 โบนัสหัวหน้าชุด +3,500 ฿ , ❤️ สุขภาพ +2 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [
+            "flag_working_class_roots"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 3500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "connections": 5,
+            "cash": 2750
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_const_02",
+      "title_th": "ผู้รับเหมาช่วงเชิดเงินค่าแรงงวดสิ้นเดือนหนี! คนงานก่อสร้างรวมตัวประท้วง",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_daily_construction",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ถึงวันจ่ายค่าแรงวิกฤต! ผู้รับเหมาซับคอนแทรคปิดมือถือหนีหายไปพร้อมเงินค่าแรงของคนงานทั้งแคมป์!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เป็นตัวแทนเพื่อนคนงานรวบรวมรายชื่อไปเจรจากับบริษัทเจ้าของโครงการโดยตรง จนยอมจ่ายค่าแรงให้ครบ!",
+          "hint_th": "🪙 ได้เงินค่าแรงครบ +3,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปยื่นเรื่องร้องเรียนที่สำนักงานสวัสดิการและคุ้มครองแรงงานจังหวัดให้ช่วยติดตามเงิน",
+          "hint_th": "🪙 ได้เงินชดเชย +1,500 ฿ , 🧠 สมอง +4 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 1500,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 2250,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_const_03",
+      "title_th": "ช่างปูน-ช่างเชื่อมขาดคน! โอกาสอัปเกรดจากกรรมกรแบกหามเป็น 'ช่างฝีมือค่าแรงสูง'",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_daily_construction",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่างปูกระเบื้องและช่างเชื่อมเหล็กในไซส์งานลาหยุดกะทันหัน นายช่างใหญ่หันมาถามว่ามีใครพอจะปูกระเบื้องฉาบปูนหรือเชื่อมเหล็กเป็นบ้าง?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขันอาสาลงมือฉาบปูนและปูกระเบื้องตามที่เคยแอบครูพักลักจำมา งานเนี๊ยบจนได้ปรับขึ้นค่าแรงรายวัน!",
+          "hint_th": "🪙 ค่าฝีมือช่าง +3,000 ฿ , 🧠 สมอง +5 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอเป็นลูกมือช่วยผสมปูนและส่งอุปกรณ์ให้ช่างใหญ่เพื่อเรียนรู้งานอย่างปลอดภัย",
+          "hint_th": "🪙 ค่าแรงพิเศษ +1,000 ฿ , 🧠 สมอง +3 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 2000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_const_04",
+      "title_th": "อันตรายในไซส์งาน! เศษวัสดุก่อสร้างร่วงลงมาจากนั่งร้านชั้นบน",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_daily_construction",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะเดินผ่านใต้อาคารที่กำลังก่อสร้าง มีท่อนเหล็กและเศษอิฐหลุดร่วงลงมาจากนั่งร้านชั้น 4 ตกใส่จุดที่คุณยืนอยู่พอดี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สวมหมวกนิรภัย (Safety Helmet) และรองเท้าหัวเหล็กตามกฎเป๊ะ รอดพ้นจากอาการบาดเจ็บหัวแตก!",
+          "hint_th": "❤️ สุขภาพ +3 , 🧠 สมอง +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ถอดหมวกเซฟตี้ออกเพราะร้อน ต้องกระโดดหลบฉุกเฉิน! (โอกาสหลบพ้น 50%)",
+          "hint_th": "🎲 โอกาสหลบพ้น 50% (พลาด: บาดเจ็บหัวแตกเย็บหลายเข็ม!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 50,
+            "fail_outcome_text_th": "หลบไม่ทัน! เศษอิฐเฉี่ยวศีรษะและไหล่ ต้องไปทำแผลที่โรงพยาบาลและหยุดงานหลายวัน!",
+            "fail_stat_effects": {
+              "health": -20,
+              "happiness": -10,
+              "intelligence": 0,
+              "connections": 0,
+              "cash": -2000,
+              "merit": 0,
+              "appearance": -3
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_const_05",
+      "title_th": "รับเหมาต่อเติมครัวและทาสีบ้านลูกค้าวันหยุด! จุดเริ่มต้นผู้รับเหมาน้อย",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "job_daily_construction",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เจ้าของบ้านในหมู่บ้านจัดสรรเห็นฝีมือการทำงานของคุณที่ขยันขันแข็ง จึงมาจ้างคุณเป็นการส่วนตัวให้ช่วยทาสีรั้วและซ่อมหลังคาโรงรถในวันอาทิตย์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับงานเหมาทาสีและซ่อมหลังคา เก็บงานละเอียดสะอาดเรียบร้อย รับเงินสดเต็มๆ!",
+          "hint_th": "🪙 กำไรรับเหมา +4,500 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 4500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนเพื่อนคนงานไปช่วยกันทำ แบ่งรายได้กันอย่างยุติธรรม เสร็จไวในครึ่งวัน!",
+          "hint_th": "🪙 ส่วนแบ่งกำไร +2,500 ฿ , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 2500,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 5,
+            "connections": 7,
+            "cash": 3500,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_agri_01",
+      "title_th": "ฤดูเก็บเกี่ยวข้าวหอมมะลิและผลไม้! ราคาตลาดปีนี้พุ่งสูงเป็นประวัติการณ์",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "job_agricultural_helper",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ทุ่งนาสีทองอร่ามและสวนผลไม้ที่บ้านเกิดพร้อมเก็บเกี่ยวแล้ว! ปีนี้สภาพอากาศเป็นใจทำให้ผลผลิตอุดมสมบูรณ์และพ่อค้าคนกลางมาขอรับซื้อถึงหน้าสวน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลุยลงแขกเกี่ยวข้าวและคัดเกรดผลไม้ส่งขาย ได้ส่วนแบ่งกำไรก้อนงาม!",
+          "hint_th": "🪙 ส่วนแบ่งผลผลิต +6,000 ฿ , ❤️ สุขภาพ +3 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ถ่ายรูปโพสต์ขายผลไม้สดจากสวนตรงถึงผู้บริโภคทางออนไลน์ ไม่โดนพ่อค้าคนกลางกดราคา!",
+          "hint_th": "🪙 กำไรขายตรง +10,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +5 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 8000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_agri_02",
+      "title_th": "ภัยแล้งและหนอนศัตรูพืชระบาดหนัก! ทดสอบภูมิปัญญาเกษตรกร",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "job_agricultural_helper",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ฝนทิ้งช่วงนานผิดปกติ แถมมีแมลงศัตรูพืชบุกกัดกินใบพืชในแปลงเกษตรจนเสี่ยงเสียหายทั้งสวน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "หมักน้ำส้มควันไม้และสมุนไพรสะเดาฉีดพ่น ปลอดภัยไร้สารเคมีตกค้างและรักษาผลผลิตไว้ได้!",
+          "hint_th": "❤️ สุขภาพ +4 , 🧠 สมอง +5 , 🪙 ประหยัดค่าปุ๋ยยา +2,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ฉีดพ่นยาฆ่าแมลงเคมีเข้มข้นโดยไม่ใส่หน้ากากป้องกัน กำจัดแมลงได้แต่สูดสารเคมีเข้าปอด!",
+          "hint_th": "🪙 รักษาผลผลิต +2,500 ฿ , ❤️ สุขภาพ -8 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -8,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 1,
+            "intelligence": 3,
+            "cash": 2250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_agri_03",
+      "title_th": "รถไถเดินตาม (ควายเหล็ก) เครื่องน็อกกลางทุ่งนา!",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "job_agricultural_helper",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะกำลังไถพรวนดินเตรียมแปลงเพาะปลูก เครื่องยนต์ดีเซลสูบเดียวเกิดสำลักควันดำและดับสนิทอยู่กลางขี้โคลน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ถอดหัวฉีดและกรองโซล่าออกมาล้างทำความสะอาด แล้วหมุนมือควงสตาร์ทติดชึ่งดังกระหึ่ม!",
+          "hint_th": "🧠 สมอง +4 , ❤️ สุขภาพ +3 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เดินไปตามลุงช่างประจำหมู่บ้านมาช่วยดูเครื่อง และเลี้ยงน้ำชาตอบแทนน้ำใจลุง (-500฿)",
+          "hint_th": "🪙 ค่าซ่อม -500 ฿ , 🤝 เส้นสาย +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": -250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_agri_04",
+      "title_th": "แปรรูปผลผลิตล้นตลาด! ทำกล้วยตากพลังงานแสงอาทิตย์และมะม่วงกวน OTOP",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "job_agricultural_helper",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปีนี้ผลไม้สุกพร้อมกันทุกสวนจนราคาหน้าสวนตกต่ำ หากขายผลสดจะได้ราคาถูกมาก คุณจึงคิดหาวิธีเพิ่มมูลค่าผลผลิต",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แปรรูปเป็นผลไม้อบแห้งและกวนบรรจุแพ็กเกจจิ้งสะอาดสะอ้าน ขายได้ราคาสูงขึ้น 3 เท่า!",
+          "hint_th": "🪙 กำไรแปรรูป +5,500 ฿ , 🧠 สมอง +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 3,
+            "cash": 5500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำผลไม้ส่วนที่เหลือไปแจกจ่ายเพื่อนบ้านและถวายวัดในหมู่บ้าน ได้ทั้งบุญและน้ำใจไมตรี",
+          "hint_th": "✨ แต้มบุญ +12 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 2750,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_agri_05",
+      "title_th": "อบรมโครงการเกษตรทฤษฎีใหม่ & ระบบน้ำหยดอัจฉริยะที่ศูนย์เรียนรู้ระดับอำเภอ!",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "job_agricultural_helper",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เกษตรอำเภอจัดอบรมฟรีเรื่องการขุดสระกักเก็บน้ำ การปลูกพืชผสมผสาน และการใช้โซล่าเซลล์สูบน้ำเพื่อลดต้นทุนน้ำมัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าอบรมและนำกลับมาวางระบบน้ำหยดในสวน ลดแรงงานและเพิ่มผลผลิตได้ตลอดปี!",
+          "hint_th": "🪙 รายได้เพิ่ม +4,000 ฿ , 🧠 สมอง +6 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 4000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แลกเปลี่ยนพันธุ์ไม้และกิ่งพันธุ์ทุเรียน/อะโวคาโดพันธุ์ดีกับเพื่อนเกษตรกรในงาน",
+          "hint_th": "🤝 เส้นสาย +6 , 😊 ความสุข +4 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 2000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_free_01",
+      "title_th": "ศึกแก้ด่วน 'Final_แก้ครั้งที่_18_Finalจริงๆ.psd'! ลูกค้าขอรื้อบรีฟตอนตีสอง",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_freelance_coder_graphic",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ส่งดราฟต์งานให้ลูกค้าตรวจเรียบร้อยแล้ว แต่ตอนตีสองลูกค้ากลับไลน์มาบอกว่า 'ขอลองเปลี่ยนโทนสีใหม่หมด ขอโลโก้ใหญ่ขึ้น 300% และขอไฟล์เช้านี้ 8 โมงนะ!'",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กางใบเสนอราคาแจ้งเงื่อนไขแก้เกินโควตาอย่างมืออาชีพ คิดค่า Rush Fee แก้ด่วนเพิ่ม +5,000 บาท!",
+          "hint_th": "🪙 ค่าแก้ด่วน +5,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ยอมอดนอนโต้รุ่งทำให้ฟรีเพราะเกรงใจลูกค้า จนปวดหลังและขอบตาดำเป็นหมีแพนด้า!",
+          "hint_th": "🤝 เส้นสาย +3 , ❤️ สุขภาพ -5 , 😊 ความสุข -4 , ⚠️ เสี่ยงติด [ออฟฟิศซินโดรม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_office_syndrome"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -5,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 2500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_free_02",
+      "title_th": "ลูกค้าเทงานกลางคันหลังส่งดราฟต์! บทเรียนมัดจำ 50% และใส่ลายน้ำ",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_freelance_coder_graphic",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผู้ว่าจ้างรายใหม่เร่งให้คุณส่งงานตัวอย่างไปให้ดูก่อน พอคุณส่งไปเสร็จกลับอ่านไม่ตอบและทำท่าจะชิ่งหนีไม่จ่ายเงินงวดสุดท้าย!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ดีที่เก็บมัดจำไว้ก่อน 50% และฝังลายน้ำ/ล็อกโค้ดไว้ ลูกค้าเลยต้องยอมโอนเงินที่เหลือมาปลดล็อก!",
+          "hint_th": "🪙 รับเงินครบ +8,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเทมเพลตโค้ด/ดีไซน์ที่ทำไว้ไปดัดแปลงขายในตลาด Marketplace ต่างประเทศ ทำเงินได้มากกว่าเดิมอีก!",
+          "hint_th": "🪙 รายได้ Passive +10,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 6,
+            "cash": 9000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_free_03",
+      "title_th": "โปรเจกต์ใหญ่จากลูกค้าต่างชาติ! จ่ายค่าจ้างเป็นเงินดอลลาร์เรตอินเตอร์",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_freelance_coder_graphic",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บริษัทสตาร์ทอัพจากต่างประเทศเห็นพอร์ตโฟลิโอของคุณบนแพลตฟอร์มออนไลน์ จึงติดต่อจ้างคุณทำโปรเจกต์ด่วนด้วยงบประมาณสูงกว่าเรตไทย 3 เท่า!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีใบรับรองภาษาอังกฤษ] บรีฟงานภาษาอังกฤษคล่องปร๋อ ส่งงานเป๊ะรับเงินดอลลาร์ก้อนโต!",
+          "hint_th": "🪙 ค่าจ้างอินเตอร์ +25,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +6 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_cert_english"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใช้ AI ช่วยแปลภาษาและลุยเขียนโค้ด/ออกแบบจนส่งมอบงานผ่านฉลุย!",
+          "hint_th": "🪙 ค่าจ้าง +15,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 20000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_free_04",
+      "title_th": "ไฟดับกระชากตอนกำลังเรนเดอร์งาน/คอมไพล์โค้ด! ลืมกด Ctrl+S หรือเปล่า?",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_freelance_coder_graphic",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เปรี้ยง! เสียงฟ้าร้องดังสนั่นพร้อมไฟดับทั้งซอยในจังหวะที่คุณกำลังปั่นงานชิ้นสำคัญใกล้เสร็จ 99% หน้าจอคอมพิวเตอร์ดับวูบลงต่อหน้าต่อตา!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เด็กเนิร์ดคอม] ตั้งระบบ Auto-Save บน Cloud และมีเครื่องสำรองไฟ UPS กู้ไฟล์กลับมาได้ครบ 100%!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +6 , 🪙 ส่งงานทันรับโบนัส +4,000 ฿",
+          "req_stats": {},
+          "req_flags": [
+            "tag_computer_nerd"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 4000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หอบโน้ตบุ๊กวิ่งไปนั่งปั่นงานต่อที่ร้านกาแฟ 24 ชั่วโมงจนเสร็จทันเส้นตายแบบหืดจับ (-300฿)",
+          "hint_th": "🪙 ค่ากาแฟ -300 ฿ , 🧠 สมอง +3 , ❤️ สุขภาพ -3 , 😊 ความสุข +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 1,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": -300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 4,
+            "intelligence": 4,
+            "cash": 1850
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_free_05",
+      "title_th": "เว็บไซต์/ระบบของลูกค้าล่มวันเปิดแคมเปญใหญ่! กู้วิกฤต Server Down",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_freelance_coder_graphic",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ลูกค้าโทรมาเสียงหลง! คนแห่เข้าเว็บไซต์พร้อมกันหลักแสนคนจนเซิร์ฟเวอร์ค้าง หากกู้ระบบกลับมาภายใน 1 ชั่วโมงได้ ลูกค้าพร้อมจ่ายทิปงามๆ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขยาย Cloud Server และแก้คอขวด Database กลับมาออนไลน์ได้ใน 20 นาที กลายเป็นฟรีแลนซ์มือทอง!",
+          "hint_th": "🪙 ทิปกู้วิกฤต +12,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทำหน้าเว็บสำรอง (Landing Page) รับออร์เดอร์ชั่วคราวให้ลูกค้าไม่เสียยอดขายระหว่างรอเซิร์ฟเวอร์หลัก",
+          "hint_th": "🪙 ค่าดูแลพิเศษ +6,000 ฿ , 🧠 สมอง +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 9000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_stream_01",
+      "title_th": "คลิปช็อตเด็ดกลายเป็นไวรัลล้านวิวข้ามคืน! ยอดผู้ติดตามพุ่งทะลุแสน",
+      "min_age": 15,
+      "max_age": 55,
+      "category": "job_specific",
+      "req_job_id": "job_esports_streamer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช็อตฮาๆ และจังหวะโชว์สกิลเทพในไลฟ์สตรีมเมื่อคืนของคุณ ถูกชาวเน็ตตัดไปลงโซเชียลจนมียอดวิวทะลุ 2 ล้านวิวภายในชั่วข้ามคืน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบเปิดไลฟ์สดต่อยอดกระแส ต้อนรับคนดูใหม่และรับยอดโดเนท (Donate) รัวๆ จนเสียงแจ้งเตือนค้าง!",
+          "hint_th": "🪙 ยอดโดเนท +18,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตัดต่อคลิปไฮไลต์ลงทุกแพลตฟอร์มพร้อมเปิดรับสปอนเซอร์เข้าช่องอย่างเป็นทางการ!",
+          "hint_th": "🪙 ค่าโฆษณา +15,000 ฿ , 🧠 สมอง +4 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 2,
+            "connections": 9,
+            "cash": 16500,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_stream_02",
+      "title_th": "สุลต่านสายเปย์บุกช่อง! กดส่งของขวัญใหญ่รัวๆ กลางไลฟ์สด",
+      "min_age": 15,
+      "max_age": 55,
+      "category": "job_specific",
+      "req_job_id": "job_esports_streamer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างกำลังไลฟ์พูดคุยและเล่นเกม มีแอคเคาท์ปริศนาระดับ VIP เข้ามาในห้องแชท แล้วกดส่งเอฟเฟกต์ของขวัญชิ้นใหญ่สุดของแพลตฟอร์มให้คุณ 10 ชิ้นรวด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กล่าวขอบคุณเอ่ยชื่อสุลต่านอย่างประทับใจและเชิญมาร่วมจอยตี้เล่นเกมด้วยกันในไลฟ์!",
+          "hint_th": "🪙 เงินโดเนทสุทธิ +25,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[หัวศิลป์/กล้าแสดงออก] ร้องเพลงแต่งสดและเต้นท่าขอบคุณสุดฮา จนคนดูทั้งห้องแห่โดเนทสมทบเพิ่มอีก!",
+          "hint_th": "🪙 เงินโดเนทรวม +30,000 ฿ , 😊 ความสุข +10 , 🤝 เส้นสาย +9",
+          "req_stats": {},
+          "req_flags": [
+            "tag_artistic_expressive"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "connections": 9,
+            "cash": 27500,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_stream_03",
+      "title_th": "ดราม่าทัวร์ลงกลางไลฟ์! เกรียนคีย์บอร์ดเข้ามาปั่นคอมเมนต์ท็อกซิก",
+      "min_age": 15,
+      "max_age": 55,
+      "category": "job_specific",
+      "req_job_id": "job_esports_streamer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีกลุ่มเกรียนคีย์บอร์ดเข้ามาพิมพ์ปั่นประสาทและโจมตีคุณในช่องแชทสด เพื่อยั่วให้คุณหลุดพูดคำหยาบหรือหัวร้อนกลางสตรีม!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นิ่งสงบสยบความเคลื่อนไหว ตอบกลับด้วยรอยยิ้มสุภาพและให้แอดมินกดแบนเงียบๆ คนดูชื่นชมวุฒิภาวะสุดๆ!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +7 , 😊 ความสุข +4 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หัวร้อนด่ากราดกลับกลางไลฟ์ จนถูกตัดคลิปไปแขวนเกิดดราม่าทัวร์ลงและสปอนเซอร์ถอนตัว! (-8,000฿)",
+          "hint_th": "🪙 เสียรายได้สปอนเซอร์ -8,000 ฿ , 😊 ความสุข -8 , 🤝 เส้นสาย -6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": -6,
+            "cash": -8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": -2,
+            "intelligence": 3,
+            "connections": 1,
+            "cash": -4000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_stream_04",
+      "title_th": "เว็บพนันออนไลน์ติดต่อขอลงสปอนเซอร์แปะโลโก้! เสนอเงินก้อนโตล่อใจ",
+      "min_age": 15,
+      "max_age": 55,
+      "category": "job_specific",
+      "req_job_id": "job_esports_streamer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีอีเมลปริศนาติดต่อขอจ้างแปะป้ายโฆษณาเว็บสีเทาในไลฟ์ของคุณเพียงเดือนเดียว โดยเสนอจ่ายเงินสดสูงถึง 50,000 บาท!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธทันทีอย่างเด็ดขาด! รักษาภาพลักษณ์ช่องสีขาว จนแบรนด์อุปกรณ์ไอทีชั้นนำเข้ามาเป็นสปอนเซอร์แทน!",
+          "hint_th": "🪙 สปอนเซอร์ถูกกฎหมาย +20,000 ฿ , ✨ แต้มบุญ +12 , 🤝 เส้นสาย +8 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หน้ามืดรับเงินสีเทา! (โอกาสโดนตำรวจไซเบอร์จับและช่องบิน 60%)",
+          "hint_th": "🎲 โอกาสรอด 40% (รอด: +50,000 ฿ | พลาด: โดนปรับหนัก -60,000 ฿ และเสียชื่อเสียง!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 50000,
+            "merit": -15,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 40,
+            "fail_outcome_text_th": "ตำรวจไซเบอร์ออกหมายเรียกข้อหาชักชวนเล่นพนัน! ช่องโดนแบนและต้องเสียค่าปรับอ่วม!",
+            "fail_stat_effects": {
+              "health": -5,
+              "happiness": -20,
+              "intelligence": 0,
+              "connections": -15,
+              "cash": -60000,
+              "merit": -20,
+              "appearance": -5
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "connections": 4,
+            "cash": 35000,
+            "merit": -1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_stream_05",
+      "title_th": "ลงแข่งขันทัวร์นาเมนต์ E-Sports ชิงแชมป์ระดับประเทศ!",
+      "min_age": 15,
+      "max_age": 55,
+      "category": "job_specific",
+      "req_job_id": "job_esports_streamer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณและทีมสตรีมเมอร์ได้รับเชิญเข้าร่วมการแข่งขัน E-Sports รายการใหญ่ท่ามกลางผู้ชมในฮอลล์และทางออนไลน์นับแสนคน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีเซ็ตคอมเกมมิ่งเทพ] ซ้อมแผนมาอย่างดี กดคอมโบสังหารคว้าถ้วยแชมป์และเงินรางวัลชนะเลิศ!",
+          "hint_th": "🪙 เงินรางวัลแชมป์ +35,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +10 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_pro_streamer_gear"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 4,
+            "connections": 10,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับหน้าที่เป็นนักพากย์ (Caster) พากย์การแข่งขันมันส์หยดติ๋งจนคนดูติดใจทั้งประเทศ!",
+          "hint_th": "🪙 ค่าตัวนักพากย์ +12,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 8,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 23500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_taxi_01",
+      "title_th": "แจ็กพอตผู้โดยสารต่างชาติที่สนามบินสุวรรณภูมิ/ภูเก็ต! เหมารถไปส่งต่างจังหวัด",
+      "min_age": 22,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_taxi_app_driver",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณกดรับงานที่จุดรับส่งสนามบิน พบนักท่องเที่ยวชาวต่างชาติกระเป๋าใบใหญ่ต้องการเหมารถไปส่งโรงแรมตากอากาศพร้อมทิปงามๆ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีใบรับรองภาษาอังกฤษ] พูดแนะนำสถานที่ท่องเที่ยวเป็นภาษาอังกฤษตลอดทาง ลูกค้าประทับใจเหมาใช้บริการต่อทั้งสัปดาห์!",
+          "hint_th": "🪙 รายได้เหมา VIP +15,000 ฿ , 🤝 เส้นสาย +7 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "flag_cert_english"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขับรถนุ่มนวลปลอดภัย เปิดแอร์เย็นฉ่ำและช่วยยกกระเป๋า ได้ค่ารอบใหญ่พร้อมทิปพิเศษ!",
+          "hint_th": "🪙 ค่ารอบและทิป +6,000 ฿ , 😊 ความสุข +5 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": 10500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_taxi_02",
+      "title_th": "ผู้โดยสารลืมกระเป๋าเอกสารและซองเงินสด 50,000 บาทไว้ที่เบาะหลัง!",
+      "min_age": 22,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_taxi_app_driver",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังจากส่งผู้โดยสารนักธุรกิจลงหน้าตึกสำนักงาน คุณหันไปเช็กเบาะหลังแล้วพบกระเป๋าหนังใบหรูที่ข้างในมีซองเงินสดปึกใหญ่และเอกสารสัญญาสำคัญ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบติดต่อสถานีวิทยุ สวพ.91 / แจ้งแอปนำส่งคืนเจ้าของถึงมือ! เจ้าของซาบซึ้งใจมอบเงินรางวัลนำส่งคืนให้!",
+          "hint_th": "🪙 รางวัลคนดี +10,000 ฿ , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +8 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 10000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบเก็บเงินไว้เอง! (มีกล้องวงจรปิดและพิกัด GPS ในแอป โอกาสโดนตำรวจตามจับ 80%!)",
+          "hint_th": "🎲 โอกาสรอด 20% (พลาด: โดนจับดำเนินคดีเสียค่าปรับ -30,000 ฿ และเสียแต้มบุญหนัก!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 50000,
+            "merit": -25,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 20,
+            "fail_outcome_text_th": "ระบบ GPS ของแอประบุตัวรถชัดเจน! ตำรวจตามมาถึงบ้าน ต้องคืนเงินพร้อมเสียค่าปรับและเสียประวัติ!",
+            "fail_stat_effects": {
+              "health": -4,
+              "happiness": -15,
+              "intelligence": 0,
+              "connections": -10,
+              "cash": -30000,
+              "merit": -30,
+              "appearance": -4
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "connections": 4,
+            "cash": 30000,
+            "merit": -2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_taxi_03",
+      "title_th": "รับผู้โดยสารสายปาร์ตี้จากสถานบันเทิงตอนตีสอง! อาการพะอืดพะอมน่าเป็นห่วง",
+      "min_age": 22,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_taxi_app_driver",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ค่ารอบตอนดึกแพงกว่าปกติ 2 เท่า แต่ผู้โดยสารที่เพิ่งขึ้นมานั่งเบาะหลังมีอาการเมาหนักและทำท่าจะอาเจียนใส่เบาะรถของคุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เตรียมถุงพลาสติก ยาดม และทิชชูเปียกไว้พร้อมที่หลังเบาะ ส่งถึงบ้านปลอดภัยแถมเพื่อนผู้โดยสารให้ทิปหนัก!",
+          "hint_th": "🪙 ค่ารอบและทิป +2,500 ฿ , 🧠 สมอง +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไม่ได้เตรียมถุงไว้ ผู้โดยสารอาเจียนเลอะพรมรถ ต้องปิดรับงานไปล้างอบโอโซนแต่ผู้โดยสารจ่ายค่าล้างให้",
+          "hint_th": "🪙 ค่าชดเชยหักค่าล้าง +500 ฿ , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 2,
+            "cash": 1500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_taxi_04",
+      "title_th": "ราคาน้ำมันเบนซิน/ดีเซลพุ่งทะลุเพดาน! บริหารต้นทุนเชื้อเพลิงและจุดจอดรถ",
+      "min_age": 22,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_taxi_app_driver",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ต้นทุนค่าน้ำมันกินกำไรรายวันไปเกือบครึ่ง! คนขับรถผ่านแอปต้องหาวิธีบริหารต้นทุนเชื้อเพลิงและเส้นทางวิ่งรถให้คุ้มค่าที่สุด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "วางแผนจุดจอดรอออร์เดอร์ตามห้างและสถานีรถไฟฟ้า ไม่ขับรถตีรถเปล่า ประหยัดน้ำมันได้ปีละเป็นหมื่น!",
+          "hint_th": "🪙 ประหยัดค่าน้ำมัน +8,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำรถไปจูนเครื่องยนต์และเช็กลมยางสม่ำเสมอให้ประหยัดเชื้อเพลิงสูงสุด",
+          "hint_th": "🪙 ประหยัดเงิน +5,000 ฿ , 🧠 สมอง +3 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 4,
+            "intelligence": 4,
+            "cash": 6500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_taxi_05",
+      "title_th": "นาทีชีวิตบนรถ! หญิงท้องแก่ใกล้คลอดโบกรถให้ช่วยไปส่งโรงพยาบาลด่วน",
+      "min_age": 22,
+      "max_age": 70,
+      "category": "job_specific",
+      "req_job_id": "job_taxi_app_driver",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างวิ่งรถผ่านชุมชน สามีภรรยาคู่หนึ่งโบกรถของคุณด้วยความตื่นตระหนก เพราะภรรยากำลังน้ำเดินปวดท้องคลอดท่ามกลางการจราจรที่ติดขัด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดไฟฉุกเฉินและประสานงานตำรวจจราจรโครงการพระราชดำริ เปิดทางส่งถึงมือหมอปลอดภัยทั้งแม่และลูก!",
+          "hint_th": "✨ แต้มบุญ +25 , 🤝 เส้นสาย +8 , 😊 ความสุข +12 , 🪙 สินน้ำใจ +3,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 3000,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไม่คิดค่าโดยสารแม้แต่บาทเดียวและอวยพรให้เด็กน้อยสุขภาพแข็งแรง!",
+          "hint_th": "✨ แต้มบุญ +30 , 😊 ความสุข +15 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 14,
+            "connections": 7,
+            "cash": 1500,
+            "merit": 28
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_gen_01",
+      "title_th": "เทศกาลสงกรานต์ / ปีใหม่! ค่าแรงพาร์ทไทม์และค่ารอบวิ่งงานคูณ 2 เท่า",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "gig_general",
+      "req_job_id": "any_part_time_or_gig",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงวันหยุดยาวเทศกาลใหญ่ คนส่วนใหญ่เดินทางกลับต่างจังหวัดหรือออกไปเที่ยว แต่คนที่ยอมอยู่ทำงานในช่วงวันหยุดจะได้รับค่าแรง 2-3 เท่า!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "คว้าโอกาสทอง! ลุยทำงานช่วงวันหยุดยาวโกยรายได้พิเศษก้อนโตเข้ากระเป๋า!",
+          "hint_th": "🪙 รายได้ช่วงเทศกาล +6,000 ฿ , ❤️ สุขภาพ -2 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หยุดพักผ่อนฉลองเทศกาลกับครอบครัวและเพื่อนฝูง ชาร์จพลังกายพลังใจให้เต็มอิ่ม",
+          "hint_th": "❤️ สุขภาพ +5 , 😊 ความสุข +8 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "connections": 3,
+            "cash": 3000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_gen_02",
+      "title_th": "เรียนไปด้วยทำงานพาร์ทไทม์ไปด้วย! ตารางสอบชนกับกะทำงาน",
+      "min_age": 15,
+      "max_age": 25,
+      "category": "gig_general",
+      "req_job_id": "any_part_time_or_gig",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความท้าทายของคนสู้ชีวิตที่ทำงานควบคู่กับการเรียน! สัปดาห์หน้ามีสอบปลายภาคสำคัญ แต่ตารางงานที่คุณรับไว้ก็แน่นเอี๊ยด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขอแลกกะกับเพื่อนร่วมงานล่วงหน้า และจัดตารางอ่านหนังสือตอนเช้าตรู่ ได้ทั้งเงินและเกรดดี!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +4 , 🪙 รายได้ไม่เสีย +1,500 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หยุดรับงานชั่วคราว 1 สัปดาห์เพื่อทุ่มเทให้กับการสอบอย่างเต็มร้อย",
+          "hint_th": "🧠 สมอง +8 , ❤️ สุขภาพ +2 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 8,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 7,
+            "connections": 2,
+            "cash": 750
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_gen_03",
+      "title_th": "ประกาศรับสมัครงานออนไลน์ 'กดรับออร์เดอร์-พับถุงกระดาษ' รายได้วันละ 1,000 บาท!",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "gig_general",
+      "req_job_id": "any_part_time_or_gig",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณเห็นโฆษณาหารายได้เสริมทำที่บ้าน แค่กดคอนเฟิร์มยอดสินค้าในแอปได้ค่าคอมมิชชันง่ายๆ แต่แอดมินบอกให้โอนเงินค่าเปิดรหัสสมาชิกก่อน 3,000 บาท!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รู้ทันกลโกงมิจฉาชีพหลอกทำงานออนไลน์! งานที่ได้เงินจริงต้องไม่ให้เราโอนเงินไปก่อนเด็ดขาด!",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +4 , ✨ แต้มบุญ +3 (แคปหน้าจอเตือนภัยเพื่อนๆ!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หลงเชื่อโอนเงินไปเปิดรหัส และโดนหลอกให้โอนเพิ่มเรื่อยๆ จนสูญเงินเก็บ! (-8,000฿)",
+          "hint_th": "🪙 ถูกมิจฉาชีพหลอก -8,000 ฿ , 😊 ความสุข -8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": -2,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": -4000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_gen_04",
+      "title_th": "สมัครประกันสังคมมาตรา 40 สำหรับแรงงานอิสระ/ฟรีแลนซ์/ไรเดอร์!",
+      "min_age": 15,
+      "max_age": 65,
+      "category": "gig_general",
+      "req_job_id": "any_part_time_or_gig",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เนื่องจากคนทำงานพาร์ทไทม์และอาชีพอิสระไม่มีสวัสดิการบริษัท รัฐบาลจึงเปิดให้สมัครผู้ประกันตนมาตรา 40 เพื่อรับเงินทดแทนการขาดรายได้เวลาเจ็บป่วยและเงินออมชราภาพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สมัครและส่งเงินสมทบทางเลือกสูงสุด คุ้มครองทั้งค่าชดเชยนอน รพ. และมีเงินก้อนยามเกษียณ! (-1,200฿)",
+          "hint_th": "🪙 ค่าสมทบรายปี -1,200 ฿ , ❤️ สุขภาพ +4 , 🧠 สมอง +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": -1200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เมื่อเจ็บป่วยระหว่างปี จึงได้รับเงินทดแทนการขาดรายได้จากประกันสังคมมาช่วยทันเวลา!",
+          "hint_th": "🪙 เงินทดแทน +3,000 ฿ , ❤️ สุขภาพ +3 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 5,
+            "intelligence": 2,
+            "cash": 900
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gig_gen_05",
+      "title_th": "งานอีเวนต์ Staff คอนเสิร์ตและงานแสดงสินค้าระดับประเทศ 3 วันรวด!",
+      "min_age": 15,
+      "max_age": 55,
+      "category": "gig_general",
+      "req_job_id": "any_part_time_or_gig",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ออร์แกไนเซอร์เปิดรับสมัครทีมงานพาร์ทไทม์ (Event Staff / MC / Pretty) ดูแลบูธและตรวจบัตรหน้างานคอนเสิร์ตใหญ่ที่อิมแพ็ค/ไบเทค จ่ายเงินสดทันทีหลังจบงาน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลุยเป็น Staff ประสานงานเบื้องหลัง ได้ทั้งค่าจ้างก้อนงามและได้ดูคอนเสิร์ตศิลปินดังฟรี!",
+          "hint_th": "🪙 ค่าจ้างอีเวนต์ +3,500 ฿ , 😊 ความสุข +7 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 3500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[หน้าตาดี / หัวศิลป์] รับงานเป็นพิธีกร MC เชียร์สินค้าหน้าบูธ ค่าตัวเรตพิเศษวันละ 2,500 บาท!",
+          "hint_th": "🪙 ค่าตัว MC +7,500 ฿ , 🤝 เส้นสาย +8 , ✨ หน้าตา +3 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [
+            "tag_artistic_expressive"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 7500,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 7,
+            "cash": 5500,
+            "appearance": 2
+          }
+        }
+      ]
+    }
+  ]
+}

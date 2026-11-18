@@ -1,0 +1,3825 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Phase4_YoungAdult",
+  "phase_id": "phase_4_young_adult",
+  "age_range": {
+    "min_age": 18,
+    "max_age": 35
+  },
+  "total_events": 53,
+  "quota_breakdown": {
+    "total": 53,
+    "age_18_to_34_per_year": 3,
+    "age_35": 2,
+    "shared_total": 42,
+    "poor_class_1_2_total": 4,
+    "rich_class_4_5_total": 4
+  },
+  "events": [
+    {
+      "event_id": "evt_p4_age18_01",
+      "title_th": "ก้าวแรกสู่วัย 18 ปีบริบูรณ์! ย้ายเข้าหอพักนักศึกษา / ห้องเช่าแรกในชีวิต",
+      "trigger_age": 18,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ตั้งแต่อายุ 18 ปีเป็นต้นไป คุณต้องเริ่มรับผิดชอบค่าครองชีพด้วยตัวเอง! วันแรกของการจัดของเข้าห้องพัก คุณจะจัดการเรื่องที่อยู่อาศัยอย่างไร?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "หารค่าห้องพักพัดลม/แอร์อยู่กับรูมเมทเพื่อประหยัดค่าใช้จ่ายและมีเพื่อนช่วยดูแล",
+          "hint_th": "🪙 ประหยัดเงิน +2,000 ฿ , 🤝 เส้นสาย +4 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[คนกรุงเทพฯ แต่กำเนิด] อยู่บ้านพ่อแม่ไปก่อนแล้วนั่งรถไฟฟ้าไปเรียน/ทำงาน ประหยัดค่าหอพักได้ก้อนโต!",
+          "hint_th": "🪙 ประหยัดค่าหอ +6,000 ฿ , ❤️ สุขภาพ +2 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [
+            "flag_bkk_native"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เช่าห้องอยู่คนเดียวเป็นส่วนตัว จัดมุมโต๊ะอ่านหนังสือและทำงานอย่างสงบ (-2,500฿)",
+          "hint_th": "🪙 เงินสด -2,500 ฿ , 🧠 สมอง +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": -2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age18_02",
+      "title_th": "กิจกรรมรับน้องเฟรชชี่ปี 1 & คืนประกวดดาว-เดือนมหาวิทยาลัย!",
+      "trigger_age": 18,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เปิดเทอมวันแรกของชีวิตวัยหนุ่มสาว! รุ่นพี่จัดกิจกรรมสันทนาการเต้นเพลงรับน้อง คล้องป้ายชื่อ และคัดตัวแทนประกวดดาว-เดือนคณะ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าร่วมกิจกรรมรับน้องและผูกสายสิญจน์บายศรีสู่ขวัญ ได้เพื่อนใหม่ครบทุกสาขา!",
+          "hint_th": "🤝 เส้นสาย +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงประกวดดาว-เดือน / ทูตกิจกรรมคณะ โชว์ความสามารถพิเศษจนดังข้ามคณะ!",
+          "hint_th": "🤝 เส้นสาย +8 , ✨ หน้าตา +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_artistic_expressive"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "สำหรับคนไม่ได้เรียนต่อมหาลัย ไปร่วมงานเลี้ยงต้อนรับพนักงานใหม่ทำความรู้จักพี่ๆ ที่ทำงาน",
+          "hint_th": "🤝 เส้นสาย +5 , 🧠 สมอง +2 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age18_03_poor",
+      "title_th": "หอบกระเป๋าเดินทางใบใหญ่จากบ้านเกิดเข้าเมืองหลวง!",
+      "trigger_age": 18,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แม่ยัดห่อข้าวเหนียวหมูทอดและเงินก้นถุงใส่มือคุณที่สถานีขนส่ง น้ำตาซึมบอกให้คุณตั้งใจเรียนและตั้งใจทำงานในเมืองใหญ่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ก้มกราบแทบตักแม่ สัญญาว่าจะสู้ไม่ถอยและส่งเงินกลับมาดูแลที่บ้านให้ได้!",
+          "hint_th": "✨ แต้มบุญ +6 , 🧠 สมอง +3 , ❤️ สุขภาพ +2 , 💪 ได้รับป้าย [ลูกหลานคนสู้ชีวิต]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_working_class_roots"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ติดต่อรุ่นพี่คนบ้านเดียวกันที่มาทำงานในเมืองก่อนแล้ว ให้ช่วยแนะนำที่พักและงานพาร์ทไทม์",
+          "hint_th": "🤝 เส้นสาย +6 , 🪙 ประหยัดเงิน +1,500 ฿ , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 750,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age19_01",
+      "title_th": "ศึกสอบมิดเทอมมหาโหด! กองชีทสรุปใต้ตึกคณะและมาม่าต้มยำกุ้ง",
+      "trigger_age": 19,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่วัย 19 ปี ข้อสอบระดับอุดมศึกษาและการประเมินผลงานเข้มข้นขึ้นมาก ร้านถ่ายเอกสารหน้ามอคิวยาวเหยียดด้วยคนที่มาซีร็อกซ์ชีทสรุปเทพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จับกลุ่มติวโต้รุ่งที่หอสมุด 24 ชั่วโมง ผลัดกันเก็งข้อสอบจนรอดตายยกแก๊ง!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +4 , ❤️ สุขภาพ -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 2,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[หนอนหนังสือ] ทำสรุป Short Note ลายมือสวยขายให้เพื่อนๆ ในรุ่น ได้ทั้งเกรด A และได้เงินค่าขนม!",
+          "hint_th": "🪙 รายได้ +1,500 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [
+            "tag_bookworm"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 5,
+            "cash": 1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "สำหรับคนทำงานเต็มตัว ลุยฝึกทักษะหน้างานจนผ่านโปรและได้ปรับฐานค่าแรงเพิ่ม!",
+          "hint_th": "🪙 โบนัสพิเศษ +2,000 ฿ , 🧠 สมอง +4 , ❤️ สุขภาพ -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age19_02",
+      "title_th": "ดราม่ารูมเมท / เพื่อนข้างห้องเปิดเพลงเสียงดังและไม่ยอมล้างจาน!",
+      "trigger_age": 19,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การใช้ชีวิตในหอพักต้องเจอกับปัญหาคลาสสิก เมื่อรูมเมทหรือข้างห้องกินเสร็จแล้วแช่จานทิ้งไว้เป็นอาทิตย์ แถมเปิดเพลงเบสหนักตอนเที่ยงคืน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งข้อตกลงเวรทำความสะอาดและเวลาปิดไฟอย่างชัดเจนด้วยเหตุผล",
+          "hint_th": "🧠 สมอง +3 , 🤝 เส้นสาย +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใส่หูฟังตัดเสียงรบกวนแล้วปล่อยวาง เอาเวลาไปโฟกัสปั่นงานของตัวเอง",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เคาะประตูระเบิดอารมณ์ด่ากราดกลางดึกจนมองหน้ากันไม่ติด!",
+          "hint_th": "😊 ความสุข -3 , 🤝 เส้นสาย -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": -4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age19_03_rich",
+      "title_th": "คุณพ่อถอยรถยนต์ป้ายแดงให้ขับไปเรียน & คอนโดหรูติดรถไฟฟ้า!",
+      "trigger_age": 19,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ไม่อยากให้ลูกต้องลำบากเบียดรถเมล์ คุณพ่อคุณแม่จึงมอบกุญแจรถยนต์คันใหม่และให้พักในคอนโดมิเนียมใกล้รั้วมหาวิทยาลัย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีใบขับขี่รถยนต์] ขับรถไปรับส่งเพื่อนและคนคุยอย่างเท่ ได้คอนเนกชันระดับท็อป!",
+          "hint_th": "😊 ความสุข +7 , 🤝 เส้นสาย +7 , ✨ หน้าตา +4 , 🚗 ได้รับป้าย [มีรถยนต์]",
+          "req_stats": {},
+          "req_flags": [
+            "flag_car_license"
+          ],
+          "grants_flags": [
+            "flag_has_car"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใช้ชีวิตสะดวกสบายในคอนโด ไม่ต้องเสียเวลาเดินทาง เอาเวลาไปเรียนเสริมและดูแลสุขภาพ",
+          "hint_th": "❤️ สุขภาพ +4 , 🧠 สมอง +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 4,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age20_01",
+      "title_th": "บรรลุนิติภาวะ 20 ปีบริบูรณ์! ทดลองเปิดพอร์ตลงทุนหุ้น & คริปโตก้อนแรก",
+      "trigger_age": 20,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุครบ 20 ปี คุณสามารถยืนยันตัวตน NDID เปิดบัญชีซื้อขายหลักทรัพย์และสินทรัพย์ดิจิทัลด้วยตัวเองได้แล้ว เพื่อนๆ ในรุ่นเริ่มหันมาคุยเรื่องกราฟหุ้นและบิตคอยน์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ศึกษาการอ่านงบการเงินและ DCA กองทุนรวม/หุ้นปันผลตั้งแต่อายุ 20!",
+          "hint_th": "🧠 สมอง +5 , 🪙 ปันผลแรก +1,000 ฿ , 📈 ได้รับป้าย [เปิดพอร์ตการลงทุน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_investment_account"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ซิ่งเทรดเหรียญคริปโตตามกระแสโซเชียล ได้กำไรไวแต่ใจเต้นแรงทุกนาที!",
+          "hint_th": "🪙 กำไรเก็งกำไร +2,500 ฿ , ❤️ สุขภาพ -2 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_investment_account"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ยังไม่รีบลงทุนเสี่ยง ขอเก็บเงินสดฝากธนาคารออมสินกินดอกเบี้ยชัวร์ๆ ก่อน",
+          "hint_th": "😊 ความสุข +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age20_02",
+      "title_th": "บวชเรียนทดแทนคุณพ่อแม่ / ปฏิบัติธรรมบวชชีพราหมณ์วัย 20 ปี",
+      "trigger_age": 20,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ตามประเพณีไทยเมื่ออายุครบ 20 ปีบริบูรณ์ พ่อแม่และญาติผู้ใหญ่อยากเห็นคุณเข้าวัดอุปสมบทหรือถือศีลปฏิบัติธรรมเพื่อความเป็นสิริมงคลแก่ชีวิต",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าพิธีอุปสมบท/ถือศีลปฏิบัติธรรมอย่างตั้งใจ พ่อแม่ปลื้มปีติน้ำตาไหล!",
+          "hint_th": "✨ แต้มบุญ +15 , 😊 ความสุข +5 , 🤝 เส้นสาย +5 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทำบุญถวายสังฆทานและบริจาคทรัพย์ให้วัดแทน เพราะต้องลุยเรียนซัมเมอร์/ทำงาน",
+          "hint_th": "🪙 ทำบุญ -500 ฿ , ✨ แต้มบุญ +6 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": -500,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": -250,
+            "merit": 11
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age20_03",
+      "title_th": "เปิดโลกสถานบันเทิงคืนวันศุกร์! ตรวจบัตรประชาชนหน้าผับครั้งแรก",
+      "trigger_age": 20,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุ 20 ปีเข้าสถานบันเทิงได้ถูกกฎหมาย! แก๊งเพื่อนมหาลัย/ที่ทำงานนัดรวมตัวไปฉลองวันเกิดเพื่อนที่ร้านนั่งชิลล์ย่านวัยรุ่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โชว์บัตรประชาชนเดินเข้างานอย่างมั่นใจ จิบเครื่องดื่มพอประมาณและเต้นสนุกกับเพื่อน (-800฿)",
+          "hint_th": "🪙 เงินสด -800 ฿ , 😊 ความสุข +6 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อาสาเป็นคนไม่ดื่มแอลกอฮอล์ คอยดูแลส่งเพื่อนๆ กลับหออย่างปลอดภัย!",
+          "hint_th": "🤝 เส้นสาย +7 , ✨ แต้มบุญ +4 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ดื่มหนักเกินลิมิตจนเมาพับแฮงก์ข้ามวัน ตื่นมาปวดหัวแทบขาดใจ! (-1,500฿)",
+          "hint_th": "🪙 เงินสด -1,500 ฿ , ❤️ สุขภาพ -5 , 😊 ความสุข -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -5,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": -1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age21_01",
+      "title_th": "โปรเจกต์จบ (Senior Project) & สหกิจศึกษาฝึกงานบริษัทจริง!",
+      "trigger_age": 21,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ด่านสุดท้ายก่อนจบปริญญาตรี หรือก้าวสำคัญของการทำงาน! คุณต้องทำโปรเจกต์จบควบคู่กับการไปเป็นเด็กฝึกงาน (Intern) ในองค์กรจริง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โชว์ฟอร์มเทพตอนฝึกงานและปั่นโปรเจกต์จบจนพี่เลี้ยงทาบทามให้ทำงานต่อทันทีหลังเรียนจบ!",
+          "hint_th": "🧠 สมอง +7 , 🤝 เส้นสาย +7 , 🪙 เบี้ยเลี้ยงฝึกงาน +3,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 7,
+            "connections": 7,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[เด็กเนิร์ดคอม / หัวช่าง] สร้างนวัตกรรมโปรเจกต์จบคว้ารางวัลระดับประเทศ!",
+          "hint_th": "🧠 สมอง +9 , 🤝 เส้นสาย +6 , 🪙 เงินรางวัล +5,000 ฿",
+          "req_stats": {},
+          "req_flags": [
+            "tag_computer_nerd"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 9,
+            "connections": 6,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ประคองตัวทำงานตามสั่งให้ผ่านเกณฑ์มาตรฐาน เน้นรักษาสุขภาพจิตไม่ให้เครียดเกินไป",
+          "hint_th": "🧠 สมอง +4 , ❤️ สุขภาพ +2 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age21_02",
+      "title_th": "บรรยากาศหน้าหน่วยตรวจเลือกทหารกองเกินเมษายน! เสียงเฮใบดำ-ใบแดง",
+      "trigger_age": 21,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เดือนเมษายนที่ร้อนระอุ หอประชุมอำเภอเต็มไปด้วยชายไทยวัย 21 ปีและครอบครัวที่มาลุ้นระทึกเสียงประกาศ 'ดำ!' หรือ 'แดง!'",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[จบ รด. ปี 3] เดินชิลล์นำเอกสาร สด.8 ไปยืนยันสิทธิ์ยกเว้นเกณฑ์ทหารและให้กำลังใจเพื่อน",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_rotc_completed"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เตรียมเอกสารและร่างกายให้พร้อมตามกฎหมาย ไม่คิดหนีทหารให้เสียประวัติ",
+          "hint_th": "✨ แต้มบุญ +3 , 🧠 สมอง +2 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 1,
+            "connections": 3,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age21_03_poor",
+      "title_th": "ส่งเงินก้อนแรกจากน้ำพักน้ำแรงกลับบ้านให้พ่อแม่!",
+      "trigger_age": 21,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "จากการทำงานพาร์ทไทม์ควบคู่กับการเรียน/ทำงานรับจ้าง ในที่สุดคุณก็มีเงินเก็บก้อนเล็กๆ พอที่จะโอนกลับไปช่วยค่าน้ำค่าไฟพ่อแม่ที่บ้านเกิด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โอนเงิน 2,000 บาทให้แม่ พร้อมโทรไปหา แม่ดีใจจนอวยพรให้เจริญๆ ยาวเหยียด!",
+          "hint_th": "🪙 เงินสด -2,000 ฿ , ✨ แต้มบุญ +12 , 😊 ความสุข +6 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": -2000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ซื้อยารักษาอาการปวดเมื่อยและของกินบำรุงสุขภาพส่งพัสดุกลับไปให้พ่อแม่ (-800฿)",
+          "hint_th": "🪙 เงินสด -800 ฿ , ✨ แต้มบุญ +7 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -800,
+            "merit": 7,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "connections": 2,
+            "cash": -1400,
+            "merit": 10
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age22_01",
+      "title_th": "พิธีพระราชทานปริญญาบัตร / ฉลองก้าวสู่วัยทำงานเต็มตัว!",
+      "trigger_age": 22,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุ 22 ปี! พ่อแม่และญาติพี่น้องเดินทางมาร่วมถ่ายรูปแสดงความยินดีในความสำเร็จก้าวแรกของคุณท่ามกลางซุ้มดอกไม้และสายสะพาย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สวมชุดครุย/ชุดทำงานก้มกราบพ่อแม่ ถ่ายรูปครอบครัวสุดอบอุ่นและรับซองของขวัญ!",
+          "hint_th": "🪙 ซองรับขวัญ +3,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 3000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดปาร์ตี้ฉลองเรียนจบและแลกคอนเนกชันสายอาชีพกับเพื่อนร่วมรุ่นทั่วประเทศ!",
+          "hint_th": "🤝 เส้นสาย +9 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 8,
+            "cash": 1500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age22_02",
+      "title_th": "สมรภูมิหางาน First Jobber! ร่อนเรซูเม่และสัมภาษณ์งานครั้งแรก",
+      "trigger_age": 22,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่ตลาดแรงงานอย่างเป็นทางการ คุณกดส่งเรซูเม่ผ่านเว็บหางานไปหลายสิบบริษัท จนกระทั่งได้รับโทรศัพท์นัดสัมภาษณ์งานกับฝ่าย HR และหัวหน้างาน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เตรียมพอร์ตผลงานและซ้อมตอบคำถามสัมภาษณ์อย่างมั่นใจ จนได้งานพร้อมต่อรองเงินเดือนเพิ่ม!",
+          "hint_th": "🪙 โบนัสแรกเข้า +5,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_regular_income"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีใบรับรอง TOEIC / เด็กอินเตอร์] สัมภาษณ์เป็นภาษาอังกฤษไฟแลบ ผ่านเข้าทำงานบริษัทข้ามชาติทันที!",
+          "hint_th": "🪙 โบนัสแรกเข้า +10,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_cert_english"
+          ],
+          "grants_flags": [
+            "flag_regular_income"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ตื่นเต้นจนตอบคำถามตะกุกตะกัก แต่แสดงความขยันสู้งานจนหัวหน้ายอมรับเข้าทดลองงาน",
+          "hint_th": "🧠 สมอง +3 , 🤝 เส้นสาย +3 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_regular_income"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age22_03_rich",
+      "title_th": "ทางเลือกทายาทเศรษฐี! รับช่วงต่อกิจการตระกูล vs บินเรียนต่อป.โท เมืองนอก",
+      "trigger_age": 22,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่ออายุครบ 22 ปี คุณพ่อเรียกคุณเข้าไปคุยในห้องทำงานเรื่องการวางรากฐานอนาคตในฐานะทายาทของครอบครัว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าไปเรียนรู้งานบริหารในธุรกิจ SME / บริษัทของครอบครัว เตรียมพร้อมเป็นเฒ่าแก่รุ่นต่อไป!",
+          "hint_th": "🪙 เงินขวัญถุง +20,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +5 , 🏢 ได้รับป้าย [ทายาทธุรกิจ SME]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_family_business",
+            "flag_regular_income"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอคุณพ่อบินไปเรียนต่อ Master's Degree มหาวิทยาลัยชั้นนำที่อังกฤษ/อเมริกา",
+          "hint_th": "🧠 สมอง +10 , 🤝 เส้นสาย +8 , 😊 ความสุข +6 , ✨ ได้รับป้าย [ใบรับรองภาษาอังกฤษ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_cert_english"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 10,
+            "connections": 8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 8,
+            "connections": 8,
+            "cash": 10000,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age23_01",
+      "title_th": "เงินเดือนก้อนแรกออกแล้ว! ภาษีสังคมและการจัดสรรเงินมนุษย์เงินเดือน",
+      "trigger_age": 23,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เสียงแจ้งเตือนเงินเดือนเข้าบัญชีดังขึ้นในวันสิ้นเดือน! ทั้งความดีใจและรายการค่าใช้จ่ายวิ่งเข้ามาในหัวพร้อมกัน คุณจะประเดิมเงินเดือนก้อนแรกอย่างไร?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แบ่งเงินส่วนแรกใส่ซองให้พ่อแม่เพื่อเอาฤกษ์เอาชัย และหักออมทันที 20%!",
+          "hint_th": "✨ แต้มบุญ +10 , 🧠 สมอง +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดบุฟเฟต์ชาบู/หมูกระทะฉลองกับแก๊งเพื่อนและซื้อเสื้อผ้าชุดทำงานใหม่ (-2,000฿)",
+          "hint_th": "🪙 เงินสด -2,000 ฿ , 😊 ความสุข +7 , 🤝 เส้นสาย +5 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -2000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "รูดบัตรเปย์ของที่อยากได้จนเกลี้ยงบัญชี สิ้นเดือนต้องต้มมาม่าประทังชีวิต! (-4,000฿)",
+          "hint_th": "🪙 เงินสด -4,000 ฿ , 😊 ความสุข +3 , ❤️ สุขภาพ -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -4000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age23_02",
+      "title_th": "มหากาพย์การเดินทางชั่วโมงเร่งด่วน! รถไฟฟ้าปลากระป๋อง & รถติดวินาศสันตะโร",
+      "trigger_age": 23,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แปดโมงเช้าวันจันทร์ที่ฝนตกหนัก! คิวรถไฟฟ้าและป้ายรถเมล์ยาวเหยียดทะลุบันได ขณะที่เวลาสแกนนิ้วเข้างานใกล้เข้ามาทุกวินาที",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตื่นเช้ากว่าเดิมครึ่งชั่วโมง ฟังพอดแคสต์พัฒนาตัวเองระหว่างเดินทาง สแกนนิ้วทันเวลาเป๊ะ!",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +3 , ❤️ สุขภาพ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 1,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เรียกพี่วินมอเตอร์ไซค์ฝ่ารถติดมุดซอกแซกไปให้ทันเวลาแบบหัวใจจะวาย! (-150฿)",
+          "hint_th": "🪙 ค่าวิน -150 ฿ , 🤝 เส้นสาย +2 , ❤️ สุขภาพ -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 0,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": -150,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[มีรถยนต์/มอเตอร์ไซค์ส่วนตัว] ขับรถของตัวเองออกแต่เช้ามืด เปิดเพลงฟังชิลล์ๆ",
+          "hint_th": "😊 ความสุข +4 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [
+            "flag_has_car"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age23_03",
+      "title_th": "เซลส์ธนาคารโทรมาชวนทำบัตรเครดิตใบแรก & บัตรกดเงินสด!",
+      "trigger_age": 23,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อมีสลิปเงินเดือน ธนาคารต่างๆ ก็โทรมาเสนอทำบัตรเครดิตวงเงิน 3 เท่าของเงินเดือน พร้อมโปรโมชันผ่อน 0% และกระเป๋าล้อลากแถมฟรี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สมัครบัตรเครดิตไว้ใช้จ่ายจำเป็นและจ่ายเต็มจำนวนทุกเดือน สร้างประวัติเครดิตบูโรชั้นเยี่ยม!",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +3 , 💳 ได้รับป้าย [เครดิตบูโรดีเยี่ยม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_good"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปฏิเสธการทำบัตรทั้งหมด ขอใช้แต่เงินสดสแกนจ่ายเท่าที่มีในบัญชีเพื่อตัดปัญหาหนี้",
+          "hint_th": "🧠 สมอง +2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "รูดบัตรเต็มวงเงินแล้วจ่ายขั้นต่ำ 10% ดอกเบี้ยบานเบอะจนค้างชำระ!",
+          "hint_th": "🪙 ดอกเบี้ยปรับ -5,000 ฿ , 😊 ความสุข -5 , ⚠️ ติดป้าย [ติดแบล็กลิสต์บูโร]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_blacklist"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age24_01",
+      "title_th": "ครบกำหนดปลอดหนี้ 2 ปี! บิลเรียกเก็บหนี้ กยศ. งวดแรกมาถึงบ้าน",
+      "trigger_age": 24,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สำหรับผู้ที่กู้ยืมเรียน กยศ. เมื่ออายุครบ 24 ปี (หลังเรียนจบ 2 ปี) จะเป็นปีแรกที่ต้องเริ่มชำระคืนเงินต้นพร้อมดอกเบี้ย 1% ต่อปีภายในวันที่ 5 กรกฎาคม!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งหักบัญชีชำระหนี้ กยศ. ตรงเวลาทุกปี เพื่อส่งต่อโอกาสทางการศึกษาให้รุ่นน้อง!",
+          "hint_th": "✨ แต้มบุญ +6 , 🧠 สมอง +3 , 💳 ได้รับป้าย [เครดิตบูโรดีเยี่ยม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_good"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สำหรับคนไม่ได้กู้ กยศ. นำเงินเก็บมาลงทุนซื้อกองทุนลดหย่อนภาษีแทน",
+          "hint_th": "🪙 ปันผล +2,000 ฿ , 🧠 สมอง +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เพิกเฉยไม่ยอมจ่ายหนี้ จนโดนคิดเบี้ยปรับและเสี่ยงถูกฟ้องบังคับคดี!",
+          "hint_th": "😊 ความสุข -4 , ✨ แต้มบุญ -5 , ⚠️ เสี่ยงติดแบล็กลิสต์",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_blacklist"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": -5,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age24_02",
+      "title_th": "สนามสอบใบประกอบวิชาชีพ & สอบบรรจุข้าราชการ ก.พ. ครั้งสำคัญ!",
+      "trigger_age": 24,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วัย 24 ปีคือช่วงเวลาแห่งการสอบยกระดับวิชาชีพ ไม่ว่าจะเป็นการสอบใบประกอบวิชาชีพเวชกรรม ตั๋วทนาย ใบ กว. หรือสอบ ก.พ. ภาค ก.",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทุ่มเทอ่านหนังสือหลังเลิกงานจนสอบผ่านฉลุย พร้อมอัพฐานเงินเดือนก้าวกระโดด!",
+          "hint_th": "🧠 สมอง +7 , 🤝 เส้นสาย +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_ocsc_passed"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 5,
+            "intelligence": 7,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงเรียนคอร์สพัฒนาทักษะเฉพาะทางและภาษาอังกฤษเพื่อเตรียมย้ายงานอัพเงินเดือน",
+          "hint_th": "🧠 สมอง +5 , 🪙 โบนัสทักษะ +3,000 ฿ , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 1500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age24_03",
+      "title_th": "ความรักวัยทำงาน! แฟนชวนเปิดบัญชีเงินฝากคู่เพื่อเก็บเงินสร้างอนาคต",
+      "trigger_age": 24,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อเริ่มทำงานมีรายได้ทั้งคู่ คนรักหรือคนที่คุณคบหาดูใจจึงชวนวางแผนทางการเงินร่วมกันด้วยการฝากเงินเข้ากองกลางทุกเดือน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตกลงเปิดบัญชีออมเงินคู่ หยอดกระปุกสร้างอนาคตด้วยกันอย่างมีวินัย (+3,000฿)",
+          "hint_th": "🪙 เงินออมสะสม +3,000 ฿ , 😊 ความสุข +6 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตกลงแยกกระเป๋าเงินใครเงินมันชัดเจน แต่ช่วยกันแชร์ค่าอาหารเวลาไปเดท",
+          "hint_th": "🧠 สมอง +3 , 😊 ความสุข +3 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 1500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age25_01",
+      "title_th": "อาถรรพ์วัยเบญจเพส 25 ปี! ทำบุญสะเดาะเคราะห์ต่อชะตาครั้งใหญ่",
+      "trigger_age": 25,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ย่างเข้าสู่อายุ 25 ปีบริบูรณ์ ผู้ใหญ่ที่บ้านเตือนเรื่องอาถรรพ์วัยเบญจเพสที่อาจเกิดเรื่องร้ายแรงหรือโชคใหญ่พลิกชีวิต แนะนำให้ไปทำบุญโลงศพและปล่อยปลา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปทำบุญบริจาคโลงศพ ถวายสังฆทาน และใช้ชีวิตด้วยความไม่ประมาท (-1,000฿)",
+          "hint_th": "🪙 ทำบุญ -1,000 ฿ , ✨ แต้มบุญ +15 , ❤️ สุขภาพ +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ดวงสมพงศ์โชคลาภ] เบญจเพสให้คุณ! ได้รับโชคลาภลอยและได้เลื่อนตำแหน่งฟ้าผ่า!",
+          "hint_th": "🪙 โชคลาภ +20,000 ฿ , 😊 ความสุข +10 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [
+            "trait_lucky_star"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 20000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ไม่เชื่อเรื่องงมงาย แต่ตรวจเช็กสภาพรถและต่อประกันอุบัติเหตุไว้ป้องกันตัว (-2,000฿)",
+          "hint_th": "🪙 ค่าประกัน -2,000 ฿ , ❤️ สุขภาพ +3 , 🧠 สมอง +4 , 🛡️ ได้รับป้าย [ขับขี่ปลอดภัยมีประกัน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_insured_driver"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": -2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age25_02",
+      "title_th": "วิกฤต Quarter-Life Crisis! ตั้งคำถามกับชีวิตในวัย 25 ปี",
+      "trigger_age": 25,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คืนหนึ่งขณะไถฟีดโซเชียลเห็นเพื่อนบางคนซื้อรถป้ายแดง บางคนแต่งงาน หรือไปเรียนต่อนอก คุณกลับมานั่งมองเพดานห้องแล้วถามตัวเองว่า 'เรากำลังทำอะไรอยู่?'",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปิดโซเชียลพักสมอง แล้วจดเป้าหมายชีวิต 5 ปีของตัวเองเดินหน้าพัฒนาทักษะอย่างมั่นคง",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +5 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นัดแก๊งเพื่อนสนิทมานั่งเปิดใจปรับทุกข์ พบว่าทุกคนก็กำลังสู้ชีวิตเหมือนกัน!",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "กดดันตัวเองอย่างหนักและเปรียบเทียบกับคนอื่นจนนอนไม่หลับ!",
+          "hint_th": "❤️ สุขภาพ -4 , 😊 ความสุข -6 , ⚠️ เสี่ยงติดสถานะ [โรคนอนไม่หลับเรื้อรัง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_chronic_insomnia"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age25_03_poor",
+      "title_th": "ทางบ้านโทรมาขอเงินด่วนไปไถ่ถอนที่นา/จ่ายหนี้นอกระบบ!",
+      "trigger_age": 25,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "พ่อแม่โทรมาด้วยน้ำเสียงสั่นเครือ บอกว่าเจ้าหนี้กำลังจะมายึดที่ดินทำกินของครอบครัว ต้องใช้เงินก้อนด่วนภายในสัปดาห์นี้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ควักเงินเก็บช่วยทางบ้านและช่วยเจรจาปรับโครงสร้างหนี้กับธนาคารให้ถูกต้อง (-10,000฿)",
+          "hint_th": "🪙 ช่วยที่บ้าน -10,000 ฿ , ✨ แต้มบุญ +20 , 🧠 สมอง +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_debt_family"
+          ],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": -10000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยแบ่งจ่ายเฉพาะดอกเบี้ยเท่าที่ไหวเพื่อไม่ให้ตัวเองต้องไปกู้หนี้นอกระบบเพิ่ม (-3,000฿)",
+          "hint_th": "🪙 ช่วยที่บ้าน -3,000 ฿ , ✨ แต้มบุญ +8 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -1,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": -3000,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": -6500,
+            "merit": 14
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age26_01",
+      "title_th": "ศึกย้ายงานอัพฐานเงินเดือน (Job Hopping) vs อยู่ต่อรอปรับตำแหน่ง!",
+      "trigger_age": 26,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อมีประสบการณ์ทำงานครบ 3-4 ปี Headhunter ได้ทักมาเสนองานที่บริษัทคู่แข่งพร้อมข้อเสนอปรับเงินเดือนขึ้น 30%!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตัดสินใจย้ายงานรับความท้าทายใหม่ พร้อมรับ Signing Bonus ก้อนโต!",
+          "hint_th": "🪙 โบนัสย้ายงาน +15,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำข้อเสนอไปเจรจากับเจ้านายปัจจุบัน จนบริษัทสู้ราคาปรับเงินเดือนและเลื่อนขั้นให้!",
+          "hint_th": "🪙 เงินพิเศษ +12,000 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 13500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age26_02",
+      "title_th": "ฤดูกาลซองขาวงานแต่งงานเพื่อน! เดือนเดียวใส่ซอง 4 งานรวด",
+      "trigger_age": 26,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่วัย 26 ปี เพื่อนสมัยมัธยมและมหาวิทยาลัยเริ่มทยอยสละโสด ส่งการ์ดเชิญงานแต่งงานมาให้คุณเกือบทุกสัปดาห์!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แต่งตัวสวยหล่อไปร่วมงานครบทุกงาน ได้ทั้งร่วมยินดีและขยายคอนเนกชันโต๊ะจีน (-4,000฿)",
+          "hint_th": "🪙 ใส่ซอง -4,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +5 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -4000,
+            "merit": 4,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปเฉพาะงานเพื่อนสนิทจริงๆ ส่วนงานอื่นฝากซองไปตามกำลังทรัพย์ (-1,500฿)",
+          "hint_th": "🪙 ใส่ซอง -1,500 ฿ , 🤝 เส้นสาย +4 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": -1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 1,
+            "connections": 6,
+            "cash": -2750,
+            "merit": 2,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age26_03",
+      "title_th": "ปั้นอาชีพเสริมหลังเลิกงาน (Side Hustle)! ขายของออนไลน์ & รับฟรีแลนซ์",
+      "trigger_age": 26,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "รายได้ทางเดียวอาจไม่พอสร้างความมั่งคั่ง คุณคิดจะใช้เวลาช่วงค่ำและวันหยุดเสาร์-อาทิตย์สร้างกระแสเงินสดกระเป๋าที่สอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดร้านค้าออนไลน์แพ็กของส่งขนส่งหลังเลิกงาน ยอดขายปังทุกแคมเปญวันเลขเบิ้ล!",
+          "hint_th": "🪙 กำไรเสริม +12,000 ฿ , 🧠 สมอง +4 , ❤️ สุขภาพ -2 , ✨ ได้รับป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีคอมพิวเตอร์/โน้ตบุ๊ก] รับงานฟรีแลนซ์ทำกราฟิก/เขียนโค้ด/ที่ปรึกษา รายได้งามแบบไม่ต้องสต๊อกของ!",
+          "hint_th": "🪙 รายได้ฟรีแลนซ์ +18,000 ฿ , 🧠 สมอง +5 , ❤️ สุขภาพ -2",
+          "req_stats": {},
+          "req_flags": [
+            "flag_pc_or_laptop"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 3,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ไม่รับงานเสริม ขอเอาเวลาหลังเลิกงานไปออกกำลังกายและนอนพักผ่อนให้เต็มอิ่ม",
+          "hint_th": "❤️ สุขภาพ +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age27_01",
+      "title_th": "ตัดสินใจถอยรถคันแรกด้วยน้ำพักน้ำแรง! มอเตอร์ไซค์ vs อีโคคาร์",
+      "trigger_age": 27,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานมอเตอร์โชว์จัดโปรโมชันดาวน์ต่ำผ่อนสบาย คุณเริ่มมองหายานพาหนะคู่ใจไว้ใช้เดินทางทำงานและพาครอบครัวไปเที่ยววันหยุด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "วางแผนคำนวณค่าน้ำมัน ค่าประกัน และค่าเสื่อมราคาก่อนซื้อในแท็บร้านค้าอย่างรอบคอบ",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +3 , 💡 ได้รับป้าย [มีความรู้ทางการเงิน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เลือกใช้ขนส่งสาธารณะควบคู่กับรถคันเดิมไปก่อน เพื่อเก็บเงินก้อนไปลงทุนอสังหาฯ/หุ้น",
+          "hint_th": "🪙 เงินออมเพิ่ม +8,000 ฿ , 🧠 สมอง +4 , ❤️ สุขภาพ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 5,
+            "cash": 4000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age27_02",
+      "title_th": "สัญญาณเตือนออฟฟิศซินโดรม! ปวดคอบ่าไหล่และกรดไหลย้อนถามหา",
+      "trigger_age": 27,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "จากการนั่งจ้องหน้าจอนานวันละ 8-10 ชั่วโมงและกินข้าวไม่ตรงเวลา คุณเริ่มมีอาการปวดร้าวตั้งแต่ต้นคอไปถึงสะบัก และแสบกลางอกตอนดึก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงทุนซื้อเก้าอี้ Ergonomic ปรับท่านั่งและไปทำกายภาพบำบัดตั้งแต่เนิ่นๆ (-3,000฿)",
+          "hint_th": "🪙 เงินสด -3,000 ฿ , ❤️ สุขภาพ +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_office_syndrome"
+          ],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปล่อยไว้กินแต่ยาแก้ปวดประทังไปวันๆ จนกลายเป็นออฟฟิศซินโดรมเรื้อรัง!",
+          "hint_th": "❤️ สุขภาพ -4 , 😊 ความสุข -3 , ⚠️ ติดสถานะ [ออฟฟิศซินโดรมเรื้อรัง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_office_syndrome"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "วางแผนให้รอบคอบและเลือกทางที่สมดุลกับเป้าหมาย",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 1,
+            "cash": -1500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age27_03_rich",
+      "title_th": "ดินเนอร์หรูนัดบอดดูตัวระหว่างตระกูลนักธุรกิจ!",
+      "trigger_age": 27,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณพ่อคุณแม่จัดแจงนัดหมายให้คุณไปร่วมโต๊ะดินเนอร์ที่ห้องอาหารฝรั่งเศสระดับมิชลินสตาร์ เพื่อทำความรู้จักกับทายาทธุรกิจของเพื่อนคุณพ่อ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พูดคุยอย่างสุภาพมีเสน่ห์ ได้ทั้งมิตรภาพและดีลพาร์ทเนอร์ธุรกิจร่วมกัน!",
+          "hint_th": "🤝 เส้นสาย +9 , 🪙 ดีลธุรกิจ +25,000 ฿ , 😊 ความสุข +5 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "บอกคุณพ่อคุณแม่อย่างชัดเจนว่าขอเลือกคู่ครองด้วยความรักของตัวเอง แต่ยังรักษามารยาทบนโต๊ะอาหาร",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +4 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 12500,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age28_01",
+      "title_th": "จดหมายสีน้ำตาลจากกรมสรรพากร! ยื่นภาษีเงินได้บุคคลธรรมดา (ภ.ง.ด.90/91)",
+      "trigger_age": 28,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อรายได้เติบโตขึ้นจนถึงเกณฑ์เสียภาษี ระบบตรวจพบเงินได้ทั้งจากงานประจำและงานเสริมของคุณ ถึงเวลายื่นแบบแสดงรายการภาษีประจำปี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยื่นภาษีออนไลน์อย่างถูกต้อง พร้อมใช้สิทธิ์ลดหย่อนประกันชีวิตและกองทุน RMF/ThaiESG ได้เงินคืนภาษี!",
+          "hint_th": "🪙 เงินคืนภาษี +6,000 ฿ , 🧠 สมอง +4 , ✨ ล้างป้าย [เสี่ยงโดนภาษีย้อนหลัง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_tax_evasion_risk"
+          ],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 6000,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หลบเลี่ยงไม่ยอมยื่นรายได้เสริม จนโดนสรรพากรเรียกเก็บภาษีย้อนหลังพร้อมเบี้ยปรับ! (-15,000฿)",
+          "hint_th": "🪙 ค่าปรับภาษี -15,000 ฿ , 😊 ความสุข -6 , ⚠️ ติดป้าย [เสี่ยงโดนภาษีย้อนหลัง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_tax_evasion_risk"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -15000,
+            "merit": -3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": -1,
+            "intelligence": 2,
+            "cash": -4500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age28_02",
+      "title_th": "ดราม่าการเมืองในที่ทำงาน! ศึกชิงตำแหน่งหัวหน้าทีมคนใหม่",
+      "trigger_age": 28,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ตำแหน่ง Team Lead ว่างลง! เพื่อนร่วมงานรุ่นเดียวกันเริ่มแบ่งก๊วนและแอบเคลมผลงานของคุณไปพรีเซนต์ต่อหน้าผู้บริหารระดับสูง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กางข้อมูล Data ผลงานจริงในที่ประชุมอย่างมืออาชีพ จนผู้บริหารเห็นความสามารถและโปรโมตคุณ!",
+          "hint_th": "🪙 โบนัสตำแหน่ง +18,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ผูกมิตรดึงทุกคนมาร่วมมือกันทำโปรเจกต์ให้สำเร็จวิน-วินทั้งทีม ได้ใจทั้งลูกน้องและเจ้านาย!",
+          "hint_th": "🤝 เส้นสาย +9 , 😊 ความสุข +5 , 🪙 โบนัสทีม +10,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 8,
+            "cash": 14000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age28_03",
+      "title_th": "พาคนรักไปไหว้เปิดตัวกับพ่อแม่ที่บ้านอย่างเป็นทางการ!",
+      "trigger_age": 28,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อความสัมพันธ์สุกงอมในวัย 28 ปี คุณตัดสินใจพาคนรักถือกระเช้าผลไม้และขนมมงคลไปกราบทำความรู้จักกับพ่อแม่ที่บ้าน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เตรียมตัวมาอย่างดี พูดจาไพเราะและช่วยแม่ทำกับข้าว พ่อแม่ไฟเขียวเอ็นดูสุดๆ! (-1,500฿)",
+          "hint_th": "🪙 ค่าของฝาก -1,500 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -1500,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สำหรับคนโสด พาพ่อแม่ไปกินอาหารเหลาฉลองวันหยุดด้วยตัวเองอย่างอบอุ่น (-1,500฿)",
+          "hint_th": "🪙 ค่าอาหาร -1,500 ฿ , 😊 ความสุข +6 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1500,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 3,
+            "cash": -1500,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age29_01",
+      "title_th": "โค้งสุดท้ายก่อนเลข 3! วางแผนซื้อบ้าน/คอนโดหลังแรกของตัวเอง",
+      "trigger_age": 29,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุ 29 ปี คุณเดินดูบูธโครงการคอนโดมิเนียมติดรถไฟฟ้าและทาวน์โฮมชานเมือง เพื่อเตรียมลงหลักปักฐานสร้างรากฐานชีวิต",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินสเตทเมนต์บัญชีให้สวยและรักษาเครดิตบูโร เตรียมพร้อมยื่นกู้ซื้อบ้าน/คอนโดในแท็บร้านค้า!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +4 , 💳 ได้รับป้าย [เครดิตบูโรดีเยี่ยม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_good"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตัดสินใจเช่าอยู่ต่อไปก่อนเพื่อรักษาสภาพคล่อง แล้วนำเงินก้อนไปลงทุนสร้าง Passive Income",
+          "hint_th": "🪙 ผลตอบแทนลงทุน +10,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 2,
+            "cash": 5000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age29_02",
+      "title_th": "มิจฉาชีพแก๊งคอลเซ็นเตอร์ & หลอกลงทุนออนไลน์ระบาดหนัก!",
+      "trigger_age": 29,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีสายโทรศัพท์อ้างตัวเป็นเจ้าหน้าที่ตำรวจ สภ.เมือง แจ้งว่าบัญชีธนาคารของคุณพัวพันคดีฟอกเงิน และสั่งให้แอดไลน์กดลิงก์ตรวจสอบเงินในบัญชีด่วน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รู้ทันมิจฉาชีพ! กดวางสายบล็อกเบอร์ทันทีและแจ้งเบาะแสเตือนภัยเพื่อนๆ",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +4 , ✨ แต้มบุญ +3 (เงินในบัญชีปลอดภัย 100%!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตกใจกลัวจนเผลอกดลิงก์ดูดเงิน สูญเงินเก็บในบัญชีไปบางส่วน! (-20,000฿)",
+          "hint_th": "🪙 ถูกดูดเงิน -20,000 ฿ , 😊 ความสุข -8 , 🧠 สมอง +2 (บทเรียนราคาแพง)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": -20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": -2,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": -10000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age29_03_poor",
+      "title_th": "ปลดแอกความยากจน! ปรับปรุงซ่อมแซมบ้านเกิดให้พ่อแม่ภูมิใจ",
+      "trigger_age": 29,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังจากกัดฟันทำงานหนักมาตลอดช่วงวัย 20 ปี คุณกลับไปเยี่ยมบ้านเกิดแล้วเห็นหลังคาสังกะสีและฝาบ้านไม้ที่ผุพังตามกาลเวลา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ควักเงินเก็บเปลี่ยนหลังคาใหม่และติดแอร์ห้องนอนให้พ่อแม่ ชาวบ้านชื่นชมความกตัญญูทั้งหมู่บ้าน! (-15,000฿)",
+          "hint_th": "🪙 ค่าซ่อมบ้าน -15,000 ฿ , ✨ แต้มบุญ +25 , 😊 ความสุข +10 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -15000,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงแรงซ่อมแซมจุดที่ชำรุดด้วยตัวเองร่วมกับพ่อ ประหยัดค่าช่างและได้ความอบอุ่น (-3,000฿)",
+          "hint_th": "🪙 ค่าวัสดุ -3,000 ฿ , ✨ แต้มบุญ +12 , ❤️ สุขภาพ +2 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": -3000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 8,
+            "intelligence": 1,
+            "connections": 3,
+            "cash": -9000,
+            "merit": 19
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age30_01",
+      "title_th": "ก้าวเข้าสู่เลข 3 อย่างเป็นทางการ (Dirty Thirty)! สุขภาพและการเงินวัย 30",
+      "trigger_age": 30,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันเกิดอายุครบ 30 ปีบริบูรณ์! ร่างกายเริ่มส่งสัญญาณว่านอนดึกแล้วฟื้นตัวยากขึ้น แต่ในขณะเดียวกันคุณก็มีความเป็นผู้ใหญ่และมีประสบการณ์ชีวิตที่มั่นคงขึ้นมาก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อแพ็กเกจตรวจสุขภาพชุดใหญ่และเริ่มวิ่งออกกำลังกายสะสมระยะทาง (โซน 2)",
+          "hint_th": "❤️ สุขภาพ +7 , 😊 ความสุข +5 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดพอร์ตการเงินวัย 30 กระจายความเสี่ยงทั้งเงินสด หุ้น ทองคำ และอสังหาฯ!",
+          "hint_th": "🪙 ปันผลพิเศษ +12,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +4 , 💡 ได้รับป้าย [มีความรู้ทางการเงิน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 5,
+            "intelligence": 3,
+            "cash": 6000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age30_02",
+      "title_th": "เสียงระฆังวิวาห์วัย 30! คุยเรื่องสินสอดและวางแผนแต่งงานสร้างครอบครัว",
+      "trigger_age": 30,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผู้ใหญ่ทั้งสองฝ่ายเริ่มถามไถ่เรื่องฤกษ์มงคลสมรสและการสร้างครอบครัวในวัย 30 ปี คุณจะวางแผนชีวิตรักอย่างไร?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "วางแผนเก็บเงินค่าสินสอดและซื้อแหวนเพชร เตรียมคุกเข่าขอคนรักแต่งงานในแท็บความสัมพันธ์!",
+          "hint_th": "😊 ความสุข +7 , 🤝 เส้นสาย +5 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตกลงกับคนรักว่าขอจัดงานเล็กๆ แบบอบอุ่นในครอบครัว เก็บเงินก้อนไว้เป็นทุนทำธุรกิจและซื้อบ้าน",
+          "hint_th": "🪙 ประหยัดเงิน +10,000 ฿ , 🧠 สมอง +4 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกครองตัวเป็นโสดสายสตรอง โฟกัสความก้าวหน้าในอาชีพและท่องเที่ยวรอบโลก!",
+          "hint_th": "😊 ความสุข +6 , 🧠 สมอง +4 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age30_03_rich",
+      "title_th": "ร่วมวงแชร์นักธุรกิจรุ่นใหม่ (Young Executive Network) & ดีลหุ้น Pre-IPO",
+      "trigger_age": 30,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 30 ปี คุณได้รับเชิญเข้าสู่หลักสูตรผู้บริหารรุ่นใหม่ระดับประเทศ ที่รวมตัวทายาทเจ้าสัว ดารา และนักการเมืองรุ่นใหม่ไว้ด้วยกัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าร่วมคอร์สสร้างเครือข่ายระดับสูง ปลดล็อกป้ายคอนเนกชันระดับเจ้าสัว!",
+          "hint_th": "🤝 เส้นสาย +12 , 🧠 สมอง +5 , 😊 ความสุข +6 , 👑 ได้รับป้าย [คอนเนกชันระดับเจ้าสัว]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 12,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงขันร่วมลงทุนในโปรเจกต์สตาร์ทอัพร่วมกับเพื่อนในคอร์ส ฟันกำไรก้อนโต!",
+          "hint_th": "🪙 กำไรปันผล +50,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 50000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 10,
+            "cash": 25000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age31_01",
+      "title_th": "เพื่อนสมัยเรียนทักมายืมเงินด่วน & ขอให้ช่วยเซ็นค้ำประกันเงินกู้!",
+      "trigger_age": 31,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนเก่าที่ไม่ได้คุยกันนานหลายปี ทักแชทมาว่า 'สบายดีไหมเพื่อน?' ก่อนจะเล่าว่ากำลังหมุนเงินธุรกิจไม่ทัน ขอยืมเงินคุณและขอให้ช่วยเซ็นค้ำประกันเงินกู้ให้หน่อย!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธการเซ็นค้ำประกันอย่างเด็ดขาด (ค้ำประกัน = เป็นหนี้แทน) แต่ช่วยใส่ซองให้ตามกำลังโดยไม่หวังคืน (-1,000฿)",
+          "hint_th": "🪙 ช่วยเพื่อน -1,000 ฿ , 🧠 สมอง +6 , ✨ แต้มบุญ +3 (รอดพ้นจากการเป็นหนี้แทน!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใจอ่อนยอมเซ็นค้ำประกันและให้ยืมเงินก้อน สุดท้ายเพื่อนหนีหาย ต้องรับภาระหนี้แทน! (-25,000฿)",
+          "hint_th": "🪙 ชดใช้หนี้แทน -25,000 ฿ , 😊 ความสุข -8 , 🤝 เส้นสาย -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": -4,
+            "cash": -25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แนะนำช่องทางปรึกษาคลินิกแก้หนี้ของธนาคารแห่งประเทศไทยให้เพื่อนไปแก้ไขอย่างถูกวิธี",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +3 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age31_02",
+      "title_th": "ก้าวขึ้นเป็นหัวหน้างานเต็มตัว! รับมือลูกน้อง Gen ใหม่และเป้าบริษัท",
+      "trigger_age": 31,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 31 ปี คุณต้องรับบทเป็นสะพานเชื่อมระหว่างผู้บริหารรุ่นใหญ่ที่เน้นทำงานหนัก กับลูกน้องรุ่นใหม่ที่ให้ความสำคัญกับ Work-Life Balance",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "บริหารงานแบบวัดผลลัพธ์ (Result-Oriented) ให้อิสระลูกน้องแต่ส่งงานตรงเป๊ะ จนทีมทำยอดทะลุเป้า!",
+          "hint_th": "🪙 โบนัสผลงาน +20,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงมือลุยแก้ปัญหาหน้างานเคียงบ่าเคียงไหล่กับลูกน้อง ได้ใจทีมงานเต็มร้อย",
+          "hint_th": "🤝 เส้นสาย +9 , ❤️ สุขภาพ -2 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 10000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age31_03",
+      "title_th": "วิกฤตฝุ่นควัน PM2.5 ถล่มเมือง! ค่าฝุ่นพุ่งทะลุโซนสีแดง",
+      "trigger_age": 31,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงต้นปี ท้องฟ้าถูกปกคลุมไปด้วยฝุ่นพิษ PM2.5 หนาทึบจนแสบจมูกและระคายเคืองตา โรงพยาบาลเต็มไปด้วยผู้ป่วยโรคทางเดินหายใจ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีเครื่องฟอกอากาศ] เปิดเครื่องฟอกอากาศในบ้านและสวมหน้ากาก N95 ทุกครั้งที่ออกข้างนอก ปอดสะอาดปลอดภัย!",
+          "hint_th": "❤️ สุขภาพ +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_clean_home_air"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ซื้อหน้ากาก N95 และล้างจมูกด้วยน้ำเกลือทุกวัน ป้องกันตัวเองอย่างดี (-500฿)",
+          "hint_th": "🪙 เงินสด -500 ฿ , ❤️ สุขภาพ +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 0,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ไม่ใส่หน้ากากเดินลุยฝุ่นกลางแจ้งทุกวัน จนปอดอักเสบและไอเรื้อรัง!",
+          "hint_th": "❤️ สุขภาพ -6 , 😊 ความสุข -4 , ⚠️ ติดสถานะ [โรคทางเดินหายใจจากฝุ่น PM2.5]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_pm25_lung_damage"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -6,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age32_01",
+      "title_th": "กระแสไฟแนนเชียลอิสระ (FIRE Movement)! วางแผนเกษียณเร็ว",
+      "trigger_age": 32,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คนวัย 32 เริ่มตระหนักว่าการทำงานไปจนถึงอายุ 60 อาจเหนื่อยเกินไป คุณเริ่มศึกษาแนวคิด Financial Independence, Retire Early (FIRE) เพื่อสร้างกระแสเงินสดเลี้ยงชีพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปรับพอร์ตเน้นหุ้นปันผลและอสังหาฯ ปล่อยเช่า ตั้งเป้าให้เงินทำงานแทน!",
+          "hint_th": "🪙 เงินปันผล +15,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงทุนอัปสกิลด้าน AI และเทคโนโลยี เพื่อเพิ่มค่าตัวในสายงานให้สูงขึ้นเป็น 2 เท่า!",
+          "hint_th": "🪙 รายได้พิเศษ +18,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_cert_coding"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 4,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 2,
+            "cash": 16500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age32_02",
+      "title_th": "ต้อนรับสมาชิกใหม่ / เลี้ยงสัตว์เลี้ยงแสนรักเป็นลูก (Pet Parent)!",
+      "trigger_age": 32,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 32 ปี บ้านของคุณเริ่มต้องการความมีชีวิตชีวา ไม่ว่าจะเป็นการดูแลลูกน้อยที่กำลังน่ารัก หรือการรับน้องหมา/น้องแมวมาเลี้ยงฮีลใจหลังเลิกงาน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใช้เวลาวันหยุดทำกิจกรรมครอบครัว พาลูก/สัตว์เลี้ยงไปเดินเล่นสวนสาธารณะ ฮีลใจสุดๆ!",
+          "hint_th": "😊 ความสุข +8 , ❤️ สุขภาพ +4 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดสรรเงินเปิดกองทุนการศึกษาให้ลูก / ประกันสุขภาพให้คนในบ้านอย่างรัดกุม (-3,000฿)",
+          "hint_th": "🪙 เงินสด -3,000 ฿ , 🧠 สมอง +4 , 😊 ความสุข +5 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": -3000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": -1500,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age32_03",
+      "title_th": "จุดวัดใจ! ลาออกจากงานประจำมาเปิดธุรกิจของตัวเองดีไหม?",
+      "trigger_age": 32,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณมีทั้งประสบการณ์ คอนเนกชัน และเงินเก็บก้อนหนึ่ง เพื่อนสนิทชวนคุณหุ้นกันเปิดร้านคาเฟ่/บริษัทเอเจนซี่ หรือทำแบรนด์สินค้าของตัวเอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จดทะเบียนพาณิชย์/ใบอนุญาตให้ถูกต้อง แล้วเริ่มทำธุรกิจควบคู่ไปก่อนจนมั่นคง!",
+          "hint_th": "🪙 กำไรธุรกิจ +20,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +6 , 🏪 ได้รับป้าย [มีใบอนุญาตค้าขาย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_merchant_permit"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โฟกัสไต่เต้าขึ้นระดับผู้บริหาร (Management) ในองค์กรใหญ่ รับเงินเดือนและโบนัสชัวร์ๆ",
+          "hint_th": "🪙 โบนัสประจำปี +15,000 ฿ , 🤝 เส้นสาย +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 17500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age33_01",
+      "title_th": "ครบ 3 ปีสัญญากู้ซื้อบ้าน! ยื่นรีไฟแนนซ์ (Refinance) ลดดอกเบี้ยธนาคาร",
+      "trigger_age": 33,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เคล็ดลับสำคัญของคนวัยสร้างตัว! เมื่อผ่อนอสังหาฯ หรือบริหารการเงินครบ 3 ปี อัตราดอกเบี้ยลอยตัวจะพุ่งสูงขึ้น ต้องทำเรื่องขอลดดอกเบี้ย (Retention / Refinance)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปรียบเทียบโปรโมชันธนาคารและยื่นรีไฟแนนซ์/บริหารดอกเบี้ย ประหยัดเงินได้มหาศาล!",
+          "hint_th": "🪙 ประหยัดดอกเบี้ย +18,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเงินโบนัสก้อนใหญ่ไปโปะตัดเงินต้นโดยตรง ลดระยะเวลาผ่อนไปได้หลายปี!",
+          "hint_th": "🪙 ผลตอบแทนประหยัดดอกเบี้ย +10,000 ฿ , 😊 ความสุข +6 , ✨ เครดิตดีเยี่ยม",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_good"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 5,
+            "cash": 14000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age33_02",
+      "title_th": "คุณพ่อคุณแม่เริ่มมีอาการเจ็บป่วยตามวัย! พาท่านไปตรวจเช็กโรงพยาบาล",
+      "trigger_age": 33,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อคุณอายุ 33 ปี พ่อแม่ก็เริ่มเข้าสู่วัยสูงอายุ มีอาการปวดข้อเข่าและความดันโลหิตสูง ต้องไปพบแพทย์ตามนัดที่โรงพยาบาล",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีสิทธิ์บัตรทอง / ประกัน รพ.เอกชน / ข้าราชการ] ใช้สิทธิ์เบิกค่ารักษาพยาบาลให้พ่อแม่ได้ครบถ้วน ไม่เสียเงินก้อน!",
+          "hint_th": "✨ แต้มบุญ +12 , 😊 ความสุข +6 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [
+            "flag_welfare_card"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลางานพาพ่อแม่ไปหาหมอด้วยตัวเองและจ่ายค่ายาบำรุงอย่างดี (-4,000฿)",
+          "hint_th": "🪙 ค่ารักษา -4,000 ฿ , ✨ แต้มบุญ +15 , 😊 ความสุข +6 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": -4000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "connections": 3,
+            "cash": -2000,
+            "merit": 14
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age33_03",
+      "title_th": "ภาวะหมดไฟวัย 33 (Burnout Syndrome)! งานหนักทับถมจนไร้แรงบันดาลใจ",
+      "trigger_age": 33,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความรับผิดชอบที่ถาโถมเข้ามาทั้งเรื่องงานและครอบครัว ทำให้เช้าวันจันทร์ของคุณหนักอึ้งจนไม่อยากลุกจากเตียง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใช้วันลาพักร้อนจัดทริปไปพักผ่อนธรรมชาติ สูดอากาศบริสุทธิ์และปิดการแจ้งเตือนงาน (-5,000฿)",
+          "hint_th": "🪙 ค่าทริป -5,000 ฿ , 😊 ความสุข +10 , ❤️ สุขภาพ +6 , ✨ ล้างสถานะ [ซึมเศร้า/นอนไม่หลับ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression",
+            "status_chronic_insomnia"
+          ],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ฝึกสมาธิ เจริญสติ และจัดลำดับความสำคัญของงานใหม่ ตัดงานที่ไม่จำเป็นทิ้ง",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +5 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ฝืนทนทำงานหนักต่อไปโดยไม่พัก จนจิตใจหดหู่และติดสถานะซึมเศร้า/หมดไฟ!",
+          "hint_th": "❤️ สุขภาพ -5 , 😊 ความสุข -8 , ⚠️ ติดสถานะ [ซึมเศร้า/หมดไฟ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_depression"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -5,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age34_01",
+      "title_th": "งานเลี้ยงรุ่นครบรอบ 16 ปีมัธยม! ประชันความสำเร็จของเพื่อนร่วมรุ่น",
+      "trigger_age": 34,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ประธานรุ่นนัดจัดงานเลี้ยงรุ่นใหญ่ที่ห้องอาหารโรงแรม เพื่อนๆ ในวัย 34 ปีต่างแต่งตัวจัดเต็มมาอัปเดตชีวิต หน้าที่การงาน และธุรกิจของตัวเอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปร่วมงานด้วยรอยยิ้ม แลกนามบัตรและได้พาร์ทเนอร์ต่อยอดงาน/ธุรกิจกับเพื่อนเก่า! (-1,500฿)",
+          "hint_th": "🪙 ค่าโต๊ะ -1,500 ฿ , 🤝 เส้นสาย +10 , 🪙 ดีลงานใหม่ +15,000 ฿ , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 13500,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นั่งคุยรำลึกความหลังอย่างสนุกสนานกับแก๊งเพื่อนซี้ ไม่สนใจเรื่องอวดรวย (-1,000฿)",
+          "hint_th": "🪙 ค่าโต๊ะ -1,000 ฿ , 😊 ความสุข +7 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 8,
+            "cash": 6250,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age34_02",
+      "title_th": "โอกาสทองลงทุนอสังหาริมทรัพย์ / ที่ดินทำเลศักยภาพก่อนราคาพุ่ง!",
+      "trigger_age": 34,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีข่าววงในว่าโครงการรถไฟฟ้าสายใหม่และถนนตัดใหม่กำลังจะผ่านพื้นที่ชานเมือง/ต่างจังหวัดที่คุณเล็งไว้ เจ้าของเดิมต้องการขายด่วน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "วิเคราะห์ทำเลและร่วมลงขันเก็งกำไรใบจอง/สัญญาซื้อขาย ฟันกำไรส่วนต่างงามๆ!",
+          "hint_th": "🪙 กำไรอสังหาฯ +30,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เป็นนายหน้าช่วยชี้ช่องทางให้ผู้ซื้อและผู้ขายมาเจอกัน รับค่านายหน้า 3% แบบไม่ต้องควักเนื้อ!",
+          "hint_th": "🪙 ค่านายหน้า +18,000 ฿ , 🤝 เส้นสาย +7 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 7,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 24000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age34_03",
+      "title_th": "รุ่นน้องที่ทำงานมาขอคำปรึกษาชีวิตและขอยึดคุณเป็นไอดอล (Mentor)!",
+      "trigger_age": 34,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ด้วยประสบการณ์ทำงานกว่า 12 ปี น้องๆ จบใหม่ในออฟฟิศ/สายงานต่างยกย่องในฝีมือของคุณและเข้ามาขอคำแนะนำในการวางแผนอาชีพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สอนงานและถ่ายทอดเคล็ดลับวิชาชีพให้อย่างไม่กั๊ก สร้างทีมลูกน้องคู่ใจที่แข็งแกร่ง!",
+          "hint_th": "🤝 เส้นสาย +9 , ✨ แต้มบุญ +6 , 😊 ความสุข +6 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนน้องๆ ตั้งทีมทำโปรเจกต์พิเศษส่งประกวดนวัตกรรมองค์กร คว้าเงินรางวัลยกทีม!",
+          "hint_th": "🪙 เงินรางวัล +15,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 7500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age35_01",
+      "title_th": "บทสรุปวัยหนุ่มสาว 35 ปี! ก้าวสู่ตำแหน่งผู้บริหารและเสาหลักของครอบครัว",
+      "trigger_age": 35,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปีสุดท้ายของช่วงวัยหนุ่มสาวสร้างตัว (Phase 4) ก่อนก้าวเข้าสู่วัยกลางคนเต็มตัว! คณะกรรมการบริษัท/ลูกค้าประเมินผลงานตลอดทศวรรษที่ผ่านมาของคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับการแต่งตั้งขึ้นเป็นระดับอาวุโส/ผู้บริหาร พร้อมโบนัสก้อนใหญ่ต้อนรับวัย 36!",
+          "hint_th": "🪙 โบนัสก้อนใหญ่ +35,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +5 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดงานทำบุญบ้านและเลี้ยงฉลองความสำเร็จร่วมกับครอบครัวอย่างพร้อมหน้าพร้อมตา (-5,000฿)",
+          "hint_th": "🪙 ค่าจัดงาน -5,000 ฿ , ✨ แต้มบุญ +18 , 😊 ความสุข +10 , ❤️ สุขภาพ +4 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -5000,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 15000,
+            "merit": 9,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p4_age35_02_rich",
+      "title_th": "ขยายอาณาจักรธุรกิจสู่ระดับประเทศ & รับเชิญขึ้นปกนิตยสารนักธุรกิจรุ่นใหม่!",
+      "trigger_age": 35,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 35 ปี ชื่อเสียงและพอร์ตทรัพย์สินของคุณโดดเด่นในแวดวงสังคมไทย สื่อเศรษฐกิจชั้นนำติดต่อขอสัมภาษณ์คุณขึ้นปกในฐานะผู้นำรุ่นใหม่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ให้สัมภาษณ์ถ่ายทอดวิสัยทัศน์ธุรกิจ ดึงดูดนักลงทุนและพาร์ทเนอร์ระดับเจ้าสัวทั่วประเทศ!",
+          "hint_th": "🪙 ดีลร่วมทุน +80,000 ฿ , 🤝 เส้นสาย +12 , ✨ หน้าตา +5 , 👑 ได้รับป้าย [คอนเนกชันระดับเจ้าสัว]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 12,
+            "cash": 80000,
+            "merit": 0,
+            "appearance": 5
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ก่อตั้งมูลนิธิการกุศลมอบทุนการศึกษาและช่วยโรงพยาบาล สร้างบารมีและแต้มบุญก้อนใหญ่ (-20,000฿)",
+          "hint_th": "🪙 บริจาค -20,000 ฿ , ✨ แต้มบุญ +40 , 🤝 เส้นสาย +10 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": -20000,
+            "merit": 40,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 11,
+            "cash": 30000,
+            "merit": 20,
+            "appearance": 4
+          }
+        }
+      ]
+    }
+  ]
+}

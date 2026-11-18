@@ -1,0 +1,659 @@
+{
+  "version": "1.2.0",
+  "database_name": "Core_Rules_&_Locations",
+  "game_constants": {
+    "min_stat": 0,
+    "max_stat": 100,
+    "max_age": 100,
+    "living_cost_start_age": 18,
+    "life_phases": {
+      "phase_1_infant": {
+        "name_th": "วัยทารกและปฐมวัย",
+        "min_age": 0,
+        "max_age": 4
+      },
+      "phase_2_child": {
+        "name_th": "วัยเด็กประถม",
+        "min_age": 5,
+        "max_age": 12
+      },
+      "phase_3_teen": {
+        "name_th": "วัยรุ่นมัธยม",
+        "min_age": 13,
+        "max_age": 17
+      },
+      "phase_4_young_adult": {
+        "name_th": "วัยหนุ่มสาวและสร้างตัว",
+        "min_age": 18,
+        "max_age": 35
+      },
+      "phase_5_middle_age": {
+        "name_th": "วัยกลางคน",
+        "min_age": 36,
+        "max_age": 59
+      },
+      "phase_6_elder": {
+        "name_th": "วัยชราและเกษียณ",
+        "min_age": 60,
+        "max_age": 100
+      }
+    },
+    "base_annual_living_cost_by_phase": {
+      "phase_1_infant": 0,
+      "phase_2_child": 0,
+      "phase_3_teen": 0,
+      "phase_4_young_adult": 84000,
+      "phase_5_middle_age": 108000,
+      "phase_6_elder": 72000
+    },
+    "initial_birth_gift_rate": 0.05,
+    "parent_allowance_by_age": [
+      {
+        "min_age": 0,
+        "max_age": 4,
+        "rate": 0,
+        "minimum_annual_cash": 0
+      },
+      {
+        "min_age": 5,
+        "max_age": 6,
+        "rate": 0.1,
+        "minimum_annual_cash": 300
+      },
+      {
+        "min_age": 7,
+        "max_age": 12,
+        "rate": 0.2,
+        "minimum_annual_cash": 900
+      },
+      {
+        "min_age": 13,
+        "max_age": 17,
+        "rate": 0.4,
+        "minimum_annual_cash": 1800
+      }
+    ],
+    "parent_support_relationship_multiplier": {
+      "base": 0.6,
+      "relationship_scale": 0.4,
+      "single_parent_multiplier": 0.7
+    },
+    "annual_passive_stat_gain_caps": [
+      {
+        "min_stat": 0,
+        "max_stat": 79,
+        "max_positive_gain": 3
+      },
+      {
+        "min_stat": 80,
+        "max_stat": 89,
+        "max_positive_gain": 2
+      },
+      {
+        "min_stat": 90,
+        "max_stat": 100,
+        "max_positive_gain": 1
+      }
+    ],
+    "life_paths": [
+      {
+        "path_id": "life_path_balanced",
+        "name_th": "สมดุลทุกด้าน",
+        "description_th": "เปิดโอกาสให้เหตุการณ์ด้านช่วงวัย งาน ความสัมพันธ์ และการค้นหาประสบการณ์กระจายใกล้เคียงค่าพื้นฐาน",
+        "event_pool_weight_multipliers": {
+          "life_phase": 1,
+          "career": 1,
+          "relationship": 1,
+          "location_karma": 1
+        }
+      },
+      {
+        "path_id": "life_path_career",
+        "name_th": "มุ่งมั่นสร้างตัว",
+        "description_th": "มีโอกาสพบเหตุการณ์ด้านงาน อาชีพ และการสร้างฐานะบ่อยขึ้น แต่ยังพบเหตุการณ์ชีวิตและความสัมพันธ์ได้ตามปกติ",
+        "event_pool_weight_multipliers": {
+          "life_phase": 0.85,
+          "career": 1.75,
+          "relationship": 0.75,
+          "location_karma": 0.85
+        }
+      },
+      {
+        "path_id": "life_path_family",
+        "name_th": "ให้ความสำคัญกับครอบครัว",
+        "description_th": "เพิ่มโอกาสพบเหตุการณ์ด้านครอบครัว เพื่อน และความสัมพันธ์ โดยไม่ปิดโอกาสด้านอื่น",
+        "event_pool_weight_multipliers": {
+          "life_phase": 1,
+          "career": 0.75,
+          "relationship": 1.8,
+          "location_karma": 0.85
+        }
+      },
+      {
+        "path_id": "life_path_explorer",
+        "name_th": "เปิดโลกและค้นหาโอกาส",
+        "description_th": "เพิ่มโอกาสพบเหตุการณ์ด้านจังหวัด สังคมท้องถิ่น การเดินทาง และแต้มบุญ โดยยังเล่นเหตุการณ์หมวดอื่นได้",
+        "event_pool_weight_multipliers": {
+          "life_phase": 0.9,
+          "career": 0.85,
+          "relationship": 0.8,
+          "location_karma": 1.8
+        }
+      }
+    ],
+    "max_annual_cash_allowance": 10000
+  },
+  "core_stats_definitions": [
+    {
+      "stat_id": "health",
+      "ui_type": "core_bar",
+      "is_hidden": false,
+      "min_value": 0,
+      "max_value": 100,
+      "name_th": "สุขภาพ",
+      "description_th": "ความแข็งแรงของร่างกาย ภูมิคุ้มกันโรค และพลังงานชีวิตในการทำกิจกรรมต่างๆ",
+      "effect_at_0": {
+        "action": "instant_death",
+        "flag_granted": "flag_dead_by_illness",
+        "description_th": "เสียชีวิตทันทีเนื่องจากภาวะร่างกายล้มเหลวหรือโรคร้ายแรง"
+      },
+      "effect_at_100": {
+        "action": "grant_buff",
+        "flag_granted": "flag_iron_body",
+        "stat_modifiers_yearly": {
+          "happiness": 1,
+          "appearance": 1
+        },
+        "description_th": "ร่างกายฟิตสมบูรณ์ขั้นสุด ไม่เจ็บป่วยง่าย และช่วยเพิ่มความสดใสให้บุคลิกภาพ"
+      }
+    },
+    {
+      "stat_id": "happiness",
+      "ui_type": "core_bar",
+      "is_hidden": false,
+      "min_value": 0,
+      "max_value": 100,
+      "name_th": "ความสุข",
+      "description_th": "สุขภาพจิต ความพึงพอใจในชีวิต และแรงผลักดันในการใช้ชีวิตแต่ละวัน",
+      "effect_at_0": {
+        "action": "conditional_debuff_2_years",
+        "flag_granted": "flag_depression",
+        "stat_modifiers_yearly": {
+          "health": -5,
+          "intelligence": -2
+        },
+        "description_th": "หากแตะ 0 ติดต่อกัน 2 ปี จะติดสถานะโรคซึมเศร้า ส่งผลให้สุขภาพกายและประสิทธิภาพการเรียน/ทำงานลดลงอย่างหนัก"
+      },
+      "effect_at_100": {
+        "action": "grant_buff",
+        "flag_granted": "flag_optimist_aura",
+        "stat_modifiers_yearly": {
+          "health": 2,
+          "connections": 2
+        },
+        "description_th": "จิตใจเบิกบานเต็มเปี่ยม ส่งผลดีต่อสุขภาพกายและทำให้คนรอบข้างอยากเข้าหา"
+      }
+    },
+    {
+      "stat_id": "intelligence",
+      "ui_type": "core_bar",
+      "is_hidden": false,
+      "min_value": 0,
+      "max_value": 100,
+      "name_th": "สมอง",
+      "description_th": "ความฉลาด ไหวพริบ ความจำ และความสามารถในการเรียนรู้วิชาการและทักษะอาชีพ",
+      "effect_at_0": {
+        "action": "grant_debuff",
+        "flag_granted": "flag_severe_learning_disability",
+        "stat_modifiers_yearly": {
+          "connections": -1
+        },
+        "description_th": "ไม่สามารถสอบผ่านระดับการศึกษาขั้นสูงได้ และถูกจำกัดสายอาชีพที่ใช้ทักษะเฉพาะทาง"
+      },
+      "effect_at_100": {
+        "action": "grant_buff",
+        "flag_granted": "flag_genius_mind",
+        "stat_modifiers_yearly": {
+          "connections": 2
+        },
+        "description_th": "อัจฉริยะระดับประเทศ ปลดล็อกทุนการศึกษาเต็มจำนวนและสายงานระดับท็อปของประเทศ"
+      }
+    },
+    {
+      "stat_id": "connections",
+      "ui_type": "core_bar",
+      "is_hidden": false,
+      "min_value": 0,
+      "max_value": 100,
+      "name_th": "เส้นสาย",
+      "dynamic_names_by_age": [
+        {
+          "min_age": 0,
+          "max_age": 4,
+          "name_th": "ความเอ็นดู"
+        },
+        {
+          "min_age": 5,
+          "max_age": 12,
+          "name_th": "เพื่อนฝูง"
+        },
+        {
+          "min_age": 13,
+          "max_age": 100,
+          "name_th": "เส้นสาย"
+        }
+      ],
+      "description_th": "ทักษะการเข้าสังคม วาทศิลป์ ความน่าเชื่อถือ และบารมีในสายตาผู้ใหญ่และคนรอบข้าง (เปลี่ยนชื่อตามช่วงวัย: 0-4 ปี = ความเอ็นดู, 5-12 ปี = เพื่อนฝูง, 13+ ปี = เส้นสาย)",
+      "effect_at_0": {
+        "action": "grant_debuff",
+        "flag_granted": "flag_public_enemy",
+        "stat_modifiers_yearly": {
+          "happiness": -2
+        },
+        "description_th": "ไร้คนคบหา ผู้ใหญ่ไม่เอ็นดู เสี่ยงต่อการถูกใส่ร้ายหรือถูกไล่ออกจากงานได้ง่าย"
+      },
+      "effect_at_100": {
+        "action": "grant_buff",
+        "flag_granted": "flag_beloved_icon",
+        "stat_modifiers_yearly": {
+          "happiness": 2
+        },
+        "description_th": "มหาเสน่ห์ที่ใครเห็นก็รักเอ็นดู ได้รับโอกาสพิเศษจากผู้ใหญ่และคอนเนกชันระดับสูงเสมอ"
+      }
+    }
+  ],
+  "special_stats_definitions": [
+    {
+      "stat_id": "merit",
+      "legacy_alias": "karma",
+      "ui_type": "top_bar_counter",
+      "is_hidden": false,
+      "min_value": -9999,
+      "max_value": null,
+      "uncapped": true,
+      "name_th": "แต้มบุญ",
+      "description_th": "ค่ากรรมดี-กรรมชั่วสะสม แสดงผลมุมขวาบนคู่กับเงินสด (สะสมได้ไม่จำกัดเพดาน 100) ส่งผลต่อดวงชะตา เหตุการณ์สุ่ม การถูกรางวัล และภัยพิบัติในชีวิต",
+      "threshold_effects": {
+        "at_or_below_0": {
+          "action": "grant_debuff",
+          "flag_granted": "flag_cursed_fate",
+          "stat_modifiers_yearly": {
+            "health": -2,
+            "happiness": -2
+          },
+          "description_th": "ดวงตกขั้นสุด มักเจอเหตุการณ์ซวยซ้ำซ้อน อุบัติเหตุ การถูกโกง หรือคดีความไม่คาดฝัน"
+        },
+        "at_or_above_100": {
+          "action": "grant_buff",
+          "flag_granted": "flag_blessed_destiny",
+          "stat_modifiers_yearly": {
+            "happiness": 2,
+            "connections": 1
+          },
+          "description_th": "ผู้มีบุญญาธิการ รอดพ้นจากวิกฤตอันตรายได้อย่างปาฏิหาริย์ และมีโอกาสเจอเหตุการณ์โชคดีระดับพลิกชีวิต"
+        }
+      }
+    },
+    {
+      "stat_id": "appearance",
+      "ui_type": "hidden_stat",
+      "is_hidden": true,
+      "min_value": 0,
+      "max_value": 100,
+      "name_th": "หน้าตาและบุคลิก",
+      "description_th": "ค่าสถานะซ่อน (Hidden Stat) ความสวยงาม หล่อเหลา การแต่งกาย และความน่าดึงดูดใจตั้งแต่แรกเห็น ไม่แสดงหลอดบน UI เพื่อไม่ให้ชนกับ 4 หลอดหลัก",
+      "effect_at_0": {
+        "action": "grant_debuff",
+        "flag_granted": "flag_social_outcast_look",
+        "stat_modifiers_yearly": {
+          "happiness": -2,
+          "connections": -2
+        },
+        "description_th": "บุคลิกภาพแย่ขั้นวิกฤต มักถูกบูลลี่ในวัยเรียนและเสียเปรียบในการสัมภาษณ์งานสายบริการ/บันเทิง"
+      },
+      "effect_at_100": {
+        "action": "grant_buff",
+        "flag_granted": "flag_beauty_privilege",
+        "stat_modifiers_yearly": {
+          "connections": 3,
+          "happiness": 1
+        },
+        "description_th": "สวยหล่อระดับดารา ได้รับสิทธิพิเศษทางสังคม (Beauty Privilege) และปลดล็อกอาชีพวงการบันเทิงทันที"
+      }
+    }
+  ],
+  "social_classes": [
+    {
+      "class_id": "class_1",
+      "name_th": "ยากจน",
+      "spawn_weight_percent": 20,
+      "net_worth_min": -99999999,
+      "net_worth_max": 10000,
+      "parent_annual_support_age_0_to_17": 1200,
+      "starting_stat_modifiers": {
+        "health": -5,
+        "happiness": -5,
+        "intelligence": 0,
+        "connections": -2,
+        "merit": 0,
+        "appearance": -3
+      },
+      "starting_flags": [
+        "flag_welfare_card",
+        "flag_debt_family",
+        "flag_malnutrition_risk"
+      ],
+      "description_th": "หาเช้ากินค่ำ อาศัยในบ้านเช่าราคาถูกหรือเพิงพักสังกะสี ทุกบาททุกสตางค์คือความอยู่รอด การได้เรียนจบ ม.6 คือความหวังสูงสุดของครอบครัว"
+    },
+    {
+      "class_id": "class_2",
+      "name_th": "จน",
+      "spawn_weight_percent": 35,
+      "net_worth_min": 10001,
+      "net_worth_max": 150000,
+      "parent_annual_support_age_0_to_17": 6000,
+      "starting_stat_modifiers": {
+        "health": -2,
+        "happiness": -2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": -1
+      },
+      "starting_flags": [
+        "flag_working_class_roots",
+        "flag_student_loan_eligible"
+      ],
+      "description_th": "ครอบครัวแรงงานหรือเกษตรกรรายย่อย มีรายได้พอประทังชีวิตแบบเดือนชนเดือน หากลูกอยากเรียนต่อมหาวิทยาลัยต้องพึ่งกยศ.และทำงานพาร์ทไทม์ควบคู่ไปด้วย"
+    },
+    {
+      "class_id": "class_3",
+      "name_th": "ปานกลาง",
+      "spawn_weight_percent": 30,
+      "net_worth_min": 150001,
+      "net_worth_max": 3000000,
+      "parent_annual_support_age_0_to_17": 24000,
+      "starting_stat_modifiers": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 2,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "starting_flags": [
+        "flag_suburban_home",
+        "flag_cram_school_pressure"
+      ],
+      "description_th": "ครอบครัวมนุษย์เงินเดือนหรือข้าราชการ มีบ้านและรถที่ยังผ่อนอยู่ พ่อแม่ทุ่มเทส่งลูกเรียนพิเศษอย่างหนักเพื่อหวังให้ลูกสอบติดคณะท็อปและยกระดับฐานะของบ้าน"
+    },
+    {
+      "class_id": "class_4",
+      "name_th": "มีอันจะกิน",
+      "spawn_weight_percent": 12,
+      "net_worth_min": 3000001,
+      "net_worth_max": 50000000,
+      "parent_annual_support_age_0_to_17": 120000,
+      "starting_stat_modifiers": {
+        "health": 5,
+        "happiness": 3,
+        "intelligence": 5,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 3
+      },
+      "starting_flags": [
+        "flag_private_school_kid",
+        "flag_family_business",
+        "flag_private_hospital_access"
+      ],
+      "description_th": "ครอบครัวเจ้าของกิจการ SME แพทย์ หรือผู้บริหารระดับสูง เติบโตในหมู่บ้านจัดสรรหรู เรียนโรงเรียนเอกชนชื่อดังหรือหลักสูตรสองภาษา มีต้นทุนชีวิตที่พร้อมต่อยอดได้ทันที"
+    },
+    {
+      "class_id": "class_5",
+      "name_th": "มหาเศรษฐี",
+      "spawn_weight_percent": 3,
+      "net_worth_min": 50000001,
+      "net_worth_max": 9999999999,
+      "parent_annual_support_age_0_to_17": 600000,
+      "starting_stat_modifiers": {
+        "health": 10,
+        "happiness": 5,
+        "intelligence": 5,
+        "connections": 8,
+        "merit": 0,
+        "appearance": 5
+      },
+      "starting_flags": [
+        "flag_elite_connection",
+        "flag_trust_fund",
+        "flag_international_school"
+      ],
+      "description_th": "ทายาทตระกูลเจ้าสัวระดับประเทศหรือชนชั้นสูง เกิดบนกองเงินกองทอง เรียนโรงเรียนนานาชาติชั้นนำ มีคอนเนกชันระดับประเทศและกองทุนมรดกที่ทำให้ไม่ต้องกังวลเรื่องเงินตลอดชีวิต"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "loc_bangkok",
+      "name_th": "กรุงเทพมหานคร",
+      "region": "central",
+      "tier": "metropolis",
+      "relocation_cost": 5000,
+      "cost_of_living_multiplier": 1.5,
+      "job_opportunity_multiplier": 1.4,
+      "education_quality_bonus": 2,
+      "yearly_passive_effects": {
+        "health": -2,
+        "happiness": -1
+      },
+      "local_flags_granted": [
+        "flag_bkk_native",
+        "flag_city_kid"
+      ],
+      "flavor_text": "เมืองหลวงศูนย์กลางอำนาจและเศรษฐกิจที่เต็มไปด้วยโอกาสและแสงสี แต่ต้องแลกมาด้วยค่าครองชีพที่โหดร้าย รถติดสาหัส และมลพิษฝุ่น PM2.5"
+    },
+    {
+      "location_id": "loc_nonthaburi",
+      "name_th": "นนทบุรี",
+      "region": "central",
+      "tier": "metropolis",
+      "relocation_cost": 4000,
+      "cost_of_living_multiplier": 1.2,
+      "job_opportunity_multiplier": 1.2,
+      "education_quality_bonus": 1,
+      "yearly_passive_effects": {
+        "health": -1,
+        "happiness": 0
+      },
+      "local_flags_granted": [
+        "flag_suburban_commuter"
+      ],
+      "flavor_text": "เมืองปริมณฑลแหล่งรวมหมู่บ้านจัดสรรและคอนโดมิเนียมของคนทำงานออฟฟิศ เชื่อมต่อเมืองหลวงด้วยรถไฟฟ้าในราคาค่าครองชีพที่เบาลงมาเล็กน้อย"
+    },
+    {
+      "location_id": "loc_chonburi",
+      "name_th": "ชลบุรี",
+      "region": "east",
+      "tier": "industrial_tourism",
+      "relocation_cost": 4500,
+      "cost_of_living_multiplier": 1.3,
+      "job_opportunity_multiplier": 1.3,
+      "education_quality_bonus": 1,
+      "yearly_passive_effects": {
+        "health": -1,
+        "connections": 1
+      },
+      "local_flags_granted": [
+        "flag_eastern_seaboard_kid"
+      ],
+      "flavor_text": "เมืองเศรษฐกิจภาคตะวันออกที่ผสมผสานระหว่างท่าเรือ นิคมอุตสาหกรรม และแสงสียามค่ำคืนของพัทยา มีงานหลากหลายและเงินหมุนเวียนมหาศาล"
+    },
+    {
+      "location_id": "loc_rayong",
+      "name_th": "ระยอง",
+      "region": "east",
+      "tier": "industrial_tourism",
+      "relocation_cost": 4000,
+      "cost_of_living_multiplier": 1.2,
+      "job_opportunity_multiplier": 1.3,
+      "education_quality_bonus": 0,
+      "yearly_passive_effects": {
+        "health": -2,
+        "happiness": 0
+      },
+      "local_flags_granted": [
+        "flag_industrial_zone_native"
+      ],
+      "flavor_text": "หัวใจของนิคมอุตสาหกรรมปิโตรเคมีและโรงงานระดับโลก สวรรค์ของสายงานวิศวกรและช่างเทคนิคที่มีฐานเงินเดือนและโบนัสสูงลิ่ว แต่ต้องระวังเรื่องมลพิษโรงงาน"
+    },
+    {
+      "location_id": "loc_chiangmai",
+      "name_th": "เชียงใหม่",
+      "region": "north",
+      "tier": "regional_hub",
+      "relocation_cost": 3500,
+      "cost_of_living_multiplier": 1,
+      "job_opportunity_multiplier": 1,
+      "education_quality_bonus": 1,
+      "yearly_passive_effects": {
+        "health": -2,
+        "happiness": 2
+      },
+      "local_flags_granted": [
+        "flag_northern_charm",
+        "flag_cafe_hopper"
+      ],
+      "flavor_text": "เมืองหลวงแห่งล้านนาที่เต็มไปด้วยวัฒนธรรม คาเฟ่ มหาวิทยาลัยชั้นนำ และวิถีชีวิตสโลว์ไลฟ์ที่น่าหลงใหล แต่ต้องเผชิญวิกฤตฝุ่นควันไฟป่าทุกต้นปี"
+    },
+    {
+      "location_id": "loc_khonkaen",
+      "name_th": "ขอนแก่น",
+      "region": "northeast",
+      "tier": "regional_hub",
+      "relocation_cost": 3000,
+      "cost_of_living_multiplier": 0.9,
+      "job_opportunity_multiplier": 1,
+      "education_quality_bonus": 1,
+      "yearly_passive_effects": {
+        "health": 0,
+        "happiness": 1
+      },
+      "local_flags_granted": [
+        "flag_isan_hub_native"
+      ],
+      "flavor_text": "ศูนย์กลางการศึกษา การแพทย์ และการค้าแห่งภาคอีสาน เมืองมหาวิทยาลัยที่คึกคักและกำลังเติบโตอย่างก้าวกระโดดด้วยค่าครองชีพที่ยังเป็นมิตร"
+    },
+    {
+      "location_id": "loc_korat",
+      "name_th": "นครราชสีมา",
+      "region": "northeast",
+      "tier": "regional_hub",
+      "relocation_cost": 3000,
+      "cost_of_living_multiplier": 0.9,
+      "job_opportunity_multiplier": 1,
+      "education_quality_bonus": 0,
+      "yearly_passive_effects": {
+        "health": 0,
+        "happiness": 1
+      },
+      "local_flags_granted": [
+        "flag_korat_gateway"
+      ],
+      "flavor_text": "ประตูสู่ภาคอีสานที่มีขนาดพื้นที่ใหญ่ที่สุดในประเทศ ผสมผสานทั้งแหล่งเกษตรกรรมขนาดใหญ่ โรงงานอุตสาหกรรม และแหล่งท่องเที่ยวธรรมชาติเขาใหญ่"
+    },
+    {
+      "location_id": "loc_sisaket",
+      "name_th": "ศรีสะเกษ",
+      "region": "northeast",
+      "tier": "rural",
+      "relocation_cost": 1500,
+      "cost_of_living_multiplier": 0.7,
+      "job_opportunity_multiplier": 0.7,
+      "education_quality_bonus": -1,
+      "yearly_passive_effects": {
+        "health": 1,
+        "happiness": 1,
+        "merit": 1
+      },
+      "local_flags_granted": [
+        "flag_upcountry_kid",
+        "flag_isan_resilience"
+      ],
+      "flavor_text": "แผ่นดินอีสานใต้ที่ผู้คนมีน้ำใจและผูกพันกับวิถีเกษตรกรรม ค่าครองชีพถูกและชีวิตเรียบง่ายสงบสุข แต่หนุ่มสาวส่วนใหญ่ต้องดิ้นรนเข้าเมืองหลวงเพื่อหางานรายได้สูง"
+    },
+    {
+      "location_id": "loc_ayutthaya",
+      "name_th": "พระนครศรีอยุธยา",
+      "region": "central",
+      "tier": "industrial_tourism",
+      "relocation_cost": 3000,
+      "cost_of_living_multiplier": 1,
+      "job_opportunity_multiplier": 1.1,
+      "education_quality_bonus": 0,
+      "yearly_passive_effects": {
+        "health": 0,
+        "merit": 1
+      },
+      "local_flags_granted": [
+        "flag_old_capital_kid"
+      ],
+      "flavor_text": "เมืองมรดกโลกที่รายล้อมด้วยวัดวาอารามโบราณควบคู่ไปกับนิคมอุตสาหกรรมชิ้นส่วนอิเล็กทรอนิกส์และยานยนต์ อยู่ใกล้กรุงเทพฯ และมีงานโรงงานรองรับมากมาย"
+    },
+    {
+      "location_id": "loc_phuket",
+      "name_th": "ภูเก็ต",
+      "region": "south",
+      "tier": "industrial_tourism",
+      "relocation_cost": 6000,
+      "cost_of_living_multiplier": 1.5,
+      "job_opportunity_multiplier": 1.3,
+      "education_quality_bonus": 0,
+      "yearly_passive_effects": {
+        "happiness": 1,
+        "connections": 1
+      },
+      "local_flags_granted": [
+        "flag_island_life",
+        "flag_expat_exposure"
+      ],
+      "flavor_text": "ไข่มุกแห่งอันดามัน เมืองท่องเที่ยวระดับโลกที่เต็มไปด้วยชาวต่างชาติ โรงแรมหรู และธุรกิจบริการ รายได้ดีมากสำหรับคนมีทักษะภาษา แต่ค่าครองชีพแพงระยับเทียบเท่ากรุงเทพฯ"
+    },
+    {
+      "location_id": "loc_songkhla",
+      "name_th": "สงขลา",
+      "region": "south",
+      "tier": "regional_hub",
+      "relocation_cost": 3500,
+      "cost_of_living_multiplier": 1,
+      "job_opportunity_multiplier": 1,
+      "education_quality_bonus": 1,
+      "yearly_passive_effects": {
+        "health": 0,
+        "happiness": 1
+      },
+      "local_flags_granted": [
+        "flag_southern_trader"
+      ],
+      "flavor_text": "ศูนย์กลางการค้าและเศรษฐกิจชายแดนภาคใต้ที่มีเมืองหาดใหญ่เป็นหัวใจสำคัญ คึกคักด้วยธุรกิจการค้า การศึกษา และอาหารการกินที่อุดมสมบูรณ์"
+    },
+    {
+      "location_id": "loc_mae_hong_son",
+      "name_th": "แม่ฮ่องสอน",
+      "region": "north",
+      "tier": "rural",
+      "relocation_cost": 2000,
+      "cost_of_living_multiplier": 0.6,
+      "job_opportunity_multiplier": 0.6,
+      "education_quality_bonus": -2,
+      "yearly_passive_effects": {
+        "health": 2,
+        "happiness": 2
+      },
+      "local_flags_granted": [
+        "flag_mountain_child",
+        "flag_remote_area_survivor"
+      ],
+      "flavor_text": "เมืองสามหมอกกลางหุบเขาอันห่างไกล อากาศบริสุทธิ์และธรรมชาติงดงามช่วยฟื้นฟูร่างกายและจิตใจได้ดีเยี่ยม แต่การเดินทางยากลำบากและขาดแคลนโอกาสทางการศึกษาและอาชีพ"
+    }
+  ]
+}

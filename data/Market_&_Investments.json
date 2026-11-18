@@ -1,0 +1,788 @@
+{
+  "version": "1.0.0",
+  "database_name": "Market_&_Investments",
+  "investment_rules_and_modifiers": {
+    "financial_literacy_flag": "flag_financial_literacy",
+    "loss_mitigation_multiplier": 0.75,
+    "financial_literacy_news_accuracy_bonus": 0.25,
+    "crypto_nerd_flag": "tag_computer_nerd",
+    "crypto_bonus_return": 0.05,
+    "elite_connection_flag": "flag_elite_connection",
+    "elite_dividend_bonus": 0.02,
+    "auto_dividend_payout_to_cash": true,
+    "capital_gains_tax_rate": 0.0,
+    "dividend_withholding_tax_rate": 0.1
+  },
+  "financial_instruments": [
+    {
+      "instrument_id": "inv_gsb_savings",
+      "name_th": "เงินฝากออมทรัพย์ ธนาคารออมสิน",
+      "ui_tab": "tab_assets_sub_banking",
+      "action_button_label_th": "ฝาก/ถอน",
+      "min_age": 7,
+      "min_investment_cash": 100,
+      "risk_level": "none",
+      "req_flags": [
+        "flag_bank_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.015,
+      "min_annual_price_change": 0.0,
+      "max_annual_price_change": 0.0,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "บัญชีเงินฝากพื้นฐานความเสี่ยงเป็นศูนย์ เงินต้นอยู่ครบ 100% พร้อมรับดอกเบี้ยเงินฝาก +1.50% ต่อปีเข้าบัญชีอัตโนมัติ และถอนออกมาใช้เป็นเงินสดได้ตลอดเวลา"
+    },
+    {
+      "instrument_id": "inv_gsb_lottery_bond",
+      "name_th": "สลากออมสินพิเศษ (ลุ้นโชคทุกปี)",
+      "ui_tab": "tab_assets_sub_banking",
+      "action_button_label_th": "ซื้อ/ขายคืน",
+      "min_age": 7,
+      "min_investment_cash": 500,
+      "risk_level": "none",
+      "req_flags": [
+        "flag_bank_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.005,
+      "min_annual_price_change": 0.0,
+      "max_annual_price_change": 0.0,
+      "special_mechanic": "eligible_for_annual_gsb_lucky_draw",
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "การออมเงินของคนชอบลุ้น เงินต้นไม่หาย ได้รับดอกเบี้ยพื้นฐาน +0.50% ต่อปี และมีสิทธิ์สุ่มถูกรางวัลเลขสลากทุกปีตามสัดส่วนจำนวนเงินที่ถือครอง"
+    },
+    {
+      "instrument_id": "inv_gold_bullion",
+      "name_th": "ทองคำแท่งเยาวราช 96.5%",
+      "ui_tab": "tab_assets_sub_commodities",
+      "action_button_label_th": "ซื้อ/ขาย",
+      "min_age": 18,
+      "min_investment_cash": 5000,
+      "risk_level": "low_medium",
+      "req_flags": [
+        "flag_bank_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.0,
+      "min_annual_price_change": -0.08,
+      "max_annual_price_change": 0.18,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "สินทรัพย์ปลอดภัย (Safe Haven) ยอดฮิตของคนไทย ไม่มีเงินปันผลแต่ช่วยป้องกันเงินเฟ้อได้ดีเยี่ยม และมักจะมีราคาพุ่งสูงขึ้นเมื่อเกิดวิกฤตเศรษฐกิจหรือสงคราม"
+    },
+    {
+      "instrument_id": "inv_thai_gov_bond",
+      "name_th": "พันธบัตรรัฐบาลและหุ้นกู้เอกชนเกรด A",
+      "ui_tab": "tab_assets_sub_stocks",
+      "action_button_label_th": "ซื้อ/ขาย",
+      "min_age": 20,
+      "min_investment_cash": 10000,
+      "risk_level": "low",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_smartphone",
+        "flag_investment_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.035,
+      "min_annual_price_change": -0.02,
+      "max_annual_price_change": 0.03,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ตราสารหนี้ความเสี่ยงต่ำที่จ่ายดอกเบี้ยสม่ำเสมอ +3.50% ต่อปี เหมาะสำหรับพักเงินและสร้างกระแสเงินสดที่มั่นคงในวัยทำงานและวัยเกษียณ"
+    },
+    {
+      "instrument_id": "inv_set_index_stock",
+      "name_th": "พอร์ตหุ้นไทย (SET Index & หุ้นปันผลบลูชิพ)",
+      "ui_tab": "tab_assets_sub_stocks",
+      "action_button_label_th": "ซื้อ/ขาย",
+      "min_age": 20,
+      "min_investment_cash": 1000,
+      "risk_level": "medium_high",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_smartphone",
+        "flag_investment_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.03,
+      "min_annual_price_change": -0.25,
+      "max_annual_price_change": 0.3,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ลงทุนในหุ้นบริษัทชั้นนำของตลาดหลักทรัพย์แห่งประเทศไทย รับเงินปันผลพื้นฐาน +3.0% ต่อปี และลุ้นกำไรส่วนต่างราคาตามข่าวเศรษฐกิจมหภาค"
+    },
+    {
+      "instrument_id": "inv_tax_saving_fund",
+      "name_th": "กองทุนรวมลดหย่อนภาษี (RMF / ThaiESG)",
+      "ui_tab": "tab_assets_sub_stocks",
+      "action_button_label_th": "ซื้อ/ขาย",
+      "min_age": 20,
+      "min_investment_cash": 5000,
+      "risk_level": "medium",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_smartphone",
+        "flag_investment_account",
+        "flag_regular_income"
+      ],
+      "grants_flags_on_hold": [
+        "flag_tax_compliant"
+      ],
+      "removes_flags_on_hold": [
+        "flag_tax_evasion_risk"
+      ],
+      "base_annual_dividend_rate": 0.04,
+      "min_annual_price_change": -0.1,
+      "max_annual_price_change": 0.15,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 1,
+        "appearance": 0
+      },
+      "description_th": "กองทุนรวมสำหรับผู้มีรายได้ประจำและฟรีแลนซ์ ให้ผลตอบแทนรวมเงินคืนภาษีเฉลี่ย +4.0% ต่อปี และช่วยล้างป้ายความเสี่ยงโดนสรรพากรเรียกเก็บภาษีย้อนหลัง"
+    },
+    {
+      "instrument_id": "inv_crypto_bitcoin",
+      "name_th": "บิตคอยน์และคริปโตเคอร์เรนซี (BTC / Crypto)",
+      "ui_tab": "tab_assets_sub_crypto",
+      "action_button_label_th": "เทรด",
+      "min_age": 20,
+      "min_investment_cash": 500,
+      "risk_level": "extreme",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_smartphone",
+        "flag_investment_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.0,
+      "min_annual_price_change": -0.6,
+      "max_annual_price_change": 1.2,
+      "stat_effects_on_invest": {
+        "health": -1,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "สินทรัพย์ดิจิทัลความผันผวนสูงลิ่ว ไม่มีเงินปันผลแต่สามารถทำกำไรพุ่งทะยานเป็นเท่าตัวในปีตลาดกระทิง หรือดิ่งเหวเกินครึ่งพอร์ตในปีตลาดหมี (คนมีป้ายเด็กเนิร์ดคอมได้โบนัสผลตอบแทน +5%)"
+    },
+    {
+      "instrument_id": "inv_vip_pre_ipo",
+      "name_th": "หุ้นวงใน Pre-IPO & กองทุนส่วนบุคคลระดับเจ้าสัว",
+      "ui_tab": "tab_assets_sub_vip",
+      "action_button_label_th": "ร่วมทุน VIP",
+      "min_age": 25,
+      "min_investment_cash": 1000000,
+      "risk_level": "medium",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_smartphone",
+        "flag_investment_account",
+        "flag_elite_connection"
+      ],
+      "grants_flags_on_hold": [
+        "flag_vip_investor"
+      ],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.06,
+      "min_annual_price_change": -0.05,
+      "max_annual_price_change": 0.45,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 5,
+        "intelligence": 2,
+        "connections": 5,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "สิทธิพิเศษเฉพาะผู้มีคอนเนกชันระดับเจ้าสัว ได้เข้าซื้อหุ้นราคาพาร์ก่อนเข้าตลาดหลักทรัพย์ รับปันผลสูงถึง +6.0% ต่อปี และมีโอกาสฟันกำไรก้อนโตเมื่อบริษัทเข้าตลาด"
+    },
+    {
+      "instrument_id": "inv_reit_property",
+      "name_th": "กองทุนรวมอสังหาริมทรัพย์ (REIT)",
+      "ui_tab": "tab_assets_sub_stocks",
+      "action_button_label_th": "ซื้อ/ขาย",
+      "min_age": 20,
+      "min_investment_cash": 5000,
+      "risk_level": "medium",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_investment_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.05,
+      "min_annual_price_change": -0.08,
+      "max_annual_price_change": 0.1,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "รับค่าเช่าจากห้างและสำนักงานผ่านกองทุน ได้ปันผลประมาณ 5% ต่อปี ราคาขึ้นลงปานกลาง"
+    },
+    {
+      "instrument_id": "inv_global_etf",
+      "name_th": "กองทุนดัชนีหุ้นโลก (Global ETF)",
+      "ui_tab": "tab_assets_sub_stocks",
+      "action_button_label_th": "ซื้อ/ขาย",
+      "min_age": 20,
+      "min_investment_cash": 3000,
+      "risk_level": "medium",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_investment_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.015,
+      "min_annual_price_change": -0.25,
+      "max_annual_price_change": 0.3,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "กระจายความเสี่ยงไปหุ้นทั่วโลกในกองเดียว ระยะยาวมักเติบโตแต่บางปีตกหนัก"
+    },
+    {
+      "instrument_id": "inv_startup_angel",
+      "name_th": "ลงทุนสตาร์ทอัพรายย่อย (Angel)",
+      "ui_tab": "tab_assets_sub_crypto",
+      "action_button_label_th": "ลงทุน",
+      "min_age": 25,
+      "min_investment_cash": 50000,
+      "risk_level": "extreme",
+      "req_flags": [
+        "flag_bank_account",
+        "flag_investment_account"
+      ],
+      "grants_flags_on_hold": [],
+      "removes_flags_on_hold": [],
+      "base_annual_dividend_rate": 0.0,
+      "min_annual_price_change": -0.9,
+      "max_annual_price_change": 2.0,
+      "stat_effects_on_invest": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เสี่ยงสูงมาก ส่วนใหญ่เจ๊ง แต่เมื่อมีตัวที่ใช่ผลตอบแทนอาจหลายเท่าตัว ควรลงเฉพาะเงินที่เสียได้"
+    }
+  ],
+  "market_news_events": [
+    {
+      "news_id": "news_set_bull_01",
+      "headline_th": "📢 ข่าว: ท่องเที่ยวไทยบูมสุดขีด! ต่างชาติแห่เที่ยวไทยทะลุเป้า ดันหุ้นโรงแรม-สนามบินพุ่งกระฉูด",
+      "category": "bullish_set",
+      "spawn_weight": 10,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.18,
+        "inv_tax_saving_fund": 0.1,
+        "inv_gold_bullion": -0.02,
+        "inv_crypto_bitcoin": 0.05,
+        "inv_vip_pre_ipo": 0.22
+      },
+      "description_th": "เม็ดเงินจากการท่องเที่ยวสะพัดทั่วประเทศ หนุนกำไรบริษัทจดทะเบียนและดัชนี SET Index ปรับตัวขึ้นอย่างแข็งแกร่ง"
+    },
+    {
+      "news_id": "news_set_bull_02",
+      "headline_th": "📢 ข่าว: ส่งออกอาหารและเกษตรไทยทุบสถิติโลก! ครัวไทยสู่ครัวโลกหนุนเศรษฐกิจโตก้าวกระโดด",
+      "category": "bullish_set",
+      "spawn_weight": 10,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.15,
+        "inv_tax_saving_fund": 0.08,
+        "inv_gold_bullion": 0.01,
+        "inv_crypto_bitcoin": 0.0,
+        "inv_vip_pre_ipo": 0.18
+      },
+      "description_th": "ยอดคำสั่งซื้อสินค้าเกษตรแปรรูปและอาหารแช่แข็งจากทั่วโลกพุ่งสูง ดันหุ้นกลุ่มอาหารและโลจิสติกส์บวกยกแผง"
+    },
+    {
+      "news_id": "news_set_bull_03",
+      "headline_th": "📢 ข่าว: ฟันด์โฟลว์ต่างชาติไหลเข้า! กองทุนระดับโลกเทเงินซื้อหุ้นไทยแสนล้านบาท",
+      "category": "bullish_set",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.25,
+        "inv_tax_saving_fund": 0.14,
+        "inv_gold_bullion": -0.03,
+        "inv_crypto_bitcoin": 0.1,
+        "inv_vip_pre_ipo": 0.35
+      },
+      "description_th": "ค่าเงินบาทแข็งค่าและตลาดหุ้นไทยกลายเป็นเป้าหมายหลักของนักลงทุนต่างชาติ ดันดัชนีทะยานทำจุดสูงสุดใหม่ของปี"
+    },
+    {
+      "news_id": "news_set_bull_04",
+      "headline_th": "📢 ข่าว: เมกะโปรเจกต์รถไฟความเร็วสูงและ EEC เดินหน้าเต็มสูบ! หุ้นรับเหมา-นิคมฯ ตีปีก",
+      "category": "bullish_set",
+      "spawn_weight": 10,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.14,
+        "inv_tax_saving_fund": 0.09,
+        "inv_gold_bullion": 0.0,
+        "inv_crypto_bitcoin": 0.02,
+        "inv_vip_pre_ipo": 0.25
+      },
+      "description_th": "การลงทุนโครงสร้างพื้นฐานขนาดใหญ่ดึงดูดบริษัทยักษ์ใหญ่ข้ามชาติเข้ามาตั้งฐานการผลิตในไทย"
+    },
+    {
+      "news_id": "news_set_bull_05",
+      "headline_th": "📢 ข่าว: รัฐบาลออกมาตรการกระตุ้นเศรษฐกิจครั้งใหญ่! หุ้นค้าปลีกและธนาคารกำไรพุ่ง",
+      "category": "bullish_set",
+      "spawn_weight": 10,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.12,
+        "inv_tax_saving_fund": 0.07,
+        "inv_gold_bullion": 0.02,
+        "inv_crypto_bitcoin": 0.04,
+        "inv_vip_pre_ipo": 0.15
+      },
+      "description_th": "กำลังซื้อภายในประเทศฟื้นตัวคึกคัก ห้างสรรพสินค้าและร้านค้าปลีกมียอดขายเติบโตอย่างก้าวกระโดด"
+    },
+    {
+      "news_id": "news_set_bear_01",
+      "headline_th": "📢 ข่าว: ตลาดหุ้นไทยร่วงหนัก! กลุ่มพลังงานฉุด SET Index ดิ่งเหว เซ่นพิษราคาน้ำมันโลกผันผวน",
+      "category": "bearish_set",
+      "spawn_weight": 10,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.14,
+        "inv_tax_saving_fund": -0.07,
+        "inv_gold_bullion": 0.05,
+        "inv_crypto_bitcoin": -0.05,
+        "inv_vip_pre_ipo": -0.04
+      },
+      "description_th": "ต้นทุนพลังงานที่พุ่งสูงกดดันผลประกอบการบริษัทจดทะเบียน นักลงทุนพากันเทขายสินทรัพย์เสี่ยง"
+    },
+    {
+      "news_id": "news_set_bear_02",
+      "headline_th": "📢 ข่าว: วิกฤตฟองสบู่อสังหาฯ และหนี้เสียพุ่ง! ตลาดหุ้นไทยดิ่งหนักสุดในรอบทศวรรษ",
+      "category": "bearish_set",
+      "spawn_weight": 5,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.25,
+        "inv_tax_saving_fund": -0.1,
+        "inv_gold_bullion": 0.12,
+        "inv_crypto_bitcoin": -0.2,
+        "inv_vip_pre_ipo": -0.05
+      },
+      "description_th": "ปัญหาหนี้ครัวเรือนและฟองสบู่ภาคการเงินแตกตัว สถาบันการเงินคุมเข้มสินเชื่อจนตลาดหุ้นแดงเดือดทั้งกระดาน"
+    },
+    {
+      "news_id": "news_set_bear_03",
+      "headline_th": "📢 ข่าว: มหาอุทกภัยน้ำท่วมใหญ่นิคมอุตสาหกรรม! โรงงานหยุดสายการผลิต หุ้นไทยร่วงระนาว",
+      "category": "bearish_set",
+      "spawn_weight": 7,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.18,
+        "inv_tax_saving_fund": -0.08,
+        "inv_gold_bullion": 0.04,
+        "inv_crypto_bitcoin": 0.0,
+        "inv_vip_pre_ipo": -0.03
+      },
+      "description_th": "ภัยพิบัติน้ำท่วมฉับพลันสร้างความเสียหายต่อห่วงโซ่อุปทานการผลิตและฉุดรั้งจีดีพีของประเทศในปีนี้"
+    },
+    {
+      "news_id": "news_set_bear_04",
+      "headline_th": "📢 ข่าว: ส่งออกไทยชะลอตัวจากพิษสงครามการค้าโลก! ต่างชาติเทขายหุ้นไทยต่อเนื่อง",
+      "category": "bearish_set",
+      "spawn_weight": 9,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.12,
+        "inv_tax_saving_fund": -0.05,
+        "inv_gold_bullion": 0.08,
+        "inv_crypto_bitcoin": -0.08,
+        "inv_vip_pre_ipo": -0.02
+      },
+      "description_th": "กำแพงภาษีและการชะลอตัวของเศรษฐกิจคู่ค้าหลักทำให้ยอดส่งออกสินค้าอิเล็กทรอนิกส์และยานยนต์หดตัว"
+    },
+    {
+      "news_id": "news_set_bear_05",
+      "headline_th": "📢 ข่าว: ข่าวฉาวผู้บริหารบริษัทจดทะเบียนตกแต่งบัญชี! นักลงทุนขาดความเชื่อมั่นเทขายหุ้น",
+      "category": "bearish_set",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.16,
+        "inv_tax_saving_fund": -0.06,
+        "inv_gold_bullion": 0.03,
+        "inv_crypto_bitcoin": 0.05,
+        "inv_vip_pre_ipo": 0.05
+      },
+      "description_th": "การผิดนัดชำระหนี้หุ้นกู้ของบริษัทขนาดใหญ่สร้างความตื่นตระหนกให้นักลงทุนรายย่อยทั่วตลาด"
+    },
+    {
+      "news_id": "news_crypto_bull_01",
+      "headline_th": "📢 ข่าว: Bitcoin Halving จุดพลุตลาดกระทิง! ราคา BTC พุ่งทะลุ All-Time High ทะยานสู่ดวงจันทร์",
+      "category": "bullish_crypto",
+      "spawn_weight": 6,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.04,
+        "inv_tax_saving_fund": 0.02,
+        "inv_gold_bullion": 0.03,
+        "inv_crypto_bitcoin": 1.15,
+        "inv_vip_pre_ipo": 0.15
+      },
+      "description_th": "วัฏจักรลดอุปทานบิตคอยน์ทุก 4 ปีหนุนให้ราคาสินทรัพย์ดิจิทัลพุ่งทะยานกว่าเท่าตัว นักเทรดคริปโตรวยเละข้ามคืน"
+    },
+    {
+      "news_id": "news_crypto_bull_02",
+      "headline_th": "📢 ข่าว: กองทุนยักษ์ใหญ่ระดับโลกอนุมัติ Spot Bitcoin ETF! เม็ดเงินสถาบันไหลเข้าคริปโตมหาศาล",
+      "category": "bullish_crypto",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.05,
+        "inv_tax_saving_fund": 0.03,
+        "inv_gold_bullion": -0.04,
+        "inv_crypto_bitcoin": 0.85,
+        "inv_vip_pre_ipo": 0.2
+      },
+      "description_th": "คริปโตเคอร์เรนซีได้รับการยอมรับเป็นสินทรัพย์การลงทุนกระแสหลักของโลก ดันราคาเหรียญพุ่งทะยานอย่างบ้าคลั่ง"
+    },
+    {
+      "news_id": "news_crypto_bull_03",
+      "headline_th": "📢 ข่าว: กระแส AI และ Web3 ฟีเวอร์! เหรียญเทคโนโลยีและบิตคอยน์บวกแรงยกกระดาน",
+      "category": "bullish_crypto",
+      "spawn_weight": 9,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.06,
+        "inv_tax_saving_fund": 0.04,
+        "inv_gold_bullion": 0.0,
+        "inv_crypto_bitcoin": 0.65,
+        "inv_vip_pre_ipo": 0.28
+      },
+      "description_th": "การปฏิวัติเทคโนโลยีปัญญาประดิษฐ์และบล็อกเชนดึงดูดนักลงทุนรุ่นใหม่เข้าสู่ตลาดสินทรัพย์ดิจิทัลอย่างล้นหลาม"
+    },
+    {
+      "news_id": "news_crypto_bull_04",
+      "headline_th": "📢 ข่าว: บริษัทยักษ์ใหญ่ระดับโลกประกาศรับชำระเงินด้วย Bitcoin! ตลาดคริปโตคึกคักสุดขีด",
+      "category": "bullish_crypto",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.02,
+        "inv_tax_saving_fund": 0.01,
+        "inv_gold_bullion": -0.02,
+        "inv_crypto_bitcoin": 0.5,
+        "inv_vip_pre_ipo": 0.12
+      },
+      "description_th": "ข่าวดีจากการใช้งานจริงในภาคธุรกิจระดับโลกช่วยหนุนความเชื่อมั่นและแรงซื้อในตลาดคริปโตตลอดทั้งปี"
+    },
+    {
+      "news_id": "news_crypto_bull_05",
+      "headline_th": "📢 ข่าว: ก.ล.ต. ผ่อนปรนเกณฑ์ภาษีสินทรัพย์ดิจิทัล! หนุนไทยเป็นศูนย์กลาง Digital Asset Hub",
+      "category": "bullish_crypto",
+      "spawn_weight": 9,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.08,
+        "inv_tax_saving_fund": 0.05,
+        "inv_gold_bullion": 0.0,
+        "inv_crypto_bitcoin": 0.4,
+        "inv_vip_pre_ipo": 0.18
+      },
+      "description_th": "นโยบายส่งเสริมการลงทุนสินทรัพย์ดิจิทัลในประเทศทำให้วอลุ่มการซื้อขายบนกระดานเทรดพุ่งสูงเป็นประวัติการณ์"
+    },
+    {
+      "news_id": "news_crypto_bear_01",
+      "headline_th": "📢 ข่าว: ช็อกโลก! กระดานเทรดคริปโตยักษ์ใหญ่ระดับโลกล้มละลาย เข้าสู่ยุค Crypto Winter เต็มตัว",
+      "category": "bearish_crypto",
+      "spawn_weight": 6,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.04,
+        "inv_tax_saving_fund": -0.02,
+        "inv_gold_bullion": 0.1,
+        "inv_crypto_bitcoin": -0.58,
+        "inv_vip_pre_ipo": -0.02
+      },
+      "description_th": "วิกฤตสภาพคล่องและการทุจริตของแพลตฟอร์มคริปโตระดับโลกทำให้ราคาบิตคอยน์ดิ่งเหวกว่าครึ่งพอร์ต"
+    },
+    {
+      "news_id": "news_crypto_bear_02",
+      "headline_th": "📢 ข่าว: มหาอำนาจประกาศแบนเหมืองขุด Bitcoin และคุมเข้มคริปโต! นักเทรดหนีตายเทขายหนัก",
+      "category": "bearish_crypto",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.02,
+        "inv_tax_saving_fund": 0.0,
+        "inv_gold_bullion": 0.06,
+        "inv_crypto_bitcoin": -0.45,
+        "inv_vip_pre_ipo": 0.0
+      },
+      "description_th": "มาตรการกวาดล้างเหมืองขุดคริปโตและการออกกฎหมายควบคุมอย่างเข้มงวดฉุดตลาดคริปโตดิ่งลงอย่างรุนแรง"
+    },
+    {
+      "news_id": "news_crypto_bear_03",
+      "headline_th": "📢 ข่าว: แฮกเกอร์เจาะระบบแพลตฟอร์ม DeFi กวาดเหรียญหมื่นล้าน! ตลาดคริปโตผวาเทขาย",
+      "category": "bearish_crypto",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.0,
+        "inv_tax_saving_fund": 0.01,
+        "inv_gold_bullion": 0.05,
+        "inv_crypto_bitcoin": -0.35,
+        "inv_vip_pre_ipo": 0.02
+      },
+      "description_th": "ช่องโหว่ความปลอดภัยในระบบ Smart Contract ทำให้นักลงทุนสูญเสียความเชื่อมั่นและโยกเงินกลับเข้าสินทรัพย์ปลอดภัย"
+    },
+    {
+      "news_id": "news_crypto_bear_04",
+      "headline_th": "📢 ข่าว: เหรียญ Stablecoin ชื่อดังหลุด Peg มูลค่าเหลือศูนย์! ฉุดราคาบิตคอยน์ร่วงกราวรูด",
+      "category": "bearish_crypto",
+      "spawn_weight": 7,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.03,
+        "inv_tax_saving_fund": -0.01,
+        "inv_gold_bullion": 0.08,
+        "inv_crypto_bitcoin": -0.5,
+        "inv_vip_pre_ipo": -0.03
+      },
+      "description_th": "การล่มสลายของเหรียญ алгоритึมสร้างแรงกระเพื่อมลูกโซ่ (Domino Effect) ล้างพอร์ตนักลงทุนคริปโตทั่วโลก"
+    },
+    {
+      "news_id": "news_crypto_bear_05",
+      "headline_th": "📢 ข่าว: เจ้ามือวาฬใหญ่เทขาย Bitcoin ทำกำไรก้อนโต! ตลาดคริปโตปรับฐานแรง",
+      "category": "bearish_crypto",
+      "spawn_weight": 9,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.02,
+        "inv_tax_saving_fund": 0.02,
+        "inv_gold_bullion": 0.03,
+        "inv_crypto_bitcoin": -0.25,
+        "inv_vip_pre_ipo": 0.05
+      },
+      "description_th": "แรงเทขายทำกำไรของกลุ่มนักลงทุนรายใหญ่ทำให้กราฟบิตคอยน์ทิ้งดิ่งลงมาพักฐานครั้งใหญ่"
+    },
+    {
+      "news_id": "news_macro_gold_01",
+      "headline_th": "📢 ข่าว: ความตึงเครียดภูมิรัฐศาสตร์โลกปะทุ! นักลงทุนแห่ตุนทองคำ ดันราคาทองเยาวราชพุ่งทุบสถิติ",
+      "category": "macro_and_gold",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.08,
+        "inv_tax_saving_fund": -0.03,
+        "inv_gold_bullion": 0.18,
+        "inv_crypto_bitcoin": -0.1,
+        "inv_vip_pre_ipo": 0.02
+      },
+      "description_th": "ภาวะความไม่แน่นอนของสงครามในต่างประเทศทำให้ทองคำกลายเป็นหลุมหลบภัยอันดับหนึ่งที่ทำผลตอบแทนโดดเด่นที่สุดในปีนี้"
+    },
+    {
+      "news_id": "news_macro_gold_02",
+      "headline_th": "📢 ข่าว: เงินเฟ้อโลกพุ่งสูง! ราคาสินค้าแพงขึ้นแต่ราคาทองคำและหุ้น VIP ปรับตัวขึ้นรับเงินเฟ้อ",
+      "category": "macro_and_gold",
+      "spawn_weight": 9,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.02,
+        "inv_tax_saving_fund": 0.01,
+        "inv_gold_bullion": 0.14,
+        "inv_crypto_bitcoin": 0.12,
+        "inv_vip_pre_ipo": 0.15
+      },
+      "description_th": "การถือเงินสดเฉยๆ ทำให้เสียเปรียบเงินเฟ้อ ขณะที่ผู้ถือครองทองคำแท่งและสินทรัพย์ป้องกันเงินเฟ้อได้รับผลตอบแทนเป็นบวก"
+    },
+    {
+      "news_id": "news_macro_gold_03",
+      "headline_th": "📢 ข่าว: ธนาคารกลางประกาศลดอัตราดอกเบี้ยนโยบาย! หนุนสภาพคล่องตลาดหุ้นและคริปโตพุ่งพร้อมกัน",
+      "category": "macro_and_gold",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.16,
+        "inv_tax_saving_fund": 0.1,
+        "inv_gold_bullion": 0.08,
+        "inv_crypto_bitcoin": 0.35,
+        "inv_vip_pre_ipo": 0.3
+      },
+      "description_th": "ต้นทุนการกู้ยืมที่ลดลงกระตุ้นให้เม็ดเงินไหลเข้าสู่ตลาดทุนและสินทรัพย์เก็งกำไรทุกประเภทอย่างคึกคัก"
+    },
+    {
+      "news_id": "news_macro_gold_04",
+      "headline_th": "📢 ข่าว: ธนาคารกลางเร่งขึ้นดอกเบี้ยสกัดเงินเฟ้อ! กดดันราคาทองคำและสินทรัพย์เสี่ยงย่อตัว",
+      "category": "macro_and_gold",
+      "spawn_weight": 8,
+      "asset_price_changes": {
+        "inv_set_index_stock": -0.09,
+        "inv_tax_saving_fund": -0.04,
+        "inv_gold_bullion": -0.07,
+        "inv_crypto_bitcoin": -0.22,
+        "inv_vip_pre_ipo": 0.04
+      },
+      "description_th": "การดึงสภาพคล่องออกจากระบบเศรษฐกิจทำให้ตลาดการลงทุนซบเซา การฝากเงินกินดอกเบี้ยหรือถือพันธบัตรกลายเป็นทางเลือกที่ปลอดภัย"
+    },
+    {
+      "news_id": "news_macro_gold_05",
+      "headline_th": "📢 ข่าว: เศรษฐกิจโลกและไทยทรงตัวไร้ปัจจัยใหม่ ตลาดหุ้นและทองคำแกว่งตัวในกรอบแคบ (Sideway)",
+      "category": "macro_and_gold",
+      "spawn_weight": 12,
+      "asset_price_changes": {
+        "inv_set_index_stock": 0.03,
+        "inv_tax_saving_fund": 0.03,
+        "inv_gold_bullion": 0.02,
+        "inv_crypto_bitcoin": 0.05,
+        "inv_vip_pre_ipo": 0.1
+      },
+      "description_th": "ปีแห่งความสงบเรียบร้อยของตลาดการเงิน สินทรัพย์ส่วนใหญ่เติบโตอย่างค่อยเป็นค่อยไปและสร้างผลตอบแทนหลักจากเงินปันผล"
+    }
+  ],
+  "lottery_and_lucky_draw_table": [
+    {
+      "prize_id": "prize_none",
+      "name_th": "ไม่ถูกรางวัล (ถูกกินเรียบ)",
+      "applicable_to": [
+        "item_government_lottery",
+        "inv_gsb_lottery_bond"
+      ],
+      "base_chance_percent": 97.445,
+      "affected_by_lucky_multiplier": false,
+      "reward_cash": 0,
+      "grants_flags": [],
+      "stat_effects": {
+        "health": 0,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เฉียดไปนิดเดียว! ถือว่าช่วยอุดหนุนรายได้แผ่นดิน งวดหน้าค่อยลุ้นกันใหม่"
+    },
+    {
+      "prize_id": "prize_2_digits",
+      "name_th": "ถูกรางวัลเลขท้าย 2 ตัว",
+      "applicable_to": [
+        "item_government_lottery",
+        "inv_gsb_lottery_bond"
+      ],
+      "base_chance_percent": 2.0,
+      "affected_by_lucky_multiplier": true,
+      "reward_cash": 2000,
+      "grants_flags": [],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 4,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เฮลั่นบ้าน! ถูกรางวัลเลขท้าย 2 ตัว รับเงินสด 2,000 บาทพอได้ค่ากับข้าวและเลี้ยงหมูกระทะเพื่อน"
+    },
+    {
+      "prize_id": "prize_3_digits",
+      "name_th": "ถูกรางวัลเลขหน้า / เลขท้าย 3 ตัว",
+      "applicable_to": [
+        "item_government_lottery",
+        "inv_gsb_lottery_bond"
+      ],
+      "base_chance_percent": 0.5,
+      "affected_by_lucky_multiplier": true,
+      "reward_cash": 4000,
+      "grants_flags": [],
+      "stat_effects": {
+        "health": 0,
+        "happiness": 6,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ดวงกำลังมา! ถูกรางวัลเลข 3 ตัว รับทรัพย์ 4,000 บาทเข้ากระเป๋าแบบหวานเจี๊ยบ"
+    },
+    {
+      "prize_id": "prize_second",
+      "name_th": "ถูกรางวัลที่ 2 รับโชคใหญ่!",
+      "applicable_to": [
+        "item_government_lottery",
+        "inv_gsb_lottery_bond"
+      ],
+      "base_chance_percent": 0.05,
+      "affected_by_lucky_multiplier": true,
+      "reward_cash": 200000,
+      "grants_flags": [],
+      "stat_effects": {
+        "health": 1,
+        "happiness": 15,
+        "intelligence": 0,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "บุญหล่นทับ! ถูกรางวัลใหญ่รับเงินสด 200,000 บาท ช่วยปลดหนี้และตั้งตัวได้ทันที"
+    },
+    {
+      "prize_id": "prize_first_jackpot",
+      "name_th": "แจ็กพอตแตก! ถูกรางวัลที่ 1 รวย 6 ล้านพลิกชีวิต!",
+      "applicable_to": [
+        "item_government_lottery",
+        "inv_gsb_lottery_bond"
+      ],
+      "base_chance_percent": 0.005,
+      "affected_by_lucky_multiplier": true,
+      "merit_bonus_weight_per_10_merit": 0.002,
+      "reward_cash": 6000000,
+      "grants_flags": [
+        "flag_lottery_millionaire"
+      ],
+      "stat_effects": {
+        "health": 2,
+        "happiness": 30,
+        "intelligence": 0,
+        "connections": 15,
+        "merit": 0,
+        "appearance": 3
+      },
+      "description_th": "ตำนานเศรษฐีใหม่ป้ายแดง! ถูกรางวัลที่ 1 รับเงินสด 6,000,000 บาทเต็มๆ ญาติพี่น้องที่ไม่ได้เจอกันนานต่างโทรมาแสดงความยินดี"
+    }
+  ]
+}

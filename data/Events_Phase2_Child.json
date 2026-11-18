@@ -1,0 +1,3592 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Phase2_Child",
+  "phase_id": "phase_2_child",
+  "age_range": {
+    "min_age": 5,
+    "max_age": 12
+  },
+  "total_events": 51,
+  "quota_breakdown": {
+    "total": 51,
+    "age_5": 5,
+    "age_6_to_10_per_year": 6,
+    "age_11_to_12_per_year": 8,
+    "shared_total": 29,
+    "poor_class_1_2_total": 8,
+    "rich_class_4_5_total": 8
+  },
+  "events": [
+    {
+      "event_id": "evt_p2_age5_01",
+      "title_th": "จบชั้นอนุบาล! พิธีรับวุฒิบัตรบัณฑิตน้อย",
+      "trigger_age": 5,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ถึงเวลาบอกลาชั้นอนุบาลเพื่อเตรียมขึ้นชั้นประถมศึกษา โรงเรียนจัดพิธีสวมชุดครุยบัณฑิตน้อยให้เด็กๆ ขึ้นไปรับม้วนวุฒิบัตรบนเวทีท่ามกลางรอยยิ้มของพ่อแม่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินขึ้นเวทีไปโค้งคำนับ/ถอนสายบัวรับวุฒิบัตรอย่างสวยงาม",
+          "hint_th": "🧠 สมอง +2 , 🤝 เพื่อนฝูง +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โพสท่าชูสองนิ้วถ่ายรูปกับแก๊งเพื่อนอนุบาลอย่างร่าเริง",
+          "hint_th": "😊 ความสุข +4 , 🤝 เพื่อนฝูง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[หัวศิลป์/กล้าแสดงออก] เป็นตัวแทนบัณฑิตน้อยกล่าวคำขอบคุณคุณครูหน้าไมค์!",
+          "hint_th": "🧠 สมอง +3 , 🤝 เพื่อนฝูง +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [
+            "tag_artistic_expressive"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age5_02",
+      "title_th": "ฟันน้ำนมซี่หน้าโยก! ตำนานโยนฟันขึ้นหลังคาบ้าน",
+      "trigger_age": 5,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ฟันน้ำนมซี่หน้าของคุณโยกคลอนจนเกือบหลุด พ่อแม่บอกว่าตามความเชื่อคนไทย ถ้าฟันล่างหลุดให้โยนขึ้นหลังคา ถ้าฟันบนหลุดให้โยนลงใต้ถุนบ้าน ฟันแท้จะได้ขึ้นสวยๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กลั้นใจให้แม่ใช้ด้ายกระตุกหลุดปุ๊บ แล้วโยนฟันพร้อมอธิษฐาน!",
+          "hint_th": "❤️ สุขภาพ +2 , 😊 ความสุข +2 , ✨ หน้าตา +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "กลัวเจ็บไม่ยอมให้ดึง เอาลิ้นดุนเล่นจนฟันหลุดตอนกินข้าว",
+          "hint_th": "😊 ความสุข +1 , 🤝 เพื่อนฝูง +1 (อวดฟันหลอให้เพื่อนดู)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 1,
+            "intelligence": 0,
+            "connections": 1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "connections": 1,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age5_03",
+      "title_th": "วัดตัวตัดชุดนักเรียนประถมและรองเท้าพละคู่ใหม่",
+      "trigger_age": 5,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ก่อนเปิดเทอม ป.1 แม่พาคุณไปเลือกซื้อชุดนักเรียน กระเป๋านักเรียน และรองเท้าผ้าใบสีขาวกลิ่นใหม่เอี่ยมเพื่อเตรียมพร้อมเป็นพี่ประถม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลองสวมชุดนักเรียนใหม่แล้วส่องกระจกยิ้มภูมิใจ",
+          "hint_th": "😊 ความสุข +3 , 🧠 สมอง +1 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 1,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอแม่เลือกกระเป๋านักเรียนล้อลากลายการ์ตูนฮีโร่สุดเท่",
+          "hint_th": "😊 ความสุข +4 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 1,
+            "connections": 1,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age5_04_poor",
+      "title_th": "ชุดนักเรียนรับมรดกพี่ข้างบ้าน & โรงเรียนวัดใกล้บ้าน",
+      "trigger_age": 5,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อประหยัดค่าใช้จ่าย แม่ขอรับบริจาคชุดนักเรียนตัวโคร่งจากรุ่นพี่ข้างบ้านมาเลาะปักชื่อใหม่ให้คุณใส่ไปเรียนที่โรงเรียนวัดประจำชุมชน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใส่ชุดตัวใหญ่พับแขนเสื้อไปเรียนอย่างภูมิใจ ไม่น้อยใจแม่",
+          "hint_th": "😊 ความสุข +2 , 🤝 เพื่อนฝูง +3 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_working_class_roots"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบอายเพื่อนที่เสื้อเก่าเหลือง แต่ตั้งใจเรียนให้เก่งแทน",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -1,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 2,
+            "connections": 2,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age5_05_rich",
+      "title_th": "ติวเชาวน์ปัญญาเข้า ป.1 โรงเรียนเอกชน/นานาชาติเกรด A",
+      "trigger_age": 5,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณพ่อคุณแม่จ้างครูติวเตอร์พิเศษมาฝึกทักษะมิติสัมพันธ์และภาษาอังกฤษถึงที่บ้าน เพื่อเตรียมสอบเข้าชั้น ป.1 โรงเรียนชื่อดังที่มีอัตราแข่งขันสูงลิ่ว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งใจทำโจทย์เชาวน์ปัญญาและฝึกพูดภาษาอังกฤษจนคล่องปร๋อ",
+          "hint_th": "🧠 สมอง +6 , 🤝 เพื่อนฝูง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_private_school_kid"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[คาบช้อนเงินช้อนทอง] คุณพ่อบริจาคเงินสนับสนุนสร้างอาคารเรียนเข้าหลักสูตรอินเตอร์ทันที!",
+          "hint_th": "🤝 เพื่อนฝูง +6 , 😊 ความสุข +4 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [
+            "trait_silver_spoon"
+          ],
+          "grants_flags": [
+            "flag_international_school"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 5,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age6_01",
+      "title_th": "เปิดเทอมวันแรกของเด็ก ป.1! เข้าแถวเคารพธงชาติ",
+      "trigger_age": 6,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เสียงกริ่งโรงเรียนดังขึ้น เด็กนักเรียนชั้น ป.1 ทุกคนต้องมาเข้าแถวเรียงตามลำดับไหล่หน้าเสาธง และทำความรู้จักกับเพื่อนใหม่ที่นั่งโต๊ะข้างๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ชวนเพื่อนโต๊ะข้างๆ คุยและแบ่งขนมให้กินจนสนิทกันไว",
+          "hint_th": "🤝 เพื่อนฝูง +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งใจฟังครูประจำชั้นประกาศกฎระเบียบและจดตารางสอน",
+          "hint_th": "🧠 สมอง +4 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age6_02",
+      "title_th": "ศึกอวดกล่องดินสอแม่เหล็ก 2 ชั้นในห้องเรียน!",
+      "trigger_age": 6,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เทรนด์ฮิตที่สุดของเด็ก ป.1 คือกล่องดินสอแม่เหล็กที่มีปุ่มกดเด้งกบเหลาดินสอและช่องลับออกมาได้ เพื่อนๆ กำลังมุงดูของกันอย่างตื่นเต้น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีกล่องดินสอแม่เหล็ก] กดปุ่มกลไกโชว์เพื่อนทั้งห้องแบบเท่สุดๆ!",
+          "hint_th": "😊 ความสุข +5 , 🤝 เพื่อนฝูง +5 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [
+            "flag_cool_stationery"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 1,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใช้กล่องดินสอธรรมดาแต่เหลาดินสอแหลมเปี๊ยบให้เพื่อนยืมใช้",
+          "hint_th": "🤝 เพื่อนฝูง +3 , ✨ แต้มบุญ +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 0,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แอบกดปุ่มกล่องดินสอเพื่อนเล่นจนสปริงค้าง เกือบโดนเพื่อนงอน",
+          "hint_th": "😊 ความสุข +1 , 🤝 เพื่อนฝูง -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 0,
+            "connections": -2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age6_03",
+      "title_th": "เวรประจำวัน! กวาดห้องเรียนและลบกระดานดำ",
+      "trigger_age": 6,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังเลิกเรียนวันพุธ เป็นคิวเวรทำความสะอาดห้องเรียนกลุ่มของคุณ มีทั้งหน้าที่กวาดพื้น ถูพื้น และเอาแปรงลบกระดานไปเคาะฝุ่นชอล์ก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขยันช่วยเพื่อนกวาดห้องและจัดโต๊ะเรียนจนสะอาดเอี่ยมอ่อง",
+          "hint_th": "🤝 เพื่อนฝูง +4 , ✨ แต้มบุญ +2 , ❤️ สุขภาพ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 1,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เอาไม้กวาดมาถือต่างกีตาร์/ดาบเลเซอร์เล่นไล่จับกับเพื่อน!",
+          "hint_th": "😊 ความสุข +4 , ❤️ สุขภาพ +2 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[ภูมิแพ้เรื้อรัง] เคาะแปรงลบกระดานจนฝุ่นชอล์กฟุ้ง จามไม่หยุด!",
+          "hint_th": "❤️ สุขภาพ -3 , 😊 ความสุข -2",
+          "req_stats": {},
+          "req_flags": [
+            "trait_allergy"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age6_04",
+      "title_th": "ฝึกปั่นจักรยาน 2 ล้อครั้งแรก! ถอดล้อพ่วงออกแล้วนะ",
+      "trigger_age": 6,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เย็นวันหยุด พ่อช่วยจับท้ายเบาะจักรยานเพื่อสอนให้คุณทรงตัวปั่นแบบ 2 ล้อรอบซอยบ้าน พอพ่อแอบปล่อยมือ คุณจะทำอย่างไร?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งสติปั่นพุ่งทะยานไปข้างหน้าได้เองสำเร็จ!",
+          "hint_th": "❤️ สุขภาพ +4 , 😊 ความสุข +4 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_has_bicycle"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เสียหลักล้มเข่าถลอกได้แผลทายาแดง แต่ไม่เข็ดลุกมาปั่นต่อ",
+          "hint_th": "❤️ สุขภาพ +2 , 😊 ความสุข +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 3,
+            "intelligence": 1,
+            "connections": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age6_05_poor",
+      "title_th": "เดินเท้าไปกลับโรงเรียนวัด & เก็บผักบุ้งริมคลองช่วยแม่",
+      "trigger_age": 6,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ทุกเย็นหลังเลิกเรียน คุณเดินเกาะกลุ่มกับเพื่อนในหมู่บ้านกลับบ้าน ระหว่างทางมียอดผักบุ้งและตำลึงงามๆ ขึ้นอยู่ริมรั้ว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ช่วยกันเด็ดยอดผักบุ้งและตำลึงกลับไปให้แม่ผัดไฟแดงมื้อเย็น",
+          "hint_th": "❤️ สุขภาพ +3 , ✨ แต้มบุญ +3 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "วิ่งแข่งกันกลับบ้านท่ามกลางแสงแดดยามเย็นจนตัวดำเมี่ยม",
+          "hint_th": "❤️ สุขภาพ +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": -1
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 3,
+            "connections": 1,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age6_06_rich",
+      "title_th": "รถตู้รับส่ง VIP & เรียนเปียโน/บัลเลต์วันเสาร์",
+      "trigger_age": 6,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังเลิกเรียนในห้องแอร์ คุณมีคนขับรถคอยรับส่งถึงหน้าประตู และทุกวันเสาร์คุณแม่จะพาไปเรียนดนตรีคลาสสิกและศิลปะในสถาบันชั้นนำ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งใจซ้อมกดคีย์เปียโนและเรียนศิลปะจนครูชมว่ามีพรสวรรค์",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +3 , ✨ ปลดล็อกป้าย [หัวศิลป์/กล้าแสดงออก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_artistic_expressive"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนเพื่อนไฮโซในคลาสเรียนพิเศษแลกของเล่นนำเข้าจากต่างประเทศ",
+          "hint_th": "🤝 เพื่อนฝูง +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 4,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age7_01",
+      "title_th": "วันเด็กแห่งชาติ! คำขวัญนายกฯ และขบวนรถถัง-แจกขนม",
+      "trigger_age": 7,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันเสาร์ที่สองของเดือนมกราคม พ่อแม่พาคุณไปเที่ยวงานวันเด็กแห่งชาติ มีซุ้มแจกไอศกรีมฟรี เล่นเกมชิงรางวัล และโชว์ยุทโธปกรณ์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขึ้นไปตอบคำขวัญวันเด็กบนเวทีอย่างฉะฉานจนได้รางวัลใหญ่!",
+          "hint_th": "🧠 สมอง +4 , 🪙 เงินค่าขนม +200 ฿ , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ต่อแถวรับไอศกรีมสายไหมและปีนดูรถถัง/เครื่องบินอย่างตื่นเต้น",
+          "hint_th": "😊 ความสุข +5 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": 100
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age7_02",
+      "title_th": "ท่องสูตรคูณแม่ 2 ถึงแม่ 12 ก่อนกลับบ้าน!",
+      "trigger_age": 7,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณครูวิชาคณิตศาสตร์ตั้งกฎว่า ใครท่องสูตรคูณปากเปล่าให้ครูฟังผ่านครบถึงจะได้กลับบ้านก่อน ทำเอาเพื่อนๆ ยืนเกร็งหน้าโต๊ะครู",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ท่องแม่ 2 ถึงแม่ 12 รวดเดียวจบแบบไม่มีสะดุด!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +3 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบดูโพยหลังปกสมุดแล้วช่วยกระซิบบอกใบ้เพื่อนสนิท",
+          "hint_th": "🤝 เพื่อนฝูง +5 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[เด็กหัวไว] ท่องย้อนกลับจากแม่ 12 ลงมาแม่ 2 โชว์ครูแบบเหนือชั้น!",
+          "hint_th": "🧠 สมอง +7 , 😊 ความสุข +4 , 🤝 เพื่อนฝูง +3",
+          "req_stats": {},
+          "req_flags": [
+            "trait_quick_learner"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age7_03",
+      "title_th": "ศึกเป่ายิงฉุบและดีดลูกแก้ว-กระโดดยางหลังเลิกเรียน",
+      "trigger_age": 7,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงรอผู้ปกครองมารับหลังเลิกเรียน แก๊งเพื่อนตั้งวงเล่นดีดลูกแก้วและกระโดดยางระดับเอว-ระดับอกกันอย่างคึกคัก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กระโดดยางผ่านระดับหัว / เล็งดีดลูกแก้วแม่นราวจับวาง!",
+          "hint_th": "❤️ สุขภาพ +4 , 🤝 เพื่อนฝูง +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เอาลูกแก้วสวยๆ หรือหนังยางที่ชนะมาแบ่งขายต่อให้เพื่อน",
+          "hint_th": "🪙 รายได้ +50 ฿ , 🧠 สมอง +2 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 50,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 1,
+            "connections": 4,
+            "cash": 25
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age7_04",
+      "title_th": "รถเข็นลูกชิ้นปิ้งและน้ำอัดลมถุงหน้าประตูโรงเรียน",
+      "trigger_age": 7,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กลิ่นลูกชิ้นปิ้งไส้กรอกแดงทอดราดน้ำจิ้มมะขามเหนียวข้นหน้าโรงเรียนหอมยั่วยวนใจสุดๆ ในกำมือของคุณมีเหรียญสิบบาทอยู่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อลูกชิ้นปิ้ง 1 ไม้กับน้ำอัดลมถุงผูกเชือกฟางแบ่งกันดูดกับเพื่อน (-20฿)",
+          "hint_th": "🪙 เงินสด -20 ฿ , 😊 ความสุข +4 , 🤝 เพื่อนฝูง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -20,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อดใจไม่ซื้อขนม เก็บเงินเหรียญสิบไปฝากสมุดบัญชีออมสิน",
+          "hint_th": "🪙 เงินสด +20 ฿ , ❤️ สุขภาพ +2 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 0,
+            "intelligence": 1,
+            "connections": 0,
+            "cash": 20,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 2,
+            "intelligence": 1,
+            "connections": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age7_05_poor",
+      "title_th": "ช่วยแม่ร้อยพวงมาลัย / แกะกระเทียมขายหลังเลิกเรียน",
+      "trigger_age": 7,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ที่บ้านรับงานเหมาทำมือมาทำเพิ่มรายได้ช่วงค่ำ แม่นั่งร้อยมาลัยดอกมะลิหรือแกะถุงขนมอยู่ใต้แสงไฟนีออน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นั่งลงช่วยแม่ทำงานจนเสร็จไว แม่แบ่งค่าแรงให้เป็นค่าขนม",
+          "hint_th": "🪙 เงินสด +100 ฿ , ✨ แต้มบุญ +4 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 2,
+            "intelligence": 1,
+            "connections": 2,
+            "cash": 100,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รีบทำการบ้านให้เสร็จก่อน แล้วค่อยมานวดไหล่ให้แม่หายเหนื่อย",
+          "hint_th": "🧠 สมอง +3 , ✨ แต้มบุญ +3 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 1,
+            "cash": 50,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age7_06_rich",
+      "title_th": "ซัมเมอร์แคมป์ขี่ม้าและเรียนกอล์ฟเยาวชนสุดหรู",
+      "trigger_age": 7,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปิดเทอมฤดูร้อน คุณพ่อส่งคุณไปเข้าค่ายขี่ม้าและฝึกวงสวิงกอล์ฟระดับเยาวชน ร่วมกับลูกหลานนักธุรกิจและตระกูลดัง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฝึกวงสวิงกอล์ฟและขี่ม้าอย่างสง่างามจนได้ถ้วยรางวัลแคมป์",
+          "hint_th": "❤️ สุขภาพ +4 , 🤝 เพื่อนฝูง +5 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_school_athlete"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ผูกมิตรแลกไลน์ผู้ปกครองสร้างแก๊งเพื่อนลูกเศรษฐี",
+          "hint_th": "🤝 เพื่อนฝูง +7 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "connections": 6,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age8_01",
+      "title_th": "สวมชุดลูกเสือสำรอง / ยุวกาชาดวันแรก! ปฏิญาณตน",
+      "trigger_age": 8,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขึ้นชั้น ป.2 คุณได้สวมหมวกลูกเสือสำรองและผ้าพันคอสีเหลือง/ชุดยุวกาชาด หัดผูกเงื่อนพิรอด เงื่อนขัดสมาธิ และทำวันทยหัตถ์สองนิ้ว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ผูกเงื่อนเชือกคล่องแคล่วและได้รับเลือกเป็นนายหมู่ดูแลเพื่อน!",
+          "hint_th": "🧠 สมอง +3 , 🤝 เพื่อนฝูง +5 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทำหมวกลูกเสือปลิวหลุดกลางสนามเรียกเสียงฮาจากเพื่อนทั้งแถว",
+          "hint_th": "😊 ความสุข +4 , 🤝 เพื่อนฝูง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age8_02",
+      "title_th": "ศึกสนามรางรถแข่งทามิย่า (Mini 4WD) & การ์ดเกม!",
+      "trigger_age": 8,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ที่ร้านของเล่นหน้าโรงเรียนมีการตั้งรางแข่งรถทามิย่าและโต๊ะดวลการ์ดเกมสะสม เด็กๆ มุงเชียร์กันเสียงดังสนั่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รื้อแงะประกอบเฟืองและพันมอเตอร์ทองแดงปรับแต่งรถเองกับมือ!",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +4 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "วางแผนจัดเด็คการ์ดแรร์ลงแข่งและเก็งกำไรแลกการ์ดกับเพื่อน",
+          "hint_th": "🧠 สมอง +3 , 🤝 เพื่อนฝูง +4 , 🪙 กำไร +100 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 100,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 50
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age8_03",
+      "title_th": "มุมหนังสือการ์ตูนความรู้และสารานุกรมในห้องสมุดแอร์เย็นฉ่ำ",
+      "trigger_age": 8,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงพักเที่ยงที่แดดข้างนอกร้อนจัด คุณเดินหลบเข้าห้องสมุดโรงเรียนแล้วเจอมุมหนังสือการ์ตูนวิทยาศาสตร์ ประวัติศาสตร์ และเรื่องผีรอบโลกวางเรียงรายอยู่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นั่งอ่านการ์ตูนวิทยาศาสตร์และสารานุกรมจนหมดคาบพักเที่ยง!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +3 , ✨ ปลดล็อกป้าย [หนอนหนังสือ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_bookworm"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": -1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ยืมหนังสือการ์ตูนความรู้ผจญภัยมานั่งล้อมวงอ่านกับเพื่อนๆ",
+          "hint_th": "🧠 สมอง +3 , 🤝 เพื่อนฝูง +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age8_04",
+      "title_th": "มหกรรมกีฬาสีโรงเรียนประถม! ขบวนพาเหรดและวิ่งผลัดกระสอบ",
+      "trigger_age": 8,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สัปดาห์กีฬาสีมาถึงแล้ว! รุ่นพี่กำลังคัดตัวน้องๆ ลงแข่งกีฬาฮาเฮ แข่งวิ่งผลัด และเดินขบวนพาเหรดถือป้ายสี",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงแข่งวิ่งผลัดและฟุตบอลสี วิ่งสับตีนแตกคว้าเหรียญทอง!",
+          "hint_th": "❤️ สุขภาพ +5 , 🤝 เพื่อนฝูง +4 , ✨ ปลดล็อกป้าย [นักกีฬาโรงเรียน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_school_athlete"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แต่งหน้าทาปากขึ้นสแตนด์เชียร์ร้องเพลงและเต้นเชียร์ลีดเดอร์สุดใจ",
+          "hint_th": "😊 ความสุข +4 , 🤝 เพื่อนฝูง +5 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "connections": 5,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age8_05_poor",
+      "title_th": "พายุฝนน้ำท่วมขังซอยบ้าน! ตักปลาเข็ดและลุยน้ำ",
+      "trigger_age": 8,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ฝนตกหนักติดต่อกันจนน้ำเอ่อท่วมทางเดินและทุ่งนาแถวบ้าน มีปลาหมอและปลาช่อนหลุดตามน้ำมาเพียบ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ถือสวิงออกไปช่วยพ่อช้อนปลาได้ถังใหญ่มาทำกับข้าวประหยัดเงิน",
+          "hint_th": "🪙 ประหยัดค่ากับข้าว +150 ฿ , ❤️ สุขภาพ +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 150,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "กระโดดเล่นน้ำท่วมขังกับเพื่อนจนเพลิน สุดท้ายน้ำกัดเท้าและเป็นหวัด!",
+          "hint_th": "❤️ สุขภาพ -4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 3,
+            "intelligence": 1,
+            "connections": 1,
+            "cash": 75
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age8_06_rich",
+      "title_th": "เครื่องเกมคอนโซลรุ่นใหม่ล่าสุด & ปาร์ตี้บ้านเพื่อนในหมู่บ้านหรู",
+      "trigger_age": 8,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณพ่อซื้อเครื่องเกมคอนโซลและคอมพิวเตอร์สเปกแรงไว้ที่ห้องนั่งเล่น ช่วงวันหยุดคุณจึงชวนแก๊งเพื่อนที่โรงเรียนมาปาร์ตี้เล่นเกมที่คฤหาสน์/บ้านเดี่ยวของคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดตี้แข่งเกมและศึกษาวิธีลงม็อดเกมบนคอมพิวเตอร์อย่างเชี่ยวชาญ",
+          "hint_th": "😊 ความสุข +5 , 🧠 สมอง +4 , 🤝 เพื่อนฝูง +4 , ✨ ปลดล็อกป้าย [เด็กเนิร์ดคอม/เกมเมอร์]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_computer_nerd"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้แม่บ้านจัดปาร์ตี้พิซซ่าและเล่นบอร์ดเกมภาษาอังกฤษริมสระน้ำ",
+          "hint_th": "🤝 เพื่อนฝูง +6 , 😊 ความสุข +5 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age9_01",
+      "title_th": "รถทำฟันเคลื่อนที่บุกโรงเรียน! ตรวจฟันและเคลือบฟลูออไรด์",
+      "trigger_age": 9,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เจ้าหน้าที่ทันตกรรมจากโรงพยาบาลนำเตียงสนามมาตั้งตรวจฟันเด็ก ป.3 ที่หอประชุมโรงเรียน กลิ่นกานพลูและเสียงเครื่องกรอฟันทำเอาเพื่อนๆ หน้าซีด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อ้าปากกว้างให้หมอตรวจและเคลือบฟลูออไรด์ ฟันสะอาดไร้ฟันผุ!",
+          "hint_th": "❤️ สุขภาพ +4 , ✨ หน้าตา +2 , 🤝 เพื่อนฝูง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบกินลูกอมบ่อยจนเจอฟันผุ ต้องโดนอุดฟันน้ำตาเล็ด!",
+          "hint_th": "❤️ สุขภาพ +1 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "connections": 1,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age9_02",
+      "title_th": "ชั่วโมงคอมพิวเตอร์ ป.3! โปรแกรม Paint และเกมเพนกวินพิมพ์ดีด",
+      "trigger_age": 9,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คาบเรียนที่ทุกคนรอคอย! ถอดรองเท้าเดินเข้าห้องปฏิบัติการคอมพิวเตอร์แอร์เย็นฉ่ำ ครูสั่งให้ฝึกพิมพ์สัมผัส ฟหกด่าสว และวาดรูปในโปรแกรม Paint",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฝึกพิมพ์สัมผัสเร็วปรู๊ดและเรียนรู้คีย์ลัดคอมพิวเตอร์จนครูชม",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +3 , ✨ ปลดล็อกป้าย [เด็กเนิร์ดคอม/เกมเมอร์]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_computer_nerd"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งใจใช้เมาส์วาดรูปบ้าน ภูเขา และพระอาทิตย์ยิ้มแฉ่งประกวดหน้าชั้น",
+          "hint_th": "😊 ความสุข +4 , 🤝 เพื่อนฝูง +3 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age9_03",
+      "title_th": "ประกวดคัดลายมือและแต่งคำขวัญวันสุนทรภู่ / วันภาษาไทย",
+      "trigger_age": 9,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โรงเรียนจัดกิจกรรมวันสุนทรภู่ มีการประกวดคัดลายมือตัวบรรจงเต็มบรรทัด วาดภาพระบายสีพระอภัยมณี และแต่งกายแฟนซีผีเสื้อสมุทร",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เหลาดินสอแหลมเปี๊ยบตั้งใจคัดลายมือจนคว้าเกียรติบัตรอันดับ 1!",
+          "hint_th": "🧠 สมอง +5 , 🤝 เพื่อนฝูง +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงประกวดวาดภาพระบายสีฉากสุดอลังการของสุดสาครขี่ม้านิลมังกร",
+          "hint_th": "😊 ความสุข +4 , 🧠 สมอง +3 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age9_04",
+      "title_th": "ลืมเอาสมุดการบ้านมาส่ง! คุณครูถือไม้เรียวเดินตรวจโต๊ะ",
+      "trigger_age": 9,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช้าวันนี้คุณเปิดกระเป๋านักเรียนแล้วใจหายวาบ! สมุดการบ้านที่ทำเสร็จเมื่อคืนวางลืมไว้บนโต๊ะกินข้าวที่บ้าน และคุณครูที่ดุที่สุดกำลังเดินเก็บสมุดทีละแถว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยกมือสารภาพความจริงกับคุณครูอย่างซื่อสัตย์และรับปากจะนำมาส่งพรุ่งนี้",
+          "hint_th": "✨ แต้มบุญ +3 , 🤝 เพื่อนฝูง +2 , 😊 ความสุข -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -1,
+            "intelligence": 1,
+            "connections": 2,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รีบก้มหน้าปั่นการบ้านลงสมุดสำรองด้วยความเร็วแสงก่อนครูเดินมาถึงโต๊ะ!",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +2 (รอดหวุดหวิด!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แอบอ้างว่าสมุดหาย แต่เพื่อนข้างโต๊ะโป๊ะแตก เลยโดนทำโทษยืนคาบไม้บรรทัด",
+          "hint_th": "😊 ความสุข -3 , 🤝 เพื่อนฝูง -2 , ✨ แต้มบุญ -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": -2,
+            "cash": 0,
+            "merit": -2,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age9_05_poor",
+      "title_th": "รับทุนการศึกษาเด็กดีแต่ยากจนหน้าเสาธง",
+      "trigger_age": 9,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ครูประจำชั้นเสนอชื่อของคุณให้ได้รับทุนการศึกษาประจำปีสำหรับนักเรียนที่มีความประพฤติดีแต่ครอบครัวขาดแคลนทุนทรัพย์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินออกไปรับซองทุนการศึกษาจาก ผอ. แล้วนำเงินไปให้แม่เก็บไว้ใช้ในบ้าน",
+          "hint_th": "🪙 เงินสด +1,000 ฿ , ✨ แต้มบุญ +5 , 🤝 เพื่อนฝูง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 1000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งเงินทุนไปซื้ออุปกรณ์การเรียนและสมุดหนังสือที่ยังขาดให้ครบ",
+          "hint_th": "🪙 เงินสด +500 ฿ , 🧠 สมอง +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 750,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age9_06_rich",
+      "title_th": "แข่งขันคณิตศาสตร์คิดเลขเร็วและจินตคณิตระดับประเทศ",
+      "trigger_age": 9,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังจากที่แม่ส่งเรียนสถาบันจินตคณิตลูกคิดญี่ปุ่นราคาแพง คุณได้รับคัดเลือกเป็นตัวแทนไปแข่งขันคิดเลขเร็วระดับประเทศที่ศูนย์ประชุมในกรุงเทพฯ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ดีดลูกคิดในจินตนาการคำนวณตัวเลขหลักแสนเสร็จในพริบตา คว้าถ้วยทอง!",
+          "hint_th": "🧠 สมอง +7 , 🤝 เพื่อนฝูง +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เน้นเก็บเกี่ยวประสบการณ์และแลกนามบัตรผู้ปกครองโรงเรียนดังทั่วประเทศ",
+          "hint_th": "🤝 เพื่อนฝูง +6 , 🧠 สมอง +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age10_01",
+      "title_th": "ทัศนศึกษาประจำปี ป.4! รถบัสพัดลม/แอร์ มุ่งสู่สวนสัตว์และพิพิธภัณฑ์",
+      "trigger_age": 10,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันทัศนศึกษาที่ตื่นเต้นจนนอนไม่หลับ! คุณหอบกระเป๋าขนมขึ้นรถบัสไปเที่ยวสวนสัตว์และพิพิธภัณฑ์วิทยาศาสตร์ร่วมกับเพื่อนทั้งระดับชั้น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นั่งเบาะหลังสุดร้องเพลงและแบ่งขนมกินกับแก๊งเพื่อนตลอดทาง!",
+          "hint_th": "😊 ความสุข +5 , 🤝 เพื่อนฝูง +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งใจจดบันทึกใบงานความรู้หน้ากรงสัตว์และทดลองวิทยาศาสตร์ทุกฐาน",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +3 , ❤️ สุขภาพ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age10_02",
+      "title_th": "เปิดท้ายขายของ! งานสัปดาห์ตลาดนัดเฒ่าแก่น้อยในโรงเรียน",
+      "trigger_age": 10,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โรงเรียนจัดกิจกรรมวิชาการงานอาชีพ ให้เด็ก ป.4 ตั้งซุ้มขายอาหารและของทำมือกันเองในสนามโรงเรียนเพื่อฝึกทักษะการค้าขายและทอนเงิน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งซุ้มทำขนมปังปิ้งทาเนยนมและน้ำหวานโซดา ตะโกนเรียกลูกค้าจนขายเกลี้ยง!",
+          "hint_th": "🪙 กำไร +300 ฿ , 🤝 เพื่อนฝูง +4 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับหน้าที่เป็นฝ่ายบัญชีถือกล่องเงิน คิดเลขทอนเงินแม่นยำไม่มีพลาดสักบาท",
+          "hint_th": "🪙 กำไร +200 ฿ , 🧠 สมอง +5 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 5,
+            "connections": 2,
+            "cash": 200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age10_03",
+      "title_th": "เลือกตั้งหัวหน้าห้อง ป.4! ประชาธิปไตยหน้ากระดานดำ",
+      "trigger_age": 10,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณครูเขียนชื่อผู้สมัครหัวหน้าห้องบนกระดานดำ แล้วให้เพื่อนๆ ในห้องยกมือโหวต เพื่อนสนิทของคุณยกมือเสนอชื่อคุณขึ้นชิงตำแหน่ง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ออกไปแถลงนโยบายหน้าชั้นว่าจะไม่จดชื่อเพื่อนมั่วซั่ว จนชนะโหวตถล่มทลาย!",
+          "hint_th": "🤝 เพื่อนฝูง +6 , 🧠 สมอง +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอสละสิทธิ์ให้เพื่อนอีกคนเป็นหัวหน้า แล้วเราเป็นเหรัญญิก/รองหัวหน้าคอยช่วยแทน",
+          "hint_th": "🤝 เพื่อนฝูง +4 , ✨ แต้มบุญ +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 0,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 5,
+            "merit": 1,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age10_04",
+      "title_th": "แผลใจวัยประถม! ขาประจำหัวโจกหลังห้องมาแกล้งล้อชื่อพ่อแม่",
+      "trigger_age": 10,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การล้อชื่อพ่อแม่ถือเป็นเรื่องคอขาดบาดตายที่สุดในวัยประถม! เด็กเกเรตัวโตหลังห้องตะโกนล้อชื่อพ่อแม่ของคุณกลางโรงอาหาร",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใช้ไหวพริบตอกกลับด้วยมุกตลกจนเพื่อนทั้งโต๊ะขำ และหัวโจกหน้าแตกไปเอง!",
+          "hint_th": "🧠 สมอง +4 , 🤝 เพื่อนฝูง +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เดินไปฟ้องครูฝ่ายปกครองให้มาอบรมหัวโจกตามระเบียบ",
+          "hint_th": "🧠 สมอง +2 , ✨ แต้มบุญ +1 , 🤝 เพื่อนฝูง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 2,
+            "connections": 1,
+            "cash": 0,
+            "merit": 1,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พุ่งเข้าไปชกต่อยแลกหมัดกลางโรงอาหารจนโดนครูทำโทษทั้งคู่!",
+          "hint_th": "❤️ สุขภาพ -2 , 🤝 เพื่อนฝูง +2 , ⚠️ ได้รับป้าย [วัยรุ่นเลือดร้อน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_rebel_teen"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": -1,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": -2,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age10_05_poor",
+      "title_th": "ปิดเทอมใหญ่รับจ้างกรอกน้ำ / เก็บของเก่าขายช่วยครอบครัว",
+      "trigger_age": 10,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงปิดเทอมใหญ่แทนที่จะได้นอนตื่นสาย คุณเห็นขวดพลาสติกและลังกระดาษที่คัดแยกไว้ รวมถึงงานช่วยร้านชำแถวบ้านยกของ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข็นรถนำขวดพลาสติกและลังกระดาษไปชั่งกิโลขายร้านของเก่าได้เงินสด!",
+          "hint_th": "🪙 รายได้ +250 ฿ , ❤️ สุขภาพ +2 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 250,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยป้าร้านชำเรียงของจัดตู้แช่ ได้ทั้งค่าขนมและน้ำอัดลมกินฟรี",
+          "hint_th": "🪙 รายได้ +150 ฿ , 🤝 เพื่อนฝูง +4 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 150,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 1,
+            "connections": 2,
+            "cash": 200,
+            "merit": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age10_06_rich",
+      "title_th": "ประกวดโครงงานหุ่นยนต์ LEGO Mindstorms ระดับนานาชาติ",
+      "trigger_age": 10,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โรงเรียนเอกชน/นานาชาติของคุณส่งทีมนักเรียนเข้าแข่งขันประกอบและเขียนโค้ดสั่งการหุ่นยนต์อัตโนมัติในรายการระดับเอเชีย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับหน้าที่เขียนโปรแกรมควบคุมเซนเซอร์หุ่นยนต์จนทำภารกิจสำเร็จ!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เพื่อนฝูง +4 , ✨ ปลดล็อกป้าย [เด็กเนิร์ดคอม/เกมเมอร์]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_computer_nerd"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับหน้าที่ออกแบบโครงสร้างกลไกแขนกลและพรีเซนต์งานเป็นภาษาอังกฤษ",
+          "hint_th": "🧠 สมอง +4 , 🤝 เพื่อนฝูง +5 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 5,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_01",
+      "title_th": "เข้าค่ายพักแรมลูกเสือ-เนตรนารี ป.5! หุงข้าวหม้อสนามและเดินทางไกล",
+      "trigger_age": 11,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ถึงเวลาเข้าค่ายลูกเสือค้างคืนครั้งแรก! ช่วงบ่ายเดินป่าเข้าฐานมุดโคลน พอตกเย็นทุกหมู่ต้องก่อไฟผ่าฟืนหุงข้าวด้วยหม้อสนามและทำไข่เจียวกินเอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โชว์ทักษะก่อไฟและหุงข้าวหม้อสนามสุกหอมไร้ก้นไหม้ เพื่อนยกให้เป็นฮีโร่ประจำหมู่!",
+          "hint_th": "❤️ สุขภาพ +3 , 🤝 เพื่อนฝูง +6 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ข้าวแฉะครึ่งดิบครึ่งสุก แต่แบ่งมาม่าคัพกินรอบกองไฟกับเพื่อนอย่างสนุกสนาน",
+          "hint_th": "😊 ความสุข +5 , 🤝 เพื่อนฝูง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 1,
+            "connections": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_02",
+      "title_th": "คัดตัวเข้าวงโยธวาทิตและวงดุริยางค์โรงเรียน!",
+      "trigger_age": 11,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ครูสอนดนตรีเปิดรับสมัครนักเรียนชั้น ป.5 เข้าฝึกซ้อมเครื่องเป่าเมโลเดียน กลองสแนร์ และคฑากร เพื่อใช้เดินนำขบวนงานโรงเรียน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สมัครเข้าซ้อมดนตรี/ถือไม้คฑากรเดินนำขบวนอย่างสง่างาม!",
+          "hint_th": "😊 ความสุข +4 , 🤝 เพื่อนฝูง +5 , ✨ ปลดล็อกป้าย [หัวศิลป์/กล้าแสดงออก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_artistic_expressive"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอเอาเวลาซ้อมดนตรีไปเตะบอลสนามหญ้าหรืออ่านหนังสือในห้องสมุดแทน",
+          "hint_th": "❤️ สุขภาพ +3 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 3,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_03",
+      "title_th": "ไข้เลือดออกระบาดช่วงหน้าฝน! ยุงลายตัวร้าย",
+      "trigger_age": 11,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ฤดูฝนปีนี้มียุงลายชุมมาก เพื่อนในโรงเรียนหลายคนต้องแอดมิทโรงพยาบาลเพราะเป็นไข้เลือดออก คุณครูจึงแจกทรายอะเบทให้กลับไปใส่ตุ่มน้ำที่บ้าน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ช่วยพ่อแม่คว่ำกะลาขัดตุ่มน้ำและทายากันยุงเสมอ ไม่ป่วยเลยตลอดปี!",
+          "hint_th": "❤️ สุขภาพ +4 , 🧠 สมอง +2 , ✨ แต้มบุญ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 1,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โดนยุงลายกัดตอนนั่งเล่นมืดๆ จนไข้ขึ้นสูง ต้องไปนอนให้น้ำเกลือที่โรงพยาบาล",
+          "hint_th": "❤️ สุขภาพ -6 , 😊 ความสุข -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -6,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[มีประกัน รพ.เอกชน] ป่วยไข้ขึ้นแต่ได้พักห้องพิเศษโรงพยาบาลเอกชนจนฟื้นตัวไว",
+          "hint_th": "❤️ สุขภาพ +1 , 😊 ความสุข +1",
+          "req_stats": {},
+          "req_flags": [
+            "flag_private_hospital_access"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 1,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_04",
+      "title_th": "ตำนานเรื่องผีโรงเรียน! ห้องน้ำชั้นบนสุดและห้องดนตรีไทย",
+      "trigger_age": 11,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังเลิกเรียนตอนเย็นที่ฟ้าเริ่มมืด แก๊งเพื่อนท้าพิสูจน์ความกล้าเดินขึ้นไปดูห้องดนตรีไทยและห้องน้ำในตำนานของโรงเรียนที่ลือกันว่ามีเสียงระนาดดังเอง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินนำหน้าถือไฟฉายเข้าไปสำรวจ จนพบว่าเป็นแค่เสียงลมพัดหน้าต่าง!",
+          "hint_th": "🧠 สมอง +4 , 🤝 เพื่อนฝูง +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พอได้ยินเสียงแมวกระโดดก็กรี๊ดวิ่งหนีลงบันไดป่าราบไปพร้อมเพื่อน!",
+          "hint_th": "❤️ สุขภาพ +3 (วิ่งเร็วจัด!) , 😊 ความสุข +3 , 🤝 เพื่อนฝูง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_05",
+      "title_th": "การแข่งขันทักษะวิชาการงานศิลปหัตถกรรมนักเรียนระดับเขต!",
+      "trigger_age": 11,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานใหญ่ประจำปีของนักเรียนไทย! โรงเรียนคัดเลือกตัวแทนไปแข่งงานศิลปหัตถกรรมนักเรียน มีทั้งแข่งตอบปัญหาวิชาการ แข่งคอมพิวเตอร์ และงานประดิษฐ์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงแข่งตอบปัญหาวิทยาศาสตร์และคณิตศาสตร์ คว้าเหรียญทองระดับเขต!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เพื่อนฝูง +3 , ✨ ปลดล็อกป้าย [หนอนหนังสือ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_bookworm"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงแข่งสิ่งประดิษฐ์ของใช้จากวัสดุเหลือใช้ ได้รางวัลความคิดสร้างสรรค์ดีเด่น!",
+          "hint_th": "🧠 สมอง +4 , 🤝 เพื่อนฝูง +4 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_06",
+      "title_th": "กระเป๋าสตางค์ปริศนาตกอยู่ข้างสนามฟุตบอลโรงเรียน!",
+      "trigger_age": 11,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างเดินกลับห้องเรียนหลังคาบพละ คุณเห็นกระเป๋าสตางค์ที่มีธนบัตรใบละร้อยหลายใบตกอยู่ใต้ต้นไม้โดยไม่มีใครเห็น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบนำไปส่งให้ครูประกาศหาเจ้าของหน้าเสาธง จนได้เกียรติบัตรเด็กดีศรีโรงเรียน!",
+          "hint_th": "✨ แต้มบุญ +10 , 🤝 เพื่อนฝูง +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบหยิบเงินใส่กระเป๋าตัวเองเงียบๆ แต่รู้สึกผิดในใจไปหลายวัน",
+          "hint_th": "🪙 เงินสด +300 ฿ , ✨ แต้มบุญ -8 , 😊 ความสุข -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 300,
+            "merit": -8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "connections": 3,
+            "cash": 150,
+            "merit": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_07_poor",
+      "title_th": "จักรยานโซ่หลุดกลางทาง! หัดจับประแจซ่อมรถเอง",
+      "trigger_age": 11,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "จักรยานเก่าที่คุณใช้ปั่นไปทำธุระให้แม่เกิดโซ่หลุดและเบรกหย่อน ลุงช่างซ่อมรถหน้าปากซอยจึงกวักมือเรียกให้คุณมาดูวิธีตั้งโซ่และขันน็อตด้วยตัวเอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งใจเรียนรู้วิธีใช้ประแจและซ่อมจักรยานจนคล่อง มือเปื้อนน้ำมันเครื่องอย่างเท่!",
+          "hint_th": "🧠 สมอง +4 , 🤝 เพื่อนฝูง +3 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยลุงช่างหยิบเครื่องมือและกวาดอู่ ลุงเลยซ่อมรถให้ฟรีแถมให้ค่าขนม!",
+          "hint_th": "🪙 เงินสด +100 ฿ , 🤝 เพื่อนฝูง +4 , ✨ แต้มบุญ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 100,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 50,
+            "merit": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age11_08_rich",
+      "title_th": "คอร์ส Summer Exchange บินไปเรียนภาษาที่อังกฤษ/สิงคโปร์ 1 เดือน",
+      "trigger_age": 11,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงปิดเทอม ป.5 คุณพ่อคุณแม่ส่งคุณไปเข้าโครงการแลกเปลี่ยนระยะสั้นในต่างประเทศ เพื่อฝึกใช้ชีวิตและสื่อสารภาษาอังกฤษกับเจ้าของภาษา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กล้าพูดคุยกับโฮสต์แฟมิลี่และเพื่อนต่างชาติจนสำเนียงเป๊ะ!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เพื่อนฝูง +5 , 😊 ความสุข +5 , ได้รับป้าย [คุ้นชินชาวต่างชาติ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_expat_exposure"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เที่ยวชมพิพิธภัณฑ์และมหาวิทยาลัยระดับโลก สร้างแรงบันดาลใจในการเรียนต่อ",
+          "hint_th": "🧠 สมอง +7 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 7,
+            "connections": 4,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_01",
+      "title_th": "พี่ใหญ่ ป.6! การสอบระดับชาติ O-NET ประถมศึกษา",
+      "trigger_age": 12,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในที่สุดคุณก็กลายเป็นพี่ใหญ่สุดของโรงเรียนประถม! สนามสอบสำคัญแรกคือการฝนกระดาษคำตอบด้วยดินสอ 2B ในการสอบ O-NET ระดับชาติ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทบทวนสรุปเนื้อหา 4 วิชาหลักและฝนรหัสประจำตัวถูกต้องแม่นยำ!",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 6,
+            "connections": 1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[หนอนหนังสือ] ทำข้อสอบคณิตศาสตร์และภาษาอังกฤษได้เต็ม 100 คะแนน สร้างชื่อให้โรงเรียน!",
+          "hint_th": "🧠 สมอง +8 , 🤝 เพื่อนฝูง +5 , 😊 ความสุข +5 , 🪙 รางวัล +1,000 ฿",
+          "req_stats": {},
+          "req_flags": [
+            "tag_bookworm"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 8,
+            "connections": 5,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ทำข้อสอบเท่าที่ได้ ที่เหลือใช้ศาสตร์แห่งการเดาหมุนดินสอฝนคำตอบ!",
+          "hint_th": "😊 ความสุข +3 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 1,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_02",
+      "title_th": "ศึกชิงที่นั่งสอบเข้า ม.1 โรงเรียนมัธยมประจำจังหวัด!",
+      "trigger_age": 12,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โค้งสุดท้ายก่อนจบ ป.6 นักเรียนจากทุกโรงเรียนต่างมุ่งหน้ามาสอบคัดเลือกเข้าชั้น ม.1 โรงเรียนมัธยมชื่อดัง คุณจะเตรียมตัวลงสนามนี้อย่างไร?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลุยอ่านหนังสือตะลุยโจทย์สอบเข้าห้องเรียนปกติ/ห้องคิงอย่างเต็มที่!",
+          "hint_th": "🧠 สมอง +6 , ❤️ สุขภาพ -1 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 2,
+            "intelligence": 6,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[นักกีฬาโรงเรียน] ยื่นแฟ้มเกียรติบัตรตัวแทนนักกีฬาสอบเข้าโควตาความสามารถพิเศษ!",
+          "hint_th": "❤️ สุขภาพ +3 , 🤝 เพื่อนฝูง +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [
+            "tag_school_athlete"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกเรียนต่อโรงเรียนมัธยมใกล้บ้านแบบสบายๆ ไม่กดดันตัวเอง",
+          "hint_th": "😊 ความสุข +4 , ❤️ สุขภาพ +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_03",
+      "title_th": "สมุดเฟรนด์ชิพ (Friendship) และเขียนเสื้อนักเรียนวันปัจฉิมนิเทศ!",
+      "trigger_age": 12,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันสุดท้ายของการเป็นเด็กประถม! เพื่อนๆ ต่างแลกสมุดเฟรนด์ชิพกันเขียนคำอวยพร วาดแผนที่บ้าน และใช้ปากกาเมจิกเขียนความในใจลงบนเสื้อนักเรียนจนเต็มตัว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งใจเขียนสมุดเฟรนด์ชิพให้เพื่อนทุกคนและแลกเบอร์ติดต่อไว้ไม่ให้ลืมกัน",
+          "hint_th": "🤝 เพื่อนฝูง +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 1,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบเขียนความในใจสารภาพความรู้สึกดีๆ ให้เพื่อนคนที่แอบปลื้มมาตั้งแต่ ป.4",
+          "hint_th": "😊 ความสุข +6 , 🤝 เพื่อนฝูง +4 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 1,
+            "connections": 5,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_04",
+      "title_th": "เสียงเริ่มแตกหนุ่ม / เริ่มเป็นสาว! การเปลี่ยนแปลงเข้าสู่วัยรุ่น",
+      "trigger_age": 12,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่ออายุย่างเข้า 12 ปี ฮอร์โมนในร่างกายเริ่มเปลี่ยนแปลง คุณตัวสูงขึ้นอย่างรวดเร็วและเริ่มหันมาสนใจดูแลทรงผมและผิวพรรณหน้ากระจก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ดื่มนมออกกำลังกายเพิ่มความสูง และหัดล้างหน้าดูแลความสะอาดอย่างถูกวิธี",
+          "hint_th": "❤️ สุขภาพ +4 , ✨ หน้าตา +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นอนดึกเล่นเกมและกินของทอดจนสิวเม็ดแรกเห่อขึ้นกลางหน้าผาก!",
+          "hint_th": "❤️ สุขภาพ -2 , ✨ หน้าตา -2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": -2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_05",
+      "title_th": "นัดรวมแก๊งเพื่อนประถมฉลองเรียนจบที่ร้านไอศกรีม/หมูกระทะ!",
+      "trigger_age": 12,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ก่อนที่เพื่อนแต่ละคนจะแยกย้ายกันไปเรียนต่อ ม.1 คนละโรงเรียน แก๊งเพื่อนสนิทนัดรวมตัวกันไปกินเลี้ยงส่งท้ายวัยประถม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ควักเงินค่าขนมไปร่วมปาร์ตี้ปิ้งย่างและถ่ายรูปที่ระลึกร่วมกัน (-150฿)",
+          "hint_th": "🪙 เงินสด -150 ฿ , 😊 ความสุข +6 , 🤝 เพื่อนฝูง +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -150,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนเพื่อนมานั่งทำสุกี้/ส้มตำกินกันเองที่บ้าน ประหยัดแถมสนุกสุดๆ!",
+          "hint_th": "😊 ความสุข +5 , 🤝 เพื่อนฝูง +5 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 1,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 1,
+            "connections": 6,
+            "cash": -75
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_06",
+      "title_th": "อยากได้สมาร์ทโฟนเครื่องแรกไว้ทักแชทหาเพื่อนตอนขึ้น ม.1!",
+      "trigger_age": 12,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อกำลังจะขึ้นชั้นมัธยม เพื่อนๆ เริ่มสร้างกลุ่มแชทออนไลน์ไว้คุยและส่งข่าวการบ้าน คุณจึงเดินเข้าไปปรึกษาพ่อแม่เรื่องโทรศัพท์มือถือ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สัญญากับพ่อแม่ว่าจะตั้งใจเรียนและแบ่งเวลาเล่นอย่างมีวินัย",
+          "hint_th": "🧠 สมอง +3 , 🤝 เพื่อนฝูง +4 , 😊 ความสุข +3 (พร้อมเก็บเงินซื้อสมาร์ทโฟนในร้านค้า!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับโทรศัพท์ปุ่มกดหรือเครื่องเก่าของแม่มาใช้โทรติดต่อเรื่องจำเป็นไปก่อน",
+          "hint_th": "🪙 ประหยัดเงิน +200 ฿ , ✨ แต้มบุญ +3 , 🤝 เพื่อนฝูง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 200,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 100,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_07_poor",
+      "title_th": "ทางแยกหลังจบ ป.6 ของเด็กสู้ชีวิต! หาทุนเรียนต่อ ม.1",
+      "trigger_age": 12,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การขึ้นชั้น ม.1 มีทั้งค่าชุดนักเรียนใหม่ ค่าหนังสือ และค่ารถเดินทาง พ่อแม่นั่งกุมขมับคิดหนักเรื่องค่าใช้จ่ายวันมอบตัวของคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สอบชิงทุนนักเรียนเรียนดีของมูลนิธิและรับจ้างทำงานเล็กๆ น้อยๆ ช่วงปิดเทอมช่วยแม่!",
+          "hint_th": "🪙 เงินทุน +1,500 ฿ , 🧠 สมอง +5 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_working_class_roots"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 2,
+            "cash": 1500,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เลือกเรียนโรงเรียนขยายโอกาสใกล้บ้านที่เรียนฟรีและเดินไปเรียนได้",
+          "hint_th": "🪙 ประหยัดเงิน +500 ฿ , ❤️ สุขภาพ +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 1000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p2_age12_08_rich",
+      "title_th": "ของขวัญจบ ป.6 จากคุณพ่อ! ห้องเรียน EP / นานาชาติและแก็ดเจ็ตครบชุด",
+      "trigger_age": 12,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ฉลองเรียนจบชั้นประถมศึกษา! คุณพ่อคุณแม่มอบสมาร์ทโฟนเครื่องใหม่พร้อมโควตาเข้าเรียนต่อระดับมัธยมในหลักสูตร English Program / International School",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับสมาร์ทโฟนเครื่องใหม่และตั้งใจเตรียมตัวเข้าเรียนหลักสูตรอินเตอร์!",
+          "hint_th": "😊 ความสุข +6 , 🧠 สมอง +4 , 🤝 เพื่อนฝูง +4 , 📱 ปลดล็อกป้าย [สมาร์ทโฟน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_smartphone"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอเปลี่ยนของขวัญเป็นเงินขวัญถุงเข้าบัญชีออมทรัพย์และชุดหนังสือ/อุปกรณ์คอมพิวเตอร์",
+          "hint_th": "🪙 เงินสด +5,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 2,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 3,
+            "cash": 2500,
+            "appearance": 1
+          }
+        }
+      ]
+    }
+  ]
+}

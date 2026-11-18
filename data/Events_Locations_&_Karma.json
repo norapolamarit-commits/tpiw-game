@@ -1,0 +1,5084 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Locations_&_Karma",
+  "category_group": "locations_and_karma",
+  "total_events": 70,
+  "quota_breakdown": {
+    "total": 70,
+    "locations_12_provinces_total": 48,
+    "per_province_count": 4,
+    "karma_and_merit_events_total": 22
+  },
+  "events": [
+    {
+      "event_id": "evt_loc_bkk_01",
+      "title_th": "ฝนตกหนักน้ำท่วมรอการระบายย่านอโศก-สุขุมวิท! รถไฟฟ้าขัดข้องและวินมอเตอร์ไซค์โก่งราคา",
+      "min_age": 15,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_bangkok",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เย็นวันศุกร์สิ้นเดือน พายุฝนถล่มกรุงเทพฯ จนน้ำท่วมขังฟุตบาท รถติดนิ่งสนิททุกแยก และคิววินมอเตอร์ไซค์พุ่งเป็นเที่ยวละ 200 บาท!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แวะนั่งทำงาน/อ่านหนังสือในคาเฟ่ห้างหรูรอจนฝนหยุดและน้ำลด ได้ความรู้แถมไม่ต้องลุยน้ำเน่า (-200฿)",
+          "hint_th": "🪙 ค่ากาแฟ -200 ฿ , 🧠 สมอง +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": -200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พับขากางเกงเดินลุยน้ำครำกลับที่พัก! ประหยัดเงินแต่เสี่ยงโรคฉี่หนูและน้ำกัดเท้า",
+          "hint_th": "❤️ สุขภาพ -4 , 😊 ความสุข -2 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": -2,
+            "intelligence": 1,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 1,
+            "intelligence": 3,
+            "cash": -100
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_bkk_02",
+      "title_th": "ตระเวนกินสตรีทฟู้ดมิชลินเยาวราช & บรรทัดทองยามค่ำคืน!",
+      "min_age": 12,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_bangkok",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สีสันยามค่ำคืนของกรุงเทพฯ! กลิ่นก๋วยจั๊บน้ำใส หมูกรอบ ขนมปังปิ้งไส้ทะลัก และซีฟู้ดย่านเยาวราช-บรรทัดทองดึงดูดผู้คนและนักท่องเที่ยวนับหมื่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นัดแก๊งเพื่อนไปต่อคิวกินร้านดัง ถ่ายรูปเช็กอินลงโซเชียล อิ่มอร่อยฟินสุดๆ! (-800฿)",
+          "hint_th": "🪙 ค่าอาหาร -800 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สังเกตการณ์โมเดลธุรกิจร้านดังที่คิวยาว เพื่อนำกลยุทธ์การตั้งราคาและการตลาดมาปรับใช้กับงานตัวเอง!",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": -400
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_bkk_03",
+      "title_th": "มหกรรมงานแฟร์และสัมมนาระดับชาติที่ศูนย์ประชุมแห่งชาติสิริกิติ์ / พารากอน!",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_bangkok",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ข้อได้เปรียบของการอยู่เมืองหลวง! สุดสัปดาห์นี้มีทั้งงานสัปดาห์หนังสือแห่งชาติ มหกรรมการเงิน Money Expo และงาน Tech Conference จัดขึ้นพร้อมกัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าฟังสัมมนาการลงทุนและเทคโนโลยีฟรี ได้ทั้งความรู้ใหม่และนามบัตรผู้บริหารเพียบ!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +7 , 😊 ความสุข +5 , 💡 ได้รับป้าย [มีความรู้ทางการเงิน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เดินช้อปหนังสือลดราคาในงานสัปดาห์หนังสือ ปลุกไฟการเรียนรู้เต็มเปี่ยม! (-1,000฿)",
+          "hint_th": "🪙 ค่าหนังสือ -1,000 ฿ , 🧠 สมอง +7 , 😊 ความสุข +6 , ✨ ปลดล็อกป้าย [หนอนหนังสือ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_bookworm"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 4,
+            "cash": -500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_bkk_04",
+      "title_th": "ฟ้ากรุงเทพฯ ขมุกขมัวด้วยฝุ่นพิษ PM2.5! วิ่งออกกำลังกายสวนลุมพินี-เบญจกิติ",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_bangkok",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงหน้าหนาวที่ไม่มีลมหนาว แต่กลับมีฝุ่น PM2.5 ปกคลุมตึกระฟ้ากรุงเทพฯ จนเห็นเป็นหมอกสีเทา!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีเครื่องฟอกอากาศ] เปิดเครื่องฟอกอากาศในห้องและออกกำลังกายในร่ม ปอดสะอาดปลอดภัยไร้โรค!",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +5 , ✨ ล้างสถานะ [โรคทางเดินหายใจ PM2.5]",
+          "req_stats": {},
+          "req_flags": [
+            "flag_clean_home_air"
+          ],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_pm25_lung_damage"
+          ],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สวมหน้ากาก N95 ทุกครั้งที่ออกจากบ้านและหลีกเลี่ยงการสูดฝุ่นริมถนนใหญ่ (-300฿)",
+          "hint_th": "🪙 ค่าหน้ากาก -300 ฿ , ❤️ สุขภาพ +2 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 0,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": -300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 3,
+            "intelligence": 1,
+            "cash": -150
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_non_01",
+      "title_th": "ศึกชิงที่จอดรถอาคารจอดแล้วจร (Park & Ride) รถไฟฟ้าสายสีม่วง-สีชมพู!",
+      "min_age": 18,
+      "max_age": 70,
+      "category": "location_specific",
+      "req_location_id": "loc_nonthaburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วิถีชีวิตชาวนนทบุเรียน! เช้าวันทำงานต้องขับรถออกจากหมู่บ้านจัดสรรมาแย่งที่จอดรถสถานีรถไฟฟ้าเพื่อต่อขบวนเข้าเมืองหลวง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ออกเดินทางตั้งแต่ 6 โมงเช้า ได้ที่จอดรถชั้นดีและนั่งอ่านข่าวสารบนรถไฟฟ้าสบายๆ",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +4 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แชร์ค่ารถ (Carpool) เดินทางไปพร้อมเพื่อนบ้านในหมู่บ้านเดียวกัน ประหยัดค่าน้ำมันและได้เพื่อนซี้!",
+          "hint_th": "🪙 ประหยัดค่าเดินทาง +2,000 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 1000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_non_02",
+      "title_th": "ล่องเรือเที่ยวเกาะเกร็ดวันเสาร์-อาทิตย์! ชิมทอดมันหน่อกะลาและปั้นเครื่องปั้นดินเผา",
+      "min_age": 7,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_nonthaburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันหยุดสุดสัปดาห์ คุณลงเรือข้ามฟากแม่น้ำเจ้าพระยาไปเดินเล่นตลาดโบราณเกาะเกร็ด ชมเจดีย์เอียงและงานคราฟต์เครื่องปั้นดินเผาชาวมอญ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทดลองปั้นหม้อดินเผาและซื้อขนมไทยโบราณกินริมน้ำ ฮีลใจจากความเหนื่อยล้า! (-400฿)",
+          "hint_th": "🪙 เงินสด -400 ฿ , 😊 ความสุข +7 , ❤️ สุขภาพ +3 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -400,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับซื้อเครื่องปั้นดินเผาและของตกแต่งบ้านแฮนด์เมดมาโพสต์ขายออนไลน์ต่อ ทำกำไรงาม!",
+          "hint_th": "🪙 กำไรขายของแต่งบ้าน +3,500 ฿ , 🧠 สมอง +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 3500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 2,
+            "cash": 1550,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_non_03",
+      "title_th": "งานแสดงสินค้าใหญ่อิมแพ็ค เมืองทองธานี! โอกาสทองทำธุรกิจและช้อปของถูก",
+      "min_age": 16,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_nonthaburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ศูนย์แสดงสินค้าเมืองทองธานีจัดงานแฟร์ระดับประเทศ ทั้งงานมอเตอร์โชว์ งานบ้านและสวน และคอนเสิร์ตใหญ่ ทำให้เศรษฐกิจในนนทบุรีคึกคักสุดขีด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปเดินสำรวจเทรนด์ธุรกิจและรับจ๊อบพิเศษ/ดีลคู่ค้าในงานแฟร์ ได้ทั้งเงินและคอนเนกชัน!",
+          "hint_th": "🪙 รายได้พิเศษ +5,000 ฿ , 🤝 เส้นสาย +7 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 7,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พาครอบครัวไปเดินชิมอาหารและซื้อของใช้ราคาโรงงานวันสุดท้ายของงาน ประหยัดคุ้มค่า!",
+          "hint_th": "🪙 ประหยัดค่าของใช้ +2,000 ฿ , 😊 ความสุข +6 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 3500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_non_04",
+      "title_th": "ตำนานทุเรียนนนท์ก้านยาวลูกละหมื่น! อนุรักษ์สวนผลไม้ริมคลองอ้อมนนท์",
+      "min_age": 15,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_nonthaburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ชาวสวนทุเรียนนนทบุรีเปิดประมูลทุเรียนก้านยาวและหมอนทองแท้จากสวนเก่าแก่ เพื่อนำรายได้เข้าการกุศลและส่งเสริมเกษตรกรในจังหวัด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปร่วมงานเทศกาลผลไม้เมืองนนท์ ได้รู้จักกลุ่มคหบดีและชาวสวนเก่าแก่ของจังหวัด!",
+          "hint_th": "🤝 เส้นสาย +8 , 😊 ความสุข +6 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เรียนรู้เทคนิคการดูแลดินและน้ำของสวนทุเรียนนนท์มาปรับใช้ปลูกต้นไม้ที่บ้าน",
+          "hint_th": "🧠 สมอง +4 , ❤️ สุขภาพ +3 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 4,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_chon_01",
+      "title_th": "เทศกาลพลุนานาชาติพัทยา & วันไหลสงกรานต์บางแสน! เงินสะพัดและผู้คนนับแสน",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_chonburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ชายหาดพัทยาและบางแสนเนืองแน่นไปด้วยนักท่องเที่ยวทั้งไทยและต่างชาติที่มาชมพลุไฟสุดอลังการและเล่นน้ำวันไหลชลบุรี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดบูธขายอาหารทะเลปิ้งย่าง/เครื่องดื่มเย็นๆ รับคลื่นนักท่องเที่ยว โกยกำไรวันเดียวจุกๆ!",
+          "hint_th": "🪙 กำไรเทศกาล +8,000 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปนั่งเก้าอี้ผ้าใบชายหาดกินปูม้านึ่งดูพลุไฟสวยๆ กับเพื่อนฝูง ชาร์จพลังชีวิต! (-800฿)",
+          "hint_th": "🪙 ค่าอาหารทะเล -800 ฿ , 😊 ความสุข +9 , ❤️ สุขภาพ +3 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 8,
+            "connections": 6,
+            "cash": 3600
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_chon_02",
+      "title_th": "ท่าเรือแหลมฉบังและนิคมฯ อมตะซิตี้คึกคัก! โอกาสงานโลจิสติกส์และซัพพลายเชน",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "location_specific",
+      "req_location_id": "loc_chonburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เรือสินค้าขนาดยักษ์เทียบท่าที่แหลมฉบังและโรงงานในเขต EEC ขยายกำลังการผลิต ทำให้มีดีลงานด้านขนส่งและอุตสาหกรรมเข้ามาเพียบ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[ลูกหลานชาวตะวันออก] ใช้ความเชี่ยวชาญพื้นที่ EEC รับดีลประสานงานโลจิสติกส์/โรงงาน รับค่าตอบแทนพิเศษ!",
+          "hint_th": "🪙 รายได้พิเศษ EEC +12,000 ฿ , 🤝 เส้นสาย +7 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_eastern_seaboard_kid"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 7,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข้าอบรมทักษะภาษาที่สาม (จีน/ญี่ปุ่น) เพื่อรองรับนักลงทุนต่างชาติในชลบุรี",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 6000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_chon_03",
+      "title_th": "วิ่งมาราธอนริมทะเลบางแสน (Bangsaen Marathon) มาตรฐานระดับโลก World Athletics!",
+      "min_age": 15,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_chonburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานวิ่งริมชายหาดที่ดังที่สุดในประเทศ! นักวิ่งนับหมื่นคนออกสตาร์ทตอนเช้ามืดรับลมทะเลสดชื่นและกินของอร่อยหลังเข้าเส้นชัย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงสมัครวิ่งเข้าเส้นชัย คว้าเหรียญรางวัลและได้สุขภาพปอด-หัวใจที่แข็งแรงสุดๆ!",
+          "hint_th": "❤️ สุขภาพ +8 , 😊 ความสุข +7 , 🤝 เส้นสาย +4 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปตั้งจุดกองเชียร์แจกน้ำดื่มและแตงโมเย็นๆ ให้นักวิ่ง ได้ทั้งบุญและรอยยิ้ม!",
+          "hint_th": "✨ แต้มบุญ +10 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 7,
+            "connections": 5,
+            "merit": 5,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_chon_04",
+      "title_th": "ซื้อข้าวหลามหนองมนและหอยจ๊อปูเจ้าดัง! ของฝากขึ้นชื่อเมืองชล",
+      "min_age": 12,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_chonburi",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แวะตลาดหนองมน กลิ่นข้าวหลามช็อตหน้ากะทิเยิ้มๆ และหอยจ๊อปูเนื้อแน่นทอดร้อนๆ หอมฟุ้งไปทั่วตลาด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อข้าวหลามและหอยจ๊อปูไปฝากผู้ใหญ่และลูกค้า ได้รับความเอ็นดูและคอนเนกชันดีเยี่ยม! (-600฿)",
+          "hint_th": "🪙 ค่าของฝาก -600 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +5 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -600,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับหิ้วข้าวหลามหนองมนและอาหารทะเลแห้งส่งขายออนไลน์ให้คนต่างจังหวัด ฟันกำไรส่วนต่าง!",
+          "hint_th": "🪙 กำไรรับหิ้ว +3,000 ฿ , 🧠 สมอง +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 1200,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_rayong_01",
+      "title_th": "มหกรรมโบนัสปิโตรเคมีมาบตาพุดออกแล้ว! เงินสะพัดทั่วเมืองระยองฮิ",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "location_specific",
+      "req_location_id": "loc_rayong",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "จังหวัดที่มีรายได้ต่อหัว (GPP per capita) สูงที่สุดในประเทศไทย! ช่วงสิ้นปีโรงงานปิโตรเคมีและพลังงานจ่ายโบนัสก้อนใหญ่ ทำให้การค้าการขายในระยองคึกคักสุดๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับงานซัพพอร์ต/ขายสินค้าและบริการให้กลุ่มพนักงานนิคมฯ ยอดขายและโบนัสพุ่งกระฉูด!",
+          "hint_th": "🪙 รายได้สะพัด +15,000 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเงินที่หาได้ในระยองไปลงทุนซื้อหุ้นปันผลกลุ่มพลังงานและปิโตรเคมี เติบโตไปพร้อมจังหวัด!",
+          "hint_th": "🪙 เงินปันผล +10,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 12500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_rayong_02",
+      "title_th": "เทศกาลบุฟเฟต์ทุเรียน-มังคุดสวนผลไม้ระยอง! ชิมไปบนรถรางชมสวน",
+      "min_age": 7,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_rayong",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เดือนพฤษภาคม-มิถุนายน สวนผลไม้ที่ตะพงและแกลงเปิดสวนให้นักท่องเที่ยวนั่งรถรางเข้าไปกินทุเรียน เงาะ มังคุด ลองกอง สดๆ จากต้น!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปกินบุฟเฟต์ผลไม้สดๆ และเหมาทุเรียนทอดกรอบเกรด A กลับมาฝากที่บ้าน (-600฿)",
+          "hint_th": "🪙 ค่าบัตรบุฟเฟต์ -600 ฿ , 😊 ความสุข +9 , ❤️ สุขภาพ +2 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -600,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ติดต่อชาวสวนรับทุเรียนหมอนทองระยองไปเปิดพรีออเดอร์ขายเพื่อนๆ กำไรงาม!",
+          "hint_th": "🪙 กำไรขายทุเรียน +6,000 ฿ , 🧠 สมอง +4 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 8,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 2700
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_rayong_03",
+      "title_th": "ซ้อมแผนอพยพและตรวจสุขภาพปอดประจำปี! การดูแลสิ่งแวดล้อมรอบนิคมอุตสาหกรรม",
+      "min_age": 12,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_rayong",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หน่วยงานสาธารณสุขและกลุ่มโรงงานจัดหน่วยแพทย์เคลื่อนที่มาตรวจสมรรถภาพปอดฟรีให้ประชาชนในระยอง พร้อมซ้อมแผนความปลอดภัยชุมชน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้ารับการตรวจเอ็กซเรย์ปอดฟรีและปลูกต้นไม้รอบบ้านช่วยกรองอากาศ สุขภาพแข็งแรง!",
+          "hint_th": "❤️ สุขภาพ +6 , 🧠 สมอง +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข้าร่วมเป็นคณะกรรมการไตรภาคีตรวจสอบคุณภาพอากาศของชุมชน ได้ทั้งเบี้ยประชุมและปกป้องบ้านเกิด!",
+          "hint_th": "🪙 เบี้ยประชุม +3,000 ฿ , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 3000,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 1500,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_rayong_04",
+      "title_th": "นั่งเรือข้ามฟากไปพักผ่อนเกาะเสม็ด & ชมพระอาทิตย์ตกแหลมแม่พิมพ์!",
+      "min_age": 12,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_rayong",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เสร็จสิ้นสัปดาห์การทำงานหนัก คุณขับรถไปท่าเรือบ้านเพ นั่งเรือไปสัมผัสหาดทรายขาวละเอียดเหมือนแป้งที่เกาะเสม็ด ('ไปเสม็ด เสร็จทุกราย' เรื่องความประทับใจ!)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เล่นน้ำทะเลใสแจ๋วและดูโชว์ควงกระบองไฟริมหาดทรายแก้ว ความเครียดหายเป็นปลิดทิ้ง! (-1,200฿)",
+          "hint_th": "🪙 ค่าทริปเสม็ด -1,200 ฿ , ❤️ สุขภาพ +5 , 😊 ความสุข +10 , ✨ ล้างสถานะ [ซึมเศร้า/นอนไม่หลับ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression",
+            "status_chronic_insomnia"
+          ],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แวะซื้อกะปิเคยแท้และน้ำปลาดีเมืองระยองที่ตลาดบ้านเพกลับมาทำกับข้าว",
+          "hint_th": "❤️ สุขภาพ +3 , 😊 ความสุข +5 , 🪙 ประหยัดค่ากับข้าว +500 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "cash": -350
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_cnx_01",
+      "title_th": "ประเพณีเดือนยี่เป็งเชียงใหม่! ลอยกระทงสายน้ำปิงและโคมลอยสว่างไสวเต็มท้องฟ้า",
+      "min_age": 7,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_chiangmai",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คืนวันเพ็ญเดือนสิบสอง เมืองเชียงใหม่สว่างไสวไปด้วยผางประทีปและโคมยี่เป็งงดงามตระการตา นักท่องเที่ยวจากทั่วโลกหลั่งไหลมาสัมผัสเสน่ห์ล้านนา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แต่งชุดพื้นเมืองล้านนาไปจุดผางประทีปบูชาพระธาตุและลอยกระทงใบตอง อิ่มบุญและงดงามสุดๆ!",
+          "hint_th": "✨ แต้มบุญ +15 , 😊 ความสุข +9 , ✨ หน้าตา +3 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดบูธขายกระทงใบตองทำมือและอาหารเหนือในงานถนนคนเดินท่าแพ ขายดีเทน้ำเทท่า!",
+          "hint_th": "🪙 กำไรงานยี่เป็ง +6,000 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "connections": 6,
+            "cash": 3000,
+            "merit": 8,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_cnx_02",
+      "title_th": "ฤดูฝุ่นควันไฟป่าเดือนมีนาคม! เชียงใหม่ติดอันดับค่าฝุ่นพุ่งสูง ต้องหาวิธีรับมือ",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_chiangmai",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่เดือนมีนาคม-เมษายน หมอกควันไฟป่าปกคลุมจนมองไม่เห็นดอยสุเทพ แสบตาและแสบคอเวลาออกไปข้างนอก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีเครื่องฟอกอากาศ] อยู่แต่ในห้องปลอดฝุ่น (Clean Room) ที่เปิดเครื่องฟอกอากาศไว้ ร่างกายปลอดภัย!",
+          "hint_th": "❤️ สุขภาพ +5 , 😊 ความสุข +4 , ✨ ล้างสถานะ [โรคทางเดินหายใจ PM2.5]",
+          "req_stats": {},
+          "req_flags": [
+            "flag_clean_home_air"
+          ],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_pm25_lung_damage"
+          ],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมบริจาคหน้ากากและน้ำดื่มให้ทีมอาสาดับไฟป่าดอยสุเทพ ได้ทั้งบุญและช่วยเมืองเชียงใหม่ (-500฿)",
+          "hint_th": "🪙 บริจาคช่วยดับไฟป่า -500 ฿ , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -500,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "connections": 3,
+            "cash": -250,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_cnx_03",
+      "title_th": "ย่านนิมมานเหมินท์และคอมมูนิตี้ Digital Nomad! จิบกาแฟดริปคุยโปรเจกต์ระดับโลก",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "location_specific",
+      "req_location_id": "loc_chiangmai",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เชียงใหม่คือเมืองหลวงของเหล่า Digital Nomad และสายคาเฟ่คราฟต์! คุณนั่งจิบกาแฟเมล็ดเทพดอยช้าง/แม่จันใต้ แล้วได้คุยกับกลุ่มสตาร์ทอัพต่างชาติโต๊ะข้างๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[สายคาเฟ่ / มีทักษะภาษา] แลกเปลี่ยนไอเดียและรับงานโปรเจกต์ออนไลน์/ส่งออกงานคราฟต์ล้านนาไปขายต่างประเทศ!",
+          "hint_th": "🪙 รายได้โปรเจกต์ +12,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +5 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_cafe_hopper"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เรียนรู้ศิลปะการคั่วกาแฟและงานแฮนด์เมดจากบาริสต้าแชมป์ประเทศไทย",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +6 , ✨ ปลดล็อกป้าย [ทักษะทำอาหาร/บาริสต้า]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_skill_cooking"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 6000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_cnx_04",
+      "title_th": "ประเพณีรับน้องขึ้นดอยสุเทพ & กราบครูบาศรีวิชัยขอพรคู่เมืองเชียงใหม่!",
+      "min_age": 12,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_chiangmai",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณร่วมเดินเท้า/เดินทางขึ้นไปนมัสการพระบรมธาตุดอยสุเทพ และกราบขอพรอนุสาวรีย์ครูบาศรีวิชัย นักบุญแห่งล้านนา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินขึ้นบันไดนาค 306 ขั้นไปห่มผ้าพระธาตุดอยสุเทพ ได้ทั้งสุขภาพขาแข็งแรงและบุญบารมีเต็มเปี่ยม!",
+          "hint_th": "❤️ สุขภาพ +6 , ✨ แต้มบุญ +18 , 😊 ความสุข +8 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แวะกินข้าวซอยไก่และไส้อั่วสมุนไพรร้อนๆ ท่ามกลางอากาศหนาวเย็นบนดอย (-200฿)",
+          "hint_th": "🪙 ค่าอาหารเหนือ -200 ฿ , 😊 ความสุข +7 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 8,
+            "connections": 3,
+            "cash": -100,
+            "merit": 9
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_kkc_01",
+      "title_th": "เทศกาลสงกรานต์ถนนข้าวเหนียวขอนแก่น! คลื่นมนุษย์ไร้แอลกอฮอล์ยาวที่สุดในโลก",
+      "min_age": 12,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_khonkaen",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เดือนเมษายน เมืองขอนแก่นคึกคักสุดขีด! ผู้คนนับแสนมารวมตัวกันทำ 'คลื่นมนุษย์' ที่ถนนข้าวเหนียว พร้อมเวทีคอนเสิร์ตหมอลำซิ่งและงานสรงน้ำพระธาตุขามแก่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปร่วมเล่นคลื่นมนุษย์และฟ้อนรำหน้าฮ้านหมอลำ ม่วนจอยสุดขีดคลายเครียดทั้งปี!",
+          "hint_th": "😊 ความสุข +10 , ❤️ สุขภาพ +4 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งซุ้มขายไก่ย่างเขาสวนกวางและส้มตำปลาร้านัวๆ ต้อนรับนักท่องเที่ยว รับทรัพย์กระเป๋าตุง!",
+          "hint_th": "🪙 กำไรขายไก่ย่าง +7,500 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 7500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 8,
+            "connections": 7,
+            "cash": 3750
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_kkc_02",
+      "title_th": "มหานครแห่งการศึกษาและการแพทย์อีสาน (มข. / รพ.ศรีนครินทร์)! โอกาสเติบโตก้าวกระโดด",
+      "min_age": 18,
+      "max_age": 70,
+      "category": "location_specific",
+      "req_location_id": "loc_khonkaen",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ย่านกังสดาลและหลัง ม.ขอนแก่น เต็มไปด้วยนักศึกษา บุคลากรทางการแพทย์ และอุทยานวิทยาศาสตร์ภาคตะวันออกเฉียงเหนือ (Science Park)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าร่วมโครงการบ่มเพาะธุรกิจนวัตกรรมของอุทยานวิทยาศาสตร์ มข. ได้ทุนสนับสนุนและเครือข่ายระดับภาค!",
+          "hint_th": "🪙 ทุนและรายได้ +10,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เดินเล่นตลาดต้นตาลและบึงแก่นนครยามเย็น ค่าครองชีพเป็นมิตรและอาหารอร่อยถูกปาก (-200฿)",
+          "hint_th": "🪙 เงินสด -200 ฿ , 😊 ความสุข +6 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 4900
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_kkc_03",
+      "title_th": "งานเทศกาลไหมนานาชาติ ประเพณีผูกเสี่ยว และงานกาชาดจังหวัดขอนแก่น!",
+      "min_age": 15,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_khonkaen",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ประเพณีผูกเสี่ยว (ผูกมิตรเป็นเพื่อนตาย) อันงดงามของชาวขอนแก่น พร้อมการแสดงผ้าไหมมัดหมี่ชนบทที่ขึ้นชื่อระดับโลก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าร่วมพิธีผูกเสี่ยวผูกฝ้ายข้อมือ ได้มิตรแท้คู่คิดและคอนเนกชันพี่น้องชาวอีสานที่เหนียวแน่น!",
+          "hint_th": "🤝 เส้นสาย +10 , 😊 ความสุข +8 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำผ้าไหมมัดหมี่ขอนแก่นมาออกแบบตัดเย็บเป็นชุดทันสมัยขายออนไลน์ ได้กำไรงาม!",
+          "hint_th": "🪙 กำไรผ้าไหม +9,000 ฿ , 🧠 สมอง +5 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 9000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 4500,
+            "merit": 3,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_kkc_04",
+      "title_th": "วิ่งขอนแก่นมาราธอนนานาชาติ (Khon Kaen International Marathon) ท่ามกลางอากาศหนาวเดือนมกราคม!",
+      "min_age": 15,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_khonkaen",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ชาวขอนแก่นออกมายืนต้อนรับและส่งเสียงเชียร์นักวิ่งตลอดสองข้างทางในเช้าอากาศเย็นสบายเดือนมกราคม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมวิ่งออกกำลังกายสูดอากาศสดชื่น ร่างกายฟิตสมบูรณ์และได้เพื่อนนักวิ่งเพียบ!",
+          "hint_th": "❤️ สุขภาพ +7 , 😊 ความสุข +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แวะกราบพระมหาธาตุแก่นนคร (วัดหนองแวง 9 ชั้น) ริมบึงแก่นนครเพื่อความเป็นสิริมงคล",
+          "hint_th": "✨ แต้มบุญ +12 , 😊 ความสุข +6 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "connections": 3,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_korat_01",
+      "title_th": "งานฉลองวันแห่งชัยชนะของท้าวสุรนารี (งานย่าโม)! ลอดซุ้มประตูชุมพลเป็นสิริมงคล",
+      "min_age": 7,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_korat",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างวันที่ 23 มีนาคม - 3 เมษายนของทุกปี ชาวโคราชพร้อมใจกันจัดงานฉลองวันแห่งชัยชนะของย่าโม มีการรำบวงสรวงของสตรีชาวโคราชนับพันคนและตลาดนัดยิ่งใหญ่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปกราบขอพรคุณย่าโมและเดินลอดซุ้มประตูชุมพล อธิษฐานขอให้การงานการเงินเจริญรุ่งเรือง!",
+          "hint_th": "✨ แต้มบุญ +15 , 😊 ความสุข +8 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ผัดหมี่โคราชต้นตำรับขายในงานย่าโม กลิ่นหอมยั่วใจจนลูกค้าเหมาหมดกระทะ!",
+          "hint_th": "🪙 กำไรขายผัดหมี่ +6,500 ฿ , 😊 ความสุข +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 6500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 6,
+            "cash": 3250,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_korat_02",
+      "title_th": "แคมป์ปิ้งสูดโอโซนอุทยานแห่งชาติเขาใหญ่ & เทศกาลดนตรี Big Mountain Music Festival!",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_korat",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปากช่อง-เขาใหญ่ ดินแดนโอโซนอันดับต้นๆ ของประเทศ! ช่วงปลายปีมีทั้งลมหนาว คาเฟ่สวย และเทศกาลดนตรีที่ใหญ่ที่สุดในไทย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปเดินป่าศึกษาธรรมชาติผากล้วยไม้-น้ำตกเหวสุวัตที่เขาใหญ่ ปอดสะอาดสุขภาพฟิตปั๋ง!",
+          "hint_th": "❤️ สุขภาพ +8 , 😊 ความสุข +8 , ✨ ล้างสถานะ [ซึมเศร้า/ออฟฟิศซินโดรม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression",
+            "status_office_syndrome"
+          ],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปจอยงานเทศกาลดนตรีเขาใหญ่ ร้องเต้นหน้าเวทีและได้เพื่อนใหม่จากทั่วประเทศ! (-1,500฿)",
+          "hint_th": "🪙 ค่าบัตร -1,500 ฿ , 😊 ความสุข +12 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "connections": 4,
+            "cash": -750
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_korat_03",
+      "title_th": "จุดตัดมอเตอร์เวย์ M6 และรถไฟทางคู่สู่ประตูอีสาน! โอกาสทำเลทองการค้าโคราช",
+      "min_age": 20,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_korat",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การเปิดใช้งานมอเตอร์เวย์สายบางปะอิน-โคราช ทำให้การเดินทางจากกรุงเทพฯ มาโคราชใช้เวลาเพียงไม่กี่ชั่วโมง นักท่องเที่ยวและนักลงทุนหลั่งไหลเข้าจังหวัด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หลานย่าโม] จับจังหวะเปิดจุดพักรถ/ร้านของฝากหรือนายหน้าค้าที่ดินรับการขยายตัวของเมือง รับทรัพย์ก้อนโต!",
+          "hint_th": "🪙 กำไรทำเลทอง +15,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_korat_gateway"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 7,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แวะฟาร์มโคนมโชคชัย/สวนข้าวโพดหวานไร่สุวรรณ ซื้อนมสดและข้าวโพดหวานมาบำรุงสุขภาพครอบครัว",
+          "hint_th": "❤️ สุขภาพ +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 7500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_korat_04",
+      "title_th": "ชมปราสาทหินพิมายและแหล่งโบราณคดีบ้านปราสาท! มรดกอารยธรรมขอมโบราณ",
+      "min_age": 10,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_korat",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อุทยานประวัติศาสตร์พิมายจัดงานแสดงแสงสีเสียงและแข่งเรือยาวประเพณีชิงถ้วยพระราชทานที่ลำน้ำจักราช",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปชมความงดงามของปราสาทหินพิมายและเชียร์แข่งเรือยาว ได้ทั้งความรู้ประวัติศาสตร์และความสนุกสนาน!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +7 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แวะไทรงามพิมายและทำบุญวัดเก่าแก่คู่เมือง เสริมสิริมงคลให้ชีวิต",
+          "hint_th": "✨ แต้มบุญ +10 , 😊 ความสุข +6 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 2,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_ssk_01",
+      "title_th": "เทศกาลทุเรียนภูเขาไฟศรีสะเกษ & หอมแดง-กระเทียม GI ขึ้นชื่อระดับประเทศ!",
+      "min_age": 12,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_sisaket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ดินภูเขาไฟโบราณแถบกันทรลักษ์-ขุนหาญ ทำให้ 'ทุเรียนภูเขาไฟศรีสะเกษ' มีเนื้อแห้งเนียนละเอียด กลิ่นไม่ฉุน จนคนทั่วประเทศสั่งจองกันข้ามปี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับทุเรียนภูเขาไฟและหอมแดง-กระเทียมศรีสะเกษเกรดคัดพิเศษส่งขายออนไลน์ กำไรงามสุดๆ!",
+          "hint_th": "🪙 กำไรขายผลผลิต GI +9,000 ฿ , 🧠 สมอง +4 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 9000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปเดินงานเทศกาลผลไม้ศรีสะเกษ ชิมทุเรียนภูเขาไฟและอุดหนุนเกษตรกรท้องถิ่น (-400฿)",
+          "hint_th": "🪙 เงินสด -400 ฿ , 😊 ความสุข +8 , ❤️ สุขภาพ +3 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -400,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 4300
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_ssk_02",
+      "title_th": "ประเพณีลงแขกเกี่ยวข้าวหอมมะลิทุ่งกุลาร้องไห้ & บุญคูณลาน (ทำขวัญข้าว)!",
+      "min_age": 10,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_sisaket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วิถีชีวิตที่เปี่ยมด้วยน้ำใจของชาวศรีสะเกษ! เพื่อนบ้านมาช่วยกันเกี่ยวข้าวและจัดพิธีสู่ขวัญข้าวพระแม่โพสพหลังเก็บเกี่ยวเสร็จสิ้น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[นักสู้แดนอีสาน] ลงแรงช่วยเพื่อนบ้านเกี่ยวข้าวและร่วมงานบุญคูณลาน ได้ทั้งข้าวสารใหม่กินฟรีทั้งปีและมิตรภาพแน่นแฟ้น!",
+          "hint_th": "🪙 ประหยัดค่าข้าวสาร +4,000 ฿ , ❤️ สุขภาพ +5 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [
+            "flag_isan_resilience"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 4000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมทำบุญตักบาตรข้าวใหม่ที่วัดประจำหมู่บ้าน เสริมดวงชะตาให้มีกินมีใช้ไม่ขาดมือ",
+          "hint_th": "✨ แต้มบุญ +12 , 😊 ความสุข +7 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "connections": 7,
+            "cash": 2000,
+            "merit": 11
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_ssk_03",
+      "title_th": "ชมทะเลหมอกผามออีแดง อุทยานแห่งชาติเขาพระวิหาร & กราบวัดป่ามหาเจดีย์แก้ว (วัดล้านขวด)!",
+      "min_age": 10,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_sisaket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช้าตรู่ที่ผามออีแดง ชายแดนไทย-กัมพูชา ทะเลหมอกสีขาวลอยปกคลุมทิวทัศน์เทือกเขาพนมดงรัก พร้อมชมภาพแกะสลักนูนต่ำอายุกว่าพันปี",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สูดอากาศบริสุทธิ์บนผามออีแดงและแวะทำบุญที่วัดล้านขวด จิตใจสงบและสุขภาพแข็งแรง!",
+          "hint_th": "❤️ สุขภาพ +6 , ✨ แต้มบุญ +10 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ซื้อผ้าไหมทอมือลายลูกแก้วและผ้าแส่วศรีสะเกษไปฝากผู้ใหญ่",
+          "hint_th": "🤝 เส้นสาย +6 , 😊 ความสุข +5 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "connections": 3,
+            "merit": 5,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_ssk_04",
+      "title_th": "งานประเพณีแซนโฎนตา (สารทเดือนสิบเขมรโบราณ) แสดงความกตัญญูต่อบรรพบุรุษ!",
+      "min_age": 7,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_sisaket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ประเพณีสำคัญของชาวอีสานใต้ ลูกหลานที่ไปทำงานต่างถิ่นจะเดินทางกลับมารวมญาติ ห่อข้าวต้มด่าง และเซ่นไหว้อุทิศส่วนกุศลให้บรรพบุรุษ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ช่วยครอบครัวจัดสำรับเซ่นไหว้บรรพบุรุษและกราบขอพรพ่อแม่ญาติผู้ใหญ่ ได้รับพรอันประเสริฐ!",
+          "hint_th": "✨ แต้มบุญ +18 , 🤝 เส้นสาย +7 , 😊 ความสุข +8 , 🙏 ได้รับป้าย [ลูกกตัญญู]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_filial_child"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งปันขนมและอาหารในงานบุญให้เพื่อนบ้านทั่วคุ้มบ้าน",
+          "hint_th": "✨ แต้มบุญ +12 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 7,
+            "merit": 15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_aya_01",
+      "title_th": "งานยอยศยิ่งฟ้าอยุธยามรดกโลก! นุ่งโจงห่มสไบใช้เงินพดด้วงแลกอาหารไทยโบราณ",
+      "min_age": 7,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_ayutthaya",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อุทยานประวัติศาสตร์พระนครศรีอยุธยาประดับไฟส่องสว่างโบราณสถานยามค่ำคืน ผู้คนแต่งชุดไทยย้อนยุคเดินตลาดโบราณแลกเบี้ยพดด้วงกันอย่างคึกคัก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แต่งชุดไทยไปเดินเที่ยวชมการแสดงแสงสีเสียงและทำบุญวัดมหาธาตุ-วัดไชยวัฒนาราม (-500฿)",
+          "hint_th": "🪙 เงินสด -500 ฿ , ✨ แต้มบุญ +12 , 😊 ความสุข +9 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -500,
+            "merit": 12,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งซุ้มขายโรตีสายไหมอยุธยาแป้งใบเตยร้อนๆ ให้นักท่องเที่ยว ขายดีจนม้วนแป้งแทบไม่ทัน!",
+          "hint_th": "🪙 กำไรขายโรตีสายไหม +6,000 ฿ , 🤝 เส้นสาย +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "connections": 3,
+            "cash": 2750,
+            "merit": 6,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_aya_02",
+      "title_th": "นิคมอุตสาหกรรมโรจนะ-ไฮเทค-บางปะอิน ขยายฐานผลิตชิ้นส่วนอิเล็กทรอนิกส์และยานยนต์!",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "location_specific",
+      "req_location_id": "loc_ayutthaya",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อยุธยาไม่ได้มีแค่วัดโบราณ แต่ยังเป็นฐานการผลิตอุตสาหกรรมขนาดใหญ่ใกล้กรุงเทพฯ! ปีนี้โรงงานญี่ปุ่นและไต้หวันเปิดรับซัพพลายเออร์และพนักงานจำนวนมาก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[ลูกหลานเมืองกรุงเก่า] ใช้ความคุ้นเคยพื้นที่รับงานซัพพลายเออร์/โอทีพิเศษจากโรงงานในนิคมฯ!",
+          "hint_th": "🪙 รายได้พิเศษ +12,000 ฿ , 🤝 เส้นสาย +6 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_old_capital_kid"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปล่อยเช่าห้องพัก/ทำอาหารกล่องส่งตามโรงงานในนิคมฯ รับรายได้สม่ำเสมอทุกเดือน!",
+          "hint_th": "🪙 รายได้เสริม +8,500 ฿ , 🧠 สมอง +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 8500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 10250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_aya_03",
+      "title_th": "ทริปไหว้พระ 9 วัดเมืองกรุงเก่า & กินกุ้งแม่น้ำเผามันเยิ้มริมแม่น้ำเจ้าพระยา!",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_ayutthaya",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันหยุดมงคล คุณเดินทางไปกราบหลวงพ่อโต วัดพนัญเชิงวรวิหาร, วัดใหญ่ชัยมงคล และแวะตลาดกลางเพื่อการเกษตรอยุธยา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ห่มผ้าหลวงพ่อโตและถวายสังฆทานครบ 9 วัด สะสมแต้มบุญก้อนใหญ่เสริมดวงชะตา! (-800฿)",
+          "hint_th": "🪙 ทำบุญ 9 วัด -800 ฿ , ✨ แต้มบุญ +25 , 😊 ความสุข +8 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -800,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สั่งกุ้งแม่น้ำเผาตัวโตมันกุ้งเยิ้มๆ ราดน้ำจิ้มซีฟู้ดกินริมน้ำ ฟินระดับมิชลิน! (-1,200฿)",
+          "hint_th": "🪙 ค่ากุ้งเผา -1,200 ฿ , 😊 ความสุข +10 , ❤️ สุขภาพ +2 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -1200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 9,
+            "connections": 2,
+            "cash": -1000,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_aya_04",
+      "title_th": "ระดับน้ำในแม่น้ำเจ้าพระยาและแม่น้ำน้อยหนุนสูงช่วงปลายฝน! เฝ้าระวังน้ำหลาก",
+      "min_age": 15,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_ayutthaya",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เดือนตุลาคม เขื่อนเจ้าพระยาระบายน้ำเพิ่มขึ้น ทำให้ระดับน้ำริมคลองในอยุธยาเอ่อล้นตลิ่ง ชุมชนต้องช่วยกันวางแนวกระสอบทรายป้องกันพื้นที่เศรษฐกิจ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมแรงกับเทศบาลและเพื่อนบ้านกรอกกระสอบทรายและยกของขึ้นที่สูงทันเวลา ทรัพย์สินปลอดภัย 100%!",
+          "hint_th": "❤️ สุขภาพ +3 , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +8 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พายเรือนำข้าวกล่องและน้ำดื่มไปแจกจ่ายบ้านเรือนที่อยู่ริมน้ำนอกคันกั้นน้ำ",
+          "hint_th": "✨ แต้มบุญ +15 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "connections": 7,
+            "merit": 12
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_hkt_01",
+      "title_th": "ไฮซีซั่นภูเก็ตบูมสุดขีด! นักท่องเที่ยวต่างชาติและเรือยอชต์หรูเต็มหาดป่าตอง-กะตะ",
+      "min_age": 18,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_phuket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่ช่วง High Season ทะเลอันดามันน้ำใสเป็นสีมรกต นักท่องเที่ยวยุโรปและรัสเซียหลั่งไหลเข้าภูเก็ตจนโรงแรมและร้านค้าเต็มทุกแห่ง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[คุ้นชินชาวต่างชาติ / มีทักษะภาษา] รับงานทัวร์/ดีลบริการลูกค้าต่างชาติระดับ VIP รับทิปและค่าคอมมิชชันเป็นเงินดอลลาร์/ยูโร!",
+          "hint_th": "🪙 รายได้ไฮซีซั่น +20,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "flag_expat_exposure"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปเดินถนนคนเดินหลาดใหญ่ (ย่านเมืองเก่าภูเก็ต) ชมตึกชิโน-โปรตุกีสและชิมโอเอ๋ว-หมี่ฮกเกี้ยน (-500฿)",
+          "hint_th": "🪙 เงินสด -500 ฿ , 😊 ความสุข +8 , ✨ หน้าตา +2 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 2,
+            "connections": 7,
+            "cash": 9750,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_hkt_02",
+      "title_th": "ประเพณีถือศีลกินผักภูเก็ต (เจียะฉ่าย) 9 วัน 9 คืน! ขบวนแห่ม้าทรงและเสียงประทัดกึกก้อง",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_phuket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานประเพณีศักดิ์สิทธิ์คู่เมืองภูเก็ต! ผู้คนสวมชุดขาวถือศีลกินเจ งดเว้นเนื้อสัตว์ และตั้งโต๊ะรับพรจากขบวนแห่พระรอบเมืองท่ามกลางควันประทัด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นุ่งขาวห่มขาวร่วมถือศีลกินผักครบ 9 วัน ชำระล้างร่างกายและจิตใจ ได้แต้มบุญก้อนใหญ่!",
+          "hint_th": "✨ แต้มบุญ +20 , ❤️ สุขภาพ +6 , 😊 ความสุข +7 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมทำบุญโรงทานศาลเจ้า (อ๊าม) แจกอาหารเจฟรีให้ผู้มาถือศีล",
+          "hint_th": "🪙 ทำบุญอ๊าม -500 ฿ , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -500,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "connections": 6,
+            "cash": -250,
+            "merit": 18
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_hkt_03",
+      "title_th": "ค่าครองชีพและค่าเช่าบ้านในภูเก็ตพุ่งทะยาน! วางแผนบริหารการเงินบนเกาะสวรรค์",
+      "min_age": 20,
+      "max_age": 70,
+      "category": "location_specific",
+      "req_location_id": "loc_phuket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อชาวต่างชาติเข้ามาเช่าวิลล่าและคอนโดระยะยาว ทำให้ค่าเช่าที่พักและราคาอาหารในโซนท่องเที่ยวของภูเก็ตแพงเทียบเท่าเมืองหลวง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีบ้าน/คอนโดตัวเอง] นำห้องว่างไปปล่อยเช่ารายเดือนให้นักท่องเที่ยว Expat รับค่าเช่าเรตอินเตอร์!",
+          "hint_th": "🪙 ค่าเช่า Expat +25,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [
+            "flag_has_own_home"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เลือกซื้อวัตถุดิบจากตลาดสดท้องถิ่นและร้านประจำของคนพื้นที่ ประหยัดค่าครองชีพได้เพียบ!",
+          "hint_th": "🪙 ประหยัดเงิน +4,000 ฿ , 🧠 สมอง +4 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 4000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 5,
+            "cash": 14500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_hkt_04",
+      "title_th": "ชมพระอาทิตย์ตกที่แหลมพรหมเทพ & กราบหลวงพ่อแช่ม วัดฉลอง!",
+      "min_age": 10,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_phuket",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันหยุดอากาศแจ่มใส คุณเดินทางไปกราบขอพรหลวงพ่อแช่ม วัดไชยธาราราม (วัดฉลอง) ก่อนไปนั่งรับลมทะเลชมพระอาทิตย์ดวงกลมโตลับขอบฟ้าที่แหลมพรหมเทพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กราบขอพรหลวงพ่อแช่มให้คุ้มครองแคล้วคลาด และชมวิวแหลมพรหมเทพอย่างอิ่มเอมใจ",
+          "hint_th": "✨ แต้มบุญ +12 , 😊 ความสุข +8 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงเรือไปดำน้ำดูปะการังที่เกาะเฮ/เกาะราชา สัมผัสความงามโลกใต้น้ำอันดามัน (-1,000฿)",
+          "hint_th": "🪙 ค่าทริปดำน้ำ -1,000 ฿ , ❤️ สุขภาพ +6 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 9,
+            "cash": -500,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_sgz_01",
+      "title_th": "ตลาดกิมหยงและย่านการค้าหาดใหญ่คึกคัก! นักท่องเที่ยวมาเลเซีย-สิงคโปร์เหมารถบัสมาช้อปปิ้ง",
+      "min_age": 15,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_songkhla",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หัวใจเศรษฐกิจภาคใต้! ช่วงวันหยุดสุดสัปดาห์ นักท่องเที่ยวจากมาเลเซียและสิงคโปร์หลั่งไหลเข้ามาช้อปปิ้งที่ตลาดกิมหยงและกินติ่มซำ-ไก่ทอดหาดใหญ่จนแน่นเมือง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หัวการค้าปักษ์ใต้] เปิดดีลค้าขายสินค้าของฝาก/ผลไม้แปรรูปรับทัวร์ต่างชาติ กำไรสะพัด!",
+          "hint_th": "🪙 กำไรการค้าหาดใหญ่ +12,000 ฿ , 🤝 เส้นสาย +7 , 🧠 สมอง +5 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_southern_trader"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 7,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตื่นเช้าไปนั่งกินติ่มซำนึ่งสดและบักกุ๊ดเต๋ร้อนๆ กับเพื่อนนักธุรกิจในหาดใหญ่ (-300฿)",
+          "hint_th": "🪙 ค่าติ่มซำ -300 ฿ , 🤝 เส้นสาย +7 , 😊 ความสุข +6 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": -300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 5850
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_sgz_02",
+      "title_th": "เดินเล่นย่านเมืองเก่าสงขลา (ถนนนางงาม) & ถ่ายรูปนางเงือกทองแหลมสมิหลา!",
+      "min_age": 7,
+      "max_age": 85,
+      "category": "location_specific",
+      "req_location_id": "loc_songkhla",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เสน่ห์เมืองสองทะเล (ทะเลสาบสงขลาและอ่าวไทย)! คุณไปเดินชมสตรีทอาร์ตถนนนางงาม ชิมไอติมโอ่ง-ซาลาเปาเก้าห้อง และรับลมทะเลที่หาดสมิหลา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินชิมของอร่อยถนนนางงามและพักผ่อนริมหาดสมิหลา สุขกายสบายใจสุดๆ! (-300฿)",
+          "hint_th": "🪙 เงินสด -300 ฿ , 😊 ความสุข +8 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ข้ามแพขนานยนต์ไปเกาะยอ ซื้อปลากะพงสามน้ำและผ้าทอเกาะยอมาต่อยอดขาย!",
+          "hint_th": "🪙 กำไรของดีเกาะยอ +4,500 ฿ , 🤝 เส้นสาย +5 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 4500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 2100
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_sgz_03",
+      "title_th": "กราบหลวงปู่ทวดเหยียบน้ำทะเลจืด & ประเพณีลากพระ (ชักพระ) ออกพรรษาสงขลา!",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_songkhla",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันออกพรรษา ชาวสงขลาร่วมประเพณีลากเรือพระบก-เรือพระน้ำ และทำบุญตักบาตรเทโว พร้อมกราบขอพรองค์หลวงปู่ทวดเพื่อความแคล้วคลาดปลอดภัย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมขบวนชักพระและทำบุญห่อต้มสามเหลี่ยม (ขนมต้มใบพ้อ) ได้แต้มบุญและมิตรภาพชาวใต้!",
+          "hint_th": "✨ แต้มบุญ +16 , 🤝 เส้นสาย +7 , 😊 ความสุข +8 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 16,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "บูชาเหรียญหลวงปู่ทวดติดตัวไว้คุ้มครองการเดินทางและการทำงานให้แคล้วคลาดปลอดภัย",
+          "hint_th": "✨ แต้มบุญ +12 , 😊 ความสุข +6 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 7,
+            "connections": 4,
+            "merit": 14
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_sgz_04",
+      "title_th": "ย่านมหาวิทยาลัยสงขลานครินทร์ (ม.อ. หาดใหญ่) & อ่างเก็บน้ำแก้มลิงคลองเรียน!",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_songkhla",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ศูนย์กลางวิชาการและการแพทย์ของภาคใต้ คุณไปวิ่งออกกำลังกายรอบอ่างเก็บน้ำ ม.อ. ที่มีฉากหลังเป็นเขาคอหงส์อันร่มรื่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "วิ่งออกกำลังกายรอบอ่างเก็บน้ำและขึ้นไปไหว้พระพุทธมงคลมหาราชบนยอดเขาคอหงส์!",
+          "hint_th": "❤️ สุขภาพ +7 , ✨ แต้มบุญ +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข้าอบรมสัมมนาธุรกิจและการค้าชายแดนที่จัดโดยมหาวิทยาลัยสงขลานครินทร์",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +7 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 4,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_mhs_01",
+      "title_th": "สายหมอกยามเช้าที่ปางอุ๋ง & จิบชาอุ่นที่หมู่บ้านรักไทยกลางหุบเขา!",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_mae_hong_son",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความสงบงามของเมืองสามหมอก! เช้าวันหยุดคุณตื่นมาดูไอหมอกลอยเหนือผิวน้ำที่ปางอุ๋งและจิบชาอู่หลงหอมกรุ่นที่บ้านรักไทย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สูดอากาศบริสุทธิ์เข้าเต็มปอด ฟื้นฟูสุขภาพกายและล้างความเครียดในใจจนหมดสิ้น!",
+          "hint_th": "❤️ สุขภาพ +9 , 😊 ความสุข +10 , ✨ ล้างสถานะ [ซึมเศร้า/ความดันโลหิตสูง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression",
+            "status_hypertension"
+          ],
+          "stat_effects": {
+            "health": 9,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ลูกหลานชาวดอย] คัดใบชาอู่หลงและกาแฟอาราบิก้าปลูกบนดอยสูงส่งขายนักท่องเที่ยว รับรายได้งาม!",
+          "hint_th": "🪙 รายได้ผลผลิตดอย +7,000 ฿ , ❤️ สุขภาพ +4 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_mountain_child"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 7000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 9,
+            "cash": 3500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_mhs_02",
+      "title_th": "พิชิต 1,864 โค้งแม่ฮ่องสอน & ถนนคนเดินปายสุดชิลล์!",
+      "min_age": 15,
+      "max_age": 75,
+      "category": "location_specific",
+      "req_location_id": "loc_mae_hong_son",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เส้นทางคดเคี้ยวลัดเลาะไหล่เขา 1,864 โค้งอันเลื่องชื่อ! ที่อำเภอปายเต็มไปด้วยนักท่องเที่ยวแบ็กแพ็กเกอร์ชาวต่างชาติและงานศิลปะทำมือ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดโฮมสเตย์เล็กๆ / ขายงานฝีมือและอาหารพื้นเมืองต้อนรับนักท่องเที่ยวที่ปาย!",
+          "hint_th": "🪙 รายได้ท่องเที่ยว +6,500 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 6500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปรับใบประกาศนียบัตรผู้พิชิต 1,864 โค้งที่หอการค้าแม่ฮ่องสอน และแช่น้ำพุร้อนธรรมชาติ!",
+          "hint_th": "❤️ สุขภาพ +7 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "connections": 3,
+            "cash": 3250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_mhs_03",
+      "title_th": "ประเพณีปอยส่างลอง (บวชลูกแก้วไทใหญ่) & ตักบาตรสะพานซูตองเป้!",
+      "min_age": 7,
+      "max_age": 90,
+      "category": "location_specific",
+      "req_location_id": "loc_mae_hong_son",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ประเพณีบรรพชาสามเณรตามแบบฉบับชาวไทใหญ่ที่มีขบวนแห่สวยงามตระการตา และการตักบาตรเช้าบนสะพานไม้ไผ่ซูตองเป้ (สะพานแห่งความสำเร็จ) กลางทุ่งนา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปยืนรอตักบาตรพระสงฆ์บนสะพานซูตองเป้และร่วมงานบุญปอยส่างลอง ได้แต้มบุญก้อนโต!",
+          "hint_th": "✨ แต้มบุญ +20 , 😊 ความสุข +9 , ❤️ สุขภาพ +4 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขึ้นไปกราบพระธาตุดอยกองมู ชมวิวเมืองแม่ฮ่องสอนมุมสูงท่ามกลางทะเลหมอก",
+          "hint_th": "✨ แต้มบุญ +14 , 😊 ความสุข +8 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 14,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 9,
+            "connections": 3,
+            "merit": 17
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_loc_mhs_04",
+      "title_th": "ฝนตกหนักดินสไลด์ปิดทับเส้นทางหลวงบนดอย! น้ำใจคนแม่ฮ่องสอนช่วยเหลือกัน",
+      "min_age": 15,
+      "max_age": 80,
+      "category": "location_specific",
+      "req_location_id": "loc_mae_hong_son",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความท้าทายของการอยู่ในพื้นที่ห่างไกล! พายุฝนทำให้ดินภูเขาสไลด์และต้นไม้ล้มขวางถนนสายหลักจนรถสัญจรไม่ได้ชั่วคราว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[ผู้เติบโตในพื้นที่ห่างไกล] มีเสบียงอาหารสำรองพร้อม และออกไปช่วยเจ้าหน้าที่ตัดกิ่งไม้เปิดทางสัญจรอย่างคล่องแคล่ว!",
+          "hint_th": "❤️ สุขภาพ +5 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +12 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [
+            "flag_remote_area_survivor"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งปันข้าวสารและเทียนไขให้บ้านข้างๆ ระหว่างรอเจ้าหน้าที่กู้ระบบไฟฟ้า",
+          "hint_th": "✨ แต้มบุญ +10 , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "connections": 7,
+            "merit": 11
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_01",
+      "title_th": "เจอแมวจรจัดบาดเจ็บนอนร้องเหมียวๆ อยู่ข้างถังขยะปากซอย!",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างเดินกลับบ้านตอนเย็น คุณได้ยินเสียงลูกแมวสีส้มตัวผอมโซที่มีแผลที่ขากำลังคลานเข้ามาอ้อนขอความช่วยเหลือจากคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อุ้มไปรักษาที่คลินิกสัตวแพทย์และรับมาเลี้ยง/หาบ้านที่อบอุ่นให้ (-1,000฿)",
+          "hint_th": "🪙 ค่ารักษาแมว -1,000 ฿ , ✨ แต้มบุญ +18 , 😊 ความสุข +10 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ซื้ออาหารเปียกแมวและน้ำสะอาดมาวางให้กิน พร้อมโพสต์ลงกลุ่มหาบ้านให้แมว (-50฿)",
+          "hint_th": "🪙 ค่าอาหารแมว -50 ฿ , ✨ แต้มบุญ +8 , 😊 ความสุข +5 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": -50,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เดินผ่านไปเฉยๆ หรือไล่ตะเพิดเพราะกลัวเลอะเทอะ",
+          "hint_th": "✨ แต้มบุญ -5 , 😊 ความสุข -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": -5,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_02",
+      "title_th": "เก็บสร้อยคอทองคำหนัก 2 บาทตกอยู่ในห้องน้ำปั๊มน้ำมัน!",
+      "min_age": 12,
+      "max_age": 90,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณแวะเข้าห้องน้ำปั๊มน้ำมันแล้วเห็นสร้อยคอทองคำเส้นใหญ่พร้อมพระเลี่ยมทองวางลืมไว้อยู่บนอ่างล้างมือ ไม่มีใครอยู่ในห้องน้ำเลย!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบนำไปแจ้งผู้จัดการปั๊มประกาศตามหาเจ้าของ! เจ้าของสร้อยวิ่งมารับทั้งน้ำตาและมอบเงินรางวัลความซื่อสัตย์ให้!",
+          "hint_th": "🪙 รางวัลคนซื่อสัตย์ +10,000 ฿ , ✨ แต้มบุญ +30 , 😊 ความสุข +12 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 10000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบหยิบใส่กระเป๋าเอาไปขายร้านทอง! (มีกล้องวงจรปิดหน้าห้องน้ำ โอกาสโดนตำรวจตามจับ 70%!)",
+          "hint_th": "🎲 โอกาสรอด 30% (รอด: +60,000 ฿ แต่แต้มบุญ -40 | พลาด: โดนจับข้อหายักยอกทรัพย์ ปรับ -40,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 60000,
+            "merit": -40,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 30,
+            "fail_outcome_text_th": "กล้องวงจรปิดหน้าห้องน้ำจับภาพคุณได้ชัดเจน! ตำรวจตามมาถึงที่ ต้องคืนทองและเสียค่าปรับอ่วม!",
+            "fail_stat_effects": {
+              "health": -5,
+              "happiness": -20,
+              "intelligence": 0,
+              "connections": -10,
+              "cash": -40000,
+              "merit": -50,
+              "appearance": -4
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "connections": 3,
+            "cash": 35000,
+            "merit": -5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_03",
+      "title_th": "สภากาชาดไทยประกาศรับบริจาคโลหิตฉุกเฉิน! เลือดกรุ๊ปของคุณกำลังขาดแคลนหนัก",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "รถรับบริจาคโลหิตเคลื่อนที่ของสภากาชาดไทยมาจอดรับบริจาคเลือดเพื่อนำไปช่วยชีวิตผู้ป่วยผ่าตัดและผู้บาดเจ็บตามโรงพยาบาลต่างๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นอนพักผ่อนให้เพียงพอแล้วขึ้นไปบริจาคโลหิต 1 ถุง ช่วยต่อชีวิตเพื่อนมนุษย์ได้ถึง 3 คน!",
+          "hint_th": "✨ แต้มบุญ +20 , ❤️ สุขภาพ +4 (ระบบไหลเวียนเลือดดีขึ้น!) , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยแชร์ประกาศรับบริจาคเลือดและชวนเพื่อนๆ ไปบริจาคด้วยกัน",
+          "hint_th": "✨ แต้มบุญ +8 , 🤝 เส้นสาย +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "connections": 3,
+            "merit": 14
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_04",
+      "title_th": "ลงนามแสดงความจำนงบริจาคอวัยวะและดวงตาให้สภากาชาดไทย! มหากุศลครั้งยิ่งใหญ่",
+      "min_age": 18,
+      "max_age": 80,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การทำบุญที่ไม่ต้องเสียเงินแม้แต่บาทเดียวแต่ได้บุญมหาศาล! คุณพบจุดลงทะเบียนแสดงความจำนงบริจาคอวัยวะและดวงตาเมื่อสิ้นอายุขัย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กรอกใบแสดงความจำนงและรับบัตรผู้บริจาคอวัยวะพกติดตัวไว้ อิ่มเอมใจในทานบารมีสูงสุด!",
+          "hint_th": "✨ แต้มบุญ +35 , 😊 ความสุข +12 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 35,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมหยอดตู้บริจาคสมทบทุนค่าผ่าตัดเปลี่ยนอวัยวะให้ผู้ป่วยยากไร้ (-300฿)",
+          "hint_th": "🪙 บริจาค -300 ฿ , ✨ แต้มบุญ +12 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -300,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "cash": -150,
+            "merit": 24
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_05",
+      "title_th": "พบคุณยายหาบขนมไทยขายริมฟุตบาทตอนดึก! ขนมยังเหลือเต็มถาด",
+      "min_age": 15,
+      "max_age": 85,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เวลาสามทุ่ม คุณยายหลังค่อมวัย 70 กว่าปีนั่งพัดยุงเฝ้าถาดขนมใส่ไส้และขนมชั้นที่ยังขายไม่ออกอยู่ริมทางเดิน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เหมาขนมคุณยายทั้งหมดเพื่อให้ยายได้กลับบ้านไปพักผ่อนไวๆ แล้วเอาขนมไปแจกเพื่อนบ้าน! (-400฿)",
+          "hint_th": "🪙 เหมาขนมยาย -400 ฿ , ✨ แต้มบุญ +18 , 🤝 เส้นสาย +6 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -400,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยอุดหนุนขนม 2 กล่องและถ่ายรูปพิกัดร้านยายลงโซเชียลจนคนแห่ตามมาซื้อหมดเกลี้ยง! (-60฿)",
+          "hint_th": "🪙 ซื้อขนม -60 ฿ , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +5 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -60,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 6,
+            "cash": -230,
+            "merit": 17
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_06",
+      "title_th": "พระภิกษุปลอม / มิจฉาชีพแต่งกายเลียนแบบสงฆ์มายืนเรี่ยไรเงินหน้าตลาด!",
+      "min_age": 15,
+      "max_age": 85,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เวลาบ่ายโมงตรง มีชายหัวโล้นห่มจีวรยืนถือบาตรและซองผ้าป่าคะยั้นคะยอให้คนเดินตลาดใส่เงินสด ทั้งที่เลยเวลาบิณฑบาตมาครึ่งวันแล้ว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "มีสติรู้ทัน! ไม่ใส่เงินให้มิจฉาชีพ และแจ้งเจ้าหน้าที่สำนักพุทธฯ/ตำรวจสายตรวจมาตรวจสอบใบสุทธิ!",
+          "hint_th": "🧠 สมอง +6 , ✨ แต้มบุญ +10 , 😊 ความสุข +5 (ปกป้องพระพุทธศาสนา!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปลี่ยนไปทำบุญถวายสังฆทานและหยอดตู้ค่าน้ำค่าไฟที่วัดจริงโดยตรง (-300฿)",
+          "hint_th": "🪙 ทำบุญวัดจริง -300 ฿ , ✨ แต้มบุญ +10 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -300,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 3,
+            "cash": -150,
+            "merit": 10
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_07",
+      "title_th": "แม่ค้าทอนเงินเกินมาให้ 500 บาท! แบงก์พันกับแบงก์ห้าร้อยติดกันมา",
+      "min_age": 10,
+      "max_age": 90,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงร้านอาหารกำลังยุ่ง แม่ค้าทอนเงินค่าข้าวให้คุณเกินมา 500 บาทโดยไม่รู้ตัว ซึ่งเงินจำนวนนี้คือกำไรทั้งวันของแม่ค้า!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบยื่นเงินที่ทอนเกินคืนให้แม่ค้าทันที แม่ค้ายกมือไหว้ขอบคุณและตักกับข้าวแถมให้คุณจุกๆ!",
+          "hint_th": "✨ แต้มบุญ +15 , 😊 ความสุข +8 , ❤️ สุขภาพ +3 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบเนียนเก็บใส่กระเป๋าเดินหนีไปเงียบๆ ได้เงินแต่ติดหนี้กรรมในใจ!",
+          "hint_th": "🪙 ได้เงิน +500 ฿ , ✨ แต้มบุญ -15 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 500,
+            "merit": -15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "connections": 2,
+            "cash": 250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_08",
+      "title_th": "รถพยาบาลฉุกเฉินเปิดไซเรนขอทางกลางรถติดหนัก! เบี่ยงรถหลบชิดซ้าย",
+      "min_age": 18,
+      "max_age": 85,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เสียงไซเรนรถกู้ชีพดังแว่วมาจากด้านหลังพร้อมไฟฉุกเฉินกะพริบถี่ๆ กำลังนำผู้ป่วยวิกฤตส่งโรงพยาบาลแข่งกับเวลา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบหักพวงมาลัยเบี่ยงชิดซ้ายและโบกมือให้คันหน้าช่วยเปิดทาง จนรถพยาบาลวิ่งผ่านไปได้รวดเร็ว!",
+          "hint_th": "✨ แต้มบุญ +15 , 😊 ความสุข +7 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขับจี้ตามท้ายรถพยาบาลเพื่อหวังมุดรถติด! โดนกล้องหน้ารถคันอื่นถ่ายประจานและเสียค่าปรับ!",
+          "hint_th": "🪙 โดนใบสั่งปรับ -2,000 ฿ , ✨ แต้มบุญ -20 , 🤝 เส้นสาย -6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": -6,
+            "cash": -2000,
+            "merit": -20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "intelligence": 2,
+            "connections": -3,
+            "cash": -1000,
+            "merit": -2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_09",
+      "title_th": "ปาฏิหาริย์แต้มบุญหนุนนำ! รอดพ้นจากอุบัติเหตุป้ายโฆษณาถล่มอย่างหวุดหวิด",
+      "min_age": 12,
+      "max_age": 95,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะที่คุณกำลังจะเดินผ่านใต้ป้ายโฆษณาขนาดใหญ่ จู่ๆ ก็มีคนเรียกให้คุณหยุดผูกเชือกรองเท้า เสี้ยววินาทีถัดมาลมพายุก็พัดป้ายเหล็กถล่มลงมาตรงหน้าคุณเพียงก้าวเดียว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[ผู้มีบุญญาธิการ / แต้มบุญสูง] ขนลุกซู่ยกมือท่วมหัว! บุญกุศลที่สะสมมาช่วยคุ้มครองชีวิตไว้ราวปาฏิหาริย์!",
+          "hint_th": "❤️ สุขภาพ +8 , 😊 ความสุข +12 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รีบไปทำบุญถวายสังฆทานสะเดาะเคราะห์และขอบคุณสิ่งศักดิ์สิทธิ์ที่คุ้มครอง (-500฿)",
+          "hint_th": "🪙 ทำบุญ -500 ฿ , ✨ แต้มบุญ +15 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -500,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "cash": -250,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_10",
+      "title_th": "ฝันแม่นเห็นเลขเด็ด / อานิสงส์ผลบุญส่งผลให้ได้รับโชคลาภลอยก้อนโต!",
+      "min_age": 20,
+      "max_age": 95,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังจากทำบุญทำความดีมาอย่างสม่ำเสมอ คืนก่อนวันหวยออกคุณฝันเห็นผู้เฒ่าใจดีมาบอกเลขมงคล และพอเดินผ่านแผงสลากฯ ก็เจอเลขนั้นวางอยู่ใบสุดท้ายพอดี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อสลากฯ ใบนั้นไว้ 1 ใบ ปรากฏว่าถูกรางวัลรับทรัพย์ก้อนงามเข้ากระเป๋า!",
+          "hint_th": "🪙 ถูกรางวัลโชคลาภ +12,000 ฿ , 😊 ความสุข +12 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 12000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ดวงสมพงศ์โชคลาภ] ดวงพุ่งแรงจัด ถูกรางวัลใหญ่พร้อมแบ่งเงินไปทำบุญต่อยอดบุญบารมี!",
+          "hint_th": "🪙 โชคใหญ่ +30,000 ฿ , ✨ แต้มบุญ +15 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [
+            "trait_lucky_star"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 30000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 14,
+            "cash": 21000,
+            "merit": 10
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_11",
+      "title_th": "ร่วมเป็นเจ้าภาพพิมพ์หนังสือสวดมนต์และหนังสือเรียนแจกโรงเรียนยากไร้ (ธรรมทาน & วิทยาทาน)!",
+      "min_age": 18,
+      "max_age": 95,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การให้ธรรมะและให้ความรู้ชนะการให้ทั้งปวง! โรงเรียนในชนบทและวัดกำลังเปิดรับเจ้าภาพจัดพิมพ์หนังสือเรียนและหนังสือธรรมะแจกจ่ายฟรี",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมบริจาคจัดพิมพ์หนังสือเรียนและสื่อการสอนมอบให้เด็กๆ อานิสงส์ส่งผลให้สติปัญญาเฉียบแหลม! (-1,000฿)",
+          "hint_th": "🪙 บริจาคหนังสือ -1,000 ฿ , ✨ แต้มบุญ +20 , 🧠 สมอง +6 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำหนังสือเก่าสภาพดีที่อ่านจบแล้วไปบริจาคเข้าห้องสมุดชุมชน",
+          "hint_th": "✨ แต้มบุญ +10 , 🧠 สมอง +3 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 5,
+            "cash": -500,
+            "merit": 15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_12",
+      "title_th": "วันวิสาขบูชา / มาฆบูชา / อาสาฬหบูชา! เวียนเทียนรอบอุโบสถและฟังธรรมยามค่ำ",
+      "min_age": 7,
+      "max_age": 95,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คืนวันเพ็ญวันสำคัญทางพระพุทธศาสนา พุทธศาสนิกชนต่างถือดอกบัวธูปเทียนเดินเวียนเทียนรอบพระอุโบสถด้วยจิตใจที่สงบสำรวม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมเดินเวียนเทียน 3 รอบและตั้งจิตอธิษฐานละเว้นความชั่ว ทำความดี ทำจิตใจให้ผ่องใส",
+          "hint_th": "✨ แต้มบุญ +15 , 😊 ความสุข +8 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยทางวัดกวาดลานวัดและเก็บขยะหลังเสร็จงานเวียนเทียน ได้บุญกุศลจากการลงแรง!",
+          "hint_th": "✨ แต้มบุญ +18 , ❤️ สุขภาพ +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 7,
+            "connections": 2,
+            "merit": 17
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_13",
+      "title_th": "พบนักท่องเที่ยวต่างชาติ/คนต่างถิ่นทำกระเป๋าหายและหลงทางอยู่กลางแดด!",
+      "min_age": 14,
+      "max_age": 85,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณเห็นนักท่องเที่ยวกำลังยืนเปิดแผนที่ด้วยสีหน้าวิตกกังวลเพราะหลงทางและแบตเตอรี่มือถือหมดสนิท",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินเข้าไปช่วยเหลือ ให้ยืมเพาเวอร์แบงก์และพาไปส่งถึงสถานีรถ/ตำรวจท่องเที่ยวด้วยรอยยิ้มสยาม!",
+          "hint_th": "✨ แต้มบุญ +15 , 🤝 เส้นสาย +7 , 🧠 สมอง +3 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ซื้อน้ำดื่มเย็นๆ ยื่นให้และช่วยเขียนแผนที่บอกทางให้อย่างชัดเจน (-20฿)",
+          "hint_th": "🪙 ค่าน้ำ -20 ฿ , ✨ แต้มบุญ +10 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -20,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": -10,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_14",
+      "title_th": "ไถ่ชีวิตโค-กระบือท้องแก่จากโรงฆ่าสัตว์เข้าโครงการธนาคารโค-กระบือเพื่อเกษตรกร!",
+      "min_age": 20,
+      "max_age": 95,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีการเปิดกองบุญร่วมสมทบทุนไถ่ชีวิตแม่วัวท้องแก่ที่กำลังจะถูกส่งเข้าโรงเชือด เพื่อนำไปมอบให้เกษตรกรยากจนยืมเลี้ยงเพื่อการเกษตร",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมเป็นเจ้าภาพสมทบทุนไถ่ชีวิตแม่วัวและลูกในท้อง อานิสงส์ต่ออายุขัยให้สุขภาพแข็งแรง! (-2,000฿)",
+          "hint_th": "🪙 ร่วมไถ่ชีวิตโค -2,000 ฿ , ✨ แต้มบุญ +30 , ❤️ สุขภาพ +8 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -2000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมทำบุญตามกำลังศรัทธา 100 บาทและอนุโมทนาบุญร่วมกับทุกคน (-100฿)",
+          "hint_th": "🪙 ร่วมบุญ -100 ฿ , ✨ แต้มบุญ +8 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -100,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "cash": -1050,
+            "merit": 19
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_15",
+      "title_th": "ช่วยเข็นรถที่เครื่องดับกลางสี่แยกไฟแดง / พยุงผู้พิการทางสายตาข้ามถนน!",
+      "min_age": 12,
+      "max_age": 80,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความดีเล็กๆ ที่ทำได้ทุกวันในสังคมไทย! คุณเห็นผู้พิการทางสายตากำลังยืนรอข้ามทางม้าลายที่รถวิ่งเร็วมาก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบเดินเข้าไปขออนุญาตช่วยจูงมือและยกมือโบกให้รถจอด พาข้ามถนนถึงฝั่งอย่างปลอดภัย!",
+          "hint_th": "✨ แต้มบุญ +15 , 😊 ความสุข +8 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยโบกรถและอำนวยความสะดวกให้คนข้ามถนนด้วยน้ำใจพลเมืองดี",
+          "hint_th": "✨ แต้มบุญ +10 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 2,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_16",
+      "title_th": "ดราม่าโซเชียลร้อนระอุ! ชาวเน็ตแห่ทัวร์ลงด่าทอคนในข่าวโดยยังไม่รู้ความจริงครบสองด้าน",
+      "min_age": 13,
+      "max_age": 85,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีคลิปสั้นๆ ตัดตอนมาลงโซเชียล คนนับหมื่นกำลังรุมคอมเมนต์ด่าทอด้วยถ้อยคำรุนแรง คุณกำลังถือคีย์บอร์ดอ่านโพสต์นั้นอยู่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยั้งนิ้วไว้! รอฟังข้อเท็จจริงครบสองด้าน ไม่สร้างวจีกรรมบนโลกออนไลน์ (รถทัวร์ไม่คว่ำใส่เรา!)",
+          "hint_th": "🧠 สมอง +6 , ✨ แต้มบุญ +8 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พิมพ์คอมเมนต์ด่าผสมโรงตามน้ำ... วันรุ่งขึ้นความจริงปรากฏว่าคดีพลิก! โดนฟ้องหมิ่นประมาท! (-10,000฿)",
+          "hint_th": "🪙 จ่ายค่าเสียหายยอมความ -10,000 ฿ , ✨ แต้มบุญ -15 , 😊 ความสุข -10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -10000,
+            "merit": -15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": -2,
+            "intelligence": 3,
+            "cash": -5000,
+            "merit": -3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_17",
+      "title_th": "ออกโรงทานแจกข้าวเหนียวหมูทอดและน้ำดื่มเย็นๆ ในงานบุญประจำปี!",
+      "min_age": 18,
+      "max_age": 90,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ที่วัดใกล้บ้านมีงานบุญใหญ่ คุณและเพื่อนบ้านชวนกันตั้งเต็นท์โรงทานแจกอาหารและน้ำดื่มฟรีให้ผู้มาร่วมงาน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เป็นเจ้าภาพออกโรงทานแจกข้าวกล่องและน้ำดื่ม 200 ชุด ผู้คนอิ่มท้องและอวยพรให้คุณร่ำรวย! (-3,000฿)",
+          "hint_th": "🪙 ตั้งโรงทาน -3,000 ฿ , ✨ แต้มบุญ +28 , 🤝 เส้นสาย +9 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": -3000,
+            "merit": 28,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปช่วยลงแรงตักอาหารและแจกน้ำดื่มที่เต็นท์โรงทานด้วยรอยยิ้มตลอดงาน",
+          "hint_th": "✨ แต้มบุญ +14 , 🤝 เส้นสาย +6 , 😊 ความสุข +7 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 14,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 10,
+            "connections": 8,
+            "cash": -1500,
+            "merit": 21
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_18",
+      "title_th": "ให้อภัยคนที่เคยพูดจาทำร้ายจิตใจหรือเอาเปรียบเราในอดีต (อภัยทาน)!",
+      "min_age": 18,
+      "max_age": 95,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คนที่เคยทำผิดต่อคุณในอดีตเข้ามาเอ่ยคำขอโทษด้วยความสำนึกผิด คุณต้องเลือกระหว่างการเก็บความแค้นไว้หรือการให้อภัยเพื่อปลดปล่อยใจตัวเอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กล่าวคำว่า 'อโหสิกรรมให้' จากใจจริง วางความโกรธแค้นลง จิตใจเบาสบายและได้อภัยทานสูงสุด!",
+          "hint_th": "✨ แต้มบุญ +25 , 😊 ความสุข +12 , ❤️ สุขภาพ +5 , ✨ ล้างสถานะ [ซึมเศร้า/นอนไม่หลับ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression",
+            "status_chronic_insomnia"
+          ],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับคำขอโทษตามมารยาท แต่รักษาระยะห่างเพื่อไม่ให้ถูกเอาเปรียบซ้ำอีก",
+          "hint_th": "🧠 สมอง +5 , ✨ แต้มบุญ +10 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 9,
+            "intelligence": 3,
+            "merit": 18
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_19",
+      "title_th": "ปลูกต้นไม้ใหญ่ให้ร่มเงาในพื้นที่สาธารณะและช่วยเก็บขยะชายหาด/ริมคลอง!",
+      "min_age": 7,
+      "max_age": 85,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กิจกรรมจิตอาสารักษ์สิ่งแวดล้อม! ชุมชนชวนกันปลูกต้นไม้ใหญ่เพื่อลดโลกร้อนและเก็บขยะพลาสติกไม่ให้ไหลลงสู่แม่น้ำลำคลอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงมือขุดหลุมปลูกต้นไม้ใหญ่ 5 ต้นและคัดแยกขยะรีไซเคิล ได้ทั้งเหงื่อ สุขภาพ และบุญสาธารณประโยชน์!",
+          "hint_th": "❤️ สุขภาพ +6 , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +5 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พกถุงผ้าและกระบอกน้ำส่วนตัว ลดการใช้พลาสติกในชีวิตประจำวันอย่างสม่ำเสมอ",
+          "hint_th": "🪙 ประหยัดเงิน +500 ฿ , ✨ แต้มบุญ +8 , 🧠 สมอง +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 500,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 250,
+            "merit": 12
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_20",
+      "title_th": "บริจาคเส้นผมทำวิกให้ผู้ป่วยมะเร็ง / บริจาคเสื้อผ้าและของใช้ให้มูลนิธิกระจกเงา!",
+      "min_age": 12,
+      "max_age": 85,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันจัดระเบียบบ้านครั้งใหญ่ คุณคัดแยกเสื้อผ้าสภาพดี หนังสือ และสิ่งของที่ไม่ได้ใช้แล้ว เพื่อส่งต่อให้ผู้ที่ขาดแคลน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซักรีดเสื้อผ้าสภาพดีแพ็กส่งไปบริจาคมูลนิธิเพื่อส่งต่อให้ผู้ยากไร้ บ้านโล่งสะอาดและอิ่มใจสุดๆ!",
+          "hint_th": "✨ แต้มบุญ +16 , 😊 ความสุข +8 , ❤️ สุขภาพ +3 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 16,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมสมทบทุนค่าทอวิกผมแท้เพื่อมอบให้ผู้ป่วยมะเร็งที่สูญเสียเส้นผมจากการรักษา (-500฿)",
+          "hint_th": "🪙 สมทบทุนทำวิก -500 ฿ , ✨ แต้มบุญ +18 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -500,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "cash": -250,
+            "merit": 17,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_21",
+      "title_th": "คืนส่งท้ายปีเก่าต้อนรับปีใหม่! สวดมนต์ข้ามปีเจริญสติรับศักราชใหม่",
+      "min_age": 10,
+      "max_age": 95,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คืนวันที่ 31 ธันวาคม ขณะที่บางคนออกไปปาร์ตี้เคาท์ดาวน์ วัดทั่วประเทศได้จัดพิธีสวดมนต์ข้ามปีเพื่อเริ่มต้นปีใหม่ด้วยสติและสิริมงคล",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปร่วมสวดมนต์ข้ามปีและนั่งสมาธิรับวินาทีแรกของปีใหม่ จิตใจผ่องใสและตื่นเช้ามาสดชื่นไร้แฮงก์!",
+          "hint_th": "✨ แต้มบุญ +20 , ❤️ สุขภาพ +5 , 😊 ความสุข +9 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ฉลองเคาท์ดาวน์ดูพลุไฟที่บ้านพร้อมหน้าครอบครัวและตื่นมาใส่บาตรวันขึ้นปีใหม่",
+          "hint_th": "✨ แต้มบุญ +14 , 😊 ความสุข +10 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 14,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 10,
+            "intelligence": 2,
+            "connections": 3,
+            "merit": 17
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_karma_22",
+      "title_th": "แต้มบุญทะลุ 100 แต้ม! ปลดล็อกออร่า 'ผู้มีบุญญาธิการ' เทวดาและผู้ใหญ่คอยเกื้อหนุน",
+      "min_age": 15,
+      "max_age": 100,
+      "category": "karma_merit",
+      "req_location_id": "any",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อคุณสั่งสมความดีและความกตัญญูอย่างต่อเนื่อง พลังแห่งกรรมดีก็ส่งผลย้อนกลับมาเกื้อหนุนให้ชีวิตของคุณพบเจอแต่กัลยาณมิตรและโอกาสทอง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "น้อมรับผลแห่งความดีด้วยความถ่อมตน และตั้งปณิธานจะทำความดีต่อไปไม่หยุดยั้ง!",
+          "hint_th": "✨ แต้มบุญ +20 , 😊 ความสุข +12 , 🤝 เส้นสาย +10 , 🪷 ได้รับป้าย [ผู้มีบุญญาธิการ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_blessed_destiny"
+          ],
+          "removes_flags": [
+            "flag_cursed_fate"
+          ],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งปันโชคลาภและโอกาสดีๆ ที่ได้รับให้คนรอบข้างมีความสุขไปด้วยกัน",
+          "hint_th": "✨ แต้มบุญ +25 , 🤝 เส้นสาย +12 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_blessed_destiny"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 14,
+            "connections": 11,
+            "merit": 23
+          }
+        }
+      ]
+    }
+  ]
+}

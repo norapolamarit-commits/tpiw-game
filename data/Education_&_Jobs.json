@@ -1,0 +1,1710 @@
+{
+  "version": "1.0.0",
+  "database_name": "Education_&_Jobs",
+  "age_progression_activities": [
+    {
+      "activity_id": "act_infant_nap",
+      "name_th": "นอนกลางวันเต็มอิ่ม & ดื่มนมตามเวลา",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 0,
+      "max_age": 4,
+      "annual_cost_cash": 0,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": 3,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "พักผ่อนอย่างเพียงพอในวัยทารก ช่วยเสริมสร้างพัฒนาการทางร่างกายและภูมิคุ้มกันให้แข็งแรง"
+    },
+    {
+      "activity_id": "act_infant_story",
+      "name_th": "หัดพูด อ่านนิทานภาพ & ต่อบล็อกไม้",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 0,
+      "max_age": 4,
+      "annual_cost_cash": 0,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 3,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ฝึกทักษะการสื่อสารและการสังเกตผ่านนิทานก่อนนอนกับพ่อแม่ ช่วยกระตุ้นพัฒนาการทางสมองตั้งแต่วัยเตาะแตะ"
+    },
+    {
+      "activity_id": "act_infant_daycare_obt",
+      "name_th": "เข้าศูนย์พัฒนาเด็กเล็ก อบต. / เทศบาล",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 2,
+      "max_age": 5,
+      "annual_cost_cash": 0,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 2,
+        "intelligence": 2,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ศูนย์เด็กเล็กใกล้บ้านโดยไม่เสียค่าใช้จ่าย ได้กินอาหารกลางวันฟรีและฝึกเข้าสังคมเล่นกับเพื่อนวัยเดียวกัน"
+    },
+    {
+      "activity_id": "act_infant_private_nursery",
+      "name_th": "เข้าเนิร์สเซอรีเอกชนสองภาษา",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 2,
+      "max_age": 5,
+      "annual_cost_cash": 15000,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [
+        "flag_private_school_kid"
+      ],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": 2,
+        "happiness": 2,
+        "intelligence": 5,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "เตรียมความพร้อมปฐมวัยในสภาพแวดล้อมห้องแอร์สะอาดปลอดภัย ปูพื้นฐานภาษาอังกฤษและทักษะการคิดวิเคราะห์"
+    },
+    {
+      "activity_id": "act_school_study_hard",
+      "name_th": "ตั้งใจเรียนในห้อง & ทำการบ้านส่งครบ",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 5,
+      "max_age": 17,
+      "annual_cost_cash": 0,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [
+        "tag_bookworm"
+      ],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": -1,
+        "intelligence": 3,
+        "connections": 1,
+        "merit": 1,
+        "appearance": 0
+      },
+      "description_th": "นั่งแถวหน้าสุดของห้องเรียน จดเลกเชอร์อย่างตั้งใจ และทบทวนบทเรียนทุกวันเพื่อเกรดเฉลี่ยสะสมที่สวยงาม"
+    },
+    {
+      "activity_id": "act_school_cram_class",
+      "name_th": "เรียนพิเศษกวดวิชาหลังเลิกเรียน",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 7,
+      "max_age": 17,
+      "annual_cost_cash": 4000,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [
+        "flag_cram_school_pressure",
+        "tag_bookworm"
+      ],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -2,
+        "intelligence": 4,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ตะลุยโจทย์ข้อสอบเข้าสายวิทย์และมหาวิทยาลัยหลังเลิกเรียน ได้ความรู้แน่นปึ้กแต่แลกมาด้วยความเหนื่อยล้า"
+    },
+    {
+      "activity_id": "act_school_football_club",
+      "name_th": "เข้าชมรมนักกีฬาโรงเรียน & เตะบอลหลังเลิกเรียน",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 7,
+      "max_age": 17,
+      "annual_cost_cash": 0,
+      "req_stats": {
+        "health": 30
+      },
+      "req_any_flags": [],
+      "grants_flags": [
+        "tag_school_athlete"
+      ],
+      "removes_flags": [
+        "tag_screen_addict"
+      ],
+      "yearly_stat_effects": {
+        "health": 3,
+        "happiness": 2,
+        "intelligence": -1,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "ฝึกซ้อมกีฬาเป็นตัวแทนโรงเรียน ร่างกายแข็งแรงกำยำและได้เพื่อนฝูงมากมายพร้อมสิทธิ์โควตานักกีฬา"
+    },
+    {
+      "activity_id": "act_school_pc_cafe",
+      "name_th": "ขลุกอยู่ร้านคอมฯ & ชมรมคอมพิวเตอร์",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 8,
+      "max_age": 17,
+      "annual_cost_cash": 1200,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [
+        "tag_computer_nerd"
+      ],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 3,
+        "intelligence": 2,
+        "connections": 1,
+        "merit": 0,
+        "appearance": -1
+      },
+      "description_th": "ใช้เวลาหลังเลิกเรียนไปกับการเล่นเกมออนไลน์ แต่งบล็อก และหัดลงวินโดวส์ จนเชี่ยวชาญทักษะคอมพิวเตอร์"
+    },
+    {
+      "activity_id": "act_school_music_art_club",
+      "name_th": "เข้าชมรมดนตรี นาฏศิลป์ & กิจกรรมหน้าเสาธง",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 7,
+      "max_age": 17,
+      "annual_cost_cash": 500,
+      "req_stats": {},
+      "req_any_flags": [],
+      "grants_flags": [
+        "tag_artistic_expressive"
+      ],
+      "removes_flags": [],
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 1,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "ฝึกซ้อมดนตรี วาดภาพ และเป็นพิธีกรงานโรงเรียน ช่วยเพิ่มเสน่ห์ความกล้าแสดงออกและปูทางสู่สายนิเทศศาสตร์"
+    },
+    {
+      "activity_id": "act_elder_taichi",
+      "name_th": "รำไทเก็ก & เดินออกกำลังกายสวนสาธารณะยามเช้า",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 60,
+      "max_age": 100,
+      "annual_cost_cash": 0,
+      "req_stats": {},
+      "req_any_flags": [
+        "flag_retired_elder"
+      ],
+      "grants_flags": [],
+      "removes_flags": [
+        "status_hypertension"
+      ],
+      "yearly_stat_effects": {
+        "health": 4,
+        "happiness": 3,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "ยืดเหยียดร่างกายรับแสงแดดอ่อนยามเช้าและพบปะชมรมผู้สูงอายุ ช่วยยืดอายุขัยและลดความดันโลหิตสูง"
+    },
+    {
+      "activity_id": "act_elder_chess_dharma",
+      "name_th": "โขกหมากรุกสภากาแฟ & อ่านหนังสือธรรมะ",
+      "ui_location": "tab_work_study_sub_activities",
+      "min_age": 60,
+      "max_age": 100,
+      "annual_cost_cash": 0,
+      "req_stats": {},
+      "req_any_flags": [
+        "flag_retired_elder"
+      ],
+      "grants_flags": [],
+      "removes_flags": [
+        "status_alzheimer_risk"
+      ],
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 4,
+        "connections": 2,
+        "merit": 4,
+        "appearance": 0
+      },
+      "description_th": "ลับสมองประลองปัญญากับเพื่อนวัยเก๋าและศึกษาธรรมะ ช่วยป้องกันภาวะสมองเสื่อมและรู้ทันมิจฉาชีพคอลเซ็นเตอร์"
+    }
+  ],
+  "higher_education_programs": [
+    {
+      "program_id": "edu_deg_medicine",
+      "name_th": "ปริญญาตรี คณะแพทยศาสตร์ (หลักสูตร 6 ปี)",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 30,
+      "duration_years": 6,
+      "annual_tuition_cash": 60000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 75,
+        "health": 40
+      },
+      "req_any_flags": [
+        "flag_track_sci_math",
+        "flag_international_school"
+      ],
+      "grants_flags_on_grad": [
+        "flag_bachelor_degree",
+        "flag_deg_medicine"
+      ],
+      "yearly_stat_effects": {
+        "health": -4,
+        "happiness": -3,
+        "intelligence": 5,
+        "connections": 3,
+        "merit": 2,
+        "appearance": 0
+      },
+      "description_th": "คณะยอดนิยมอันดับหนึ่งที่ต้องทุ่มเทอ่านหนังสือและขึ้นวอร์ดอย่างหนัก จบแล้วสามารถสอบใบประกอบวิชาชีพเวชกรรมเพื่อเป็นแพทย์ได้"
+    },
+    {
+      "program_id": "edu_deg_law",
+      "name_th": "ปริญญาตรี คณะนิติศาสตร์",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 40,
+      "duration_years": 4,
+      "annual_tuition_cash": 25000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 55
+      },
+      "req_any_flags": [
+        "flag_track_sci_math",
+        "flag_track_arts",
+        "flag_edu_high_school_grad"
+      ],
+      "grants_flags_on_grad": [
+        "flag_bachelor_degree",
+        "flag_deg_law"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": -1,
+        "intelligence": 4,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "ศึกษากฎหมายแพ่ง อาญา และวิธีพิจารณาความ จบแล้วสามารถสอบตั๋วทนายความ เนติบัณฑิต และสอบรับราชการสายยุติธรรมได้"
+    },
+    {
+      "program_id": "edu_deg_engineering",
+      "name_th": "ปริญญาตรี คณะวิศวกรรมศาสตร์",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 35,
+      "duration_years": 4,
+      "annual_tuition_cash": 35000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 55
+      },
+      "req_any_flags": [
+        "flag_track_sci_math",
+        "flag_track_vocational",
+        "tag_young_mechanic"
+      ],
+      "grants_flags_on_grad": [
+        "flag_bachelor_degree",
+        "flag_deg_engineering"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -1,
+        "intelligence": 4,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เรียนรู้การคำนวณโครงสร้าง เครื่องกล และระบบอุตสาหกรรม จบแล้วสามารถสอบใบ กว. เพื่อทำงานวิศวกรเงินเดือนสูงได้"
+    },
+    {
+      "program_id": "edu_deg_education",
+      "name_th": "ปริญญาตรี คณะครุศาสตร์ / ศึกษาศาสตร์",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 35,
+      "duration_years": 4,
+      "annual_tuition_cash": 20000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 45
+      },
+      "req_any_flags": [
+        "flag_track_sci_math",
+        "flag_track_arts",
+        "flag_edu_high_school_grad"
+      ],
+      "grants_flags_on_grad": [
+        "flag_bachelor_degree",
+        "flag_deg_education"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 3,
+        "connections": 3,
+        "merit": 2,
+        "appearance": 1
+      },
+      "description_th": "ฝึกฝนศาสตร์การสอนและจิตวิทยาการศึกษา จบแล้วสามารถสอบใบประกอบวิชาชีพครูเพื่อบรรจุเป็นข้าราชการครูได้"
+    },
+    {
+      "program_id": "edu_deg_business",
+      "name_th": "ปริญญาตรี คณะบริหารธุรกิจและการบัญชี",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 40,
+      "duration_years": 4,
+      "annual_tuition_cash": 30000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 45
+      },
+      "req_any_flags": [
+        "flag_track_sci_math",
+        "flag_track_arts",
+        "flag_track_vocational"
+      ],
+      "grants_flags_on_grad": [
+        "flag_bachelor_degree",
+        "flag_deg_business",
+        "flag_financial_literacy"
+      ],
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 3,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "เรียนรู้การตลาด การเงิน และการจัดการองค์กร เหมาะสำหรับผู้ที่ต้องการไต่เต้าในบริษัทเอกชนหรือกลับมาบริหารธุรกิจครอบครัว"
+    },
+    {
+      "program_id": "edu_deg_it",
+      "name_th": "ปริญญาตรี คณะวิทยาการคอมพิวเตอร์และไอที",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 35,
+      "duration_years": 4,
+      "annual_tuition_cash": 35000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 50
+      },
+      "req_any_flags": [
+        "flag_track_sci_math",
+        "flag_track_vocational",
+        "tag_computer_nerd"
+      ],
+      "grants_flags_on_grad": [
+        "flag_bachelor_degree",
+        "flag_deg_it",
+        "tag_computer_nerd"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 0,
+        "intelligence": 5,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เจาะลึกการเขียนโปรแกรม ฐานข้อมูล และปัญญาประดิษฐ์ เป็นใบเบิกทางสู่อาชีพวิศวกรซอฟต์แวร์และสายงานเทคโนโลยี"
+    },
+    {
+      "program_id": "edu_deg_comm_arts",
+      "name_th": "ปริญญาตรี คณะนิเทศศาสตร์และศิลปกรรมศาสตร์",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 35,
+      "duration_years": 4,
+      "annual_tuition_cash": 32000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 40
+      },
+      "req_any_flags": [
+        "flag_track_arts",
+        "flag_track_sci_math",
+        "tag_artistic_expressive",
+        "tag_school_athlete"
+      ],
+      "grants_flags_on_grad": [
+        "flag_bachelor_degree",
+        "flag_deg_comm_arts",
+        "tag_artistic_expressive"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 3,
+        "intelligence": 3,
+        "connections": 5,
+        "merit": 0,
+        "appearance": 3
+      },
+      "description_th": "เรียนรู้การผลิตสื่อ การแสดง โฆษณา และการออกแบบ สร้างคอนเนกชันในวงการบันเทิงและเอเจนซี่โฆษณา"
+    },
+    {
+      "program_id": "edu_high_vocational",
+      "name_th": "ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส. สายช่าง/พาณิชย์)",
+      "ui_location": "tab_work_study_sub_education",
+      "min_age": 18,
+      "max_age": 35,
+      "duration_years": 2,
+      "annual_tuition_cash": 15000,
+      "student_loan_available": true,
+      "req_stats": {
+        "intelligence": 30
+      },
+      "req_any_flags": [
+        "flag_track_vocational",
+        "flag_edu_high_school_grad",
+        "tag_young_mechanic"
+      ],
+      "grants_flags_on_grad": [
+        "flag_high_vocational_diploma"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เรียนจบไวใน 2 ปี เน้นทักษะปฏิบัติจริงที่โรงงานอุตสาหกรรมและสถานประกอบการต้องการตัวทันที"
+    }
+  ],
+  "part_time_and_gig_jobs": [
+    {
+      "job_id": "job_pt_convenience_store",
+      "name_th": "พนักงานพาร์ทไทม์ ร้านสะดวกซื้อ 24 ชั่วโมง",
+      "ui_location": "tab_work_study_sub_gig_jobs",
+      "min_age": 15,
+      "max_age": 60,
+      "base_annual_income_cash": 48000,
+      "affected_by_location_multiplier": true,
+      "can_do_while_studying": true,
+      "req_stats": {
+        "health": 20
+      },
+      "req_all_flags": [
+        "flag_legal_youth_worker"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -1,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ยืนคิดเงิน เวฟอาหาร และจัดของขึ้นเชลฟ์หลังเลิกเรียน ได้เงินค่าขนมแบ่งเบาภาระพ่อแม่ (เฉลี่ย 350 บาท/กะ)"
+    },
+    {
+      "job_id": "job_gig_food_rider",
+      "name_th": "ไรเดอร์ส่งอาหารและพัสดุด่วน",
+      "ui_location": "tab_work_study_sub_gig_jobs",
+      "min_age": 18,
+      "max_age": 60,
+      "base_annual_income_cash": 120000,
+      "affected_by_location_multiplier": true,
+      "can_do_while_studying": true,
+      "req_stats": {
+        "health": 30
+      },
+      "req_all_flags": [
+        "flag_motor_license",
+        "flag_has_motorcycle",
+        "flag_smartphone"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [],
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": -1
+      },
+      "risk_status_trigger": "event_heavy_accident_bill",
+      "description_th": "ขี่มอเตอร์ไซค์คู่ใจกดรับออเดอร์วิ่งส่งอาหารทั่วเมือง อิสระและทำเงินได้ไว แต่ต้องตากแดดตากฝนและเสี่ยงอุบัติเหตุบนท้องถนน"
+    },
+    {
+      "job_id": "job_daily_construction",
+      "name_th": "รับจ้างรายวัน / แบกหามไซส์งานก่อสร้าง",
+      "ui_location": "tab_work_study_sub_gig_jobs",
+      "min_age": 15,
+      "max_age": 60,
+      "base_annual_income_cash": 72000,
+      "affected_by_location_multiplier": true,
+      "can_do_while_studying": false,
+      "req_stats": {
+        "health": 40
+      },
+      "req_all_flags": [],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [],
+      "yearly_stat_effects": {
+        "health": -5,
+        "happiness": -2,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": -2
+      },
+      "description_th": "งานใช้แรงกายแลกค่าแรงขั้นต่ำรายวัน ไม่จำกัดวุฒิการศึกษา แต่สูบพลังสุขภาพกายอย่างหนัก"
+    },
+    {
+      "job_id": "job_agricultural_helper",
+      "name_th": "กลับไปช่วยงานเกษตร / ทำนาทำสวนที่บ้านเกิด",
+      "ui_location": "tab_work_study_sub_gig_jobs",
+      "min_age": 15,
+      "max_age": 75,
+      "base_annual_income_cash": 60000,
+      "affected_by_location_multiplier": false,
+      "can_do_while_studying": true,
+      "req_stats": {
+        "health": 25
+      },
+      "req_all_flags": [],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 1,
+        "appearance": 0
+      },
+      "description_th": "ลงแรงช่วยครอบครัวทำไร่ไถนาและเก็บเกี่ยวผลผลิตตามฤดูกาล รายได้ไม่สูงมากแต่ได้อยู่ใกล้ชิดครอบครัว"
+    },
+    {
+      "job_id": "job_freelance_coder_graphic",
+      "name_th": "ฟรีแลนซ์รับทำเว็บไซต์ / เขียนโค้ด / ออกแบบกราฟิก",
+      "ui_location": "tab_work_study_sub_gig_jobs",
+      "min_age": 15,
+      "max_age": 70,
+      "base_annual_income_cash": 150000,
+      "affected_by_location_multiplier": false,
+      "can_do_while_studying": true,
+      "req_stats": {
+        "intelligence": 45
+      },
+      "req_all_flags": [
+        "flag_pc_or_laptop"
+      ],
+      "req_any_flags": [
+        "tag_computer_nerd",
+        "flag_cert_coding",
+        "tag_artistic_expressive",
+        "flag_deg_it",
+        "flag_deg_comm_arts"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_tax_evasion_risk"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "risk_status_trigger": "status_office_syndrome",
+      "description_th": "รับงานผ่านแพลตฟอร์มออนไลน์อยู่หน้าคอมพิวเตอร์ที่บ้าน รายได้ดีและทำควบคู่กับการเรียนได้"
+    },
+    {
+      "job_id": "job_esports_streamer",
+      "name_th": "สตรีมเมอร์ / ยูทูบเบอร์ / อินฟลูเอนเซอร์",
+      "ui_location": "tab_work_study_sub_gig_jobs",
+      "min_age": 15,
+      "max_age": 55,
+      "base_annual_income_cash": 180000,
+      "affected_by_location_multiplier": false,
+      "can_do_while_studying": true,
+      "req_stats": {
+        "connections": 30
+      },
+      "req_all_flags": [],
+      "req_any_flags": [
+        "flag_pro_streamer_gear",
+        "flag_luxury_gadget"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_tax_evasion_risk"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "ไลฟ์สดเล่นเกมและทำคลิปคอนเทนต์ลงโซเชียล รับรายได้จากโดเนทและสปอนเซอร์ซึ่งเติบโตตามค่าชื่อเสียง (connections)"
+    },
+    {
+      "job_id": "job_taxi_app_driver",
+      "name_th": "ขับรถรับส่งผู้โดยสารผ่านแอป / แท็กซี่ส่วนบุคคล",
+      "ui_location": "tab_work_study_sub_gig_jobs",
+      "min_age": 22,
+      "max_age": 70,
+      "base_annual_income_cash": 160000,
+      "affected_by_location_multiplier": true,
+      "can_do_while_studying": true,
+      "req_stats": {
+        "health": 30
+      },
+      "req_all_flags": [
+        "flag_has_car",
+        "flag_public_driver_license",
+        "flag_smartphone"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "นำรถยนต์ส่วนตัวมาวิ่งรับส่งผู้โดยสารและนักท่องเที่ยว รายได้ดีโดยเฉพาะในเมืองใหญ่และเมืองท่องเที่ยว"
+    }
+  ],
+  "corporate_and_professional_careers": [
+    {
+      "job_id": "career_factory_technician",
+      "name_th": "ช่างเทคนิคประจำโรงงานอุตสาหกรรม",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 18,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 180000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "health": 40,
+        "intelligence": 35
+      },
+      "req_all_flags": [],
+      "req_any_flags": [
+        "flag_track_vocational",
+        "flag_high_vocational_diploma",
+        "tag_young_mechanic"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ดูแลเครื่องจักรและสายการผลิตในนิคมอุตสาหกรรม มีเงินเดือนประจำ ค่ากะ และโบนัสปลายปีที่มั่นคง"
+    },
+    {
+      "job_id": "career_junior_office",
+      "name_th": "พนักงานออฟฟิศเอกชนระดับต้น (First Jobber)",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 21,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 216000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 40
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -1,
+        "intelligence": 1,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 1
+      },
+      "risk_status_trigger": "status_office_syndrome",
+      "description_th": "มนุษย์เงินเดือนเริ่มต้นที่ 18,000 บาท/เดือน ได้สวัสดิการประกันสังคมและสลิปเงินเดือนสำหรับใช้กู้ซื้อคอนโดและรถยนต์"
+    },
+    {
+      "job_id": "career_creative_marketer",
+      "name_th": "ครีเอทีฟโฆษณา / การตลาดดิจิทัล / ประชาสัมพันธ์",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 21,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 288000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 50,
+        "connections": 40
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [
+        "flag_deg_comm_arts",
+        "flag_deg_business",
+        "tag_artistic_expressive"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 2
+      },
+      "risk_status_trigger": "status_chronic_insomnia",
+      "description_th": "คิดแคมเปญโฆษณาและดูแลภาพลักษณ์แบรนด์ ได้พบปะผู้คนในวงการและสร้างคอนเนกชันได้รวดเร็ว"
+    },
+    {
+      "job_id": "career_software_engineer",
+      "name_th": "โปรแกรมเมอร์ / วิศวกรซอฟต์แวร์ (Software Engineer)",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 20,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 420000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 60
+      },
+      "req_all_flags": [
+        "flag_pc_or_laptop"
+      ],
+      "req_any_flags": [
+        "flag_deg_it",
+        "flag_cert_coding"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": -1,
+        "intelligence": 2,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "risk_status_trigger": "status_office_syndrome",
+      "description_th": "พัฒนาระบบและแอปพลิเคชันให้กับบริษัทเทคโนโลยี รายได้สูงและเป็นที่ต้องการของตลาดแรงงานยุคดิจิทัล"
+    },
+    {
+      "job_id": "career_licensed_engineer",
+      "name_th": "วิศวกรควบคุมโครงการและโรงงาน (มีใบ กว.)",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 22,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 480000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 65,
+        "health": 40
+      },
+      "req_all_flags": [
+        "flag_deg_engineering",
+        "flag_engineer_license"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "วิศวกรวิชาชีพที่มีสิทธิ์เซ็นรับรองแบบและควบคุมงานก่อสร้าง/ปิโตรเคมี รับเงินเดือนและค่าวิชาชีพในอัตราสูง"
+    },
+    {
+      "job_id": "career_licensed_lawyer",
+      "name_th": "ทนายความและที่ปรึกษากฎหมายสำนักงานทนายความ",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 22,
+      "retirement_age": 65,
+      "base_annual_salary_cash": 450000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 70,
+        "connections": 40
+      },
+      "req_all_flags": [
+        "flag_deg_law",
+        "flag_lawyer_license"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 0,
+        "intelligence": 3,
+        "connections": 4,
+        "merit": 1,
+        "appearance": 2
+      },
+      "description_th": "ว่าความในชั้นศาลและร่างสัญญาทนายความธุรกิจ สร้างชื่อเสียงและคอนเนกชันระดับสูงในแวดวงกฎหมาย"
+    },
+    {
+      "job_id": "career_senior_manager",
+      "name_th": "ผู้จัดการฝ่ายอาวุโส (Senior Department Manager)",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 28,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 540000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 60,
+        "connections": 50
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -4,
+        "happiness": 0,
+        "intelligence": 2,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 1
+      },
+      "risk_status_trigger": "status_hypertension",
+      "description_th": "ก้าวขึ้นสู่ตำแหน่งผู้บริหารระดับกลาง ดูแลทีมงานและงบประมาณบริษัท รับเงินเดือนระดับ 45,000 บาทขึ้นไป"
+    },
+    {
+      "job_id": "career_medical_doctor",
+      "name_th": "นายแพทย์ / แพทย์หญิงประจำโรงพยาบาล",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 24,
+      "retirement_age": 65,
+      "base_annual_salary_cash": 960000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 80,
+        "health": 40
+      },
+      "req_all_flags": [
+        "flag_deg_medicine",
+        "flag_medical_license"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_private_hospital_access"
+      ],
+      "yearly_stat_effects": {
+        "health": -5,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 4,
+        "merit": 5,
+        "appearance": 1
+      },
+      "risk_status_trigger": "status_chronic_insomnia",
+      "description_th": "ตรวจรักษาผู้ป่วยและเข้าเวรห้องฉุกเฉิน เป็นอาชีพที่ได้รับความเคารพนับถือสูงสุด รายได้รวมค่าเวรเกือบล้านบาทต่อปี และได้แต้มบุญจากการช่วยชีวิตผู้คน"
+    },
+    {
+      "job_id": "career_multinational_exec",
+      "name_th": "ผู้บริหารบริษัทข้ามชาติ (Multinational Corp Director)",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 30,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 1200000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 75,
+        "connections": 65
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [
+        "flag_cert_english",
+        "flag_international_school",
+        "flag_expat_exposure"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_private_hospital_access"
+      ],
+      "yearly_stat_effects": {
+        "health": -5,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "บริหารงานระดับภูมิภาคด้วยทักษะภาษาอังกฤษระดับมืออาชีพ รับเงินเดือนหลักแสนต่อเดือนพร้อมโบนัสก้อนโต"
+    },
+    {
+      "job_id": "career_c_level_ceo",
+      "name_th": "ประธานเจ้าหน้าที่บริหาร (CEO บริษัทมหาชน)",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 35,
+      "retirement_age": 65,
+      "base_annual_salary_cash": 3000000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 80,
+        "connections": 80
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [
+        "flag_elite_connection",
+        "flag_deg_business",
+        "flag_cert_english"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs",
+        "flag_credit_blacklist"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_elite_connection",
+        "flag_private_hospital_access"
+      ],
+      "yearly_stat_effects": {
+        "health": -6,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 5,
+        "merit": 0,
+        "appearance": 1
+      },
+      "risk_status_trigger": "status_hypertension",
+      "description_th": "จุดสูงสุดของสายอาชีพพนักงานองค์กร กุมบังเหียนบริษัทในตลาดหลักทรัพย์ รับผลตอบแทนและโบนัสปีละหลายล้านบาท"
+    },
+    {
+      "job_id": "career_senior_advisor",
+      "name_th": "กรรมการอิสระและที่ปรึกษาอาวุโสหลังเกษียณ",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 60,
+      "retirement_age": 90,
+      "base_annual_salary_cash": 360000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 75,
+        "connections": 70
+      },
+      "req_all_flags": [
+        "flag_retired_elder",
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "status_alzheimer_risk"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 2,
+        "connections": 3,
+        "merit": 1,
+        "appearance": 2
+      },
+      "description_th": "ใช้ประสบการณ์และบารมีที่สั่งสมมาทั้งชีวิตเข้าประชุมบอร์ดบริหารเดือนละไม่กี่ครั้ง รับเบี้ยประชุมกินสบายในวัยเกษียณ"
+    },
+    {
+      "job_id": "career_data_analyst",
+      "name_th": "นักวิเคราะห์ข้อมูลธุรกิจ",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 21,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 360000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 60
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [
+        "flag_deg_it",
+        "flag_deg_business",
+        "flag_cert_coding"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 0,
+        "intelligence": 2,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "แปลงตัวเลขและแดชบอร์ดเป็นการตัดสินใจของบริษัท งานนั่งโต๊ะเงินดีและโตเร็ว"
+    },
+    {
+      "job_id": "career_architect",
+      "name_th": "สถาปนิกออกแบบอาคาร",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 22,
+      "retirement_age": 65,
+      "base_annual_salary_cash": 420000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 65
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [
+        "flag_deg_engineering",
+        "tag_artistic_expressive"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ออกแบบบ้านและอาคารให้คนใช้ชีวิตได้ดีขึ้น งานสร้างสรรค์ที่ต้องอดทนกับแก้แบบซ้ำ"
+    },
+    {
+      "job_id": "career_airline_pilot",
+      "name_th": "นักบินสายการบินพาณิชย์",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 24,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 1000000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 70,
+        "health": 60
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [
+        "flag_cert_english"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ขับเครื่องบินพาผู้โดยสารข้ามประเทศ รายได้สูง ตารางบินหนักและต้องตรวจสุขภาพเข้มงวด"
+    },
+    {
+      "job_id": "career_hospital_nurse",
+      "name_th": "พยาบาลวิชาชีพโรงพยาบาล",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 22,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 300000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 55,
+        "health": 50
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 2,
+        "appearance": 0
+      },
+      "description_th": "ดูแลผู้ป่วยตลอดเวรทั้งกลางวันกลางคืน เหนื่อยแต่ได้ช่วยคนและสะสมบุญ"
+    },
+    {
+      "job_id": "career_hotel_chef",
+      "name_th": "เชฟโรงแรมและครัวร้านอาหาร",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 20,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 288000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "health": 45
+      },
+      "req_all_flags": [],
+      "req_any_flags": [
+        "flag_track_vocational",
+        "flag_high_vocational_diploma",
+        "flag_biz_cafe_owner"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": -1
+      },
+      "description_th": "คุมครัวร้อนๆ และสร้างสรรค์เมนู งานหนักแต่เติบโตเป็นหัวหน้าเชฟได้"
+    }
+  ],
+  "civil_service_careers": [
+    {
+      "job_id": "gov_public_teacher",
+      "name_th": "ข้าราชการครูและบุคลากรทางการศึกษา",
+      "ui_location": "tab_work_study_sub_government",
+      "min_age": 22,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 216000,
+      "affected_by_location_multiplier": false,
+      "req_stats": {
+        "intelligence": 60
+      },
+      "req_all_flags": [
+        "flag_deg_education",
+        "flag_teacher_license"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_gov_pension_right",
+        "flag_welfare_card"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 2,
+        "intelligence": 2,
+        "connections": 3,
+        "merit": 3,
+        "appearance": 1
+      },
+      "description_th": "แม่พิมพ์ของชาติ สอนหนังสือเด็กนักเรียนและทำผลงานวิทยฐานะ มั่นคงสูง เบิกค่ารักษาพยาบาลครอบครัวได้ฟรี และมีบำนาญตลอดชีพ"
+    },
+    {
+      "job_id": "gov_civil_officer",
+      "name_th": "ข้าราชการพลเรือนสามัญ (ระดับปฏิบัติการ/ชำนาญการ)",
+      "ui_location": "tab_work_study_sub_government",
+      "min_age": 21,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 204000,
+      "affected_by_location_multiplier": false,
+      "req_stats": {
+        "intelligence": 60
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree",
+        "flag_ocsc_passed"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_gov_pension_right",
+        "flag_welfare_card"
+      ],
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 3,
+        "merit": 1,
+        "appearance": 1
+      },
+      "description_th": "ปฏิบัติราชการในกระทรวงและศาลากลางจังหวัด งานมั่นคงเลิกงานตรงเวลา สวัสดิการรักษาพยาบาลครอบคลุมถึงพ่อแม่และลูก"
+    },
+    {
+      "job_id": "gov_police_military_nco",
+      "name_th": "ข้าราชการตำรวจ / ทหาร (ชั้นประทวนและสัญญาบัตร)",
+      "ui_location": "tab_work_study_sub_government",
+      "min_age": 20,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 210000,
+      "affected_by_location_multiplier": false,
+      "req_stats": {
+        "health": 55,
+        "intelligence": 45
+      },
+      "req_all_flags": [
+        "flag_edu_high_school_grad"
+      ],
+      "req_any_flags": [
+        "flag_conscript_soldier_1yr",
+        "flag_rotc_completed",
+        "tag_school_athlete",
+        "flag_deg_law"
+      ],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_gov_pension_right",
+        "flag_welfare_card"
+      ],
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 4,
+        "merit": 1,
+        "appearance": 2
+      },
+      "description_th": "ผู้พิทักษ์สันติราษฎร์และรั้วของชาติ มีสวัสดิการบ้านพักข้าราชการ สิทธิ์เบิกค่ารักษาพยาบาล และคอนเนกชันในพื้นที่สูง"
+    },
+    {
+      "job_id": "gov_high_ranking_official",
+      "name_th": "ข้าราชการระดับสูง (ผู้อำนวยการสำนัก / อธิบดี / ผู้ว่าฯ)",
+      "ui_location": "tab_work_study_sub_government",
+      "min_age": 40,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 720000,
+      "affected_by_location_multiplier": false,
+      "req_stats": {
+        "intelligence": 75,
+        "connections": 70
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree",
+        "flag_gov_pension_right"
+      ],
+      "req_any_flags": [
+        "flag_ocsc_passed",
+        "flag_deg_law",
+        "flag_teacher_license"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_gov_pension_right",
+        "flag_welfare_card",
+        "flag_elite_connection"
+      ],
+      "yearly_stat_effects": {
+        "health": -4,
+        "happiness": 2,
+        "intelligence": 2,
+        "connections": 5,
+        "merit": 2,
+        "appearance": 2
+      },
+      "description_th": "จุดสูงสุดของสายงานราชการ มีบารมีและเกียรติยศเป็นที่นับหน้าถือตาของคนทั้งจังหวัด พร้อมเงินประจำตำแหน่งและบำนาญก้อนใหญ่"
+    },
+    {
+      "job_id": "gov_public_health_officer",
+      "name_th": "เจ้าหน้าที่สาธารณสุขชุมชน",
+      "ui_location": "tab_work_study_sub_civil",
+      "min_age": 21,
+      "retirement_age": 60,
+      "base_annual_salary_cash": 228000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 55
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree",
+        "flag_ocsc_passed"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_gov_pension_right",
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 2,
+        "appearance": 0
+      },
+      "description_th": "ดูแลสุขภาพคนในตำบล ฉีดวัคซีน ให้ความรู้ และเยี่ยมบ้านผู้สูงอายุ"
+    },
+    {
+      "job_id": "gov_university_lecturer",
+      "name_th": "อาจารย์มหาวิทยาลัยของรัฐ",
+      "ui_location": "tab_work_study_sub_civil",
+      "min_age": 28,
+      "retirement_age": 65,
+      "base_annual_salary_cash": 420000,
+      "affected_by_location_multiplier": true,
+      "req_stats": {
+        "intelligence": 75
+      },
+      "req_all_flags": [
+        "flag_bachelor_degree",
+        "flag_ocsc_passed"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_gov_pension_right",
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 3,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "สอนและวิจัยในมหาวิทยาลัย ได้ความมั่นคงของข้าราชการและเวลาคิดอย่างอิสระ"
+    }
+  ],
+  "entrepreneur_and_business_careers": [
+    {
+      "job_id": "own_street_food_vendor",
+      "name_th": "พ่อค้าแม่ค้าสตรีทฟู้ด / แผงลอยตลาดนัด",
+      "ui_location": "tab_work_study_sub_business",
+      "min_age": 18,
+      "retirement_age": 80,
+      "base_annual_income_cash": 240000,
+      "affected_by_location_multiplier": true,
+      "affected_by_business_multiplier": true,
+      "req_stats": {
+        "health": 35
+      },
+      "req_all_flags": [
+        "flag_biz_street_stall"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_active_street_vendor",
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เข็นรถขายอาหารสตรีทฟู้ดรสเด็ด เหนื่อยหน่อยแต่จับเงินสดทุกวัน และยิ่งทำกำไรได้ดีหากมีป้ายเฒ่าแก่น้อยหรือทักษะทำอาหาร"
+    },
+    {
+      "job_id": "own_online_live_merchant",
+      "name_th": "เจ้าของแบรนด์ไลฟ์สดขายของออนไลน์",
+      "ui_location": "tab_work_study_sub_business",
+      "min_age": 16,
+      "retirement_age": 75,
+      "base_annual_income_cash": 360000,
+      "affected_by_location_multiplier": false,
+      "affected_by_business_multiplier": true,
+      "req_stats": {
+        "connections": 30
+      },
+      "req_all_flags": [
+        "flag_biz_online_seller",
+        "flag_smartphone"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_tax_evasion_risk"
+      ],
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": 3,
+        "intelligence": 2,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "ตั้งกล้องไลฟ์สดกดกระดิ่งขายสินค้าและแพ็กพัสดุส่งทั่วประเทศ ทำเงินได้มหาศาลโดยไม่ขึ้นกับจังหวัดที่อยู่ แต่ต้องระวังเรื่องภาษีย้อนหลัง"
+    },
+    {
+      "job_id": "own_cafe_and_restaurant",
+      "name_th": "เจ้าของร้านคาเฟ่และร้านอาหารยอดฮิต",
+      "ui_location": "tab_work_study_sub_business",
+      "min_age": 20,
+      "retirement_age": 80,
+      "base_annual_income_cash": 600000,
+      "affected_by_location_multiplier": true,
+      "affected_by_business_multiplier": true,
+      "req_stats": {
+        "intelligence": 45,
+        "connections": 40
+      },
+      "req_all_flags": [
+        "flag_biz_cafe_owner"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_family_business"
+      ],
+      "yearly_stat_effects": {
+        "health": -4,
+        "happiness": 3,
+        "intelligence": 2,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "บริหารร้านคาเฟ่บรรยากาศดีและคิดค้นเมนูใหม่ๆ เป็นกิจการที่มีหน้าร้านชัดเจน ใช้ยื่นกู้ซื้อบ้านได้และส่งต่อเป็นมรดกให้ลูกหลานได้"
+    },
+    {
+      "job_id": "own_smart_farmer",
+      "name_th": "เกษตรกรยุคใหม่ (Smart Farmer & สวนผลไม้ส่งออก)",
+      "ui_location": "tab_work_study_sub_business",
+      "min_age": 20,
+      "retirement_age": 85,
+      "base_annual_income_cash": 320000,
+      "affected_by_location_multiplier": false,
+      "affected_by_business_multiplier": true,
+      "req_stats": {
+        "health": 40,
+        "intelligence": 40
+      },
+      "req_all_flags": [
+        "flag_landlord"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": 2,
+        "happiness": 3,
+        "intelligence": 1,
+        "connections": 2,
+        "merit": 1,
+        "appearance": 0
+      },
+      "description_th": "บริหารจัดการที่ดินการเกษตรของตัวเองด้วยเทคโนโลยีสมัยใหม่ ปลูกทุเรียนและผลไม้ส่งออก ได้ทั้งเงิน สุขภาพกายแข็งแรง และความสุขทางใจ"
+    },
+    {
+      "job_id": "own_family_sme_successor",
+      "name_th": "เฒ่าแก่บริหารธุรกิจ SME ของตระกูล",
+      "ui_location": "tab_work_study_sub_business",
+      "min_age": 22,
+      "retirement_age": 85,
+      "base_annual_income_cash": 900000,
+      "affected_by_location_multiplier": true,
+      "affected_by_business_multiplier": true,
+      "req_stats": {
+        "intelligence": 50,
+        "connections": 45
+      },
+      "req_all_flags": [
+        "flag_family_business"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income",
+        "flag_private_hospital_access"
+      ],
+      "yearly_stat_effects": {
+        "health": -4,
+        "happiness": 2,
+        "intelligence": 2,
+        "connections": 4,
+        "merit": 1,
+        "appearance": 2
+      },
+      "description_th": "รับช่วงต่อกิจการของครอบครัวหรือขยายอาณาจักรธุรกิจของตัวเองให้เติบโต รับกำไรสุทธิปีละเกือบล้านบาทพร้อมความมั่นคงระดับเฒ่าแก่"
+    },
+    {
+      "job_id": "own_ecommerce_brand",
+      "name_th": "เจ้าของแบรนด์อีคอมเมิร์ซ",
+      "ui_location": "tab_work_study_sub_business",
+      "min_age": 20,
+      "retirement_age": 80,
+      "base_annual_income_cash": 480000,
+      "affected_by_location_multiplier": true,
+      "affected_by_business_multiplier": true,
+      "req_stats": {
+        "intelligence": 50,
+        "connections": 40
+      },
+      "req_all_flags": [
+        "flag_biz_online_seller"
+      ],
+      "req_any_flags": [],
+      "forbidden_flags": [
+        "flag_conscript_soldier_2yrs"
+      ],
+      "grants_flags_while_employed": [
+        "flag_regular_income"
+      ],
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 2,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ทำแบรนด์ขายออนไลน์ของตัวเอง ยิงโฆษณา ดูสต็อก และเสี่ยงขาดทุนเมื่อแข่งราคาหนัก"
+    }
+  ]
+}

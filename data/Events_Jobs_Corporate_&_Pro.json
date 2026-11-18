@@ -1,0 +1,3714 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Jobs_Corporate_&_Pro",
+  "category_group": "career_corporate_and_professional",
+  "total_events": 50,
+  "quota_breakdown": {
+    "total": 50,
+    "career_factory_technician": 4,
+    "career_junior_office": 4,
+    "career_creative_marketer": 4,
+    "career_software_engineer": 5,
+    "career_licensed_engineer": 4,
+    "career_licensed_lawyer": 5,
+    "career_senior_manager": 4,
+    "career_medical_doctor": 5,
+    "career_multinational_exec": 4,
+    "career_c_level_ceo": 5,
+    "career_senior_advisor": 4,
+    "any_corporate_career": 2
+  },
+  "events": [
+    {
+      "event_id": "evt_job_corp_tech_01",
+      "title_th": "เครื่องจักรสายการผลิตหลักน็อกกลางกะดึก! ไลน์ผลิตหยุดชะงักนาทีละแสน",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_factory_technician",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สัญญาณไฟฉุกเฉินสีแดงในโรงงานดังสนั่นตอนตีสอง! แขนกลโรบอทและสายพานหลักหยุดทำงานกะทันหัน ผู้จัดการโรงงานวิ่งหน้าตั้งมาเร่งให้กู้ระบบให้เสร็จก่อนฟ้าสาง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หัวช่าง] ไล่วงจร PLC และเปลี่ยนอะไหล่เซนเซอร์ที่ช็อตกลับมาเดินเครื่องได้ใน 30 นาที! รับโบนัสพิเศษ!",
+          "hint_th": "🪙 โบนัสกู้วิกฤต +12,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [
+            "tag_young_mechanic"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดคู่มือซ่อมบำรุงทีละขั้นตอนร่วมกับทีมช่างจนเครื่องกลับมาเดินได้ทันกะเช้าพอดี",
+          "hint_th": "🪙 ค่าโอทีพิเศษ +5,000 ฿ , 🧠 สมอง +3 , ❤️ สุขภาพ -2 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ต่อสายไฟบายพาสแบบลักไก่เพื่อให้เครื่องเดินไปก่อน! (เสี่ยงไฟช็อตตู้คอนโทรลพัง 40%)",
+          "hint_th": "🎲 โอกาสรอด 60% (รอด: +4,000 ฿ | พลาด: ตู้คอนโทรลระเบิด โดนหักเงิน -15,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 4000,
+            "merit": 0,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 60,
+            "fail_outcome_text_th": "ไฟช็อตตู้คอนโทรลหลักควันโขมง! โรงงานต้องสั่งอะไหล่ใหม่และหักเงินโบนัสของคุณ!",
+            "fail_stat_effects": {
+              "health": -8,
+              "happiness": -10,
+              "intelligence": 0,
+              "connections": -6,
+              "cash": -15000,
+              "merit": 0,
+              "appearance": -2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_tech_02",
+      "title_th": "มหกรรมควงกะโอที (OT) ช่วงเร่งยอดส่งออก! เงินโอทีมากกว่าเงินเดือน",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_factory_technician",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ไตรมาสนี้ยอดสั่งซื้อจากต่างประเทศทะลัก! โรงงานเปิดให้ช่างเทคนิคลงชื่อทำโอทีวันละ 4 ชั่วโมงและวันอาทิตย์ได้ค่าแรง 3 เท่า!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงชื่อรับโอทีจัดเต็มทุกวัน! รับทรัพย์ก้อนโตแต่แลกมาด้วยความเหนื่อยล้า",
+          "hint_th": "🪙 ค่าโอทีก้อนโต +18,000 ฿ , ❤️ สุขภาพ -4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับโอทีเฉพาะวันธรรมดา เก็บวันหยุดไว้พักผ่อนและเรียนต่อ ป.ตรี ภาคสมทบ",
+          "hint_th": "🪙 ค่าโอที +8,000 ฿ , 🧠 สมอง +5 , ❤️ สุขภาพ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 3,
+            "intelligence": 3,
+            "cash": 13000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_tech_03",
+      "title_th": "ผู้ตรวจประเมินมาตรฐาน ISO & Safety เข้าตรวจโรงงานประจำปี!",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_factory_technician",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คณะกรรมการตรวจประเมิน ISO เดินเข้ามาที่โซนเครื่องจักรที่คุณรับผิดชอบ เพื่อตรวจเช็กหลัก 5ส. และอุปกรณ์เซฟตี้ป้องกันอันตราย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดเรียงเครื่องมือช่างตามบล็อก 5ส. เป๊ะและสวมอุปกรณ์ PPE ครบชุด ได้รับรางวัลแผนกตัวอย่าง!",
+          "hint_th": "🪙 รางวัลแผนกดีเด่น +6,000 ฿ , 🤝 เส้นสาย +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เสนอโครงการ Kaizen ลดเศษวัสดุเหลือทิ้งในไลน์ผลิต ช่วยโรงงานประหยัดงบได้หลักล้าน!",
+          "hint_th": "🪙 เงินรางวัล Kaizen +15,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 10500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_tech_04",
+      "title_th": "ข่าวลือโบนัสโรงงานปลายปี! สหภาพแรงงานเจรจาขอโบนัส 6 เดือน + เงินพิเศษ",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_factory_technician",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สิ้นปีที่นิคมอุตสาหกรรมคึกคักสุดขีด! ตัวแทนพนักงานกำลังเข้าห้องประชุมเจรจาตัวเลขโบนัสประจำปีกับผู้บริหารญี่ปุ่น/ต่างชาติ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เด็กถิ่นนิคมอุตสาหกรรม] โรงงานปิโตรเคมี/ยานยนต์กำไรพุ่ง ประกาศจ่ายโบนัสก้อนใหญ่จุกๆ!",
+          "hint_th": "🪙 โบนัสพิเศษนิคมฯ +35,000 ฿ , 😊 ความสุข +10 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [
+            "flag_industrial_zone_native"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยรวบรวมสถิติผลผลิตที่ทะลุเป้าให้ตัวแทนไปยื่นเจรจา จนได้โบนัสเพิ่มทุกคน!",
+          "hint_th": "🪙 โบนัสปลายปี +20,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": 27500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_jroff_01",
+      "title_th": "ศึกประเมินผ่านทดลองงาน 119 วัน (Probation)! พรีเซนต์ผลงานต่อหน้าหัวหน้าแผนก",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_junior_office",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ครบกำหนดทดลองงานในฐานะ First Jobber! คุณต้องเข้าห้องประชุมสรุปผลงาน 3 เดือนแรกเพื่อตัดสินว่าจะได้บรรจุเป็นพนักงานประจำพร้อมปรับฐานเงินเดือนหรือไม่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทำสไลด์สรุปตัวเลข KPI ชัดเจนและเสนอไอเดียลดขั้นตอนงาน ผ่านโปรพร้อมปรับเงินเดือนพิเศษ!",
+          "hint_th": "🪙 ปรับฐานพิเศษ +8,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เน้นความอ่อนน้อมถ่อมตน ซื้อขนมมาฝากพี่ๆ ในทีมเสมอ ผ่านโปรแบบอบอุ่นไร้ศัตรู!",
+          "hint_th": "🪙 ค่าขนม -500 ฿ , 🤝 เส้นสาย +7 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 3750
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_jroff_02",
+      "title_th": "มหกรรมสั่งชานมไข่มุกและกาแฟยามบ่ายของชาวออฟฟิศ! หารค่าส่งกันทั้งแผนก",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_junior_office",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บ่ายสองโมงครึ่งหนังตาเริ่มหย่อน พี่ๆ ในแผนกส่งลิงก์สั่งชานมไข่มุกและขนมเค้กร้านดังมาในกรุ๊ปไลน์ออฟฟิศ ชวนสั่งรวมกันเพื่อใช้โค้ดส่วนลด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อาสาเป็นคนกดสั่งผ่านแอปตัวเอง (ได้แต้มสะสมบัตรเครดิต/แคชแบ็ก) และเดินแจกให้พี่ๆ ทุกโต๊ะ!",
+          "hint_th": "🪙 ได้แคชแบ็ก +300 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": 300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สั่งชาเขียวหวาน 0% หรือชงกาแฟดำออฟฟิศกินเอง รักษาหุ่นและประหยัดเงิน!",
+          "hint_th": "❤️ สุขภาพ +4 , ✨ หน้าตา +2 , 🪙 ประหยัดเงิน +1,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 1,
+            "connections": 3,
+            "cash": 650,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_jroff_03",
+      "title_th": "รุ่นพี่ขาใหญ่ในแผนกโยนงานรูทีนกองโตมาให้ทำแทนตอนห้าโมงเย็นวันศุกร์!",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_junior_office",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กำลังจะเก็บกระเป๋ากลับบ้านวันศุกร์ รุ่นพี่คนสนิทของหัวหน้าก็เดินเอาแฟ้มเอกสารปึกใหญ่มาวางบนโต๊ะคุณ บอกว่า 'ฝากคีย์ข้อมูลสรุปส่งเช้าวันจันทร์หน่อยนะน้อง พี่ติดธุระด่วน!'",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เด็กเนิร์ดคอม] เขียนสูตร Excel Macro / Python รันข้อมูลเสร็จใน 15 นาที แล้วส่งอีเมล CC หัวหน้าใหญ่ให้เห็นว่าเป็นฝีมือเรา!",
+          "hint_th": "🪙 โบนัสผลงาน +6,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +5 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [
+            "tag_computer_nerd"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปฏิเสธอย่างสุภาพโดยกางตารางงานที่หัวหน้าสั่งไว้แล้ว ให้รุ่นพี่เห็นว่าคิวเต็มจริงๆ",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +4 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ก้มหน้ารับทำจนดึกดื่นคนเดียว เสร็จแล้วรุ่นพี่เอาหน้าไปเคลมผลงานเฉยเลย!",
+          "hint_th": "❤️ สุขภาพ -4 , 😊 ความสุข -6 , ⚠️ เสี่ยงติด [ออฟฟิศซินโดรม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_office_syndrome"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_jroff_04",
+      "title_th": "งาน Outing ประจำปีของบริษัทที่รีสอร์ตริมทะเล & การแสดงแฟนซีคืนปาร์ตี้!",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_junior_office",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บริษัทเหมารถบัสพาพนักงานไปสัมมนาและปาร์ตี้ริมทะเล คืนงานเลี้ยงมีประกวดแต่งกายแฟนซีและจับสลากแจกรางวัลใหญ่จากท่านประธาน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดเต็มชุดแฟนซีขึ้นโชว์บนเวที คว้ารางวัลขวัญใจผู้บริหารและสร้างรอยยิ้มให้ทั้งบริษัท!",
+          "hint_th": "🪙 เงินรางวัลประกวด +10,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ดวงสมพงศ์โชคลาภ] ลุ้นจับสลากรางวัลใหญ่ ได้ทองคำหนัก 1 บาทจากท่านประธานบริษัท!",
+          "hint_th": "🪙 รางวัลใหญ่ +35,000 ฿ , 😊 ความสุข +12 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [
+            "trait_lucky_star"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เน้นเดินชนแก้วทำความรู้จักพี่ๆ ต่างแผนกและฝ่ายบริหาร ขยายคอนเนกชันในองค์กร",
+          "hint_th": "🤝 เส้นสาย +7 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mkt_01",
+      "title_th": "บรีฟงานโฆษณา 'ขอไวรัลล้านวิว งบ 5,000 บาท และขอพรุ่งนี้เช้า!'",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_creative_marketer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ลูกค้าแบรนด์ดังส่งบรีฟสุดหินมาให้ทีมการตลาดของคุณ ต้องการแคมเปญ Real-time Marketing ที่คนแชร์ทั่วโซเชียลโดยใช้งบโปรดักชันน้อยที่สุด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หัวศิลป์/กล้าแสดงออก] ปิ๊งไอเดียเล่นมีมกระแสสังคมสุดจี๊ด ยอดแชร์ถล่มทลายติดเทรนด์อันดับ 1 ของไทย!",
+          "hint_th": "🪙 ค่าคอมมิชชันแคมเปญ +20,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "tag_artistic_expressive"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใช้ Data Analytics ยิงแอดเจาะกลุ่มเป้าหมายแม่นยำ สร้างยอดขายทะลุ KPI 300%!",
+          "hint_th": "🪙 โบนัสยอดขาย +15,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เล่นมุกแรงเกินขอบเขตจนทัวร์ลงแบรนด์ ต้องออกแถลงการณ์ขอโทษกลางดึก! (โอกาสแป้ก 50%)",
+          "hint_th": "🎲 โอกาสปัง 50% (ปัง: +25,000 ฿ | แป้ก: โดนทัวร์ลงหักโบนัส -10,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 50,
+            "fail_outcome_text_th": "มุกแป้กกลายเป็นดราม่า! ชาวเน็ตทัวร์ลงเพจแบรนด์จนต้องลบโพสต์และถูกหักค่าคอมมิชชัน!",
+            "fail_stat_effects": {
+              "health": -4,
+              "happiness": -10,
+              "intelligence": 1,
+              "connections": -6,
+              "cash": -10000,
+              "merit": 0,
+              "appearance": -2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mkt_02",
+      "title_th": "ดราม่าอินฟลูเอนเซอร์ที่จ้างไว้ก่อเรื่องฉาวก่อนวันงานแถลงข่าวเปิดตัวสินค้า!",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_creative_marketer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เหลืออีก 24 ชั่วโมงก่อนงานอีเวนต์ใหญ่ แต่อินฟลูเอนเซอร์ตัวท็อปที่จ้างมาเป็นพรีเซนเตอร์กลับมีข่าวฉาวหลุดออกมาจนติดเทรนด์โซเชียล!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "งัดแผนสำรอง Crisis Management! ยกเลิกสัญญาตามข้อกฎหมายและดึงศิลปินขวัญใจมหาชนมาขึ้นเวทีแทนทันเวลา!",
+          "hint_th": "🪙 โบนัสกู้วิกฤตแบรนด์ +18,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปรับรูปแบบงานเป็นไลฟ์สดเปิดตัวสินค้าโดยทีมครีเอทีฟเอง ปรากฏว่าคนดูชอบความเรียลจนขายหมดเกลี้ยง!",
+          "hint_th": "🪙 โบนัสยอดขาย +12,000 ฿ , 😊 ความสุข +6 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 7,
+            "cash": 15000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mkt_03",
+      "title_th": "ศึก Pitching ชิงงบโฆษณา 50 ล้านจากลูกค้าระดับประเทศ!",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_creative_marketer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เอเจนซี่ของคุณผ่านเข้ารอบสุดท้ายในการประมูลงานแคมเปญใหญ่แห่งปี ต้องขึ้นพรีเซนต์แข่งกับบริษัทคู่แข่งอีก 3 เจ้า",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[ยิ้มสยามมหาเสน่ห์] พรีเซนต์ด้วยวาทศิลป์และอินไซต์ที่ทัชใจผู้บริหารลูกค้า จนชนะขาดลอยคว้าโปรเจกต์ 50 ล้าน!",
+          "hint_th": "🪙 คอมมิชชันก้อนโต +30,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +10 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [
+            "trait_natural_charmer"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 5,
+            "connections": 10,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อดนอนปั่นสตอรี่บอร์ดและแผนมีเดียสุดแน่น ชนะใจกรรมการด้วยความละเอียดรอบคอบ!",
+          "hint_th": "🪙 คอมมิชชัน +20,000 ฿ , 🧠 สมอง +6 , ❤️ สุขภาพ -3 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 25000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mkt_04",
+      "title_th": "งานประกาศรางวัลโฆษณาและการตลาดระดับเอเชีย (AdFest / Cannes Lions)!",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_creative_marketer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผลงานแคมเปญโฆษณาสร้างสรรค์สังคมที่คุณปลุกปั้นมากับมือ ได้รับการเสนอชื่อเข้าชิงรางวัลใหญ่ในงานประกาศรางวัลโฆษณาระดับนานาชาติ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เดินทางไปร่วมงานและขึ้นรับถ้วยรางวัล Gold Award สร้างชื่อเสียงโด่งดังไปทั่ววงการเอเจนซี่!",
+          "hint_th": "🪙 เงินรางวัล +15,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +9 , ✨ หน้าตา +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใช้โอกาสในงานแลกนามบัตรกับ Creative Director ต่างชาติ เปิดทางรับโปรเจกต์ระดับโกลบอล!",
+          "hint_th": "🤝 เส้นสาย +9 , 🧠 สมอง +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 9,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 10,
+            "cash": 7500,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_swe_01",
+      "title_th": "ฝันร้ายคืนวันศุกร์! ใครบางคนกด Deploy โค้ดขึ้น Production แล้วระบบล่มทั้งประเทศ",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_software_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เวลา 18:00 น. วันศุกร์! แจ้งเตือน PagerDuty และกลุ่ม Slack ดังรัวเป็นไฟไหม้ เมื่อระบบชำระเงินของแอปพลิเคชันเกิดบั๊กร้ายแรงหลังอัปเดตเวอร์ชันใหม่!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สั่ง Rollback กลับเวอร์ชันเสถียรทันที แล้วไล่แกะ Log แก้บั๊กที่ต้นเหตุเสร็จใน 45 นาที!",
+          "hint_th": "🪙 โบนัส On-Call พิเศษ +18,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 7,
+            "connections": 6,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "วางระบบ CI/CD Automated Testing ใหม่ทั้งหมด เพื่อป้องกันไม่ให้ใครส่งโค้ดพังๆ ขึ้นระบบได้อีก!",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +7 , 🪙 ปรับเงินเดือนพิเศษ +12,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 8,
+            "connections": 7,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 8,
+            "connections": 7,
+            "cash": 15000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_swe_02",
+      "title_th": "แฮกเกอร์ปล่อยแรนซัมแวร์ (Ransomware) และยิง DDoS โจมตีเซิร์ฟเวอร์บริษัท!",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_software_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กลุ่มแฮกเกอร์พยายามเจาะระบบฐานข้อมูลลูกค้าและยิงทราฟฟิกถล่มเซิร์ฟเวอร์ พร้อมส่งข้อความเรียกค่าไถ่เป็นบิตคอยน์!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เด็กเนิร์ดคอม] เปิดระบบป้องกัน Firewall ขั้นสูง อุดช่องโหว่ Zero-Day และกู้ข้อมูลจาก Backup ได้ครบโดยไม่ต้องจ่ายค่าไถ่แม้แต่บาทเดียว!",
+          "hint_th": "🪙 เงินรางวัลฮีโร่ไอที +35,000 ฿ , 🧠 สมอง +9 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "tag_computer_nerd"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 9,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ประสานงานทีม Cybersecurity ปิดกั้น IP แปลกปลอมและย้ายระบบขึ้น Cloud สำรองจนปลอดภัย",
+          "hint_th": "🪙 โบนัสพิเศษ +15,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 8,
+            "connections": 7,
+            "cash": 25000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_swe_03",
+      "title_th": "การแข่งขัน Hackathon พัฒนา AI & FinTech ชิงเงินรางวัลระดับภูมิภาค!",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_software_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บริษัทส่งทีมวิศวกรซอฟต์แวร์เข้าร่วมแข่งขันเขียนโปรแกรมสร้างต้นแบบ AI ภายใน 48 ชั่วโมง ชิงเงินรางวัลและทุนสนับสนุนสตาร์ทอัพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลุยเขียนโมเดล AI ตอบโจทย์ธุรกิจจริงจนคว้าชนะเลิศอันดับ 1 ของรายการ!",
+          "hint_th": "🪙 เงินรางวัลชนะเลิศ +30,000 ฿ , 🧠 สมอง +8 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 8,
+            "intelligence": 8,
+            "connections": 8,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เน้นสร้าง Open-Source Library แจกจ่ายให้นักพัฒนาทั่วโลกใช้ฟรี ได้ทั้งชื่อเสียงและแต้มบุญ!",
+          "hint_th": "✨ แต้มบุญ +12 , 🤝 เส้นสาย +9 , 🧠 สมอง +7 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 9,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 8,
+            "intelligence": 8,
+            "connections": 9,
+            "cash": 15000,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_swe_04",
+      "title_th": "บริษัท Tech ต่างชาติ (Silicon Valley / สิงคโปร์) ทัก LinkedIn เสนองาน Remote เงินเดือนดอลลาร์!",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_software_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "Recruiter จากบริษัทเทคโนโลยีระดับโลกเห็นโปรไฟล์ GitHub และ LinkedIn ของคุณ จึงส่งข้อเสนอให้ร่วมโปรเจกต์พิเศษทำงานจากที่บ้าน (Work From Anywhere)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีใบรับรองภาษาอังกฤษ] ผ่านด่าน Live Coding Interview ฉลุย รับค่าตอบแทนเรตโกลบอลก้อนโต!",
+          "hint_th": "🪙 รายได้โกลบอล +45,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +7 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [
+            "flag_cert_english"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 7,
+            "cash": 45000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำข้อเสนอไปต่อรองขอปรับตำแหน่งเป็น Senior / Tech Lead ที่บริษัทปัจจุบันพร้อมทำงานแบบ Hybrid",
+          "hint_th": "🪙 ปรับฐานเงินเดือน +25,000 ฿ , 😊 ความสุข +7 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 35000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_swe_05",
+      "title_th": "มรดกโค้ดสปาเก็ตตี้ (Legacy Code) อายุ 10 ปีที่คนเก่าเขียนไว้แล้วลาออก!",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_software_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณได้รับมอบหมายให้ดูแลโมดูลเก่าแก่ของบริษัทที่ไม่มีเอกสารคู่มือเลยสักหน้า แถมโค้ดพันกันยุ่งเหยิงเหมือนเส้นสปาเก็ตตี้ที่แตะนิดเดียวอาจพังทั้งระบบ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ค่อยๆ เขียน Unit Test ครอบและ Refactor โค้ดใหม่ทีละส่วนจนระบบทำงานเร็วขึ้น 5 เท่า!",
+          "hint_th": "🪙 โบนัสปรับปรุงระบบ +16,000 ฿ , 🧠 สมอง +8 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 8,
+            "connections": 4,
+            "cash": 16000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นั่งจ้องจอไล่แก้โค้ดหามรุ่งหามค่ำจนปวดคอบ่าไหล่และสายตาสั้นเพิ่มขึ้น!",
+          "hint_th": "🪙 ค่าล่วงเวลา +8,000 ฿ , ❤️ สุขภาพ -5 , ⚠️ เสี่ยงติด [ออฟฟิศซินโดรม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_office_syndrome"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -5,
+            "happiness": -3,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 2,
+            "intelligence": 6,
+            "connections": 2,
+            "cash": 12000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_eng_01",
+      "title_th": "ผู้รับเหมาแอบลดสเปกเหล็กเส้นและปูนคอนกรีต! เสนอซองเงินสดให้ช่วยเซ็นใบ กว. ผ่านงาน",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะตรวจสอบโครงสร้างอาคารขนาดใหญ่ คุณพบว่าผู้รับเหมาใช้เหล็กเส้นไม่ได้มาตรฐาน มูลค่าความต่างหลายล้านบาท ผู้รับเหมาจึงแอบยื่นซองเงินสด 100,000 บาทขอให้คุณหลับตาข้างเดียวเซ็นรับรองแบบ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยึดมั่นจรรยาบรรณวิศวกร! ปฏิเสธเงินสินบนและสั่งรื้อแก้ไขโครงสร้างให้ปลอดภัย 100% เจ้าของโครงการชื่นชมและตบรางวัลงาม!",
+          "hint_th": "🪙 รางวัลวิศวกรตงฉิน +30,000 ฿ , ✨ แต้มบุญ +25 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 30000,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบรับซองเงินใต้โต๊ะแล้วเซ็นผ่านให้! (เสี่ยงโครงสร้างทรุดและถูกเพิกถอนใบ กว. 70%!)",
+          "hint_th": "🎲 โอกาสรอด 30% (พลาด: โครงสร้างร้าว ถูกฟ้องเรียกค่าเสียหาย -120,000 ฿ และเสียแต้มบุญหนัก!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 100000,
+            "merit": -40,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 30,
+            "fail_outcome_text_th": "คานคอนกรีตเกิดรอยร้าว! คณะกรรมการตรวจสอบพบการทุจริต คุณถูกปรับอ่วมและเสียชื่อเสียง!",
+            "fail_stat_effects": {
+              "health": -10,
+              "happiness": -25,
+              "intelligence": 0,
+              "connections": -20,
+              "cash": -120000,
+              "merit": -50,
+              "appearance": -5
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 65000,
+            "merit": -7
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_eng_02",
+      "title_th": "คุมงานเทคอนกรีตฐานรากตึกระฟ้า / โครงการรถไฟฟ้าความเร็วสูงสำเร็จก่อนกำหนด!",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โครงการเมกะโปรเจกต์ที่คุณเป็นวิศวกรผู้ควบคุมงาน (Project Engineer) สามารถบริหารจัดการแผนงานจนเสร็จเร็วกว่ากำหนดการ 1 เดือนเต็มโดยมีอุบัติเหตุเป็นศูนย์ (Zero Accident)!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับเงินโบนัสปิดโครงการ (Project Completion Bonus) และเลื่อนระดับความเชี่ยวชาญวิศวกรรม!",
+          "hint_th": "🪙 โบนัสปิดโครงการ +40,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +9 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 6,
+            "connections": 9,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งเงินรางวัลจัดงานเลี้ยงหมูกระทะและมอบซองขวัญถุงให้ทีมโฟร์แมนและคนงานทุกคน!",
+          "hint_th": "🪙 เงินโบนัสสุทธิ +25,000 ฿ , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +12 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 25000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "intelligence": 3,
+            "connections": 11,
+            "cash": 32500,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_eng_03",
+      "title_th": "ออกแบบระบบโซล่าเซลล์และประหยัดพลังงานโรงงาน (Green Engineering)!",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กระแสรักษ์โลกและค่าไฟอุตสาหกรรมที่พุ่งสูง ทำให้ผู้บริหารมอบหมายให้คุณคำนวณและออกแบบระบบ Solar Rooftop และระบบหมุนเวียนความร้อนในโรงงาน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "คำนวณทางวิศวกรรมอย่างแม่นยำ ลดค่าไฟให้บริษัทได้ปีละ 10 ล้านบาท รับส่วนแบ่งค่าวิชาชีพก้อนโต!",
+          "hint_th": "🪙 ค่าวิชาชีพพิเศษ +28,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 7,
+            "cash": 28000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำผลงานไปยื่นขอเลื่อนระดับเป็น 'สามัญวิศวกร (สย./สก.)' เพิ่มอำนาจการเซ็นรับรองแบบระดับสูง!",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +8 , 🪙 ค่าใบอนุญาตเพิ่ม +20,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 8,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 8,
+            "connections": 8,
+            "cash": 24000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_eng_04",
+      "title_th": "พายุเข้าถล่มไซส์งานก่อสร้างริมทะเล! วางแผนป้องกันเครนยกของและตลิ่งทรุด",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_engineer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กรมอุตุนิยมวิทยาเตือนภัยพายุโซนร้อนกำลังเคลื่อนตัวเข้าสู่พื้นที่โครงการก่อสร้างของคุณในคืนนี้ ต้องตัดสินใจสั่งการทางวิศวกรรมด่วน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สั่งปลดล็อกแขนทาวเวอร์เครนให้หมุนตามลม (Free Slewing) และตอกชีทไพล์กั้นดิน ป้องกันความเสียหายได้ 100%!",
+          "hint_th": "🪙 รางวัลป้องกันภัย +20,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 6,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สั่งอพยพคนงานทั้งหมดเข้าที่พักปลอดภัยและเฝ้ามอนิเตอร์หน้างานตลอดคืน",
+          "hint_th": "✨ แต้มบุญ +10 , 🤝 เส้นสาย +8 , ❤️ สุขภาพ -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 7,
+            "cash": 10000,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_law_01",
+      "title_th": "คดีประวัติศาสตร์ในชั้นศาล! ว่าความปกป้องชาวบ้านผู้บริสุทธิ์ vs นายทุนผู้มีอิทธิพล",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_lawyer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ชาวบ้านตาดำๆ ที่ถูกนายทุนฟ้องขับไล่และเรียกค่าเสียหายอย่างไม่เป็นธรรม เข้ามาขอให้สำนักงานทนายความของคุณช่วยว่าความให้ในชั้นศาล!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "งัดพยานหลักฐานเด็ดและซักค้านพยานฝั่งตรงข้ามจนชนะคดีขาวสะอาด! ได้ทั้งค่าวิชาชีพและชื่อเสียงทนายประชาชน!",
+          "hint_th": "🪙 รางวัลชนะคดี +30,000 ฿ , ✨ แต้มบุญ +30 , 🤝 เส้นสาย +10 , 🧠 สมอง +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 7,
+            "connections": 10,
+            "cash": 30000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เป็นตัวกลางเจรจาไกล่เกลี่ยในชั้นศาล จนนายทุนยอมจ่ายเงินชดเชยเยียวยาให้ชาวบ้านอย่างยุติธรรม",
+          "hint_th": "🪙 ค่าธรรมเนียมทนาย +20,000 ฿ , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +8 , 🧠 สมอง +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 6,
+            "connections": 9,
+            "cash": 25000,
+            "merit": 23
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_law_02",
+      "title_th": "ร่างและตรวจสัญญาควบรวมกิจการ (M&A) มูลค่าพันล้านบาท!",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_lawyer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บริษัทมหาชนว่าจ้างให้ทีมที่ปรึกษากฎหมายของคุณตรวจสอบสัญญาซื้อขายกิจการความยาว 500 หน้า เพื่อหาช่องโหว่ทางกฎหมายก่อนเซ็นสัญญาพรุ่งนี้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หนอนหนังสือ] ตาเหยี่ยวตรวจพบข้อสัญญาเสียเปรียบที่ซ่อนอยู่ในหมายเหตุ ช่วยลูกค้าประหยัดเงินได้ร้อยล้าน! รับโบนัสก้อนโต!",
+          "hint_th": "🪙 ค่าวิชาชีพพิเศษ +45,000 ฿ , 🧠 สมอง +8 , 🤝 เส้นสาย +9 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "tag_bookworm"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 8,
+            "connections": 9,
+            "cash": 45000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตรวจทานสัญญาอย่างรัดกุมครบทุกมาตรา ปิดดีลควบรวมกิจการสำเร็จอย่างราบรื่น!",
+          "hint_th": "🪙 ค่าวิชาชีพ +25,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 35000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_law_03",
+      "title_th": "คดีฟ้องหย่าและแบ่งสินสมรสหมื่นล้านของคู่รักไฮโซระดับประเทศ!",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_lawyer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ข่าวหน้าหนึ่งบันเทิงและสังคมไฮโซ! ทายาทตระกูลดังแต่งตั้งให้คุณเป็นทนายความส่วนตัวในการฟ้องร้องแบ่งสินสมรสและอำนาจปกครองบุตร",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สืบทรัพย์สินที่ซุกซ่อนไว้ได้ครบทุกบัญชี ชนะคดีได้ส่วนแบ่งสินสมรสเต็มเม็ดเต็มหน่วย รับค่าทนาย 5%!",
+          "hint_th": "🪙 ค่าทนายคดีดัง +50,000 ฿ , 🤝 เส้นสาย +10 , 🧠 สมอง +6 , 👑 ได้รับป้าย [คอนเนกชันระดับเจ้าสัว]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 10,
+            "cash": 50000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่างสัญญาประนีประนอมยอมความโดยคำนึงถึงประโยชน์สูงสุดของเด็กเป็นหลัก จบด้วยดีทั้งสองตระกูล!",
+          "hint_th": "🪙 ค่าทนาย +30,000 ฿ , ✨ แต้มบุญ +15 , 🤝 เส้นสาย +9 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 30000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 10,
+            "cash": 40000,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_law_04",
+      "title_th": "ผู้ต้องหาคดีสีเทาเสนอเงินก้อนโตให้ช่วยทำลายหลักฐานและบิดเบือนสำนวนคดี!",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_lawyer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ลูกความที่เป็นเจ้าพ่อแก๊งคอลเซ็นเตอร์/ธุรกิจสีเทา ยื่นข้อเสนอจ่ายเงินสด 150,000 บาท หากคุณยอมช่วยสร้างพยานเท็จในชั้นศาล!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธการสร้างพยานเท็จอย่างเด็ดขาด! รักษาเกียรติวิชาชีพทนายความและเนติบัณฑิต",
+          "hint_th": "✨ แต้มบุญ +20 , 🧠 สมอง +4 , 🤝 เส้นสาย +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ยอมรับเงินสีเทาสร้างพยานเท็จ! (เสี่ยงถูกศาลจับได้และโดนถอนตั๋วทนาย 75%!)",
+          "hint_th": "🎲 โอกาสรอด 25% (พลาด: โดนดำเนินคดีเบิกความเท็จ เสียค่าปรับ -150,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 150000,
+            "merit": -50,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 25,
+            "fail_outcome_text_th": "อัยการจับพิรุธพยานเท็จได้คาหนังคาเขา! คุณถูกลงโทษทางวินัยทนายความและเสียค่าปรับมหาศาล!",
+            "fail_stat_effects": {
+              "health": -10,
+              "happiness": -25,
+              "intelligence": 0,
+              "connections": -20,
+              "cash": -150000,
+              "merit": -60,
+              "appearance": -5
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 75000,
+            "merit": -15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_law_05",
+      "title_th": "รับเชิญออกรายการทีวีดังให้ความเห็นข้อกฎหมายคดีชาวบ้าน!",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_licensed_lawyer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "พิธีกรรายการข่าวอันดับหนึ่งของประเทศเชิญคุณไปนั่งเก้าอี้ทนายความกลางรายการสด เพื่ออธิบายข้อกฎหมายให้ประชาชนเข้าใจง่ายๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อธิบายข้อกฎหมายชัดเจน ฉะฉาน และเป็นกลาง จนกลายเป็นทนายคนดังที่มีลูกความติดต่อเข้ามาล้นหลาม!",
+          "hint_th": "🪙 รายได้ลูกความใหม่ +35,000 ฿ , 🤝 เส้นสาย +12 , ✨ หน้าตา +4 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 12,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดเพจให้ความรู้กฎหมายและรับปรึกษาปัญหากฎหมายฟรีให้ผู้ยากไร้ทุกวันเสาร์",
+          "hint_th": "✨ แต้มบุญ +25 , 🤝 เส้นสาย +9 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 11,
+            "cash": 17500,
+            "merit": 13,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mgr_01",
+      "title_th": "ลูกน้องมือขวาตัวท็อปมายื่นใบลาออก! บริษัทคู่แข่งทุ่มเงินซื้อตัว",
+      "min_age": 28,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_senior_manager",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในฐานะผู้จัดการฝ่ายอาวุโส วันหนึ่งลูกน้องที่เก่งที่สุดในทีมของคุณเดินถือซองขาวเข้ามาขอลาออก เพราะได้รับข้อเสนอจากบริษัทคู่แข่ง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อนุมัติงบ Counter-Offer ปรับตำแหน่งและเงินเดือนสู้ทันที รักษาคนเก่งไว้ในทีมจนทำยอดทะลุเป้า!",
+          "hint_th": "🪙 โบนัสผลงานฝ่าย +25,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อวยพรและจัดงานเลี้ยงส่งอย่างอบอุ่น กลายเป็นพันธมิตรที่ดีต่อกันในวงการและปั้นดาวรุ่งคนใหม่ขึ้นมาแทน!",
+          "hint_th": "🤝 เส้นสาย +10 , ✨ แต้มบุญ +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 9,
+            "cash": 12500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mgr_02",
+      "title_th": "ศึกชิงงบประมาณประจำปีในห้องประชุมบอร์ด (Budget Defense)!",
+      "min_age": 28,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_senior_manager",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผู้บริหารระดับสูงต้องการหั่นงบประมาณของแต่ละฝ่ายลง 20% คุณต้องขึ้นพรีเซนต์ปกป้องงบประมาณและโบนัสของลูกน้องในฝ่ายของคุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีความรู้ทางการเงิน] กางตัวเลข ROI และกำไรสุทธิที่ฝ่ายของคุณทำได้ จนบอร์ดอนุมัติงบเต็มจำนวนแถมเพิ่มโบนัสให้!",
+          "hint_th": "🪙 โบนัสผู้จัดการ +30,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_financial_literacy"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเทคโนโลยีมาช่วยลดต้นทุนที่ไม่จำเป็นลง 20% โดยไม่แตะต้องสวัสดิการลูกน้องเลยแม้แต่บาทเดียว!",
+          "hint_th": "🪙 โบนัสบริหารต้นทุน +20,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 25000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mgr_03",
+      "title_th": "ความเครียดของผู้บริหารระดับกลาง! บนก็บีบ ล่างก็กดดัน จนความดันพุ่ง",
+      "min_age": 28,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_senior_manager",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การเป็นผู้จัดการอาวุโสต้องรับแรงกดดันสองทาง ทั้งตัวเลขยอดขายจาก CEO และปัญหาดราม่าของลูกน้องในทีมหลายสิบคน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฝึกศิลปะการมอบหมายงาน (Delegation) และไปเข้าฟิตเนสออกกำลังกายระบายความเครียดหลังเลิกงาน",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +6 , 🧠 สมอง +4 , ✨ ล้างสถานะ [ความดันโลหิตสูง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_hypertension"
+          ],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบกทุกงานไว้ทำเองและเครียดจัดจนความดันโลหิตสูงถามหา!",
+          "hint_th": "🪙 โบนัสงานหนัก +15,000 ฿ , ❤️ สุขภาพ -6 , 😊 ความสุข -5 , ⚠️ ติดสถานะ [ความดันโลหิตสูง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_hypertension"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -6,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 2,
+            "cash": 7500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mgr_04",
+      "title_th": "เป็นตัวแทนบริษัทเดินทางไปดูงานและเจรจาคู่ค้าที่ต่างประเทศ!",
+      "min_age": 28,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_senior_manager",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บริษัทส่งคุณบินไปร่วมงานแสดงสินค้านานาชาติและเจรจาความร่วมมือทางธุรกิจที่ประเทศญี่ปุ่น/เยอรมนี พร้อมเบี้ยเลี้ยงเดินทาง (Per Diem)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เจรจาปิดดีลพันธมิตรธุรกิจใหม่สำเร็จ พร้อมรับเบี้ยเลี้ยงเดินทางก้อนงาม!",
+          "hint_th": "🪙 เบี้ยเลี้ยงและโบนัสดีล +25,000 ฿ , 🤝 เส้นสาย +9 , 🧠 สมอง +5 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 9,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเทคโนโลยีและระบบการทำงานระดับสากลกลับมาพัฒนาทีมงานในไทยให้ก้าวกระโดด",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +7 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 8,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 12500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_doc_01",
+      "title_th": "เวรห้องฉุกเฉิน (ER) คืนเทศกาล! เคสอุบัติเหตุใหญ่เข้าพร้อมกัน 10 รายรวด",
+      "min_age": 24,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_medical_doctor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เวลาตีหนึ่งของคืนเทศกาล รถกู้ชีพเปิดไซเรนส่งตัวผู้บาดเจ็บวิกฤตเข้ามาเต็มห้องฉุกเฉิน เสียงมอนิเตอร์วัดชีพจรดังรัว คุณต้องตัดสินใจคัดกรอง (Triage) และช่วยชีวิตแข่งกับพญามัจจุราช!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งสติสั่งการทีมแพทย์และพยาบาลอย่างแม่นยำ ปั๊มหัวใจและผ่าตัดช่วยชีวิตผู้ป่วยวิกฤตรอดตายครบทุกคน!",
+          "hint_th": "🪙 ค่าเวรฉุกเฉินพิเศษ +35,000 ฿ , ✨ แต้มบุญ +35 , 🧠 สมอง +7 , ❤️ สุขภาพ -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 8,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 35,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[แข็งแรงทนทาน] ยืนผ่าตัดและตรวจคนไข้ต่อเนื่อง 24 ชั่วโมงโดยไม่ล้า ช่วยคนไข้ได้ทั้งวอร์ด!",
+          "hint_th": "🪙 ค่าเวรและค่าหัตถการ +45,000 ฿ , ✨ แต้มบุญ +40 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [
+            "trait_strong_immune"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 6,
+            "connections": 9,
+            "cash": 45000,
+            "merit": 40,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 9,
+            "cash": 40000,
+            "merit": 38
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_doc_02",
+      "title_th": "เคสผู้ป่วยโรคหายาก (Rare Disease) ที่ยังไม่มีใครวินิจฉัยสาเหตุได้!",
+      "min_age": 24,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_medical_doctor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผู้ป่วยถูกส่งตัวต่อมาจากหลายโรงพยาบาลด้วยอาการไข้และอวัยวะอักเสบปริศนา คุณต้องค้นคว้าวารสารการแพทย์ระดับโลกเพื่อหาสาเหตุที่แท้จริง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หนอนหนังสือ] ค้นพบสาเหตุโรคหายากและสั่งยารักษาตรงจุดจนคนไข้หายดี! ได้ตีพิมพ์งานวิจัยในวารสารการแพทย์ระดับโลก!",
+          "hint_th": "🪙 เงินรางวัลวิจัย +40,000 ฿ , 🧠 สมอง +10 , ✨ แต้มบุญ +25 , 🤝 เส้นสาย +10",
+          "req_stats": {},
+          "req_flags": [
+            "tag_bookworm"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 10,
+            "connections": 10,
+            "cash": 40000,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งทีมแพทย์สหสาขาวิชาชีพร่วมกันวินิจฉัยและดูแลผู้ป่วยอย่างใกล้ชิดจนอาการดีขึ้นตามลำดับ",
+          "hint_th": "🪙 ค่าวิชาชีพแพทย์ +25,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 25000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 8,
+            "connections": 9,
+            "cash": 32500,
+            "merit": 23
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_doc_03",
+      "title_th": "ญาติคนไข้วีไอพีอารมณ์ร้อนโวยวายขอลัดคิวตรวจก่อนเคสฉุกเฉิน!",
+      "min_age": 24,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_medical_doctor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หน้าห้องตรวจมีผู้มีอิทธิพลส่งเสียงดังโวยวายอ้างรู้จักผู้ใหญ่ ขอให้คุณลัดคิวตรวจอาการปวดหัวเล็กน้อยของเขาก่อนคนไข้สูงอายุที่กำลังหอบเหนื่อย!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อธิบายหลักเกณฑ์คัดกรองตามความฉุกเฉินทางการแพทย์อย่างสุภาพแต่เด็ดขาด รักษาชีวิตผู้ป่วยหนักก่อนตามจรรยาบรรณ!",
+          "hint_th": "✨ แต้มบุญ +25 , 🧠 สมอง +5 , 🤝 เส้นสาย +6 , 😊 ความสุข +7 (คนไข้และพยาบาลทั้ง รพ. ชื่นชม!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ประสานงานแพทย์เวรอีกห้องให้ช่วยดูอาการเบื้องต้นให้ เพื่อคลี่คลายสถานการณ์โดยไม่เสียคิวผู้ป่วยหนัก",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +8 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 7,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_doc_04",
+      "title_th": "โรงพยาบาลเอกชนชั้นนำทาบทามให้ไปออกตรวจคลินิกพิเศษนอกเวลา / เปิดคลินิกส่วนตัว!",
+      "min_age": 26,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_medical_doctor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ชื่อเสียงความเก่งและมือเบาของคุณทำให้โรงพยาบาลเอกชนระดับ 5 ดาวติดต่อเชิญไปออกตรวจพิเศษช่วงเย็นและวันเสาร์ ด้วยส่วนแบ่งค่าตัวแพทย์ (DF) ที่สูงมาก!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับออกตรวจคลินิกพิเศษสัปดาห์ละ 3 วัน รายได้พุ่งทะยานระดับคุณหมอคิวทอง!",
+          "hint_th": "🪙 ค่าตัวแพทย์ DF +60,000 ฿ , 🤝 เส้นสาย +9 , ❤️ สุขภาพ -3 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 60000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับตรวจเฉพาะวันเสาร์ ส่วนวันอาทิตย์ไปออกหน่วยแพทย์อาสาตรวจรักษาชาวบ้านพื้นที่ห่างไกลฟรี!",
+          "hint_th": "🪙 ค่าตัวแพทย์ DF +30,000 ฿ , ✨ แต้มบุญ +40 , 😊 ความสุข +10 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 30000,
+            "merit": 40,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 9,
+            "cash": 45000,
+            "merit": 20
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_doc_05",
+      "title_th": "มหาเศรษฐีผู้รอดชีวิตจากการผ่าตัดของคุณ มอบซองขอบคุณและเชิญร่วมเครือข่ายระดับสูง!",
+      "min_age": 24,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_medical_doctor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เจ้าสัวใหญ่ที่คุณเคยช่วยผ่าตัดรักษาจนหายขาด เดินทางมาพบคุณด้วยตัวเองเพื่อมอบทุนสนับสนุนงานวิจัยและรับคุณเป็นแพทย์ประจำตระกูลเจ้าสัว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับเป็นที่ปรึกษาสุขภาพประจำตระกูลเจ้าสัว ได้ทั้งค่าตอบแทนพิเศษและปลดล็อกคอนเนกชันระดับเจ้าสัว!",
+          "hint_th": "🪙 ค่าที่ปรึกษาพิเศษ +50,000 ฿ , 🤝 เส้นสาย +12 , 👑 ได้รับป้าย [คอนเนกชันระดับเจ้าสัว]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 50000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอให้ท่านเจ้าสัวเปลี่ยนเงินขวัญถุงเป็นการบริจาคเครื่องมือแพทย์เข้าโรงพยาบาลแทน ได้มหากุศลร่วมกัน!",
+          "hint_th": "✨ แต้มบุญ +60 , 🤝 เส้นสาย +12 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 0,
+            "merit": 60,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 11,
+            "connections": 12,
+            "cash": 25000,
+            "merit": 35
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mnc_01",
+      "title_th": "ประชุมด่วนข้ามไทม์โซน (Global Townhall) กับสำนักงานใหญ่นิวยอร์ก/ลอนดอนตอนตีหนึ่ง!",
+      "min_age": 30,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_multinational_exec",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในฐานะผู้บริหารบริษัทข้ามชาติประจำประเทศไทย คุณต้องขึ้นพรีเซนต์ผลประกอบการภูมิภาคเอเชียตะวันออกเฉียงใต้ต่อหน้า Global CEO ผ่านวิดีโอคอนเฟอเรนซ์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พรีเซนต์แผนกลยุทธ์เป็นภาษาอังกฤษสุดเฉียบขาด จนไทยได้รับเลือกเป็น Regional Hub แห่งใหม่พร้อมงบลงทุนก้อนโต!",
+          "hint_th": "🪙 โบนัสระดับภูมิภาค +65,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +10 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 10,
+            "cash": 65000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เจรจาขอปรับเวลาประชุมระดับภูมิภาคให้เป็นช่วงบ่ายตามเวลาเอเชียสลับกัน เพื่อสุขภาพที่ดีของทีมงาน!",
+          "hint_th": "🪙 โบนัสผลงาน +35,000 ฿ , ❤️ สุขภาพ +4 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 9,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 50000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mnc_02",
+      "title_th": "วิกฤตอัตราแลกเปลี่ยนค่าเงินบาทผันผวนหนัก! กระทบต้นทุนนำเข้า-ส่งออกพันล้าน",
+      "min_age": 30,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_multinational_exec",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ค่าเงินบาทแกว่งตัวรุนแรงจากนโยบายดอกเบี้ยโลก หากไม่บริหารความเสี่ยงอัตราแลกเปลี่ยน กำไรของสาขาประเทศไทยปีนี้อาจหายวับไปกับตา!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีความรู้ทางการเงิน] ทำสัญญาซื้อขายเงินตราต่างประเทศล่วงหน้า (FX Forward Hedging) ล็อกกำไรบริษัทไว้ได้สมบูรณ์แบบ!",
+          "hint_th": "🪙 โบนัสบริหารความเสี่ยง +55,000 ฿ , 🧠 สมอง +8 , 🤝 เส้นสาย +7 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "flag_financial_literacy"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 8,
+            "connections": 7,
+            "cash": 55000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปรับสัดส่วนการใช้วัตถุดิบภายในประเทศ (Local Sourcing) ทดแทนการนำเข้า ลดต้นทุนได้ยั่งยืน!",
+          "hint_th": "🪙 โบนัสลดต้นทุน +40,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 40000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 47500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mnc_03",
+      "title_th": "รับรางวัลหุ้นบริษัท (Stock Options / RSU) จากบริษัทแม่ในตลาดหุ้นระดับโลก!",
+      "min_age": 30,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_multinational_exec",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สวัสดิการระดับท็อปของผู้บริหารบริษัทข้ามชาติ! ปีนี้หุ้นของบริษัทแม่ในตลาดหลักทรัพย์พุ่งทำจุดสูงสุดใหม่ และถึงกำหนดปลดล็อกหุ้น RSU ของคุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขายทำกำไรหุ้น RSU บางส่วนนำเงินสดเข้ากระเป๋า และถือส่วนที่เหลือรับปันผลดอลลาร์!",
+          "hint_th": "🪙 ขายหุ้น RSU รับเงินสด +80,000 ฿ , 😊 ความสุข +12 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 80000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเงินที่ได้ไปลงทุนต่อยอดในพอร์ตสินทรัพย์และซื้อกองทุนลดหย่อนภาษีครบวงจร",
+          "hint_th": "🪙 ผลตอบแทนสุทธิ +60,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +9 , ✨ ได้รับป้าย [ยื่นภาษีถูกต้อง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_tax_compliant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 60000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 11,
+            "intelligence": 5,
+            "cash": 70000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_mnc_04",
+      "title_th": "ทริปบิน Business Class ประชุมผู้บริหารระดับโลกที่ยุโรป/สิงคโปร์!",
+      "min_age": 30,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "career_multinational_exec",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณได้สิทธิ์เดินทางชั้นธุรกิจ (Business Class) ไปร่วมงานประชุมผู้นำองค์กรระดับโลก พักโรงแรม 5 ดาวและสร้างเครือข่ายกับ Country Manager จาก 50 ประเทศ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สร้างคอนเนกชันระดับอินเตอร์และดึงเม็ดเงินลงทุนต่างชาติ (FDI) เข้ามาขยายสาขาในไทย!",
+          "hint_th": "🪙 โบนัสขยายธุรกิจ +50,000 ฿ , 🤝 เส้นสาย +12 , 😊 ความสุข +10 , ✨ หน้าตา +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_world_traveler"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 50000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ถือโอกาสลาพักร้อนต่อท้ายทริป พาครอบครัวบินตามมาเที่ยวพักผ่อนด้วยกันอย่างมีความสุข",
+          "hint_th": "🪙 เบี้ยเลี้ยงหักค่าทริป +20,000 ฿ , 😊 ความสุข +14 , ❤️ สุขภาพ +5 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 14,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 12,
+            "connections": 10,
+            "cash": 35000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_ceo_01",
+      "title_th": "สั่นกระดิ่งนำบริษัทเข้าจดทะเบียนในตลาดหลักทรัพย์ (IPO First Trading Day)!",
+      "min_age": 35,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_c_level_ceo",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันประวัติศาสตร์ในฐานะ CEO! คุณสวมสูทยืนบนเวทีตลาดหลักทรัพย์แห่งประเทศไทยเพื่อตีฆ้องเปิดการซื้อขายหุ้นวันแรก ราคาหุ้นเปิดตลาดพุ่งเหนือจอง (Ceiling) ทันที!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กล่าววิสัยทัศน์สร้างความเชื่อมั่นให้นักลงทุนสถาบัน รับโบนัสผู้บริหารและเงินปันผลหุ้น CEO ก้อนมหึมา!",
+          "hint_th": "🪙 โบนัส IPO มหาศาล +150,000 ฿ , 🤝 เส้นสาย +15 , 😊 ความสุข +15 , ✨ หน้าตา +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 6,
+            "connections": 15,
+            "cash": 150000,
+            "merit": 0,
+            "appearance": 5
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดสรรหุ้น ESOP มอบให้พนักงานทุกคนในบริษัทได้ร่วมเป็นเจ้าของและรวยไปด้วยกัน!",
+          "hint_th": "🪙 โบนัส CEO +100,000 ฿ , ✨ แต้มบุญ +30 , 🤝 เส้นสาย +18 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 18,
+            "cash": 100000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 15,
+            "intelligence": 3,
+            "connections": 17,
+            "cash": 125000,
+            "merit": 15,
+            "appearance": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_ceo_02",
+      "title_th": "การประชุมสามัญผู้ถือหุ้นประจำปี (AGM)! รับมือคำถามสุดหินจากนักลงทุนรายย่อยและกองทุน",
+      "min_age": 35,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_c_level_ceo",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในห้องประชุมผู้ถือหุ้นขนาดใหญ่ ผู้ถือหุ้นรายย่อยและผู้จัดการกองทุนยกมือถามจี้เรื่องแผนการจ่ายเงินปันผลและการรับมือคู่แข่งข้ามชาติ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตอบทุกคำถามด้วยตัวเลขที่โปร่งใสและประกาศจ่ายปันผลพิเศษ ผู้ถือหุ้นปรบมือโหวตผ่านทุกวาระ 99.9%!",
+          "hint_th": "🪙 เงินปันผลและโบนัส CEO +120,000 ฿ , 🧠 สมอง +8 , 🤝 เส้นสาย +12 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 8,
+            "connections": 12,
+            "cash": 120000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ประกาศแผนลงทุนธุรกิจพลังงานสะอาด (ESG & Sustainability) ดึงดูดกองทุนระดับโลกเข้ามาถือหุ้นเพิ่ม!",
+          "hint_th": "🪙 โบนัส ESG +90,000 ฿ , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +14 , 🧠 สมอง +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 14,
+            "cash": 90000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "intelligence": 8,
+            "connections": 13,
+            "cash": 105000,
+            "merit": 10
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_ceo_03",
+      "title_th": "กลุ่มทุนใหญ่พยายามกว้านซื้อหุ้นเพื่อฮุบกิจการ (Hostile Takeover)!",
+      "min_age": 35,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_c_level_ceo",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เกิดความเคลื่อนไหวผิดปกติบนกระดานหุ้น! กลุ่มทุนคู่แข่งกำลังแอบไล่เก็บหุ้นบริษัทของคุณในกระดานเพื่อหวังเข้ามายึดอำนาจบริหาร!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีคอนเนกชันระดับเจ้าสัว] ดึงพันธมิตรอัศวินม้าขาว (White Knight) เข้ามาช่วยซื้อหุ้นตั้งรับและประกาศซื้อหุ้นคืน (Treasury Stock) จนคู่แข่งถอยทัพ!",
+          "hint_th": "🪙 โบนัสปกป้องบริษัท +130,000 ฿ , 🧠 สมอง +9 , 🤝 เส้นสาย +12 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [
+            "flag_elite_connection"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 9,
+            "connections": 12,
+            "cash": 130000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดโต๊ะเจรจาเปลี่ยนศัตรูเป็นพันธมิตร ร่วมตั้งบริษัทร่วมทุน (Joint Venture) ขยายตลาดเอเชียด้วยกัน!",
+          "hint_th": "🪙 โบนัสดีลร่วมทุน +110,000 ฿ , 🤝 เส้นสาย +15 , 🧠 สมอง +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 8,
+            "connections": 15,
+            "cash": 110000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 11,
+            "intelligence": 9,
+            "connections": 14,
+            "cash": 120000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_ceo_04",
+      "title_th": "วิกฤตข่าวลือโจมตีบริษัทในโซเชียล! หุ้นร่วง 10% ในช่วงเปิดตลาดเช้า",
+      "min_age": 35,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_c_level_ceo",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช้าวันนี้มีเพจนิรนามปล่อยข่าวลือเท็จเรื่องคุณภาพสินค้าและปัญหาสภาพคล่องของบริษัท ทำให้นักลงทุนตื่นตระหนกเทขายหุ้น!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งโต๊ะแถลงข่าวด่วน (Press Conference) เปิดให้สื่อมวลชนและหน่วยงานรัฐเข้าตรวจสอบโรงงานสดๆ หุ้นดีดกลับเป็นบวกทันที!",
+          "hint_th": "🪙 โบนัสกู้วิกฤต +85,000 ฿ , 🧠 สมอง +8 , 🤝 เส้นสาย +10 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 8,
+            "connections": 10,
+            "cash": 85000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้ฝ่ายกฎหมายรวบรวมหลักฐานฟ้องดำเนินคดีผู้ปล่อยข่าวเท็จ และออกแถลงการณ์ชี้แจงต่อตลาดหลักทรัพย์ฯ",
+          "hint_th": "🪙 โบนัสบริหาร +65,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 65000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 9,
+            "cash": 75000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_ceo_05",
+      "title_th": "รางวัลสุดยอดซีอีโอแห่งปี (Best CEO of the Year) & ปาฐกถาพิเศษเวทีเศรษฐกิจระดับชาติ!",
+      "min_age": 35,
+      "max_age": 65,
+      "category": "job_specific",
+      "req_job_id": "career_c_level_ceo",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สมาคมผู้สื่อข่าวเศรษฐกิจและตลาดหลักทรัพย์ฯ คัดเลือกให้คุณได้รับรางวัลสุดยอดผู้นำองค์กรแห่งปี จากการสร้างผลกำไรควบคู่กับธรรมาภิบาลดีเยี่ยม!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขึ้นรับรางวัลอันทรงเกียรติและประกาศมอบงบ CSR สร้างโรงพยาบาลและโรงเรียนในพื้นที่ห่างไกล!",
+          "hint_th": "🪙 โบนัสเกียรติยศ +100,000 ฿ , ✨ แต้มบุญ +45 , 🤝 เส้นสาย +15 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 15,
+            "cash": 100000,
+            "merit": 45,
+            "appearance": 5
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "มอบเครดิตรางวัลนี้ให้พนักงานทุกคนในองค์กร และประกาศเพิ่มวันลาพักร้อนพร้อมโบนัสพิเศษให้พนักงาน!",
+          "hint_th": "🪙 โบนัส CEO +90,000 ฿ , ✨ แต้มบุญ +30 , 🤝 เส้นสาย +16 , 😊 ความสุข +14",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 14,
+            "intelligence": 0,
+            "connections": 16,
+            "cash": 90000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 15,
+            "connections": 16,
+            "cash": 95000,
+            "merit": 38,
+            "appearance": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_adv_01",
+      "title_th": "ประชุมคณะกรรมการตรวจสอบ (Audit Committee) ของบอร์ดมหาชนในวัยเก๋า!",
+      "min_age": 60,
+      "max_age": 90,
+      "category": "job_specific",
+      "req_job_id": "career_senior_advisor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในฐานะกรรมการอิสระและที่ปรึกษาอาวุโสหลังวัย 60 ปี คุณเข้าประชุมบอร์ดบริหารเดือนละ 2 ครั้งเพื่อช่วยตรวจสอบงบการเงินและธรรมาภิบาลของบริษัท",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใช้ประสบการณ์ 40 ปีชี้จุดเสี่ยงในแผนการลงทุน ช่วยบอร์ดประหยัดงบได้มหาศาล รับเบี้ยประชุมและโบนัสกรรมการ!",
+          "hint_th": "🪙 เบี้ยประชุมและโบนัสบอร์ด +50,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 50000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้คำแนะนำอย่างเมตตาและส่งเสริมผู้บริหารรุ่นใหม่ให้กล้าคิดกล้าทำ",
+          "hint_th": "🪙 เบี้ยประชุม +35,000 ฿ , ✨ แต้มบุญ +12 , 🤝 เส้นสาย +10 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 35000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 42500,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_adv_02",
+      "title_th": "ไกล่เกลี่ยความขัดแย้งระหว่างทายาทรุ่นที่ 2 กับผู้บริหารมืออาชีพในบอร์ด!",
+      "min_age": 60,
+      "max_age": 90,
+      "category": "job_specific",
+      "req_job_id": "career_senior_advisor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในห้องประชุมบอร์ดเกิดการปะทะคารมระหว่างทายาทหนุ่มสาวไฟแรงกับผู้บริหารรุ่นเก่า ทั้งสองฝ่ายต่างหันมาขอความเห็นชี้ขาดจากคุณในฐานะผู้อาวุโสสูงสุด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ประสานจุดแข็งของคนสองรุ่นเข้าด้วยกันอย่างชาญฉลาด บอร์ดกลับมาสามัคคีและมอบเงินขวัญถุงที่ปรึกษาพิเศษ!",
+          "hint_th": "🪙 ค่าที่ปรึกษาพิเศษ +45,000 ฿ , 🤝 เส้นสาย +12 , 🧠 สมอง +5 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 5,
+            "connections": 12,
+            "cash": 45000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนทุกคนไปรับประทานอาหารค่ำนอกรอบ ปรับความเข้าใจกันในบรรยากาศอบอุ่น",
+          "hint_th": "🪙 เบี้ยประชุมสุทธิ +30,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +9 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 30000,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "intelligence": 3,
+            "connections": 11,
+            "cash": 37500,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_adv_03",
+      "title_th": "ใช้คอนเนกชันระดับสูงช่วยประสานงานกับหน่วยงานภาครัฐให้โครงการใหญ่ผ่านฉลุย!",
+      "min_age": 60,
+      "max_age": 90,
+      "category": "job_specific",
+      "req_job_id": "career_senior_advisor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โครงการใหม่ของบริษัทติดขัดเรื่องขั้นตอนเอกสารประสานงานหลายหน่วยงาน ซึ่งลูกศิษย์และเพื่อนรุ่นน้องของคุณล้วนเป็นผู้บริหารระดับสูงอยู่ในปัจจุบัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ต่อสายตรงแนะนำขั้นตอนที่ถูกต้องตามระเบียบราชการให้จบในจุดเดียว บริษัทตบรางวัลที่ปรึกษาก้อนโต!",
+          "hint_th": "🪙 รางวัลที่ปรึกษา +55,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 55000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พาทีมผู้บริหารรุ่นใหม่ไปเข้าพบคารวะผู้ใหญ่เพื่อสร้างเครือข่ายสืบทอดต่อไป",
+          "hint_th": "🪙 เบี้ยประชุม +35,000 ฿ , 🤝 เส้นสาย +12 , ✨ แต้มบุญ +10 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 35000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "connections": 11,
+            "cash": 45000,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_adv_04",
+      "title_th": "สภามหาวิทยาลัยมีมติมอบปริญญาดุษฎีบัณฑิตกิตติมศักดิ์ & เชิญเขียนหนังสืออัตชีวประวัติ!",
+      "min_age": 60,
+      "max_age": 90,
+      "category": "job_specific",
+      "req_job_id": "career_senior_advisor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "จากผลงานและประสบการณ์อันทรงคุณค่าตลอดชีวิตการทำงาน มหาวิทยาลัยชั้นนำได้มอบปริญญาเอกกิตติมศักดิ์ให้คุณ พร้อมสำนักพิมพ์ติดต่อขอพิมพ์หนังสือชีวประวัติของคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้ารับปริญญาดุษฎีบัณฑิตกิตติมศักดิ์และมอบค่าลิขสิทธิ์หนังสือทั้งหมดเป็นทุนการศึกษาเด็กยากจน!",
+          "hint_th": "✨ แต้มบุญ +50 , 🤝 เส้นสาย +12 , 😊 ความสุข +15 , 🧠 สมอง +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 5,
+            "connections": 12,
+            "cash": 0,
+            "merit": 50,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตีพิมพ์หนังสือ 'เคล็ดลับจากศูนย์สู่บอร์ดบริหาร' ติดอันดับ Best Seller รับค่าลิขสิทธิ์ก้อนงาม!",
+          "hint_th": "🪙 ค่าลิขสิทธิ์หนังสือ +40,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +10 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 6,
+            "connections": 10,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 14,
+            "intelligence": 6,
+            "connections": 11,
+            "cash": 20000,
+            "merit": 25
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_gen_01",
+      "title_th": "ประกาศผลประเมิน KPI ปลายปี & ซองโบนัสสะท้านทรวง!",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "corporate_general",
+      "req_job_id": "any_corporate_career",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เดือนธันวาคมที่ชาวออฟฟิศและวิชาชีพรอคอย! ฝ่าย HR ส่งอีเมลแจ้งเกรดประเมินผลงานประจำปี (Grade A / B / C) และอัตราคูณโบนัสของปีนี้!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ผลงานโดดเด่นคว้าเกรด A! รับโบนัสพิเศษพร้อมปรับขึ้นเงินเดือนสูงสุดของแผนก!",
+          "hint_th": "🪙 โบนัสเกรด A +25,000 ฿ , 😊 ความสุข +10 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ได้เกรด B ตามมาตรฐาน รับโบนัสมาแบ่งเก็บออมและซื้อของขวัญปีใหม่ให้ครอบครัว",
+          "hint_th": "🪙 โบนัสมาตรฐาน +12,000 ฿ , 😊 ความสุข +6 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 12000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "connections": 3,
+            "cash": 18500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_corp_gen_02",
+      "title_th": "จับสลากของขวัญปีใหม่ออฟฟิศ! กติกาห้ามคุกกี้กล่องแดงและของใช้ในบ้าน",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "corporate_general",
+      "req_job_id": "any_corporate_career",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานปาร์ตี้ส่งท้ายปีเก่าต้อนรับปีใหม่ของออฟฟิศ มีการจับสลากแลกของขวัญขั้นต่ำ 1,000 บาท และการจับรางวัลใหญ่จากผู้บริหาร!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เตรียมของขวัญสุดครีเอทีฟไปจับสลาก และดวงเฮงจับได้ซองเงินสดรางวัลพิเศษจากบอส! (-1,000฿)",
+          "hint_th": "🪙 รับรางวัลสุทธิ +5,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สละรางวัลที่ได้ให้น้องใหม่ในทีมที่เพิ่งเริ่มทำงาน ได้ใจลูกน้องและเพื่อนร่วมงานทั้งแผนก! (-1,000฿)",
+          "hint_th": "🪙 ค่าของขวัญ -1,000 ฿ , ✨ แต้มบุญ +10 , 🤝 เส้นสาย +9 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": -1000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "connections": 8,
+            "cash": 2000,
+            "merit": 5
+          }
+        }
+      ]
+    }
+  ]
+}

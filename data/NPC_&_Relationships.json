@@ -1,0 +1,1459 @@
+{
+  "version": "1.0.0",
+  "database_name": "NPC_&_Relationships",
+  "thai_name_pools": {
+    "nicknames_boomer_genx": [
+      "สมชาย",
+      "อ๊อด",
+      "แดง",
+      "ต๋อย",
+      "หมู",
+      "เล็ก",
+      "นิด",
+      "ติ๋ม",
+      "หน่อย",
+      "เปี๊ยก",
+      "อ้วน",
+      "กบ",
+      "โต้ง",
+      "เจี๊ยบ",
+      "แหม่ม",
+      "ป้อม",
+      "ตุ๊ก",
+      "จอย",
+      "เอ๋",
+      "หนุ่ม"
+    ],
+    "nicknames_millennial_genz": [
+      "บอส",
+      "แบงค์",
+      "ก้อย",
+      "มายด์",
+      "พลอย",
+      "นัท",
+      "เฟิร์น",
+      "เต้ย",
+      "ปอนด์",
+      "แนน",
+      "อาร์ม",
+      "เบสท์",
+      "ฟลุ๊ค",
+      "แพรว",
+      "ต้น",
+      "มิ้นท์",
+      "เจมส์",
+      "ออม",
+      "พิม",
+      "กานต์"
+    ],
+    "nicknames_hisoclass_gen_alpha": [
+      "พอร์ช",
+      "พราว",
+      "เฌอแตม",
+      "ปารีส",
+      "มิเกล",
+      "เจเดน",
+      "อาเธอร์",
+      "เซลีน",
+      "ดีแลน",
+      "เรซซิ่ง",
+      "นารา",
+      "คิน",
+      "ควีน",
+      "ไทก้า",
+      "เอวา",
+      "ลีโอ",
+      "โซเฟีย",
+      "มิลิน",
+      "โปรด",
+      "ภีม"
+    ],
+    "first_names_male_traditional": [
+      "สุรพล",
+      "สมคิด",
+      "สมศักดิ์",
+      "บุญมี",
+      "ทองดี",
+      "ประเสริฐ",
+      "วิชัย",
+      "อำนาจ",
+      "สมพงษ์",
+      "มานะ",
+      "ชูศักดิ์",
+      "บุญเลิศ",
+      "ทองสุข",
+      "สนั่น",
+      "สำราญ",
+      "ไพฑูรย์",
+      "เสวก",
+      "คำรณ",
+      "ณรงค์",
+      "สมบูรณ์"
+    ],
+    "first_names_female_traditional": [
+      "สมศรี",
+      "บุญเรือน",
+      "ทองใบ",
+      "มะลิ",
+      "ปราณี",
+      "วันเพ็ญ",
+      "กัลยา",
+      "สุภาพร",
+      "บัวผัน",
+      "สมหญิง",
+      "จันทร์เพ็ญ",
+      "รำไพ",
+      "สายหยุด",
+      "อำพร",
+      "บุญตา",
+      "วิไลวรรณ",
+      "นงเยาว์",
+      "ประทุม",
+      "สำเนียง",
+      "ชไมพร"
+    ],
+    "first_names_male_modern": [
+      "ณภัทร",
+      "ธนกร",
+      "ภูริทัต",
+      "กิตติภพ",
+      "ศุภณัฐ",
+      "ปริญญา",
+      "อติวิชญ์",
+      "ชยพล",
+      "ธีรเดช",
+      "วรเมธ",
+      "ภัทรพล",
+      "กวินทร์",
+      "นนทกร",
+      "พชร",
+      "อชิระ",
+      "เตชินท์",
+      "ปุญญพัฒน์",
+      "เมธาสิทธิ์",
+      "กฤตภาส",
+      "จิรภัทร"
+    ],
+    "first_names_female_modern": [
+      "ปภาวรินทร์",
+      "กมลชนก",
+      "พิมพ์ชนก",
+      "ณัฐธิดา",
+      "ญาณิศา",
+      "ชนัญชิดา",
+      "กัญญารัตน์",
+      "ภัทรานิษฐ์",
+      "วรัญญา",
+      "ลลิตา",
+      "ปุณยวีร์",
+      "ศศิประภา",
+      "อภิชญา",
+      "รินรดา",
+      "ธัญชนก",
+      "พิชญาภา",
+      "นภัสสร",
+      "กานต์พิชชา",
+      "แพรวา",
+      "ชญานิษฐ์"
+    ],
+    "last_names_by_class": {
+      "class_1_2_rural": [
+        "ใจดี",
+        "มีสุข",
+        "บุญมา",
+        "รักถิ่น",
+        "ขยันยิ่ง",
+        "ศรีสวัสดิ์",
+        "ทองคำ",
+        "แก้วมณี",
+        "โพธิ์งาม",
+        "นาดี",
+        "คำภีร์",
+        "บุญช่วย",
+        "สุขสำราญ",
+        "มั่นคง",
+        "ดีเสมอ",
+        "คำกอง",
+        "แสนทวี",
+        "โคตรมี"
+      ],
+      "class_3_4_urban": [
+        "วงศ์สว่าง",
+        "เจริญกิจ",
+        "ตั้งเจริญ",
+        "เลิศวิไล",
+        "พิพัฒน์พงศ์",
+        "อัศวเมธี",
+        "กิจไพศาล",
+        "รัตนโชติ",
+        "สกุลดี",
+        "วรโชติ",
+        "โชติช่วง",
+        "ธนากิจ",
+        "วัฒนากูล",
+        "ศิริวัฒน์",
+        "เตชะไพบูลย์",
+        "เกียรติสกุล",
+        "พงศ์พานิช",
+        "วรากุล"
+      ],
+      "class_5_elite": [
+        "อัครเดโชชัย",
+        "จิระโภคินกุล",
+        "พิพัฒน์ธนากุล",
+        "เตชะวรเศรษฐ์",
+        "อัศวโภคินทร์",
+        "รัตนมหาศาล",
+        "ธนเกียรติโภคิน",
+        "วงศ์อัครเมธี",
+        "ศิริธนไพศาล",
+        "เกียรติวรโชติ",
+        "มหาทรัพย์สมบูรณ์",
+        "เลิศอัครสกุล"
+      ]
+    }
+  },
+  "family_and_friend_archetypes": [
+    {
+      "archetype_id": "npc_arch_father",
+      "name_template": "พ่อ{random_name}",
+      "role_title_th": "คุณพ่อ",
+      "gender": "male",
+      "min_age_to_meet": 0,
+      "starting_relationship": 80,
+      "grants_flag_at_100": "flag_parent_hearts_5",
+      "inheritance_mechanic": {
+        "pass_away_age_range": [
+          75,
+          80
+        ],
+        "inheritance_by_class": {
+          "class_1": 0,
+          "class_2": 20000,
+          "class_3": 300000,
+          "class_4": 5000000,
+          "class_5": 50000000
+        }
+      },
+      "yearly_passive_effects_when_high_rel": {
+        "happiness": 1,
+        "connections": 1
+      },
+      "description_th": "เสาหลักของครอบครัวที่ทำมาหากินตามชนชั้นฐานะ เมื่อท่านจากไปตามอายุขัยจะส่งมอบมรดกให้ตามฐานะของตระกูล"
+    },
+    {
+      "archetype_id": "npc_arch_mother",
+      "name_template": "แม่{random_name}",
+      "role_title_th": "คุณแม่",
+      "gender": "female",
+      "min_age_to_meet": 0,
+      "starting_relationship": 85,
+      "grants_flag_at_100": "flag_parent_hearts_5",
+      "special_support_event": {
+        "trigger_when_cash_below": 0,
+        "emergency_cash_aid": 10000
+      },
+      "yearly_passive_effects_when_high_rel": {
+        "health": 1,
+        "happiness": 2
+      },
+      "description_th": "ผู้คอยห่วงใยถามไถ่ว่ากินข้าวหรือยังเสมอ หากความสัมพันธ์เต็ม 5 ดวง แม่จะคอยแอบช่วยซัพพอร์ตเงินเก็บยามลูกตกอับ"
+    },
+    {
+      "archetype_id": "npc_arch_primary_friend",
+      "name_template": "{random_name} (เพื่อนวัยประถม)",
+      "role_title_th": "เพื่อนสนิทข้างบ้านวัยประถม",
+      "gender": "any",
+      "min_age_to_meet": 5,
+      "starting_relationship": 50,
+      "req_flags": [],
+      "grants_flags_when_close": [],
+      "yearly_passive_effects_when_high_rel": {
+        "happiness": 2,
+        "connections": 1
+      },
+      "description_th": "เพื่อนเล่นกระโดดยางและปั่นจักรยานมาด้วยกันตั้งแต่เด็ก คอยรับฟังปัญหาชีวิตได้ทุกเรื่อง"
+    },
+    {
+      "archetype_id": "npc_arch_highschool_nerd_friend",
+      "name_template": "{random_name} (เพื่อนเด็กเรียน)",
+      "role_title_th": "เพื่อนแว่นหัวกะทิมัธยมปลาย",
+      "gender": "any",
+      "min_age_to_meet": 13,
+      "starting_relationship": 40,
+      "req_flags": [],
+      "grants_flags_when_close": [
+        "tag_bookworm"
+      ],
+      "yearly_passive_effects_when_high_rel": {
+        "intelligence": 2,
+        "happiness": 1
+      },
+      "description_th": "เพื่อนร่วมชั้นที่ขยันจดเลกเชอร์และช่วยติวหนังสือให้ก่อนสอบ ช่วยดึงเกรดและค่าสติปัญญาให้สูงขึ้น"
+    },
+    {
+      "archetype_id": "npc_arch_highschool_gang_friend",
+      "name_template": "{random_name} (เพื่อนแก๊งหลังห้อง)",
+      "role_title_th": "หัวโจกแก๊งเพื่อนสายลุยหลังห้อง",
+      "gender": "any",
+      "min_age_to_meet": 13,
+      "starting_relationship": 45,
+      "req_flags": [],
+      "grants_flags_when_close": [
+        "tag_rebel_teen"
+      ],
+      "yearly_passive_effects_when_high_rel": {
+        "happiness": 2,
+        "connections": 2,
+        "intelligence": -1
+      },
+      "description_th": "เพื่อนรักสายปาร์ตี้และรักพวกพ้อง พาไปเปิดโลกกว้างและเพิ่มเส้นสาย แต่ระวังถูกชวนโดดเรียนจนติดป้ายวัยรุ่นเลือดร้อน"
+    },
+    {
+      "archetype_id": "npc_arch_uni_colleague",
+      "name_template": "{random_name} (เพื่อนมหาลัย/ออฟฟิศ)",
+      "role_title_th": "เพื่อนสนิทร่วมรุ่น / เพื่อนร่วมงาน",
+      "gender": "any",
+      "min_age_to_meet": 18,
+      "starting_relationship": 40,
+      "req_flags": [],
+      "grants_flags_when_close": [],
+      "yearly_passive_effects_when_high_rel": {
+        "happiness": 1,
+        "connections": 2
+      },
+      "description_th": "เพื่อนที่ร่วมทุกข์ร่วมสุขทำโปรเจกต์จบและปรับทุกข์เรื่องเจ้านาย ช่วยฝากงานและแนะนำโอกาสย้ายงานอัพเงินเดือน"
+    },
+    {
+      "archetype_id": "npc_arch_business_partner",
+      "name_template": "{random_name} (หุ้นส่วนธุรกิจ)",
+      "role_title_th": "พาร์ทเนอร์และเพื่อนนักธุรกิจ",
+      "gender": "any",
+      "min_age_to_meet": 20,
+      "starting_relationship": 35,
+      "req_flags": [
+        "flag_merchant_permit"
+      ],
+      "grants_flags_when_close": [
+        "tag_young_merchant"
+      ],
+      "yearly_passive_effects_when_high_rel": {
+        "intelligence": 1,
+        "connections": 3
+      },
+      "description_th": "เพื่อนคู่คิดในแวดวงการค้าและการลงทุน คอยชี้ช่องทางทำมาหากินและแหล่งรับสต๊อกสินค้าราคาส่ง"
+    },
+    {
+      "archetype_id": "npc_arch_elite_mentor",
+      "name_template": "คุณ{random_name} (ผู้ใหญ่ใจดี)",
+      "role_title_th": "รุ่นพี่นักธุรกิจระดับสูง / ผู้ใหญ่ในวงการ",
+      "gender": "any",
+      "min_age_to_meet": 25,
+      "starting_relationship": 25,
+      "req_stats": {
+        "connections": 60
+      },
+      "req_flags": [],
+      "grants_flags_when_close": [
+        "flag_elite_connection"
+      ],
+      "yearly_passive_effects_when_high_rel": {
+        "connections": 4,
+        "merit": 1
+      },
+      "description_th": "ผู้หลักผู้ใหญ่ที่มีบารมีในสังคมไทย หากเข้าไปฝากตัวและทำความสัมพันธ์จนเต็ม 5 ดวง จะมอบป้ายคอนเนกชันระดับเจ้าสัวให้"
+    }
+  ],
+  "romantic_partner_archetypes": [
+    {
+      "archetype_id": "partner_highschool_sweetheart",
+      "name_template": "{random_name}",
+      "role_title_th": "รักแรกวัยเรียน / พนักงานบัญชี",
+      "gender": "any",
+      "min_age_to_meet": 15,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_millennial_genz",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {},
+      "req_social_class_or_flags": [],
+      "grants_flags_on_marriage": [],
+      "dowry_marriage_cost_cash": 50000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 180000,
+        "annual_personal_expense_cash": 100000,
+        "net_annual_cash_contribution": 80000,
+        "possible_financial_traits": [
+          "trait_spouse_saver",
+          "trait_spouse_supportive"
+        ]
+      },
+      "description_th": "ความรักใสๆ ตั้งแต่สมัยชุดนักเรียนที่เติบโตมาเป็นพนักงานบัญชีผู้เรียบร้อย รักเดียวใจเดียวและช่วยเก็บหอมรอมริบสร้างครอบครัว"
+    },
+    {
+      "archetype_id": "partner_rider_factory_worker",
+      "name_template": "{random_name}",
+      "role_title_th": "คนสู้ชีวิต / ไรเดอร์หรือหนุ่มสาวโรงงาน",
+      "gender": "any",
+      "min_age_to_meet": 18,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_millennial_genz",
+        "first_name_male_pool": "first_names_male_traditional",
+        "first_name_female_pool": "first_names_female_traditional",
+        "last_name_pool": "class_1_2_rural"
+      },
+      "req_stats": {},
+      "req_social_class_or_flags": [],
+      "grants_flags_on_marriage": [],
+      "dowry_marriage_cost_cash": 30000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 150000,
+        "annual_personal_expense_cash": 90000,
+        "net_annual_cash_contribution": 60000,
+        "possible_financial_traits": [
+          "trait_spouse_saver",
+          "trait_spouse_family_burden"
+        ]
+      },
+      "description_th": "คนขยันสู้งานหนักที่ไม่เกี่ยงความลำบาก ค่าสินสอดไม่แพงและพร้อมกัดก้อนเกลือกินไปด้วยกัน แต่อาจมีภาระทางบ้านเดิมต้องดูแล"
+    },
+    {
+      "archetype_id": "partner_marketing_senior",
+      "name_template": "{random_name}",
+      "role_title_th": "รุ่นพี่สายกิจกรรม / นักการตลาดไฟแรง",
+      "gender": "any",
+      "min_age_to_meet": 18,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_millennial_genz",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {
+        "connections": 30
+      },
+      "req_social_class_or_flags": [],
+      "grants_flags_on_marriage": [],
+      "dowry_marriage_cost_cash": 100000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 300000,
+        "annual_personal_expense_cash": 200000,
+        "net_annual_cash_contribution": 100000,
+        "possible_financial_traits": [
+          "trait_spouse_supportive",
+          "trait_spouse_shopaholic"
+        ]
+      },
+      "description_th": "หนุ่มสาวออฟฟิศบุคลิกดี พูดจาเก่งและเข้าสังคมเก่งมาก ช่วยเสริมหน้าตาทางสังคมได้ดีแต่มีไลฟ์สไตล์ชอบช้อปปิ้งตามเทรนด์"
+    },
+    {
+      "archetype_id": "partner_civil_servant",
+      "name_template": "{random_name}",
+      "role_title_th": "ข้าราชการครู / พยาบาลวิชาชีพ",
+      "gender": "any",
+      "min_age_to_meet": 22,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_millennial_genz",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {
+        "merit": 10
+      },
+      "req_social_class_or_flags": [],
+      "grants_flags_on_marriage": [
+        "flag_welfare_card"
+      ],
+      "dowry_marriage_cost_cash": 80000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 216000,
+        "annual_personal_expense_cash": 120000,
+        "net_annual_cash_contribution": 96000,
+        "possible_financial_traits": [
+          "trait_spouse_saver",
+          "trait_spouse_family_burden"
+        ]
+      },
+      "description_th": "คู่ครองในฝันของพ่อแม่คนไทย มีความมั่นคงสูงและเมื่อจดทะเบียนสมรสจะทำให้ผู้เล่นได้รับสิทธิ์เบิกค่ารักษาพยาบาลฟรีไปด้วย"
+    },
+    {
+      "archetype_id": "partner_online_seller",
+      "name_template": "{random_name}",
+      "role_title_th": "พ่อค้าแม่ค้าออนไลน์ไลฟ์สด",
+      "gender": "any",
+      "min_age_to_meet": 18,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_millennial_genz",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {},
+      "req_social_class_or_flags": [
+        "flag_smartphone"
+      ],
+      "grants_flags_on_marriage": [
+        "tag_young_merchant"
+      ],
+      "dowry_marriage_cost_cash": 120000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 360000,
+        "annual_personal_expense_cash": 220000,
+        "net_annual_cash_contribution": 140000,
+        "possible_financial_traits": [
+          "trait_spouse_supportive",
+          "trait_spouse_high_risk_investor"
+        ]
+      },
+      "description_th": "ขยันไลฟ์สดขายของและแพ็กพัสดุทั้งวัน หาเงินเก่งและคล่องแคล่วว่องไว ช่วยเพิ่มทักษะการค้าขายให้กับครอบครัว"
+    },
+    {
+      "archetype_id": "partner_social_influencer",
+      "name_template": "{random_name}",
+      "role_title_th": "ดาวโซเชียล / อินฟลูเอนเซอร์สายแฟชั่น",
+      "gender": "any",
+      "min_age_to_meet": 18,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_hisoclass_gen_alpha",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {
+        "appearance": 50
+      },
+      "req_social_class_or_flags": [
+        "flag_luxury_gadget",
+        "tag_artistic_expressive",
+        "flag_has_car"
+      ],
+      "grants_flags_on_marriage": [],
+      "dowry_marriage_cost_cash": 200000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 420000,
+        "annual_personal_expense_cash": 380000,
+        "net_annual_cash_contribution": 40000,
+        "possible_financial_traits": [
+          "trait_spouse_shopaholic"
+        ]
+      },
+      "description_th": "สวยหล่อระดับเน็ตไอดอลยอดฟอลหลักแสน มีรายได้จากงานรีวิวสูงแต่ก็หมดไปกับค่าเสื้อผ้าแบรนด์เนมและคลินิกความงามเกือบหมด"
+    },
+    {
+      "archetype_id": "partner_crypto_trader",
+      "name_template": "{random_name}",
+      "role_title_th": "นักลงทุนหุ้นและคริปโตพอร์ตซิ่ง",
+      "gender": "any",
+      "min_age_to_meet": 20,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_millennial_genz",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {},
+      "req_social_class_or_flags": [
+        "flag_investment_account",
+        "tag_computer_nerd",
+        "flag_financial_literacy"
+      ],
+      "grants_flags_on_marriage": [
+        "flag_financial_literacy"
+      ],
+      "dowry_marriage_cost_cash": 150000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 240000,
+        "annual_personal_expense_cash": 160000,
+        "net_annual_cash_contribution": 80000,
+        "possible_financial_traits": [
+          "trait_spouse_high_risk_investor"
+        ]
+      },
+      "description_th": "เฝ้าหน้าจอกราฟตลอด 24 ชั่วโมง ชีวิตขึ้นสุดลงสุดตามราคาตลาดคริปโต พร้อมชวนคุณรวยเละหรือติดดอยไปด้วยกัน"
+    },
+    {
+      "archetype_id": "partner_medical_doctor",
+      "name_template": "หมอ{random_name}",
+      "role_title_th": "แพทย์ประจำโรงพยาบาล",
+      "gender": "any",
+      "min_age_to_meet": 24,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_millennial_genz",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {
+        "intelligence": 70
+      },
+      "req_social_class_or_flags": [
+        "flag_deg_medicine",
+        "flag_medical_license",
+        "flag_private_hospital_access",
+        "flag_elite_connection"
+      ],
+      "grants_flags_on_marriage": [
+        "flag_private_hospital_access"
+      ],
+      "dowry_marriage_cost_cash": 400000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 960000,
+        "annual_personal_expense_cash": 360000,
+        "net_annual_cash_contribution": 600000,
+        "possible_financial_traits": [
+          "trait_spouse_workaholic_elite",
+          "trait_spouse_supportive"
+        ]
+      },
+      "description_th": "คุณหมอโปรไฟล์เลิศ รายได้สูงและมั่นคงมาก ช่วยดูแลสุขภาพของคนในครอบครัวได้ดีเยี่ยม แต่ต้องเข้าใจเรื่องเวลาเข้าเวรที่ยุ่งมาก"
+    },
+    {
+      "archetype_id": "partner_sme_heir",
+      "name_template": "{random_name}",
+      "role_title_th": "ทายาทเจ้าของโรงงาน / ร้านทอง SME",
+      "gender": "any",
+      "min_age_to_meet": 20,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_hisoclass_gen_alpha",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_3_4_urban"
+      },
+      "req_stats": {
+        "connections": 55
+      },
+      "req_social_class_or_flags": [
+        "flag_family_business",
+        "flag_private_school_kid",
+        "flag_bachelor_degree"
+      ],
+      "grants_flags_on_marriage": [
+        "flag_family_business"
+      ],
+      "dowry_marriage_cost_cash": 300000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 800000,
+        "annual_personal_expense_cash": 300000,
+        "net_annual_cash_contribution": 500000,
+        "possible_financial_traits": [
+          "trait_spouse_supportive",
+          "trait_spouse_shopaholic"
+        ]
+      },
+      "description_th": "ลูกหลานเฒ่าแก่โรงงานและร้านทองประจำจังหวัด แต่งงานด้วยแล้วได้ทั้งเงินซัพพอร์ตก้อนใหญ่และปลดล็อกสิทธิ์บริหารธุรกิจ SME ทันที"
+    },
+    {
+      "archetype_id": "partner_tycoon_heir",
+      "name_template": "คุณ{random_name}",
+      "role_title_th": "ทายาทตระกูลเจ้าสัวแสนล้าน",
+      "gender": "any",
+      "min_age_to_meet": 22,
+      "name_pool_tier": {
+        "nickname_pool": "nicknames_hisoclass_gen_alpha",
+        "first_name_male_pool": "first_names_male_modern",
+        "first_name_female_pool": "first_names_female_modern",
+        "last_name_pool": "class_5_elite"
+      },
+      "req_stats": {
+        "connections": 85
+      },
+      "req_social_class_or_flags": [
+        "flag_elite_connection",
+        "flag_international_school",
+        "flag_luxury_status"
+      ],
+      "grants_flags_on_marriage": [
+        "flag_elite_connection",
+        "flag_private_hospital_access"
+      ],
+      "dowry_marriage_cost_cash": 1000000,
+      "spouse_economy_after_marriage": {
+        "annual_income_cash": 2000000,
+        "annual_personal_expense_cash": 800000,
+        "net_annual_cash_contribution": 1200000,
+        "possible_financial_traits": [
+          "trait_spouse_workaholic_elite",
+          "trait_spouse_shopaholic"
+        ]
+      },
+      "description_th": "ไฮโซตระกูลดังระดับประเทศ การได้แต่งงานด้วยคือทางลัดสู่ชนชั้นมหาเศรษฐีที่มีเงินปันผลไหลเข้ากระเป๋ากลางปีละกว่าล้านบาท"
+    }
+  ],
+  "spouse_financial_traits_and_events": [
+    {
+      "trait_id": "trait_spouse_saver",
+      "name_th": "คู่ชีวิตสายประหยัดอดออม",
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "household_living_cost_multiplier": 0.9,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "annual_trigger_chance_percent": 20,
+      "mid_year_drama_event": {
+        "event_id": "evt_spouse_secret_savings",
+        "title_th": "เงินเก็บลับในกระปุกของคู่รัก!",
+        "description_th": "คู่สมรสของคุณแอบหยอดเงินทอนค่ากับข้าวและค่าน้ำค่าไฟที่ประหยัดได้ตลอดปี มาเปิดซองเซอร์ไพรส์ให้คุณ!",
+        "choices": [
+          {
+            "choice_label_th": "หอมแก้มขอบคุณและรับเงินเข้าบัญชี",
+            "cash_effect": 30000,
+            "relationship_change": 10,
+            "stat_effects": {
+              "happiness": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "trait_id": "trait_spouse_supportive",
+      "name_th": "คู่คิดซัพพอร์ตการงานและจิตใจ",
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "household_living_cost_multiplier": 1.0,
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "annual_trigger_chance_percent": 20,
+      "mid_year_drama_event": {
+        "event_id": "evt_spouse_career_help",
+        "title_th": "คู่ชีวิตช่วยคลี่คลายปัญหา!",
+        "description_th": "ช่วงที่คุณเหนื่อยล้าและเจอปัญหาติดขัดในงาน คู่สมรสได้เข้ามาช่วยดูแลอาหารการกินและใช้คอนเนกชันส่วนตัวช่วยแก้ปัญหาให้",
+        "choices": [
+          {
+            "choice_label_th": "ให้ช่วยดูแลฟื้นฟูสุขภาพกายใจ",
+            "cash_effect": 0,
+            "relationship_change": 8,
+            "stat_effects": {
+              "health": 5,
+              "happiness": 4
+            }
+          },
+          {
+            "choice_label_th": "ให้ช่วยเจรจาเพิ่มรายได้พิเศษ",
+            "cash_effect": 20000,
+            "relationship_change": 5,
+            "stat_effects": {
+              "connections": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "trait_id": "trait_spouse_shopaholic",
+      "name_th": "สายเปย์แบรนด์เนม / ติดหรูฟุ่มเฟือย",
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "household_living_cost_multiplier": 1.15,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 2
+      },
+      "annual_trigger_chance_percent": 25,
+      "mid_year_drama_event": {
+        "event_id": "evt_spouse_luxury_overspend",
+        "title_th": "บิลบัตรเครดิตช็อกโลก!",
+        "description_th": "คู่สมรสของคุณแอบรูดบัตรซื้อกระเป๋าแบรนด์เนมรุ่นลิมิเต็ดและของแต่งรถจนเกินวงเงินไป 60,000 บาท และมาอ้อนขอให้คุณช่วยโปะบิลนี้!",
+        "choices": [
+          {
+            "choice_label_th": "ยอมควักเงินจ่ายให้เพื่อความสบายใจ (-60,000฿)",
+            "cash_effect": -60000,
+            "relationship_change": 10,
+            "stat_effects": {
+              "happiness": 3,
+              "appearance": 2
+            }
+          },
+          {
+            "choice_label_th": "ยื่นคำขาดไม่จ่ายและอบรมเรื่องความประหยัด",
+            "cash_effect": 0,
+            "relationship_change": -20,
+            "stat_effects": {
+              "happiness": -5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "trait_id": "trait_spouse_high_risk_investor",
+      "name_th": "นักลงทุนสายซิ่ง / ชอบเล่นแชร์เก็งกำไร",
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "household_living_cost_multiplier": 1.0,
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "annual_trigger_chance_percent": 25,
+      "mid_year_drama_event": {
+        "event_id": "evt_spouse_crypto_chitfund_gamble",
+        "title_th": "คู่สมรสชวนลงขันโปรเจกต์ลับ!",
+        "description_th": "คู่สมรสของคุณตื่นเต้นมาก บอกว่ามีวงแชร์ดอกเบี้ยสูงและเหรียญคริปโตต้นน้ำที่กำลังจะพุ่ง เลยนำเงินเก็บของบ้านไปลงไว้เรียบร้อยแล้ว!",
+        "choices": [
+          {
+            "choice_label_th": "ช่วยวิเคราะห์กราฟและรีบสั่งขายทำกำไร (ต้องมีป้ายความรู้การเงิน)",
+            "req_flags": [
+              "flag_financial_literacy"
+            ],
+            "cash_effect": 150000,
+            "relationship_change": 10,
+            "stat_effects": {
+              "happiness": 8
+            }
+          },
+          {
+            "choice_label_th": "ปล่อยตามดวง... ปรากฏว่าเท้าแชร์บิน/เหรียญร่วงหนัก!",
+            "cash_effect": -100000,
+            "relationship_change": -10,
+            "stat_effects": {
+              "happiness": -8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "trait_id": "trait_spouse_family_burden",
+      "name_th": "เดอะแบกครอบครัวฝั่งแฟน",
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "household_living_cost_multiplier": 1.05,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 3,
+        "appearance": 0
+      },
+      "annual_trigger_chance_percent": 25,
+      "mid_year_drama_event": {
+        "event_id": "evt_spouse_inlaw_borrow_money",
+        "title_th": "ญาติฝั่งแฟนโทรมาขอยืมเงินด่วน!",
+        "description_th": "ญาติพี่น้องของคู่สมรสประสบปัญหาหมุนเงินไม่ทัน โทรมาขอความช่วยเหลือด่วน 25,000 บาท โดยคู่สมรสของคุณทำหน้าลำบากใจมาก",
+        "choices": [
+          {
+            "choice_label_th": "โอนช่วยไปถือว่าทำบุญให้ครอบครัวแฟน (-25,000฿)",
+            "cash_effect": -25000,
+            "relationship_change": 10,
+            "stat_effects": {
+              "happiness": -1,
+              "merit": 5
+            }
+          },
+          {
+            "choice_label_th": "ปฏิเสธเสียงแข็งเพราะเราก็ต้องกินต้องใช้",
+            "cash_effect": 0,
+            "relationship_change": -15,
+            "stat_effects": {
+              "happiness": -3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "trait_id": "trait_spouse_workaholic_elite",
+      "name_th": "บ้างานและสังคมไฮโซ",
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "household_living_cost_multiplier": 1.1,
+      "yearly_relationship_decay": -5,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": -1,
+        "intelligence": 1,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 2
+      },
+      "annual_trigger_chance_percent": 20,
+      "mid_year_drama_event": {
+        "event_id": "evt_spouse_neglect_divorce_warning",
+        "title_th": "ช่องว่างระหว่างเราเพราะงานยุ่ง!",
+        "description_th": "คู่สมรสของคุณโหมงานหนักและออกงานสังคมแทบทุกคืนจนแทบไม่ได้คุยกัน เริ่มมีปากเสียงเรื่องการไม่มีเวลาให้ครอบครัว",
+        "choices": [
+          {
+            "choice_label_th": "จัดทริปดินเนอร์หรูง้อและปรับความเข้าใจ (-15,000฿)",
+            "cash_effect": -15000,
+            "relationship_change": 15,
+            "stat_effects": {
+              "happiness": 4
+            }
+          },
+          {
+            "choice_label_th": "ต่างคนต่างอยู่ ไม่แคร์เหมือนกัน",
+            "cash_effect": 0,
+            "relationship_change": -25,
+            "stat_effects": {
+              "happiness": -6
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "relationship_actions": [
+    {
+      "action_id": "rel_act_talk_parents",
+      "name_th": "คุยกับพ่อแม่ / กอดแม่ให้ชื่นใจ",
+      "target_npc_group": "parents",
+      "min_age": 3,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "relationship_change": 5,
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 1,
+        "appearance": 0
+      },
+      "description_th": "ไถ่ถามสารทุกข์สุกดิบและกอดพ่อแม่ เพิ่มความอบอุ่นในครอบครัวโดยไม่เสียเงิน"
+    },
+    {
+      "action_id": "rel_act_help_parents_work",
+      "name_th": "ช่วยงานบ้าน / ช่วยพ่อแม่ทำมาหากิน",
+      "target_npc_group": "parents",
+      "min_age": 6,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "relationship_change": 8,
+      "stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 2,
+        "appearance": 0
+      },
+      "description_th": "ลงแรงกวาดบ้านถูบ้านและช่วยงานพ่อแม่ เหนื่อยเล็กน้อยแต่พ่อแม่รักและเอ็นดูมาก"
+    },
+    {
+      "action_id": "rel_act_give_parents_allowance",
+      "name_th": "ใส่ซองส่งเงินกตัญญูให้พ่อแม่รายปี",
+      "target_npc_group": "parents",
+      "min_age": 18,
+      "cost_cash_student": 10000,
+      "cost_cash_adult": 10000,
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_filial_child"
+      ],
+      "relationship_change": 15,
+      "stat_effects": {
+        "health": 0,
+        "happiness": 4,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 10,
+        "appearance": 0
+      },
+      "description_th": "มอบเงินน้ำพักน้ำแรงให้พ่อแม่ไว้ใช้จ่ายยามแก่เฒ่า ได้รับพรอันประเสริฐและแต้มบุญก้อนโต"
+    },
+    {
+      "action_id": "rel_act_group_chat_friends",
+      "name_th": "ส่งมีมและคุยแชทกลุ่มแก๊งเพื่อน",
+      "target_npc_group": "friends",
+      "min_age": 12,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "req_flags": [
+        "flag_smartphone"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "relationship_change": 5,
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ทักแชทอัปเดตชีวิตและส่งมีมตลกๆ ในกลุ่มไลน์เพื่อน ช่วยรักษาความสัมพันธ์ไม่ให้ห่างเหิน"
+    },
+    {
+      "action_id": "rel_act_mookata_party",
+      "name_th": "นัดปาร์ตี้เลี้ยงหมูกระทะแก๊งเพื่อน",
+      "target_npc_group": "friends",
+      "min_age": 12,
+      "cost_cash_student": 200,
+      "cost_cash_adult": 1500,
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_monkhood_active"
+      ],
+      "grants_flags": [],
+      "relationship_change": 12,
+      "stat_effects": {
+        "health": -1,
+        "happiness": 3,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "หมูกระทะจะเยียวยาทุกสิ่ง นัดรวมตัวเพื่อนฝูงปิ้งย่างพูดคุยกระชับมิตรและขยายคอนเนกชัน"
+    },
+    {
+      "action_id": "rel_act_chat_crush",
+      "name_th": "ทักแชทหยอดคำหวานจีบคนคุย/แฟน",
+      "target_npc_group": "partner",
+      "min_age": 12,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "req_flags": [
+        "flag_smartphone"
+      ],
+      "forbidden_flags": [
+        "flag_monkhood_active"
+      ],
+      "grants_flags": [],
+      "relationship_change": 6,
+      "stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ส่งข้อความอรุณสวัสดิ์และบอกฝันดีทุกคืน ค่อยๆ สะสมแต้มหัวใจโดยไม่ต้องเสียเงิน"
+    },
+    {
+      "action_id": "rel_act_date_temple_fair_movie",
+      "name_th": "ชวนไปเดทงานวัด / ดูหนังกินข้าว",
+      "target_npc_group": "partner",
+      "min_age": 13,
+      "cost_cash_student": 150,
+      "cost_cash_adult": 1200,
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_monkhood_active"
+      ],
+      "grants_flags": [],
+      "relationship_change": 12,
+      "stat_effects": {
+        "health": 0,
+        "happiness": 4,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "พาคนพิเศษไปเดินเที่ยวปาลูกโป่งงานวัดหรือดูหนังรอบดึก สร้างความทรงจำโรแมนติกร่วมกัน"
+    },
+    {
+      "action_id": "rel_act_ask_to_be_couple",
+      "name_th": "สารภาพรักขอเป็นแฟนอย่างเป็นทางการ",
+      "target_npc_group": "partner",
+      "min_age": 15,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "req_relationship_min": 60,
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_monkhood_active"
+      ],
+      "grants_flags": [
+        "flag_in_relationship"
+      ],
+      "relationship_change": 10,
+      "stat_effects": {
+        "health": 0,
+        "happiness": 5,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "เลื่อนสถานะจากคนคุยเป็นคนรู้ใจเมื่อค่าความสัมพันธ์ถึง 60 แต้ม (หัวใจ 3 ดวง)"
+    },
+    {
+      "action_id": "rel_act_propose_marriage",
+      "name_th": "คุกเข่าขอแต่งงาน & จดทะเบียนสมรส 💍",
+      "target_npc_group": "partner",
+      "min_age": 20,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "uses_partner_dowry_cost": true,
+      "req_relationship_min": 100,
+      "req_flags": [
+        "flag_sui_juris_20",
+        "flag_has_wedding_ring",
+        "flag_partner_hearts_5"
+      ],
+      "forbidden_flags": [
+        "flag_monkhood_active",
+        "flag_married_registered"
+      ],
+      "grants_flags": [
+        "flag_married_registered"
+      ],
+      "relationship_change": 20,
+      "stat_effects": {
+        "health": 0,
+        "happiness": 15,
+        "intelligence": 0,
+        "connections": 5,
+        "merit": 2,
+        "appearance": 2
+      },
+      "description_th": "สวมแหวนเพชรและจ่ายค่าสินสอดเพื่อจดทะเบียนสมรส เริ่มต้นระบบกระเป๋าเงินคู่สมรสและปลดล็อกการมีบุตร"
+    },
+    {
+      "action_id": "rel_act_plan_have_baby",
+      "name_th": "วางแผนมีลูกด้วยกัน 👶",
+      "target_npc_group": "partner",
+      "min_age": 20,
+      "max_age": 45,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 15000,
+      "req_relationship_min": 80,
+      "req_flags": [
+        "flag_married_registered",
+        "flag_ready_for_kids"
+      ],
+      "forbidden_flags": [
+        "flag_monkhood_active"
+      ],
+      "grants_flags": [
+        "flag_has_child"
+      ],
+      "relationship_change": 15,
+      "stat_effects": {
+        "health": -2,
+        "happiness": 15,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 5,
+        "appearance": 0
+      },
+      "description_th": "ฝากครรภ์และต้อนรับสมาชิกใหม่ของครอบครัว เปิดระบบนโยบายการเลี้ยงดูบุตร 4 ช่วงวัยและผู้สืบทอดมรดก"
+    },
+    {
+      "action_id": "rel_act_family_outing_child",
+      "name_th": "พาลูกไปเที่ยวสวนสัตว์ / สวนสนุกวันหยุด",
+      "target_npc_group": "children",
+      "min_age": 20,
+      "cost_cash_student": 1000,
+      "cost_cash_adult": 2500,
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "relationship_change": 12,
+      "stat_effects": {
+        "health": 1,
+        "happiness": 5,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 2,
+        "appearance": 0
+      },
+      "description_th": "ใช้เวลาคุณภาพร่วมกับลูกในวันหยุด ช่วยให้ลูกมีความสุขและเพิ่มความผูกพันในครอบครัว"
+    },
+    {
+      "action_id": "rel_act_file_divorce",
+      "name_th": "จดทะเบียนหย่าขาด (แบ่งสินสมรส)",
+      "target_npc_group": "partner",
+      "min_age": 20,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 5000,
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_divorced"
+      ],
+      "removes_flags": [
+        "flag_married_registered",
+        "flag_in_relationship"
+      ],
+      "special_mechanic": "split_marital_cash_50_percent",
+      "relationship_change": -100,
+      "stat_effects": {
+        "health": -2,
+        "happiness": -15,
+        "intelligence": 0,
+        "connections": -3,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ยุติชีวิตคู่ตามกฎหมาย ยกเลิกการแชร์กระเป๋าเงินคู่สมรส และต้องแบ่งเงินสดครึ่งหนึ่งให้ฝ่ายคู่สมรส"
+    }
+  ],
+  "child_upbringing_policies": [
+    {
+      "stage_id": "child_stage_1_infant_preschool",
+      "trigger_child_age": 0,
+      "duration_years": 6,
+      "stage_name_th": "ช่วงที่ 1: วัยทารกและอนุบาล (อายุลูก 0 - 5 ปี)",
+      "prompt_title_th": "เลือกแนวทางการเลี้ยงดูลูกวัยแรกเกิด - อนุบาล",
+      "policy_options": [
+        {
+          "option_id": "pol_s1_public",
+          "name_th": "เลี้ยงเองตามอัตภาพ & ศูนย์พัฒนาเด็กเล็ก อบต.",
+          "annual_auto_cost_cash": 6000,
+          "annual_child_success_points": 1,
+          "annual_child_rel_change": 2,
+          "description_th": "ประหยัดค่าใช้จ่าย ให้ลูกเติบโตตามธรรมชาติใกล้ชิดครอบครัว"
+        },
+        {
+          "option_id": "pol_s1_private",
+          "name_th": "นมผงเกรดพรีเมียม & โรงเรียนอนุบาลเอกชน",
+          "annual_auto_cost_cash": 30000,
+          "annual_child_success_points": 3,
+          "annual_child_rel_change": 2,
+          "description_th": "เสริมสร้างพัฒนาการสมองตั้งแต่ปฐมวัยในโรงเรียนอนุบาลเอกชนมาตรฐานดี"
+        },
+        {
+          "option_id": "pol_s1_inter",
+          "name_th": "พี่เลี้ยงส่วนตัว & เนิร์สเซอรีหลักสูตรนานาชาติ",
+          "annual_auto_cost_cash": 120000,
+          "annual_child_success_points": 5,
+          "annual_child_rel_change": 1,
+          "description_th": "ปูพื้นฐาน 3 ภาษาตั้งแต่หัดพูดด้วยสภาพแวดล้อมระดับไฮคลาส"
+        }
+      ]
+    },
+    {
+      "stage_id": "child_stage_2_primary_school",
+      "trigger_child_age": 6,
+      "duration_years": 6,
+      "stage_name_th": "ช่วงที่ 2: วัยประถมศึกษา (อายุลูก 6 - 11 ปี)",
+      "prompt_title_th": "เลือกโรงเรียนและกิจกรรมเสริมวัยประถมให้ลูก",
+      "policy_options": [
+        {
+          "option_id": "pol_s2_public",
+          "name_th": "โรงเรียนรัฐบาลใกล้บ้าน เน้นวิ่งเล่นอิสระ",
+          "annual_auto_cost_cash": 12000,
+          "annual_child_success_points": 1,
+          "annual_child_rel_change": 3,
+          "description_th": "ลูกมีความสุขและสุขภาพแข็งแรง ไม่กดดันเรื่องเรียนพิเศษ"
+        },
+        {
+          "option_id": "pol_s2_private_cram",
+          "name_th": "โรงเรียนเอกชนสองภาษา + เรียนพิเศษ/ดนตรีวันเสาร์",
+          "annual_auto_cost_cash": 48000,
+          "annual_child_success_points": 3,
+          "annual_child_rel_change": 1,
+          "description_th": "ส่งเสริมทั้งวิชาการและทักษะพิเศษเพื่อให้ลูกสอบเข้าโรงเรียนดังได้"
+        },
+        {
+          "option_id": "pol_s2_inter",
+          "name_th": "โรงเรียนนานาชาติชั้นนำ (International School)",
+          "annual_auto_cost_cash": 250000,
+          "annual_child_success_points": 5,
+          "annual_child_rel_change": 2,
+          "description_th": "ลูกได้ทั้งภาษาและกลุ่มเพื่อนลูกหลานนักธุรกิจตั้งแต่ระดับประถม"
+        }
+      ]
+    },
+    {
+      "stage_id": "child_stage_3_high_school",
+      "trigger_child_age": 12,
+      "duration_years": 6,
+      "stage_name_th": "ช่วงที่ 3: วัยมัธยมศึกษา (อายุลูก 12 - 17 ปี)",
+      "prompt_title_th": "วางแผนการเรียนมัธยมและเตรียมสอบเข้ามหาวิทยาลัยของลูก",
+      "policy_options": [
+        {
+          "option_id": "pol_s3_public",
+          "name_th": "เรียนสายสามัญ/อาชีวะรัฐบาล ให้ลูกค้นหาตัวเอง",
+          "annual_auto_cost_cash": 18000,
+          "annual_child_success_points": 1,
+          "annual_child_rel_change": 2,
+          "description_th": "ประหยัดค่าเทอม ให้ลูกเรียนรู้ชีวิตจริงและพึ่งพาตัวเอง"
+        },
+        {
+          "option_id": "pol_s3_intensive_tutor",
+          "name_th": "โรงเรียนประจำจังหวัด + อัดคอร์สกวดวิชาเข้มข้น",
+          "annual_auto_cost_cash": 60000,
+          "annual_child_success_points": 4,
+          "annual_child_rel_change": -1,
+          "description_th": "ติวเข้มทุกเย็นเพื่อปั้นลูกสอบติดคณะแพทย์และวิศวะฯ มหาวิทยาลัยท็อป"
+        },
+        {
+          "option_id": "pol_s3_boarding_abroad",
+          "name_th": "ส่งเรียน High School ต่างประเทศ / อินเตอร์เกรด A",
+          "annual_auto_cost_cash": 400000,
+          "annual_child_success_points": 6,
+          "annual_child_rel_change": 1,
+          "description_th": "เปิดโลกทัศน์ระดับสากล เตรียมความพร้อมเข้าสู่มหาวิทยาลัยระดับโลก"
+        }
+      ]
+    },
+    {
+      "stage_id": "child_stage_4_university",
+      "trigger_child_age": 18,
+      "duration_years": 4,
+      "stage_name_th": "ช่วงที่ 4: วัยอุดมศึกษา (อายุลูก 18 - 21 ปี)",
+      "prompt_title_th": "เลือกแนวทางซัพพอร์ตลูกในระดับมหาวิทยาลัย",
+      "policy_options": [
+        {
+          "option_id": "pol_s4_student_loan",
+          "name_th": "ให้ลูกกู้ กยศ. และทำพาร์ทไทม์ส่งตัวเองเรียน",
+          "annual_auto_cost_cash": 0,
+          "annual_child_success_points": 2,
+          "annual_child_rel_change": 0,
+          "description_th": "ไม่ต้องควักเงินจ่ายค่าเทอม ลูกได้ฝึกความอดทนและรู้คุณค่าของเงิน"
+        },
+        {
+          "option_id": "pol_s4_full_support",
+          "name_th": "พ่อแม่จ่ายค่าเทอม ค่าหอพัก และค่าขนมให้ครบ",
+          "annual_auto_cost_cash": 80000,
+          "annual_child_success_points": 4,
+          "annual_child_rel_change": 3,
+          "description_th": "ลูกได้โฟกัสกับการเรียนและทำกิจกรรมมหาวิทยาลัยอย่างเต็มที่โดยไม่ต้องพะวงเรื่องเงิน"
+        },
+        {
+          "option_id": "pol_s4_study_abroad",
+          "name_th": "ส่งลูกเรียนต่อปริญญาตรีมหาวิทยาลัยชั้นนำต่างประเทศ",
+          "annual_auto_cost_cash": 800000,
+          "annual_child_success_points": 7,
+          "annual_child_rel_change": 3,
+          "description_th": "ลงทุนก้อนใหญ่เพื่อให้ลูกจบปริญญานอก การันตีอนาคตผู้บริหารระดับท็อป"
+        }
+      ]
+    }
+  ],
+  "child_graduation_and_legacy_outcomes": [
+    {
+      "outcome_id": "child_tier_s_elite",
+      "min_success_points": 80,
+      "max_success_points": 999,
+      "min_relationship_req": 40,
+      "title_th": "อภิชาตบุตรระดับท็อป (แพทย์ / ผู้บริหาร / เจ้าของธุรกิจใหญ่)",
+      "annual_filial_support_cash": 180000,
+      "yearly_parent_stat_bonus": {
+        "happiness": 4,
+        "connections": 3,
+        "merit": 10
+      },
+      "legacy_starting_stats": {
+        "health": 80,
+        "happiness": 80,
+        "intelligence": 85,
+        "connections": 75
+      },
+      "legacy_grants_flags": [
+        "flag_bachelor_degree",
+        "flag_cert_english",
+        "flag_regular_income"
+      ],
+      "description_th": "ลูกประสบความสำเร็จอย่างสูงในชีวิตการงาน ส่งเงินเลี้ยงดูพ่อแม่ปีละ 180,000 บาท และพร้อมรับช่วงต่อมรดกด้วยค่าสถานะเริ่มต้นระดับอัจฉริยะ"
+    },
+    {
+      "outcome_id": "child_tier_a_professional",
+      "min_success_points": 50,
+      "max_success_points": 79,
+      "min_relationship_req": 30,
+      "title_th": "ลูกไม้หล่นไม่ไกลต้น (วิศวกร / ข้าราชการ / พนักงานบริษัทชั้นนำ)",
+      "annual_filial_support_cash": 60000,
+      "yearly_parent_stat_bonus": {
+        "happiness": 2,
+        "connections": 1,
+        "merit": 5
+      },
+      "legacy_starting_stats": {
+        "health": 75,
+        "happiness": 70,
+        "intelligence": 70,
+        "connections": 50
+      },
+      "legacy_grants_flags": [
+        "flag_bachelor_degree",
+        "flag_regular_income"
+      ],
+      "description_th": "ลูกมีอาชีพการงานที่มั่นคงพึ่งพาตัวเองได้ และส่งเงินกลับมาดูแลพ่อแม่ปีละ 60,000 บาทอย่างสม่ำเสมอ"
+    },
+    {
+      "outcome_id": "child_tier_b_average",
+      "min_success_points": 25,
+      "max_success_points": 49,
+      "min_relationship_req": 20,
+      "title_th": "คนสู้ชีวิตทั่วไป (พนักงานทั่วไป / ค้าขายอิสระ)",
+      "annual_filial_support_cash": 12000,
+      "yearly_parent_stat_bonus": {
+        "happiness": 1,
+        "connections": 0,
+        "merit": 2
+      },
+      "legacy_starting_stats": {
+        "health": 70,
+        "happiness": 60,
+        "intelligence": 50,
+        "connections": 30
+      },
+      "legacy_grants_flags": [
+        "flag_edu_high_school_grad"
+      ],
+      "description_th": "ลูกประคองตัวรอดตามอัตภาพ แวะเวียนมาเยี่ยมและใส่ซองให้พ่อแม่ตามเทศกาลปีละ 12,000 บาท"
+    },
+    {
+      "outcome_id": "child_tier_c_neet_burden",
+      "min_success_points": 0,
+      "max_success_points": 24,
+      "min_relationship_req": 0,
+      "title_th": "ลูกแหง่เกาะพ่อแม่กิน (ว่างงาน / สร้างหนี้)",
+      "annual_filial_support_cash": -24000,
+      "yearly_parent_stat_bonus": {
+        "happiness": -3,
+        "connections": -1,
+        "merit": 0
+      },
+      "legacy_starting_stats": {
+        "health": 60,
+        "happiness": 40,
+        "intelligence": 35,
+        "connections": 15
+      },
+      "legacy_grants_flags": [
+        "tag_screen_addict"
+      ],
+      "description_th": "เนื่องจากการเลี้ยงดูที่ขาดการเอาใจใส่หรือตามใจผิดวิธี ทำให้ลูกไม่ยอมหางานทำและยังมาขอเงินพ่อแม่ใช้ปีละ 24,000 บาทแม้จะโตเป็นผู้ใหญ่แล้ว"
+    }
+  ]
+}

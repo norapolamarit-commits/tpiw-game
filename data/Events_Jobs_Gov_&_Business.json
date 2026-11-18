@@ -1,0 +1,2976 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Jobs_Gov_&_Business",
+  "category_group": "career_government_and_entrepreneur",
+  "total_events": 40,
+  "quota_breakdown": {
+    "total": 40,
+    "gov_public_teacher": 4,
+    "gov_civil_officer": 4,
+    "gov_police_military_nco": 4,
+    "gov_high_ranking_official": 4,
+    "own_street_food_vendor": 5,
+    "own_online_live_merchant": 5,
+    "own_cafe_and_restaurant": 4,
+    "own_smart_farmer": 4,
+    "own_family_sme_successor": 5,
+    "any_gov_or_business_career": 1
+  },
+  "events": [
+    {
+      "event_id": "evt_job_gov_tch_01",
+      "title_th": "ศึกทำผลงานประเมินวิทยฐานะ 'ครูชำนาญการพิเศษ (คศ.3)'! กองแฟ้มเอกสารและคลิปการสอน",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_public_teacher",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ถึงรอบการยื่นขอมีและเลื่อนวิทยฐานะผ่านระบบ DPA! คุณต้องออกแบบแผนการจัดการเรียนรู้และอัดคลิปวิดีโอการสอนในชั้นเรียนส่งให้คณะกรรมการประเมิน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ออกแบบสื่อการสอนนวัตกรรมใหม่ให้นักเรียนมีส่วนร่วมจริง ผ่านประเมิน คศ.3 รับเงินวิทยฐานะเพิ่มทุกเดือน!",
+          "hint_th": "🪙 เงินประจำตำแหน่งเพิ่ม +18,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +5 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 18000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[เด็กเนิร์ดคอม] ใช้เทคโนโลยี EdTech และ AI ช่วยทำสื่อการสอนจนได้รับรางวัลครูต้นแบบระดับประเทศ!",
+          "hint_th": "🪙 เงินรางวัลและวิทยฐานะ +25,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [
+            "tag_computer_nerd"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 7,
+            "cash": 21500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_tch_02",
+      "title_th": "อยู่เวรเฝ้าโรงเรียนวันหยุดและงานเอกสารพัสดุการเงินล้นมือ!",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_public_teacher",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "นอกจากงานสอนหนังสือแล้ว ครูไทยยังต้องรับผิดชอบงานพัสดุ งานการเงิน และตรวจรับอาหารกลางวันนักเรียน แถมยังมีตารางอยู่เวรวันเสาร์-อาทิตย์!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตรวจสอบคุณภาพวัตถุดิบอาหารกลางวันนักเรียนอย่างเข้มงวด เด็กๆ ได้กินอิ่มครบ 5 หมู่!",
+          "hint_th": "✨ แต้มบุญ +18 , 😊 ความสุข +7 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 0,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดระบบเอกสารดิจิทัลลดเวลาทำงานธุรการ เพื่อเอาเวลาไปติวหนังสือให้นักเรียนหลังเลิกเรียน",
+          "hint_th": "🪙 ค่าสอนพิเศษเสริม +8,000 ฿ , 🧠 สมอง +5 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 4000,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_tch_03",
+      "title_th": "ผู้ปกครองนักเรียนบุกมาโวยวายที่ห้องพักครู! เรื่องเกรดเฉลี่ยและการตักเตือนลูก",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_public_teacher",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผู้ปกครองอารมณ์ร้อนเดินปรี่เข้ามาในห้องพักครู ไม่พอใจที่ลูกของตัวเองได้เกรด 1 และถูกคุณตักเตือนเรื่องไม่ส่งการบ้าน ขู่จะร้องเรียน ผอ.!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดหลักฐานสมุดบันทึกคะแนนและคุยด้วยจิตวิทยาความห่วงใย จนผู้ปกครองเข้าใจและหันมาช่วยกวดขันลูก!",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +7 , 😊 ความสุข +5 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 7,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เชิญฝ่ายบริหารและครูแนะแนวร่วมรับฟังตามขั้นตอนระเบียบโรงเรียนอย่างรัดกุม",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 6,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_tch_04",
+      "title_th": "สิ่งยั่วใจจากสหกรณ์ออมทรัพย์ครู! สินเชื่อดอกเบี้ยพิเศษชวนกู้ซื้อรถ-แต่งบ้าน",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_public_teacher",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนครูในโรงเรียนชวนกันกู้เงินสหกรณ์ออมทรัพย์ครูที่อนุมัติง่ายมากและหักหน้าซองเงินเดือน แต่ก็มีเพื่อนครูหลายคนที่เป็นหนี้สหกรณ์จนเหลือเงินเดือนติดบัญชีไม่กี่บาท",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไม่กู้ฟุ่มเฟือย! เปลี่ยนเป็นฝากหุ้นสหกรณ์ออมทรัพย์ครูแทน รับเงินปันผล 5-6% ต่อปีแบบปลอดภาษี!",
+          "hint_th": "🪙 เงินปันผลสหกรณ์ +12,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยเพื่อนครูวางแผนตารางปลดหนี้และรวมหนี้ดอกเบี้ยต่ำ ได้ทั้งบุญและมิตรภาพในโรงเรียน",
+          "hint_th": "✨ แต้มบุญ +10 , 🤝 เส้นสาย +8 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 6000,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_civ_01",
+      "title_th": "เดือนกันยายนปิดปีงบประมาณแผ่นดิน! เร่งเบิกจ่ายและตรวจรับโครงการรัฐ",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_civil_officer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โค้งสุดท้ายเดือนกันยายนก่อนสิ้นปีงบประมาณ! ทุกกองงานในกระทรวงและศาลากลางจังหวัดต้องเร่งสรุปโครงการและตรวจรับพัสดุให้ทันกำหนดการ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตรวจสอบเอกสารจัดซื้อจัดจ้างตามระเบียบพัสดุฯ ทุกบรรทัด โปร่งใส 100% ได้รับประเมินขั้นเงินเดือน 2 ขั้น!",
+          "hint_th": "🪙 เลื่อนขั้นพิเศษ +15,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +6 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 15000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อยู่ช่วยทีมงานเคลียร์เอกสารเบิกจ่ายจนครบทุกโครงการ ได้รับเบี้ยเลี้ยงและคำชมจากผู้อำนวยการกอง",
+          "hint_th": "🪙 เบี้ยเลี้ยง +8,000 ฿ , 🤝 เส้นสาย +7 , ❤️ สุขภาพ -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 11500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_civ_02",
+      "title_th": "เอกชนแอบยื่นซองกาแฟใต้โต๊ะ! ขอให้ช่วยล็อกสเปก TOR ประมูลงานราชการ",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_civil_officer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณได้รับแต่งตั้งเป็นคณะกรรมการร่างขอบเขตงาน (TOR) โครงการจัดซื้อของหลวง ตัวแทนบริษัทเอกชนแอบนัดคุยและยื่นข้อเสนอจ่ายเงินทอน 100,000 บาทหากช่วยเขียนสเปกล็อกให้บริษัทเขาชนะ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธเด็ดขาดและเปิดประมูล e-Bidding อย่างโปร่งใส รักษาเกียรติข้าราชการและเงินแผ่นดิน!",
+          "hint_th": "✨ แต้มบุญ +30 , 🧠 สมอง +5 , 🤝 เส้นสาย +6 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 0,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หน้ามืดรับเงินใต้โต๊ะ! (โอกาสโดน สตง. และ ป.ป.ช. ตรวจสอบเจอ 75%!)",
+          "hint_th": "🎲 โอกาสรอด 25% (พลาด: โดนตั้งกรรมการสอบวินัยร้ายแรง ปรับ -120,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 100000,
+            "merit": -50,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 25,
+            "fail_outcome_text_th": "สตง. และ ป.ป.ช. ตรวจพบพิรุธการจัดซื้อแพงเกินจริง! คุณถูกลงโทษทางวินัยและเสียค่าปรับอ่วม!",
+            "fail_stat_effects": {
+              "health": -10,
+              "happiness": -25,
+              "intelligence": 0,
+              "connections": -20,
+              "cash": -120000,
+              "merit": -60,
+              "appearance": -5
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 50000,
+            "merit": -10
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_civ_03",
+      "title_th": "ต้อนรับคณะผู้ตรวจราชการกระทรวง & จัดทำรายงานสรุปผลงานจังหวัด!",
+      "min_age": 21,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_civil_officer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผู้ตรวจราชการกระทรวงเดินทางลงพื้นที่ตรวจติดตามโครงการพัฒนาคุณภาพชีวิตประชาชน หัวหน้ามอบหมายให้คุณเป็นคนนำเสนอสรุปผลการดำเนินงาน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นำเสนอข้อมูลกระชับ ชัดเจน และพาลงพื้นที่ดูผลสำเร็จจริง ผู้ตรวจฯ ประทับใจจำชื่อคุณได้แม่น!",
+          "hint_th": "🤝 เส้นสาย +10 , 🧠 สมอง +5 , 😊 ความสุข +7 (ปูทางสู่ตำแหน่งผู้อำนวยการ!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 10,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดเตรียมข้อมูลและอำนวยความสะดวกให้ประชาชนที่มาติดต่อราชการได้รับบริการรวดเร็วทันใจ",
+          "hint_th": "✨ แต้มบุญ +12 , 🤝 เส้นสาย +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 8,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_civ_04",
+      "title_th": "สอบคัดเลือกขึ้นบัญชีเลื่อนระดับเป็น 'ชำนาญการพิเศษ (ซี 8)'!",
+      "min_age": 28,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_civil_officer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กรมเปิดสอบประเมินผลงานและวิสัยทัศน์เพื่อเลื่อนระดับข้าราชการขึ้นสู่ตำแหน่งหัวหน้ากลุ่มงาน (ระดับชำนาญการพิเศษ)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ส่งผลงานวิชาการและแสดงวิสัยทัศน์การพัฒนาระบบราชการดิจิทัล สอบติดอันดับ 1 ของบัญชี!",
+          "hint_th": "🪙 เงินประจำตำแหน่ง +16,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 16000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข้าอบรมหลักสูตรนักบริหารระดับกลาง สะสมคอนเนกชันเพื่อนข้าราชการต่างกระทรวงทั่วประเทศ",
+          "hint_th": "🤝 เส้นสาย +10 , 🧠 สมอง +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 10,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 9,
+            "cash": 8000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_pol_01",
+      "title_th": "ตั้งด่านกวดขันวินัยจราจรและตรวจวัดแอลกอฮอล์คืนวันเสาร์! เจอลูกคนใหญ่คนโตเบ่งใส่",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_police_military_nco",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะปฏิบัติหน้าที่ตั้งจุดตรวจเคอร์ฟิวและเมาไม่ขับ มีรถหรูซิ่งเข้ามาในด่าน คนขับมีกลิ่นแอลกอฮอล์แต่กลับหยิบโทรศัพท์ขึ้นมาขู่ว่า 'รู้ไหมผมลูกใคร?!'",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดกล้องติดหน้าอก (Bodycam) บันทึกภาพและปฏิบัติตามกฎหมายอย่างสุภาพแต่ตรงไปตรงมา คลิปไวรัลคนแห่ชื่นชมทั้งประเทศ!",
+          "hint_th": "🪙 รางวัลผู้พิทักษ์สันติราษฎร์ดีเด่น +15,000 ฿ , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +8 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 15000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เชิญตัวไปตรวจวัดระดับแอลกอฮอล์ที่โรงพักตามขั้นตอนระเบียบเป๊ะ โดยมีผู้บังคับบัญชาร่วมเป็นพยาน",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 7500,
+            "merit": 15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_pol_02",
+      "title_th": "ปฏิบัติการสายฟ้าแลบ! บุกทลายรังแก๊งคอลเซ็นเตอร์และเครือข่ายอาชญากรรมข้ามชาติ",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_police_military_nco",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หน่วยของคุณได้รับคำสั่งลับให้นำกำลังเข้าตรวจค้นอาคารพาณิชย์ต้องสงสัย และช่วยเหลือเหยื่อที่ถูกหลอกพร้อมยึดของกลางซิมบ็อกซ์และเงินสด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[นักกีฬาโรงเรียน] นำทีมบุกชาร์จจับกุมหัวหน้าแก๊งได้ทันควันโดยไม่มีใครบาดเจ็บ! ได้รับขั้นพิเศษและเหรียญกล้าหาญ!",
+          "hint_th": "🪙 เงินรางวัลนำจับ +25,000 ฿ , ✨ แต้มบุญ +25 , 🤝 เส้นสาย +9 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [
+            "tag_school_athlete"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 25000,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "วางแผนปิดล้อมและใช้โดรนสำรวจพื้นที่ก่อนเข้าจับกุม ยึดทรัพย์คืนผู้เสียหายได้ครบถ้วน!",
+          "hint_th": "🪙 เงินรางวัล +18,000 ฿ , 🧠 สมอง +6 , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 18000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "บุกเดี่ยวไม่รอทีมสนับสนุน! (เสี่ยงโดนคนร้ายต่อสู้ได้รับบาดเจ็บ 40%)",
+          "hint_th": "🎲 โอกาสสำเร็จ 60% (สำเร็จ: +30,000 ฿ | พลาด: บาดเจ็บในหน้าที่ สุขภาพ -20!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 30000,
+            "merit": 15,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 60,
+            "fail_outcome_text_th": "คนร้ายขัดขืนต่อสู้! คุณได้รับบาดเจ็บระหว่างเข้าจับกุม ต้องนอนพักรักษาตัวที่โรงพยาบาลตำรวจ/ทหาร!",
+            "fail_stat_effects": {
+              "health": -20,
+              "happiness": -5,
+              "intelligence": 2,
+              "connections": 5,
+              "cash": 5000,
+              "merit": 10,
+              "appearance": -2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_pol_03",
+      "title_th": "ภารกิจช่วยเหลือประชาชนประสบภัยพิบัติน้ำท่วมฉับพลัน!",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_police_military_nco",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เกิดน้ำป่าไหลหลากท่วมบ้านเรือนประชาชนในพื้นที่รับผิดชอบ หน่วยของคุณต้องนำเรือท้องแบนและรถบรรทุกสูงออกไปอพยพผู้สูงอายุและแจกถุงยังชีพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลุยน้ำระดับอกเข้าช่วยอุ้มคุณยายติดเตียงออกมาขึ้นเรือได้อย่างปลอดภัย ชาวบ้านซาบซึ้งใจทั้งหมู่บ้าน!",
+          "hint_th": "✨ แต้มบุญ +30 , 🤝 เส้นสาย +9 , 😊 ความสุข +10 , 🪙 เบี้ยเลี้ยงสนาม +6,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 6000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งโรงครัวสนามผัดข้าวกระเพราไข่ดาวร้อนๆ แจกจ่ายผู้ประสบภัยตลอดสัปดาห์",
+          "hint_th": "✨ แต้มบุญ +20 , 🤝 เส้นสาย +7 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 8,
+            "cash": 3000,
+            "merit": 25
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_pol_04",
+      "title_th": "สนามสอบเลื่อนฐานะจากชั้นประทวนขึ้นเป็น 'นายตำรวจ/นายทหารชั้นสัญญาบัตร (ติดดาว)'!",
+      "min_age": 22,
+      "max_age": 55,
+      "category": "job_specific",
+      "req_job_id": "gov_police_military_nco",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โอกาสครั้งสำคัญของสายงานผู้พิทักษ์สันติราษฎร์และรั้วของชาติ! เปิดสอบคัดเลือกบุคคลภายในที่มีวุฒิปริญญาตรีขึ้นเป็นร้อยตำรวจตรี / ร้อยตรี",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[จบนิติศาสตร์] สอบข้อเขียนกฎหมายและทดสอบร่างกายผ่านฉลุย ประดับยศติดดาวบนบ่าให้พ่อแม่ภูมิใจ!",
+          "hint_th": "🪙 ปรับฐานเงินเดือนสัญญาบัตร +20,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [
+            "flag_deg_law"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทุ่มเทอ่านหนังสือหลังออกเวรจนสอบผ่านเกณฑ์คัดเลือก เลื่อนยศอย่างสง่างาม!",
+          "hint_th": "🪙 เงินประจำตำแหน่ง +15,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +6 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 11,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 17500,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_high_01",
+      "title_th": "เข้าชี้แจงงบประมาณเมกะโปรเจกต์พันล้านต่อคณะกรรมาธิการในรัฐสภา!",
+      "min_age": 40,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_high_ranking_official",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในฐานะอธิบดี/ผู้ว่าราชการจังหวัด/ผู้อำนวยการสำนักระดับสูง คุณต้องเข้าชี้แจงความคุ้มค่าของงบประมาณพัฒนาโครงสร้างพื้นฐานต่อที่ประชุมกรรมาธิการงบประมาณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กางแผนยุทธศาสตร์และตัวเลขผลประโยชน์ที่ประชาชนจะได้รับอย่างชัดเจน จนที่ประชุมลงมติเห็นชอบผ่านงบเต็มจำนวน!",
+          "hint_th": "🪙 เงินประจำตำแหน่งและเบี้ยประชุม +40,000 ฿ , 🧠 สมอง +8 , 🤝 เส้นสาย +12 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 8,
+            "connections": 12,
+            "cash": 40000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตัดงบดูงานต่างประเทศที่ไม่จำเป็นออก แล้วโยกงบไปสร้างระบบน้ำประปาและถนนให้ชาวบ้านแทน ได้ใจคนทั้งประเทศ!",
+          "hint_th": "✨ แต้มบุญ +35 , 🤝 เส้นสาย +14 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 14,
+            "cash": 0,
+            "merit": 35,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 11,
+            "intelligence": 4,
+            "connections": 13,
+            "cash": 20000,
+            "merit": 23
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_high_02",
+      "title_th": "บัญชาการศูนย์ป้องกันและบรรเทาสาธารณภัยระดับจังหวัด (Single Command)!",
+      "min_age": 40,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_high_ranking_official",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เกิดวิกฤตภัยธรรมชาติ/หมอกควันพิษขั้นรุนแรงในพื้นที่จังหวัด สื่อมวลชนตั้งกล้องรอฟังคำสั่งการจากคุณในฐานะผู้บัญชาการเหตุการณ์สูงสุด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สวมชุดปฏิบัติการลงพื้นที่จุดเกิดเหตุด้วยตัวเอง สั่งการบูรณาการทุกหน่วยงานคลี่คลายวิกฤตได้ใน 48 ชั่วโมง!",
+          "hint_th": "✨ แต้มบุญ +30 , 🤝 เส้นสาย +12 , 😊 ความสุข +10 , 🪙 รางวัลบริหารดีเด่น +30,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 30000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตั้งศูนย์ข้อมูลข่าวสารแบบ Real-time และอนุมัติงบฉุกเฉินเยียวยาชาวบ้านทันทีโดยไม่ติดขัดขั้นตอนเอกสาร",
+          "hint_th": "✨ แต้มบุญ +25 , 🧠 สมอง +7 , 🤝 เส้นสาย +10 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 10,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 10,
+            "intelligence": 4,
+            "connections": 11,
+            "cash": 15000,
+            "merit": 28
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_high_03",
+      "title_th": "กลุ่มทุนสีเทา/ผู้รับเหมาใหญ่ส่งคนสนิทมาเสนอของขวัญหรู เพื่อขอสัมปทานโครงการรัฐ!",
+      "min_age": 40,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_high_ranking_official",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อำนาจการเซ็นอนุมัติโครงการระดับพันล้านอยู่ในปากกาของคุณ! มีคนนำกระเช้าของขวัญที่ซ่อนนาฬิกาหรูและทองคำแท่งมามอบให้ถึงบ้านพักประจำตำแหน่ง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยึดหลัก 'No Gift Policy' ปฏิเสธและส่งคืนทันที พร้อมสั่งตรวจสอบประวัติบริษัทนั้นอย่างเข้มงวด!",
+          "hint_th": "✨ แต้มบุญ +40 , 🤝 เส้นสาย +10 , 😊 ความสุข +12 (เกียรติประวัติข้าราชการตงฉินขาวสะอาด!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 6,
+            "connections": 10,
+            "cash": 0,
+            "merit": 40,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบรับของขวัญไว้! (โอกาสถูก ป.ป.ช. ตรวจสอบบัญชีทรัพย์สินเจอ 80%!)",
+          "hint_th": "🎲 โอกาสรอด 20% (พลาด: ถูกอายัดทรัพย์ -200,000 ฿ และเสียเกียรติยศทั้งหมด!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 150000,
+            "merit": -80,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 20,
+            "fail_outcome_text_th": "ป.ป.ช. ตรวจสอบบัญชีทรัพย์สินและหนี้สินพบของขวัญผิดกฎหมาย! คุณถูกสั่งอายัดทรัพย์และลงโทษหนัก!",
+            "fail_stat_effects": {
+              "health": -15,
+              "happiness": -30,
+              "intelligence": 0,
+              "connections": -30,
+              "cash": -200000,
+              "merit": -100,
+              "appearance": -10
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 3,
+            "connections": 5,
+            "cash": 75000,
+            "merit": -20
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_high_04",
+      "title_th": "เป็นประธานเปิดงานกาชาดและงานประเพณีประจำปีของจังหวัด!",
+      "min_age": 40,
+      "max_age": 60,
+      "category": "job_specific",
+      "req_job_id": "gov_high_ranking_official",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานประจำปีที่ยิ่งใหญ่ที่สุดของจังหวัด! คุณสวมชุดผ้าไหมไทยประจำถิ่นขึ้นกล่าวเปิดงานและเดินเยี่ยมชมร้านมัจฉากาชาดท่ามกลางประชาชนนับหมื่นคน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โปรโมตสินค้า OTOP และแหล่งท่องเที่ยวจังหวัดผ่านไลฟ์สด จนเงินสะพัดเข้าจังหวัดหลายร้อยล้าน!",
+          "hint_th": "🪙 โบนัสบริหารงาน +35,000 ฿ , 🤝 เส้นสาย +14 , 😊 ความสุข +12 , ✨ หน้าตา +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 14,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมบริจาคเงินส่วนตัวเข้าเหล่ากาชาดจังหวัดเพื่อนำไปสร้างบ้านให้ผู้ยากไร้ (-10,000฿)",
+          "hint_th": "🪙 บริจาคกาชาด -10,000 ฿ , ✨ แต้มบุญ +40 , 🤝 เส้นสาย +12 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": -10000,
+            "merit": 40,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 12,
+            "connections": 13,
+            "cash": 12500,
+            "merit": 20,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_street_01",
+      "title_th": "ยูทูบเบอร์สายกินชื่อดังระดับล้านซับแวะมาถ่ายคลิปรีวิวร้านสตรีทฟู้ดของคุณ!",
+      "min_age": 18,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_street_food_vendor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะที่ควันเตาปิ้ง/กระทะกำลังหอมฟุ้ง อินฟลูเอนเซอร์สายอาหารชื่อดังเดินถือกล้องเข้ามาสั่งเมนูเด็ดของร้านคุณไปชิมหน้ากล้อง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีทักษะทำอาหาร] โชว์ลีลาควงตะหลิวและเสิร์ฟจานเด็ดรสชาติจัดจ้าน คลิปออกปุ๊บคนต่อคิวยาวทะลุซอย!",
+          "hint_th": "🪙 ยอดขายถล่มทลาย +30,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [
+            "flag_skill_cooking"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตักให้แบบพูนจานเครื่องแน่นๆ ไม่หวงของ ชาวเน็ตแห่ชมว่าให้เยอะคุ้มราคา ตามมากินเพียบ!",
+          "hint_th": "🪙 กำไรเพิ่ม +20,000 ฿ , 🤝 เส้นสาย +7 , 😊 ความสุข +8 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 20000,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 9,
+            "connections": 8,
+            "cash": 25000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_street_02",
+      "title_th": "เทศกิจและเจ้าหน้าที่สาธารณสุขลงตรวจความสะอาดและใบอนุญาตแผงค้า!",
+      "min_age": 18,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_street_food_vendor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "รถสายตรวจเทศกิจและเจ้าหน้าที่เขตเดินตรวจพื้นที่ตลาดนัดและริมทางเท้า เพื่อตรวจสอบใบอนุญาตจุดผ่อนผันและมาตรฐานป้าย Clean Food Good Taste",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีใบอนุญาตค้าขาย] แสดงบัตรทะเบียนจุดผ่อนผัน สวมผ้ากันเปื้อนและหมวกคลุมผมสะอาดสะอ้าน ได้รับป้ายรับรองร้านอาหารปลอดภัย!",
+          "hint_th": "🪙 ลูกค้ามั่นใจยอดขายเพิ่ม +12,000 ฿ , 😊 ความสุข +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [
+            "flag_merchant_permit"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยเพื่อนแม่ค้าข้างๆ จัดระเบียบตั้งโต๊ะไม่ให้ล้ำทางเท้า เจ้าหน้าที่ชมเชยและผ่านฉลุยยกซอย!",
+          "hint_th": "🤝 เส้นสาย +7 , ✨ แต้มบุญ +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "connections": 6,
+            "cash": 6000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_street_03",
+      "title_th": "ราคาหมู-ไก่-น้ำมันพืช และแก๊สหุงต้มพุ่งขึ้นพร้อมกัน! วิกฤตต้นทุนสตรีทฟู้ด",
+      "min_age": 18,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_street_food_vendor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ราคาเนื้อสัตว์และวัตถุดิบในตลาดสดปรับตัวสูงขึ้นมาก หากขายราคาเดิมกำไรจะหดหาย แต่ถ้าขึ้นราคาแรงลูกค้าประจำก็อาจหนี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตื่นไปซื้อวัตถุดิบตรงจากตลาดค้าส่งเช้ามืดและเพิ่มเมนูเซ็ตสุดคุ้ม รักษากำไรไว้ได้โดยไม่ต้องลดปริมาณ!",
+          "hint_th": "🪙 กำไรสุทธิ +15,000 ฿ , 🧠 สมอง +5 , ❤️ สุขภาพ -2 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ติดป้ายชี้แจงขอปรับราคาขึ้น 5 บาทอย่างจริงใจแต่รักษาคุณภาพวัตถุดิบเกรดพรีเมียม ลูกค้าเข้าใจและอุดหนุนต่อ!",
+          "hint_th": "🪙 กำไรสุทธิ +12,000 ฿ , 🤝 เส้นสาย +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 13500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_street_04",
+      "title_th": "พายุฝนกระหน่ำตลาดนัดกลางแจ้ง! เต็นท์ผ้าใบปลิวและของที่เตรียมมาเสี่ยงเหลือบาน",
+      "min_age": 18,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_street_food_vendor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บ่ายสี่โมงเย็นที่เพิ่งตั้งร้านเสร็จ เมฆดำทะมึนพัดมาพร้อมพายุฝนเทกระหน่ำจนคนเดินตลาดนัดวิ่งหนีหลบฝนกันหมด แต่ของสดในหม้อยังเต็มเปี่ยม!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดรับออร์เดอร์ผ่านแอปเดลิเวอรีและโพสต์ขายในกลุ่มไลน์หมู่บ้าน ขายหมดเกลี้ยงแม้ฝนตก!",
+          "hint_th": "🪙 ยอดขายออนไลน์ +14,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 14000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตักอาหารร้อนๆ แจกจ่ายให้คนงานและผู้ยากไร้ที่ติดฝนอยู่แถวนั้น อิ่มใจได้บุญแทนการเททิ้ง!",
+          "hint_th": "✨ แต้มบุญ +18 , 😊 ความสุข +8 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 7000,
+            "merit": 9
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_street_05",
+      "title_th": "ขาใหญ่เจ้าถิ่นมาเดินเก็บค่าคุ้มครองแผงลอยเถื่อนในซอย!",
+      "min_age": 18,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_street_food_vendor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีนักเลงขาใหญ่เดินมาเคาะรถเข็นของคุณ อ้างว่าเป็นคนดูแลพื้นที่ซอยนี้และขอเก็บส่วยรายเดือนนอกเหนือจากค่าเช่าตลาด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รวมตัวพ่อค้าแม่ค้าทั้งตลาดแจ้งตำรวจและสำนักงานเขตมาจัดการขั้นเด็ดขาด จนแก๊งรีดไถถูกจับกุม!",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +8 , 😊 ความสุข +6 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ย้ายทำเลไปเช่าล็อกในศูนย์อาหาร/ตลาดนัดมาตรฐานที่มี รปภ. ดูแลความปลอดภัยและคนเดินเยอะกว่าเดิม!",
+          "hint_th": "🪙 ยอดขายทำเลใหม่ +16,000 ฿ , 😊 ความสุข +6 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 16000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 8000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_online_01",
+      "title_th": "มหกรรมวันเลขเบิ้ล 11.11 / 12.12! สั่นกระดิ่งไลฟ์สด CF รัวๆ จนแพ็กของมือหงิก",
+      "min_age": 16,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "own_online_live_merchant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คืนแคมเปญใหญ่ที่สุดแห่งปี! คุณตั้งไฟวงแหวนเปิดไลฟ์สดจัดโปรโมชัน Flash Sale แจกโค้ดส่วนลด ลูกค้ากดตะกร้าสั่งซื้อเข้ามาวินาทีละร้อยออร์เดอร์!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เฒ่าแก่น้อย] จัดเซ็ตสินค้าคู่ (Bundle) และจ้างทีมงานพาร์ทไทม์มาช่วยแพ็กของส่งทันภายใน 24 ชม. ฟันกำไรเละ!",
+          "hint_th": "🪙 กำไรแคมเปญใหญ่ +45,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +7 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [
+            "tag_young_merchant"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 10,
+            "intelligence": 6,
+            "connections": 7,
+            "cash": 45000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลุยไลฟ์สดและนั่งติดเทปแพ็กกล่องพัสดุเองยันสว่าง รับกำไรเต็มเม็ดเต็มหน่วย!",
+          "hint_th": "🪙 กำไรสุทธิ +30,000 ฿ , ❤️ สุขภาพ -4 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 37500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_online_02",
+      "title_th": "มรสุมพัสดุเก็บเงินปลายทาง (COD) ตีกลับ! ลูกค้าสั่งเล่นไม่ยอมรับของ",
+      "min_age": 16,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "own_online_live_merchant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "รถขนส่งนำกล่องพัสดุที่ถูกตีกลับมากองหน้าบ้าน 30 กล่อง เพราะลูกค้าที่สั่งแบบเก็บเงินปลายทางปิดเครื่องหนีไม่ยอมรับสินค้า ทำให้เสียค่ากล่องและค่าส่งฟรี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งระบบแชทบอทโทรยืนยันออร์เดอร์ก่อนส่งและแบนบัญชีที่สั่งเล่น ลดอัตราตีกลับเหลือเกือบ 0%!",
+          "hint_th": "🪙 ประหยัดต้นทุน +15,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำของที่ตีกลับมาจัดไลฟ์สด 'กล่องสุ่มเทกระจาด' ขายหมดเกลี้ยงได้กำไรคืนมาทันที!",
+          "hint_th": "🪙 กำไรกล่องสุ่ม +18,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 6,
+            "cash": 16500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_online_03",
+      "title_th": "ชิปปิ้งนำเข้าสินค้าติดด่านศุลกากร / โรงงานส่งของช้า! ลูกค้าพรีออเดอร์เริ่มทวงถาม",
+      "min_age": 16,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "own_online_live_merchant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ล็อตสินค้าขายดีที่คุณสั่งผลิตเกิดดีเลย์ไป 1 สัปดาห์ ลูกค้าที่โอนเงินจองไว้เริ่มทักแชทมาตามสถานะพัสดุกันรัวๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แจ้งความจริงอย่างโปร่งใส แถมของขวัญสมนาคุณและคูปองส่วนลดในกล่อง ลูกค้าประทับใจรีวิว 5 ดาวให้เพียบ!",
+          "hint_th": "🪙 ยอดขายซื้อซ้ำ +20,000 ฿ , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 20000,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ติดต่อโรงงานสำรองในประเทศผลิตสินค้าทดแทนเกรดดีกว่าเดิมส่งให้ลูกค้าทันเวลา!",
+          "hint_th": "🪙 กำไรรักษาฐานลูกค้า +14,000 ฿ , 🧠 สมอง +5 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 14000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 17000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_online_04",
+      "title_th": "แพลตฟอร์มอีคอมเมิร์ซประกาศขึ้นค่า GP (ค่าธรรมเนียมการขาย) อีก 4%!",
+      "min_age": 16,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "own_online_live_merchant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แอปช้อปปิ้งสีส้ม/สีดำส่งอีเมลแจ้งปรับขึ้นค่าธรรมเนียมหักจากยอดขายของร้านค้า หากไม่ปรับตัวกำไรต่อชิ้นจะบางเฉียบ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สร้างฐานลูกค้าประจำดึงเข้า Line OA / เว็บไซต์แบรนด์ตัวเอง สั่งซื้อตรงรับส่วนลดพิเศษ ไม่โดนหักค่า GP!",
+          "hint_th": "🪙 กำไรพุ่ง +28,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +6 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 7,
+            "connections": 6,
+            "cash": 28000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปั้นนายหน้า Affiliate ช่วยกันปักตะกร้าขายสินค้าให้แบรนด์คุณ ยอดขายรวมโตขึ้น 3 เท่าชดเชยค่าธรรมเนียม!",
+          "hint_th": "🪙 กำไรวอลุ่มใหญ่ +32,000 ฿ , 🤝 เส้นสาย +9 , 🧠 สมอง +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 9,
+            "cash": 32000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 30000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_online_05",
+      "title_th": "โรงงานรับผลิต (OEM) ชวนทำครีมกวนเอง/ยาลดน้ำหนักผสมสารอันตราย กำไร 1,000%!",
+      "min_age": 16,
+      "max_age": 75,
+      "category": "job_specific",
+      "req_job_id": "own_online_live_merchant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เซลส์โรงงานเถื่อนเข้ามาเสนอผลิตสินค้าสกินแคร์และอาหารเสริมต้นทุนกระปุกละ 20 บาทแต่ขายได้ 590 บาท เห็นผลไวใน 3 วันเพราะแอบใส่สารต้องห้าม!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธทันที! เลือกผลิตสินค้าที่มีเลข อย. ถูกต้องและปลอดภัยต่อผู้บริโภค 100% เติบโตยั่งยืน!",
+          "hint_th": "🪙 กำไรแบรนด์คุณภาพ +25,000 ฿ , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +7 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 7,
+            "cash": 25000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โลภสั่งผลิตของเถื่อนมาไลฟ์ขาย! (โอกาสโดน อย. และตำรวจ ปคบ. บุกทลายโกดัง 75%!)",
+          "hint_th": "🎲 โอกาสรอด 25% (พลาด: โดนยึดของกลางและปรับหนัก -100,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 80000,
+            "merit": -50,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 25,
+            "fail_outcome_text_th": "ลูกค้าใช้แล้วแพ้หน้าพังร้องเรียนเพจดัง! ตำรวจ ปคบ. และ อย. บุกค้นโกดัง ยึดของและสั่งปรับอ่วม!",
+            "fail_stat_effects": {
+              "health": -8,
+              "happiness": -25,
+              "intelligence": 0,
+              "connections": -15,
+              "cash": -100000,
+              "merit": -60,
+              "appearance": -5
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 52500,
+            "merit": -15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_cafe_01",
+      "title_th": "คิดค้นเมนูซิกเนเจอร์ใหม่ประจำร้านคาเฟ่! กาแฟส้มยูซุ & ครัวซองต์โฮมเมด",
+      "min_age": 20,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_cafe_and_restaurant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การแข่งขันของธุรกิจคาเฟ่สูงมาก คุณต้องครีเอตเมนูเครื่องดื่มและเบเกอรีตัวใหม่พร้อมจัดมุมถ่ายรูปหน้าร้านให้ดึงดูดสาย Cafe Hopping!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีทักษะทำอาหาร] คั่วเมล็ดกาแฟ Specialty เบลนด์พิเศษและจัดร้านสไตล์มินิมอล ลูกค้าแห่เช็กอินแน่นร้านทุกวัน!",
+          "hint_th": "🪙 กำไรคาเฟ่ฮิต +40,000 ฿ , 🤝 เส้นสาย +9 , 😊 ความสุข +9 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [
+            "flag_skill_cooking"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 5,
+            "connections": 9,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จับมือกับบริษัททัวร์และออฟฟิศใกล้เคียง รับจัดชุด Snack Box ประชุมสัมมนา ได้ยอดสั่งซื้อล็อตใหญ่ประจำ!",
+          "hint_th": "🪙 กำไรชุดเบรก +30,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 9,
+            "cash": 35000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_cafe_02",
+      "title_th": "เชฟ/บาริสต้ามือหนึ่งของร้านขอลาออกกะทันหันในเช้าวันเสาร์ที่ลูกค้าแน่นร้าน!",
+      "min_age": 20,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_cafe_and_restaurant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปัญหาปวดหัวอันดับ 1 ของเจ้าของร้านอาหาร! เช้าวันหยุดที่มีคิวจองโต๊ะเต็มร้าน พนักงานหลักโทรมาขอลาออกไม่มาทำงานดื้อๆ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สวมผ้ากันเปื้อนลงมือเข้าครัว/ชงกาแฟเองอย่างคล่องแคล่ว และวางระบบสูตรมาตรฐาน (SOP) ไม่ต้องง้อเชฟคนเดียวอีกต่อไป!",
+          "hint_th": "🪙 รักษายอดขาย +25,000 ฿ , 🧠 สมอง +7 , ❤️ สุขภาพ -2 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้ทิปพิเศษดึงน้องพาร์ทไทม์ฝีมือดีขึ้นมาเป็นบาริสต้าหลักพร้อมแบ่งเปอร์เซ็นต์ยอดขายให้!",
+          "hint_th": "🪙 กำไรสุทธิ +20,000 ฿ , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 20000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 22500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_cafe_03",
+      "title_th": "เจ้าของที่ดินแจ้งขอขึ้นค่าเช่าหน้าร้านอีก 30% เมื่อครบสัญญา 3 ปี!",
+      "min_age": 20,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_cafe_and_restaurant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "พอเห็นร้านของคุณขายดีมีคนต่อคิวทุกวัน เจ้าของตึก/ที่ดินจึงส่งจดหมายแจ้งขอปรับขึ้นค่าเช่ารายเดือนในการต่อสัญญารอบใหม่!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เจรจาทำสัญญาเช่าระยะยาว 6 ปีแลกกับการตรึงอัตราค่าเช่าเดิม และแบ่งพื้นที่หน้าร้านขายแฟรนไชส์!",
+          "hint_th": "🪙 ประหยัดค่าเช่าและกำไรเพิ่ม +35,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีบ้าน/ที่ดินของตัวเอง] ย้ายร้านมาเปิดในพื้นที่ของตัวเอง ไม่ต้องเสียค่าเช่าให้ใครอีกตลอดชีวิต!",
+          "hint_th": "🪙 ประหยัดค่าเช่ามหาศาล +45,000 ฿ , 😊 ความสุข +10 , 🧠 สมอง +5",
+          "req_stats": {},
+          "req_flags": [
+            "flag_has_own_home"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 45000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 40000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_cafe_04",
+      "title_th": "กรรมการ Michelin Guide (บิบ กูร์มองด์) / Wongnai Users' Choice แอบมาชิมอาหารที่ร้าน!",
+      "min_age": 20,
+      "max_age": 80,
+      "category": "job_specific",
+      "req_job_id": "own_cafe_and_restaurant",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การรักษามาตรฐานวัตถุดิบและรสชาติที่สม่ำเสมอของคุณ ทำให้ร้านได้รับการคัดเลือกติดป้ายรางวัลร้านอาหารยอดเยี่ยมแห่งปี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฉลองรางวัลใหญ่! นักท่องเที่ยวทั้งไทยและต่างชาติแห่มาตามรอย ยอดขายพุ่งทะลุเป้า!",
+          "hint_th": "🪙 กำไรพุ่งทะยาน +50,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +12 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 50000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำสูตรน้ำซอสและเมล็ดกาแฟของร้านมาบรรจุขวดวางขายทั่วประเทศ ขยายสเกลรายได้!",
+          "hint_th": "🪙 กำไรผลิตภัณฑ์แบรนด์ร้าน +40,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 11,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 45000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_farm_01",
+      "title_th": "ทุเรียนหมอนทองและมังคุดเกรดพรีเมียมล็อตใหญ่! ล้งส่งออกแย่งกันประมูลเหมาสวน",
+      "min_age": 20,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_smart_farmer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผลผลิตสวนผลไม้ส่งออกที่คุณใช้เทคโนโลยี Smart Farming ดูแลความชื้นและปุ๋ยอย่างแม่นยำ ให้ผลผลิตลูกโตพูสวยเนื้อกรอบนอกนุ่มในไร้หนอนเจาะ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "คัดเกรดมาตรฐาน GAP ส่งออกตู้คอนเทนเนอร์ไปตลาดจีนและญี่ปุ่น รับเงินสดก้อนโตหน้าสวน!",
+          "hint_th": "🪙 กำไรส่งออกผลไม้ +60,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 60000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไม่ตัดทุเรียนอ่อนเด็ดขาด! รักษาชื่อเสียงแบรนด์สวนคุณภาพ ลูกค้า VIP สั่งจองล่วงหน้าข้ามปี!",
+          "hint_th": "🪙 กำไรพรีเมียม +45,000 ฿ , ✨ แต้มบุญ +12 , 🤝 เส้นสาย +9 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 45000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 52500,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_farm_02",
+      "title_th": "นำโดรนการเกษตรและระบบเซนเซอร์ IoT พลังงานแสงอาทิตย์มาใช้ในฟาร์ม!",
+      "min_age": 20,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_smart_farmer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อแก้ปัญหาขาดแคลนแรงงานและลดต้นทุนระยะยาว คุณวางแผนติดตั้งระบบสั่งการรดน้ำผ่านสมาร์ทโฟนและใช้โดรนบินสำรวจสุขภาพต้นไม้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เด็กเนิร์ดคอม] เขียนโปรแกรมเซนเซอร์วัดความชื้นดินและบังคับโดรนเอง ลดต้นทุนได้ 50% และเพิ่มผลผลิตมหาศาล!",
+          "hint_th": "🪙 กำไรเพิ่ม +40,000 ฿ , 🧠 สมอง +8 , ❤️ สุขภาพ +4 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "tag_computer_nerd"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 8,
+            "connections": 0,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดสวนเป็นแหล่งท่องเที่ยวเชิงเกษตร (Agri-Tourism) และคาเฟ่ในสวนผลไม้ เก็บค่าเข้าชมและขายบุฟเฟต์ผลไม้!",
+          "hint_th": "🪙 รายได้ท่องเที่ยวเกษตร +35,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 37500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_farm_03",
+      "title_th": "พายุฤดูร้อนพัดถล่มสวนผลไม้ก่อนวันเก็บเกี่ยว 1 สัปดาห์! กิ่งทุเรียนเสี่ยงหักโค่น",
+      "min_age": 20,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_smart_farmer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "พยากรณ์อากาศแจ้งเตือนพายุลมแรงพัดผ่านพื้นที่สวนของคุณ ขณะที่ลูกผลไม้กำลังแก่จัดน้ำหนักมากอยู่บนต้น!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ระดมทีมงานโยงเชือกค้ำกิ่งและทำแนวไม้ไผ่บังลมล่วงหน้า รักษาผลผลิตไว้ได้ปลอดภัย 95%!",
+          "hint_th": "🪙 รักษารายได้ +30,000 ฿ , 🧠 สมอง +6 , ❤️ สุขภาพ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำผลไม้ที่ร่วงจากลมแรงแต่เนื้อยังดี มาแปรรูปเป็นทุเรียนฟรีซดราย (Freeze-Dried) ส่งขายออนไลน์ได้กำไรงาม!",
+          "hint_th": "🪙 กำไรแปรรูป +28,000 ฿ , 🧠 สมอง +7 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": 28000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 6,
+            "intelligence": 7,
+            "cash": 29000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_farm_04",
+      "title_th": "ได้รับรางวัลเกษตรกรดีเด่นแห่งชาติ & ต้อนรับคณะดูงานจากทั่วประเทศ!",
+      "min_age": 20,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_smart_farmer",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สวนเกษตรอัจฉริยะปลอดสารพิษของคุณได้รับการคัดเลือกให้เป็นฟาร์มต้นแบบระดับประเทศ มีหน่วยงานรัฐและเอกชนเดินทางมาขอศึกษาดูงานไม่ขาดสาย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดคอร์สสอนและจำหน่ายกิ่งพันธุ์คุณภาพสูงให้ผู้มาดูงาน สร้างรายได้เข้าฟาร์มอีกทาง!",
+          "hint_th": "🪙 รายได้ขายกิ่งพันธุ์ +35,000 ฿ , 🤝 เส้นสาย +10 , ✨ แต้มบุญ +10 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 35000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แจกเมล็ดพันธุ์พืชผักสวนครัวฟรีให้ชาวบ้านและโรงเรียนในชุมชนนำไปปลูกเป็นอาหารกลางวัน",
+          "hint_th": "✨ แต้มบุญ +25 , 🤝 เส้นสาย +9 , 😊 ความสุข +10 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "connections": 10,
+            "cash": 17500,
+            "merit": 18
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_sme_01",
+      "title_th": "ศึกผ่าตัดธุรกิจกงสีตระกูล! เปลี่ยนจากสมุดจดมือสู่ระบบ ERP & E-Commerce",
+      "min_age": 22,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_family_sme_successor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อคุณเข้ามารับช่วงต่อเป็นทายาทรุ่นใหม่ คุณพบว่าอาเจ็กอากู๋และคนงานเก่าแก่ยังใช้วิธีจดบิลด้วยกระดาษและนับสต๊อกมั่วซั่วจนของหายทุกปี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีความรู้ทางการเงิน] วางระบบบัญชี ERP และสแกนบาร์โค้ดใหม่ทั้งหมด อุดรูรั่วสต๊อกหาย เพิ่มกำไรสุทธิให้กงสี 30%!",
+          "hint_th": "🪙 กำไรธุรกิจพุ่ง +70,000 ฿ , 🧠 สมอง +8 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "flag_financial_literacy"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 8,
+            "connections": 8,
+            "cash": 70000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ค่อยๆ ปรับระบบทีละแผนกพร้อมจัดอบรมให้คนงานเก่าแก่ใช้แท็บเล็ตเป็นโดยไม่ปลดใครออก ได้ใจคนทั้งโรงงาน!",
+          "hint_th": "🪙 กำไรเพิ่ม +45,000 ฿ , 🤝 เส้นสาย +10 , ✨ แต้มบุญ +12 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 45000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 57500,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_sme_02",
+      "title_th": "ห้างค้าปลีกโมเดิร์นเทรด (Modern Trade) ยักษ์ใหญ่ติดต่อขอนำสินค้าแบรนด์คุณวางขายทั่วประเทศ!",
+      "min_age": 22,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_family_sme_successor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โอกาสก้าวกระโดดจาก SME ท้องถิ่นสู่แบรนด์ระดับประเทศ! ฝ่ายจัดซื้อของห้างสรรพสินค้าและร้านสะดวกซื้อชั้นนำต้องการสั่งสินค้าของคุณล็อตใหญ่ แต่มีเครดิตเทอม (Credit Term) 60 วัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เครดิตบูโรดีเยี่ยม] ใช้สินเชื่อหมุนเวียน SME ดอกเบี้ยต่ำขยายกำลังการผลิต ส่งของขึ้นเชลฟ์ทั่วประเทศ รับกำไรมหาศาล!",
+          "hint_th": "🪙 กำไรขยายสาขา +85,000 ฿ , 🤝 เส้นสาย +12 , 🧠 สมอง +7 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [
+            "flag_credit_good"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 7,
+            "connections": 12,
+            "cash": 85000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เจรจาเริ่มวางขายเฉพาะสาขาหัวเมืองใหญ่ก่อน เพื่อบริหารกระแสเงินสดไม่ให้ตึงมือเกินไป",
+          "hint_th": "🪙 กำไรมั่นคง +50,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 50000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 10,
+            "cash": 67500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_sme_03",
+      "title_th": "คู่ค้าลูกหนี้การค้ารายใหญ่จ่ายเช็คเด้ง! วิกฤตสภาพคล่องหมุนเงินจ่ายลูกน้องสิ้นเดือน",
+      "min_age": 22,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_family_sme_successor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช็คเงินสดค่าสินค้าจากคู่ค้ารายหนึ่งถูกธนาคารตีกลับว่า 'เงินในบัญชีไม่พอจ่าย' ในวันก่อนจ่ายเงินเดือนพนักงานพอดิบพอดี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นำหลักฐานเช็คเด้งไปเจรจายึดสินค้าคืนและเร่งระบายสต๊อกเงินสด จ่ายเงินเดือนลูกน้องครบตรงเวลาเป๊ะ!",
+          "hint_th": "🪙 กู้เงินสดคืนมาได้ +35,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใช้วงเงิน OD ธนาคารสำรองจ่ายเงินเดือนลูกน้องไปก่อน แล้วส่งทนายฟ้องคดี พ.ร.บ.เช็ค จนคู่ค้ายอมเอาเงินสดมาเคลียร์!",
+          "hint_th": "🪙 ได้เงินคืนพร้อมดอกเบี้ย +40,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 7,
+            "cash": 37500,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_sme_04",
+      "title_th": "นำทัพธุรกิจ SME ออกบูธงานแสดงสินค้าส่งออกระดับนานาชาติ (THAIFEX / อิมแพ็ค)!",
+      "min_age": 22,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_family_sme_successor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณจองพื้นที่ออกบูธในงานแสดงสินค้าระดับเอเชีย มีผู้ซื้อ (Buyers) และผู้นำเข้าจากตะวันออกกลาง จีน และยุโรป เดินเข้ามาชิมและเจรจาธุรกิจที่บูธของคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปิดดีลเซ็นสัญญาตัวแทนจำหน่ายส่งออกต่างประเทศ 3 ประเทศรวด ยกระดับธุรกิจตระกูลสู่สากล!",
+          "hint_th": "🪙 กำไรดีลส่งออก +90,000 ฿ , 🤝 เส้นสาย +12 , 🧠 สมอง +7 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 7,
+            "connections": 12,
+            "cash": 90000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดขายปลีกหน้าบูธวันสุดท้ายลดล้างสต๊อก ลูกค้าแห่เหมาจนไม่ต้องขนของกลับโรงงานเลย!",
+          "hint_th": "🪙 ยอดขายหน้างาน +45,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 45000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "intelligence": 4,
+            "connections": 10,
+            "cash": 67500,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_biz_sme_05",
+      "title_th": "ได้รับเลือกตั้งเป็นประธานหอการค้าจังหวัด / สภาอุตสาหกรรมคนรุ่นใหม่ (YEC)!",
+      "min_age": 25,
+      "max_age": 85,
+      "category": "job_specific",
+      "req_job_id": "own_family_sme_successor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความสำเร็จในการบริหารธุรกิจ SME ของคุณเป็นที่ยอมรับของนักธุรกิจทั่วจังหวัด จนได้รับการเสนอชื่อขึ้นเป็นผู้นำเครือข่ายนักธุรกิจหอการค้า!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับตำแหน่งผู้นำหอการค้า เชื่อมโยงดีลธุรกิจระดับประเทศและปลดล็อกป้ายคอนเนกชันระดับเจ้าสัว!",
+          "hint_th": "🪙 ดีลเครือข่ายหอการค้า +65,000 ฿ , 🤝 เส้นสาย +15 , ✨ หน้าตา +4 , 👑 ได้รับป้าย [คอนเนกชันระดับเจ้าสัว]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 15,
+            "cash": 65000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดโครงการช่วยเหลือ SME รายย่อยในจังหวัดให้เข้าถึงแหล่งทุนและตลาดออนไลน์",
+          "hint_th": "✨ แต้มบุญ +25 , 🤝 เส้นสาย +14 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 14,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "connections": 15,
+            "cash": 32500,
+            "merit": 13,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_job_gov_biz_gen_01",
+      "title_th": "โครงการรัฐร่วมเอกชน (PPP) มหกรรมกระตุ้นเศรษฐกิจและคาราวานสินค้าลดค่าครองชีพ!",
+      "min_age": 20,
+      "max_age": 80,
+      "category": "gov_and_business_general",
+      "req_job_id": "any_gov_or_business_career",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "จังหวัดจัดงานมหกรรมความร่วมมือระหว่างภาครัฐและผู้ประกอบการร้านค้า เพื่อกระตุ้นการใช้จ่ายและช่วยเหลือประชาชนในพื้นที่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าร่วมออกบูธ/บริหารโครงการอย่างเต็มกำลัง ได้ทั้งรายได้พิเศษและเกียรติบัตรเชิดชูเกียรติจากจังหวัด!",
+          "hint_th": "🪙 รายได้/เบี้ยเลี้ยงพิเศษ +18,000 ฿ , 🤝 เส้นสาย +9 , ✨ แต้มบุญ +10 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 18000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เน้นสร้างเครือข่ายผูกมิตรระหว่างข้าราชการและพ่อค้าแม่ค้านักธุรกิจในงาน",
+          "hint_th": "🤝 เส้นสาย +12 , 😊 ความสุข +7 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 2,
+            "connections": 11,
+            "cash": 9000,
+            "merit": 8
+          }
+        }
+      ]
+    }
+  ]
+}

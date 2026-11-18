@@ -1,0 +1,3429 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Rel_Family_&_Friends",
+  "category_group": "relationships_family_and_friends",
+  "total_events": 45,
+  "quota_breakdown": {
+    "total": 45,
+    "npc_arch_father_direct": 5,
+    "npc_arch_mother_direct": 5,
+    "relatives_drama_and_borrowing": 5,
+    "npc_arch_primary_friend": 5,
+    "npc_arch_highschool_nerd_friend": 5,
+    "npc_arch_highschool_gang_friend": 5,
+    "npc_arch_uni_colleague": 5,
+    "npc_arch_business_partner": 5,
+    "npc_arch_elite_mentor": 5
+  },
+  "events": [
+    {
+      "event_id": "evt_rel_father_01",
+      "title_th": "คุณพ่อชวนเข้าโรงรถ/ห้องเก็บเครื่องมือ! สอนวิชาซ่อมของใช้ในบ้านและเช็กเครื่องยนต์",
+      "min_age": 10,
+      "max_age": 50,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_father",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันอาทิตย์ช่วงบ่าย คุณพ่อของคุณรื้อกล่องเครื่องมือช่างออกมาวางเรียง แล้วกวักมือเรียกคุณไปช่วยจับไฟฉายและเรียนรู้วิธีซ่อมท่อประปา-เช็กน้ำกลั่นแบตเตอรี่รถ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งใจเป็นลูกมือหยิบประแจและเรียนรู้เทคนิคช่างจากพ่อ จนซ่อมเองเป็นและสนิทกับพ่อขึ้นมาก!",
+          "hint_th": "❤️ ความสัมพันธ์พ่อ +12 , 🧠 สมอง +4 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชงกาแฟเย็นไปเสิร์ฟให้พ่อแล้วนั่งคุยเรื่องชีวิตสมัยพ่อยังหนุ่มๆ",
+          "hint_th": "❤️ ความสัมพันธ์พ่อ +10 , 😊 ความสุข +4 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 11,
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 1,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_father_02",
+      "title_th": "คุณพ่อแอบดื้อไม่ยอมไปหาหมอตรวจสุขภาพ! บ่นว่ายังแข็งแรงดี",
+      "min_age": 20,
+      "max_age": 65,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_father",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ตามประสาคุณพ่อคนไทยที่มักจะปากแข็งเรื่องสุขภาพ! แม้จะมีอาการเวียนหัวและปวดเข่า แต่พ่อก็ยืนกรานว่ากินยาสมุนไพรต้มเองก็หาย ไม่ยอมไปโรงพยาบาล",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "หลอกล่อว่าจะพาไปกินของอร่อยร้านโปรด แล้วแวะพาเข้าตรวจสุขภาพโรงพยาบาลเอกชน/รัฐสำเร็จ! (-2,500฿)",
+          "hint_th": "🪙 ค่าตรวจ -2,500 ฿ , ❤️ ความสัมพันธ์พ่อ +15 , ✨ แต้มบุญ +12 , 🙏 ได้รับป้าย [ลูกกตัญญู]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_filial_child"
+          ],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -2500,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีสิทธิ์บัตรทอง / ประกัน รพ.เอกชน] ใช้สิทธิ์พาพ่อไปตรวจครบชุดโดยไม่เสียเงิน พ่อสบายใจไม่บ่นเรื่องค่าหมอ!",
+          "hint_th": "❤️ ความสัมพันธ์พ่อ +15 , ✨ แต้มบุญ +10 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [
+            "flag_welfare_card"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "happiness": 6,
+            "cash": -1250,
+            "merit": 11
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_father_03",
+      "title_th": "ความเห็นไม่ตรงกันบนโต๊ะอาหาร! พ่ออยากให้ทำงานมั่นคง vs เส้นทางยุคใหม่ของคุณ",
+      "min_age": 16,
+      "max_age": 40,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_father",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างกินมื้อเย็น คุณพ่อเปิดประเด็นเรื่องความมั่นคงในอนาคต อยากให้คุณเดินตามกรอบเดิมๆ ของผู้ใหญ่ จนบรรยากาศบนโต๊ะอาหารเริ่มตึงเครียด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับฟังความห่วงใยของพ่อด้วยความเคารพ แล้วกางแผนการเงินและผลงานจริงให้พ่อดูจนพ่อวางใจ!",
+          "hint_th": "❤️ ความสัมพันธ์พ่อ +10 , 🧠 สมอง +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เถียงกลับด้วยอารมณ์ร้อนแล้วลุกออกจากโต๊ะอาหารไปเลย!",
+          "hint_th": "❤️ ความสัมพันธ์พ่อ -15 , 😊 ความสุข -5 , ✨ แต้มบุญ -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": -3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -2,
+          "stat_effects": {
+            "intelligence": 3,
+            "merit": -1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_father_05",
+      "title_th": "พ่อโดนเพื่อนเก่าชวนลงทุนซื้อเครื่องจักร/ที่ดินตาบอด! ต้องรีบช่วยเช็กสัญญา",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_father",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณพ่อกำลังจะควักเงินเก็บเกษียณไปวางมัดจำซื้อที่ดินราคาถูกจากคนรู้จัก โดยยังไม่ได้ไปตรวจสอบระวางที่ดินจริงว่ามีทางเข้าออกหรือไม่!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อาสาพาพ่อไปตรวจสอบโฉนดที่กรมที่ดิน พบว่าเป็นที่ดินตาบอด! ช่วยเบรกพ่อไม่ให้ถูกหลอกได้ทันเวลา!",
+          "hint_th": "❤️ ความสัมพันธ์พ่อ +20 , 🧠 สมอง +6 , 😊 ความสุข +8 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แนะนำให้พ่อนำเงินก้อนนั้นไปซื้อพันธบัตรรัฐบาล/สลากออมสินแทน ปลอดภัยและได้ดอกเบี้ยชัวร์ๆ",
+          "hint_th": "❤️ ความสัมพันธ์พ่อ +12 , 🧠 สมอง +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 16,
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 5,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_father_06",
+      "title_th": "คุณพ่อเรียกคุยเรื่องมรดกและสมบัติประจำตระกูล! รางวัลของลูกที่มีความสัมพันธ์เต็มเปี่ยม",
+      "min_age": 30,
+      "max_age": 80,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_father",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวันที่พ่อเริ่มชราภาพลง ท่านเปิดเซฟ/หีบไม้เก่าแก่แล้วเรียกคุณเข้าไปนั่งคุยสองต่อสอง เพื่อส่งมอบของสำคัญและเงินออมบางส่วนให้คุณดูแล",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ก้มกราบรับคำสอนและรับมอบเงินขวัญถุงมรดกเบื้องต้น พร้อมสัญญาว่าจะดูแลครอบครัวให้ดีที่สุด!",
+          "hint_th": "🪙 เงินขวัญถุงจากพ่อ +25,000 ฿ , ❤️ ความสัมพันธ์พ่อ +20 , ✨ แต้มบุญ +15 , ❤️ ได้รับป้าย [หัวใจพ่อแม่เต็ม 5 ดวง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_parent_hearts_5"
+          ],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 25000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอให้พ่อเก็บเงินก้อนนั้นไว้ใช้จ่ายดูแลสุขภาพของพ่อเอง ส่วนเราจะส่งเงินให้ท่านเพิ่มทุกเดือน!",
+          "hint_th": "✨ แต้มบุญ +25 , ❤️ ความสัมพันธ์พ่อ +25 , 😊 ความสุข +12 , 🙏 ได้รับป้าย [ลูกกตัญญู]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_filial_child",
+            "flag_parent_hearts_5"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 11,
+            "cash": 12500,
+            "merit": 20
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mother_01",
+      "title_th": "สายเรียกเข้าจากคุณแม่! 'กินข้าวหรือยังลูก? แม่ส่งปิ่นโตกับข้าวของโปรดไปให้นะ'",
+      "min_age": 15,
+      "max_age": 70,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ไม่ว่าคุณจะอายุเท่าไหร่ ในสายตาของแม่คุณยังเป็นเด็กเสมอ! แม่โทรมาถามด้วยน้ำเสียงอบอุ่นและส่งหมูทอดน้ำพริกกะปิฝีมือแม่มาให้คุณเต็มกล่อง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับสายคุยกับแม่นานๆ อ้อนแม่และกินข้าวฝีมือแม่จนอิ่มแปล้ พลังชีวิตฟื้นฟูเต็มร้อย!",
+          "hint_th": "❤️ ความสัมพันธ์แม่ +15 , ❤️ สุขภาพ +5 , 😊 ความสุข +8 , 🪙 ประหยัดค่าข้าว +1,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 5,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 1000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โอนเงินค่ากับข้าวตอบแทนให้แม่ไปช้อปปิ้งตลาดนัดให้สบายใจ (-1,000฿)",
+          "hint_th": "🪙 โอนให้แม่ -1,000 ฿ , ❤️ ความสัมพันธ์แม่ +18 , ✨ แต้มบุญ +10 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 17,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mother_02",
+      "title_th": "คุณแม่ส่งลิงก์ข่าวปลอมในกลุ่มไลน์! 'ดื่มน้ำมะนาวโซดารักษามะเร็ง / กดลิงก์รับเงินแจกฟรี'",
+      "min_age": 18,
+      "max_age": 75,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณแม่ของคุณตื่นเต้นมาก ส่งข้อความลูกโซ่และลิงก์แปลกๆ มาในไลน์ครอบครัว บอกว่าเพื่อนในกลุ่มไลน์ส่งมาให้กดลงทะเบียนรับสิทธิ์แจกทองฟรี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ค่อยๆ อธิบายให้แม่ฟังอย่างใจเย็นและช่วยตั้งค่าบล็อก SMS/ลิงก์มิจฉาชีพในมือถือให้แม่!",
+          "hint_th": "❤️ ความสัมพันธ์แม่ +12 , 🧠 สมอง +5 , ✨ แต้มบุญ +6 (ปกป้องเงินเก็บของแม่ไว้ได้!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ดุแม่เสียงดังว่าทำไมเชื่อคนง่าย จนแม่น้อยใจเงียบไปหลายวัน",
+          "hint_th": "❤️ ความสัมพันธ์แม่ -10 , 😊 ความสุข -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 1,
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 3,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mother_03",
+      "title_th": "วันแม่แห่งชาติ 12 สิงหาคม! พวงมาลัยดอกมะลิหอมกรุ่นและอ้อมกอดของแม่",
+      "min_age": 7,
+      "max_age": 75,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันที่ 12 สิงหาคม คุณถือพวงมาลัยดอกมะลิสดเข้าไปก้มกราบที่ตักแม่ แม่ลูบหัวคุณเบาๆ พร้อมอวยพรให้คุณคิดสิ่งใดก็สมปรารถนาทุกประการ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กอดแม่แน่นๆ และพาแม่ไปซื้อทอง/เครื่องใช้ไฟฟ้าใหม่ที่แม่อยากได้มานาน! (-5,000฿)",
+          "hint_th": "🪙 ซื้อของขวัญให้แม่ -5,000 ฿ , ❤️ ความสัมพันธ์แม่ +25 , ✨ แต้มบุญ +20 , 😊 ความสุข +10 , 🙏 ได้รับป้าย [ลูกกตัญญู]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_filial_child",
+            "flag_parent_hearts_5"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -5000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงมือทำอาหารมื้อพิเศษและช่วยแม่ทำงานบ้านทั้งวัน ไม่ให้แม่ต้องเหนื่อยเลย",
+          "hint_th": "❤️ ความสัมพันธ์แม่ +15 , ✨ แต้มบุญ +12 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 1,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 1,
+            "happiness": 9,
+            "cash": -2500,
+            "merit": 16
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mother_04",
+      "title_th": "เงินเก็บก้นถุงของคุณแม่! แม่แอบยัดซองเงินฉุกเฉินใส่มือคุณในวันที่คุณเหนื่อยล้า",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แม่สังเกตเห็นว่าช่วงนี้คุณทำงานหนักและดูเครียดเรื่องค่าใช้จ่าย ก่อนคุณจะเดินออกจากบ้าน แม่แอบยัดซองเงินที่แม่เก็บหอมรอมริบไว้ใส่มือคุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "น้ำตาซึมกอดขอบคุณแม่ รับความรักของแม่มาเป็นพลังฮึดสู้ชีวิตต่อไป! (+10,000฿)",
+          "hint_th": "🪙 เงินขวัญถุงจากแม่ +10,000 ฿ , ❤️ ความสัมพันธ์แม่ +15 , 😊 ความสุข +12 , ✨ ล้างสถานะ [ซึมเศร้า/หมดไฟ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression"
+          ],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "กอดขอบคุณแม่แต่ขอคืนซองเงินให้แม่เก็บไว้ซื้อของบำรุงร่างกายตัวเองดีกว่า",
+          "hint_th": "❤️ ความสัมพันธ์แม่ +20 , ✨ แต้มบุญ +15 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 2,
+            "happiness": 11,
+            "cash": 5000,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mother_06",
+      "title_th": "พาคุณแม่ไปทัวร์ไหว้พระและทำบุญปล่อยปลาวันเกิดแม่!",
+      "min_age": 16,
+      "max_age": 80,
+      "category": "family_parents",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความสุขที่สุดของคุณแม่คือการได้เข้าวัดทำบุญพร้อมลูก วันหยุดนี้คุณเคลียร์คิวงานทั้งหมดเพื่อพาแม่ไปไหว้พระวัดดังที่แม่อยากไป",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขับรถ/เหมารถพาแม่ไปทำบุญถวายสังฆทานและถ่ายรูปให้แม่เอาไปอวดเพื่อนในไลน์! (-1,500฿)",
+          "hint_th": "🪙 ค่าทริปทำบุญ -1,500 ฿ , ❤️ ความสัมพันธ์แม่ +18 , ✨ แต้มบุญ +18 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1500,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตื่นเช้ามืดมาช่วยแม่จัดดอกไม้ธูปเทียนใส่บาตรพระหน้าบ้านอย่างอบอุ่น",
+          "hint_th": "❤️ ความสัมพันธ์แม่ +12 , ✨ แต้มบุญ +10 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 1,
+            "happiness": 8,
+            "cash": -750,
+            "merit": 14
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_kin_01",
+      "title_th": "ลุง/ป้าข้างบ้านและญาติห่างๆ เปิดศึกขิงลูกหลานวันรวมญาติสงกรานต์!",
+      "min_age": 15,
+      "max_age": 60,
+      "category": "relatives_drama",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เทศกาลรวมญาติทีไร คำถามยอดฮิตก็ปลิวว่อน! 'เรียนได้เกรดเท่าไหร่? เงินเดือนกี่หมื่นแล้ว? เมื่อไหร่จะซื้อบ้าน? ลูกป้าเพิ่งออกรถป้ายแดงนะ!'",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยิ้มหวานตอบกลับอย่างสุภาพแต่เชือดนิ่มๆ ด้วยความสำเร็จจริง จนป้าเงียบกริบและพ่อแม่หน้าบาน!",
+          "hint_th": "😊 ความสุข +8 , 🤝 เส้นสาย +6 , 🧠 สมอง +4 , ❤️ ความสัมพันธ์พ่อแม่ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แจกซองอั่งเปาให้ผู้ใหญ่และชวนเปลี่ยนเรื่องคุยไปชมอาหารบนโต๊ะแทน สยบดราม่าอย่างเหนือชั้น (-1,000฿)",
+          "hint_th": "🪙 แจกซอง -1,000 ฿ , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 8,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -1000,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เก็บคำพูดเปรียบเทียบของญาติมาคิดมากจนจิตตกและเครียดไปหลายวัน!",
+          "hint_th": "😊 ความสุข -6 , ❤️ สุขภาพ -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": -2,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_kin_02",
+      "title_th": "ญาติพี่น้องทักไลน์มาขอยืมเงินด่วน 20,000 บาท! อ้างว่าจะคืนให้สิ้นเดือนหน้าแน่นอน",
+      "min_age": 20,
+      "max_age": 75,
+      "category": "relatives_drama",
+      "target_npc_archetype": "npc_arch_father",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ลูกพี่ลูกน้องที่ปกติไม่เคยทักหา จู่ๆ ก็โทรมาเสียงอ่อย บอกว่าหมุนเงินจ่ายค่ารถไม่ทัน ขอยืมเงินคุณ 20,000 บาท สัญญาว่าจะรีบคืนให้สิ้นเดือน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธอย่างนุ่มนวลว่าเงินอยู่ในพอร์ตลงทุนถอนไม่ได้ แต่ช่วยใส่ซองให้เปล่าไป 1,000 บาทโดยไม่หวังคืน (-1,000฿)",
+          "hint_th": "🪙 ช่วยตามกำลัง -1,000 ฿ , 🧠 สมอง +5 , ✨ แต้มบุญ +4 , 😊 ความสุข +4 (รักษาทั้งเงินและไม่เสียญาติ!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 5,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใจอ่อนโอนให้ยืมเต็มจำนวน 20,000 บาท! (โอกาสได้เงินคืนแค่ 20%!)",
+          "hint_th": "🎲 โอกาสได้คืน 20% (ได้คืน: +22,000 ฿ | พลาด: ญาติชิ่งหนี้บล็อกไลน์ สูญเงิน -20,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 22000,
+            "merit": 5,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 20,
+            "fail_outcome_text_th": "ถึงสิ้นเดือนญาติเงียบกริบ! พอทวงถามกลับโดนต่อว่าว่าใจแคบและบล็อกช่องทางติดต่อหนีหายไปเลย!",
+            "fail_stat_effects": {
+              "health": -2,
+              "happiness": -12,
+              "intelligence": 2,
+              "connections": -5,
+              "cash": -20000,
+              "merit": 0,
+              "appearance": 0
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ทำสัญญากู้ยืมเงินเป็นลายลักษณ์อักษรชัดเจนก่อนโอน ทำให้ญาติเกรงใจและทยอยผ่อนคืนจนครบ!",
+          "hint_th": "🪙 ดอกเบี้ยรับ +2,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 2,
+            "cash": 2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_kin_03",
+      "title_th": "น้า/อา มาขอให้คุณช่วยใช้สลิปเงินเดือนเซ็นค้ำประกันออกรถยนต์ป้ายแดงให้หลาน!",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "relatives_drama",
+      "target_npc_archetype": "npc_arch_father",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ญาติผู้ใหญ่ถือเอกสารไฟแนนซ์มาหาถึงบ้าน ขอร้องให้คุณช่วยเซ็นเป็น 'ผู้ค้ำประกัน' ซื้อรถกระบะให้ลูกของเขา เพราะเห็นว่าคุณมีงานการและเครดิตดี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยึดคติ 'เนื้อไม่ได้กิน หนังไม่ได้รองนั่ง เอากระดูกมาแขวนคอ' ปฏิเสธการเซ็นค้ำประกันอย่างเด็ดขาด!",
+          "hint_th": "🧠 สมอง +7 , 😊 ความสุข +5 (รอดพ้นจากการเป็นหนี้แทน 100%!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เกรงใจผู้ใหญ่เลยยอมเซ็นค้ำประกันให้! (โอกาสญาติส่งค่างวดไม่ไหวแล้วไฟแนนซ์มาฟ้องคุณ 75%!)",
+          "hint_th": "🎲 โอกาสรอด 25% (พลาด: ต้องจ่ายหนี้รถแทนญาติ -45,000 ฿ และเสียเครดิต!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 25,
+            "fail_outcome_text_th": "ผ่านไปไม่กี่เดือน ญาติเอารถไปซิ่งชนแล้วปล่อยยึด! ไฟแนนซ์ส่งหนังสือทวงหนี้ส่วนต่างมาที่คุณในฐานะผู้ค้ำประกัน!",
+            "fail_stat_effects": {
+              "health": -5,
+              "happiness": -18,
+              "intelligence": 0,
+              "connections": -8,
+              "cash": -45000,
+              "merit": 0,
+              "appearance": 0
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 4,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_kin_05",
+      "title_th": "ญาติผู้ใหญ่ใจดีที่ไม่มีลูกหลาน แบ่งโฉนดที่ดิน/ทองคำเก่าเก็บให้คุณเพราะเห็นว่ากตัญญู!",
+      "min_age": 18,
+      "max_age": 65,
+      "category": "relatives_drama",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณป้า/คุณลุงแท้ๆ ที่คุณคอยแวะซื้อผลไม้ไปเยี่ยมเยียนและพาไปหาหมอเสมอ ซาบซึ้งในน้ำใจของคุณ จึงเรียกคุณไปรับมอบทองคำและเงินขวัญถุง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ก้มกราบรับน้ำใจคุณป้า/คุณลุง และสัญญาว่าจะคอยแวะมาดูแลท่านไปตลอด!",
+          "hint_th": "🪙 รับมรดกจากญาติผู้ใหญ่ +30,000 ฿ , ✨ แต้มบุญ +15 , 😊 ความสุข +12 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 30000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ลูกกตัญญู] ท่านเอ็นดูเป็นพิเศษ มอบทั้งเงินสดและแนะนำคอนเนกชันผู้ใหญ่ให้รู้จัก!",
+          "hint_th": "🪙 รับขวัญก้อนใหญ่ +45,000 ฿ , 🤝 เส้นสาย +10 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [
+            "flag_filial_child"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 45000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 14,
+          "stat_effects": {
+            "happiness": 14,
+            "connections": 8,
+            "cash": 37500,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_kin_06",
+      "title_th": "ศึกตั้งวงแชร์แม่ชม้อยประจำหมู่บ้าน/เครือญาติ! ท้าวแชร์ชวนลงมือแรกดอกเบี้ยงาม",
+      "min_age": 20,
+      "max_age": 70,
+      "category": "relatives_drama",
+      "target_npc_archetype": "npc_arch_mother",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ป้าข้างบ้านและญาติๆ ตั้งวงแชร์เปียหวยรายเดือน ชวนคุณลงเป็นลูกแชร์มือท้ายๆ เพื่อกินดอกเบี้ยสูงลิ่ว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธการเล่นแชร์นอกระบบ เอาเงินไปฝากธนาคาร/ซื้อสลากออมสินปลอดภัยกว่าเยอะ!",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +4 (ไม่ต้องลุ้นท้าวแชร์บิน!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงเล่นวงแชร์หวังกินดอกเบี้ย! (โอกาสท้าวแชร์หอบเงินหนีวงแตก 60%!)",
+          "hint_th": "🎲 โอกาสรอด 40% (รอด: ได้ดอกแชร์ +12,000 ฿ | พลาด: ท้าวแชร์บิน สูญเงินต้น -25,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 40,
+            "fail_outcome_text_th": "วงแชร์ล่ม! ท้าวแชร์เก็บเสื้อผ้าหนีไปต่างจังหวัดตอนกลางดึก ลูกแชร์นั่งกุมขมับสูญเงินต้นกันถ้วนหน้า!",
+            "fail_stat_effects": {
+              "health": -3,
+              "happiness": -15,
+              "intelligence": 1,
+              "connections": -4,
+              "cash": -25000,
+              "merit": 0,
+              "appearance": 0
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 3,
+            "cash": 6000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_pfriend_01",
+      "title_th": "บังเอิญเจอเพื่อนสนิทข้างบ้านสมัยประถม! เปิดกรุของเล่นและรูปถ่ายวัยเด็ก",
+      "min_age": 12,
+      "max_age": 60,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_primary_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณได้กลับมาเจอกับเพื่อนสนิทวัยประถมที่เคยปั่นจักรยานและกระโดดยางเล่นด้วยกันมาตั้งแต่ตัวกะเปี๊ยก นั่งรำลึกวีรกรรมวัยเด็กกันจนท้องแข็ง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ชวนไปนั่งกินลูกชิ้นปิ้งหน้าโรงเรียนเก่าและอัปเดตชีวิตกันอย่างอบอุ่น (-200฿)",
+          "hint_th": "🪙 เลี้ยงลูกชิ้นเพื่อน -200 ฿ , ❤️ ความสัมพันธ์เพื่อนประถม +18 , 😊 ความสุข +8 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แลกเบอร์และไลน์เก็บไว้ มีเรื่องทุกข์ใจเมื่อไหร่ก็โทรหากันได้เสมอ",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนประถม +12 , 😊 ความสุข +6 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 4,
+            "cash": -100
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_pfriend_02",
+      "title_th": "เพื่อนสนิทวัยประถมอกหัก/ตกงาน ทักมาขอพื้นที่พักใจและปรับทุกข์กลางดึก!",
+      "min_age": 18,
+      "max_age": 55,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_primary_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนรักวัยเด็กของคุณกำลังเจอมรสุมชีวิตลูกใหญ่ โทรมาหาคุณด้วยน้ำเสียงสั่นเครือเพราะไม่รู้จะหันหน้าไปพึ่งใครในเมืองใหญ่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบออกไปหา เลี้ยงหมูกระทะปลอบใจและช่วยแนะนำช่องทางหางานใหม่ให้เพื่อนจนผ่านวิกฤต! (-600฿)",
+          "hint_th": "🪙 เลี้ยงปลอบใจ -600 ฿ , ❤️ ความสัมพันธ์เพื่อนประถม +25 , ✨ แต้มบุญ +12 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -600,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับฟังและให้กำลังใจทางโทรศัพท์ยาว 2 ชั่วโมงจนเพื่อนสบายใจขึ้น",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนประถม +15 , ✨ แต้มบุญ +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "happiness": 6,
+            "connections": 3,
+            "cash": -300,
+            "merit": 9
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_pfriend_03",
+      "title_th": "เพื่อนวัยประถมส่งของดีประจำจังหวัด / ข้าวสารอาหารแห้งจากบ้านเกิดมาฝาก!",
+      "min_age": 18,
+      "max_age": 75,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_primary_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ด้วยมิตรภาพที่เหนียวแน่น เพื่อนสนิทวัยประถมส่งพัสดุกล่องใหญ่ที่เต็มไปด้วยข้าวหอมมะลิใหม่ หมูยอ และผลไม้จากบ้านเกิดมาให้คุณกินฟรี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โทรไปขอบคุณเพื่อนอย่างซาบซึ้ง ช่วยประหยัดค่าอาหารไปได้ทั้งเดือน!",
+          "hint_th": "🪙 ประหยัดค่าอาหาร +2,500 ฿ , ❤️ ความสัมพันธ์เพื่อนประถม +15 , ❤️ สุขภาพ +4 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 4,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ส่งของฝากจากในเมืองกลับไปให้ครอบครัวของเพื่อนเป็นการตอบแทนน้ำใจ (-500฿)",
+          "hint_th": "🪙 ค่าของฝาก -500 ฿ , ❤️ ความสัมพันธ์เพื่อนประถม +20 , 🤝 เส้นสาย +6 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 2,
+            "happiness": 8,
+            "connections": 3,
+            "cash": 1000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_pfriend_04",
+      "title_th": "เพื่อนวัยประถมเปลี่ยนไป! ทักมาชวนเข้าสัมมนาขายตรงล้างสมอง 'รวยพันล้านใน 3 เดือน'",
+      "min_age": 18,
+      "max_age": 50,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_primary_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนประถมใส่สูทผูกไทด์ทักมาชวนคุณไปกินกาแฟ พอไปถึงกลับถูกล้อมโดยอัพไลน์ที่พยายามตื๊อให้คุณรูดบัตรเปิดบิลสต๊อกสินค้าลูกโซ่ 30,000 บาท!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งสติปฏิเสธเปิดบิลอย่างเด็ดขาด แล้วดึงสติเพื่อนรักให้ถอนตัวออกมาก่อนจะหมดตัว!",
+          "hint_th": "🧠 สมอง +6 , ❤️ ความสัมพันธ์เพื่อนประถม +10 , ✨ แต้มบุญ +8 (ช่วยชีวิตเพื่อนไว้ได้!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอกลับบ้านทันทีและเว้นระยะห่างจนกว่าเพื่อนจะเลิกบ้าขายตรง",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +2 , ❤️ ความสัมพันธ์เพื่อนประถม -5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -5,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 3,
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_pfriend_05",
+      "title_th": "งานแต่งงานของเพื่อนรักวัยประถม! รับหน้าที่เป็นเพื่อนเจ้าบ่าว/เพื่อนเจ้าสาวกั้นประตูเงินประตูทอง",
+      "min_age": 22,
+      "max_age": 45,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_primary_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนที่โตมาด้วยกันตั้งแต่เด็กเข้าสู่พิธีวิวาห์ และขอให้คุณมาเป็นเพื่อนเจ้าบ่าว/เจ้าสาวคนสำคัญในวันมงคล!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใส่ชุดสวยหล่อไปช่วยกั้นประตูเงินประตูทอง ได้ซองมงคลและขึ้นกล่าวอวยพรเพื่อนซึ้งน้ำตาซึม!",
+          "hint_th": "🪙 ซองประตูเงินประตูทอง +1,500 ฿ , ❤️ ความสัมพันธ์เพื่อนประถม +25 , 😊 ความสุข +10 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยจัดการต้อนรับแขกและถ่ายรูปให้เพื่อนตลอดทั้งงานด้วยความเต็มใจ",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนประถม +20 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 7,
+            "cash": 750,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_nerd_01",
+      "title_th": "เพื่อนแว่นเด็กเรียนส่งโพยสรุปข้อสอบ & ติวเข้มคืนหอนก่อนสอบสำคัญ!",
+      "min_age": 13,
+      "max_age": 25,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_nerd_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ก่อนวันสอบสำคัญ เพื่อนแว่นหัวกะทิของคุณหอบสมุดเลกเชอร์ที่จดไฮไลต์สีแยกหมวดหมู่ไว้อย่างละเอียดมาช่วยติวจุดออกสอบให้คุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งใจติวกับเพื่อนจนทะลุปรุโปร่ง คะแนนสอบพุ่งกระฉูดและปลดล็อกป้ายหนอนหนังสือ!",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนเด็กเรียน +20 , 🧠 สมอง +8 , 😊 ความสุข +5 , ✨ ปลดล็อกป้าย [หนอนหนังสือ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_bookworm"
+          ],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 8,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เลี้ยงข้าวมันไก่และน้ำหวานตอบแทนเพื่อนที่ช่วยติวให้จนรอดตาย (-150฿)",
+          "hint_th": "🪙 เลี้ยงข้าวเพื่อน -150 ฿ , ❤️ ความสัมพันธ์เพื่อนเด็กเรียน +22 , 🧠 สมอง +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": -150,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 21,
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 7,
+            "cash": -75
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_nerd_02",
+      "title_th": "ปกป้องเพื่อนแว่นเด็กเรียนจากแก๊งอันธพาลที่มาไถเงิน/บังคับให้ทำการบ้านให้!",
+      "min_age": 13,
+      "max_age": 22,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_nerd_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังตึกเรียน คุณเห็นกลุ่มเด็กเกเรกำลังยืนล้อมเพื่อนแว่นของคุณเพื่อบังคับให้เขียนรายงานให้ฟรีและไถเงินค่าขนม!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ก้าวเข้าไปยืนขวางและขู่จะเรียกอาจารย์ฝ่ายปกครอง จนแก๊งเกเรยอมถอยหนี! เพื่อนซาบซึ้งใจสุดๆ!",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนเด็กเรียน +30 , ✨ แต้มบุญ +12 , 🤝 เส้นสาย +5 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบถ่ายคลิปหลักฐานส่งให้ครูฝ่ายปกครองมาจัดการอย่างเด็ดขาดโดยไม่ต้องปะทะเอง",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนเด็กเรียน +20 , 🧠 สมอง +6 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 3,
+            "merit": 10
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_nerd_03",
+      "title_th": "เพื่อนเด็กเรียนโตมาเป็น ดร./ผู้เชี่ยวชาญไอที ชวนคุณร่วมทำโปรเจกต์สตาร์ทอัพ!",
+      "min_age": 22,
+      "max_age": 55,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_nerd_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนแว่นสมัยมัธยมของคุณตอนนี้กลายเป็นผู้เชี่ยวชาญด้านเทคโนโลยี/การเงินระดับท็อป และติดต่อชวนคุณมาร่วมทีมพัฒนาแพลตฟอร์มใหม่!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตอบรับเข้าร่วมทีม! ได้ทั้งความรู้ระดับสูงและส่วนแบ่งกำไรจากโปรเจกต์ก้อนโต!",
+          "hint_th": "🪙 ส่วนแบ่งโปรเจกต์ +25,000 ฿ , 🧠 สมอง +7 , ❤️ ความสัมพันธ์เพื่อนเด็กเรียน +18 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 7,
+            "connections": 6,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอให้เพื่อนช่วยวิเคราะห์จัดพอร์ตหุ้นและวางแผนลดหย่อนภาษีให้แบบ VIP!",
+          "hint_th": "🪙 กำไรพอร์ตลงทุน +15,000 ฿ , 🧠 สมอง +5 , 💡 ได้รับป้าย [มีความรู้ทางการเงิน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 20000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_nerd_04",
+      "title_th": "เพื่อนเด็กเรียนขอคำปรึกษาเรื่องการแต่งตัวและทักษะการจีบคนที่แอบชอบ!",
+      "min_age": 15,
+      "max_age": 35,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_nerd_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ถึงเรื่องวิชาการจะเกรด 4.00 แต่เรื่องความรักเพื่อนแว่นของคุณได้เกรด 0! เขามาขอให้คุณช่วยเลือกเสื้อผ้าเปลี่ยนลุคและช่วยเป็นพ่อสื่อแม่ชักให้หน่อย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พาเพื่อนไปตัดผมเปลี่ยนกรอบแว่นและเลือกชุดใหม่ หล่อ/สวยผิดหูผิดตาจนจีบติดสำเร็จ!",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนเด็กเรียน +25 , ✨ หน้าตา +4 , 😊 ความสุข +8 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยติวบทสนทนาเดทแรกให้เพื่อนมีความมั่นใจและเป็นตัวของตัวเอง",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนเด็กเรียน +15 , 😊 ความสุข +5 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 5,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_nerd_05",
+      "title_th": "เพื่อนเด็กเรียนกลายเป็นคุณหมอ/ทนายความมือหนึ่ง คอยช่วยดูแลเคสครอบครัวคุณฟรี!",
+      "min_age": 25,
+      "max_age": 75,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_nerd_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การมีเพื่อนสนิทเป็นคนเก่งคือทรัพย์สินอันล้ำค่า! เมื่อคุณมีข้อสงสัยเรื่องสุขภาพหรือสัญญาทางกฎหมาย เพื่อนคนนี้พร้อมเปิดทางด่วนให้คำปรึกษาคุณทันที",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปรึกษาสุขภาพและข้อกฎหมายกับเพื่อน ช่วยป้องกันความผิดพลาดและประหยัดค่าใช้จ่ายได้เพียบ!",
+          "hint_th": "🪙 ประหยัดค่าที่ปรึกษา +10,000 ฿ , ❤️ สุขภาพ +5 , 🧠 สมอง +4 , ❤️ ความสัมพันธ์เพื่อน +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ส่งกระเช้าของขวัญปีใหม่ไปขอบคุณเพื่อนที่คอยช่วยเหลือกันมาตลอด (-1,000฿)",
+          "hint_th": "🪙 ค่ากระเช้า -1,000 ฿ , ❤️ ความสัมพันธ์เพื่อน +20 , 🤝 เส้นสาย +7 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": -1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 4500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_gang_01",
+      "title_th": "หัวโจกแก๊งเพื่อนหลังห้องออกตัวรับหน้าช่วยคุณในยามคับขัน! มิตรภาพลูกผู้ชาย/เพื่อนแท้",
+      "min_age": 13,
+      "max_age": 45,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_gang_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ถึงแก๊งหลังห้องจะเรียนไม่เก่ง แต่เรื่องรักพวกพ้องคือที่หนึ่ง! เมื่อรถของคุณเสียกลางดึกหรือมีคนมาหาเรื่อง หัวโจกเพื่อนรักขี่รถบึ่งมาช่วยคุณเป็นคนแรกเสมอ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กอดคอขอบคุณเพื่อนแท้ และนัดปาร์ตี้หมูกระทะตอบแทนน้ำใจเพื่อน! (-500฿)",
+          "hint_th": "🪙 เลี้ยงหมูกระทะ -500 ฿ , ❤️ ความสัมพันธ์เพื่อนแก๊ง +25 , 🤝 เส้นสาย +8 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สัญญาว่าถ้าเพื่อนมีปัญหาเรื่องงานหรือเอกสารเมื่อไหร่ เราจะช่วยเต็มที่เหมือนกัน!",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนแก๊ง +18 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 7,
+            "cash": -250,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_gang_02",
+      "title_th": "เพื่อนแก๊งหลังห้องชวนลงทุนสีเทา / ฝากของผิดกฎหมายไว้ที่ห้องพักของคุณ!",
+      "min_age": 16,
+      "max_age": 45,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_gang_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คืนหนึ่งเพื่อนแก๊งหลังห้องหอบกระเป๋าดำปริศนามาเคาะห้องคุณ บอกว่าขอฝากของหนีภาษี/ของสีเทาไว้สัก 3 วัน แล้วจะแบ่งเงินค่าฝากให้ 20,000 บาท!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธเสียงแข็งไม่รับฝากของผิดกฎหมายเด็ดขาด และเตือนสติเพื่อนให้กลับใจก่อนติดคุก!",
+          "hint_th": "🧠 สมอง +6 , ✨ แต้มบุญ +10 , 😊 ความสุข +4 (รอดพ้นจากคดีอาญา!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -5,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เห็นแก่เงินและคำว่าเพื่อน เลยยอมรับฝากไว้! (โอกาสตำรวจบุกค้นห้อง 75%!)",
+          "hint_th": "🎲 โอกาสรอด 25% (รอด: +20,000 ฿ | พลาด: ตำรวจบุกค้น เสียค่าปรับและค่าทนาย -50,000 ฿!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 20000,
+            "merit": -20,
+            "appearance": 0
+          },
+          "rng_mechanic": {
+            "success_chance_percent": 25,
+            "fail_outcome_text_th": "เพื่อนซัดทอด! ตำรวจนำหมายค้นมาเคาะห้องคุณ ต้องเสียเงินค่าประกันตัวและค่าทนายความสู้คดีแทบหมดตัว!",
+            "fail_stat_effects": {
+              "health": -8,
+              "happiness": -25,
+              "intelligence": 0,
+              "connections": -12,
+              "cash": -50000,
+              "merit": -30,
+              "appearance": -4
+            }
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -2,
+          "stat_effects": {
+            "intelligence": 3,
+            "cash": 10000,
+            "merit": -5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_gang_03",
+      "title_th": "เพื่อนแก๊งหลังห้องกลับตัวเป็นเฒ่าแก่เจ้าของอู่รถ-ร้านหมูกระทะใหญ่ ชวนคุณไปกินฟรี!",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_gang_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ใครจะคิดว่าหัวโจกหลังห้องสมัยเรียน พอโตขึ้นจะลุยทำมาหากินเปิดอู่แต่งรถและร้านหมูกระทะจนรวยเป็นเฒ่าแก่! เขาเชิญคุณไปงานฉลองเปิดสาขาใหม่แบบ VIP",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ถือกระเช้าดอกไม้ไปร่วมยินดี ได้กินฟรีตลอดชีพและได้ส่วนลดซ่อมรถครึ่งราคา! (-800฿)",
+          "hint_th": "🪙 ค่ากระเช้า -800 ฿ , 🪙 ประหยัดค่าซ่อมรถ/อาหาร +6,000 ฿ , ❤️ ความสัมพันธ์เพื่อน +20 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 5200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยเพื่อนทำเพจโปรโมตร้านและวางระบบบัญชีให้ฟรี เพื่อนแบ่งหุ้นส่วนกำไรให้!",
+          "hint_th": "🪙 ส่วนแบ่งกำไรร้าน +12,000 ฿ , ❤️ ความสัมพันธ์เพื่อน +25 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 7,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 2,
+            "connections": 8,
+            "cash": 8600
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_gang_04",
+      "title_th": "เพื่อนแก๊งหลังห้องเมาแล้วจะขับรถกลับบ้านหลังปาร์ตี้เลี้ยงรุ่น!",
+      "min_age": 20,
+      "max_age": 55,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_gang_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังงานเลี้ยงสังสรรค์ เพื่อนของคุณดื่มหนักจนเดินเซแต่ยังดื้อจะคว้ากุญแจรถขับกลับบ้านเองท่ามกลางด่านตรวจและถนนมืด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยึดกุญแจรถเพื่อนไว้ แล้วเรียกแกร็บ/ขับรถไปส่งเพื่อนถึงบ้านอย่างปลอดภัย!",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อนแก๊ง +20 , ✨ แต้มบุญ +15 , 🧠 สมอง +4 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดห้องพักโรงแรมใกล้ๆ ให้เพื่อนนอนสร่างเมาจนถึงเช้า (-800฿)",
+          "hint_th": "🪙 ค่าห้องพัก -800 ฿ , ❤️ ความสัมพันธ์เพื่อนแก๊ง +22 , ✨ แต้มบุญ +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -800,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 21,
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 2,
+            "cash": -400,
+            "merit": 14
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_gang_05",
+      "title_th": "แก๊งเพื่อนมัธยมนัดทริปแคมป์ปิ้งกางเต็นท์เขาใหญ่/ภูกระดึง รำลึกความหลัง!",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "friends",
+      "target_npc_archetype": "npc_arch_highschool_gang_friend",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แก๊งเพื่อนสมัยเรียนนัดรวมพลแบกเป้ไปกางเต็นท์นอนนับดาว ปิ้งบาร์บีคิว และดีดกีตาร์ร้องเพลงยุค 90-2000 รอบกองไฟ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เคลียร์งานไปจอยทริปกับเพื่อน สูดอากาศบริสุทธิ์และหัวเราะจนลืมความเครียด! (-1,500฿)",
+          "hint_th": "🪙 ค่าทริปหารกัน -1,500 ฿ , ❤️ สุขภาพ +6 , 😊 ความสุข +10 , ❤️ ความสัมพันธ์เพื่อน +20 , ✨ ล้างสถานะ [ซึมเศร้า]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression"
+          ],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 6,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เป็นสปอนเซอร์ส่งเนื้อย่างและเครื่องดื่มไปสมทบให้เพื่อนๆ เพราะติดงานสำคัญ (-800฿)",
+          "hint_th": "🪙 ค่าของฝาก -800 ฿ , ❤️ ความสัมพันธ์เพื่อน +12 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 16,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "connections": 6,
+            "cash": -1150
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_colleague_01",
+      "title_th": "เพื่อนร่วมงานแอบแทงข้างหลัง! ขโมยไอเดียสไลด์ของคุณไปเสนอเจ้านายในห้องประชุม",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "friends_work",
+      "target_npc_archetype": "npc_arch_uni_colleague",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะที่คุณเล่าไอเดียโปรเจกต์ใหม่ให้เพื่อนร่วมงานฟังตอนพักเที่ยง พอเข้าห้องประชุมบ่าย เขากลับชิงพูดเสนอไอเดียนั้นเป็นของตัวเองหน้าตาเฉย!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยิ้มรับแล้วพูดเสริมรายละเอียดเชิงลึกและเปิดไฟล์ต้นฉบับที่มีลายน้ำชื่อคุณกลางที่ประชุม เจ้านายรู้ทันทีว่าใครคือตัวจริง!",
+          "hint_th": "🪙 โบนัสเจ้าของโปรเจกต์ +12,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +7 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 7,
+            "connections": 7,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เรียกเพื่อนมาคุยส่วนตัวหลังไมค์ให้แบ่งเครดิตงานร่วมกันอย่างเป็นธรรม",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +5 , ❤️ ความสัมพันธ์เพื่อนร่วมงาน +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 5,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 3,
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 6000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_colleague_02",
+      "title_th": "เพื่อนสนิทมหาลัย/ที่ทำงานย้ายไปเป็นใหญ่ในบริษัทชั้นนำ ดึงตัวคุณไปรับโปรเจกต์พิเศษ!",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "friends_work",
+      "target_npc_archetype": "npc_arch_uni_colleague",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "พลังของคอนเนกชันเพื่อนร่วมรุ่น! เพื่อนสนิทสมัยทำโปรเจกต์จบด้วยกัน ตอนนี้ก้าวขึ้นเป็นผู้บริหารและติดต่อส่งงานที่ปรึกษา/ดีลพิเศษมาให้คุณโดยตรง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จับมือลุยงานร่วมกันอย่างมืออาชีพ รับค่าตอบแทนพิเศษก้อนงามวิน-วินทั้งสองฝ่าย!",
+          "hint_th": "🪙 รายได้จากคอนเนกชันเพื่อน +20,000 ฿ , 🤝 เส้นสาย +9 , ❤️ ความสัมพันธ์เพื่อน +18 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นัดกินข้าวแลกเปลี่ยนข้อมูลเงินเดือนและเทรนด์อุตสาหกรรมในวงการ (-800฿)",
+          "hint_th": "🪙 ค่าอาหาร -800 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , ❤️ ความสัมพันธ์เพื่อน +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 17,
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 9600
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_colleague_03",
+      "title_th": "วงนินทาเจ้านายหน้าตู้กดน้ำออฟฟิศ! เพื่อนร่วมงานชวนเม้าท์มอยเรื่องลับในแผนก",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "friends_work",
+      "target_npc_archetype": "npc_arch_uni_colleague",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ระหว่างเดินไปชงกาแฟที่ Pantry เพื่อนร่วมงานตัวจี๊ดกวักมือเรียกคุณไปซุบซิบนินทาหัวหน้าและถามความเห็นของคุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยิ้มรับฟังเฉยๆ แต่ไม่พูดว่าร้ายใคร (หน้าต่างมีหู ประตูมีช่อง!) รอดพ้นจากดราม่าการเมืองในออฟฟิศ!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 5,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ผสมโรงเม้าท์มอยอย่างเมามัน ปรากฏว่าหัวหน้าเดินมาได้ยินอยู่ข้างหลังพอดี! ซวยสุดๆ!",
+          "hint_th": "🤝 เส้นสาย -8 , 😊 ความสุข -6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 0,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": -8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 3,
+          "stat_effects": {
+            "happiness": -1,
+            "intelligence": 3,
+            "connections": -1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_colleague_04",
+      "title_th": "เพื่อนร่วมงานป่วยกะทันหันก่อนวันส่งงานใหญ่! ขอให้คุณช่วยทำสไลด์และพรีเซนต์แทน",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "friends_work",
+      "target_npc_archetype": "npc_arch_uni_colleague",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช้าวันพรีเซนต์งานสำคัญ เพื่อนสนิทในทีมของคุณอาหารเป็นพิษต้องแอดมิทโรงพยาบาลด่วน ส่งไฟล์งานมาขอให้คุณช่วยขึ้นพูดแทน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับไม้ต่อขึ้นพรีเซนต์แทนอย่างราบรื่น และให้เครดิตเพื่อนต่อหน้าเจ้านาย ได้ใจเพื่อนและทีมงานเต็มร้อย!",
+          "hint_th": "❤️ ความสัมพันธ์เพื่อน +25 , 🤝 เส้นสาย +9 , ✨ แต้มบุญ +10 , 🪙 โบนัสทีมเวิร์ก +8,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 8000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แวะซื้อผลไม้ไปเยี่ยมเพื่อนที่โรงพยาบาลหลังเลิกงาน (-500฿)",
+          "hint_th": "🪙 ค่าของเยี่ยม -500 ฿ , ❤️ ความสัมพันธ์เพื่อน +20 , ✨ แต้มบุญ +8 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -500,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 5,
+            "cash": 3750,
+            "merit": 9
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_colleague_05",
+      "title_th": "ปาร์ตี้ชาบู-คาราโอเกะคืนวันศุกร์สิ้นเดือนกับแก๊งเพื่อนออฟฟิศ!",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "friends_work",
+      "target_npc_archetype": "npc_arch_uni_colleague",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันศุกร์เงินเดือนออก แก๊งเพื่อนร่วมงานนัดไปกินบุฟเฟต์ชาบูและร้องคาราโอเกะปลดปล่อยความเหนื่อยล้ามาทั้งเดือน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปจอยปาร์ตี้ ร้องเพลงเต้นสุดเหวี่ยง กระชับมิตรกับเพื่อนร่วมงานทุกแผนก! (-800฿)",
+          "hint_th": "🪙 ค่าปาร์ตี้ -800 ฿ , ❤️ ความสัมพันธ์เพื่อน +18 , 😊 ความสุข +9 , 🤝 เส้นสาย +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปร่วมกินชาบูพูดคุยพอหอมปากหอมคอ แล้วขอตัวกลับบ้านไปพักผ่อนแต่หัวค่ำ (-500฿)",
+          "hint_th": "🪙 ค่าชาบู -500 ฿ , ❤️ ความสัมพันธ์เพื่อน +12 , ❤️ สุขภาพ +3 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 2,
+            "happiness": 8,
+            "connections": 6,
+            "cash": -650
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_partner_01",
+      "title_th": "พาร์ทเนอร์ธุรกิจชี้ช่องทางรับสต๊อกสินค้าราคาโรงงาน / ดีลร่วมทุนล็อตใหญ่!",
+      "min_age": 20,
+      "max_age": 75,
+      "category": "business_network",
+      "target_npc_archetype": "npc_arch_business_partner",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนนักธุรกิจของคุณค้นพบแหล่งผลิตสินค้าราคาต้นน้ำที่ถูกกว่าท้องตลาด 40% จึงชวนคุณลงขันสั่งซื้อล็อตใหญ่ด้วยกันเพื่อรับส่วนลดสูงสุด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตรวจสอบสัญญาและร่วมลงขันสั่งล็อตใหญ่ ขายทำกำไรแบ่งกันรับทรัพย์ก้อนโต!",
+          "hint_th": "🪙 กำไรร่วมทุน +35,000 ฿ , ❤️ ความสัมพันธ์หุ้นส่วน +20 , 🤝 เส้นสาย +8 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอรับมาช่วยกระจายสินค้าแบบไม่ต้องสต๊อกเอง กินเปอร์เซ็นต์ส่วนแบ่งแบบไร้ความเสี่ยง",
+          "hint_th": "🪙 ค่านายหน้า +15,000 ฿ , ❤️ ความสัมพันธ์หุ้นส่วน +12 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 16,
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 5,
+            "connections": 7,
+            "cash": 25000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_partner_02",
+      "title_th": "ดราม่าหุ้นส่วนธุรกิจแอบดึงเงินกองกลางบริษัทไปหมุนใช้ส่วนตัว!",
+      "min_age": 20,
+      "max_age": 75,
+      "category": "business_network",
+      "target_npc_archetype": "npc_arch_business_partner",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ขณะตรวจสอบสมุดบัญชีร่วม คุณพบว่ามีรายการโอนเงินออกจากกองกลางไป 40,000 บาทโดยไม่มีใบเสร็จ พอถามหุ้นส่วนเขาก็ยอมรับว่าแอบเอาไปหมุนจ่ายหนี้ส่วนตัวก่อน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กางสัญญากำหนดให้ต้องมีลายเซ็นคู่ (Co-Sign) ทั้งสองคนถึงจะเบิกเงินได้ และหักเงินปันผลของเขามาคืนครบทุกบาท!",
+          "hint_th": "🪙 กู้เงินกองกลางคืน +20,000 ฿ , 🧠 สมอง +7 , 😊 ความสุข +5 (ระบบการเงินรัดกุม 100%!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 5,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอซื้อหุ้นคืนทั้งหมดมาบริหารเองคนเดียว จบปัญหาการโกงกินในอนาคต!",
+          "hint_th": "🪙 กำไรบริหารเดี่ยว +25,000 ฿ , 🧠 สมอง +6 , ❤️ ความสัมพันธ์หุ้นส่วน -15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -5,
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 7,
+            "cash": 22500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_partner_03",
+      "title_th": "ความเห็นขัดแย้งเรื่องทิศทางธุรกิจ! ขยายสาขาเชิงรุก vs เก็บเงินสดสำรองรับวิกฤต",
+      "min_age": 20,
+      "max_age": 75,
+      "category": "business_network",
+      "target_npc_archetype": "npc_arch_business_partner",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในที่ประชุมวางแผนประจำปี หุ้นส่วนของคุณอยากทุ่มกำไรทั้งหมดไปเปิดสาขาใหม่เพิ่มอีก 3 แห่ง แต่คุณมองว่าเศรษฐกิจปีนี้ยังมีความไม่แน่นอน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เสนอทางสายกลาง เปิดสาขาใหม่ 1 แห่งในทำเลทอง และเก็บกำไรอีกครึ่งหนึ่งเป็นเงินสดสำรอง ธุรกิจโตอย่างปลอดภัย!",
+          "hint_th": "🪙 เงินปันผล +25,000 ฿ , 🧠 สมอง +6 , ❤️ ความสัมพันธ์หุ้นส่วน +18 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปลี่ยนจากการลงทุนสร้างร้านเอง เป็นการขายสิทธิ์แฟรนไชส์ให้คนอื่นมาลงทุนแทน รับค่า Franchise Fee สบายๆ!",
+          "hint_th": "🪙 ค่าแฟรนไชส์ +35,000 ฿ , 🧠 สมอง +8 , ❤️ ความสัมพันธ์หุ้นส่วน +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 8,
+            "connections": 8,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 19,
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 7,
+            "connections": 7,
+            "cash": 30000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_partner_04",
+      "title_th": "พาร์ทเนอร์ธุรกิจประสบอุบัติเหตุเข้าโรงพยาบาล! คุณต้องช่วยดูแลกิจการแทนชั่วคราว",
+      "min_age": 20,
+      "max_age": 75,
+      "category": "business_network",
+      "target_npc_archetype": "npc_arch_business_partner",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนพาร์ทเนอร์ของคุณป่วยกะทันหันต้องพักรักษาตัว 1 เดือนเต็ม คุณต้องรับหน้าที่ดูแลลูกค้าและส่งมอบเงินส่วนแบ่งให้ครอบครัวของเขาอย่างซื่อสัตย์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "บริหารงานแทนอย่างเต็มกำลังและโอนส่วนแบ่งกำไรให้ครอบครัวเพื่อนครบทุกบาท พาร์ทเนอร์ซาบซึ้งใจยอมตายถวายหัวให้คุณ!",
+          "hint_th": "❤️ ความสัมพันธ์หุ้นส่วน +35 , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +10 , 🪙 กำไรของคุณ +20,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 35,
+          "stat_effects": {
+            "health": -2,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 20000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ส่งกระเช้าเยี่ยมไข้และจัดจ้างผู้จัดการชั่วคราวมาช่วยรันงานจนผ่านพ้นไปด้วยดี (-2,000฿)",
+          "hint_th": "🪙 กำไรสุทธิ +12,000 ฿ , ❤️ ความสัมพันธ์หุ้นส่วน +20 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 12000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 28,
+          "stat_effects": {
+            "health": -1,
+            "happiness": 8,
+            "connections": 8,
+            "cash": 16000,
+            "merit": 15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_partner_05",
+      "title_th": "ฉลองครบรอบความสำเร็จทางธุรกิจ! พาร์ทเนอร์ชวนจัดงานเลี้ยงขอบคุณคู่ค้าประจำปี",
+      "min_age": 20,
+      "max_age": 75,
+      "category": "business_network",
+      "target_npc_archetype": "npc_arch_business_partner",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปีนี้ผลประกอบการของธุรกิจที่ทำร่วมกันเติบโตอย่างสวยงาม พาร์ทเนอร์ชวนจัดงาน Thank You Party เพื่อกระชับความสัมพันธ์กับซัพพลายเออร์และลูกค้ารายใหญ่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดงานเลี้ยงอย่างอบอุ่น ได้รับคำสั่งซื้อล่วงหน้าสำหรับปีหน้าเพียบ! (-5,000฿)",
+          "hint_th": "🪙 กำไรออร์เดอร์ใหม่สุทธิ +30,000 ฿ , ❤️ ความสัมพันธ์หุ้นส่วน +20 , 🤝 เส้นสาย +12 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปลี่ยนงบจัดปาร์ตี้เป็นทองคำและของขวัญพรีเมียมส่งตรงถึงมือลูกค้า VIP ทุกเจ้า",
+          "hint_th": "🪙 ยอดสั่งซื้อซ้ำ +25,000 ฿ , ❤️ ความสัมพันธ์หุ้นส่วน +15 , 🤝 เส้นสาย +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "happiness": 8,
+            "connections": 11,
+            "cash": 27500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mentor_01",
+      "title_th": "เข้าพบคารวะ 'ผู้ใหญ่ใจดีในวงการ' วันปีใหม่/สงกรานต์! รับพรและคำชี้แนะระดับเจ้าสัว",
+      "min_age": 25,
+      "max_age": 80,
+      "category": "elite_network",
+      "target_npc_archetype": "npc_arch_elite_mentor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณนำพวงมาลัยดอกมะลิและกระเช้าผลไม้มงคลไปเข้าพบผู้หลักผู้ใหญ่ที่มีบารมีในสังคมไทย ท่านมองเห็นความขยันและกิริยามารยาทที่นอบน้อมของคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นั่งรับฟังปรัชญาการบริหารธุรกิจและการวางตัว ท่านเอ็นดูมอบป้ายคอนเนกชันระดับเจ้าสัวให้! (-3,000฿)",
+          "hint_th": "🪙 ค่ากระเช้า -3,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ +25 , 🤝 เส้นสาย +12 , 👑 ปลดล็อกป้าย [คอนเนกชันระดับเจ้าสัว]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 5,
+            "connections": 12,
+            "cash": -3000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ท่านเมตตาแนะนำลูกค้ารายใหญ่และเขียนจดหมายรับรอง (Recommendation) ให้คุณไปต่อยอดงาน!",
+          "hint_th": "🪙 รายได้จากดีลผู้ใหญ่แนะนำ +40,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ +20 , 🤝 เส้นสาย +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 11,
+            "cash": 18500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mentor_02",
+      "title_th": "ผู้ใหญ่ใจดีชวนร่วมโต๊ะอาหารค่ำส่วนตัวกับกลุ่มนักลงทุนระดับประเทศ!",
+      "min_age": 25,
+      "max_age": 80,
+      "category": "elite_network",
+      "target_npc_archetype": "npc_arch_elite_mentor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณได้รับเชิญให้นั่งร่วมโต๊ะอาหารจีนระดับภัตตาคารหรูในฐานะ 'น้องรัก' ของผู้ใหญ่ในวงการ ทำให้ผู้บริหารระดับสูงทุกคนในห้องเปิดรับคุณเข้าสู่เครือข่ายทันที!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รินน้ำชาดูแลผู้ใหญ่และร่วมสนทนาอย่างฉลาดหลักแหลม ได้โควตาหุ้น Pre-IPO ราคาพาร์มาครอง!",
+          "hint_th": "🪙 กำไรโควตาหุ้นวงใน +60,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ +25 , 🤝 เส้นสาย +15 , ✨ หน้าตา +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 5,
+            "connections": 15,
+            "cash": 60000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จดจำแนวคิดการมองเทรนด์เศรษฐกิจทศวรรษหน้าจากผู้ใหญ่บนโต๊ะอาหารมาปรับพอร์ตลงทุน",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +10 , ❤️ ความสัมพันธ์ผู้ใหญ่ +18 , 💡 ได้รับป้าย [มีความรู้ทางการเงิน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 8,
+            "connections": 10,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 7,
+            "connections": 13,
+            "cash": 30000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mentor_03",
+      "title_th": "ผู้ใหญ่ใจดีมอบหมายงานยากเพื่อทดสอบความซื่อสัตย์และฝีมือของคุณ!",
+      "min_age": 25,
+      "max_age": 75,
+      "category": "elite_network",
+      "target_npc_archetype": "npc_arch_elite_mentor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ผู้ใหญ่ในวงการมอบหมายให้คุณช่วยเป็นตัวแทนไปเจรจาซื้อที่ดิน/ประสานงานโปรเจกต์ลับ โดยให้วงเงินสดติดตัวไปก้อนใหญ่เพื่อดูว่าคุณจะซื่อสัตย์หรือไม่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เจรจาต่อรองได้ราคาถูกลง และนำเงินทอนทุกบาทพร้อมใบเสร็จส่งคืนท่านครบถ้วน! ท่านไว้ใจคุณเป็นมือขวาเต็มตัว!",
+          "hint_th": "🪙 รางวัลความซื่อสัตย์ +50,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ +30 , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 6,
+            "connections": 12,
+            "cash": 50000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบบวกส่วนต่างเข้ากระเป๋าตัวเอง! (ผู้ใหญ่รู้ทันและตัดหางปล่อยวัดทันที!)",
+          "hint_th": "🪙 ได้เงินส่วนต่าง +30,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ -50 , 🤝 เส้นสาย -15 , ✨ แต้มบุญ -20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -50,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": -15,
+            "cash": 30000,
+            "merit": -20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -10,
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": -1,
+            "cash": 40000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mentor_04",
+      "title_th": "ผู้ใหญ่ในวงการออกโรงช่วยเคลียร์ปัญหาข้อพิพาททางธุรกิจให้คุณ!",
+      "min_age": 25,
+      "max_age": 80,
+      "category": "elite_network",
+      "target_npc_archetype": "npc_arch_elite_mentor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อมีขาใหญ่หรือคู่แข่งพยายามกลั่นแกล้งตัดราคา/บีบธุรกิจของคุณ ผู้ใหญ่ที่คุณเคารพทราบเรื่องจึงยกหูโทรศัพท์เคลียร์ให้เพียงกริ๊งเดียว จบปัญหาทันที!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบเดินทางไปกราบขอบคุณท่านด้วยความซาบซึ้งใจ ธุรกิจเดินหน้าต่อได้กำไรเต็มเม็ดเต็มหน่วย!",
+          "hint_th": "🪙 ปกป้องรายได้ +45,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ +20 , 🤝 เส้นสาย +10 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 45000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมบริจาคเงินสมทบมูลนิธิการกุศลที่ท่านเป็นประธานอยู่เพื่อเป็นการตอบแทนบารมี (-10,000฿)",
+          "hint_th": "🪙 บริจาคมูลนิธิ -10,000 ฿ , ✨ แต้มบุญ +30 , ❤️ ความสัมพันธ์ผู้ใหญ่ +25 , 🤝 เส้นสาย +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": -10000,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 10,
+            "connections": 11,
+            "cash": 17500,
+            "merit": 15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rel_mentor_05",
+      "title_th": "งานทำบุญวันเกิดครบรอบ 72 ปีของผู้ใหญ่ใจดี! รวมพลคนระดับบิ๊กของประเทศ",
+      "min_age": 25,
+      "max_age": 80,
+      "category": "elite_network",
+      "target_npc_archetype": "npc_arch_elite_mentor",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "งานวันเกิดของผู้ใหญ่ที่คุณเคารพเปรียบเสมือนงานรวมตัวผู้มีบารมีระดับประเทศ คุณได้รับเกียรติให้เข้าไปช่วยต้อนรับแขก VIP ในงาน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ช่วยดูแลจัดงานอย่างแข็งขันและร่วมทำบุญโรงพยาบาลในนามของท่าน ได้คอนเนกชันระดับท็อปทั้งงาน! (-5,000฿)",
+          "hint_th": "🪙 ร่วมทำบุญ -5,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ +25 , 🤝 เส้นสาย +15 , ✨ แต้มบุญ +20 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 15,
+            "cash": -5000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "มอบภาพวาดมงคล/พระพุทธรูปบูชาเป็นของขวัญวันเกิดให้ท่านอย่างสมเกียรติ (-3,000฿)",
+          "hint_th": "🪙 ค่าของขวัญมงคล -3,000 ฿ , ❤️ ความสัมพันธ์ผู้ใหญ่ +20 , ✨ แต้มบุญ +12 , 🤝 เส้นสาย +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": -3000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 13,
+            "cash": -4000,
+            "merit": 16
+          }
+        }
+      ]
+    }
+  ]
+}

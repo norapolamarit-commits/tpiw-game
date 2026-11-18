@@ -1,0 +1,3257 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Phase5_MiddleAge",
+  "phase_id": "phase_5_middle_age",
+  "age_range": {
+    "min_age": 36,
+    "max_age": 59
+  },
+  "total_events": 46,
+  "quota_breakdown": {
+    "total": 46,
+    "age_36_to_56_per_year": 2,
+    "age_57": 2,
+    "age_58_to_59_per_year": 1,
+    "shared_total": 37,
+    "poor_class_1_2_total": 4,
+    "rich_class_4_5_total": 4
+  },
+  "events": [
+    {
+      "event_id": "evt_p5_age36_01",
+      "title_th": "ก้าวสู่วัยกลางคน 36 ปี! มนุษย์เดอะแบกยุค Sandwich Generation",
+      "trigger_age": 36,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ตั้งแต่อายุ 36 ปี ค่าครองชีพพื้นฐานปรับขึ้นเป็น 108,000 บาท/ปี! คุณกลายเป็นเสาหลักที่ต้องดูแลทั้งพ่อแม่ที่เริ่มชราและภาระครอบครัวของตัวเองไปพร้อมกัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทำตารางงบประมาณรายรับ-รายจ่ายของบ้านใหม่ ตัดรายจ่ายฟุ่มเฟือยและสำรองเงินฉุกเฉิน",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +3 , 💡 ได้รับป้าย [มีความรู้ทางการเงิน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลุยรับโปรเจกต์พิเศษเพิ่มรายได้ให้ครอบครัว แม้จะเหนื่อยขึ้นแต่ทุกคนในบ้านอุ่นใจ!",
+          "hint_th": "🪙 รายได้พิเศษ +18,000 ฿ , ❤️ สุขภาพ -2 , ✨ แต้มบุญ +5 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 18000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 9000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age36_02_poor",
+      "title_th": "บิลค่าน้ำ-ค่าไฟและค่าเทอมหลาน/คนในบ้านพุ่งชนพร้อมกัน!",
+      "trigger_age": 36,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เดือนพฤษภาคมช่วงเปิดเทอมใหญ่ บิลค่าไฟหน้าร้อนและค่าชุดนักเรียนของคนในครอบครัวถาโถมเข้ามาพร้อมกันจนเงินสดแทบไม่พอหมุน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นำของสะสม/เครื่องใช้ไฟฟ้าที่ไม่ได้ใช้ไปจำนำหรือขายมือสองประทังสภาพคล่อง ไม่กู้นอกระบบเด็ดขาด!",
+          "hint_th": "🪙 เงินหมุนเวียน +4,000 ฿ , 🧠 สมอง +4 , 😊 ความสุข +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 4000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หน้ามืดไปกู้เงินด่วนนอกระบบดอกเบี้ยรายวันร้อยละ 20 มาหมุนก่อน!",
+          "hint_th": "🪙 ได้เงินสด +10,000 ฿ , 😊 ความสุข -6 , ⚠️ ติดป้าย [หนี้นอกระบบดอกเบี้ยโหด]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_informal_shark_debt"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": -2,
+            "intelligence": 2,
+            "cash": 7000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age37_01",
+      "title_th": "ปวดหลังล่างร้าวลงขา! หมอนรองกระดูกทับเส้นประสาททักทายวัย 37",
+      "trigger_age": 37,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ก้มลงหยิบของที่พื้นผิดจังหวะนิดเดียว เสียง 'กร๊อบ!' ที่หลังล่างก็ดังขึ้นพร้อมความปวดจี๊ดจนยืดตัวไม่ขึ้น!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปคลินิกกายภาพบำบัดดึงหลังและฝึกท่าบริหารกล้ามเนื้อแกนกลางลำตัว (-3,500฿)",
+          "hint_th": "🪙 ค่ารักษา -3,500 ฿ , ❤️ สุขภาพ +6 , 😊 ความสุข +4 , ✨ ล้างสถานะ [ออฟฟิศซินโดรม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_office_syndrome"
+          ],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -3500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปนวดแผนโบราณร้านประจำและแปะแผ่นกอเอี๊ยะแก้ปวดเต็มแผ่นหลัง (-500฿)",
+          "hint_th": "🪙 ค่านวด -500 ฿ , ❤️ สุขภาพ +2 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "cash": -2000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age37_02",
+      "title_th": "คลื่นลูกใหม่ AI & Automation เข้ามาดิสรัปต์การทำงานในองค์กร!",
+      "trigger_age": 37,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บริษัทประกาศนำระบบปัญญาประดิษฐ์ (AI) และซอฟต์แวร์อัตโนมัติมาใช้ลดขั้นตอนการทำงาน พนักงานรุ่นใหญ่ที่ไม่ปรับตัวเริ่มถูกเพ่งเล็ง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดใจเรียนรู้การใช้ AI เป็นผู้ช่วยทำงาน จนประสิทธิภาพพุ่งขึ้นและได้เป็นหัวหน้าโครงการเปลี่ยนผ่าน!",
+          "hint_th": "🪙 โบนัสพิเศษ +15,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 7,
+            "connections": 5,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เน้นใช้ทักษะการเจรจาต่อรองและคอนเนกชันระดับสูงที่ AI ทำแทนมนุษย์ไม่ได้!",
+          "hint_th": "🤝 เส้นสาย +7 , 🧠 สมอง +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 6,
+            "cash": 7500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age38_01",
+      "title_th": "ได้รับเชิญเป็นกรรมการสมาคมศิษย์เก่า / ประธานหมู่บ้านจัดสรร!",
+      "trigger_age": 38,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ด้วยวัยวุฒิและหน้าที่การงานที่มั่นคงในวัย 38 ปี เพื่อนบ้านและสมาคมศิษย์เก่าจึงทาบทามให้คุณเข้าไปเป็นคณะกรรมการบริหารส่วนกลาง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตอบรับเป็นกรรมการ ช่วยบริหารงานส่วนกลางและได้คอนเนกชันผู้ใหญ่ระดับจังหวัดเพียบ!",
+          "hint_th": "🤝 เส้นสาย +9 , ✨ แต้มบุญ +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอสนับสนุนเป็นเงินบริจาคเข้ากองทุนสมาคมแทน เพื่อเก็บเวลาวันหยุดไว้ให้ครอบครัว (-2,000฿)",
+          "hint_th": "🪙 บริจาค -2,000 ฿ , ✨ แต้มบุญ +6 , 😊 ความสุข +5 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -2000,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 7,
+            "cash": -1000,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age38_02_rich",
+      "title_th": "ออกรอบตีกอล์ฟกระชับมิตรกับบอร์ดบริหารและอธิบดีกรมสำคัญ!",
+      "trigger_age": 38,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช้าวันอาทิตย์ที่สนามกอล์ฟระดับ Country Club คุณได้รับเชิญไปออกก๊วนตีกอล์ฟกับผู้บริหารบริษัทมหาชนและข้าราชการระดับสูง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โชว์วงสวิงสุดเนี้ยบและคุยดีลสัมปทานโครงการใหญ่บนกรีนหญ้าสำเร็จ!",
+          "hint_th": "🪙 ดีลโครงการใหญ่ +60,000 ฿ , 🤝 เส้นสาย +10 , ❤️ สุขภาพ +3 , 👑 ได้รับป้าย [คอนเนกชันระดับเจ้าสัว]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 60000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แกล้งตีออมมือให้ผู้ใหญ่ชนะอย่างอารมณ์ดี ได้รับความเอ็นดูและชี้ช่องลงทุนหุ้นวงใน!",
+          "hint_th": "🪙 กำไรหุ้น +40,000 ฿ , 🤝 เส้นสาย +12 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 12,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 11,
+            "cash": 50000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age39_01",
+      "title_th": "คืนสุดท้ายของวัยเลข 3! ทบทวนชีวิตก่อนก้าวสู่หลักสี่ (40 ปี)",
+      "trigger_age": 39,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "พรุ่งนี้คุณจะอายุครบ 40 ปีบริบูรณ์แล้ว! เมื่อมองย้อนกลับไปตลอดช่วงอายุ 30 ที่ผ่านมา คุณรู้สึกภูมิใจในตัวเองและอยากทำอะไรส่งท้ายวัยเลข 3?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดดินเนอร์สุดพิเศษขอบคุณคู่ชีวิต/พ่อแม่ที่เคียงข้างกันมาตลอด (-3,000฿)",
+          "hint_th": "🪙 ค่าดินเนอร์ -3,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +5 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -3000,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เคลียร์หนี้สินค้างคาและจัดระเบียบพอร์ตการลงทุนให้พร้อมรับวัย 40 อย่างไร้กังวล!",
+          "hint_th": "🧠 สมอง +6 , 😊 ความสุข +6 , 💳 ได้รับป้าย [เครดิตบูโรดีเยี่ยม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_good"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": -1500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age39_02",
+      "title_th": "ญาติห่างๆ มาชวนลงขันแชร์ลูกโซ่ / ลงทุนฟาร์มเห็ด-เทรดทองการันตีปันผล 10% ต่อเดือน!",
+      "trigger_age": 39,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ญาติผู้ใหญ่มาหาที่บ้านพร้อมโบรชัวร์หรูหรา อ้างว่าเป็นกองทุน VIP ที่จ่ายเงินปันผลสูงถึงเดือนละ 10% การันตีเงินต้นไม่หาย มีคนในหมู่บ้านได้เงินจริงมาแล้ว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธทันทีและเตือนสติญาติว่าผลตอบแทนเกินจริงแบบนี้คือแชร์ลูกโซ่แน่นอน!",
+          "hint_th": "🧠 สมอง +6 , ✨ แต้มบุญ +5 , 😊 ความสุข +3 (ปกป้องเงินเก็บไว้ได้ครบ!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โลภอยากรวยทางลัด โอนเงินก้อนไปร่วมลงทุน สุดท้ายบริษัทปิดเพจหนีสูญเงินฟรี! (-35,000฿)",
+          "hint_th": "🪙 ถูกโกงแชร์ลูกโซ่ -35,000 ฿ , 😊 ความสุข -10 , ❤️ สุขภาพ -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": -10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": -3,
+            "intelligence": 3,
+            "cash": -17500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age40_01",
+      "title_th": "ยินดีต้อนรับสู่หลักสี่ (40 ปี)! ผลตรวจสุขภาพใหญ่ประจำปีออกแล้ว",
+      "trigger_age": 40,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณหมอกางใบผลตรวจเลือดวัย 40 ปีของคุณ เริ่มเห็นตัวเลขคอเลสเตอรอล น้ำตาลในเลือด และความดันโลหิตปริ่มๆ ขอบเกณฑ์มาตรฐาน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิวัติตัวเองทันที! ลดหวาน-มัน-เค็ม งดชานมไข่มุก และตื่นมาวิ่งโซน 2 ทุกเช้า",
+          "hint_th": "❤️ สุขภาพ +8 , ✨ หน้าตา +4 , 😊 ความสุข +4 , ✨ ล้างสถานะ [ความดันโลหิตสูง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_hypertension"
+          ],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ยังตามใจปากกินหมูกระทะ-ของมันเหมือนเดิม จนความดันโลหิตสูงและไขมันอุดตันถามหา!",
+          "hint_th": "❤️ สุขภาพ -5 , 😊 ความสุข +2 , ⚠️ ติดสถานะ [ความดันโลหิตสูงและไขมันอุดตัน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "status_hypertension"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -5,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age40_02",
+      "title_th": "พายุปรับโครงสร้างองค์กรวัย 40! โปรเจกต์ใหญ่ชี้ชะตาตำแหน่งผู้บริหาร",
+      "trigger_age": 40,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่ออายุแตะเลข 4 เงินเดือนของคุณอยู่ในระดับสูงขององค์กร บอร์ดบริหารจึงมอบหมายภารกิจพลิกฟื้นยอดขายประจำปีเพื่อพิสูจน์ความคุ้มค่าของตำแหน่งคุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "งัดประสบการณ์เก๋าเกมและคอนเนกชันทั้งหมดที่มี ปิดดีลใหญ่สร้างกำไรสูงสุดให้องค์กร!",
+          "hint_th": "🪙 โบนัสผลงาน +30,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 8,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "กระจายงานให้ทีมลูกน้องช่วยกันรับผิดชอบ ประคองตัวผ่านเกณฑ์ประเมินแบบไม่เครียด",
+          "hint_th": "🤝 เส้นสาย +5 , ❤️ สุขภาพ +2 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 15000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age41_01",
+      "title_th": "วิกฤตวัยกลางคน (Midlife Crisis)! กิเลสอยากซื้อของเล่นชิ้นใหญ่ชดเชยความฝันวัยเด็ก",
+      "trigger_age": 41,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 41 ปี คุณเกิดความรู้สึกโหวงๆ ในใจ อยากซื้อรถบิ๊กไบค์/รถสปอร์ต นาฬิกาหรู หรือโมเดลของสะสมแรร์ไอเทมที่ตอนเด็กๆ ไม่มีเงินซื้อ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อของสะสมหรือจัดทริปในฝันในงบที่ตั้งไว้พอประมาณ ให้รางวัลชีวิตแบบไม่กระทบเงินออม (-8,000฿)",
+          "hint_th": "🪙 เงินสด -8,000 ฿ , 😊 ความสุข +9 , ❤️ สุขภาพ +2 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -8000,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปลี่ยนพลังวิกฤตวัยกลางคนเป็นสายสุขภาพ! ลงสมัครวิ่งมาราธอน 42.195 กม. พิชิตเหรียญ Finisher!",
+          "hint_th": "❤️ สุขภาพ +9 , 😊 ความสุข +7 , 🤝 เส้นสาย +5 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 9,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 8,
+            "connections": 3,
+            "cash": -4000,
+            "appearance": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age41_02",
+      "title_th": "วางแผนการศึกษาต่อระดับสูงและอนาคตของคนในครอบครัว",
+      "trigger_age": 41,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หากคุณมีลูก ลูกๆ ก็เริ่มเข้าสู่วัยเรียนที่ต้องใช้เงินก้อนโต หรือหากคุณไม่มีลูก ก็เป็นจังหวะวางแผนกองทุนดูแลพ่อแม่และตัวเองในระยะยาว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดสรรพอร์ตพันธบัตรรัฐบาลและกองทุนรวมเพื่อล็อกผลตอบแทนระยะยาวอย่างมั่นคง",
+          "hint_th": "🪙 ดอกเบี้ยรับ +12,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พาสมาชิกในครอบครัวไปทัศนศึกษาและทำกิจกรรมร่วมกันทุกวันอาทิตย์ สร้างความอบอุ่น (-3,000฿)",
+          "hint_th": "🪙 เงินสด -3,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +5 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -3000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 4500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age42_01",
+      "title_th": "สายตายาวตามวัย (Presbyopia)! ต้องยืดแขนสุดมือเวลาอ่านข้อความในมือถือ",
+      "trigger_age": 42,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สัญญาณความเก๋าวัย 42! เวลาคุณอ่านฉลากยาหรืออ่านไลน์ในโทรศัพท์ คุณต้องหรี่ตาและยืดแขนออกไปจนสุดถึงจะมองเห็นตัวหนังสือชัด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปวัดสายตาตัดแว่นโปรเกรสซีฟ (Progressive Lens) กรอบสวยดูภูมิฐานระดับผู้บริหาร! (-6,000฿)",
+          "hint_th": "🪙 ค่าแว่น -6,000 ฿ , 🧠 สมอง +4 , ✨ หน้าตา +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": -6000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปรับขนาดฟอนต์ในมือถือให้ใหญ่สุดจอและพักสายตาทุกๆ 20 นาทีแบบประหยัด",
+          "hint_th": "❤️ สุขภาพ +3 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 2,
+            "cash": -3000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age42_02_poor",
+      "title_th": "แก๊งทวงหนี้หมวกกันน็อก / นายทุนเงินกู้มาวนเวียนแถวบ้าน!",
+      "trigger_age": 42,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปัญหาหนี้สินสะสมในชุมชนทำให้มีแก๊งเก็บดอกเบี้ยรายวันขี่มอเตอร์ไซค์มาวนเวียนทวงหนี้เสียงดังหน้าบ้าน สร้างความหวาดผวาให้ครอบครัว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ประสานงานศูนย์ดำรงธรรมอำเภอและธนาคารออมสิน เพื่อเปลี่ยนหนี้นอกระบบเป็นสินเชื่อในระบบดอกเบี้ยต่ำ!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +5 , 😊 ความสุข +6 , ✨ ล้างป้าย [หนี้นอกระบบดอกเบี้ยโหด]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_informal_shark_debt"
+          ],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 5,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "กัดฟันทำงานล่วงเวลาหาเงินมาปิดยอดหนี้ให้จบสิ้นกันไป (-8,000฿)",
+          "hint_th": "🪙 ปิดยอดหนี้ -8,000 ฿ , ❤️ สุขภาพ -2 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_informal_shark_debt"
+          ],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": -4000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age43_01",
+      "title_th": "ภัยธรรมชาติพายุฤดูร้อนและน้ำท่วมรอการระบาย! ซ่อมแซมบ้านพักอาศัย",
+      "trigger_age": 43,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปีนี้พายุฝนถล่มหนักผิดปกติ น้ำท่วมขังถนนหน้าบ้านและมีความชื้นซึมเข้าผนังบ้าน รวมถึงกิ่งไม้ใหญ่หักพาดรั้วบ้าน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หัวช่าง] ลงมือซ่อมระบบท่อระบายน้ำ ทากันซึม และตัดแต่งกิ่งไม้เองอย่างมืออาชีพ ประหยัดค่าช่างไปเป็นหมื่น!",
+          "hint_th": "🧠 สมอง +4 , ❤️ สุขภาพ +3 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [
+            "tag_young_mechanic"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จ้างช่างรับเหมามาซ่อมแซมและทำประกันภัยบ้านคุ้มครองน้ำท่วม/ไฟไหม้ไว้เลย (-5,000฿)",
+          "hint_th": "🪙 ค่าซ่อมและประกัน -5,000 ฿ , 😊 ความสุข +4 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": -5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 3,
+            "cash": -2500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age43_02",
+      "title_th": "ได้รับเชิญไปเป็นวิทยากรพิเศษบรรยายให้รุ่นน้องที่มหาวิทยาลัย/โรงเรียนเก่า!",
+      "trigger_age": 43,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "สถาบันการศึกษาเก่าของคุณส่งหนังสือเชิญคุณในฐานะศิษย์เก่าผู้มีประสบการณ์ชีวิตไปพูดสร้างแรงบันดาลใจและแนะแนวอาชีพให้น้องๆ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เตรียมสไลด์ไปแบ่งปันความรู้และประสบการณ์จริงอย่างเต็มที่ พร้อมมอบซองค่าตอบแทนคืนเป็นทุนการศึกษาให้น้องๆ!",
+          "hint_th": "✨ แต้มบุญ +15 , 🤝 เส้นสาย +9 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปบรรยายและเปิดรับสมัครน้องๆ หัวกะทิเข้ามาฝึกงาน/ทำงานในทีมของคุณ!",
+          "hint_th": "🪙 ค่าตอบแทนวิทยากร +3,000 ฿ , 🤝 เส้นสาย +8 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 1500,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age44_01",
+      "title_th": "ศึกสายเลือดญาติพี่น้องเปิดศึกแย่งชิงแนวเขตที่ดินมรดกปู่ย่า!",
+      "trigger_age": 44,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ดราม่าครอบครัวไทยสุดคลาสสิก! เมื่อที่ดินเก่าแก่ของตระกูลมีราคาประเมินสูงขึ้น ญาติบางคนเริ่มเอาหลักหมุดมาปักล้ำเขตและมีปากเสียงกันในตระกูล",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เชิญเจ้าหน้าที่กรมที่ดินมารังวัดแนวเขตตามโฉนดอย่างเป็นกลาง ยุติธรรมและไร้ข้อครหา!",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +5 , 😊 ความสุข +4 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[จบนิติศาสตร์ / มีตั๋วทนาย] กางประมวลกฎหมายแพ่งและพาณิชย์ว่าด้วยมรดกไกล่เกลี่ยจนญาติทุกคนยอมเซ็นสัญญาแบ่งแยกเรียบร้อย!",
+          "hint_th": "🪙 ส่วนแบ่งที่ดิน +25,000 ฿ , 🧠 สมอง +7 , 🤝 เส้นสาย +8",
+          "req_stats": {},
+          "req_flags": [
+            "flag_deg_law"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 7,
+            "connections": 8,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ยอมถอยให้ญาติไปนิดหน่อยเพื่อตัดรำคาญและรักษาความสงบสุขของพ่อแม่",
+          "hint_th": "✨ แต้มบุญ +8 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age44_02_rich",
+      "title_th": "ประมูลงานกาล่าดินเนอร์การกุศลระดับประเทศ & สร้างชื่อเสียงวงสังคมไฮโซ!",
+      "trigger_age": 44,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณได้รับการ์ดเชิญเข้าร่วมงานประมูลของรักดาราและงานศิลปะเพื่อสมทบทุนสร้างอาคารโรงพยาบาล ท่ามกลางนักธุรกิจระดับแสนล้าน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยกป้ายประมูลภาพวาดมงคลบริจาคเงินก้อนใหญ่ ได้ทั้งบุญกุศลและขึ้นข่าวหน้าหนึ่งสังคมไฮโซ! (-50,000฿)",
+          "hint_th": "🪙 บริจาคประมูล -50,000 ฿ , ✨ แต้มบุญ +60 , 🤝 เส้นสาย +12 , ✨ หน้าตา +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": -50000,
+            "merit": 60,
+            "appearance": 5
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมบริจาคตามสมควรและเน้นคุยเจรจาขยายตลาดธุรกิจกับนักลงทุนต่างชาติในงาน (-10,000฿)",
+          "hint_th": "🪙 กำไรดีลสุทธิ +40,000 ฿ , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 40000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 2,
+            "connections": 10,
+            "cash": -5000,
+            "merit": 36,
+            "appearance": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age45_01",
+      "title_th": "วัย 45 ปี! จุดสูงสุดของรายได้ vs ความเสี่ยงโรคหัวใจและหลอดเลือด",
+      "trigger_age": 45,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 45 ปี คุณก้าวขึ้นมาเป็นผู้ใหญ่อาวุโสในสายงาน แต่ความเครียดสะสมทำให้อัตราการเต้นของหัวใจบางครั้งผิดจังหวะเวลาโหมงานดึก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตรวจคลื่นหัวใจ EKG และปรับเวลานอนให้ตื่นเช้าแทนการโต้รุ่ง ร่างกายกลับมาฟิตปั๋ง!",
+          "hint_th": "❤️ สุขภาพ +7 , 😊 ความสุข +5 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "status_hypertension"
+          ],
+          "stat_effects": {
+            "health": 7,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จ้างผู้ช่วย/เลขาฯ หรือใช้ระบบอัตโนมัติมาช่วยแบ่งเบาภาระงานบริหาร (-6,000฿)",
+          "hint_th": "🪙 ค่าผู้ช่วย -6,000 ฿ , ❤️ สุขภาพ +4 , 😊 ความสุข +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": -3000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age45_02",
+      "title_th": "ครบรอบวันแต่งงาน / ทบทวนความสัมพันธ์ชีวิตคู่ในวัยกลางคน",
+      "trigger_age": 45,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อใช้ชีวิตผ่านร้อนผ่านหนาวมาจนถึงอายุ 45 ปี ความหวือหวาอาจกลายเป็นความเคยชิน ถึงเวลาเติมความหวานให้คนข้างกายหรือดูแลหัวใจตัวเอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดทริปฮันนีมูนรอบสอง พาคนรัก/ครอบครัวไปพักพูลวิลล่าริมทะเลสุดโรแมนติก (-8,000฿)",
+          "hint_th": "🪙 ค่าทริป -8,000 ฿ , 😊 ความสุข +10 , ❤️ สุขภาพ +4 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": -8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลงมือเข้าครัวทำอาหารมื้อพิเศษกินกันเองที่บ้านและเขียนการ์ดขอบคุณกันและกัน",
+          "hint_th": "😊 ความสุข +7 , ✨ แต้มบุญ +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 9,
+            "connections": 5,
+            "cash": -4000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age46_01",
+      "title_th": "คุณพ่อคุณแม่ล้มป่วยต้องแอดมิทโรงพยาบาล! บทพิสูจน์ความกตัญญูวัย 46",
+      "trigger_age": 46,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กลางดึกคืนหนึ่ง คุณพ่อหรือคุณแม่ของคุณเกิดอาการหน้ามืดกะทันหัน ต้องรีบนำตัวส่งห้องฉุกเฉินโรงพยาบาลและนอนพักรักษาตัวหลายวัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ผลัดเวรเฝ้าไข้ดูแลป้อนข้าวป้อนน้ำท่านอย่างใกล้ชิด และใช้สิทธิ์รักษาพยาบาล/เงินออมดูแลอย่างดีที่สุด (-8,000฿)",
+          "hint_th": "🪙 ค่ารักษาพิเศษ -8,000 ฿ , ✨ แต้มบุญ +25 , 😊 ความสุข +6 , 🙏 ได้รับป้าย [ลูกกตัญญู]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_filial_child"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -8000,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[เป็นแพทย์ / มีประกัน รพ.เอกชน] ประสานงานทีมแพทย์เฉพาะทางดูแลในห้อง VIP จนท่านฟื้นตัวกลับมาแข็งแรงอย่างรวดเร็ว!",
+          "hint_th": "✨ แต้มบุญ +25 , 😊 ความสุข +9 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [
+            "flag_private_hospital_access"
+          ],
+          "grants_flags": [
+            "flag_filial_child"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 8,
+            "connections": 5,
+            "cash": -4000,
+            "merit": 25
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age46_02",
+      "title_th": "ลูกหลานเข้าสู่วัยรุ่นฮอร์โมนพุ่งพล่าน! ขอเงินซื้อไอแพด/มอเตอร์ไซค์",
+      "trigger_age": 46,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เด็กๆ ในบ้านเริ่มโตเป็นวัยรุ่นและเข้ามาอ้อนขอให้คุณช่วยซื้อแท็บเล็ตสำหรับเรียนหรือรถมอเตอร์ไซค์ไว้ขี่ไปโรงเรียน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อแท็บเล็ตเพื่อการศึกษาให้ พร้อมตั้งกติกาเรื่องเกรดเฉลี่ยและการแบ่งเวลาอย่างมีเหตุผล (-10,000฿)",
+          "hint_th": "🪙 เงินสด -10,000 ฿ , 😊 ความสุข +7 , 🧠 สมอง +3 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": -10000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สอนให้รู้จักการออม โดยให้เขาเก็บเงินค่าขนมมาออกครึ่งหนึ่ง แล้วเราสมทบให้อีกครึ่งหนึ่ง (-5,000฿)",
+          "hint_th": "🪙 เงินสด -5,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +5 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": -5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 2,
+            "cash": -7500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age47_01",
+      "title_th": "ตลาดหุ้นและเศรษฐกิจโลกผันผวนหนัก! ปรับพอร์ตการลงทุนวัย 47",
+      "trigger_age": 47,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เกิดวิกฤตเศรษฐกิจระลอกใหม่ทำให้ตลาดหุ้นผันผวนรุนแรง นักลงทุนวัยใกล้ 50 ต้องตัดสินใจบริหารพอร์ตเพื่อปกป้องเงินเกษียณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีความรู้ทางการเงิน] โยกเงินเข้าทองคำและพันธบัตรก่อนตลาดร่วง แล้วช้อนซื้อหุ้นพื้นฐานดีตอนราคาถูก!",
+          "hint_th": "🪙 กำไรปรับพอร์ต +30,000 ฿ , 🧠 สมอง +6 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [
+            "flag_financial_literacy"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ถือหุ้นปันผลและเงินฝากออมสินนิ่งๆ ไม่ตื่นตูมเทขายขาดทุน รับเงินปันผลเข้ากระเป๋าตามปกติ",
+          "hint_th": "🪙 เงินปันผล +8,000 ฿ , 😊 ความสุข +3 , 🧠 สมอง +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "intelligence": 5,
+            "cash": 19000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age47_02",
+      "title_th": "เป็นเจ้าภาพทอดกฐินสามัคคี / ผ้าป่าสร้างอาคารเรียนวัดบ้านเกิด!",
+      "trigger_age": 47,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "กรรมการวัดและโรงเรียนที่บ้านเกิดติดต่อมาเชิญคุณร่วมเป็นประธาน/รองประธานสายกฐินสามัคคีประจำปี เพื่อซ่อมแซมศาลาและมอบทุนการศึกษา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับเป็นประธานสายกฐิน รวบรวมพุ่มเงินทำบุญและเดินทางไปแห่กฐินอย่างคึกคัก (-5,000฿)",
+          "hint_th": "🪙 ทำบุญกฐิน -5,000 ฿ , ✨ แต้มบุญ +20 , 🤝 เส้นสาย +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -5000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ร่วมทำบุญใส่ซองตามกำลังศรัทธาและช่วยแชร์บอกบุญให้เพื่อนๆ (-500฿)",
+          "hint_th": "🪙 ทำบุญ -500 ฿ , ✨ แต้มบุญ +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -500,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 5,
+            "connections": 4,
+            "cash": -2750,
+            "merit": 13
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age48_01",
+      "title_th": "ข้อเข่าเริ่มมีเสียงก๊อบแก๊บเวลาเดินขึ้นบันได! สัญญาณข้อเข่าเสื่อมวัย 48",
+      "trigger_age": 48,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ทุกครั้งที่เดินขึ้นสะพานลอยหรือลุกจากเก้าอี้ คุณได้ยินเสียง 'ก๊อบแก๊บ' ที่หัวเข่าพร้อมอาการตึงๆ เล็กน้อย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ควบคุมน้ำหนักตัว เปลี่ยนจากการวิ่งกระแทกมาเป็นเดินเร็ว/ว่ายน้ำ และเสริมแคลเซียม",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +4 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หลงเชื่อโฆษณาอาหารเสริมเถื่อนในโซเชียลซื้อมากินหมดไปหลายพันแต่ไม่ได้ผล! (-4,000฿)",
+          "hint_th": "🪙 เสียเงินฟรี -4,000 ฿ , ❤️ สุขภาพ -2 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -4000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 1,
+            "cash": -2000,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age48_02_poor",
+      "title_th": "โครงการฝึกอาชีพและวิสาหกิจชุมชน! สร้างรายได้เสริมในท้องถิ่น",
+      "trigger_age": 48,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หน่วยงานพัฒนาชุมชนเปิดอบรมแปรรูปอาหาร OTOP และเกษตรอินทรีย์ พร้อมมอบทุนตั้งต้นให้รวมกลุ่มสร้างรายได้ในชุมชน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าร่วมกลุ่มวิสาหกิจชุมชน นำความรู้มาแปรรูปสินค้าขายส่งตลาดและออนไลน์!",
+          "hint_th": "🪙 รายได้ปันผลกลุ่ม +12,000 ฿ , 🤝 เส้นสาย +6 , 🧠 สมอง +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เน้นปลูกผักสวนครัวรั้วกินได้และเลี้ยงไก่ไข่ไว้กินเองในบ้าน ลดค่าครองชีพได้เพียบ!",
+          "hint_th": "🪙 ประหยัดค่ากับข้าว +6,000 ฿ , ❤️ สุขภาพ +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 9000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age49_01",
+      "title_th": "ส่งท้ายวัยเลข 4! วางแผนภาษีและกองทุนสำรองเลี้ยงชีพโค้งสุดท้ายก่อนวัย 50",
+      "trigger_age": 49,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เหลืออีกเพียง 11 ปีก็จะถึงวัยเกษียณอายุ 60 ปีแล้ว! ฝ่ายบุคคล/ที่ปรึกษาการเงินให้คุณเลือกปรับสัดส่วนเงินสะสมเข้ากองทุนสำรองเลี้ยงชีพ (PVD / กบข. / กอช.)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปรับเพิ่มเงินสะสมเต็มเพดาน 15% เพื่อรับเงินสมทบจากนายจ้าง/รัฐสูงสุด!",
+          "hint_th": "🪙 เงินสมทบพิเศษ +15,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "คงสัดส่วนเดิมไว้ แล้วเก็บเงินสดไว้หมุนเวียนใช้จ่ายในครอบครัว",
+          "hint_th": "😊 ความสุข +3 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "cash": 7500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age49_02",
+      "title_th": "แก๊งมิจฉาชีพปลอมโปรไฟล์เป็นคนดัง/ที่ปรึกษาการลงทุนทักแชทมาชวนเทรดหุ้น!",
+      "trigger_age": 49,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "มีเพจเฟซบุ๊กยิงแอดใช้รูปผู้บริหารตลาดหลักทรัพย์และดาราดัง ชวนเข้ากลุ่มไลน์ VIP แจกหุ้นซิลลิ่งฟรี แต่ต้องโอนเงินเข้าแอปแปลกๆ ก่อน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เช็กความถูกต้องกับแอป ก.ล.ต. รู้ทันทีว่าเป็นเพจปลอม กดรีพอร์ตและเตือนเพื่อนในกลุ่มไลน์!",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +5 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หลงเชื่อโอนเงินไปเปิดพอร์ตปลอม ถอนเงินออกไม่ได้ สูญเงินเก็บ! (-25,000฿)",
+          "hint_th": "🪙 ถูกมิจฉาชีพหลอก -25,000 ฿ , 😊 ความสุข -8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": -2,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": -12500,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age50_01",
+      "title_th": "ฉลองก้าวสู่วัย 50 ปีบริบูรณ์ (Golden Fifties)! ครึ่งศตวรรษแห่งชีวิต",
+      "trigger_age": 50,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณเดินทางมาถึงครึ่งทางของอายุขัย 100 ปีแล้ว! ลูกหลานและคนใกล้ชิดมารวมตัวกันจัดงานฉลองวันเกิดครบ 5 รอบ (60 ปีนักษัตรใกล้เข้ามา) อย่างอบอุ่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตื่นเช้านำครอบครัวไปทำบุญตักบาตรพระ 9 รูป และจัดมื้ออาหารอบอุ่นที่บ้าน (-3,000฿)",
+          "hint_th": "🪙 เงินสด -3,000 ฿ , ✨ แต้มบุญ +18 , 😊 ความสุข +9 , ❤️ สุขภาพ +4 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -3000,
+            "merit": 18,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้รางวัลชีวิตวัย 50 ด้วยการไปตรวจสุขภาพชุดใหญ่และจัดทริปพักผ่อนในฝัน (-10,000฿)",
+          "hint_th": "🪙 เงินสด -10,000 ฿ , ❤️ สุขภาพ +8 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 10,
+            "connections": 3,
+            "cash": -6500,
+            "merit": 9
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age50_02_rich",
+      "title_th": "เตรียมแผนส่งมอบอาณาจักรธุรกิจสู่ทายาทรุ่นที่ 2 & จัดตั้งโฮลดิ้งตระกูล!",
+      "trigger_age": 50,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 50 ปี พอร์ตทรัพย์สินและธุรกิจของคุณมีขนาดใหญ่ขึ้นมาก ที่ปรึกษากฎหมายแนะนำให้จัดตั้งบริษัทโฮลดิ้งหรือธรรมนูญครอบครัวเพื่อความยั่งยืน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดตั้งระบบบริหารทรัพย์สินตระกูลอย่างเป็นระบบ รับเงินปันผลเสือนอนกินอย่างมั่นคง!",
+          "hint_th": "🪙 ปันผลโฮลดิ้ง +75,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 8,
+            "cash": 75000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "บริจาคเงินสร้างห้องตรวจโรงพยาบาลรัฐในนามตระกูล ได้ป้ายเกียรติคุณและแต้มบุญมหาศาล (-50,000฿)",
+          "hint_th": "🪙 บริจาค -50,000 ฿ , ✨ แต้มบุญ +70 , 🤝 เส้นสาย +10 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": -50000,
+            "merit": 70,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 9,
+            "cash": 12500,
+            "merit": 35
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age51_01",
+      "title_th": "ลูกหลานเรียนจบรับปริญญา / เริ่มทำงานมีเงินเดือนก้อนแรก!",
+      "trigger_age": 51,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความเหนื่อยยากในการส่งเสียดูแลคนรุ่นหลังเริ่มออกดอกออกผล! ลูกหรือหลานในครอบครัวที่คุณคอยช่วยเหลือได้เรียนจบและเริ่มมีงานทำ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปร่วมงานรับปริญญา/แสดงความยินดีด้วยความภาคภูมิใจ และได้รับซองเงินเดือนก้อนแรกจากลูกหลาน!",
+          "hint_th": "🪙 ลูกหลานใส่ซองให้ +10,000 ฿ , 😊 ความสุข +10 , ✨ แต้มบุญ +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 10000,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "มอบเงินขวัญถุงตั้งตัวให้ลูกหลานไปต่อยอดสร้างอนาคตของตัวเอง (-5,000฿)",
+          "hint_th": "🪙 ให้เงินขวัญถุง -5,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +6 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -5000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 5,
+            "cash": 2500,
+            "merit": 9
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age51_02",
+      "title_th": "งานอดิเรกใหม่วัย 50+! ปลูกต้นไม้มงคล-ไม้ด่าง และจัดสวนข้างบ้าน",
+      "trigger_age": 51,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช้าวันหยุด คุณเริ่มมีความสุขกับการตื่นมารดน้ำต้นไม้ จิบกาแฟดำฟังเสียงนก และเดินดูตลาดต้นไม้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดสวนไม้ร่มรื่นและเพาะพันธุ์ไม้ด่าง/บอนสีขายออนไลน์ให้กลุ่มคนรักต้นไม้ ได้ทั้งความสุขและรายได้!",
+          "hint_th": "🪙 ขายพันธุ์ไม้ +8,000 ฿ , 😊 ความสุข +7 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปลูกพืชสมุนไพรไทยและผักปลอดสารพิษไว้ทำอาหารสุขภาพกินเองในครอบครัว",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +6 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 7,
+            "intelligence": 1,
+            "cash": 4000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age52_01",
+      "title_th": "สัจธรรมแห่งชีวิตวัย 52! การจากไปของผู้หลักผู้ใหญ่ในครอบครัวและมรดก",
+      "trigger_age": 52,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่อคุณอายุ 52 ปี คุณพ่อคุณแม่หรือญาติผู้ใหญ่ที่มีอายุเกือบ 80 ปีเริ่มจากไปตามอายุขัย ทิ้งไว้เพียงความทรงจำอันอบอุ่นและคำสอนสั่ง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดงานบำเพ็ญกุศลอย่างสมเกียรติและทำบุญอุทิศส่วนกุศลให้ท่านด้วยความกตัญญูสูงสุด",
+          "hint_th": "✨ แต้มบุญ +25 , 🤝 เส้นสาย +6 , 😊 ความสุข -2 (อาลัยรักแต่ภูมิใจที่ได้ดูแลท่านอย่างดี)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำทรัพย์สิน/คำสอนที่ท่านทิ้งไว้ให้มาบริหารจัดการต่ออย่างมีสติและเป็นธรรมในพี่น้อง",
+          "hint_th": "🪙 มรดกสมทบ +15,000 ฿ , 🧠 สมอง +4 , ✨ แต้มบุญ +10 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 15000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 7500,
+            "merit": 18
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age52_02",
+      "title_th": "บ้านเริ่มเงียบเหงา (Empty Nest Syndrome) เมื่อลูกหลานแยกย้ายไปเติบโต!",
+      "trigger_age": 52,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บรรยากาศในบ้านที่เคยเสียงดังคึกคักเริ่มเงียบสงบลงเมื่อคนรุ่นลูกแยกย้ายไปทำงานหรือมีครอบครัวของตัวเอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ชวนคู่ชีวิตหรือแก๊งเพื่อนวัยเดียวกันไปเข้าชมรมลีลาศ/ปั่นจักรยาน/ท่องเที่ยวทั่วไทย!",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +8 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ใช้เวลาว่างเรียนคอร์สทำอาหาร ขนมปัง หรือศึกษาธรรมะและปรัชญาชีวิต",
+          "hint_th": "🧠 สมอง +5 , 😊 ความสุข +6 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 3,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age53_01",
+      "title_th": "แพ็กเกจตรวจคัดกรองมะเร็งและส่องกล้องทางเดินอาหารวัย 53!",
+      "trigger_age": 53,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "แพทย์แนะนำว่าผู้ที่มีอายุ 50 ปีขึ้นไปควรตรวจคัดกรองเชิงลึกเพื่อค้นหาติ่งเนื้อหรือความผิดปกติตั้งแต่ระยะเริ่มต้นที่รักษาหายขาดได้ 100%",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้ารับการตรวจคัดกรองครบชุด พบติ่งเนื้อเล็กๆ และตัดออกได้ทันเวลา รอดพ้นโรคร้าย! (-6,000฿)",
+          "hint_th": "🪙 ค่าตรวจ -6,000 ฿ , ❤️ สุขภาพ +9 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 9,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีสิทธิ์บัตรทอง / ข้าราชการ / ประกัน รพ.เอกชน] ใช้สิทธิ์ตรวจคัดกรองฟรีตามเกณฑ์อายุ ร่างกายแข็งแรงสมบูรณ์!",
+          "hint_th": "❤️ สุขภาพ +8 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [
+            "flag_welfare_card"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "กลัวหมอไม่ยอมไปตรวจ ปล่อยให้อาการท้องอืดเรื้อรังกวนใจ",
+          "hint_th": "❤️ สุขภาพ -4 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -4,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age53_02",
+      "title_th": "วางแผนที่ดินและบ้านสวนต่างจังหวัดสำหรับใช้ชีวิตหลังเกษียณ!",
+      "trigger_age": 53,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลายคนในวัย 53 ปีมีความฝันอยากมีบ้านสวนเล็กๆ อากาศดี หรือปรับปรุงบ้านปัจจุบันให้รองรับวัยผู้สูงอายุ (Elderly Friendly Design)",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปรับปรุงห้องน้ำชั้นล่าง ติดราวจับกันลื่น และทำทางลาดในบ้านไว้ล่วงหน้าอย่างรอบคอบ (-8,000฿)",
+          "hint_th": "🪙 ค่าปรับปรุงบ้าน -8,000 ฿ , ❤️ สุขภาพ +5 , 🧠 สมอง +4 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": -8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีที่ดินต่างจังหวัด] ลงต้นไม้ผล (ทุเรียน/มะม่วง/อะโวคาโด) ทิ้งไว้ รอเก็บเกี่ยวผลผลิตกินกำไรตอนอายุ 60!",
+          "hint_th": "🪙 รายได้ผลผลิต +18,000 ฿ , ❤️ สุขภาพ +4 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [
+            "flag_landlord"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 18000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เลือกแนวทางที่เหมาะกับกำลังและสถานการณ์ของครอบครัว",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 7,
+            "intelligence": 2,
+            "cash": 5000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age54_01",
+      "title_th": "ข้อเสนอโครงการเกษียณอายุก่อนกำหนด (Early Retire) พร้อมเงินชดเชยก้อนโต!",
+      "trigger_age": 54,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บริษัทเปิดโครงการสมัครใจเกษียณก่อนกำหนด (Early Retirement) สำหรับพนักงานอายุ 54-55 ปี โดยเสนอจ่ายเงินชดเชยพิเศษสูงสุด 10-15 เดือนของเงินเดือน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อยู่ทำงานต่อในฐานะผู้เชี่ยวชาญอาวุโส รับเงินเดือนเต็มและโบนัสยาวไปจนถึงอายุ 60 ปี!",
+          "hint_th": "🪙 โบนัสความภักดี +25,000 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับแพ็กเกจเงินก้อนพิเศษมาต่อยอดลงทุนและรับงานที่ปรึกษาอิสระแบบมีเวลาพักผ่อน!",
+          "hint_th": "🪙 เงินก้อนพิเศษ +40,000 ฿ , ❤️ สุขภาพ +6 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 32500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age54_02_poor",
+      "title_th": "ร่างกายเริ่มล้าจากการทำงานใช้แรงกายมาหลายสิบปี! ปรับเปลี่ยนวิธีทำมาหากิน",
+      "trigger_age": 54,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 54 ปี การแบกหามหรือยืนทำงานหนักติดต่อกันนานๆ เริ่มทำให้เข่าและหลังรับไม่ไหว คุณต้องหาทางปรับรูปแบบงานให้เหมาะกับวัย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปลี่ยนมาใช้ประสบการณ์เป็นหัวหน้าคนงานคุมหน้างาน หรือเปิดร้านขายของชำ/อาหารตามสั่งหน้าบ้าน",
+          "hint_th": "🪙 รายได้มั่นคง +10,000 ฿ , ❤️ สุขภาพ +4 , 🧠 สมอง +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไปขึ้นทะเบียนผู้ประกันตนมาตรา 40 / กองทุนการออมแห่งชาติ (กอช.) เพื่อสร้างบำนาญยามชรา",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +4 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 4,
+            "cash": 5000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age55_01",
+      "title_th": "อายุครบ 55 ปี! สิทธิ์ขอรับเงินชราภาพประกันสังคม & ขายคืนกองทุน RMF",
+      "trigger_age": 55,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หมุดหมายสำคัญทางกฎหมายการเงินไทย! เมื่ออายุครบ 55 ปีบริบูรณ์ คุณสามารถขายคืนกองทุนลดหย่อนภาษี RMF ได้โดยไม่ผิดเงื่อนไข และเริ่มวางแผนสิทธิ์บำนาญชราภาพ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตรวจสอบยอดเงินสมทบชราภาพและสับเปลี่ยนกองทุน RMF มาไว้ในตราสารหนี้ปลอดภัย ล็อกกำไรก้อนโต!",
+          "hint_th": "🪙 กำไรกองทุน +25,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งกำไรบางส่วนไปซื้อทองคำแท่งเยาวราชเก็บเข้าเซฟไว้เป็นมรดกให้ลูกหลาน",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +4 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 12500,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age55_02",
+      "title_th": "ปั้นทายาทและถ่ายทอดวิชา! สอนงานรุ่นน้อง/ลูกหลานให้พร้อมรับไม้ต่อ",
+      "trigger_age": 55,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เหลืออีก 5 ปีจะเกษียณอายุ 60 ปี คุณเริ่มวางมือจากงานรูทีนรายวัน แล้วหันมาเป็นโค้ชถ่ายทอดกลยุทธ์และคอนเนกชันให้คนรุ่นต่อไป",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พาคนรุ่นใหม่ไปแนะนำให้รู้จักคู่ค้าและผู้ใหญ่ในวงการ จนทุกคนเคารพคุณเป็นปูชนียบุคคล!",
+          "hint_th": "🤝 เส้นสาย +10 , ✨ แต้มบุญ +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เขียนคู่มือการทำงาน/ตำราวิชาชีพจากประสบการณ์ 30 ปี เผยแพร่เป็นวิทยาทาน!",
+          "hint_th": "🧠 สมอง +6 , ✨ แต้มบุญ +12 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 6,
+            "connections": 6,
+            "cash": 0,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 8,
+            "merit": 10
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age56_01",
+      "title_th": "เสียงระฆังวิวาห์ของลูกหลาน! รับบทผู้ใหญ่ฝ่ายเจ้าบ่าว-เจ้าสาวขึ้นคล้องพวงมาลัย",
+      "trigger_age": 56,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันมงคลมาถึง! ลูกหรือหลานรักในตระกูลเข้าสู่พิธีแต่งงาน คุณได้รับเกียรติให้นั่งเก้าอี้ผู้ใหญ่รับการไหว้และขึ้นกล่าวอวยพรบ่าวสาวบนเวที",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใส่ชุดผ้าไหมไทยสุดสง่า ขึ้นกล่าวคำอวยพรซึ้งกินใจและมอบซองรับขวัญคู่บ่าวสาว (-10,000฿)",
+          "hint_th": "🪙 ซองรับขวัญ -10,000 ฿ , 😊 ความสุข +10 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": -10000,
+            "merit": 10,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยเป็นแม่งานจัดเตรียมขันหมากและต้อนรับแขกผู้ใหญ่ด้วยรอยยิ้มอบอุ่น",
+          "hint_th": "😊 ความสุข +8 , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 8,
+            "cash": -5000,
+            "merit": 8,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age56_02",
+      "title_th": "ฉีดวัคซีนป้องกันโรคงูสวัดและไข้หวัดใหญ่สายพันธุ์ใหม่สำหรับวัย 55+!",
+      "trigger_age": 56,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่ออายุเกิน 55 ปี ภูมิคุ้มกันร่างกายจะเริ่มลดลง ทำให้เชื้อไวรัสงูสวัดที่ซ่อนอยู่ในปมประสาทอาจกำเริบขึ้นมาสร้างความปวดแสบปวดร้อนได้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไปฉีดวัคซีนป้องกันงูสวัดและไข้หวัดใหญ่ครบโดส เสริมเกราะภูมิคุ้มกันยาวไปถึงวัยชรา! (-4,500฿)",
+          "hint_th": "🪙 ค่าวัคซีน -4,500 ฿ , ❤️ สุขภาพ +8 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 8,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -4500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[แข็งแรงทนทาน] ร่างกายมีภูมิคุ้มกันดีเยี่ยมอยู่แล้ว เสริมด้วยการกินอาหารครบ 5 หมู่และพักผ่อนเพียงพอ",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [
+            "trait_strong_immune"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ชะล่าใจไม่ฉีดวัคซีน จนพักผ่อนน้อยแล้วผื่นงูสวัดขึ้นปวดแสบปวดร้อนไปหลายสัปดาห์!",
+          "hint_th": "❤️ สุขภาพ -6 , 😊 ความสุข -5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -6,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age57_01",
+      "title_th": "ปรับพอร์ตการเงินโค้งสุดท้าย 3 ปีก่อนเกษียณ! ลดสินทรัพย์เสี่ยงสูง",
+      "trigger_age": 57,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุ 57 ปี ตามหลักการวางแผนการเงินก่อนเกษียณ ควรทยอยลดสัดส่วนสินทรัพย์ผันผวนสูงมาเก็บไว้ในสินทรัพย์ที่จ่ายดอกเบี้ย/เงินปันผลสม่ำเสมอ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ล็อกกำไรจากหุ้นซิ่ง/คริปโต มาซื้อสลากออมสิน พันธบัตรรัฐบาล และหุ้นปันผลบลูชิพ!",
+          "hint_th": "🪙 ดอกเบี้ย/ปันผล +20,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 20000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[เป็นเจ้าของหอพัก/อสังหาฯ] ปรับปรุงห้องเช่าให้ใหม่เอี่ยม มีผู้เช่าเต็ม 100% เตรียมรับ Passive Income ยามเกษียณ!",
+          "hint_th": "🪙 ค่าเช่าพิเศษ +35,000 ฿ , 😊 ความสุข +8 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_passive_income_landlord"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 27500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age57_02_rich",
+      "title_th": "ได้รับพระราชทานเครื่องราชอิสริยาภรณ์ / รางวัลนักธุรกิจเกียรติยศแห่งปี!",
+      "trigger_age": 57,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "จากคุณงามความดีและการขับเคลื่อนเศรษฐกิจสังคมมาตลอดหลายสิบปี คุณได้รับการเสนอชื่อเข้ารับรางวัลเกียรติยศระดับประเทศในวัย 57 ปี",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้ารับรางวัลเกียรติยศพร้อมครอบครัว เป็นเกียรติประวัติสูงสุดของวงศ์ตระกูล!",
+          "hint_th": "🤝 เส้นสาย +12 , 😊 ความสุข +10 , ✨ แต้มบุญ +15 , ✨ หน้าตา +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 12,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 5
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดตั้งกองทุนบริจาคเครื่องช่วยหายใจและรถพยาบาลให้โรงพยาบาลต่างจังหวัดฉลองรางวัล (-40,000฿)",
+          "hint_th": "🪙 บริจาค -40,000 ฿ , ✨ แต้มบุญ +60 , 🤝 เส้นสาย +10 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": -40000,
+            "merit": 60,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 10,
+            "connections": 11,
+            "cash": -20000,
+            "merit": 38,
+            "appearance": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age58_01",
+      "title_th": "งวดสุดท้าย! ปิดยอดหนี้บ้านและหนี้สินทั้งหมดก่อนเข้าสู่วัยเกษียณ",
+      "trigger_age": 58,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุ 58 ปี! คุณเดินออกจากธนาคารพร้อมซองโฉนดที่ดินปลอดภาระจำนอง หรือเคลียร์บิลหนี้สินก้อนสุดท้ายในชีวิตจนเป็นไทแก่ตัว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กอดโฉนดบ้าน/สมุดบัญชีปลอดหนี้ด้วยความภูมิใจ เตรียมเข้าสู่วัยเกษียณแบบไร้หนี้สิน 100%!",
+          "hint_th": "😊 ความสุข +10 , ❤️ สุขภาพ +4 , 🧠 สมอง +3 , 💳 ได้รับป้าย [เครดิตบูโรดีเยี่ยม]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_credit_good"
+          ],
+          "removes_flags": [
+            "flag_credit_blacklist",
+            "flag_student_loan_debt"
+          ],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จัดทริปฉลองอิสรภาพทางการเงิน พาครอบครัวไปไหว้พระ 9 วัดทั่วไทย (-3,000฿)",
+          "hint_th": "🪙 เงินสด -3,000 ฿ , ✨ แต้มบุญ +15 , 😊 ความสุข +9 , ❤️ สุขภาพ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -3000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 10,
+            "intelligence": 2,
+            "cash": -1500,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p5_age59_01",
+      "title_th": "ปีสุดท้ายก่อนเกษียณอายุ 60! งานเลี้ยงมุทิตาจิตและคำขอบคุณจากคนทั้งองค์กร",
+      "trigger_age": 59,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุ 59 ปี ปีสุดท้ายของวัยกลางคน (Phase 5) ก่อนที่จะก้าวเข้าสู่วัยชราและเกษียณอายุในก้าวถัดไป! น้องๆ และเพื่อนร่วมงานจัดซุ้มดอกไม้เตรียมงานมุทิตาจิตอำลาตำแหน่งให้คุณ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กล่าวคำอำลาด้วยรอยยิ้มอบอุ่น ส่งมอบงานอย่างสมบูรณ์แบบ และรับของที่ระลึกทองคำจากองค์กร!",
+          "hint_th": "🪙 ของขวัญเกษียณ +30,000 ฿ , 😊 ความสุข +10 , 🤝 เส้นสาย +10 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 30000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทิ้งทวนโปรเจกต์สุดท้ายอย่างยิ่งใหญ่จนบอร์ดบริหารทาบทามให้เป็นที่ปรึกษาอาวุโสต่อหลังอายุ 60!",
+          "hint_th": "🪙 โบนัสทิ้งทวน +40,000 ฿ , 🧠 สมอง +6 , 🤝 เส้นสาย +10 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 6,
+            "connections": 10,
+            "cash": 40000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 9,
+            "intelligence": 3,
+            "connections": 10,
+            "cash": 35000,
+            "merit": 5
+          }
+        }
+      ]
+    }
+  ]
+}

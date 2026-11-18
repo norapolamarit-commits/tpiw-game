@@ -1,0 +1,944 @@
+{
+  "version": "1.0.0",
+  "database_name": "9_Loans_Crises_&_Endings",
+  "event_pool_mixing_rules": {
+    "description_th": "กฎการสุ่มอีเวนต์ประจำปีแบบผสมถัง (Weighted Pool Mixing) เพื่อป้องกันการเล่นซ้ำเป็นเส้นตรง",
+    "annual_event_draw_count": 1,
+    "mandatory_milestone_override": true,
+    "crisis_check_before_normal_event": true,
+    "pool_weights_percent": {
+      "life_phase_pool_8_1_to_8_6": 40,
+      "career_and_job_pool_8_7_to_8_9": 30,
+      "relationship_pool_8_10_to_8_11": 15,
+      "location_and_karma_pool_8_12": 15
+    },
+    "age_window_flexibility_years": 2
+  },
+  "loan_products_and_credit_rules": {
+    "negative_cash_end_of_year_protocol": {
+      "step_1_auto_withdraw_gsb_savings": true,
+      "step_2_mother_emergency_aid_if_hearts_5": {
+        "req_flag": "flag_parent_hearts_5",
+        "aid_cash": 10000,
+        "once_per_5_years": true
+      },
+      "step_3_force_emergency_modal": {
+        "options": [
+          "sell_resellable_asset_at_80_percent_value",
+          "apply_personal_bank_loan_if_eligible",
+          "forced_informal_shark_loan_to_cover_deficit"
+        ]
+      }
+    },
+    "credit_bureau_mechanics": {
+      "good_credit_flag": "flag_credit_good",
+      "blacklist_flag": "flag_credit_blacklist",
+      "consecutive_on_time_years_for_good_credit": 3,
+      "missed_payments_to_trigger_blacklist": 2,
+      "years_after_full_payoff_to_clear_blacklist": 3,
+      "good_credit_interest_discount_multiplier": 0.8
+    },
+    "loan_products": [
+      {
+        "loan_id": "loan_student_gys",
+        "name_th": "กองทุนเงินให้กู้ยืมเพื่อการศึกษา (กยศ.)",
+        "ui_location": "tab_assets_sub_debt_and_education",
+        "min_age": 18,
+        "max_age": 30,
+        "max_principal_cash": 240000,
+        "annual_interest_rate": 0.01,
+        "repayment_start_age": 24,
+        "max_repayment_years": 15,
+        "annual_base_installment_cash": 15000,
+        "req_flags": [
+          "flag_student_loan_eligible"
+        ],
+        "forbidden_flags": [],
+        "grants_flag_while_active": "flag_student_loan_debt",
+        "penalty_on_default_id": "penalty_student_loan_default",
+        "description_th": "สินเชื่อเพื่อการศึกษาดอกเบี้ยต่ำเพียง 1% ต่อปี เริ่มหักชำระคืนเมื่ออายุครบ 24 ปี หากค้างชำระเกิน 2 ปีจะถูกฟ้องบังคับคดีและติดแบล็กลิสต์บูโร"
+      },
+      {
+        "loan_id": "loan_personal_credit_card",
+        "name_th": "สินเชื่อส่วนบุคคล / บัตรกดเงินสดธนาคาร",
+        "ui_location": "tab_assets_sub_debt",
+        "min_age": 20,
+        "max_age": 60,
+        "max_principal_cash": 150000,
+        "annual_interest_rate": 0.18,
+        "max_repayment_years": 5,
+        "req_flags": [
+          "flag_bank_account",
+          "flag_regular_income"
+        ],
+        "forbidden_flags": [
+          "flag_credit_blacklist"
+        ],
+        "grants_flag_while_active": "flag_personal_loan_active",
+        "description_th": "วงเงินกู้ฉุกเฉินในระบบสำหรับมนุษย์เงินเดือน ดอกเบี้ยลดต้นลดดอก 18% ต่อปี (ลดเหลือ 14.4% หากมีป้ายเครดิตบูโรดีเยี่ยม)"
+      },
+      {
+        "loan_id": "loan_car_title_pawn",
+        "name_th": "สินเชื่อจำนำทะเบียนรถ (รถแลกเงิน)",
+        "ui_location": "tab_assets_sub_debt",
+        "min_age": 20,
+        "max_age": 70,
+        "max_principal_cash": 100000,
+        "annual_interest_rate": 0.12,
+        "max_repayment_years": 4,
+        "req_any_flags": [
+          "flag_has_motorcycle",
+          "flag_has_car"
+        ],
+        "forbidden_flags": [],
+        "collateral_seizure_on_default": true,
+        "description_th": "นำเล่มทะเบียนรถมอเตอร์ไซค์หรือรถยนต์มาค้ำประกันเงินกู้ ดอกเบี้ย 12% ต่อปี กู้ได้แม้ติดเครดิตบูโร แต่หากเบี้ยวหนี้ครบ 2 ปีจะถูกยึดรถทันที!"
+      },
+      {
+        "loan_id": "loan_sme_business_bank",
+        "name_th": "สินเชื่อธุรกิจ SME สร้างตัว (บรรษัทประกันสินเชื่อ)",
+        "ui_location": "tab_assets_sub_debt",
+        "min_age": 20,
+        "max_age": 65,
+        "max_principal_cash": 1000000,
+        "annual_interest_rate": 0.08,
+        "max_repayment_years": 10,
+        "req_flags": [
+          "flag_bank_account",
+          "flag_merchant_permit",
+          "flag_credit_good"
+        ],
+        "forbidden_flags": [
+          "flag_credit_blacklist"
+        ],
+        "description_th": "เงินกู้ดอกเบี้ยพิเศษ 8% ต่อปีสำหรับผู้มีใบอนุญาตค้าขายและประวัติเครดิตบูโรดีเยี่ยม ใช้สำหรับลงทุนเปิดร้านคาเฟ่หรือซื้อหอพักเสือนอนกิน"
+      },
+      {
+        "loan_id": "loan_informal_loan_shark",
+        "name_th": "เงินกู้นอกระบบ (แก๊งหมวกกันน็อกรายวัน)",
+        "ui_location": "tab_assets_sub_debt",
+        "min_age": 18,
+        "max_age": 80,
+        "max_principal_cash": 100000,
+        "annual_interest_rate": 0.6,
+        "annual_minimum_interest_payment": 36000,
+        "req_flags": [],
+        "forbidden_flags": [],
+        "grants_flag_while_active": "flag_informal_shark_debt",
+        "description_th": "กู้ได้ทันทีไม่ต้องเช็กเครดิตบูโรและไม่ต้องใช้คนค้ำ! แต่ดอกเบี้ยมหาโหด 60% ต่อปี และต้องเผชิญอีเวนต์แก๊งหมวกกันน็อกตามข่มขู่ทำร้ายร่างกายทุกปีที่ยังปิดเงินต้นไม่หมด!"
+      }
+    ]
+  },
+  "rng_risk_and_crisis_events": [
+    {
+      "event_id": "evt_crisis_01_heavy_road_accident",
+      "trigger_code": "event_heavy_accident_bill",
+      "title_th": "🚨 อุบัติเหตุใหญ่กลางแยกไฟแดง! รถพุ่งชนประสานงา",
+      "min_age": 15,
+      "max_age": 80,
+      "annual_trigger_chance_percent": 18,
+      "req_any_flags": [
+        "flag_uninsured_rider",
+        "tag_rebel_teen",
+        "flag_has_motorcycle"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ขณะขี่รถฝ่าการจราจรที่คับคั่ง รถกระบะคันหน้าเบรกกะทันหันบนถนนลื่น ทำให้รถของคุณเสียหลักพุ่งชนอย่างจัง! เสียงไซเรนรถกู้ภัยดังสนั่น",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีประกันอุบัติเหตุ/พ.ร.บ.] บริษัทประกันเคลียร์ค่าซ่อมและส่งตัวเข้า รพ. ทันที!",
+          "hint_th": "🛡️ ประกันจ่ายค่ารักษาให้ 100% , ❤️ สุขภาพ -5",
+          "req_stats": {},
+          "req_flags": [
+            "flag_insured_driver"
+          ],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "โชคดีที่คุณต่อ พ.ร.บ. และทำประกันอุบัติเหตุไว้ บริษัทประกันจัดการค่าเสียหายทั้งหมดให้เรียบร้อย!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -5,
+              "happiness": -2,
+              "intelligence": 1,
+              "connections": 0,
+              "cash": 0,
+              "merit": 0,
+              "appearance": 0
+            }
+          },
+          "on_fail": null
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "วัดดวงหักหลบฉุกเฉิน! (โอกาสรอดขึ้นอยู่กับสุขภาพและแต้มบุญ)",
+          "hint_th": "🎲 โอกาสสำเร็จ 50% (สำเร็จ: เจ็บเล็กน้อย | พลาด: บาดเจ็บสาหัสและเสียค่าซ่อมหนัก!)",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 50,
+          "stat_scaling_bonus": {
+            "health": 0.3,
+            "merit": 0.2
+          },
+          "on_success": {
+            "outcome_text_th": "ปฏิกิริยาและแต้มบุญช่วยให้คุณหักหลบพ้นจุดอันตรายได้ทัน มีแผลถลอกเพียงเล็กน้อย!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -8,
+              "happiness": -2,
+              "intelligence": 2,
+              "connections": 0,
+              "cash": -2000,
+              "merit": 0,
+              "appearance": 0
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "หักหลบไม่พ้น! ร่างกระแทกพื้นบาดเจ็บสาหัส ต้องจ่ายค่ารักษาและค่าซ่อมรถคู่กรณีอ่วมอรทัย!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -35,
+              "happiness": -15,
+              "intelligence": 0,
+              "connections": -2,
+              "cash": -35000,
+              "merit": 0,
+              "appearance": -5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_crisis_02_loan_shark_attack",
+      "trigger_code": "event_loan_shark_intimidation",
+      "title_th": "🚨 แก๊งหมวกกันน็อกบุกทวงหนี้หน้าบ้าน! ขู่พังข้าวของ",
+      "min_age": 18,
+      "max_age": 85,
+      "annual_trigger_chance_percent": 45,
+      "req_any_flags": [
+        "flag_informal_shark_debt"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ชายฉกรรจ์สวมหมวกกันน็อกเต็มใบ 2 คน ขี่มอเตอร์ไซค์มาเบิ้ลเครื่องเสียงดังหน้าบ้าน ตะโกนทวงเงินต้นและดอกเบี้ยนอกระบบที่คุณติดค้างอยู่!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กัดฟันควักเงินสดปิดยอดเงินต้นและดอกเบี้ยทั้งหมดให้จบสิ้นกันไป! (-50,000฿)",
+          "hint_th": "🪙 เงินสด -50,000 ฿ , ✨ ล้างป้าย [หนี้นอกระบบดอกเบี้ยโหด] ทันที!",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "คุณจ่ายเงินปิดหนี้นอกระบบจนหมดเกลี้ยง หลุดพ้นจากวงจรนรกกลับมาใช้ชีวิตได้อย่างปลอดภัย!",
+            "grants_flags": [],
+            "removes_flags": [
+              "flag_informal_shark_debt"
+            ],
+            "stat_effects": {
+              "health": 0,
+              "happiness": 15,
+              "intelligence": 2,
+              "connections": 2,
+              "cash": -50000,
+              "merit": 0,
+              "appearance": 0
+            }
+          },
+          "on_fail": null
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เจรจาขอผลัดผ่อนและแจ้งตำรวจสายตรวจมาช่วยไกล่เกลี่ย (วัดดวงตามเส้นสาย)",
+          "hint_th": "🎲 โอกาสสำเร็จ 40% (สำเร็จ: ยืดเวลาได้ | พลาด: โดนซ้อมบาดเจ็บหนัก!)",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 40,
+          "stat_scaling_bonus": {
+            "connections": 0.4,
+            "intelligence": 0.2
+          },
+          "on_success": {
+            "outcome_text_th": "สายตรวจเดินทางมาทันเวลา แก๊งทวงหนี้จึงยอมถอยและให้เวลาคุณหาเงินมาเคลียร์ในระบบ!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -2,
+              "happiness": -4,
+              "intelligence": 2,
+              "connections": 1,
+              "cash": -5000,
+              "merit": 0,
+              "appearance": 0
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "เจรจาไม่เป็นผล! แก๊งหมวกกันน็อกปาถุงสีใส่บ้านและทำร้ายร่างกายคุณจนบาดเจ็บหนัก!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -30,
+              "happiness": -20,
+              "intelligence": 0,
+              "connections": -5,
+              "cash": -10000,
+              "merit": 0,
+              "appearance": -4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_crisis_03_gang_brawl",
+      "trigger_code": "event_gang_brawl",
+      "title_th": "🚨 ศึกวัยรุ่นต่างสถาบัน / แก๊งคู่อริยกพวกดักรอหน้าปากซอย!",
+      "min_age": 13,
+      "max_age": 25,
+      "annual_trigger_chance_percent": 30,
+      "req_any_flags": [
+        "tag_rebel_teen"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ผลจากการมีป้ายวัยรุ่นเลือดร้อน! ขณะเดินกลับบ้านตอนเย็น กลุ่มวัยรุ่นคู่อริเกือบสิบคนขี่มอเตอร์ไซค์มาปาดหน้าพร้อมอาวุธครบมือ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตัดสินใจเลิกห้าว! วิ่งหนีเข้าป้อมตำรวจและกลับตัวกลับใจเลิกคบเพื่อนเกเร",
+          "hint_th": "✨ ล้างป้าย [วัยรุ่นเลือดร้อน] , ❤️ สุขภาพ -2 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 85,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "คุณวิ่งหลบเข้าป้อมตำรวจได้ทัน และตัดสินใจถอนตัวจากแก๊งเลือดร้อนหันมาตั้งใจใช้ชีวิตใหม่!",
+            "grants_flags": [],
+            "removes_flags": [
+              "tag_rebel_teen"
+            ],
+            "stat_effects": {
+              "health": -2,
+              "happiness": 3,
+              "intelligence": 4,
+              "connections": -2,
+              "cash": 0,
+              "merit": 5,
+              "appearance": 0
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "วิ่งหนีเกือบไม่ทัน โดนลูกหลงฟกช้ำดำเขียวแต่สุดท้ายตำรวจก็มาช่วยแยกย้าย!",
+            "grants_flags": [],
+            "removes_flags": [
+              "tag_rebel_teen"
+            ],
+            "stat_effects": {
+              "health": -15,
+              "happiness": -5,
+              "intelligence": 2,
+              "connections": -2,
+              "cash": -2000,
+              "merit": 0,
+              "appearance": -2
+            }
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เปิดศึกตะลุมบอนสู้ยิบตา! (เสี่ยงตาย/บาดเจ็บสาหัส)",
+          "hint_th": "🎲 โอกาสชนะ 35% (ชนะ: ได้ใจลูกพี่ | แพ้: เข้าห้อง ICU และเสียค่าปรับคดีวิวาท!)",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 35,
+          "stat_scaling_bonus": {
+            "health": 0.4
+          },
+          "on_success": {
+            "outcome_text_th": "คุณสู้จนคู่อริถอยหนีไปได้ แต่ก็แลกมาด้วยแผลฟกช้ำและประวัติเสียในโรงพัก!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -12,
+              "happiness": 2,
+              "intelligence": -2,
+              "connections": 4,
+              "cash": -1000,
+              "merit": -5,
+              "appearance": -2
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "พลาดท่าโดนรุมทำร้ายจนสลบคาที่! ต้องนอนโรงพยาบาลและเสียค่าปรับคดีทะเลาะวิวาทก้อนโต!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -45,
+              "happiness": -20,
+              "intelligence": -2,
+              "connections": -4,
+              "cash": -15000,
+              "merit": -10,
+              "appearance": -6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_crisis_04_revenue_audit",
+      "trigger_code": "event_revenue_department_audit",
+      "title_th": "🚨 กรมสรรพากรส่งหนังสือเรียกตรวจสอบภาษีย้อนหลัง 5 ปี!",
+      "min_age": 20,
+      "max_age": 75,
+      "annual_trigger_chance_percent": 30,
+      "req_any_flags": [
+        "flag_tax_evasion_risk"
+      ],
+      "forbidden_flags": [
+        "flag_tax_compliant"
+      ],
+      "description_th": "เนื่องจากบัญชีธนาคารของคุณมียอดเงินโอนเข้าจากงานฟรีแลนซ์/ขายของออนไลน์เกินเกณฑ์ที่กฎหมายกำหนดแต่ไม่ได้ยื่นภาษีให้ครบถ้วน เจ้าหน้าที่สรรพากรจึงส่งจดหมายเชิญพบ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยอมจ่ายภาษีย้อนหลังพร้อมเบี้ยปรับและจัดทำบัญชีให้ถูกต้อง (-35,000฿)",
+          "hint_th": "🪙 จ่ายภาษีย้อนหลัง -35,000 ฿ , ✨ ล้างป้าย [เสี่ยงโดนภาษีย้อนหลัง]",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "คุณชำระภาษีย้อนหลังครบถ้วนและจัดทำระบบบัญชีใหม่ ทำให้ธุรกิจเดินหน้าต่อได้อย่างไร้กังวล!",
+            "grants_flags": [
+              "flag_tax_compliant"
+            ],
+            "removes_flags": [
+              "flag_tax_evasion_risk"
+            ],
+            "stat_effects": {
+              "health": 0,
+              "happiness": -4,
+              "intelligence": 4,
+              "connections": 1,
+              "cash": -35000,
+              "merit": 2,
+              "appearance": 0
+            }
+          },
+          "on_fail": null
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีป้ายความรู้การเงิน / ทนาย] ยื่นเอกสารหักค่าใช้จ่ายเหมา 60% และค่าลดหย่อนตามกฎหมาย",
+          "hint_th": "🎲 ลดเบี้ยปรับเหลือเพียง -8,000 ฿ และล้างป้ายความเสี่ยง!",
+          "req_stats": {},
+          "req_flags": [
+            "flag_financial_literacy"
+          ],
+          "base_success_chance_percent": 90,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "ด้วยความรู้ด้านภาษี คุณสามารถแจกแจงต้นทุนและค่าลดหย่อนได้อย่างถูกต้อง เสียภาษีเพิ่มเพียงเล็กน้อย!",
+            "grants_flags": [
+              "flag_tax_compliant"
+            ],
+            "removes_flags": [
+              "flag_tax_evasion_risk"
+            ],
+            "stat_effects": {
+              "health": 0,
+              "happiness": 4,
+              "intelligence": 5,
+              "connections": 2,
+              "cash": -8000,
+              "merit": 2,
+              "appearance": 0
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "เอกสารใบเสร็จต้นทุนไม่ครบถ้วน จึงต้องจ่ายภาษีย้อนหลังตามเกณฑ์ประเมิน!",
+            "grants_flags": [
+              "flag_tax_compliant"
+            ],
+            "removes_flags": [
+              "flag_tax_evasion_risk"
+            ],
+            "stat_effects": {
+              "health": 0,
+              "happiness": -4,
+              "intelligence": 2,
+              "connections": 0,
+              "cash": -25000,
+              "merit": 0,
+              "appearance": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_crisis_05_asset_seizure_court",
+      "trigger_code": "risk_asset_seizure",
+      "title_th": "🚨 กรมบังคับคดีติดป้ายประกาศยึดทรัพย์และอายัดบัญชีเงินเดือน!",
+      "min_age": 22,
+      "max_age": 80,
+      "annual_trigger_chance_percent": 35,
+      "req_any_flags": [
+        "flag_credit_blacklist"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ผลจากการปล่อยให้ติดแบล็กลิสต์บูโรและค้างชำระหนี้เป็นเวลานาน เจ้าหนี้ได้ยื่นฟ้องศาลจนมีคำสั่งบังคับคดีอายัดเงินในบัญชี!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าสู่กระบวนการไกล่เกลี่ยชั้นบังคับคดีและจ่ายเงินก้อนแฮร์คัต (Haircut) ปิดหนี้! (-40,000฿)",
+          "hint_th": "🪙 จ่ายปิดหนี้ -40,000 ฿ , ✨ ปลดล็อกป้าย [ติดแบล็กลิสต์บูโร]",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "เจ้าหนี้ลดดอกเบี้ยค้างชำระให้ครึ่งหนึ่ง คุณปิดบัญชีหนี้สำเร็จและกู้คืนประวัติทางการเงินกลับมาได้!",
+            "grants_flags": [],
+            "removes_flags": [
+              "flag_credit_blacklist"
+            ],
+            "stat_effects": {
+              "health": 2,
+              "happiness": 10,
+              "intelligence": 4,
+              "connections": 3,
+              "cash": -40000,
+              "merit": 3,
+              "appearance": 0
+            }
+          },
+          "on_fail": null
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไม่มีเงินก้อนจ่าย ยอมให้หักเงินเดือน/ยึดทรัพย์ขายทอดตลาดตามกฎหมาย (-25,000฿)",
+          "hint_th": "🪙 ถูกหักเงิน -25,000 ฿ , 😊 ความสุข -10 , 🤝 เส้นสาย -5",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "คุณถูกหักเงินได้รายปีเพื่อชำระหนี้ตามคำสั่งศาล สร้างความอึดอัดใจในการใช้ชีวิตอย่างมาก",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -4,
+              "happiness": -10,
+              "intelligence": 1,
+              "connections": -5,
+              "cash": -25000,
+              "merit": -2,
+              "appearance": -2
+            }
+          },
+          "on_fail": null
+        }
+      ]
+    },
+    {
+      "event_id": "evt_crisis_06_acute_heart_stroke",
+      "trigger_code": "crisis_stroke_or_heart_attack",
+      "title_th": "🚨 วูบหมดสติคาโต๊ะทำงาน! ภาวะเส้นเลือดในสมองตีบ/หัวใจวายเฉียบพลัน",
+      "min_age": 35,
+      "max_age": 100,
+      "annual_trigger_chance_percent": 35,
+      "req_any_flags": [
+        "status_hypertension",
+        "status_chronic_insomnia"
+      ],
+      "forbidden_flags": [],
+      "description_th": "จากการปล่อยให้เป็นโรคความดันโลหิตสูงหรืออดนอนเรื้อรัง จู่ๆ คุณก็เกิดอาการแน่นหน้าอก แขนขาอ่อนแรงครึ่งซีก และล้มฟุบลงกับพื้น!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีประกัน รพ.เอกชน / บัตรทอง] ส่งห้องฉุกเฉินสวนหัวใจ/ให้ยาละลายลิ่มเลือดทันเวลา Golden Period!",
+          "hint_th": "🏥 รอดชีวิตและฟื้นตัวไว , ❤️ สุขภาพ -10 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [
+            "flag_private_hospital_access"
+          ],
+          "base_success_chance_percent": 95,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "ทีมแพทย์เฉพาะทางช่วยชีวิตคุณไว้ได้ทันภายใน 3 ชั่วโมงทอง! คุณตัดสินใจดูแลสุขภาพอย่างจริงจังทันที",
+            "grants_flags": [],
+            "removes_flags": [
+              "status_hypertension"
+            ],
+            "stat_effects": {
+              "health": -10,
+              "happiness": 2,
+              "intelligence": 2,
+              "connections": 0,
+              "cash": -5000,
+              "merit": 0,
+              "appearance": 0
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "แม้จะส่งถึงมือหมอเร็วแต่อาการรุนแรงมาก ต้องพักฟื้นทำกายภาพบำบัดนานหลายเดือน!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -30,
+              "happiness": -10,
+              "intelligence": 0,
+              "connections": 0,
+              "cash": -20000,
+              "merit": 0,
+              "appearance": -2
+            }
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "วัดดวงเรียกรถพยาบาลฉุกเฉิน 1669 นำส่งโรงพยาบาลที่ใกล้ที่สุด!",
+          "hint_th": "🎲 โอกาสรอดปลอดภัย 55% (ขึ้นอยู่กับแต้มบุญและสุขภาพตั้งต้น)",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 55,
+          "stat_scaling_bonus": {
+            "merit": 0.3,
+            "health": 0.3
+          },
+          "on_success": {
+            "outcome_text_th": "รถกู้ชีพ 1669 มาถึงทันเวลาและช่วยปั๊มหัวใจ/รักษาจนพ้นขีดอันตราย!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -20,
+              "happiness": -5,
+              "intelligence": 0,
+              "connections": 0,
+              "cash": -15000,
+              "merit": 0,
+              "appearance": -2
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "รถติดหนักทำให้ไปถึงโรงพยาบาลช้า! ร่างกายทรุดหนักเฉียดตายและเสียค่ารักษาพยาบาลก้อนมหึมา!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -55,
+              "happiness": -20,
+              "intelligence": -5,
+              "connections": -2,
+              "cash": -60000,
+              "merit": 0,
+              "appearance": -5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_crisis_07_economic_layoff",
+      "trigger_code": "crisis_sudden_layoff",
+      "title_th": "🚨 ซองขาวฟ้าผ่า! บริษัทประกาศลดขนาดองค์กรปลดพนักงานกลางคัน",
+      "min_age": 23,
+      "max_age": 58,
+      "annual_trigger_chance_percent": 10,
+      "req_any_flags": [
+        "flag_regular_income"
+      ],
+      "forbidden_flags": [
+        "flag_gov_pension_right",
+        "flag_family_business"
+      ],
+      "description_th": "พิษเศรษฐกิจตกต่ำทำให้บริษัทที่คุณทำงานอยู่ประกาศปิดแผนกและแจกซองขาวเลิกจ้างพนักงานสายฟ้าแลบ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ใช้ทักษะและความสามารถพิเศษโชว์ผลงาน จนถูกดึงตัวไปอยู่แผนกหลักต่อโดยไม่ถูกปลด!",
+          "hint_th": "🎲 โอกาสสำเร็จ 50% (+โบนัสตามค่าสมองและเส้นสาย)",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 50,
+          "stat_scaling_bonus": {
+            "intelligence": 0.3,
+            "connections": 0.3
+          },
+          "on_success": {
+            "outcome_text_th": "ผู้บริหารเล็งเห็นว่าคุณเป็นคนสำคัญที่องค์กรขาดไม่ได้ จึงย้ายคุณไปคุมโปรเจกต์ใหม่พร้อมขึ้นเงินเดือนให้!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -2,
+              "happiness": 6,
+              "intelligence": 3,
+              "connections": 4,
+              "cash": 15000,
+              "merit": 0,
+              "appearance": 0
+            }
+          },
+          "on_fail": {
+            "outcome_text_th": "แผนกถูกยุบทั้งหมด! แต่คุณได้รับเงินชดเชยเลิกจ้างตามกฎหมายแรงงานมาตั้งหลักหางานใหม่",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": 0,
+              "happiness": -8,
+              "intelligence": 1,
+              "connections": -2,
+              "cash": 30000,
+              "merit": 0,
+              "appearance": 0
+            }
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับเงินชดเชยเลิกจ้างตามกฎหมายแรงงานเต็มจำนวน แล้วไปขึ้นทะเบียนว่างงานประกันสังคม!",
+          "hint_th": "🪙 รับเงินชดเชย +45,000 ฿ , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "คุณได้รับเงินชดเชยก้อนใหญ่มาเป็นทุนสำรองระหว่างพักสมองและหางานใหม่ที่ดีกว่าเดิม!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": 2,
+              "happiness": -3,
+              "intelligence": 2,
+              "connections": 0,
+              "cash": 45000,
+              "merit": 0,
+              "appearance": 0
+            }
+          },
+          "on_fail": null
+        }
+      ]
+    },
+    {
+      "event_id": "evt_crisis_08_cursed_karma_calamity",
+      "trigger_code": "crisis_cursed_fate_strike",
+      "title_th": "🚨 เจ้ากรรมนายเวรตามทัน! เคราะห์ซ้ำกรรมซัดเมื่อแต้มบุญติดลบ",
+      "min_age": 15,
+      "max_age": 95,
+      "annual_trigger_chance_percent": 50,
+      "req_any_flags": [
+        "flag_cursed_fate"
+      ],
+      "forbidden_flags": [
+        "flag_blessed_destiny"
+      ],
+      "description_th": "เมื่อค่าแต้มบุญ (merit) ของคุณต่ำกว่าหรือเท่ากับ 0 ดวงชะตาจะตกต่ำถึงขีดสุด! ปีนี้เกิดทั้งเรื่องโดนใส่ร้าย ของมีค่าหาย และอุบัติเหตุเจ็บตัวซ้ำซ้อน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รีบไปทำบุญใหญ่ ถวายสังฆทาน ปล่อยปลาหน้าเขียง และขอขมาเจ้ากรรมนายเวร (-2,000฿)",
+          "hint_th": "🪙 ทำบุญแก้กรรม -2,000 ฿ , ✨ แต้มบุญ +15 , ล้างป้าย [ดวงตกขั้นสุด]",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "ผลจากการสำนึกผิดและสร้างกุศลครั้งใหญ่ช่วยให้เคราะห์หนักกลายเป็นเบา และหลุดพ้นจากสถานะดวงตก!",
+            "grants_flags": [],
+            "removes_flags": [
+              "flag_cursed_fate"
+            ],
+            "stat_effects": {
+              "health": 2,
+              "happiness": 5,
+              "intelligence": 1,
+              "connections": 1,
+              "cash": -2000,
+              "merit": 15,
+              "appearance": 0
+            }
+          },
+          "on_fail": null
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ดื้อดึงไม่เชื่อเรื่องบาปบุญ ใช้ชีวิตประมาทต่อไป",
+          "hint_th": "❤️ สุขภาพ -20 , 🪙 เสียทรัพย์ -15,000 ฿ , 😊 ความสุข -12",
+          "req_stats": {},
+          "req_flags": [],
+          "base_success_chance_percent": 100,
+          "stat_scaling_bonus": {},
+          "on_success": {
+            "outcome_text_th": "เคราะห์กรรมถาโถมเข้าใส่ไม่ยั้ง ทั้งเจ็บป่วยและเสียทรัพย์สินไปก้อนโต!",
+            "grants_flags": [],
+            "removes_flags": [],
+            "stat_effects": {
+              "health": -20,
+              "happiness": -12,
+              "intelligence": 0,
+              "connections": -4,
+              "cash": -15000,
+              "merit": -5,
+              "appearance": -2
+            }
+          },
+          "on_fail": null
+        }
+      ]
+    }
+  ],
+  "death_conditions_and_causes": [
+    {
+      "death_id": "death_natural_centenarian",
+      "name_th": "สิ้นอายุขัยตามธรรมชาติในวัย 100 ปี (ชราภาพอย่างสงบ)",
+      "trigger_condition": "age >= 100",
+      "is_premature_death": false,
+      "merit_bonus_on_death": 100,
+      "obituary_template_th": "{player_name} ได้เดินทางมาถึงจุดสูงสุดของอายุขัยมนุษย์ 100 ปีบริบูรณ์ และหลับตาลาโลกไปอย่างสงบสุขท่ามกลางลูกหลานเหลนโหลนที่รายล้อมด้วยความรักและอาลัย"
+    },
+    {
+      "death_id": "death_natural_old_age",
+      "name_th": "โรคชราและภาวะอวัยวะเสื่อมตามวัย (อายุ 70-99 ปี)",
+      "trigger_condition": "health <= 0 and age >= 70",
+      "is_premature_death": false,
+      "merit_bonus_on_death": 30,
+      "obituary_template_th": "{player_name} ถึงแก่กรรมอย่างสงบด้วยโรคชราในวัย {age} ปี ปิดฉากการเดินทางอันยาวนานและทิ้งคุณงามความดีไว้ให้คนรุ่นหลังจดจำ"
+    },
+    {
+      "death_id": "death_cardiovascular_overwork",
+      "name_th": "ภาวะหัวใจล้มเหลวเฉียบพลัน / เส้นเลือดในสมองแตกจากการโหมงานหนัก",
+      "trigger_condition": "health <= 0 and age < 70 and has_any_flag(['status_hypertension', 'status_chronic_insomnia', 'status_office_syndrome'])",
+      "is_premature_death": true,
+      "merit_bonus_on_death": 10,
+      "obituary_template_th": "{player_name} เสียชีวิตก่อนวัยอันควรในวัยเพียง {age} ปี จากภาวะหัวใจล้มเหลวเฉียบพลันหลังตรากตรำทำงานหนักติดต่อกันเป็นเวลานาน"
+    },
+    {
+      "death_id": "death_road_accident",
+      "name_th": "อุบัติเหตุทางถนนรุนแรง",
+      "trigger_condition": "health <= 0 and last_event_category == 'road_accident'",
+      "is_premature_death": true,
+      "merit_bonus_on_death": 5,
+      "obituary_template_th": "{player_name} จากไปอย่างกะทันหันในวัย {age} ปี จากอุบัติเหตุบนท้องถนน สร้างความโศกเศร้าเสียใจให้กับครอบครัวและเพื่อนฝูง"
+    },
+    {
+      "death_id": "death_depression_burnout",
+      "name_th": "ภาวะตรอมใจและร่างกายทรุดโทรมจากโรคซึมเศร้าเรื้อรัง",
+      "trigger_condition": "health <= 0 and has_flag('flag_depression')",
+      "is_premature_death": true,
+      "merit_bonus_on_death": 15,
+      "obituary_template_th": "{player_name} จากโลกนี้ไปในวัย {age} ปี หลังจากต่อสู้กับความบอบช้ำทางจิตใจและภาวะหมดไฟในการใช้ชีวิตมาอย่างยาวนาน ขอให้ดวงวิญญาณได้พักผ่อนอย่างสงบ"
+    },
+    {
+      "death_id": "death_loan_shark_violence",
+      "name_th": "บาดเจ็บสาหัสจากการถูกแก๊งทวงหนี้นอกระบบทำร้าย",
+      "trigger_condition": "health <= 0 and has_flag('flag_informal_shark_debt')",
+      "is_premature_death": true,
+      "merit_bonus_on_death": 5,
+      "obituary_template_th": "{player_name} เสียชีวิตในวัย {age} ปี จากพิษบาดแผลและมรสุมหนี้นอกระบบที่รุมเร้า เป็นอุทาหรณ์เตือนใจถึงพิษภัยของหนี้นอกระบบ"
+    },
+    {
+      "death_id": "death_general_illness",
+      "name_th": "ภาวะร่างกายล้มเหลวและโรคร้ายแรงแทรกซ้อน",
+      "trigger_condition": "health <= 0",
+      "is_premature_death": true,
+      "merit_bonus_on_death": 10,
+      "obituary_template_th": "{player_name} ถึงแก่กรรมในวัย {age} ปี เนื่องจากภาวะสุขภาพร่างกายอ่อนแอและโรคแทรกซ้อน"
+    }
+  ],
+  "ending_archetypes_and_merit_conversion": {
+    "merit_conversion_formula": {
+      "keep_accumulated_merit_percent": 100,
+      "bonus_merit_per_1_million_net_worth": 5,
+      "max_net_worth_merit_bonus": 200,
+      "bonus_merit_per_surviving_year_after_60": 2,
+      "bonus_merit_for_filial_child_flag": 30,
+      "bonus_merit_for_philanthropist_flag": 50
+    },
+    "inheritance_and_next_generation_rules": {
+      "can_continue_as_child_if_has_flag": "flag_has_child",
+      "will_testament_flag": "flag_will_unlocked",
+      "inheritance_tax_rate_without_will": 0.1,
+      "inheritance_tax_rate_with_will": 0.0
+    },
+    "ending_tiers": [
+      {
+        "ending_id": "end_01_centenarian_legend",
+        "rank": "SSR",
+        "title_th": "👑 ตำนาน 1 ใน 70 ล้าน: ผู้พิชิตศตวรรษ",
+        "req_condition": "age >= 100 and net_worth >= 10000000 and merit >= 200",
+        "bonus_merit_reward": 150,
+        "summary_th": "สุดยอดชีวิตที่สมบูรณ์แบบทั้งอายุขัย 100 ปี ความมั่งคั่งระดับเศรษฐี และบุญบารมีที่เปี่ยมล้น ชื่อของคุณถูกจารึกไว้เป็นตำนานสูงสุดของเกม!"
+      },
+      {
+        "ending_id": "end_02_tycoon_mogul",
+        "rank": "SR",
+        "title_th": "💎 เจ้าสัวแสนล้านผู้กุมเศรษฐกิจไทย",
+        "req_condition": "net_worth >= 50000000",
+        "bonus_merit_reward": 100,
+        "summary_th": "คุณสร้างอาณาจักรความมั่งคั่งและพอร์ตการลงทุนระดับมหาเศรษฐี ทิ้งมรดกมหาศาลไว้ให้ลูกหลานสุขสบายไปอีกหลายชั่วอายุคน!"
+      },
+      {
+        "ending_id": "end_03_bodhisattva_philanthropist",
+        "rank": "SR",
+        "title_th": "🪷 ผู้มีบุญญาธิการและนักบุญแห่งแผ่นดิน",
+        "req_condition": "merit >= 300",
+        "bonus_merit_reward": 120,
+        "summary_th": "ตลอดชีวิตของคุณอุทิศตนเพื่อความกตัญญู การทำนุบำรุงศาสนา และการบริจาคช่วยเหลือโรงพยาบาล แต้มบุญมหาศาลจะนำพาให้ชาติหน้าของคุณเกิดบนกองเงินกองทอง!"
+      },
+      {
+        "ending_id": "end_04_self_made_fighter",
+        "rank": "A",
+        "title_th": "🔥 ตำนานเสื่อผืนหมอนใบ: จากดินสู่ดาว",
+        "req_condition": "spawn_class in ['class_1', 'class_2'] and net_worth >= 5000000",
+        "bonus_merit_reward": 80,
+        "summary_th": "แม้จะเริ่มต้นชีวิตจากครอบครัวยากจนหาเช้ากินค่ำ แต่ด้วยความขยันอดทนและสติปัญญา คุณสามารถพลิกชีวิตขึ้นมาเป็นเศรษฐีได้ด้วยสองมือของตัวเอง!"
+      },
+      {
+        "ending_id": "end_05_honorable_pillar",
+        "rank": "A",
+        "title_th": "🎖️ ข้าราชการและปูชนียบุคคลผู้ทรงเกียรติ",
+        "req_condition": "has_any_flag(['flag_gov_pension_right', 'flag_medical_license', 'flag_lawyer_license', 'flag_engineer_license']) and age >= 70",
+        "bonus_merit_reward": 60,
+        "summary_th": "คุณใช้ความรู้ความสามารถในวิชาชีพรับใช้สังคมอย่างซื่อสัตย์สุจริต มีเกียรติยศศักดิ์ศรีและบั้นปลายชีวิตที่มั่นคงอบอุ่น"
+      },
+      {
+        "ending_id": "end_06_happy_family_matriarch",
+        "rank": "B",
+        "title_th": "🏡 ร่มโพธิ์ร่มไทรแห่งครอบครัวสุขสันต์",
+        "req_condition": "has_flag('flag_has_child') and happiness >= 70 and age >= 65",
+        "bonus_merit_reward": 50,
+        "summary_th": "แม้ไม่ต้องรวยล้นฟ้า แต่คุณประสบความสำเร็จในการสร้างครอบครัวที่อบอุ่น เลี้ยงดูลูกหลานให้เป็นคนดี และจากไปท่ามกลางรอยยิ้มของคนที่รักคุณ"
+      },
+      {
+        "ending_id": "end_07_ordinary_survivor",
+        "rank": "C",
+        "title_th": "🌱 คนสู้ชีวิต 1 ใน 70 ล้านผู้ไม่ยอมแพ้",
+        "req_condition": "age >= 60 and net_worth >= 0",
+        "bonus_merit_reward": 30,
+        "summary_th": "ชีวิตคนธรรมดาที่ผ่านทั้งรอยยิ้ม หยาดเหงื่อ และมรสุมเศรษฐกิจ แต่คุณก็ประคองตัวรอดมาได้อย่างสง่างามโดยไม่ทิ้งหนี้สินไว้ให้ใคร"
+      },
+      {
+        "ending_id": "end_08_drowned_in_debt",
+        "rank": "D",
+        "title_th": "💸 นักสู้ผู้พ่ายแพ้ให้แก่วงจรหนี้สิน",
+        "req_condition": "net_worth < 0 or has_any_flag(['flag_credit_blacklist', 'flag_informal_shark_debt'])",
+        "bonus_merit_reward": 15,
+        "summary_th": "ดอกเบี้ยทบต้นและภาระหนี้สินที่ถาโถมทำให้คุณต้องวิ่งหมุนเงินจนถึงวาระสุดท้ายของชีวิต นำแต้มบุญปลอบใจไปวางแผนการเงินใหม่ในชาติหน้า!"
+      },
+      {
+        "ending_id": "end_09_fallen_youth",
+        "rank": "E",
+        "title_th": "🥀 ดอกไม้ที่ร่วงโรยก่อนวัยอันควร",
+        "req_condition": "age < 40",
+        "bonus_merit_reward": 20,
+        "summary_th": "การเดินทางของคุณจบลงเร็วเกินไปจากอุบัติเหตุหรือปัญหาสุขภาพตั้งแต่วัยหนุ่มสาว ยังมีเส้นทางชีวิตอีกมากมายรอให้คุณกลับไปแก้มือในการเกิดใหม่!"
+      }
+    ]
+  }
+}

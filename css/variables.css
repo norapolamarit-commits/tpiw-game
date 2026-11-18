@@ -1,0 +1,61 @@
+:root {
+  /* Fonts */
+  --font-display: 'Prompt', 'Sarabun', system-ui, -apple-system, sans-serif;
+  --font-body: 'Sarabun', 'Prompt', system-ui, -apple-system, sans-serif;
+
+  /* Core Brand Palette (White + Deep Navy) */
+  --navy-950: #091A30;
+  --navy-900: #0F2744;
+  --navy-800: #16375E;
+  --navy-700: #234C7D;
+  --navy-100: #DCE8F6;
+  --navy-50: #EFF5FC;
+
+  /* Accents */
+  --accent-orange: #F28B50;
+  --accent-sky: #65A7DD;
+  --accent-gold: #C89742;
+  --accent-gold-bg: #FFF6E3;
+
+  /* Semantic Colors */
+  --success: #168052;
+  --success-bg: #E5F6EE;
+  --danger: #C53030;
+  --danger-bg: #FEECEC;
+  --warning: #B76E14;
+  --warning-bg: #FFF3DC;
+  --info: #1E5AA8;
+  --info-bg: #E9F2FD;
+
+  /* Surfaces & Borders */
+  --bg-base: #F3F6FB;
+  --surface-card: rgba(255, 255, 255, 0.94);
+  --surface-solid: #FFFFFF;
+  --surface-muted: #F0F4F9;
+  --surface-locked: #E6EBF2;
+  --border-subtle: #D8E2EE;
+  --border-strong: #B6C7DC;
+
+  /* Text */
+  --text-primary: #0F2744;
+  --text-secondary: #435770;
+  --text-muted: #76889E;
+  --text-inverse: #FFFFFF;
+
+  /* Radii & Shadows */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 6px 20px rgba(15, 39, 68, 0.07), 0 1px 3px rgba(15, 39, 68, 0.04);
+  --shadow-elevated: 0 12px 28px rgba(15, 39, 68, 0.14);
+  --shadow-nav: 0 -4px 18px rgba(15, 39, 68, 0.06);
+
+  /* Layout Dimensions */
+  --app-max-width: 440px;
+  --bottom-nav-height: 68px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+}

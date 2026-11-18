@@ -1,0 +1,1419 @@
+{
+  "version": "1.0.0",
+  "database_name": "Traits_&_Statuses",
+  "innate_traits": [
+    {
+      "id": "trait_quick_learner",
+      "name_th": "เด็กหัวไว",
+      "type": "positive_innate",
+      "merit_cost_to_buy": 50,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.2,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 1.0,
+        "lucky_draw_chance": 1.0
+      },
+      "unlocks": [
+        "scholarship_fast_track"
+      ],
+      "description_th": "เรียนรู้สิ่งใหม่ได้รวดเร็วกว่าเด็กทั่วไป มีโอกาสสอบชิงทุนและทำคะแนนสอบได้ง่ายขึ้น"
+    },
+    {
+      "id": "trait_easy_baby",
+      "name_th": "เด็กเลี้ยงง่าย",
+      "type": "positive_innate",
+      "merit_cost_to_buy": 40,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 1.0,
+        "lucky_draw_chance": 1.0
+      },
+      "unlocks": [
+        "extra_parent_allowance"
+      ],
+      "description_th": "อารมณ์ดี ไม่ค่อยงอแง ทำให้พ่อแม่และญาติผู้ใหญ่รักใคร่เอ็นดูเป็นพิเศษ"
+    },
+    {
+      "id": "trait_strong_immune",
+      "name_th": "แข็งแรงทนทาน",
+      "type": "positive_innate",
+      "merit_cost_to_buy": 45,
+      "yearly_stat_effects": {
+        "health": 2,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.05,
+        "business_income": 1.0,
+        "medical_cost": 0.7,
+        "lucky_draw_chance": 1.0
+      },
+      "unlocks": [],
+      "description_th": "มีภูมิคุ้มกันโรคสูงตั้งแต่เกิด ไม่ค่อยเจ็บป่วยออดแอดและฟื้นตัวจากอาการบาดเจ็บได้ไว"
+    },
+    {
+      "id": "trait_allergy",
+      "name_th": "ภูมิแพ้เรื้อรัง",
+      "type": "negative_innate",
+      "merit_cost_to_buy": 0,
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.95,
+        "work_efficiency": 0.95,
+        "business_income": 1.0,
+        "medical_cost": 1.3,
+        "lucky_draw_chance": 1.0
+      },
+      "unlocks": [],
+      "description_th": "แพ้อากาศและฝุ่นละอองง่าย สุขภาพลดลงต่อเนื่องและจะมีอาการหนักขึ้นหากอาศัยในเมืองที่มีมลพิษสูง"
+    },
+    {
+      "id": "trait_silver_spoon",
+      "name_th": "คาบช้อนเงินช้อนทอง",
+      "type": "special_reincarnation",
+      "merit_cost_to_buy": 200,
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.2,
+        "medical_cost": 1.0,
+        "lucky_draw_chance": 1.0
+      },
+      "unlocks": [
+        "force_spawn_class_4_or_5"
+      ],
+      "description_th": "พรสวรรค์จากแต้มบุญสะสม บังคับสุ่มเกิดในครอบครัวระดับมีอันจะกิน (class_4) หรือมหาเศรษฐี (class_5) เท่านั้น"
+    },
+    {
+      "id": "trait_lucky_star",
+      "name_th": "ดวงสมพงศ์โชคลาภ",
+      "type": "positive_innate",
+      "merit_cost_to_buy": 80,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 1
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.1,
+        "medical_cost": 1.0,
+        "lucky_draw_chance": 1.5
+      },
+      "unlocks": [
+        "good_fortune_events"
+      ],
+      "description_th": "เกิดมาพร้อมดวงชะตาที่มักเจอเรื่องบังเอิญในทางที่ดี มีโอกาสได้รับโชคลาภและรอดพ้นจากวิกฤตได้ง่ายกว่าคนอื่น"
+    },
+    {
+      "id": "trait_natural_charmer",
+      "name_th": "ยิ้มสยามมหาเสน่ห์",
+      "type": "positive_innate",
+      "merit_cost_to_buy": 60,
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 3,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.1,
+        "business_income": 1.15,
+        "medical_cost": 1.0,
+        "lucky_draw_chance": 1.0
+      },
+      "unlocks": [
+        "entertainment_career_bonus",
+        "sales_career_bonus"
+      ],
+      "description_th": "มีบุคลิกและรอยยิ้มที่มัดใจคนได้ตั้งแต่แรกเห็น ไปที่ไหนก็มีแต่คนอยากผูกมิตรและช่วยเหลือ"
+    },
+    {
+      "id": "trait_frail_body",
+      "name_th": "ขี้โรคแต่กำเนิด",
+      "type": "negative_innate",
+      "merit_cost_to_buy": 0,
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.9,
+        "work_efficiency": 0.85,
+        "business_income": 1.0,
+        "medical_cost": 1.5,
+        "lucky_draw_chance": 1.0
+      },
+      "unlocks": [],
+      "description_th": "คลอดก่อนกำหนดหรือมีร่างกายอ่อนแอตั้งแต่ทารก ต้องเข้าออกโรงพยาบาลบ่อยครั้งและเหนื่อยง่ายกว่าคนทั่วไป"
+    }
+  ],
+  "talent_tags": [
+    {
+      "id": "tag_computer_nerd",
+      "name_th": "เด็กเนิร์ดคอม/เกมเมอร์",
+      "type": "acquired_talent",
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.1,
+        "work_efficiency": 1.15,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "career_it_programmer",
+        "career_esports_streamer",
+        "career_digital_freelance",
+        "side_hustle_crypto_trader"
+      ],
+      "description_th": "ขลุกอยู่หน้าจอคอมพิวเตอร์และร้านเกมตั้งแต่เด็ก เชี่ยวชาญเทคโนโลยีและโลกดิจิทัลจนต่อยอดสู่อาชีพยุคใหม่ได้"
+    },
+    {
+      "id": "tag_school_athlete",
+      "name_th": "นักกีฬาโรงเรียน",
+      "type": "acquired_talent",
+      "yearly_stat_effects": {
+        "health": 2,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.95,
+        "work_efficiency": 1.1,
+        "business_income": 1.0,
+        "medical_cost": 0.85
+      },
+      "unlocks": [
+        "university_athlete_quota",
+        "career_pro_athlete",
+        "career_fitness_trainer",
+        "career_police_military_bonus"
+      ],
+      "description_th": "ตัวแทนโรงเรียนไปแข่งกีฬาระดับเขตและจังหวัด ร่างกายกำยำแข็งแรงและมีโควตานักกีฬาสำหรับเข้าเรียนต่อ"
+    },
+    {
+      "id": "tag_young_merchant",
+      "name_th": "เฒ่าแก่น้อย",
+      "type": "acquired_talent",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 2,
+        "cash": 1200,
+        "merit": 0
+      },
+      "cash_effect_min_age": 7,
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.1,
+        "business_income": 1.15,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "career_merchant_sme",
+        "career_online_seller",
+        "business_startup_option"
+      ],
+      "description_th": "รู้จักหาเงินตั้งแต่เด็กด้วยการขายขนมในโรงเรียนและช่วยที่บ้านทอนเงิน มีหัวการค้าและเข้าใจกลไกตลาดก่อนวัย"
+    },
+    {
+      "id": "tag_artistic_expressive",
+      "name_th": "หัวศิลป์/กล้าแสดงออก",
+      "type": "acquired_talent",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.05,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "faculty_communication_arts",
+        "career_influencer_youtuber",
+        "career_actor_singer",
+        "career_graphic_designer"
+      ],
+      "description_th": "ดาวเด่นงานโรงเรียน ชอบถือไมค์ ร้องเพลง วาดรูป และเต้นหน้าเสาธง มีความคิดสร้างสรรค์และดึงดูดสายตาผู้คน"
+    },
+    {
+      "id": "tag_young_mechanic",
+      "name_th": "หัวช่าง",
+      "type": "acquired_talent",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.05,
+        "work_efficiency": 1.15,
+        "business_income": 1.05,
+        "medical_cost": 1.0,
+        "vehicle_maintenance_cost": 0.6
+      },
+      "unlocks": [
+        "vocational_school_track",
+        "faculty_engineering",
+        "career_industrial_technician",
+        "career_garage_owner"
+      ],
+      "description_th": "ชอบรื้อแงะซ่อมเครื่องใช้ไฟฟ้าและมอเตอร์ไซค์ตั้งแต่เด็ก มีทักษะเชิงช่างสูงและประหยัดค่าซ่อมรถของตัวเองได้มาก"
+    },
+    {
+      "id": "tag_bookworm",
+      "name_th": "หนอนหนังสือ",
+      "type": "acquired_talent",
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 0,
+        "intelligence": 2,
+        "connections": -1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.25,
+        "work_efficiency": 1.05,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "national_scholarship_exam",
+        "faculty_medicine_law_bonus",
+        "career_researcher_academic"
+      ],
+      "description_th": "ใช้เวลาว่างในห้องสมุดและอ่านหนังสือสอบอย่างหนัก มีความรู้รอบตัวและวิชาการแน่นปึ้กจนสอบชิงทุนได้ง่าย"
+    },
+    {
+      "id": "tag_screen_addict",
+      "name_th": "ติดจอมือถือ",
+      "type": "negative_habit",
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 1,
+        "intelligence": -1,
+        "connections": -1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.8,
+        "work_efficiency": 0.9,
+        "business_income": 1.0,
+        "medical_cost": 1.1
+      },
+      "unlocks": [
+        "risk_myopia_and_neck_pain"
+      ],
+      "description_th": "ถูกเลี้ยงด้วยหน้าจอมือถือตั้งแต่เล็ก สมาธิสั้นลง สายตาสั้นไว และไม่ค่อยออกไปวิ่งเล่นหรือเข้าสังคมกับเพื่อนวัยเดียวกัน"
+    },
+    {
+      "id": "tag_rebel_teen",
+      "name_th": "วัยรุ่นเลือดร้อน",
+      "type": "negative_habit",
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 0,
+        "intelligence": -1,
+        "connections": 1,
+        "cash": -1000,
+        "merit": -1
+      },
+      "cash_effect_min_age": 13,
+      "action_multipliers": {
+        "study_efficiency": 0.75,
+        "work_efficiency": 0.9,
+        "business_income": 1.0,
+        "medical_cost": 1.3
+      },
+      "unlocks": [
+        "event_gang_brawl",
+        "event_street_racing_accident"
+      ],
+      "description_th": "รักพวกพ้องแต่ใจร้อนมุทะลุ ชอบโดดเรียนและซิ่งมอเตอร์ไซค์ยามค่ำคืน มีความเสี่ยงสูงที่จะเกิดอุบัติเหตุหรือคดีทะเลาะวิวาท"
+    }
+  ],
+  "social_and_origin_flags": [
+    {
+      "id": "flag_welfare_card",
+      "name_th": "บัตรสวัสดิการแห่งรัฐ / บัตรทอง",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 3600,
+        "merit": 0
+      },
+      "cash_effect_min_age": 0,
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 0.0
+      },
+      "unlocks": [
+        "free_public_hospital_treatment"
+      ],
+      "description_th": "สิทธิ์ช่วยเหลือผู้มีรายได้น้อย ได้รับเงินช่วยเหลือค่าครองชีพพื้นฐานและรักษาพยาบาลในโรงพยาบาลรัฐฟรี 100% (แต่ต้องแลกกับการรอคิวนาน)"
+    },
+    {
+      "id": "flag_debt_family",
+      "name_th": "หนี้สินครอบครัวเดิม",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": -2,
+        "intelligence": 0,
+        "connections": -1,
+        "cash": -12000,
+        "merit": 0
+      },
+      "cash_effect_min_age": 18,
+      "action_multipliers": {
+        "study_efficiency": 0.95,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "event_family_debt_collector",
+        "quest_pay_off_parent_debt"
+      ],
+      "description_th": "ครอบครัวมีหนี้สินพอกพูนมาตั้งแต่ก่อนคุณเกิด เมื่อเริ่มทำงานจะต้องถูกหักเงินส่งเสียทางบ้านและเผชิญเหตุการณ์ทวงหนี้เป็นระยะ"
+    },
+    {
+      "id": "flag_malnutrition_risk",
+      "name_th": "เสี่ยงภาวะทุพโภชนาการ",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -1,
+        "intelligence": -1,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.9,
+        "work_efficiency": 0.9,
+        "business_income": 1.0,
+        "medical_cost": 1.2
+      },
+      "unlocks": [],
+      "description_th": "อาหารการกินในวัยเด็กไม่ครบ 5 หมู่ ส่งผลให้สุขภาพและพัฒนาการทางสมองลดลงทุกปีจนกว่าฐานะครอบครัวจะหลุดพ้นจาก class_1"
+    },
+    {
+      "id": "flag_working_class_roots",
+      "name_th": "ลูกหลานคนสู้ชีวิต",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.1,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "part_time_jobs_early_access"
+      ],
+      "description_th": "เติบโตมากับการเห็นพ่อแม่ทำงานอาบเหงื่อต่างน้ำ ทำให้มีความอดทนต่อความลำบากและสู้งานหนักได้ดีกว่าคนทั่วไป"
+    },
+    {
+      "id": "flag_student_loan_eligible",
+      "name_th": "สิทธิ์กู้ กยศ.",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "option_apply_student_loan"
+      ],
+      "description_th": "เกณฑ์รายได้ครอบครัวผ่านเงื่อนไขกองทุนเงินให้กู้ยืมเพื่อการศึกษา สามารถเลือกเรียนต่อปริญญาตรีได้โดยไม่ต้องจ่ายค่าเทอมสด"
+    },
+    {
+      "id": "flag_suburban_home",
+      "name_th": "บ้านทาวน์โฮมชานเมือง",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [],
+      "description_th": "เติบโตในบ้านจัดสรรชนชั้นกลางที่มีสภาพแวดล้อมปลอดภัยและมีห้องนอนส่วนตัวให้อ่านหนังสือ"
+    },
+    {
+      "id": "flag_cram_school_pressure",
+      "name_th": "ความกดดันเรียนพิเศษ",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": -2,
+        "intelligence": 2,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.15,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "top_university_exam_bonus"
+      ],
+      "description_th": "ความหวังของหมู่บ้านชนชั้นกลาง ต้องเรียนกวดวิชาทุกเย็นและวันเสาร์อาทิตย์ ได้ความรู้เต็มเปี่ยมแต่แลกมาด้วยความเครียดสะสมในวัยเรียน"
+    },
+    {
+      "id": "flag_private_school_kid",
+      "name_th": "เด็กโรงเรียนเอกชนชื่อดัง",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.1,
+        "work_efficiency": 1.05,
+        "business_income": 1.05,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "alumni_network_tier_1"
+      ],
+      "description_th": "เรียนในโรงเรียนเอกชนสภาพแวดล้อมดีเยี่ยม ได้กลุ่มเพื่อนที่มีฐานะและคอนเนกชันศิษย์เก่าที่คอยเกื้อหนุนกันในอนาคต"
+    },
+    {
+      "id": "flag_family_business",
+      "name_th": "ทายาทธุรกิจ SME",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.2,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "career_inherit_family_sme_age_22"
+      ],
+      "description_th": "ที่บ้านมีกิจการส่วนตัวที่มั่นคง สามารถเลือกกลับไปรับช่วงต่อกิจการของครอบครัวได้ทันทีเมื่ออายุครบ 22 ปีโดยไม่ต้องไปสมัครงานบริษัทอื่น"
+    },
+    {
+      "id": "flag_private_hospital_access",
+      "name_th": "ประกันสุขภาพโรงพยาบาลเอกชน",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 0.5
+      },
+      "unlocks": [
+        "vip_medical_recovery"
+      ],
+      "description_th": "ครอบครัวทำประกันสุขภาพชั้นดีไว้ให้ สามารถเข้ารับการรักษาในโรงพยาบาลเอกชนได้อย่างรวดเร็วและฟื้นฟูค่าสุขภาพได้มากกว่าปกติ"
+    },
+    {
+      "id": "flag_elite_connection",
+      "name_th": "คอนเนกชันระดับเจ้าสัว",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 3,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.2,
+        "business_income": 1.35,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "vip_investment_deals",
+        "executive_fast_track",
+        "legal_dispute_protection"
+      ],
+      "description_th": "นามสกุลดังที่เป็นที่รู้จักในแวดวงไฮโซและนักธุรกิจระดับประเทศ เปิดประตูสู่การลงทุนระดับ VIP และตำแหน่งผู้บริหารตั้งแต่อายุยังน้อย"
+    },
+    {
+      "id": "flag_trust_fund",
+      "name_th": "กองทุนมรดกตระกูล",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 200000,
+        "merit": 0
+      },
+      "cash_effect_min_age": 20,
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "passive_trust_fund_payout_age_20"
+      ],
+      "description_th": "มีกองทุนมรดกของตระกูลคอยหนุนหลัง ได้รับเงินปันผลเข้ากระเป๋าอัตโนมัติปีละ 200,000 บาททุกปีเมื่ออายุครบ 20 ปีบริบูรณ์"
+    },
+    {
+      "id": "flag_international_school",
+      "name_th": "เด็กอินเตอร์",
+      "type": "social_class_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 2,
+        "connections": 2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.2,
+        "work_efficiency": 1.15,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "study_abroad_direct_admission",
+        "multinational_corp_careers"
+      ],
+      "description_th": "เติบโตในโรงเรียนนานาชาติชั้นนำ เชี่ยวชาญภาษาอังกฤษและภาษาที่สาม สามารถเข้าทำงานบริษัทข้ามชาติหรือเรียนต่อต่างประเทศได้ทันที"
+    },
+    {
+      "id": "flag_bkk_native",
+      "name_th": "คนกรุงเทพฯ แต่กำเนิด",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.05,
+        "work_efficiency": 1.05,
+        "business_income": 1.05,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "no_bkk_rent_if_living_with_parents"
+      ],
+      "description_th": "เกิดและเติบโตในเมืองหลวง มีบ้านพ่อแม่อยู่ในกรุงเทพฯ ช่วยประหยัดค่าเช่าหอพักเมื่อทำงานในเมืองหลวงได้มหาศาล"
+    },
+    {
+      "id": "flag_city_kid",
+      "name_th": "เด็กเมืองกรุง",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.05,
+        "work_efficiency": 1.05,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [],
+      "description_th": "คุ้นเคยกับรถไฟฟ้า ห้างสรรพสินค้า และความเร่งรีบของเมืองใหญ่ รู้ทันเทรนด์โลกแต่ร่างกายอ่อนแอต่อมลพิษ"
+    },
+    {
+      "id": "flag_suburban_commuter",
+      "name_th": "นักเดินทางปริมณฑล",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.05,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [],
+      "description_th": "เชี่ยวชาญเส้นทางรถตู้และรถไฟฟ้าชานเมือง ปรับตัวเข้ากับงานออฟฟิศในเมืองหลวงได้ดีโดยมีค่าครองชีพที่ประหยัดกว่า"
+    },
+    {
+      "id": "flag_eastern_seaboard_kid",
+      "name_th": "ลูกหลานชาวตะวันออก",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.1,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "eec_job_priority"
+      ],
+      "description_th": "เติบโตในเขตพัฒนาพิเศษภาคตะวันออก (EEC) มีความได้เปรียบในการสมัครงานสายโลจิสติกส์ การท่องเที่ยว และโรงงาน"
+    },
+    {
+      "id": "flag_industrial_zone_native",
+      "name_th": "เด็กถิ่นนิคมอุตสาหกรรม",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": -1,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.15,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "petrochemical_engineer_bonus"
+      ],
+      "description_th": "คุ้นเคยกับโรงงานและนิคมอุตสาหกรรมตั้งแต่เด็ก มีโอกาสได้งานและโบนัสพิเศษในสายงานวิศวกรรมและช่างเทคนิค"
+    },
+    {
+      "id": "flag_northern_charm",
+      "name_th": "เสน่ห์คนเมืองเหนือ",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 2,
+        "cash": 0,
+        "merit": 1
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.05,
+        "medical_cost": 1.0
+      },
+      "unlocks": [],
+      "description_th": "กิริยามารยาทนุ่มนวล พูดจาไพเราะอ่อนหวาน ทำให้ผู้คนประทับใจและได้รับความเอ็นดูในการทำงานสายบริการและศิลปะ"
+    },
+    {
+      "id": "flag_cafe_hopper",
+      "name_th": "สายคาเฟ่และงานคราฟต์",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": -2400,
+        "merit": 0
+      },
+      "cash_effect_min_age": 15,
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "career_cafe_owner_bonus",
+        "career_digital_nomad"
+      ],
+      "description_th": "ซึมซับวัฒนธรรมร้านกาแฟและงานออกแบบสร้างสรรค์ มีความถนัดในการเปิดร้านคาเฟ่หรือทำงานฟรีแลนซ์ออนไลน์"
+    },
+    {
+      "id": "flag_isan_hub_native",
+      "name_th": "ลูกหลานเมืองศูนย์กลางอีสาน",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 1,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.05,
+        "work_efficiency": 1.05,
+        "business_income": 1.05,
+        "medical_cost": 1.0
+      },
+      "unlocks": [],
+      "description_th": "เติบโตในเมืองใหญ่ของภาคอีสานที่เพียบพร้อมด้วยมหาวิทยาลัยและโรงพยาบาลศูนย์ มีพื้นฐานการศึกษาและสังคมที่มั่นคง"
+    },
+    {
+      "id": "flag_korat_gateway",
+      "name_th": "หลานย่าโม",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 1
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.05,
+        "business_income": 1.05,
+        "medical_cost": 1.0
+      },
+      "unlocks": [],
+      "description_th": "มีความกล้าหาญ อดทน และเชื่อมโยงทั้งสังคมเมืองและเกษตรกรรมเข้าด้วยกันได้อย่างลงตัว"
+    },
+    {
+      "id": "flag_upcountry_kid",
+      "name_th": "เด็กต่างจังหวัด",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 1
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.95,
+        "work_efficiency": 1.05,
+        "business_income": 1.0,
+        "medical_cost": 0.9
+      },
+      "unlocks": [
+        "event_migrate_to_bangkok"
+      ],
+      "description_th": "เติบโตท่ามกลางธรรมชาติและวิถีชีวิตชนบทที่เรียบง่าย ร่างกายแข็งแรงและจิตใจดี แต่ต้องดิ้นรนมากขึ้นหากต้องการเข้าสู่มหาวิทยาลัยหรือบริษัทชั้นนำ"
+    },
+    {
+      "id": "flag_isan_resilience",
+      "name_th": "นักสู้แดนอีสาน",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 2,
+        "cash": 0,
+        "merit": 1
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.15,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "high_stress_tolerance"
+      ],
+      "description_th": "มีความอึดถึกทนและมองโลกในแง่ดี ไม่ย่อท้อต่อความลำบาก และมีเครือข่ายพี่น้องชาวอีสานคอยช่วยเหลือกันทั่วประเทศ"
+    },
+    {
+      "id": "flag_old_capital_kid",
+      "name_th": "ลูกหลานเมืองกรุงเก่า",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 2
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.05,
+        "business_income": 1.05,
+        "medical_cost": 1.0
+      },
+      "unlocks": [],
+      "description_th": "เติบโตในแผ่นดินประวัติศาสตร์และใกล้วัดวาอาราม สะสมแต้มบุญได้ง่ายและมีโอกาสหางานในนิคมอุตสาหกรรมภาคกลางได้ดี"
+    },
+    {
+      "id": "flag_island_life",
+      "name_th": "ลูกน้ำเค็มเกาะสวรรค์",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.05,
+        "business_income": 1.15,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "hospitality_and_tourism_bonus"
+      ],
+      "description_th": "เติบโตในเมืองท่องเที่ยวระดับโลก คุ้นชินกับทะเลและธุรกิจโรงแรมการท่องเที่ยวที่สร้างรายได้สูง"
+    },
+    {
+      "id": "flag_expat_exposure",
+      "name_th": "คุ้นชินชาวต่างชาติ",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.05,
+        "work_efficiency": 1.1,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "foreign_language_skill_bonus"
+      ],
+      "description_th": "ได้ฝึกพูดคุยกับนักท่องเที่ยวและชาวต่างชาติตั้งแต่เด็ก ทำให้กล้าสื่อสารภาษาอังกฤษและต่อยอดสายงานบริการระดับอินเตอร์ได้ง่าย"
+    },
+    {
+      "id": "flag_southern_trader",
+      "name_th": "หัวการค้าปักษ์ใต้",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 1,
+        "connections": 2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.05,
+        "business_income": 1.15,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "border_trade_business_bonus"
+      ],
+      "description_th": "เติบโตในเมืองศูนย์กลางการค้าภาคใต้ มีไหวพริบในการเจรจาธุรกิจ การค้าชายแดน และรักพวกพ้องอย่างเหนียวแน่น"
+    },
+    {
+      "id": "flag_mountain_child",
+      "name_th": "ลูกหลานชาวดอย",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 2,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 1
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.9,
+        "work_efficiency": 1.05,
+        "business_income": 0.95,
+        "medical_cost": 0.8
+      },
+      "unlocks": [
+        "eco_tourism_and_agriculture_bonus"
+      ],
+      "description_th": "ปอดแข็งแรงและจิตใจสงบสุขจากการเติบโตท่ามกลางขุนเขาและสายหมอก มีความเชี่ยวชาญด้านเกษตรที่สูงและการท่องเที่ยวเชิงนิเวศ"
+    },
+    {
+      "id": "flag_remote_area_survivor",
+      "name_th": "ผู้เติบโตในพื้นที่ห่างไกล",
+      "type": "location_origin_flag",
+      "yearly_stat_effects": {
+        "health": 1,
+        "happiness": 0,
+        "intelligence": -1,
+        "connections": -1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.85,
+        "work_efficiency": 1.1,
+        "business_income": 0.9,
+        "medical_cost": 1.2
+      },
+      "unlocks": [
+        "rural_development_scholarship"
+      ],
+      "description_th": "คุ้นเคยกับความยากลำบากในการเดินทางและการขาดแคลนสาธารณูปโภค แม้จะเสียเปรียบด้านการเรียนแต่มีสิทธิ์ขอทุนพัฒนาชนบท"
+    }
+  ],
+  "health_and_mental_statuses": [
+    {
+      "id": "flag_depression",
+      "name_th": "ซึมเศร้า/หมดไฟ",
+      "type": "mental_illness",
+      "trigger_condition": "happiness_below_20",
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": -3,
+        "intelligence": -1,
+        "connections": -2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.5,
+        "work_efficiency": 0.5,
+        "business_income": 0.6,
+        "medical_cost": 1.4
+      },
+      "cure_methods": [
+        "action_see_psychiatrist",
+        "action_long_vacation",
+        "action_meditation_retreat"
+      ],
+      "description_th": "ภาวะซึมเศร้าและหมดไฟในการใช้ชีวิต ทำให้ประสิทธิภาพการเรียนและการทำงานลดลงครึ่งหนึ่ง และสูญเสียสุขภาพกายอย่างต่อเนื่อง"
+    },
+    {
+      "id": "status_office_syndrome",
+      "name_th": "ออฟฟิศซินโดรมเรื้อรัง",
+      "type": "physical_illness",
+      "trigger_condition": "age_35_plus_overwork",
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": -2,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": -6000,
+        "merit": 0
+      },
+      "cash_effect_min_age": 35,
+      "action_multipliers": {
+        "study_efficiency": 0.9,
+        "work_efficiency": 0.85,
+        "business_income": 0.95,
+        "medical_cost": 1.25
+      },
+      "cure_methods": [
+        "action_physical_therapy",
+        "action_thai_massage_course",
+        "action_regular_exercise"
+      ],
+      "description_th": "ปวดคอบ่าไหล่และหลังเรื้อรังจากการนั่งทำงานหน้าคอมพิวเตอร์ติดต่อกันหลายปี ต้องเสียเงินค่านวดและกายภาพบำบัดเป็นประจำ"
+    },
+    {
+      "id": "status_hypertension",
+      "name_th": "ความดันโลหิตสูงและไขมันอุดตัน",
+      "type": "chronic_disease",
+      "trigger_condition": "age_45_plus_low_health",
+      "yearly_stat_effects": {
+        "health": -4,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": -12000,
+        "merit": 0
+      },
+      "cash_effect_min_age": 45,
+      "action_multipliers": {
+        "study_efficiency": 0.95,
+        "work_efficiency": 0.85,
+        "business_income": 0.9,
+        "medical_cost": 1.5
+      },
+      "cure_methods": [
+        "action_continuous_medication",
+        "action_strict_diet_control"
+      ],
+      "description_th": "โรคประจำตัววัยกลางคนและผู้สูงอายุ ต้องพบแพทย์เพื่อรับยาต่อเนื่องและมีความเสี่ยงเกิดภาวะหัวใจวายหรือเส้นเลือดในสมองแตก"
+    },
+    {
+      "id": "status_alzheimer_risk",
+      "name_th": "ภาวะหลงลืมวัยชรา",
+      "type": "elder_condition",
+      "trigger_condition": "age_60_plus_low_intelligence",
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -1,
+        "intelligence": -4,
+        "connections": -2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.3,
+        "work_efficiency": 0.4,
+        "business_income": 0.5,
+        "medical_cost": 1.5
+      },
+      "unlocks": [
+        "high_risk_call_center_scam"
+      ],
+      "description_th": "ความจำเสื่อมถอยตามวัย จำชื่อลูกหลานหรือรหัสผ่านไม่ค่อยได้ และมีความเสี่ยงสูงมากที่จะตกเป็นเหยื่อแก๊งคอลเซ็นเตอร์หลอกโอนเงิน"
+    },
+    {
+      "id": "flag_iron_body",
+      "name_th": "ร่างกายฟิตสมบูรณ์",
+      "type": "positive_buff",
+      "trigger_condition": "health_equals_100",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.1,
+        "work_efficiency": 1.2,
+        "business_income": 1.1,
+        "medical_cost": 0.5
+      },
+      "unlocks": [
+        "marathon_finisher_badge"
+      ],
+      "description_th": "สุขภาพกายเต็มร้อย พลังงานล้นเหลือ สามารถลุยงานหนักและเรียนได้อย่างเต็มประสิทธิภาพโดยไม่เจ็บป่วยง่าย"
+    },
+    {
+      "id": "status_pm25_lung_damage",
+      "name_th": "โรคทางเดินหายใจจากฝุ่น PM2.5",
+      "type": "environmental_illness",
+      "trigger_condition": "living_in_polluted_city_long_term",
+      "yearly_stat_effects": {
+        "health": -3,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": -5000,
+        "merit": 0
+      },
+      "cash_effect_min_age": 0,
+      "action_multipliers": {
+        "study_efficiency": 0.95,
+        "work_efficiency": 0.9,
+        "business_income": 1.0,
+        "medical_cost": 1.35
+      },
+      "cure_methods": [
+        "action_buy_air_purifier",
+        "action_relocate_to_clean_province"
+      ],
+      "description_th": "ปอดอักเสบและภูมิแพ้กำเริบจากการสูดดมฝุ่นควันสะสมหลายปี ต้องเสียเงินซื้อเครื่องฟอกอากาศและยารักษาโรคทางเดินหายใจ"
+    },
+    {
+      "id": "status_chronic_insomnia",
+      "name_th": "โรคนอนไม่หลับเรื้อรัง",
+      "type": "mental_illness",
+      "trigger_condition": "high_stress_or_night_shift",
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -2,
+        "intelligence": -2,
+        "connections": -1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 0.75,
+        "work_efficiency": 0.8,
+        "business_income": 0.9,
+        "medical_cost": 1.2
+      },
+      "cure_methods": [
+        "action_sleep_clinic_treatment",
+        "action_quit_toxic_job"
+      ],
+      "description_th": "พักผ่อนไม่เพียงพอจากความเครียดหรือการทำงานกะดึก ทำให้สมองเบลอ อารมณ์หงุดหงิดง่าย และประสิทธิภาพการทำงานตกลง"
+    }
+  ],
+  "financial_and_legal_flags": [
+    {
+      "id": "flag_student_loan_debt",
+      "name_th": "หนี้ กยศ. ผูกพัน",
+      "type": "financial_obligation",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": -15000,
+        "merit": 0
+      },
+      "cash_effect_min_age": 24,
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "auto_deduct_student_loan_age_24"
+      ],
+      "description_th": "ภาระหนี้เพื่อการศึกษาที่เริ่มหักชำระรายปีอัตโนมัติเมื่ออายุครบ 24 ปี จนกว่าจะผ่อนชำระครบตามยอดกู้"
+    },
+    {
+      "id": "flag_credit_good",
+      "name_th": "เครดิตบูโรดีเยี่ยม",
+      "type": "financial_status",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 1,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.1,
+        "medical_cost": 1.0,
+        "loan_interest_rate": 0.8
+      },
+      "unlocks": [
+        "mortgage_home_loan_approval",
+        "auto_loan_low_interest",
+        "sme_business_credit_line"
+      ],
+      "description_th": "มีวินัยทางการเงินและจ่ายหนี้ตรงเวลาเสมอ ธนาคารพร้อมอนุมัติสินเชื่อบ้าน รถยนต์ และเงินกู้ทำธุรกิจในอัตราดอกเบี้ยพิเศษ"
+    },
+    {
+      "id": "flag_credit_blacklist",
+      "name_th": "ติดแบล็กลิสต์บูโร",
+      "type": "financial_penalty",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": -2,
+        "intelligence": 0,
+        "connections": -2,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 0.95,
+        "business_income": 0.8,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "lock_all_bank_loans",
+        "risk_asset_seizure"
+      ],
+      "description_th": "ประวัติเสียทางการเงินจากการค้างชำระหนี้เกินกำหนด ไม่สามารถกู้ซื้อบ้าน รถ หรือขอสินเชื่อจากสถาบันการเงินในระบบได้ทุกชนิด"
+    },
+    {
+      "id": "flag_uninsured_rider",
+      "name_th": "ขับขี่เสี่ยงภัยไร้ประกัน",
+      "type": "legal_and_risk_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": 0,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": 0
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.0,
+        "medical_cost": 2.0
+      },
+      "unlocks": [
+        "event_heavy_accident_bill",
+        "event_traffic_police_fine"
+      ],
+      "description_th": "ใช้รถโดยไม่ต่อ พ.ร.บ. หรือไม่มีประกันอุบัติเหตุ หากเกิดอุบัติเหตุบนท้องถนนจะต้องรับผิดชอบค่ารักษาและค่าซ่อมรถคู่กรณีเต็มจำนวน"
+    },
+    {
+      "id": "flag_informal_shark_debt",
+      "name_th": "หนี้นอกระบบดอกเบี้ยโหด",
+      "type": "financial_danger",
+      "yearly_stat_effects": {
+        "health": -2,
+        "happiness": -4,
+        "intelligence": 0,
+        "connections": -2,
+        "cash": -36000,
+        "merit": 0
+      },
+      "cash_effect_min_age": 18,
+      "action_multipliers": {
+        "study_efficiency": 0.8,
+        "work_efficiency": 0.85,
+        "business_income": 0.7,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "event_loan_shark_intimidation"
+      ],
+      "description_th": "กู้เงินนอกระบบมาหมุนเวียนจนดอกเบี้ยทบต้น ต้องจ่ายดอกเบี้ยรายวันแสนแพงและเสี่ยงถูกแก๊งหมวกกันน็อกตามข่มขู่ทำร้ายร่างกาย"
+    },
+    {
+      "id": "flag_tax_evasion_risk",
+      "name_th": "เสี่ยงโดนภาษีย้อนหลัง",
+      "type": "legal_and_risk_flag",
+      "yearly_stat_effects": {
+        "health": 0,
+        "happiness": -1,
+        "intelligence": 0,
+        "connections": 0,
+        "cash": 0,
+        "merit": -1
+      },
+      "action_multipliers": {
+        "study_efficiency": 1.0,
+        "work_efficiency": 1.0,
+        "business_income": 1.1,
+        "medical_cost": 1.0
+      },
+      "unlocks": [
+        "event_revenue_department_audit"
+      ],
+      "description_th": "มีรายได้จากการค้าขายออนไลน์หรือฟรีแลนซ์แต่ไม่เคยยื่นภาษีอย่างถูกต้อง มีโอกาสถูกสรรพากรตรวจสอบและเรียกเก็บเบี้ยปรับย้อนหลังก้อนโต"
+    }
+  ]
+}

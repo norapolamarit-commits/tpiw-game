@@ -1,0 +1,67 @@
+/* ธีมส้ม-ดำ (ทุกขนาดหน้าจอ) ไล่เฉดตามสไตล์ 1in8b.life / WorldBox */
+:root {
+  --navy-950:#060504; --navy-900:#ff8a1f; --navy-800:#d9690f; --navy-700:#b5560c; --navy-100:#4a3b2d; --navy-50:#211b16;
+  --accent-orange:#ff8a1f; --accent-sky:#ffb24d; --accent-gold:#ffc266; --accent-gold-bg:#3a2a14;
+  --success:#ffb24d; --success-bg:#2e2212; --danger:#ff6b4a; --danger-bg:#3d1e17; --warning:#ffc266; --warning-bg:#3a2a14; --info:#ffb24d; --info-bg:#2a1e10;
+  --bg-base:#0a0908; --surface-card:#171310; --surface-solid:#171310; --surface-muted:#211b16; --surface-locked:#2a221b;
+  --border-subtle:#3a2f26; --border-strong:#5a4836;
+  --text-primary:#f3ece4; --text-secondary:#c9b8a5; --text-muted:#8f7d6b; --text-inverse:#140c05;
+  --shadow-card:none; --shadow-elevated:0 18px 50px rgba(0,0,0,.6); --shadow-nav:none;
+  color-scheme: dark;
+}
+html, body { background:#060504; color:var(--text-primary); }
+.app-shell { background:#0a0908; background-image:none; box-shadow:0 0 40px rgba(0,0,0,.6); }
+.top-header { background:#0e0b09; border-bottom:1px solid #3a2f26; backdrop-filter:none; }
+.bottom-dock { background:linear-gradient(to top,#0a0908 80%,rgba(10,9,8,0)); }
+.bottom-nav { background:#100d0b; border-top:2px solid #3a2f26; }
+.nav-tab-btn { color:#a89480; }
+.nav-tab-btn.is-active { color:#ff9a3c; }
+.card { background:#171310; border:1px solid #3a2f26; box-shadow:none; color:var(--text-primary); }
+.card--highlight,.card--gold { background:#1c1510; border-color:#d9690f; }
+.card--danger { background:#2a1511; border-color:#8a3a26; }
+.card--success { background:#1f1a0f; border-color:#7a5a1a; }
+.card--warning { background:#2a1e10; border-color:#7a5a1a; }
+.card--muted { background:#1b1612; border-color:#3a2f26; }
+.btn--primary,.btn--primary-cta { background:#ff8a1f; border-color:#ff8a1f; color:#140c05; font-weight:800; box-shadow:none; }
+.btn--primary-cta:disabled { background:#3a2f26; border-color:#3a2f26; color:#8f7d6b; }
+.btn--outline { background:transparent; border-color:#5a4836; color:#f3ece4; }
+.btn--soft { background:#241c15; color:#ffc266; border-color:#3a2f26; }
+.choice-btn { background:#0e0b09; border:1px solid #4a3b2d; color:#f3ece4; border-radius:4px; }
+.choice-btn:hover:not(:disabled) { border-color:#ff8a1f; background:#1c1510; }
+.choice-btn--special { border-color:#d9690f; }
+.choice-hints,.choice-btn--special .choice-hints { color:#b09a84; }
+.pill-badge { background:#241c15; color:#ffc266; border:1px solid #3a2f26; }
+.pill-badge--navy { background:#ff8a1f; color:#140c05; border-color:#ff8a1f; }
+.pill-badge--gold,.pill-badge--soft-blue,.pill-badge--success { background:#3a2a14; color:#ffc266; border-color:#7a5a1a; }
+.pill-badge--danger { background:#3d1e17; color:#ff8a6b; border-color:#8a3a26; }
+.pill-badge--muted { background:#211b16; color:#b09a84; }
+.stat-track,.gc-track { background:#2a221b; }
+.stat-fill { background:#ff8a1f; } .stat-fill--low { background:#ff5a3a; }
+.subtab-pill { background:#171310; border:1px solid #4a3b2d; color:#c9b8a5; }
+.subtab-pill.is-active { background:#ff8a1f; color:#140c05; border-color:#ff8a1f; }
+.modal-root { background:rgba(4,3,2,.78); }
+.modal-dialog { background:#171310; border:1px solid #5a4836; color:#f3ece4; box-shadow:0 28px 80px rgba(0,0,0,.7); }
+.slip-row { border-color:#33291f; }
+.amt-pos { color:#ffb24d; } .amt-neg { color:#ff6b4a; }
+.input-text,select,input[type=text],input[type=number] { background:#0e0b09; color:#f3ece4; border-color:#4a3b2d; }
+.toast { background:#ff8a1f; color:#140c05; }
+.random-event-card { border-left-color:#ff8a1f; background-image:none; }
+.random-event-card--legendary { border-left-color:#ffc266; }
+.boot-spinner { border-color:#4a3b2d; border-top-color:#ff8a1f; }
+/* ปุ่มหลักด้านล่างแบบกล่องหนา ๆ คล้ายแถบเครื่องมือ WorldBox */
+.sticky-action-wrap .btn { border-radius:4px; border:2px solid #ffb24d; letter-spacing:.02em; }
+.nav-tab-btn { border-top:3px solid transparent; }
+.nav-tab-btn.is-active { border-top-color:#ff8a1f; background:#1c1510; }
+/* คำตัดสินใจเด้งเป็นหน้าต่างกลางจอทุกขนาดหน้าจอ เวลาหยุดจนกว่าจะเลือก */
+.dashboard-center:has(.event-choice-panel)::before { content:''; position:fixed; inset:0; z-index:75; background:rgba(4,3,2,.7); pointer-events:none; }
+.dashboard-center .event-choice-panel { position:fixed; z-index:80; top:50%; left:50%; transform:translate(-50%,-50%); width:min(700px,calc(100vw - 24px)); max-height:calc(100dvh - 40px); overflow-y:auto; padding:22px; background:#151110; border:1px solid #d9690f; box-shadow:0 28px 80px rgba(0,0,0,.7); }
+.dashboard-center .event-choice-panel h3 { font-size:22px !important; color:#fff4e6; }
+/* ฉากพิกเซลเป็นภาพเด่น */
+.pixel-town { padding:0; background:#0e0b09; border-color:#3a2f26; overflow:hidden; }
+.pixel-town .pt-head { padding:10px 12px 0; }
+.pixel-town .pt-head h3 { color:#ff9a3c; }
+.pixel-town .pt-hint,.pixel-town .pt-legend,.pixel-town .pt-coach,.pixel-town .pt-summary,.pixel-town .pt-people { margin-left:12px; margin-right:12px; }
+.pixel-town .pt-canvas { border:0; border-radius:0; box-shadow:none; margin-top:8px; }
+.pixel-town > :last-child { margin-bottom:12px; }
+.pt-coach,.pt-summary { background:#171310; border-color:#4a3b2d; color:#e8d8c6; }
+.pt-person { background:#171310; color:#e8d8c6; border-color:#4a3b2d; }

@@ -1,0 +1,1280 @@
+{
+  "version": "1.0.0",
+  "database_name": "Items_&_Assets_Shop",
+  "childhood_school_shop": [
+    {
+      "item_id": "item_meatball_soda",
+      "name_th": "ลูกชิ้นปิ้งหน้าโรงเรียน & น้ำอัดลมถุง",
+      "ui_location": "tab_lifestyle_sub_childhood",
+      "min_age": 5,
+      "max_age": 12,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 20,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ความสุขเล็กๆ หลังเลิกเรียน ยืนกินลูกชิ้นราดน้ำจิ้มเหนียวข้นกับเพื่อนหน้าประตูโรงเรียน"
+    },
+    {
+      "item_id": "item_magnetic_pencil_box",
+      "name_th": "กล่องดินสอแม่เหล็ก 2 ชั้น",
+      "ui_location": "tab_lifestyle_sub_childhood",
+      "min_age": 6,
+      "max_age": 12,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 150,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_cool_stationery"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "แรร์ไอเทมประจำห้องเรียนประถมที่มีปุ่มกดเด้งออกมารอบทิศทาง เพิ่มความเท่และกระตุ้นให้อยากทำการบ้าน"
+    },
+    {
+      "item_id": "item_trading_card_deck",
+      "name_th": "การ์ดเกมสะสมยอดฮิต",
+      "ui_location": "tab_lifestyle_sub_childhood",
+      "min_age": 6,
+      "max_age": 14,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 100,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "tag_young_merchant"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เปิดซองสุ่มการ์ดแรร์ไปแลกเปลี่ยนและขายต่อให้เพื่อนในห้อง จุดเริ่มต้นของทักษะเฒ่าแก่น้อย"
+    },
+    {
+      "item_id": "item_tamiya_mini4wd",
+      "name_th": "รถแข่งรางทามิย่า (Mini 4WD)",
+      "ui_location": "tab_lifestyle_sub_childhood",
+      "min_age": 7,
+      "max_age": 14,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 350,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "tag_young_mechanic"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 4,
+        "intelligence": 2,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ฝึกประกอบเฟือง พันมอเตอร์ทองแดง และแต่งโรลเลอร์เองกับมือ ปลุกปั้นพรสวรรค์หัวช่างตั้งแต่เด็ก"
+    },
+    {
+      "item_id": "item_first_bicycle",
+      "name_th": "จักรยานเด็กคันแรก",
+      "ui_location": "tab_lifestyle_sub_childhood",
+      "min_age": 6,
+      "max_age": 14,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 2500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_has_bicycle",
+        "tag_school_athlete"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 4,
+        "happiness": 5,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "พาหนะคู่ใจสำหรับปั่นไปเที่ยวรอบหมู่บ้านกับแก๊งเพื่อน ช่วยให้ร่างกายแข็งแรงและมีพื้นฐานนักกีฬา"
+    },
+    {
+      "item_id": "item_comic_book_set",
+      "name_th": "ชุดการ์ตูนความรู้และสารานุกรม",
+      "ui_location": "tab_lifestyle_sub_childhood",
+      "min_age": 6,
+      "max_age": 15,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 450,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "tag_bookworm"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 2,
+        "intelligence": 3,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "หนังสือการ์ตูนวิทยาศาสตร์และประวัติศาสตร์อ่านสนุก เสริมสร้างนิสัยรักการอ่านและเพิ่มค่าสติปัญญา"
+    }
+  ],
+  "gadgets_and_it": [
+    {
+      "item_id": "item_budget_smartphone",
+      "name_th": "สมาร์ทโฟนแอนดรอยด์รุ่นประหยัด",
+      "ui_location": "tab_lifestyle_sub_misc",
+      "min_age": 12,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 4500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_smartphone"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 1,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "สมาร์ทโฟนเครื่องแรกสำหรับแชทคุยกับเพื่อน เรียนออนไลน์ เปิดพอร์ตหุ้น และใช้รับงานไรเดอร์"
+    },
+    {
+      "item_id": "item_flagship_iphone",
+      "name_th": "ไอโฟนรุ่นเรือธงล่าสุด (สด/ผ่อน)",
+      "ui_location": "tab_lifestyle_sub_misc",
+      "min_age": 15,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": true,
+      "price_cash": 45000,
+      "annual_depreciation_rate": -0.25,
+      "installment_option": {
+        "available": true,
+        "down_payment": 0,
+        "annual_payment": 15000,
+        "duration_years": 3
+      },
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_smartphone",
+        "flag_luxury_gadget"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 8,
+        "intelligence": 1,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "สมาร์ทโฟนตัวท็อปกล้องสวยคมชัด ยกระดับภาพลักษณ์ทางสังคมและใช้ถ่ายคลิปทำคอนเทนต์ได้ยอดเยี่ยม"
+    },
+    {
+      "item_id": "item_secondhand_pc",
+      "name_th": "คอมพิวเตอร์ตั้งโต๊ะมือสอง",
+      "ui_location": "tab_lifestyle_sub_misc",
+      "min_age": 12,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 8500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_pc_or_laptop"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 2,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "คอมประกอบมือสองราคาประหยัด เพียงพอสำหรับพิมพ์รายงาน ฝึกเขียนโค้ด และปลดล็อกงานฟรีแลนซ์เบื้องต้น"
+    },
+    {
+      "item_id": "item_work_laptop",
+      "name_th": "โน้ตบุ๊กทำงานและเรียนมหาวิทยาลัย",
+      "ui_location": "tab_lifestyle_sub_misc",
+      "min_age": 15,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 22000,
+      "annual_depreciation_rate": -0.2,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_pc_or_laptop"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 4,
+        "intelligence": 4,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "โน้ตบุ๊กน้ำหนักเบาพกพาสะดวก อุปกรณ์สำคัญสำหรับนักศึกษามหาวิทยาลัยและชาวออฟฟิศ"
+    },
+    {
+      "item_id": "item_pro_gaming_rig",
+      "name_th": "เซ็ตคอมเกมมิ่งสเปกเทพและอุปกรณ์สตรีมมิ่ง",
+      "ui_location": "tab_lifestyle_sub_misc",
+      "min_age": 15,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 65000,
+      "annual_depreciation_rate": -0.2,
+      "installment_option": {
+        "available": true,
+        "down_payment": 15000,
+        "annual_payment": 26000,
+        "duration_years": 2
+      },
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_pc_or_laptop",
+        "flag_pro_streamer_gear",
+        "tag_computer_nerd"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": -1,
+        "happiness": 8,
+        "intelligence": 3,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "คอมพิวเตอร์การ์ดจอตัวท็อปพร้อมไมค์และกล้องไลฟ์สด ปลดล็อกอาชีพสตรีมเมอร์ นักแข่งอีสปอร์ต และงานตัดต่อวิดีโอ"
+    },
+    {
+      "item_id": "item_air_purifier",
+      "name_th": "เครื่องฟอกอากาศกรองฝุ่น PM2.5",
+      "ui_location": "tab_lifestyle_sub_misc",
+      "min_age": 15,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 5500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_clean_home_air"
+      ],
+      "removes_flags": [
+        "status_pm25_lung_damage"
+      ],
+      "stat_effects_on_buy": {
+        "health": 3,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ไอเทมจำเป็นสำหรับคนอยู่กรุงเทพฯ และเชียงใหม่ ช่วยฟื้นฟูสุขภาพปอดและรักษาโรคทางเดินหายใจจากฝุ่นควัน"
+    }
+  ],
+  "courses_and_business_starters": [
+    {
+      "item_id": "course_coding_bootcamp",
+      "name_th": "คอร์สเรียนเขียนโปรแกรมและ AI Bootcamp",
+      "ui_location": "tab_lifestyle_sub_courses",
+      "min_age": 15,
+      "max_age": 60,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 12000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_pc_or_laptop"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "tag_computer_nerd",
+        "flag_cert_coding"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": -1,
+        "happiness": 2,
+        "intelligence": 8,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เรียนลัดทักษะเขียนโค้ดและพัฒนาซอฟต์แวร์ ใช้ปลดล็อกงานฟรีแลนซ์และสายไอทีโดยไม่ต้องจบตรงสาย"
+    },
+    {
+      "item_id": "course_english_intensive",
+      "name_th": "คอร์สติวภาษาอังกฤษเข้มข้นและสอบ TOEIC",
+      "ui_location": "tab_lifestyle_sub_courses",
+      "min_age": 15,
+      "max_age": 60,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 6500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_cert_english"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 5,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "อัปเกรดทักษะภาษาอังกฤษและรับผลคะแนนสอบมาตรฐาน ใช้ปลดล็อกงานบริษัทข้ามชาติและงานโรงแรมในภูเก็ต/กรุงเทพฯ"
+    },
+    {
+      "item_id": "course_stock_financial_class",
+      "name_th": "คอร์สเรียนลงทุนหุ้นและวิเคราะห์งบการเงิน",
+      "ui_location": "tab_lifestyle_sub_courses",
+      "min_age": 18,
+      "max_age": 70,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 4500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_smartphone"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_financial_literacy"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 4,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ศึกษาพื้นฐานการลงทุนและการบริหารความเสี่ยง ช่วยลดโอกาสขาดทุนและเพิ่มผลตอบแทนในพอร์ตหุ้นและคริปโต"
+    },
+    {
+      "item_id": "course_culinary_barista",
+      "name_th": "คอร์สเรียนทำอาหารไทยและชงกาแฟบาริสต้า",
+      "ui_location": "tab_lifestyle_sub_courses",
+      "min_age": 16,
+      "max_age": 65,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 5000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_skill_cooking"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 1,
+        "happiness": 2,
+        "intelligence": 3,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "เรียนรู้สูตรอาหารและศิลปะการชงกาแฟ ใช้ต่อยอดสมัครงานเชฟ บาริสต้า หรือเพิ่มรายได้ให้ธุรกิจร้านอาหารส่วนตัว"
+    },
+    {
+      "item_id": "biz_street_food_cart",
+      "name_th": "ชุดรถเข็นขายลูกชิ้น/หมูปิ้งพร้อมเตาครบชุด",
+      "ui_location": "tab_lifestyle_sub_courses",
+      "min_age": 18,
+      "max_age": 75,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 18000,
+      "annual_depreciation_rate": -0.1,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_merchant_permit"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_biz_street_stall",
+        "tag_young_merchant"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": -1,
+        "happiness": 3,
+        "intelligence": 1,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "อุปกรณ์ตั้งต้นสำหรับเป็นนายตัวเอง ปลดล็อกอาชีพพ่อค้าแม่ค้าตลาดนัดและสตรีทฟู้ดทันที"
+    },
+    {
+      "item_id": "biz_online_shop_stock",
+      "name_th": "สต๊อกสินค้าและชุดไฟไลฟ์สดขายของออนไลน์",
+      "ui_location": "tab_lifestyle_sub_courses",
+      "min_age": 16,
+      "max_age": 65,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 25000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_smartphone"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_biz_online_seller",
+        "tag_young_merchant"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 2,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "ลงทุนรับสินค้ามาสต๊อกพร้อมขาตั้งกล้องและไฟวงแหวน ปลดล็อกอาชีพพ่อค้าแม่ค้าออนไลน์ไลฟ์สดกดตะกร้า"
+    },
+    {
+      "item_id": "biz_cafe_franchise",
+      "name_th": "ลงทุนเปิดร้านคาเฟ่ & แฟรนไชส์ชานมไข่มุก",
+      "ui_location": "tab_lifestyle_sub_courses",
+      "min_age": 20,
+      "max_age": 70,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 350000,
+      "annual_depreciation_rate": -0.05,
+      "installment_option": {
+        "available": true,
+        "down_payment": 100000,
+        "annual_payment": 95000,
+        "duration_years": 3
+      },
+      "req_flags": [
+        "flag_merchant_permit"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_biz_cafe_owner",
+        "flag_family_business"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 8,
+        "intelligence": 2,
+        "connections": 5,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "ความฝันของคนรุ่นใหม่ ลงทุนตกแต่งร้านและซื้อเครื่องชงกาแฟสด ปลดล็อกอาชีพเจ้าของร้านคาเฟ่และกิจการส่วนตัว"
+    }
+  ],
+  "family_romance_and_merit": [
+    {
+      "item_id": "item_parent_appliance_gift",
+      "name_th": "ซื้อเครื่องใช้ไฟฟ้าใหม่เป็นของขวัญให้พ่อแม่",
+      "ui_location": "tab_lifestyle_sub_family_merit",
+      "min_age": 16,
+      "max_age": 80,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 8500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "removes_flags": [],
+      "parent_hearts_bonus": 1,
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 5,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 5,
+        "appearance": 0
+      },
+      "description_th": "ซื้อแอร์หรือทีวีจอใหญ่เครื่องใหม่ให้ที่บ้าน พ่อแม่ยิ้มแก้มปริและอวยพรให้เจริญรุ่งเรือง"
+    },
+    {
+      "item_id": "item_parent_house_renovation",
+      "name_th": "ต่อเติมและซ่อมแซมบ้านให้พ่อแม่",
+      "ui_location": "tab_lifestyle_sub_family_merit",
+      "min_age": 22,
+      "max_age": 80,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 50000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_filial_child"
+      ],
+      "removes_flags": [],
+      "parent_hearts_bonus": 3,
+      "stat_effects_on_buy": {
+        "health": 2,
+        "happiness": 10,
+        "intelligence": 0,
+        "connections": 5,
+        "merit": 25,
+        "appearance": 0
+      },
+      "description_th": "ปรับปรุงบ้านเดิมให้แข็งแรงน่าอยู่ เป็นความภาคภูมิใจของครอบครัวและได้รับเสียงชื่นชมเรื่องความกตัญญู"
+    },
+    {
+      "item_id": "item_wedding_ring",
+      "name_th": "แหวนเพชรหมั้นและแต่งงาน",
+      "ui_location": "tab_lifestyle_sub_family_merit",
+      "min_age": 20,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 45000,
+      "annual_depreciation_rate": -0.05,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_sui_juris_20"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_has_wedding_ring"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 5,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "แหวนเพชรแทนใจสำหรับคุกเข่าขอคนรักแต่งงาน เป็นไอเทมบังคับก่อนเข้าสู่พิธีวิวาห์"
+    },
+    {
+      "item_id": "item_luxury_wedding_package",
+      "name_th": "แพ็กเกจจัดงานแต่งงานโรงแรม & จดทะเบียนสมรส",
+      "ui_location": "tab_lifestyle_sub_family_merit",
+      "min_age": 20,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": false,
+      "price_cash": 250000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_has_wedding_ring",
+        "flag_partner_hearts_5"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_married_registered"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 15,
+        "intelligence": 0,
+        "connections": 10,
+        "merit": 5,
+        "appearance": 3
+      },
+      "description_th": "จัดงานฉลองมงคลสมรสอย่างสมเกียรติพร้อมจดทะเบียนสมรสถูกต้องตามกฎหมาย เปิดระบบการสร้างครอบครัวและมีบุตร"
+    },
+    {
+      "item_id": "item_temple_sanghadana",
+      "name_th": "ทำบุญถวายสังฆทานและปล่อยปลาหน้าเขียง",
+      "ui_location": "tab_lifestyle_sub_family_merit",
+      "min_age": 7,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 1,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 5,
+        "appearance": 0
+      },
+      "description_th": "เข้าวัดทำบุญสะสมแต้มบุญและปล่อยชีวิตสัตว์ ช่วยให้จิตใจผ่องใสและเสริมดวงชะตา"
+    },
+    {
+      "item_id": "item_government_lottery",
+      "name_th": "สลากกินแบ่งรัฐบาล 1 คู่ (ลุ้นรางวัล)",
+      "ui_location": "tab_lifestyle_sub_family_merit",
+      "min_age": 20,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 100,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "removes_flags": [],
+      "special_mechanic": "trigger_lottery_lucky_draw_roll",
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 1,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ความหวังหมู่บ้านวันที่ 1 และ 16 ของเดือน ลุ้นรับโชคตั้งแต่รางวัลเลขท้าย 2 ตัวไปจนถึงรางวัลที่ 1"
+    },
+    {
+      "item_id": "item_hospital_donation",
+      "name_th": "บริจาคเงินสร้างตึกและซื้อเครื่องมือแพทย์โรงพยาบาลรัฐ",
+      "ui_location": "tab_lifestyle_sub_family_merit",
+      "min_age": 25,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 500000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_philanthropist_donor"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 2,
+        "happiness": 15,
+        "intelligence": 0,
+        "connections": 10,
+        "merit": 200,
+        "appearance": 2
+      },
+      "description_th": "มหากุศลครั้งใหญ่ในการช่วยเหลือผู้ป่วยยากไร้ ได้รับป้ายชื่อผู้บริจาคติดหน้าห้องตรวจและแต้มบุญสะสมจำนวนมหาศาล"
+    }
+  ],
+  "travel_and_wellness": [
+    {
+      "item_id": "item_upcountry_trip",
+      "name_th": "ทริปพักผ่อนต่างจังหวัด (ขึ้นเหนือ/ลงทะเล)",
+      "ui_location": "tab_lifestyle_sub_wellness",
+      "min_age": 15,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 5000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "removes_flags": [
+        "status_chronic_insomnia"
+      ],
+      "stat_effects_on_buy": {
+        "health": 3,
+        "happiness": 6,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ลางานไปสูดอากาศบริสุทธิ์ริมทะเลหรือบนดอย ช่วยคลายเครียดและแก้อาการนอนไม่หลับ"
+    },
+    {
+      "item_id": "item_international_tour",
+      "name_th": "ทัวร์ท่องเที่ยวต่างประเทศ (ญี่ปุ่น/ยุโรป)",
+      "ui_location": "tab_lifestyle_sub_wellness",
+      "min_age": 18,
+      "max_age": 90,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 60000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_world_traveler"
+      ],
+      "removes_flags": [
+        "status_depression",
+        "flag_depression"
+      ],
+      "stat_effects_on_buy": {
+        "health": 4,
+        "happiness": 12,
+        "intelligence": 2,
+        "connections": 4,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "เปิดโลกทัศน์ต่างแดนและชาร์จพลังชีวิตครั้งใหญ่ สามารถรักษาภาวะซึมเศร้าและอาการหมดไฟในการทำงานได้ทันที"
+    },
+    {
+      "item_id": "item_annual_health_checkup",
+      "name_th": "แพ็กเกจตรวจสุขภาพใหญ่และกายภาพบำบัดประจำปี",
+      "ui_location": "tab_lifestyle_sub_wellness",
+      "min_age": 20,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 8000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "removes_flags": [
+        "status_office_syndrome"
+      ],
+      "stat_effects_on_buy": {
+        "health": 6,
+        "happiness": 2,
+        "intelligence": 0,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "ตรวจคัดกรองโรคและทำกายภาพบำบัดฟื้นฟูกล้ามเนื้อ ช่วยรักษาอาการออฟฟิศซินโดรมเรื้อรังให้หายขาด"
+    },
+    {
+      "item_id": "item_accident_health_insurance",
+      "name_th": "ประกันอุบัติเหตุและต่อ พ.ร.บ. คุ้มครองรายปี",
+      "ui_location": "tab_lifestyle_sub_wellness",
+      "min_age": 15,
+      "max_age": 85,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 3500,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_insured_driver"
+      ],
+      "removes_flags": [
+        "flag_uninsured_rider"
+      ],
+      "stat_effects_on_buy": {
+        "health": 1,
+        "happiness": 2,
+        "intelligence": 1,
+        "connections": 0,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "สร้างเกราะคุ้มครองค่ารักษาพยาบาลจากอุบัติเหตุบนท้องถนน และปลดป้ายขับขี่เสี่ยงภัยไร้ประกัน"
+    },
+    {
+      "item_id": "item_gym_membership",
+      "name_th": "สมัครสมาชิกฟิตเนสและเทรนเนอร์รายปี",
+      "ui_location": "tab_lifestyle_sub_wellness",
+      "min_age": 15,
+      "max_age": 80,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": false,
+      "price_cash": 12000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "removes_flags": [
+        "status_hypertension"
+      ],
+      "stat_effects_on_buy": {
+        "health": 6,
+        "happiness": 3,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 3
+      },
+      "description_th": "ออกกำลังกายปั้นหุ่นฟิตแอนด์เฟิร์ม ช่วยเพิ่มค่าสุขภาพ บุคลิกภาพ และควบคุมโรคความดันโลหิตสูง"
+    }
+  ],
+  "vehicles_assets": [
+    {
+      "item_id": "asset_secondhand_motorcycle",
+      "name_th": "มอเตอร์ไซค์จ่ายตลาดมือสอง",
+      "ui_location": "tab_lifestyle_sub_vehicles",
+      "min_age": 15,
+      "max_age": 85,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 15000,
+      "annual_depreciation_rate": -0.15,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_motor_license"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_has_motorcycle"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 3,
+        "intelligence": 0,
+        "connections": 1,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "มอเตอร์ไซค์มือสองราคาประหยัด ซื้อเงินสดได้ทันที (แต่หากยังไม่มีใบขับขี่จะเสี่ยงโดนด่านตรวจปรับรายปี)"
+    },
+    {
+      "item_id": "asset_new_motorcycle",
+      "name_th": "รถจักรยานยนต์ออโตเมติกป้ายแดง",
+      "ui_location": "tab_lifestyle_sub_vehicles",
+      "min_age": 15,
+      "max_age": 85,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 60000,
+      "annual_depreciation_rate": -0.12,
+      "installment_option": {
+        "available": true,
+        "down_payment": 10000,
+        "annual_payment": 18000,
+        "duration_years": 3
+      },
+      "req_flags": [
+        "flag_motor_license"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_has_motorcycle"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 2,
+        "happiness": 6,
+        "intelligence": 0,
+        "connections": 2,
+        "merit": 0,
+        "appearance": 1
+      },
+      "description_th": "มอเตอร์ไซค์ป้ายแดงเครื่องฟิตประหยัดน้ำมัน ขับขี่ปลอดภัยและพร้อมใช้ทำมาหากินสายไรเดอร์เต็มตัว"
+    },
+    {
+      "item_id": "asset_secondhand_ecocar",
+      "name_th": "รถยนต์เก๋งมือสองสภาพดี",
+      "ui_location": "tab_lifestyle_sub_vehicles",
+      "min_age": 18,
+      "max_age": 85,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 180000,
+      "annual_depreciation_rate": -0.15,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_car_license"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_has_car"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 2,
+        "happiness": 6,
+        "intelligence": 0,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "รถยนต์คันแรกสำหรับกันแดดกันฝนและขับไปทำงานต่างจังหวัดได้สะดวกสบาย"
+    },
+    {
+      "item_id": "asset_new_ecocar",
+      "name_th": "รถยนต์ป้ายแดง Eco Car ประหยัดพลังงาน",
+      "ui_location": "tab_lifestyle_sub_vehicles",
+      "min_age": 20,
+      "max_age": 85,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 550000,
+      "annual_depreciation_rate": -0.12,
+      "installment_option": {
+        "available": true,
+        "down_payment": 100000,
+        "annual_payment": 95000,
+        "duration_years": 5
+      },
+      "req_flags": [
+        "flag_car_license"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_has_car",
+        "flag_credit_good"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 3,
+        "happiness": 10,
+        "intelligence": 0,
+        "connections": 5,
+        "merit": 0,
+        "appearance": 3
+      },
+      "description_th": "รถเก๋งป้ายแดงกลิ่นใหม่เอี่ยม เสริมสร้างบุคลิกภาพความน่าเชื่อถือในการทำงานและพาคนรักไปเดต"
+    },
+    {
+      "item_id": "asset_luxury_supercar",
+      "name_th": "รถยุโรปหรู / ซูเปอร์คาร์ระดับไฮเอนด์",
+      "ui_location": "tab_lifestyle_sub_vehicles",
+      "min_age": 20,
+      "max_age": 90,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": true,
+      "price_cash": 5000000,
+      "annual_depreciation_rate": -0.1,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_car_license"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_has_car",
+        "flag_luxury_status",
+        "flag_elite_connection"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 2,
+        "happiness": 18,
+        "intelligence": 0,
+        "connections": 12,
+        "merit": 0,
+        "appearance": 8
+      },
+      "description_th": "สุดยอดยานยนต์ที่เป็นสัญลักษณ์แห่งความสำเร็จ ดึงดูดคอนเนกชันระดับเศรษฐีและได้รับสิทธิพิเศษที่จอดรถ VIP ทุกห้าง"
+    }
+  ],
+  "real_estate_assets": [
+    {
+      "item_id": "asset_condo_studio",
+      "name_th": "คอนโดมิเนียมสตูดิโอติดรถไฟฟ้า",
+      "ui_location": "tab_lifestyle_sub_property",
+      "min_age": 22,
+      "max_age": 90,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": true,
+      "price_cash": 1800000,
+      "annual_appreciation_rate": 0.04,
+      "annual_rental_yield_cash": 84000,
+      "installment_option": {
+        "available": true,
+        "down_payment": 150000,
+        "annual_payment": 110000,
+        "duration_years": 20
+      },
+      "req_flags": [
+        "flag_regular_income"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_has_own_home"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 2,
+        "happiness": 10,
+        "intelligence": 0,
+        "connections": 5,
+        "merit": 0,
+        "appearance": 2
+      },
+      "description_th": "อสังหาริมทรัพย์ชิ้นแรกของคนทำงานเมืองกรุง เดินทางสะดวกไม่ต้องทนรถติด หรือจะปล่อยเช่ากินกำไรรายปีก็ได้"
+    },
+    {
+      "item_id": "asset_suburban_townhome",
+      "name_th": "ทาวน์โฮม 2 ชั้นโครงการใหม่ชานเมือง",
+      "ui_location": "tab_lifestyle_sub_property",
+      "min_age": 22,
+      "max_age": 90,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": true,
+      "price_cash": 2800000,
+      "annual_appreciation_rate": 0.04,
+      "annual_rental_yield_cash": 120000,
+      "installment_option": {
+        "available": true,
+        "down_payment": 250000,
+        "annual_payment": 160000,
+        "duration_years": 20
+      },
+      "req_flags": [
+        "flag_regular_income"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_has_own_home",
+        "flag_ready_for_kids"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 3,
+        "happiness": 12,
+        "intelligence": 0,
+        "connections": 6,
+        "merit": 0,
+        "appearance": 3
+      },
+      "description_th": "บ้านจัดสรรพร้อมพื้นที่จอดรถและห้องนอนสำหรับลูกน้อย เหมาะสำหรับการลงหลักปักฐานสร้างครอบครัวที่อบอุ่น"
+    },
+    {
+      "item_id": "asset_upcountry_farmland",
+      "name_th": "ที่ดินการเกษตรและสวนผลไม้ต่างจังหวัด",
+      "ui_location": "tab_lifestyle_sub_property",
+      "min_age": 20,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": true,
+      "price_cash": 800000,
+      "annual_appreciation_rate": 0.05,
+      "annual_rental_yield_cash": 45000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_bank_account"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_landlord"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 2,
+        "happiness": 8,
+        "intelligence": 1,
+        "connections": 3,
+        "merit": 0,
+        "appearance": 0
+      },
+      "description_th": "โฉนดที่ดินครุฑแดงทำเลดี มีราคาประเมินสูงขึ้นทุกปีและสร้างรายได้จากผลผลิตทางการเกษตรหรือค่าเช่านา"
+    },
+    {
+      "item_id": "asset_rental_apartment",
+      "name_th": "หอพักและห้องแถวปล่อยเช่า (เสือนอนกิน)",
+      "ui_location": "tab_lifestyle_sub_property",
+      "min_age": 25,
+      "max_age": 100,
+      "is_one_time_purchase": false,
+      "is_resellable_asset": true,
+      "price_cash": 6000000,
+      "annual_appreciation_rate": 0.04,
+      "annual_rental_yield_cash": 480000,
+      "installment_option": {
+        "available": true,
+        "down_payment": 1500000,
+        "annual_payment": 350000,
+        "duration_years": 15
+      },
+      "req_flags": [
+        "flag_bank_account"
+      ],
+      "forbidden_flags": [
+        "flag_credit_blacklist"
+      ],
+      "grants_flags": [
+        "flag_passive_income_landlord",
+        "flag_regular_income"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 0,
+        "happiness": 15,
+        "intelligence": 2,
+        "connections": 8,
+        "merit": 0,
+        "appearance": 3
+      },
+      "description_th": "สุดยอดสินทรัพย์สร้างกระแสเงินสด (Passive Income) เก็บค่าเช่าห้องรายเดือนจากนักศึกษาและคนทำงานได้ปีละเกือบครึ่งล้าน"
+    },
+    {
+      "item_id": "asset_luxury_mansion",
+      "name_th": "คฤหาสน์หรูพร้อมสระว่ายน้ำใจกลางเมือง",
+      "ui_location": "tab_lifestyle_sub_property",
+      "min_age": 25,
+      "max_age": 100,
+      "is_one_time_purchase": true,
+      "is_resellable_asset": true,
+      "price_cash": 35000000,
+      "annual_appreciation_rate": 0.05,
+      "annual_rental_yield_cash": 1800000,
+      "installment_option": {
+        "available": false
+      },
+      "req_flags": [
+        "flag_bank_account"
+      ],
+      "forbidden_flags": [],
+      "grants_flags": [
+        "flag_has_own_home",
+        "flag_ready_for_kids",
+        "flag_billionaire_mansion",
+        "flag_elite_connection"
+      ],
+      "removes_flags": [],
+      "stat_effects_on_buy": {
+        "health": 5,
+        "happiness": 25,
+        "intelligence": 0,
+        "connections": 20,
+        "merit": 0,
+        "appearance": 10
+      },
+      "description_th": "จุดสูงสุดของที่อยู่อาศัยระดับเจ้าสัว คฤหาสน์หรูในโครงการระดับประเทศที่การันตีสถานะมหาเศรษฐีอย่างแท้จริง"
+    }
+  ]
+}

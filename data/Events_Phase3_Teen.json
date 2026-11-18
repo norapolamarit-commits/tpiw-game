@@ -1,0 +1,3230 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Phase3_Teen",
+  "phase_id": "phase_3_teen",
+  "age_range": {
+    "min_age": 13,
+    "max_age": 17
+  },
+  "total_events": 45,
+  "quota_breakdown": {
+    "total": 45,
+    "per_age_year": 9,
+    "shared_per_year": 7,
+    "poor_class_1_2_per_year": 1,
+    "rich_class_4_5_per_year": 1
+  },
+  "events": [
+    {
+      "event_id": "evt_p3_age13_01",
+      "title_th": "ก้าวแรกสู่วัยมัธยม ม.1! กฎทรงผมติ่งหู-เกรียนขาวสามด้าน",
+      "trigger_age": 13,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เช้าวันเปิดเทอม ม.1 ครูฝ่ายปกครองยืนถือไม้บรรทัดและปัตตาเลี่ยนดักรอตรวจระเบียบทรงผมและถุงเท้าอยู่ที่หน้าประตูโรงเรียน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตัดผมสั้นถูกระเบียบเป๊ะ เดินผ่านด่านครูฝ่ายปกครองอย่างสบายใจ",
+          "hint_th": "🤝 เส้นสาย +3 , ✨ แต้มบุญ +1 , 😊 ความสุข +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 1,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบไว้ผมยาวซอยสไลด์/ไถเฟดแฟชั่น ต้องวิ่งหลบครูเข้าทางประตูหลัง!",
+          "hint_th": "😊 ความสุข +4 , ✨ หน้าตา +3 , 🤝 เส้นสาย -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": -2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[เด็กอินเตอร์] โรงเรียนนานาชาติให้อิสระทำสีผมและแต่งทรงผมได้เต็มที่!",
+          "hint_th": "😊 ความสุข +5 , ✨ หน้าตา +4 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [
+            "flag_international_school"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_02",
+      "title_th": "เลือกชมรมวันแรกของเด็ก ม.ต้น! ค้นหาตัวตนหลังเลิกเรียน",
+      "trigger_age": 13,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คาบชมรมวันพุธ รุ่นพี่แต่ละชมรมมาตั้งโต๊ะเปิดรับสมาชิกใหม่กันอย่างคึกคัก คุณจะตัดสินใจลงชื่อเข้าชมรมไหน?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เข้าชมรมคอมพิวเตอร์และหุ่นยนต์ (แอร์เย็นฉ่ำ เล่นเน็ต-เขียนโค้ด)",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +3 , ✨ ปลดล็อกป้าย [เด็กเนิร์ดคอม/เกมเมอร์]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_computer_nerd"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข้าชมรมฟุตบอล/บาสเกตบอลโรงเรียน (ฟิตร่างกายลงแข่งระดับเขต)",
+          "hint_th": "❤️ สุขภาพ +5 , 🤝 เส้นสาย +4 , ✨ ปลดล็อกป้าย [นักกีฬาโรงเรียน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_school_athlete"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เข้าชมรมดนตรีสากลและการแสดง (ฝึกเล่นกีตาร์-ร้องเพลงงานโรงเรียน)",
+          "hint_th": "😊 ความสุข +4 , 🤝 เส้นสาย +5 , ✨ ปลดล็อกป้าย [หัวศิลป์/กล้าแสดงออก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_artistic_expressive"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_03",
+      "title_th": "ศึกชิงโต๊ะโรงอาหารพักเที่ยง! จองโต๊ะด้วยกระเป๋านักเรียน",
+      "trigger_age": 13,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เสียงออดพักเที่ยงดังปุ๊บ นักเรียนนับพันคนวิ่งกรูลงมาที่โรงอาหารจนโต๊ะเต็มทุกตัว แก๊งรุ่นพี่ ม.3 เดินมาบอกว่าโต๊ะที่คุณเพิ่งวางกระเป๋านั่งเป็นที่ประจำของพวกเขา!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พูดจาดีๆ ขอนั่งเบียดแบ่งครึ่งโต๊ะด้วยกัน จนกลายเป็นรุ่นน้องที่รุ่นพี่เอ็นดู!",
+          "hint_th": "🤝 เส้นสาย +5 , 🧠 สมอง +2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ยอมย้ายไปนั่งกินลูกชิ้นยืนกินข้างสนามบอลกับเพื่อนอย่างสบายใจ",
+          "hint_th": "😊 ความสุข +2 , ❤️ สุขภาพ +1 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "จ้องตาท้าทายไม่ยอมลุก จนเกือบมีเรื่องชกต่อยกลางโรงอาหาร!",
+          "hint_th": "🤝 เส้นสาย -2 , 😊 ความสุข -2 , ⚠️ ได้รับป้าย [วัยรุ่นเลือดร้อน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_rebel_teen"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": -2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_04",
+      "title_th": "ฮอร์โมนวัยว้าวุ่น! สิววัยรุ่นบุกและกลิ่นตัวหลังคาบพละ",
+      "trigger_age": 13,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่วัยรุ่นเต็มตัว ฮอร์โมนพุ่งพล่านทำให้สิวอักเสบขึ้นที่แก้มและหน้าผาก แถมหลังเรียนพละเสร็จยังมีเหงื่อออกเยอะมาก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พกโฟมล้างหน้าและโรลออนไปดูแลตัวเอง ห้ามใจไม่แกะสิวเด็ดขาด",
+          "hint_th": "❤️ สุขภาพ +2 , ✨ หน้าตา +4 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "มันมือบีบแกะสิวหน้ากระจกทุกวันจนทิ้งรอยดำเต็มหน้า!",
+          "hint_th": "✨ หน้าตา -4 , 😊 ความสุข -2 , ❤️ สุขภาพ -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": -4
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_05",
+      "title_th": "ร้านเกมออนไลน์หน้าปากซอยโรงเรียน! ชั่วโมงละ 15 บาท",
+      "trigger_age": 13,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังเลิกเรียน แก๊งเพื่อนชวนแวะร้านเกมอินเทอร์เน็ตคาเฟ่หน้าโรงเรียนเพื่อลงดันเจี้ยนตีบอสและดวลเกมยิงปืนกันยกก๊วน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เล่นกับเพื่อนแค่ 1 ชั่วโมงพอสนุก แล้วรีบกลับบ้านทำการบ้าน (-15฿)",
+          "hint_th": "🪙 เงินสด -15 ฿ , 😊 ความสุข +4 , 🤝 เส้นสาย +4 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 1,
+            "connections": 4,
+            "cash": -15,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ติดพันเหมานั่งเล่นยาวจนมืดค่ำ กลับบ้านโดนแม่ดุยกใหญ่! (-60฿)",
+          "hint_th": "🪙 เงินสด -60 ฿ , 😊 ความสุข +5 , ❤️ สุขภาพ -2 , 🧠 สมอง -2 , ✨ ได้รับป้าย [เด็กเนิร์ดคอม/เกมเมอร์]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_computer_nerd"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": -2,
+            "connections": 3,
+            "cash": -60,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ปฏิเสธเพื่อนแล้วตรงกลับบ้านไปอ่านหนังสือทบทวนบทเรียน",
+          "hint_th": "🧠 สมอง +4 , ❤️ สุขภาพ +1 , 🤝 เส้นสาย -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 0,
+            "intelligence": 4,
+            "connections": -1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_06",
+      "title_th": "สอบกลางภาค ม.1 ครั้งแรก! วิชาคณิตศาสตร์และวิทยาศาสตร์สุดโหด",
+      "trigger_age": 13,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เนื้อหาวิชาการระดับมัธยมยากกว่าประถมแบบก้าวกระโดด ทั้งสมการตัวแปร X-Y และตารางธาตุเคมี ทำเอาหลายคนกุมขมับก่อนวันสอบ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตั้งวงติวหนังสือกับเพื่อนเด็กเรียนหลังเลิกเรียนและสรุปโน้ตย่อ",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +3 , 😊 ความสุข +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 5,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[หนอนหนังสือ] อ่านล่วงหน้าจบไปครึ่งเล่มแล้ว สอบได้ท็อปของสายชั้นสบายๆ!",
+          "hint_th": "🧠 สมอง +7 , 😊 ความสุข +4 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [
+            "tag_bookworm"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 7,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "อ่านคืนหอนก่อนสอบวันเดียว (One Night Miracle) ขอบตาดำเข้าห้องสอบ!",
+          "hint_th": "🧠 สมอง +2 , ❤️ สุขภาพ -3 , 😊 ความสุข -2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": -2,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_07",
+      "title_th": "ปิ๊งรักแรกวัยมัธยมต้น! แอบมองรุ่นพี่/เพื่อนต่างห้องเดินผ่าน",
+      "trigger_age": 13,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หัวใจเต้นตึกตักทุกครั้งที่เดินสวนกันตรงระเบียงอาคารเรียน เพื่อนในกลุ่มยุให้คุณลองเข้าไปทำความรู้จักหรือฝากขนมไปให้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รวบรวมความกล้าเดินเอาขนมและนมชมพูไปวางไว้ใต้โต๊ะเรียนของเขา (-30฿)",
+          "hint_th": "🪙 เงินสด -30 ฿ , 😊 ความสุข +5 , 🤝 เส้นสาย +3 , ✨ หน้าตา +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": -30,
+            "merit": 0,
+            "appearance": 1
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีสมาร์ทโฟน] ขอไอดีโซเชียลจากเพื่อน แล้วทักแชทส่งสติกเกอร์ไปจีบ!",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_smartphone"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เก็บความปลื้มไว้ในใจเป็นแรงบันดาลใจในการตั้งใจเรียนและแต่งตัวให้ดูดี",
+          "hint_th": "🧠 สมอง +3 , ✨ หน้าตา +2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_08_poor",
+      "title_th": "โหนรถสองแถว/รถเมล์ร้อนไปเรียน & ห่อข้าวกล่องฝีมือแม่",
+      "trigger_age": 13,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โรงเรียนมัธยมอยู่ไกลจากบ้าน คุณต้องตื่นตั้งแต่ตีห้ามาโหนรถสองแถว และแม่ได้ตื่นมาทอดไข่เจียวใส่กล่องพลาสติกให้คุณพกไปกินมื้อเที่ยงเพื่อประหยัดค่าขนม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดกล่องข้าวไข่เจียวฝีมือแม่กินกับเพื่อนอย่างเอร็ดอร่อย เก็บเงินค่าขนมได้เต็มเม็ดเต็มหน่วย!",
+          "hint_th": "🪙 เงินออม +300 ฿ , ❤️ สุขภาพ +3 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 300,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยกระเป๋ารถเมล์/ลุงคนขับสองแถวดูทางจนลุงใจดีลดค่าโดยสารให้ครึ่งราคา",
+          "hint_th": "🪙 เงินออม +150 ฿ , 🤝 เส้นสาย +4 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 1,
+            "connections": 4,
+            "cash": 150,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 1,
+            "connections": 2,
+            "cash": 225,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age13_09_rich",
+      "title_th": "จัดฟันดัดฟันแฟชั่นคลินิกหรู & คอร์สติวเตอร์ตัวต่อตัว",
+      "trigger_age": 13,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณแม่พาคุณไปคลินิกทันตกรรมเอกชนชื่อดังเพื่อจัดฟันปรับรูปหน้าให้เป๊ะปัง พร้อมจ้างติวเตอร์จากมหาวิทยาลัยท็อปมาสอนพิเศษที่บ้าน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เลือกสียางจัดฟันสุดฮิตและดูแลสุขภาพช่องปากจนยิ้มสวยมั่นใจระดับดารา!",
+          "hint_th": "✨ หน้าตา +6 , 😊 ความสุข +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 6
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทุ่มเทเรียนพิเศษตัวต่อตัวกับติวเตอร์จนเกรดเฉลี่ยพุ่งทะลุ 4.00",
+          "hint_th": "🧠 สมอง +7 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 7,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 3,
+            "appearance": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_01",
+      "title_th": "เข้าค่ายลูกเสือ ม.2 สุดโหด! ฐานไต่เชือกข้ามน้ำและหลับยาม",
+      "trigger_age": 14,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ค่ายลูกเสือ-เนตรนารีชั้น ม.2 ยกระดับความโหด! มีฐานไต่เชือกเส้นเดียวข้ามสระน้ำโคลน และการตั้งเวรยามเฝ้าเต็นท์ตอนตีสอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เกร็งแขนไต่เชือกผ่านฉลุยโดยไม่ตกน้ำ เพื่อนปรบมือลั่นฐาน!",
+          "hint_th": "❤️ สุขภาพ +5 , 🤝 เส้นสาย +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พลาดท่าหล่นตูมลงสระโคลนเปียกโชกทั้งตัว แต่ได้ภาพจำสุดฮากับแก๊งเพื่อน",
+          "hint_th": "😊 ความสุข +5 , 🤝 เส้นสาย +5 , ❤️ สุขภาพ -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แอบต้มมาม่ากินกับเพื่อนตอนเข้าเวรยามตีสอง ฟินที่สุดในโลก!",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_02",
+      "title_th": "แก๊งหลังห้องชวนโดดเรียนคาบบ่ายไปเดินห้าง/แทงสนุกเกอร์!",
+      "trigger_age": 14,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "บ่ายวันศุกร์วิชาประวัติศาสตร์สุดง่วง หัวโจกแก๊งเพื่อนหลังห้องสะกิดชวนคุณปีนรั้วหลังโรงเรียนหนีไปตากแอร์เดินห้าง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธเพื่อนอย่างแน่วแน่ แล้วนั่งเรียนต่อในห้องตามปกติ",
+          "hint_th": "🧠 สมอง +4 , ✨ แต้มบุญ +2 , 🤝 เส้นสาย -1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 0,
+            "intelligence": 4,
+            "connections": -1,
+            "cash": 0,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยดูต้นทางให้เพื่อนแต่ตัวเองไม่โดด ได้ทั้งใจเพื่อนและไม่เสียการเรียน!",
+          "hint_th": "🧠 สมอง +2 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ปีนรั้วโดดเรียนไปซิ่งกับแก๊งเพื่อนสุดเหวี่ยง! (เสี่ยงโดนครูจับได้)",
+          "hint_th": "😊 ความสุข +5 , 🤝 เส้นสาย +4 , 🧠 สมอง -3 , ⚠️ ได้รับป้าย [วัยรุ่นเลือดร้อน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_rebel_teen"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": -3,
+            "connections": 4,
+            "cash": 0,
+            "merit": -2,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_03",
+      "title_th": "งานประกวดวงดนตรีและเต้น Cover Dance ประจำโรงเรียน!",
+      "trigger_age": 14,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เวทีหอประชุมโรงเรียนลุกเป็นไฟ! มีการจัดการแข่งขันประกวดวงดนตรีสากลและเต้น Cover Dance ชิงถ้วยรางวัล ผอ. ท่ามกลางเสียงกรี๊ดของนักเรียนทั้งโรงเรียน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฟอร์มทีมกับเพื่อนขึ้นโชว์บนเวที ปล่อยดาเมจความเท่เรียกเสียงกรี๊ดถล่มทลาย!",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +7 , ✨ หน้าตา +3 , ✨ ปลดล็อกป้าย [หัวศิลป์/กล้าแสดงออก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_artistic_expressive"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับหน้าที่เป็นทีมงานเบื้องหลัง คุมเครื่องเสียงและถ่ายคลิปตัดต่อลงเพจโรงเรียน",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ซื้อลูกชิ้นมานั่งเชียร์และถือป้ายไฟให้กำลังใจเพื่อนอยู่หน้าเวที",
+          "hint_th": "😊 ความสุข +4 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_04",
+      "title_th": "กระแสรับหิ้วของและขายขนม-สติกเกอร์ออนไลน์ในโรงเรียน!",
+      "trigger_age": 14,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อนๆ ในโรงเรียนกำลังฮิตบราวนี่กรอบ ขนมคอนเฟลกคาราเมล และของกุ๊กกิ๊ก คุณเห็นช่องทางทำเงินจากกระเป๋าใบที่สอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับขนมบราวนี่และพวงกุญแจราคาส่งมาเปิดพรีออเดอร์ขายเพื่อนในโรงเรียน!",
+          "hint_th": "🪙 กำไร +500 ฿ , 🧠 สมอง +3 , 🤝 เส้นสาย +4 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยเพื่อนแชร์โพสต์โปรโมตร้านแลกกับขนมกินฟรี!",
+          "hint_th": "😊 ความสุข +3 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_05",
+      "title_th": "เครื่องใช้ไฟฟ้าที่บ้านพัง! พัดลมไม่หมุน-คอมพิวเตอร์เปิดไม่ติด",
+      "trigger_age": 14,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันเสาร์ที่อากาศร้อนอบอ้าว พัดลมตั้งพื้นตัวเก่งเกิดค้างไม่ยอมหมุน แถมพ่อกำลังจะยกไปร้านซ่อมที่คิดค่าแรงแพง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดคลิปสอนซ่อมแล้วหยิบไขควงมาถอดล้างหยอดน้ำมันและเปลี่ยนคาปาซิเตอร์เองจนกลับมาหมุนจี๋!",
+          "hint_th": "🧠 สมอง +5 , 🪙 ประหยัดเงิน +300 ฿ , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 2,
+            "cash": 300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยพ่อยกไปร้านซ่อมแล้วนั่งดูช่างทำงานเพื่อจำเทคนิคไว้ใช้ครั้งหน้า",
+          "hint_th": "🧠 สมอง +3 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 1,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 150
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_06",
+      "title_th": "วันวาเลนไทน์วัยมัธยม! สติ๊กเกอร์หัวใจสีชมพูเต็มปกเสื้อ",
+      "trigger_age": 14,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันที่ 14 กุมภาพันธ์ เทศกาลแห่งความรักของเด็กมัธยมไทย! ใครป๊อปปูลาร์จะมีสติ๊กเกอร์รูปหัวใจแปะเต็มปกเสื้อนักเรียนจนแทบไม่มีที่ว่าง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อสติ๊กเกอร์หัวใจไปไล่แปะให้เพื่อนทุกคนและแอบแปะดวงใหญ่ให้คนที่ชอบ (-40฿)",
+          "hint_th": "🪙 เงินสด -40 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -40,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ยิ้มสยามมหาเสน่ห์] เดินไปทางไหนก็มีแต่คนวิ่งมาแปะสติ๊กเกอร์และให้ดอกกุหลาบ/ช็อกโกแลตเต็มแขน!",
+          "hint_th": "😊 ความสุข +8 , 🤝 เส้นสาย +8 , ✨ หน้าตา +4",
+          "req_stats": {},
+          "req_flags": [
+            "trait_natural_charmer"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เอาสติ๊กเกอร์หัวใจมาแปะเสื้อตัวเองประชดความโสดเรียกเสียงฮาจากเพื่อน!",
+          "hint_th": "😊 ความสุข +4 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_07",
+      "title_th": "ดราม่ากลุ่มแชทห้องเรียน! เพื่อนทะเลาะกันเรื่องงานกลุ่ม",
+      "trigger_age": 14,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในกลุ่มแชทของห้องเรียนเกิดศึกดราม่าร้อนระอุ เมื่อฝ่ายทำสไลด์บ่นว่าเพื่อนบางคนกินแรงไม่ยอมส่งข้อมูลรายงานจนเกือบส่งงานครูไม่ทัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อาสาช่วยรวบรวมข้อมูลที่ขาดและไกล่เกลี่ยให้เพื่อนดีกันจนงานเสร็จสมบูรณ์",
+          "hint_th": "🤝 เส้นสาย +6 , 🧠 สมอง +4 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับผิดชอบส่วนของตัวเองให้เป๊ะที่สุดและส่งตรงเวลา ไม่เข้าไปผสมโรงดราม่า",
+          "hint_th": "🧠 สมอง +3 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 1,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 4,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_08_poor",
+      "title_th": "รับจ้างล้างจานร้านก๋วยเตี๋ยว/ช่วยงานตลาดนัดวันเสาร์-อาทิตย์",
+      "trigger_age": 14,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เนื่องจากอายุยังไม่ถึง 15 ปีบริบูรณ์จึงยังสมัครงานพาร์ทไทม์ร้านสะดวกซื้อไม่ได้ คุณจึงไปขอช่วยป้าร้านก๋วยเตี๋ยวท้ายซอยเสิร์ฟและล้างชามช่วงวันหยุด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขยันล้างชามและเสิร์ฟก๋วยเตี๋ยวอย่างคล่องแคล่ว ได้ทั้งค่าแรงและก๋วยเตี๋ยวพิเศษกลับบ้าน!",
+          "hint_th": "🪙 รายได้ +600 ฿ , ❤️ สุขภาพ +1 , ✨ แต้มบุญ +3 , 💪 ได้รับป้าย [ลูกหลานคนสู้ชีวิต]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_working_class_roots"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 600,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบจดจำสูตรน้ำซุปก๋วยเตี๋ยวและวิธีบริหารร้านของป้ามาเป็นความรู้ติดตัว",
+          "hint_th": "🪙 รายได้ +400 ฿ , 🧠 สมอง +4 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 400,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 500,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age14_09_rich",
+      "title_th": "ทริปสกีรีสอร์ตฮอกไกโด/ยุโรปช่วงปิดเทอม & คอนเนกชันรุ่นพี่ไฮโซ",
+      "trigger_age": 14,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปิดเทอมฤดูหนาว ครอบครัวของคุณจัดทริปบินไปเล่นสกีหิมะร่วมกับครอบครัวเพื่อนนักธุรกิจของคุณพ่อ ทำให้คุณได้รู้จักกับรุ่นพี่ตระกูลดังหลายคน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฝึกเล่นสโนว์บอร์ดและสกีอย่างสนุกสนาน พร้อมถ่ายรูปอัปลงไอจีสุดคูล",
+          "hint_th": "❤️ สุขภาพ +4 , 😊 ความสุข +6 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พูดคุยแลกเปลี่ยนมุมมองธุรกิจและการเรียนต่อนอกกับรุ่นพี่ตระกูลเจ้าสัว",
+          "hint_th": "🤝 เส้นสาย +8 , 🧠 สมอง +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 6,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_01",
+      "title_th": "ถ่ายรูปบัตรประชาชนใบใหม่! เปลี่ยนคำนำหน้าเป็น 'นาย / นางสาว'",
+      "trigger_age": 15,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "อายุครบ 15 ปีบริบูรณ์! ถึงเวลาไปสำนักงานเขต/ที่ว่าการอำเภอเพื่อเปลี่ยนบัตรประชาชนจาก ด.ช./ด.ญ. เป็น นาย/นางสาว วินาทีที่เจ้าหน้าที่กดชัตเตอร์ถ่ายรูปติดบัตร...",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เซ็ตทรงผมและเกร็งมุมหน้ายิ้มนิดๆ รูปออกมาหล่อ/สวยเป๊ะไม่อายใคร!",
+          "hint_th": "✨ หน้าตา +4 , 😊 ความสุข +4 , 🤝 เส้นสาย +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เผลอกะพริบตาจังหวะกดชัตเตอร์ รูปออกมาหน้าเหวอจนเพื่อนขำทั้งกลุ่ม!",
+          "hint_th": "😊 ความสุข +3 , 🤝 เส้นสาย +4 (กลายเป็นมีมประจำกลุ่ม)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "connections": 3,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_02",
+      "title_th": "ทดสอบสมรรถภาพร่างกาย สมัครเรียนนักศึกษาวิชาทหาร (รด. ปี 1)!",
+      "trigger_age": 15,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เปิดเทอม ม.4 / ปวช.1 หน่วยฝึกนักศึกษาวิชาทหารเปิดรับสมัครสอบคัดเลือก รด. ปี 1 โดยต้องผ่านด่านวิดพื้น 22 ครั้ง ซิทอัพ 34 ครั้ง และวิ่ง 800 เมตรใน 3 นาที 15 วินาที!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฟิตร่างกายลุยสอบผ่านฉลุย! พร้อมตัดผมเกรียนฝึกวิชาทหารทุกสัปดาห์",
+          "hint_th": "❤️ สุขภาพ +5 , 🤝 เส้นสาย +3 , 🧠 สมอง +1 (เตรียมปลดล็อกใบ รด. ปี 3)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 1,
+            "intelligence": 1,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[นักกีฬาโรงเรียน] วิ่งเข้าเส้นชัยอันดับ 1 ของสนามสอบ ครูฝึกชมเปาะ!",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +4 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [
+            "tag_school_athlete"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ไม่สมัครเรียน รด. ขอเอาเวลาไปโฟกัสเรียนพิเศษหรือทำงานพาร์ทไทม์แทน",
+          "hint_th": "🧠 สมอง +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_03",
+      "title_th": "หัดขี่มอเตอร์ไซค์ครั้งแรก & เตรียมสอบใบขับขี่เยาวชน!",
+      "trigger_age": 15,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เมื่ออายุครบ 15 ปี กฎหมายอนุญาตให้ทำใบขับขี่รถจักรยานยนต์ขนาดไม่เกิน 110 ซีซีได้แล้ว พ่อหรือรุ่นพี่จึงพาคุณไปหัดบิดคันเร่งและทรงตัวที่ลานโล่ง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ฝึกขี่อย่างระมัดระวัง สวมหมวกกันน็อก และอ่านคู่มือกฎจราจรเตรียมไปสอบที่ขนส่ง",
+          "hint_th": "🧠 สมอง +3 , ❤️ สุขภาพ +2 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 3,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "บิดคันเร่งแรงเกินจนรถพุ่งลงพงหญ้าข้างทาง ได้แผลถลอกแต่เข้าใจจังหวะเบรกทันที!",
+          "hint_th": "❤️ สุขภาพ -2 , 🧠 สมอง +2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 3,
+            "intelligence": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_04",
+      "title_th": "กะแรกของการทำงานพาร์ทไทม์วัย 15! เสียงกริ่งร้านสะดวกซื้อดังหลอน",
+      "trigger_age": 15,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ด้วยคำนำหน้า นาย/นางสาว คุณลองไปฝึกงาน/ทำพาร์ทไทม์ช่วงวันหยุด ยืนกล่าวคำทักทายลูกค้า เวฟข้าวกล่อง และจัดเรียงน้ำอัดลมในตู้แช่เย็นเฉียบ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สู้งานหนัก ยิ้มแย้มคิดเงินแม่นยำ จนผู้จัดการร้านชมและให้ทิปพิเศษ!",
+          "hint_th": "🪙 รายได้ +800 ฿ , 🧠 สมอง +3 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 2,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เรียนรู้ระบบสต๊อกสินค้าและยอดขายของร้าน มาต่อยอดความรู้ธุรกิจ",
+          "hint_th": "🪙 รายได้ +500 ฿ , 🧠 สมอง +4 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 650
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_05",
+      "title_th": "รับน้องใหม่ ม.4 / ปวช.1! พี่รหัส-น้องรหัสและสายรหัสปริศนา",
+      "trigger_age": 15,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ประเพณีสุดฮิตเมื่อก้าวขึ้นชั้น ม.ปลาย/ปวช.! รุ่นพี่จะส่งคำใบ้ปริศนาพร้อมขนมกองโตมาให้ตามหาตัวพี่รหัสภายในสัปดาห์นี้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ไขคำใบ้สำเร็จคนแรก! ได้พี่รหัสสุดป๊อปที่คอยเลี้ยงขนมและให้ชีทสรุปข้อสอบ",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +6 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เดินถามรุ่นพี่ไปทั่วโรงเรียนจนรู้จักรุ่นพี่เกือบทุกห้อง ได้คอนเนกชันเพียบ!",
+          "hint_th": "🤝 เส้นสาย +8 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 7
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_06",
+      "title_th": "ศึกปรับตัวเข้าสายการเรียนใหม่! กองชีทฟิสิกส์-เคมี vs บทสนทนาภาษา vs ช็อปช่าง",
+      "trigger_age": 15,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังจากเลือกทางเดินชีวิตตอนอายุ 15 ปี บทเรียนในเทอมแรกก็ถาโถมเข้ามาทดสอบความอึดของคุณทันที!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[สายวิทย์-คณิต] ลุยโจทย์ฟิสิกส์-เคมี-ชีวะ และผ่ากบในห้องแล็บอย่างเข้มข้น!",
+          "hint_th": "🧠 สมอง +7 , ❤️ สุขภาพ -1 , 😊 ความสุข +1",
+          "req_stats": {},
+          "req_flags": [
+            "flag_track_sci_math"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 1,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[สายศิลป์ / ปวช.] ฝึกพรีเซนต์งานภาษาต่างประเทศ หรือลุยลงมือปฏิบัติจริงในโรงฝึกงาน!",
+          "hint_th": "🧠 สมอง +4 , 🤝 เส้นสาย +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "จัดตารางเวลาแบ่งทั้งเรื่องเรียนและกิจกรรมชมรมได้อย่างสมดุล",
+          "hint_th": "🧠 สมอง +4 , ❤️ สุขภาพ +2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 2,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_07",
+      "title_th": "เดทแรกวัย 15! ดูหนังรอบบ่ายและเดินกินไอศกรีมในห้าง",
+      "trigger_age": 15,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันเสาร์สุดสัปดาห์ คนที่คุณคุยอยู่ชวนไปดูหนังเข้าใหม่ที่โรงภาพยนตร์และเดินเล่นกินไอศกรีมด้วยกันสองต่อสอง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แต่งตัวหล่อ/สวยเป๊ะไปเดท ซื้อป๊อปคอร์นและดูหนังด้วยกันอย่างโรแมนติก (-300฿)",
+          "hint_th": "🪙 เงินสด -300 ฿ , 😊 ความสุข +7 , 🤝 เส้นสาย +4 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": -300,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนกันไปนั่งติวหนังสือที่หอสมุดประชาชนแล้วแวะกินสตรีทฟู้ดประหยัดงบ (-80฿)",
+          "hint_th": "🪙 เงินสด -80 ฿ , 🧠 สมอง +4 , 😊 ความสุข +5 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": -80,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำจากผู้ใหญ่แล้วเลือกวิธีที่พอดีกับตัวเอง",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": -190,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_08_poor",
+      "title_th": "ภาระครอบครัวถามหา! แบ่งเวลาทำงานส่งตัวเองเรียนหรือลุยหาเงิน",
+      "trigger_age": 15,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ค่าใช้จ่ายในบ้านสูงขึ้นขณะที่พ่อแม่เริ่มปวดหลังจากการทำงานหนัก คุณในวัย 15 ปีต้องการหาเงินมาช่วยจุนเจือครอบครัว",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับกะเย็นหลังเลิกเรียนทำงานพาร์ทไทม์ แบ่งเงินครึ่งหนึ่งให้แม่ใช้จ่ายในบ้าน!",
+          "hint_th": "🪙 รายได้ +1,500 ฿ , ✨ แต้มบุญ +6 , ❤️ สุขภาพ -2 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_working_class_roots"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 1500,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยงานซ่อมเครื่องยนต์ที่อู่ซ่อมรถแถวบ้าน ได้ทั้งค่าแรงและวิชาช่างติดตัว!",
+          "hint_th": "🪙 รายได้ +1,000 ฿ , 🧠 สมอง +4 , ✨ ปลดล็อกป้าย [หัวช่าง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_mechanic"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 3,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 3,
+            "intelligence": 2,
+            "connections": 3,
+            "cash": 1250,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age15_09_rich",
+      "title_th": "เข้าคอร์สติวเตอร์ VIP สยามสแควร์ & ปาร์ตี้วันเกิด Sweet 15 บนรูฟท็อป",
+      "trigger_age": 15,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณพ่อคุณแม่สนับสนุนเต็มที่ทั้งคอร์สเรียนพิเศษระดับ VIP และจัดงานฉลองอายุครบ 15 ปีให้คุณและกลุ่มเพื่อนโรงเรียนดัง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดปาร์ตี้วันเกิดสร้างเครือข่ายเพื่อนทายาทนักธุรกิจและรับของขวัญแบรนด์เนม",
+          "hint_th": "🪙 ของขวัญแต๊ะเอีย +5,000 ฿ , 🤝 เส้นสาย +8 , 😊 ความสุข +6 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โฟกัสเรียนคอร์สเตรียมสอบ IELTS / SAT ล่วงหน้าเพื่อปูทางเข้าคณะอินเตอร์",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +3 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_cert_english"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 8,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 2500,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_01",
+      "title_th": "ประธานสีและหลีดเดอร์ الم.5! แบกงานกีฬาสีโรงเรียนสุดอลังการ",
+      "trigger_age": 16,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ธรรมเนียมโรงเรียนมัธยมไทย ชั้น ม.5 / ปวช.2 คือแม่งานใหญ่ที่ต้องคุมงบประมาณ จัดสแตนด์เชียร์ วาดคัทเอาท์ยักษ์ และซ้อมหลีดเดอร์จนถึงเย็นทุกวัน!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับตำแหน่งเฮดงาน/หลีดเดอร์ ทุ่มเทจนคณะสีคว้าถ้วยรางวัลชนะเลิศ!",
+          "hint_th": "🤝 เส้นสาย +8 , 😊 ความสุข +5 , ❤️ สุขภาพ -2 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_artistic_expressive"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับหน้าที่ฝ่ายสวัสดิการและเหรัญญิก บริหารงบสีจนมีเงินทอนเหลือคืนน้องๆ",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +5 , ✨ แต้มบุญ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 0,
+            "merit": 2,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ลงแข่งกีฬาเป็นตัวจริงของสี กวาดเหรียญทองให้สีแบบไม่ต้องอดนอนทำสแตนด์",
+          "hint_th": "❤️ สุขภาพ +6 , 😊 ความสุข +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_school_athlete"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 6,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_02",
+      "title_th": "กระแส TikTok / YouTube & ไลฟ์สดขายของออนไลน์วัยมัธยม!",
+      "trigger_age": 16,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ยุคโซเชียลมีเดียครองเมือง! เพื่อนหลายคนที่อัดคลิปเต้น รีวิวของกิน หรือแคสต์เกมเริ่มมียอดวิวหลักแสนและมีรายได้เข้ากระเป๋า",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลองอัดคลิปคอนเทนต์สร้างสรรค์/แคสต์เกมลงช่องตัวเอง จนคลิปกลายเป็นไวรัล!",
+          "hint_th": "🪙 รายได้สปอนเซอร์ +1,000 ฿ , 🤝 เส้นสาย +6 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": 1000,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไลฟ์สดขายเสื้อผ้ามือสองและของสะสมผ่านมือถือ ขายคล่องปากเป็นต่อยหอย!",
+          "hint_th": "🪙 กำไร +1,200 ฿ , 🧠 สมอง +3 , 🤝 เส้นสาย +4 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 4,
+            "cash": 1200,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ไถฟีดดูคลิปคนอื่นเพลินยันตีสามทุกคืนจนเรียนในห้องสัปหงก!",
+          "hint_th": "😊 ความสุข +3 , ❤️ สุขภาพ -3 , 🧠 สมอง -3 , ⚠️ ได้รับป้าย [ติดจอมือถือ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_screen_addict"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 3,
+            "intelligence": -3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_03",
+      "title_th": "ค่ายโอลิมปิกวิชาการ (สอวน.) vs การแข่งขันทักษะฝีมืออาชีวศึกษา",
+      "trigger_age": 16,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "โอกาสทองสำหรับเก็บพอร์ตโฟลิโอ (Portfolio) ยื่นเข้ามหาวิทยาลัยและสร้างโปรไฟล์! โรงเรียนเปิดรับสมัครตัวแทนไปสอบคัดเลือก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทุ่มเทสอบติดค่ายโอลิมปิกวิชาการ / คว้าเหรียญทักษะวิชาชีพ ได้เกียรติบัตรทองเข้าพอร์ต!",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 4,
+            "intelligence": 8,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เข้าร่วมค่ายจิตอาสาพัฒนาโรงเรียนชนบท เก็บเกียรติบัตรด้านบำเพ็ญประโยชน์แทน",
+          "hint_th": "✨ แต้มบุญ +6 , 🤝 เส้นสาย +5 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 5,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_04",
+      "title_th": "ศึกแก๊งมอเตอร์ไซค์ซิ่งยามค่ำคืน & ด่านตรวจเคอร์ฟิววัยรุ่น!",
+      "trigger_age": 16,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คืนวันเสาร์ เพื่อนในกลุ่มที่เพิ่งถอยมอเตอร์ไซค์แต่งท่อดังชวนคุณซ้อนท้ายออกไปขี่รถเล่นรับลมรอบเมืองตอนห้าทุ่ม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ปฏิเสธไม่ไป ขอนอนพักผ่อนหรือเล่นเกมอยู่ที่บ้านปลอดภัยกว่า",
+          "hint_th": "❤️ สุขภาพ +3 , 🧠 สมอง +2 , ✨ แต้มบุญ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 1,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 1,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีใบขับขี่มอเตอร์ไซค์] ขี่รถเดิมๆ สวมหมวกกันน็อกถูกกฎหมาย เจอด่านตำรวจก็ผ่านฉลุย!",
+          "hint_th": "😊 ความสุข +4 , 🤝 เส้นสาย +3 , 🧠 สมอง +1",
+          "req_stats": {},
+          "req_flags": [
+            "flag_motor_license"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 1,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ออกไปซิ่งท่อดังกับแก๊งเพื่อน เจอด่านตำรวจเรียกตรวจและรถแฉลบฟุตบาทบาดเจ็บ!",
+          "hint_th": "🪙 ค่าปรับ/ค่ารักษา -1,000 ฿ , ❤️ สุขภาพ -6 , 😊 ความสุข -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -6,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 1,
+            "cash": -1000,
+            "merit": -2,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_05",
+      "title_th": "ดราม่าความรักวัยรุ่น! แฟน/คนคุยแอบไปกดหัวใจให้คนอื่นรัวๆ",
+      "trigger_age": 16,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ความรักวัย 16 มีเรื่องให้หึงหวง! คุณสังเกตเห็นว่าคนคุย/แฟนของคุณไปคอมเมนต์และกดหัวใจให้รุ่นพี่หน้าตาดีอีกโรงเรียนหนึ่งทุกโพสต์",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดอกคุยกันตรงๆ ด้วยเหตุผล จนเข้าใจกันดีและรักกันแน่นแฟ้นขึ้น",
+          "hint_th": "😊 ความสุข +4 , 🤝 เส้นสาย +4 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "โพสต์สตอรี่เพลงเศร้าตัดพ้อประชดรัก จนเพื่อนแห่มาปลอบใจทั้งไทม์ไลน์",
+          "hint_th": "😊 ความสุข -2 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": -2,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เชิ่ดใส่ไม่แคร์! หันมาออกกำลังกายปั้นหุ่นดูแลตัวเองให้หล่อ/สวยขึ้นกว่าเดิม",
+          "hint_th": "❤️ สุขภาพ +4 , ✨ หน้าตา +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_06",
+      "title_th": "ลงสมัครประธานนักเรียน! ศึกหาเสียงเลือกตั้งสภานักเรียน",
+      "trigger_age": 16,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ถึงวาระการเลือกตั้งคณะกรรมการสภานักเรียนชุดใหม่! มีการตั้งพรรคหาเสียงหน้าเสาธงและดีเบตนโยบายปรับปรุงโรงอาหารและห้องน้ำโรงเรียน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ลงสมัครชิงตำแหน่งประธานนักเรียน ขึ้นเวทีปราศรัยจนชนะใจน้องๆ ทั้งโรงเรียน!",
+          "hint_th": "🤝 เส้นสาย +9 , 🧠 สมอง +4 , 😊 ความสุข +5 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 9,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เป็นหัวหน้าทีมวางแผนแคมเปญและออกแบบโปสเตอร์หาเสียงให้พรรคของเพื่อน",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +5 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 7,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_07",
+      "title_th": "ทริปเที่ยวทะเลบางแสน/พัทยากับแก๊งเพื่อนโดยไม่มีผู้ปกครองครั้งแรก!",
+      "trigger_age": 16,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ช่วงปิดเทอม ม.5 แก๊งเพื่อนสนิทวางแผนนั่งรถตู้ไปเที่ยวชายทะเลใกล้ๆ เช่าเตียงผ้าใบกินส้มตำไก่ย่างและเล่นบานาน่าโบ๊ทด้วยกัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ขออนุญาตพ่อแม่ดีๆ แล้วไปเล่นน้ำทะเล-กินอาหารทะเลหารกันกับเพื่อนอย่างสุดเหวี่ยง (-500฿)",
+          "hint_th": "🪙 เงินสด -500 ฿ , 😊 ความสุข +8 , ❤️ สุขภาพ +3 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": -500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "รับหน้าที่เป็นตากล้องประจำทริป ถ่ายรูปสวยๆ ให้เพื่อนทุกคนและคุมงบกองกลางไม่ให้บานปลาย (-300฿)",
+          "hint_th": "🪙 เงินสด -300 ฿ , 😊 ความสุข +6 , 🧠 สมอง +3 , 🤝 เส้นสาย +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 3,
+            "connections": 6,
+            "cash": -300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 2,
+            "connections": 6,
+            "cash": -400
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_08_poor",
+      "title_th": "วิกฤตการเงินทางบ้าน! เจ้าหนี้มาทวงเงินหน้าบ้านและค่าเทอมค้างจ่าย",
+      "trigger_age": 16,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เย็นวันหนึ่งคุณกลับจากโรงเรียนแล้วเห็นแม่นั่งปาดน้ำตา เพราะหมุนเงินจ่ายค่าเช่าบ้านและค่าเทอมไม่ทัน คุณจะช่วยครอบครัวยังไง?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "นำเงินเก็บสะสมจากงานพาร์ทไทม์มอบให้แม่ไปจ่ายหนี้ และขอผ่อนผันค่าเทอมกับครูที่ปรึกษา",
+          "hint_th": "🪙 ช่วยที่บ้าน -500 ฿ , ✨ แต้มบุญ +10 , 🤝 เส้นสาย +4 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 2,
+            "connections": 4,
+            "cash": -500,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลุยรับงานพิเศษเพิ่มช่วงวันเสาร์-อาทิตย์ ทั้งงานร้านอาหารและรับจ้างทั่วไปจนผ่านพ้นวิกฤต!",
+          "hint_th": "🪙 รายได้เสริม +1,800 ฿ , ❤️ สุขภาพ -3 , ✨ แต้มบุญ +6 , 💪 ได้รับป้าย [ลูกหลานคนสู้ชีวิต]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_working_class_roots"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -3,
+            "happiness": 1,
+            "intelligence": 0,
+            "connections": 2,
+            "cash": 1800,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 2,
+            "intelligence": 1,
+            "connections": 3,
+            "cash": 650,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age16_09_rich",
+      "title_th": "โครงการนักเรียนแลกเปลี่ยน AFS / ต่างประเทศ 1 ปีเต็ม!",
+      "trigger_age": 16,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "คุณสอบผ่านข้อเขียนโครงการนักเรียนแลกเปลี่ยนวัฒนธรรมไปเรียนต่อที่สหรัฐอเมริกา/ยุโรปเป็นเวลา 1 ปี โดยคุณพ่อคุณแม่พร้อมซัพพอร์ตค่าธรรมเนียมโครงการเต็มจำนวน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "บินไปใช้ชีวิตนักเรียนแลกเปลี่ยน ได้ทั้งภาษาอังกฤษไฟแลบและเพื่อนทั่วโลก!",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +7 , 😊 ความสุข +7 , ✨ ได้รับป้าย [คุ้นชินชาวต่างชาติ] & [ใบรับรองภาษาอังกฤษ]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_expat_exposure",
+            "flag_cert_english"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 7,
+            "intelligence": 8,
+            "connections": 7,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สละสิทธิ์แลกเปลี่ยน 1 ปี เพื่ออยู่ไทยเตรียมสอบเข้าคณะแพทย์/วิศวะฯ มหาวิทยาลัยท็อปโดยไม่ซ้ำชั้น",
+          "hint_th": "🧠 สมอง +8 , 🤝 เส้นสาย +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 8,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 5,
+            "intelligence": 8,
+            "connections": 6,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_01",
+      "title_th": "เขาชนไก่ในตำนาน! ฝึกภาคสนาม รด. ปี 3 / ค่ายอาสา ม.6",
+      "trigger_age": 17,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ปีสุดท้ายของวัยมัธยม! สำหรับคนที่เรียน รด. ต้องเดินทางไปเข้าค่ายฝึกภาคสนามที่เขาชนไก่ กินข้าวถาดหลุม นอนเต็นท์ฝุ่นตลบ และกระโดดหอสูง 34 ฟุต!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[เรียน รด.] ตะโกนรายงานตัวกระโดดหอสูง 34 ฟุต ผ่านภารกิจจบ รด. ปี 3 อย่างสมบูรณ์แบบ!",
+          "hint_th": "❤️ สุขภาพ +5 , 😊 ความสุข +5 , 🤝 เส้นสาย +5 , 🎖️ ได้รับป้าย [จบ รด. ปี 3 ไม่ต้องเกณฑ์ทหาร]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_rotc_completed"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 5,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สำหรับคนไม่ได้เรียน รด. ไปออกค่ายอาสาทาสีโรงเรียนและอ่านหนังสือเตรียมสอบเข้ามหาลัยกับเพื่อน",
+          "hint_th": "🧠 สมอง +4 , ✨ แต้มบุญ +5 , 😊 ความสุข +4 , 🤝 เส้นสาย +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 4,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 2,
+            "connections": 5,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_02",
+      "title_th": "สมรภูมิทำพอร์ตโฟลิโอ (TCAS รอบ 1 Portfolio) 10 หน้าตัดสินชีวิต!",
+      "trigger_age": 17,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "การรับตรงรอบที่ 1 ของมหาวิทยาลัยเปิดรับแฟ้มสะสมผลงาน (Portfolio) นักเรียน ม.6 ต่างอดหลับอดนอนออกแบบปกและรวบรวมเกียรติบัตรใส่เล่ม",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ออกแบบเล่มพอร์ตโฟลิโอด้วยตัวเองอย่างสวยงามและเรียบเรียงเรียงความเป้าหมายชีวิตสุดประทับใจ!",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +3 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 3,
+            "intelligence": 6,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[เด็กเนิร์ดคอม / หัวศิลป์] ทำพอร์ตขั้นเทพพร้อมแนบลิงก์ผลงานเว็บไซต์และวิดีโอจนกรรมการทึ่ง!",
+          "hint_th": "🧠 สมอง +8 , 😊 ความสุข +6 , 🤝 เส้นสาย +5",
+          "req_stats": {},
+          "req_flags": [
+            "tag_computer_nerd"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 8,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ไม่ยื่นรอบพอร์ต ขอมุ่งมั่นอ่านหนังสือสอบวัดคะแนนรอบ Admission รอบเดียวจบ!",
+          "hint_th": "🧠 สมอง +6 , ❤️ สุขภาพ +1",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 1,
+            "happiness": 2,
+            "intelligence": 6,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_03",
+      "title_th": "มหกรรมตะลุยโจทย์ TGAT / TPAT และ A-Level! คืนหอนก่อนสอบ",
+      "trigger_age": 17,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เหลือเวลาอีกไม่กี่เดือนก่อนสอบเข้ามหาวิทยาลัย! โต๊ะอ่านหนังสือของคุณเต็มไปด้วยหนังสือโจทย์ข้อสอบย้อนหลัง 10 ปี และโพสต์อิทแปะเต็มฝาผนัง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จับเวลาทำข้อสอบเก่าทุกวันและนอนพักผ่อนให้ครบ 7 ชั่วโมง สมองปลอดโปร่งสุดๆ!",
+          "hint_th": "🧠 สมอง +8 , ❤️ สุขภาพ +2 , 😊 ความสุข +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 2,
+            "intelligence": 8,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อัดเครื่องดื่มชูกำลังและกาแฟโต้รุ่งอ่านหนังสือยันตีสี่ทุกคืน!",
+          "hint_th": "🧠 สมอง +7 , ❤️ สุขภาพ -5 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -5,
+            "happiness": -3,
+            "intelligence": 7,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[หนอนหนังสือ] เปิดติวฟรีสรุปเก็งข้อสอบให้เพื่อนๆ ทั้งห้อง ได้ทั้งความรู้แม่นยำและได้บุญ!",
+          "hint_th": "🧠 สมอง +9 , 🤝 เส้นสาย +7 , ✨ แต้มบุญ +4 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [
+            "tag_bookworm"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 9,
+            "connections": 7,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_04",
+      "title_th": "บนบานศาลกล่าวสิ่งศักดิ์สิทธิ์ประจำโรงเรียน! วิ่งแก้บนรอบสนาม",
+      "trigger_age": 17,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "นอกจากอ่านหนังสือแล้ว ที่พึ่งทางใจก็สำคัญไม่แพ้กัน! แก๊งเพื่อนชวนคุณถือพวงมาลัยดาวเรืองและน้ำแดงไปไหว้ขอพรศาลประจำโรงเรียนและพระบรมรูปเพื่อขอให้สอบติดคณะในฝัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จุดธูปตั้งจิตอธิษฐานขอพรด้วยความเคารพ และสัญญากับตัวเองว่าจะทำข้อสอบให้ดีที่สุด",
+          "hint_th": "✨ แต้มบุญ +5 , 😊 ความสุข +4 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "บนบานว่าถ้าคะแนนออกมาดีจะวิ่งรอบสนามฟุตบอล 20 รอบพร้อมเพื่อน!",
+          "hint_th": "❤️ สุขภาพ +4 , 😊 ความสุข +4 , 🤝 เส้นสาย +4 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 4,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 4,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 2,
+            "happiness": 4,
+            "intelligence": 1,
+            "connections": 2,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_05",
+      "title_th": "ฝึกงานอาชีวะ ปวช.3 ออกลุยหน้างานจริง vs ติวโค้งสุดท้าย ม.6",
+      "trigger_age": 17,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ในวัย 17 ปี ไม่ว่าคุณจะเรียนสายสามัญหรือสายอาชีพ ต่างก็ต้องเจอกับบททดสอบสำคัญของการเป็นผู้ใหญ่ก่อนจบการศึกษา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[สายอาชีพ ปวช.] ออกฝึกงานที่สถานประกอบการจริง ได้ทั้งเบี้ยเลี้ยงและหัวหน้างานจองตัวร่วมงาน!",
+          "hint_th": "🪙 เบี้ยเลี้ยง +2,500 ฿ , 🤝 เส้นสาย +6 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [
+            "flag_track_vocational"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลุยทำโครงงานจบ (Final Project) และรายงานกลุ่มชิ้นสุดท้ายของวัยเรียนจนได้เกรด A",
+          "hint_th": "🧠 สมอง +6 , 🤝 เส้นสาย +4 , 😊 ความสุข +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 3,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "ขอคำแนะนำและวางแผนก่อนตัดสินใจรับภาระเพิ่มเติม",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 5,
+            "cash": 1250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_06",
+      "title_th": "งานปัจฉิมนิเทศ ม.6 / ปวช.3! ซุ้มลูกโป่ง พวงมาลัยเงิน และน้ำตาแห่งการจากลา",
+      "trigger_age": 17,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "วันสุดท้ายในชุดนักเรียน! มีพิธีลอดซุ้มลูกโป่ง ผูกข้อมือจากคุณครู รุ่นน้องเอาดอกไม้และของขวัญมามอบให้ และกอดคอร้องไห้ถ่ายรูปรวมรุ่นกับเพื่อนสนิท",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กอดขอบคุณคุณครูและเพื่อนสนิททุกคน สัญญาว่าจะไม่ลืมมิตรภาพวัยมัธยม!",
+          "hint_th": "😊 ความสุข +8 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 3,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขึ้นเวทีจับไมค์ร้องเพลงอำลาเพื่อนๆ ทั้งสายชั้นในงานคอนเสิร์ตวันปัจฉิม!",
+          "hint_th": "😊 ความสุข +9 , 🤝 เส้นสาย +9 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 9,
+            "connections": 9,
+            "merit": 2,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_07",
+      "title_th": "รักวัยเรียนเมื่อต้องแยกย้ายไปคนละมหาวิทยาลัย!",
+      "trigger_age": 17,
+      "category": "shared",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "หลังจบ ม.6 เส้นทางความฝันของแต่ละคนอาจไม่ได้อยู่ที่เดียวกัน คุณกับคนพิเศษนั่งคุยกันใต้ต้นไม้โรงเรียนเรื่องอนาคตหลังจากนี้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ให้คำมั่นสัญญาว่าจะคอยซัพพอร์ตกันและกัน ไม่ว่าจะเรียนที่ไหนก็จะติดต่อกันเสมอ",
+          "hint_th": "😊 ความสุข +6 , 🤝 เส้นสาย +5 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 5,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตกลงเป็นเพื่อนที่ดีต่อกัน เพื่อให้อิสระแต่ละคนได้ไปเติบโตในรั้วมหาวิทยาลัยอย่างเต็มที่",
+          "hint_th": "🧠 สมอง +4 , 😊 ความสุข +2 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 4,
+            "connections": 3,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_08_poor",
+      "title_th": "เตรียมเอกสารยื่นกู้ กยศ. และเก็บเงินก้อนแรกสู่วัย 18 ปี!",
+      "trigger_age": 17,
+      "category": "class_specific_poor",
+      "allowed_classes": [
+        "class_1",
+        "class_2"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "เพื่อให้สามารถเรียนต่อระดับอุดมศึกษาได้โดยไม่เป็นภาระพ่อแม่ คุณต้องเตรียมเอกสารรับรองรายได้ครัวเรือนและเก็บชั่วโมงจิตอาสา 36 ชั่วโมงเพื่อยื่นกู้ กยศ.",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทำกิจกรรมจิตอาสาครบ 36 ชั่วโมงและเตรียมเอกสารกู้ กยศ. พร้อมลุยเรียนต่อปริญญาตรี!",
+          "hint_th": "🧠 สมอง +5 , ✨ แต้มบุญ +6 , 😊 ความสุข +4 , 🎓 ได้รับป้าย [สิทธิ์กู้ กยศ.]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_student_loan_eligible"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 5,
+            "connections": 3,
+            "cash": 0,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ลุยทำงานเก็บเงินก้อนช่วงปิดเทอมใหญ่ก่อนอายุ 18 ได้เงินตั้งต้นสำหรับไปเช่าหอพัก/สร้างตัว!",
+          "hint_th": "🪙 เงินตั้งต้น +3,000 ฿ , ❤️ สุขภาพ -2 , 🤝 เส้นสาย +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_working_class_roots"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -2,
+            "happiness": 3,
+            "intelligence": 0,
+            "connections": 3,
+            "cash": 3000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 3,
+            "cash": 1500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_p3_age17_09_rich",
+      "title_th": "งาน Prom Night โรงเรียนนานาชาติ/เอกชน & ของขวัญฉลองเตรียมเข้ามหาลัย!",
+      "trigger_age": 17,
+      "category": "class_specific_rich",
+      "allowed_classes": [
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [],
+      "description_th": "ค่ำคืนงาน Prom Night สุดหรูที่โรงแรม 5 ดาว นักเรียนทุกคนสวมชุดราตรีและทักซิโด้มาร่วมงานเลี้ยงอำลา พร้อมของขวัญชิ้นใหญ่จากคุณพ่อคุณแม่",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เฉิดฉายในงาน Prom จนได้รับโหวตเป็น Prom King / Prom Queen ประจำรุ่น!",
+          "hint_th": "😊 ความสุข +8 , 🤝 เส้นสาย +9 , ✨ หน้าตา +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 9,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 5
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "คุณพ่อมอบโน้ตบุ๊กทำงานรุ่นท็อปและเงินขวัญถุงสำหรับเตรียมตัวเข้ามหาวิทยาลัย!",
+          "hint_th": "🪙 เงินขวัญถุง +10,000 ฿ , 🧠 สมอง +6 , 💻 ได้รับป้าย [มีคอมพิวเตอร์/โน้ตบุ๊ก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_pc_or_laptop"
+          ],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 6,
+            "connections": 4,
+            "cash": 10000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "แบ่งเวลาให้ทั้งความก้าวหน้าและการพักผ่อนอย่างสมดุล",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 3,
+            "connections": 7,
+            "cash": 5000,
+            "appearance": 3
+          }
+        }
+      ]
+    }
+  ]
+}

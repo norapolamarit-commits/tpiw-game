@@ -1,0 +1,14 @@
+{
+  "name": "tpiw",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.js",
+    "test": "node --test",
+    "validate:data": "node scripts/validate-data.js",
+    "soak": "node scripts/soak.js"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  }
+}

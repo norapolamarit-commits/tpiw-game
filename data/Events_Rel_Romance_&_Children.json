@@ -1,0 +1,3401 @@
+{
+  "version": "1.0.0",
+  "database_name": "Events_Rel_Romance_&_Children",
+  "category_group": "relationships_romance_and_children",
+  "total_events": 45,
+  "quota_breakdown": {
+    "total": 45,
+    "romance_flirting_and_dating": 12,
+    "romance_married_and_spouse_drama": 13,
+    "children_and_parenting_4_stages": 12,
+    "partner_specific_archetype_events": 8
+  },
+  "events": [
+    {
+      "event_id": "evt_rom_crush_01",
+      "title_th": "ทักแชทหยอดคำหวานคนคุยตอนดึก! 'ฝันดีนะ' หรือส่งมีมแมวตลก",
+      "min_age": 14,
+      "max_age": 45,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_married_registered"
+      ],
+      "description_th": "เวลาห้าทุ่มครึ่ง ขณะกำลังไถหน้าจอมือถือ คุณเห็นคนคุยกำลังออนไลน์อยู่พอดีในแอปแชท หัวใจเรียกร้องให้ส่งข้อความทักทายไปก่อนนอน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ส่งมีมแมวน่ารักพร้อมหยอดมุกแซว คนคุยขำกิ๊กและชวนคุยโทรศัพท์ยาวถึงตีหนึ่ง!",
+          "hint_th": "❤️ ความสัมพันธ์คนคุย +15 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ยิ้มสยามมหาเสน่ห์] ส่งคลิปเสียงร้องเพลงคลอเบาๆ บอกฝันดี คนคุยใจละลาย!",
+          "hint_th": "❤️ ความสัมพันธ์คนคุย +22 , 😊 ความสุข +8 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [
+            "trait_natural_charmer"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พิมพ์ถามว่า 'ทำไรอยู่ นอนยัง' ซ้ำๆ 5 ข้อความรัวๆ จนคนคุยอึดอัดกดดองแชท!",
+          "hint_th": "❤️ ความสัมพันธ์คนคุย -10 , 😊 ความสุข -4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_02",
+      "title_th": "เดทแรกที่คาเฟ่มินิมอล / ปาลูกโป่งงานวัดประจำปี!",
+      "min_age": 15,
+      "max_age": 45,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_married_registered"
+      ],
+      "description_th": "คนคุยตอบตกลงไปเที่ยวเดทแรกกับคุณในวันหยุดสุดสัปดาห์ มีทั้งบรรยากาศแสงสวยถ่ายรูปในคาเฟ่และเสียงดนตรีรื่นเริงในงานวัด",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พาไปถ่ายรูปคาเฟ่มุมสวยและอาสาเป็นตากล้องส่วนตัวให้ คนคุยประทับใจลงสตอรี่แท็กหาคุณ! (-600฿)",
+          "hint_th": "🪙 ค่าเดท -600 ฿ , ❤️ ความสัมพันธ์คนคุย +18 , 😊 ความสุข +8 , ✨ หน้าตา +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -600,
+            "merit": 0,
+            "appearance": 2
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พาเดินเล่นงานวัด ปาลูกโป่งชิงตุ๊กตาหมีตัวใหญ่มาให้คนคุยได้สำเร็จ! (-300฿)",
+          "hint_th": "🪙 ค่าเล่นเกม -300 ฿ , ❤️ ความสัมพันธ์คนคุย +20 , 😊 ความสุข +9",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -300,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 19,
+          "stat_effects": {
+            "happiness": 9,
+            "cash": -450,
+            "appearance": 1
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_03",
+      "title_th": "สารภาพรักขอเป็นแฟนอย่างเป็นทางการ! ข้ามเส้นจาก 'คนคุย' สู่ 'คนรู้ใจ'",
+      "min_age": 15,
+      "max_age": 50,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [],
+      "forbidden_flags": [
+        "flag_in_relationship",
+        "flag_married_registered"
+      ],
+      "description_th": "หลังจากคุยกันมาหลายเดือน ความรู้สึกชัดเจนจนล้นหัวใจ บรรยากาศริมแม่น้ำยามเย็นเงียบสงบเหมาะแก่การเอ่ยปากขอเป็นแฟน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สบตาแล้วพูดความในใจอย่างจริงใจ คนคุยพยักหน้าตกลงเป็นแฟนพร้อมรอยยิ้มเขินอาย!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +25 , 😊 ความสุข +15 , 💖 ได้รับป้าย [มีแฟน/คนรัก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_in_relationship"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เตรียมช่อดอกไม้และของขวัญทำมือมาเซอร์ไพรส์ โรแมนติกจนคนรอบข้างปรบมือยินดี! (-800฿)",
+          "hint_th": "🪙 ค่าดอกไม้ -800 ฿ , ❤️ ความสัมพันธ์แฟน +30 , 😊 ความสุข +18 , 💖 ได้รับป้าย [มีแฟน/คนรัก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_in_relationship"
+          ],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 18,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 28,
+          "stat_effects": {
+            "happiness": 17,
+            "cash": -400
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_04",
+      "title_th": "ศึกแฟนเก่าทักมาส่งข้อความ 'คิดถึงนะ' / ขอคืนดี!",
+      "min_age": 18,
+      "max_age": 55,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ดึกดื่นวันหนึ่ง แฟนเก่าที่เคยเลิกรากันไปส่งข้อความทักมาขอคุยและถามไถ่ว่ายังจำวันเก่าๆ ได้ไหม ในขณะที่แฟนคนปัจจุบันนั่งอยู่ข้างๆ คุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เปิดให้อ่านดูด้วยความบริสุทธิ์ใจและบล็อกเบอร์แฟนเก่าทันที แฟนรักและเชื่อใจคุณเต็มร้อย!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +20 , 🧠 สมอง +4 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบลบแชทเงียบๆ แต่แฟนจับพิรุธได้จนเกิดศึกหึงหวงบ้านแตก!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน -25 , 😊 ความสุข -8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -2,
+          "stat_effects": {
+            "happiness": -1,
+            "intelligence": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_05",
+      "title_th": "วันเกิดแฟน! เลือกระหว่างของขวัญแบรนด์เนม vs ทริปเซอร์ไพรส์สุดโรแมนติก",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "วันสำคัญของคนข้างกายมาถึงแล้ว! คุณอยากมอบความทรงจำที่น่าประทับใจที่สุดให้คนรักในวันคล้ายวันเกิดปีนี้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อกระเป๋า/นาฬิการุ่นที่แฟนบ่นอยากได้มาตลอด แฟนกรี๊ดลั่นบ้านกอดคุณแน่น! (-8,000฿)",
+          "hint_th": "🪙 ค่าของขวัญ -8,000 ฿ , ❤️ ความสัมพันธ์แฟน +25 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -8000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทำเค้กวันเกิดและอัลบั้มภาพความทรงจำคู่ด้วยตัวเอง อบอุ่นประทับใจไม่รู้ลืม! (-1,000฿)",
+          "hint_th": "🪙 ค่าเค้ก/ของขวัญ -1,000 ฿ , ❤️ ความสัมพันธ์แฟน +20 , 😊 ความสุข +9 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 10,
+            "cash": -4500,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_06",
+      "title_th": "แฟนป่วยเป็นไข้หวัดใหญ่! ดูแลเช็ดตัวและต้มข้าวต้มอุ่นๆ ป้อน",
+      "min_age": 16,
+      "max_age": 60,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คนรักของคุณนอนซมตัวร้อนจี๋อยู่ที่ห้องคนเดียว ลุกขึ้นมาทำกับข้าวไม่ไหว คุณรีบเคลียร์คิวงานเพื่อมาดูแลคนรัก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ต้มข้าวต้มปลา เช็ดตัวลดไข้ และคอยป้อนยาจนอาการดีขึ้น แฟนซึ้งใจจนบอกว่าโชคดีที่มีคุณ!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +25 , ✨ แต้มบุญ +8 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 8,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สั่งเดลิเวอรียาและโจ๊กชื่อดังส่งไปให้พร้อมโอนเงินให้ไปหาหมอ (-800฿)",
+          "hint_th": "🪙 ค่ายาและอาหาร -800 ฿ , ❤️ ความสัมพันธ์แฟน +12 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -800,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 19,
+          "stat_effects": {
+            "happiness": 6,
+            "cash": -400,
+            "merit": 4
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_07",
+      "title_th": "แฟนชวนจัดทริปเที่ยวต่างจังหวัดสองต่อสอง (ขึ้นเหนือรับลมหนาว / ทะเลใต้ดำน้ำ)",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "วันหยุดยาว 3 วัน แฟนชวนจัดกระเป๋าขับรถไปพักผ่อน กอดรับลมหนาวบนดอย หรือนั่งมองพระอาทิตย์ตกริมทะเลด้วยกัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จองรีสอร์ตบรรยากาศโรแมนติก ดื่มด่ำเวลาคุณภาพสองต่อสอง ฟินระดับ 10 ดาว! (-6,000฿)",
+          "hint_th": "🪙 ค่าทริปคู่ -6,000 ฿ , ❤️ ความสัมพันธ์แฟน +25 , 😊 ความสุข +12 , ❤️ สุขภาพ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 4,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ทริปแบกเป้กางเต็นท์นอนดูดาว สัมผัสธรรมชาติแบบประหยัดงบแต่โรแมนติกสุดๆ (-2,000฿)",
+          "hint_th": "🪙 ค่าทริปแคมป์ -2,000 ฿ , ❤️ ความสัมพันธ์แฟน +20 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 2,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 11,
+            "cash": -4000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_08",
+      "title_th": "ความสัมพันธ์แตะระดับ 5 ดวง! สัญญาณความพร้อมสู่การแต่งงาน (ขอแต่งงาน)",
+      "min_age": 20,
+      "max_age": 65,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship",
+        "flag_sui_juris_20"
+      ],
+      "forbidden_flags": [
+        "flag_married_registered"
+      ],
+      "description_th": "เมื่อความรักบ่มเพาะจนหัวใจเต็ม 5 ดวง แฟนของคุณเริ่มพูดเปรยๆ ถึงการสวมชุดแต่งงานและอยากใช้ชีวิตร่วมกันไปตลอดกาล!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เริ่มเก็บเงินค่าสินสอดและแวะดูแหวนเพชรหมั้นในแท็บร้านค้า เตรียมคุกเข่าขอแต่งงาน!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +20 , 💖 ได้รับป้าย [หัวใจคนรักเต็ม 5 ดวง]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_partner_hearts_5"
+          ],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอเวลาสร้างเนื้อสร้างตัวให้มั่นคงอีกนิด แต่สัญญาว่าจะไม่ปล่อยให้รอนานแน่นอน",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +10 , 🧠 สมอง +4 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_09",
+      "title_th": "ศึกแม่ผัว vs ลูกสะใภ้ / พ่อตาหวงลูก! ผู้ใหญ่ฝั่งแฟนตั้งแง่เรื่องฐานะของคุณ",
+      "min_age": 20,
+      "max_age": 55,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "เมื่อไปพบครอบครัวของแฟน ผู้ใหญ่ฝั่งแฟนแอบแสดงท่าทีไม่ปลื้มเรื่องฐานะหรืออาชีพการงานของคุณ และเปรียบเทียบกับแฟนเก่าของเขา",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "พิสูจน์ตัวเองด้วยความขยัน กิริยานอบน้อม และดูแลแฟนอย่างดีที่สุด จนผู้ใหญ่ใจอ่อนยอมรับ!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +20 , 🤝 เส้นสาย +6 , 🧠 สมอง +4 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 4,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จับมือแฟนให้กำลังใจกันและกัน ยืนยันว่าจะสู้สร้างอนาคตไปด้วยกันไม่ว่าใครจะพูดยังไง",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +22 , 😊 ความสุข +8 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 21,
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 2,
+            "connections": 3,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_10",
+      "title_th": "ช็อปปิ้งซื้อเฟอร์นิเจอร์แต่งห้องคู่รัก! ความเห็นต่างเรื่องโทนสีและสไตล์",
+      "min_age": 20,
+      "max_age": 60,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คุณกับแฟนไปเดินเลือกซื้อโซฟาและเตียงนอนที่ห้างเฟอร์นิเจอร์ชื่อดัง ฝ่ายหนึ่งชอบแนวมินิมอลไม้ อีกฝ่ายชอบแนวโมเดิร์นหรูหรา!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ประนีประนอมเลือกชิ้นที่ลงตัวและตามใจแฟนเรื่องสีผ้าม่าน แฟนยิ้มแฉ่งกอดแขนคุณตลอดทาง! (-6,000฿)",
+          "hint_th": "🪙 ค่าเฟอร์นิเจอร์ -6,000 ฿ , ❤️ ความสัมพันธ์แฟน +18 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เถียงกันกลางแผนกเฟอร์นิเจอร์จนงอนตุ๊บป่อง ไม่ยอมพูดกันตลอดทางกลับบ้าน!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน -12 , 😊 ความสุข -5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 3,
+          "stat_effects": {
+            "happiness": 2,
+            "cash": -3000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_11",
+      "title_th": "แฟนลืมวันครบรอบสำคัญ / คุณทำงานหนักจนลืมวันครบรอบ!",
+      "min_age": 18,
+      "max_age": 60,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "งานที่รัดตัวทำให้วันครบรอบคบกันถูกมองข้ามไป อีกฝ่ายนั่งหน้าบึ้งตึงอยู่ที่โต๊ะอาหารรอคำอธิบาย!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยอมรับผิดและรีบโทรสั่งเค้กด่วนพร้อมจัดดินเนอร์ง้อขอโทษอย่างจริงใจ (-2,500฿)",
+          "hint_th": "🪙 ค่าง้อ -2,500 ฿ , ❤️ ความสัมพันธ์แฟน +15 , 😊 ความสุข +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "อ้างเหตุผลว่าทำงานเหนื่อยเพื่อสร้างอนาคต จนกลายเป็นทะเลาะลุกลามใหญ่โต!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน -20 , 😊 ความสุข -7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -2,
+          "stat_effects": {
+            "happiness": -1,
+            "cash": -1250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_crush_12",
+      "title_th": "แฟนชวนไปทำบุญปล่อยนกปล่อยปลา & ผูกดวงชะตาคู่แท้ที่วัดดัง!",
+      "min_age": 18,
+      "max_age": 70,
+      "category": "romance_flirting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "วันพระใหญ่ แฟนชวนไปไหว้พระขอพรให้ความรักยืนยาว หลวงพ่อทักว่าดวงชะตาสมพงศ์เกื้อหนุนกันดีมาก ให้หมั่นทำบุญร่วมชาติตักบาตรร่วมขัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ร่วมถวายสังฆทานและปล่อยปลา 9 ตัวคู่กัน อิ่มบุญอิ่มใจและรักกันยิ่งขึ้น! (-600฿)",
+          "hint_th": "🪙 ทำบุญคู่ -600 ฿ , ✨ แต้มบุญ +15 , ❤️ ความสัมพันธ์แฟน +20 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -600,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนไปกินไอศกรีมและเดินเล่นตลาดน้ำหลังไหว้พระเสร็จอย่างเพลิดเพลิน (-400฿)",
+          "hint_th": "🪙 ค่าขนม -400 ฿ , ❤️ ความสัมพันธ์แฟน +15 , 😊 ความสุข +7",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -400,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "happiness": 8,
+            "cash": -500,
+            "merit": 8
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_01",
+      "title_th": "คืนแรกในเรือนหอหลังจดทะเบียนสมรส! สู่ชีวิตครอบครัวอย่างเป็นทางการ",
+      "min_age": 20,
+      "max_age": 70,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "หลังจบพิธีวิวาห์และจดทะเบียนสมรสตามกฎหมาย คุณและคู่สมรสเริ่มต้นระบบกระเป๋าเงินครอบครัวร่วมกัน วันแรกของการเป็นสามี-ภรรยา...",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กอดให้กำลังใจกัน ให้คำมั่นสัญญาว่าจะร่วมทุกข์ร่วมสุขและสร้างครอบครัวที่มั่นคง!",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส +25 , 😊 ความสุข +15 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยกันนับซองงานแต่งและวางแผนนำเงินไปโปะหนี้/ฝากธนาคาร (+30,000฿)",
+          "hint_th": "🪙 ซองงานแต่งสุทธิ +30,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "happiness": 14,
+            "intelligence": 3,
+            "cash": 15000,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_02_saver",
+      "title_th": "เซอร์ไพรส์กระปุกเงินเก็บลับของคู่ชีวิตสายประหยัด!",
+      "min_age": 21,
+      "max_age": 75,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คู่สมรสของคุณแอบหยอดเงินทอนค่ากับข้าวและค่าน้ำค่าไฟที่ประหยัดได้ตลอดทั้งปี นำเงินเก็บก้อนนี้มาเปิดซองมอบให้คุณช่วยเป็นทุนสำรอง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "หอมแก้มขอบคุณคู่ชีวิตสายประหยัด และนำเงินไปเข้าบัญชีออมทรัพย์ร่วมกัน! (+30,000฿)",
+          "hint_th": "🪙 เงินเก็บลับ +30,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +20 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งเงินก้อนนี้ไปพาคู่สมรสไปเที่ยวพักผ่อนและกินมื้อพิเศษให้รางวัลความเหนื่อยยาก!",
+          "hint_th": "🪙 ใช้เที่ยวร่วมกัน +15,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +25 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 11,
+            "cash": 22500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_03_shopaholic",
+      "title_th": "บิลบัตรเครดิตช็อกโลก! คู่สมรสสายเปย์แอบรูดซื้อแบรนด์เนมเกินงบ 60,000 บาท",
+      "min_age": 22,
+      "max_age": 70,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "จดหมายแจ้งยอดหนี้บัตรเครดิตมาถึงบ้าน! คู่สมรสของคุณแอบรูดซื้อกระเป๋าแบรนด์เนมและของแต่งรถเกินวงเงินไป 60,000 บาท และมาทำตาหวานขอให้คุณช่วยโปะบิลนี้!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ยอมควักเงินเก็บช่วยจ่ายเพื่อความสบายใจ แต่ตั้งกติกายึดบัตรเครดิตไว้ (-60,000฿)",
+          "hint_th": "🪙 ช่วยจ่ายบิล -60,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +15 , ✨ หน้าตา +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 2,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -60000,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ยื่นคำขาดไม่ช่วยจ่าย! ให้คู่สมรสขายกระเป๋าต่อมือสองและทำงานพิเศษมาเคลียร์หนี้เอง",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส -25 , 😊 ความสุข -8 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -8,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -5,
+          "stat_effects": {
+            "happiness": -3,
+            "intelligence": 2,
+            "cash": -30000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_04_gamble",
+      "title_th": "คู่สมรสชวนลงขันโปรเจกต์ลับ! แอบเอาเงินเก็บไปลงวงแชร์และเหรียญคริปโต",
+      "min_age": 22,
+      "max_age": 65,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คู่สมรสของคุณตื่นเต้นตาโต บอกว่ามีวงแชร์ดอกเบี้ยสูงและเหรียญคริปโตต้นน้ำที่เพื่อนแนะนำมา เลยแอบนำเงินเก็บครอบครัว 80,000 บาทไปลงทุนเรียบร้อยแล้ว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีความรู้ทางการเงิน] เข้าไปช่วยวิเคราะห์กราฟ สั่งเทขายทำกำไรด่วนก่อนฟองสบู่แตก ฟันกำไรเละ!",
+          "hint_th": "🪙 กำไรคริปโต +120,000 ฿ , 🧠 สมอง +8 , ❤️ ความสัมพันธ์คู่สมรส +20 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [
+            "flag_financial_literacy"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 8,
+            "connections": 0,
+            "cash": 120000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปล่อยตามดวง... ปรากฏว่าแชร์ล้มเหรียญดิ่งเหว สูญเงินเก็บเกลี้ยง! (-80,000฿)",
+          "hint_th": "🪙 สูญเงินเก็บ -80,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส -20 , 😊 ความสุข -15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -20,
+          "stat_effects": {
+            "health": -3,
+            "happiness": -15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -80000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "health": -1,
+            "happiness": -1,
+            "intelligence": 4,
+            "cash": 20000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_05_inlaw",
+      "title_th": "ญาติฝั่งแฟนโทรมาขอยืมเงินด่วน 30,000 บาท! คู่สมรสทำหน้าลำบากใจ",
+      "min_age": 22,
+      "max_age": 70,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ญาติพี่น้องของคู่สมรสมีปัญหาเรื่องหมุนเงินไม่ทัน โทรมาขอความช่วยเหลือด่วน โดยคู่สมรสของคุณทำหน้าเกรงใจและอ้อนวอนขอให้คุณช่วยทางบ้านเขาหน่อย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "โอนเงินช่วยไปถือว่าทำบุญซัพพอร์ตครอบครัวแฟน คู่สมรสรักและซาบซึ้งใจคุณมาก! (-30,000฿)",
+          "hint_th": "🪙 ช่วยครอบครัวแฟน -30,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +25 , ✨ แต้มบุญ +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -30000,
+            "merit": 12,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ปฏิเสธเสียงแข็งว่าบ้านเราก็มีภาระหนี้สิน ทำให้คู่สมรสหน้าเสียและมีปากเสียงกัน!",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส -20 , 😊 ความสุข -6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 3,
+          "stat_effects": {
+            "cash": -15000,
+            "merit": 6
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_06_workaholic",
+      "title_th": "ช่องว่างระหว่างเราเพราะงานยุ่ง! คู่สมรสบ่นว่าไม่มีเวลาให้กันเหมือนเดิม",
+      "min_age": 25,
+      "max_age": 65,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "การโหมงานหนักและกลับบ้านดึกทุกวัน ทำให้ความสัมพันธ์เริ่มเย็นชา มีปากเสียงเรื่องการไม่ใส่ใจและเริ่มพูดเรื่องการแยกกันอยู่!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดทริปดินเนอร์หรูง้อ ปิดมือถือ และนั่งเปิดใจปรับความเข้าใจกันอย่างอบอุ่น (-12,000฿)",
+          "hint_th": "🪙 ค่าดินเนอร์ง้อ -12,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +25 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ต่างคนต่างอยู่ ไม่สนใจง้อ เพราะมองว่าทำงานหาเงินเข้าบ้านก็เหนื่อยพอแล้ว!",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส -30 , 😊 ความสุข -10 (เสี่ยงต่อการหย่าร้าง!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -2,
+          "stat_effects": {
+            "happiness": -1,
+            "cash": -6000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_07_support",
+      "title_th": "คู่ชีวิตช่วยซัพพอร์ตคลี่คลายปัญหาการงาน! บะหมี่ร้อนๆ และการรับฟังยามเหนื่อยล้า",
+      "min_age": 22,
+      "max_age": 75,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ในวันที่คุณเจอมรสุมงานหนักและถูกเจ้านายด่ากลับมา คู่สมรสของคุณต้มบะหมี่ร้อนๆ วางบนโต๊ะ นั่งบีบนวดไหล่และคอยรับฟังทุกปัญหาอย่างเข้าใจ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กอดคู่ชีวิตไว้แน่น รู้สึกว่าการมีคู่แท้อยู่เคียงข้างคือโชคที่ดีที่สุดในชีวิต!",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส +25 , ❤️ สุขภาพ +5 , 😊 ความสุข +12 , ✨ ล้างสถานะ [ซึมเศร้า]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [
+            "flag_depression"
+          ],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 5,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้คู่สมรสช่วยใช้คอนเนกชันส่วนตัวประสานงานแก้ไขปัญหา จนงานผ่านพ้นไปด้วยดี!",
+          "hint_th": "🪙 ได้รับงานเพิ่ม +15,000 ฿ , 🤝 เส้นสาย +6 , ❤️ ความสัมพันธ์คู่สมรส +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 10,
+            "connections": 3,
+            "cash": 7500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_08",
+      "title_th": "แฟนชวนวางแผนมีบุตรคนแรก! 'เราพร้อมจะมีเจ้าตัวเล็กหรือยังคะ/ครับ?'",
+      "min_age": 22,
+      "max_age": 45,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [
+        "flag_has_child"
+      ],
+      "description_th": "เมื่อสร้างรากฐานครอบครัวได้มั่นคง คู่สมรสของคุณเริ่มเปิดประเด็นเรื่องการฝากครรภ์และต้อนรับทายาทตัวน้อยมาเป็นโซ่ทองคล้องใจ",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ตกลงพร้อมมีลูก! ไปตรวจสุขภาพก่อนมีบุตรและเปิดระบบเลี้ยงลูก 4 ช่วงวัย! (-15,000฿)",
+          "hint_th": "🪙 ค่าฝากครรภ์ -15,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +30 , 😊 ความสุข +15 , 👶 ได้รับป้าย [มีบุตร/ลูก]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_has_child"
+          ],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": -2,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -15000,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ขอเวลาสร้างเนื้อสร้างตัวและเที่ยวด้วยกันอีก 2 ปี ค่อยวางแผนมีลูก",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส +5 , 🧠 สมอง +3 , 😊 ความสุข +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 5,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 4,
+            "intelligence": 3,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": -1,
+            "happiness": 10,
+            "intelligence": 2,
+            "cash": -7500,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_09",
+      "title_th": "คู่สมรสตรวจพบก้อนเนื้อ/ป่วยกะทันหัน! ต้องลางานมาเฝ้าไข้ที่โรงพยาบาล",
+      "min_age": 25,
+      "max_age": 75,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "บททดสอบชีวิตคู่ในยามเจ็บไข้ได้ป่วย คู่สมรสของคุณต้องเข้ารับการผ่าตัดรักษาตัว คุณต้องจัดสรรเวลาและค่ารักษาพยาบาลอย่างเร่งด่วน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[มีประกัน รพ.เอกชน / บัตรทอง] ใช้สิทธิ์เบิกจ่ายค่ารักษาครบถ้วน และเฝ้าไข้ดูแลอย่างใกล้ชิดจนหายดี!",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส +30 , ✨ แต้มบุญ +15 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [
+            "flag_welfare_card"
+          ],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเงินเก็บก้อนใหญ่จ่ายค่าผ่าตัดให้คู่สมรสอย่างดีที่สุด รอดพ้นปลอดภัย! (-25,000฿)",
+          "hint_th": "🪙 ค่ารักษา -25,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +30 , ✨ แต้มบุญ +15 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -25000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "happiness": 8,
+            "cash": -12500,
+            "merit": 15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_10",
+      "title_th": "ทะเลาะเรื่องแบ่งหน้าที่ทำงานบ้าน! 'ใครจะล้างจาน ซักผ้า และทิ้งขยะ?'",
+      "min_age": 21,
+      "max_age": 65,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ปัญหาจุกจิกแต่สะสมความตึงเครียดของชีวิตคู่ เมื่อต่างคนต่างทำงานนอกบ้านเหนื่อยพอกัน แต่กองผ้าซักและจานชามในซิงก์ยังไม่มีใครจัดการ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ซื้อเครื่องล้างจานอัตโนมัติและหุ่นยนต์ดูดฝุ่นมาช่วยทุ่นแรง จบปัญหาบ้านแตกทันที! (-15,000฿)",
+          "hint_th": "🪙 ค่าเครื่องใช้ไฟฟ้า -15,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +20 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แบ่งหน้าที่กันชัดเจน คนหนึ่งทำกับข้าว อีกคนล้างจาน ช่วยกันทำอย่างมีความสุข",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส +15 , 😊 ความสุข +6 , 🧠 สมอง +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 2,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "happiness": 8,
+            "intelligence": 1,
+            "cash": -7500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_11",
+      "title_th": "ครบรอบแต่งงาน 10 ปี (Tin Wedding)! ทบทวนคำสาบานและของขวัญครบรอบ",
+      "min_age": 30,
+      "max_age": 80,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "เวลาผ่านไป 10 ปีนับจากวันวิวาห์ คุณและคู่สมรสผ่านทั้งวิกฤตเศรษฐกิจ น้ำตา และเสียงหัวเราะมาด้วยกันจนกลายเป็นคู่แท้",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดทริปฮันนีมูนรอบสองและมอบเครื่องประดับชิ้นใหม่ให้คู่สมรส สวีทหวานเหมือนวันแรก! (-10,000฿)",
+          "hint_th": "🪙 ค่าทริปคู่ -10,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +30 , 😊 ความสุข +15 , ✨ หน้าตา +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -10000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "จูงมือกันไปทำบุญถวายภัตตาหารพระสงฆ์และปล่อยปลา 99 ตัว สะสมบารมีคู่บุญบารมี (-1,500฿)",
+          "hint_th": "🪙 ทำบุญคู่ -1,500 ฿ , ✨ แต้มบุญ +20 , ❤️ ความสัมพันธ์คู่สมรส +20 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1500,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "happiness": 13,
+            "cash": -5750,
+            "merit": 10,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_12",
+      "title_th": "จุดแตกหักชีวิตคู่! คุยเรื่องหย่าขาดและแบ่งสินสมรส 50% ตามกฎหมาย",
+      "min_age": 22,
+      "max_age": 80,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "เมื่อความไม่เข้าใจสะสมจนถึงขีดสุดและไม่สามารถประนีประนอมได้อีกต่อไป ทนายความร่างหนังสือข้อตกลงหย่าขาดและแบ่งเงินสด/ทรัพย์สินคนละครึ่ง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จับมือปรับความเข้าใจครั้งสุดท้าย เข้ารับการปรึกษาปัญหาครอบครัว รักษาชีวิตคู่ไว้ได้สำเร็จ!",
+          "hint_th": "❤️ ความสัมพันธ์คู่สมรส +20 , 😊 ความสุข +8 , 🧠 สมอง +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ตัดสินใจหย่าขาดตามกฎหมาย แยกย้ายกันไปเติบโตและแบ่งเงินสดครึ่งหนึ่ง (-50% Cash)",
+          "hint_th": "💔 ปลดล็อกป้าย [หย่าร้าง] , 😊 ความสุข -15 , 🪙 เสียค่าธรรมเนียมหย่า -5,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_divorced"
+          ],
+          "removes_flags": [
+            "flag_married_registered",
+            "flag_in_relationship"
+          ],
+          "relationship_change": -100,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -40,
+          "stat_effects": {
+            "happiness": -3,
+            "intelligence": 2,
+            "cash": -2500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_rom_marr_13",
+      "title_th": "คู่ชีวิตร่วมสร้างธุรกิจจนรวย! เปิดบริษัทร่วมกันและรับเงินปันผลครอบครัว",
+      "min_age": 25,
+      "max_age": 75,
+      "category": "romance_married",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_married_registered"
+      ],
+      "forbidden_flags": [],
+      "description_th": "พลังของการร่วมแรงร่วมใจของสามีภรรยา! คุณและคู่สมรสช่วยกันบริหารกิจการจนเติบโต รับเงินปันผลครอบครัวก้อนใหญ่เข้าบัญชีกลาง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "รับเงินปันผลธุรกิจครอบครัว และแบ่งเงินเข้าพอร์ตเกษียณของทั้งสองคนอย่างเท่าเทียม! (+50,000฿)",
+          "hint_th": "🪙 ปันผลครอบครัว +50,000 ฿ , ❤️ ความสัมพันธ์คู่สมรส +25 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_family_business"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 50000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "นำเงินกำไรไปซื้อที่ดิน/ทองคำแท่งเยาวราชเก็บไว้เป็นมรดกให้ลูกหลาน",
+          "hint_th": "🪙 ทองคำมรดก +35,000 ฿ , 🧠 สมอง +5 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 23,
+          "stat_effects": {
+            "happiness": 11,
+            "intelligence": 3,
+            "cash": 42500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_infant_01",
+      "title_th": "ลูกวัยทารกร้องไห้โคลิคโยเยทั้งคืน! คุณพ่อคุณแม่มือใหม่ผลัดกันอุ้มกล่อม",
+      "min_age": 20,
+      "max_age": 50,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ลูกน้อยวัยแบเบาะร้องไห้จ้ากลางดึก คุณและคู่สมรสที่เพิ่งหลับไปต้องสะดุ้งตื่นขึ้นมาช่วยกันชงนม เปลี่ยนผ้าอ้อม และอุ้มกล่อมเดินวนรอบห้อง",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ผลัดกันอุ้มกล่อมตบก้นเบาๆ จนลูกหลับปุ๋ยบนอก เหนื่อยแต่สุขใจสุดๆ!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก +15 , ❤️ สุขภาพ -2 , 😊 ความสุข +6 , ✨ แต้มบุญ +4",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": -2,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 4,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[มีพี่เลี้ยง/คนช่วยเลี้ยง] ให้พี่เลี้ยงช่วยดูแล ทำให้คุณได้พักผ่อนเต็มอิ่ม",
+          "hint_th": "❤️ สุขภาพ +3 , 😊 ความสุข +5 , 🪙 ค่าจ้างพี่เลี้ยง -2,000 ฿",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 10,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -2000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 13,
+          "stat_effects": {
+            "health": 1,
+            "happiness": 6,
+            "cash": -1000,
+            "merit": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_infant_02",
+      "title_th": "ลูกน้อยเรียก 'พ่อจ๋า / แม่จ๋า' และตั้งไข่เดินก้าวแรกเข้ามาหาคุณ!",
+      "min_age": 21,
+      "max_age": 50,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "วินาทีที่คนเป็นพ่อแม่รอคอย! เจ้าตัวเล็กเกาะโซฟายืนขึ้นแล้วก้าวเตาะแตะพุ่งเข้าสู่อ้อมกอดของคุณพร้อมส่งเสียงเรียกชื่อคุณชัดแจ๋ว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อ้าแขนรับลูกเข้ามากอดแน่น หอมแก้มฟอดใหญ่ด้วยน้ำตาแห่งความปลื้มปีติ!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก +20 , 😊 ความสุข +15 , ✨ แต้มบุญ +5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 5,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "หยิบมือถือขึ้นมาอัดคลิปวิดีโอส่งเข้าไลน์ครอบครัว ปู่ย่าตายายแห่กดหัวใจรัวๆ!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก +15 , 🤝 เส้นสาย +6 , 😊 ความสุข +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "happiness": 13,
+            "connections": 3,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_infant_03",
+      "title_th": "เลือกโรงเรียนอนุบาลให้ลูก! ศูนย์เด็กเล็ก อบต. vs อนุบาลเอกชน vs นานาชาติ",
+      "min_age": 22,
+      "max_age": 50,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ถึงเวลาส่งลูกเข้าสู่ระบบการศึกษาปฐมวัยตามนโยบายช่วงที่ 1 คุณต้องตัดสินใจเลือกสภาพแวดล้อมแรกให้ลูกน้อย",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เลือกโรงเรียนอนุบาลเอกชนสองภาษา เสริมพัฒนาการสมองและภาษาอังกฤษ (-30,000฿)",
+          "hint_th": "🪙 ค่าเทอมอนุบาล -30,000 ฿ , 🧠 ลูกได้แต้มความสำเร็จ +3 , ❤️ ความสัมพันธ์ลูก +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -30000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เลือกศูนย์พัฒนาเด็กเล็กใกล้บ้าน เลี้ยงดูตามอัตภาพใกล้ชิดครอบครัว (-6,000฿)",
+          "hint_th": "🪙 ค่าเทอมประหยัด -6,000 ฿ , 🧠 ลูกได้แต้มความสำเร็จ +1 , ❤️ ความสัมพันธ์ลูก +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -6000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[มีฐานะร่ำรวย] ส่งเข้าเนิร์สเซอรีนานาชาติ ปูพื้นฐาน 3 ภาษาตั้งแต่หัดพูด (-120,000฿)",
+          "hint_th": "🪙 ค่าเทอมอินเตอร์ -120,000 ฿ , 🧠 ลูกได้แต้มความสำเร็จ +5 , 🤝 เส้นสาย +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": -120000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_primary_01",
+      "title_th": "ลูกวัยประถมงอแงไม่ยอมกินผัก / แอบเอาเงินค่าขนมไปซื้อการ์ดเกมจนหมด!",
+      "min_age": 25,
+      "max_age": 55,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "บทบาทพ่อแม่ต้องมีทั้งพระเดชและพระคุณ! คุณตรวจพบว่าลูกแอบนำเงินค่าข้าวกลางวันไปซื้อการ์ดเกมและกล่องดินสอจนหมดกระเป๋า",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "สอนเรื่องวินัยทางการเงินอย่างใจเย็น โดยให้ลูกช่วยทำงานบ้านแลกเงินมาคืนกระปุกออมสิน!",
+          "hint_th": "🧠 สมอง +4 , ❤️ ความสัมพันธ์ลูก +15 , 🧠 ลูกได้แต้มความสำเร็จ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ดุด่าและใช้ไม้เรียวตีลงโทษอย่างรุนแรง ทำให้ลูกกลัวและเริ่มมีความลับกับคุณ!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก -15 , 😊 ความสุข -5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "stat_effects": {
+            "happiness": 1,
+            "intelligence": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_primary_02",
+      "title_th": "ลูกขึ้นเวทีแสดงงานวันแม่/กีฬาสีโรงเรียนประถม! ไปยืนถือกล้องเชียร์ขอบสนาม",
+      "min_age": 25,
+      "max_age": 55,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "โรงเรียนประถมจัดงานแสดงประจำปี ลูกของคุณได้ทาแก้มแดงขึ้นไปเต้นบนเวทีและลงแข่งวิ่งผลัด พอเห็นคุณยืนโบกมืออยู่ข้างเวที ลูกก็ยิ้มแป้น!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ถ่ายคลิปเชียร์สุดเสียงและซื้อช่อดอกไม้/ตุ๊กตาไปมอบให้ลูกบนเวที! (-1,000฿)",
+          "hint_th": "🪙 ค่าของขวัญ -1,000 ฿ , ❤️ ความสัมพันธ์ลูก +25 , 😊 ความสุข +12 , 🧠 ลูกได้แต้มความสำเร็จ +3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ติดงานสำคัญไม่สามารถไปร่วมงานได้ ทำให้ลูกหน้าหงอยและน้อยใจ",
+          "hint_th": "❤️ ความสัมพันธ์ลูก -15 , 😊 ความสุข -6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 5,
+          "stat_effects": {
+            "happiness": 3,
+            "cash": -500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_primary_03",
+      "title_th": "วางแผนการเรียนต่อ ม.1 ให้ลูก! โรงเรียนกวดวิชาเข้มข้น vs ปล่อยตามธรรมชาติ",
+      "min_age": 28,
+      "max_age": 55,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "เข้าสู่ช่วงหัวเลี้ยวหัวต่อวัยประถมปลาย คุณพ่อคุณแม่หลายคนเริ่มอัดคอร์สกวดวิชาเข้า ม.1 โรงเรียนประจำจังหวัดให้ลูก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ส่งลูกเรียนกวดวิชาวันเสาร์แต่ยังเปิดโอกาสให้ลูกได้เล่นกีฬาและพักผ่อน (-48,000฿)",
+          "hint_th": "🪙 ค่ากวดวิชา -48,000 ฿ , 🧠 ลูกได้แต้มความสำเร็จ +4 , ❤️ ความสัมพันธ์ลูก +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 12,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -48000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้ลูกอ่านหนังสือทบทวนเองที่บ้าน สนับสนุนตามความชอบโดยไม่กดดัน (-12,000฿)",
+          "hint_th": "🪙 ค่าใช้จ่ายประหยัด -12,000 ฿ , ❤️ ความสัมพันธ์ลูก +18 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -12000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "happiness": 7,
+            "cash": -30000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_teen_01",
+      "title_th": "ลูกวัยรุ่นเริ่มมีโลกส่วนตัว! ปิดประตูห้องเงียบและเริ่มมีความรักวัยมัธยม",
+      "min_age": 32,
+      "max_age": 60,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "เมื่อลูกเข้าสู่วัย 13-15 ปี ลูกเริ่มมีเพื่อนสนิท มีคนคุย และชอบอยู่คนเดียวในห้อง คุณจะปรับตัวเป็นพ่อแม่ยุคใหม่อย่างไร?",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ทำตัวเป็นเพื่อนที่ลูกไว้ใจได้ เคารพพื้นที่ส่วนตัว และคอยให้คำปรึกษาเรื่องความรักอย่างเปิดใจ!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก +20 , 🧠 สมอง +4 , 😊 ความสุข +8",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบไปค้นกระเป๋าและแอบเปิดดูแชทมือถือของลูก จนลูกจับได้และทะเลาะบ้านแตก!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก -25 , 😊 ความสุข -10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -2,
+          "stat_effects": {
+            "happiness": -1,
+            "intelligence": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_teen_02",
+      "title_th": "ลูกขอไปติวหนังสือบ้านเพื่อน / ขอไปทริปต่างจังหวัดกับแก๊งเพื่อนมัธยม!",
+      "min_age": 34,
+      "max_age": 60,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ลูกวัยรุ่นมาขออนุญาตไปเที่ยวทะเลกับเพื่อนๆ หลังสอบเสร็จ โดยสัญญาว่าจะส่งพิกัด GPS และโทรรายงานตัวทุกวัน",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "อนุญาตให้ไปพร้อมช่วยสมทบค่าเดินทางและกำชับเรื่องความปลอดภัย ลูกรักและเคารพคุณมาก! (-2,500฿)",
+          "hint_th": "🪙 ค่าทริปลูก -2,500 ฿ , ❤️ ความสัมพันธ์ลูก +20 , 😊 ความสุข +8 , 🧠 ลูกได้แต้มความสำเร็จ +2",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -2500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ไม่อนุญาตให้ออกจากบ้านเด็ดขาดเพราะเป็นห่วงเกินไป ลูกขังตัวเองในห้องประท้วง!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก -18 , 😊 ความสุข -6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 1,
+          "stat_effects": {
+            "happiness": 1,
+            "cash": -1250
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_teen_03",
+      "title_th": "ศึกสอบ TCAS เข้ามหาวิทยาลัยของลูก! ลุ้นหน้าจอประกาศผลคะแนนพร้อมกันทั้งบ้าน",
+      "min_age": 36,
+      "max_age": 65,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คืนวันประกาศผลสอบคัดเลือกเข้ามหาวิทยาลัย! คุณและลูกนั่งลุ้นอยู่หน้าจอคอมพิวเตอร์ ทันทีที่กดรีเฟรชหน้าจอ ตัวหนังสือสีเขียวขึ้นว่า 'ผ่านการคัดเลือก'!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "กระโดดกอดลูกด้วยความตื้นตันใจ ลูกสอบติดคณะในฝันสำเร็จ! น้ำตาไหลพรากทั้งครอบครัว!",
+          "hint_th": "❤️ ความสัมพันธ์ลูก +30 , 😊 ความสุข +20 , 🧠 ลูกได้แต้มความสำเร็จ +10 , ✨ แต้มบุญ +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 20,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พาลูกไปแก้บนที่วัดและจัดเลี้ยงฉลองใหญ่ให้ลูกกับญาติพี่น้อง (-5,000฿)",
+          "hint_th": "🪙 เลี้ยงฉลอง -5,000 ฿ , ❤️ ความสัมพันธ์ลูก +25 , ✨ แต้มบุญ +15 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -5000,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 28,
+          "stat_effects": {
+            "happiness": 18,
+            "cash": -2500,
+            "merit": 15
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_uni_01",
+      "title_th": "ลูกเข้าเรียนมหาวิทยาลัยปี 1! นโยบายซัพพอร์ตค่าเทอมและค่าครองชีพของลูก",
+      "min_age": 38,
+      "max_age": 65,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ถึงช่วงวัยอุดมศึกษาของลูก (นโยบายช่วงที่ 4) คุณต้องตัดสินใจว่าจะสนับสนุนการเรียนของลูกอย่างไร",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จ่ายค่าเทอม ค่าหอพัก และค่ากินอยู่ให้ลูกเต็มที่ ลูกได้โฟกัสการเรียนเต็มร้อย (-80,000฿)",
+          "hint_th": "🪙 ค่าเทอมและค่าหอลูก -80,000 ฿ , 🧠 ลูกได้แต้มความสำเร็จ +8 , ❤️ ความสัมพันธ์ลูก +25",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -80000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ให้ลูกยื่นกู้ กยศ. และทำงานพาร์ทไทม์ส่งตัวเองเรียน ฝึกความอดทนและรู้คุณค่าของเงิน",
+          "hint_th": "🪙 ประหยัดเงินพ่อแม่ +0 ฿ , 🧠 ลูกได้แต้มความสำเร็จ +4 , ❤️ ความสัมพันธ์ลูก +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[มีฐานะร่ำรวย] ส่งลูกไปเรียนต่อปริญญาตรีมหาวิทยาลัยชั้นนำที่ต่างประเทศ (-800,000฿)",
+          "hint_th": "🪙 ค่าเรียนนอก -800,000 ฿ , 🧠 ลูกได้แต้มความสำเร็จ +15 (การันตี Tier S!) , 🤝 เส้นสาย +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 15,
+            "cash": -800000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_uni_02",
+      "title_th": "ลูกเรียนจบรับปริญญา! ประกาศผลลัพธ์การเลี้ยงดู (Child Graduation Outcome Tier)!",
+      "min_age": 42,
+      "max_age": 70,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "วันแห่งความสำเร็จสูงสุดของพ่อแม่! ลูกของคุณสวมชุดครุยรับปริญญาบัตร ผลลัพธ์จากการเลี้ยงดูตลอด 21 ปีที่ผ่านมาตัดสินสถานะของลูก...",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[ลูกสำเร็จระดับ Tier S อภิชาตบุตร] ลูกได้งานเป็นแพทย์/ผู้บริหาร ส่งเงินให้พ่อแม่ปีละ 180,000 ฿ ทุกปี!",
+          "hint_th": "🪙 ได้รับเงินเลี้ยงดูรายปี +180,000 ฿/ปี , 😊 ความสุข +25 , ✨ แต้มบุญ +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 25,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 180000,
+            "merit": 20,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "[ลูกสำเร็จระดับ Tier A/B คนสู้ชีวิต] ลูกมีงานทำมั่นคงพึ่งพาตัวเองได้ และส่งเงินกลับมาให้พ่อแม่สม่ำเสมอ!",
+          "hint_th": "🪙 ได้รับเงินเลี้ยงดูรายปี +60,000 ฿/ปี , 😊 ความสุข +15 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 60000,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "[ลูกระดับ Tier C ลูกแหง่] เลี้ยงดูแบบขาดวินัย ลูกไม่ยอมหางานทำและยังมาขอเงินพ่อแม่ใช้ปีละ 24,000 ฿!",
+          "hint_th": "🪙 ต้องจ่ายเงินเลี้ยงดูลูก -24,000 ฿/ปี , 😊 ความสุข -10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -10,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -24000,
+            "merit": 0,
+            "appearance": 0
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_child_uni_03",
+      "title_th": "ส่งมอบไม้ผลัดมรดกสู่รุ่นลูก! เลือกลูกเป็นผู้สืบทอดตัวละครสำหรับเล่นรอบต่อไป (Legacy Mode)",
+      "min_age": 50,
+      "max_age": 90,
+      "category": "children_parenting",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_has_child"
+      ],
+      "forbidden_flags": [],
+      "description_th": "ฟีเจอร์ระดับสูงของเกมจำลองชีวิต! เมื่อคุณแก่ตัวลง คุณสามารถเลือกลูกของคุณเป็น 'ตัวละครสืบทอดมรดก' เพื่อเล่นต่อในรุ่นที่ 2 พร้อมรับทรัพย์สินและสเตตัสเริ่มต้นระดับสูง!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แต่งตั้งลูกเป็นผู้สืบทอดมรดกตระกูล! ลูกพร้อมรับช่วงต่อชีวิตด้วยค่าสถานะเริ่มต้นสุดแกร่ง!",
+          "hint_th": "😊 ความสุข +20 , 🤝 เส้นสาย +10 , ✨ แต้มบุญ +25 (พร้อมเล่นต่อรุ่นลูก!)",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 20,
+            "intelligence": 0,
+            "connections": 10,
+            "cash": 0,
+            "merit": 25,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "สั่งเสียคำสอนสุดท้าย ให้ลูกใช้ชีวิตด้วยความซื่อสัตย์สุจริตและเป็นที่พึ่งของสังคม",
+          "hint_th": "✨ แต้มบุญ +30 , 😊 ความสุข +15 , ❤️ ความสัมพันธ์ลูก +25",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 30,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 28,
+          "stat_effects": {
+            "happiness": 18,
+            "connections": 5,
+            "merit": 28
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_01_sweetheart",
+      "title_th": "รักแท้วัยเรียน 'พนักงานบัญชี': ชวนกันทำบัญชีรายรับ-รายจ่ายและหยอดกระปุกทุกสิ้นเดือน",
+      "min_age": 18,
+      "max_age": 50,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คู่รักของคุณที่คบกันมาตั้งแต่สมัยชุดนักเรียน ปัจจุบันทำงานเป็นนักบัญชีผู้เรียบร้อย ช่วยคุณคำนวณเงินออมและตัดค่าใช้จ่ายฟุ่มเฟือยอย่างละเอียด!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ส่งสลิปรายจ่ายให้แฟนช่วยตรวจสอบ ประหยัดเงินรั่วไหลได้ปีละหลายหมื่น! (+15,000฿)",
+          "hint_th": "🪙 เงินออมเพิ่ม +15,000 ฿ , 🧠 สมอง +4 , ❤️ ความสัมพันธ์แฟน +18 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 4,
+            "connections": 0,
+            "cash": 15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แอบซ่อนเงินไว้ซื้อของเล่น แต่แฟนจับได้คาหนังคาเขา!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน -10 , 😊 ความสุข -3",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -3,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 4,
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 2,
+            "cash": 7500
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_02_rider",
+      "title_th": "คนสู้ชีวิต 'ไรเดอร์/หนุ่มสาวโรงงาน': กัดก้อนเกลือกินและลุยงานหนักไปด้วยกัน!",
+      "min_age": 18,
+      "max_age": 55,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คู่รักสายสู้ชีวิตของคุณไม่เคยเกี่ยงความลำบาก เลิกงานแล้วยังมาช่วยคุณเตรียมของขายและนั่งกินบะหมี่ข้างทางด้วยกันอย่างมีความสุข",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "ช่วยกันเก็บหอมรอมริบ ค่าสินสอดไม่แพงและพร้อมสู้ชีวิตไปด้วยกันอย่างจริงใจ!",
+          "hint_th": "🪙 ประหยัดค่าสินสอด +20,000 ฿ , ❤️ ความสัมพันธ์แฟน +20 , 😊 ความสุข +8 , ✨ แต้มบุญ +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 20000,
+            "merit": 6,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ชวนกันไปเรียนเสริมทักษะวิชาชีพเพื่อยกระดับรายได้ครอบครัวให้มั่นคงขึ้น",
+          "hint_th": "🧠 สมอง +5 , 🤝 เส้นสาย +4 , ❤️ ความสัมพันธ์แฟน +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 5,
+            "connections": 4,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "happiness": 7,
+            "intelligence": 3,
+            "connections": 2,
+            "cash": 10000,
+            "merit": 3
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_03_civil",
+      "title_th": "คู่ครองในฝันของพ่อแม่ 'ข้าราชการครู/พยาบาล': ความมั่นคงและสิทธิ์รักษาพยาบาลครอบครัว",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "พ่อแม่ของคุณปลื้มแฟนคนนี้มาก! แฟนที่เป็นข้าราชการมีหน้าที่การงานมั่นคง เลิกงานตรงเวลา และเมื่อแต่งงานจะช่วยให้คนในบ้านเบิกค่ารักษาฟรี",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "แต่งงานจดทะเบียนสมรส ได้รับสิทธิ์เบิกค่ารักษาพยาบาลครอบครัวฟรีตลอดชีพ!",
+          "hint_th": "❤️ สุขภาพครอบครัว +6 , 😊 ความสุข +10 , 🤝 เส้นสาย +6 , 🏥 ได้รับป้าย [สิทธิ์รักษาพยาบาลฟรี]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_welfare_card"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 6,
+            "happiness": 10,
+            "intelligence": 0,
+            "connections": 6,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "พาแฟนไปร่วมงานทำบุญกับครอบครัว พ่อแม่ยิ้มหน้าบานอวดเพื่อนบ้านทั้งซอย!",
+          "hint_th": "❤️ ความสัมพันธ์พ่อแม่ +15 , ❤️ ความสัมพันธ์แฟน +18 , ✨ แต้มบุญ +10",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "health": 3,
+            "happiness": 9,
+            "connections": 3,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_04_seller",
+      "title_th": "แม่ค้าออนไลน์ไลฟ์สดสุดแซ่บ: ชวนคุณมาเป็นพิธีกรคู่ขวัญหน้ากล้องไลฟ์ขายของ!",
+      "min_age": 18,
+      "max_age": 55,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "แฟนของคุณเป็นแม่ค้าออนไลน์ไฟแรง คืนนี้แฟนดึงคุณมานั่งหน้าไฟวงแหวน ช่วยหยิบสินค้าและกดกริ่งเรียกลูกค้า CF ของ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เล่นมุกรับส่งกับแฟนอย่างเข้าขา ออร์เดอร์ถล่มทลายรับส่วนแบ่งกำไรก้อนโต!",
+          "hint_th": "🪙 ส่วนแบ่งกำไรไลฟ์ +25,000 ฿ , 🤝 เส้นสาย +7 , ❤️ ความสัมพันธ์แฟน +20 , ✨ ปลดล็อกป้าย [เฒ่าแก่น้อย]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "tag_young_merchant"
+          ],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 7,
+            "cash": 25000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ช่วยแพ็กกล่องพัสดุและขับรถไปส่งขนส่งให้แฟน แฟนประทับใจความใส่ใจ!",
+          "hint_th": "🪙 ค่าขนมจากแฟน +5,000 ฿ , ❤️ ความสัมพันธ์แฟน +18 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 5000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "เปรียบเทียบทางเลือกและวางแผนทรัพยากรก่อนตัดสินใจ",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 19,
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 4,
+            "cash": 15000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_05_influencer",
+      "title_th": "ดาวโซเชียลยอดฟอลหลักแสน: แฟนขอให้ช่วยถ่ายรูปคาเฟ่ 500 รูปจนกว่าจะได้รูปที่ลงไอจี!",
+      "min_age": 18,
+      "max_age": 45,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "การเป็นแฟนกับอินฟลูเอนเซอร์สายแฟชั่นไม่ใช่เรื่องง่าย! คุณต้องรับบทตากล้องส่วนตัว หามุมแสง ย่อตัวถ่ายจนเมื่อยขาเพื่อรูปสวยลงโซเชียล",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "จัดมุมกล้องขั้นเทพจนรูปออกมาสวยระดับปกนิตยสาร แฟนแท็กเครดิตตากล้องให้ คนตามมาจ้างงานถ่ายรูปเพียบ!",
+          "hint_th": "🪙 ค่าจ้างถ่ายรูป +8,000 ฿ , 🤝 เส้นสาย +8 , ✨ หน้าตา +3 , ❤️ ความสัมพันธ์แฟน +20",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 7,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 8000,
+            "merit": 0,
+            "appearance": 3
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "บ่นว่าเมื่อยและถ่ายรูปไม่ตั้งใจจนแฟนหน้างอ โดนงอนไปทั้งวัน!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน -15 , 😊 ความสุข -5",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -15,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -5,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 3,
+          "stat_effects": {
+            "happiness": 1,
+            "connections": 4,
+            "cash": 4000,
+            "appearance": 2
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_06_crypto",
+      "title_th": "นักเทรดคริปโตพอร์ตซิ่ง: แฟนชวนดูแท่งเทียนสีเขียวทั้งคืน 'ที่รัก เหรียญเราพุ่งทะลุดวงจันทร์แล้ว!'",
+      "min_age": 20,
+      "max_age": 50,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "แฟนของคุณเฝ้าหน้าจอกราฟตลอด 24 ชั่วโมง คืนนี้ตลาดกระทิงดุเดือด แฟนกรี๊ดลั่นห้องเพราะพอร์ตเหรียญบวกหลายเท่าตัว!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "เตือนสติแฟนให้กด Take Profit ขายทำกำไรล็อกเงินสดออกมา แฟนเชื่อฟังและพาไปดินเนอร์หรูฉลอง!",
+          "hint_th": "🪙 แฟนเปย์เงินสด +35,000 ฿ , 🧠 สมอง +5 , ❤️ ความสัมพันธ์แฟน +20 , 💡 ได้รับป้าย [มีความรู้ทางการเงิน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_financial_literacy"
+          ],
+          "removes_flags": [],
+          "relationship_change": 20,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 9,
+            "intelligence": 5,
+            "connections": 0,
+            "cash": 35000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "เชียร์ให้ถือเหรียญต่อหวังรวยร้อยล้าน... เช้ามาเหรียญทิ้งดิ่งติดดอย แฟนนั่งซึมทั้งวัน!",
+          "hint_th": "🪙 เงินลดลง -15,000 ฿ , ❤️ ความสัมพันธ์แฟน -10 , 😊 ความสุข -6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": -10,
+          "stat_effects": {
+            "health": 0,
+            "happiness": -6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -15000,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 5,
+          "stat_effects": {
+            "happiness": 2,
+            "intelligence": 3,
+            "cash": 10000
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_07_doctor",
+      "title_th": "คุณหมอคนเก่งงานยุ่ง: แฟนติดเวรผ่าตัดด่วนคืนวันวาเลนไทน์ / แวะเอากล่องอาหารไปให้ที่ รพ.",
+      "min_age": 24,
+      "max_age": 60,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "คบกับคุณหมอต้องเข้าใจเรื่องเวลา! นัดเดทวันสำคัญถูกยกเลิกเพราะมีเคสผ่าตัดฉุกเฉิน คุณเข้าใจหน้าที่และอยากให้กำลังใจคนรัก",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "หิ้วซุปอุ่นๆ และผลไม้ไปนั่งรอหน้าวอร์ด ส่งยิ้มให้กำลังใจ คุณหมอซาบซึ้งใจบอกว่าคุณคือคู่ชีวิตตัวจริง!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +25 , 🤝 เส้นสาย +8 , ✨ แต้มบุญ +10 , 🏥 ได้รับป้าย [เข้าถึง รพ.เอกชน]",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_private_hospital_access"
+          ],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 8,
+            "intelligence": 0,
+            "connections": 8,
+            "cash": 0,
+            "merit": 10,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "ส่งข้อความให้กำลังใจและสั่งดอกไม้ไปส่งถึงโต๊ะทำงานคุณหมอ (-1,500฿)",
+          "hint_th": "🪙 ค่าดอกไม้ -1,500 ฿ , ❤️ ความสัมพันธ์แฟน +18 , 😊 ความสุข +6",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 18,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 6,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": -1500,
+            "merit": 0,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 22,
+          "stat_effects": {
+            "happiness": 7,
+            "connections": 4,
+            "cash": -750,
+            "merit": 5
+          }
+        }
+      ]
+    },
+    {
+      "event_id": "evt_partner_spec_08_tycoon",
+      "title_th": "ทายาทตระกูลเจ้าสัวแสนล้าน: เดินทางเข้าคฤหาสน์พบครอบครัวไฮโซระดับประเทศ!",
+      "min_age": 22,
+      "max_age": 60,
+      "category": "partner_specific",
+      "allowed_classes": [
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5"
+      ],
+      "req_flags": [
+        "flag_in_relationship"
+      ],
+      "forbidden_flags": [],
+      "description_th": "การคบหากับทายาทเจ้าสัวระดับประเทศนำพาคุณเข้าสู่คฤหาสน์หรูหรา คุณพ่อคุณแม่ของแฟนมีอำนาจและบารมีสูงมาก กำลังจับตามองกิริยามารยาทของคุณ!",
+      "choices": [
+        {
+          "choice_id": "c1",
+          "label_th": "[หน้าตาดี] วางตัวสง่างาม มีไหวพริบการเจรจาธุรกิจ ผู้ใหญ่เอ็นดูเปิดรับคุณเข้าสู่ตระกูลทันที!",
+          "hint_th": "👑 ได้รับป้าย [คอนเนกชันระดับเจ้าสัว] , 🤝 เส้นสาย +15 , ❤️ ความสัมพันธ์แฟน +30 , 😊 ความสุข +15",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [
+            "flag_elite_connection"
+          ],
+          "removes_flags": [],
+          "relationship_change": 30,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 15,
+            "intelligence": 5,
+            "connections": 15,
+            "cash": 0,
+            "merit": 0,
+            "appearance": 4
+          }
+        },
+        {
+          "choice_id": "c2",
+          "label_th": "แสดงความจริงใจและรักในตัวแฟนโดยไม่หวังเรื่องทรัพย์สินเงินทอง ชนะใจแฟนเต็มร้อย!",
+          "hint_th": "❤️ ความสัมพันธ์แฟน +25 , ✨ แต้มบุญ +15 , 😊 ความสุข +12",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 25,
+          "stat_effects": {
+            "health": 0,
+            "happiness": 12,
+            "intelligence": 0,
+            "connections": 0,
+            "cash": 0,
+            "merit": 15,
+            "appearance": 0
+          }
+        },
+        {
+          "choice_id": "c3",
+          "label_th": "พูดคุยรับฟังกันและหาทางออกร่วมกัน",
+          "hint_th": "เป็นทางเลือกประนีประนอมที่พิจารณาผลดีและข้อจำกัดไปพร้อมกัน",
+          "req_stats": {},
+          "req_flags": [],
+          "grants_flags": [],
+          "removes_flags": [],
+          "relationship_change": 28,
+          "stat_effects": {
+            "happiness": 14,
+            "intelligence": 3,
+            "connections": 8,
+            "merit": 8,
+            "appearance": 2
+          }
+        }
+      ]
+    }
+  ]
+}
