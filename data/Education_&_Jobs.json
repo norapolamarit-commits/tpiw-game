@@ -1287,6 +1287,54 @@
         "appearance": -1
       },
       "description_th": "คุมครัวร้อนๆ และสร้างสรรค์เมนู งานหนักแต่เติบโตเป็นหัวหน้าเชฟได้"
+    },
+    {
+      "job_id": "career_football_player",
+      "name_th": "นักฟุตบอล",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 18,
+      "retirement_age": 40,
+      "base_annual_salary_cash": 360000,
+      "affected_by_location_multiplier": false,
+      "req_stats": { "health": 60 },
+      "req_all_flags": [],
+      "req_any_flags": [],
+      "forbidden_flags": ["flag_conscript_soldier_2yrs"],
+      "grants_flags_while_employed": ["flag_regular_income"],
+      "yearly_stat_effects": { "health": 1, "happiness": 2, "intelligence": 0, "connections": 2, "merit": 0, "appearance": 0 },
+      "description_th": "ลงสนามซ้อมและแข่งขันฟุตบอลอาชีพ รับค่าจ้างจากสโมสรพร้อมโอกาสสร้างชื่อเสียง"
+    },
+    {
+      "job_id": "career_basketball_player",
+      "name_th": "นักบาสเกตบอล",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 18,
+      "retirement_age": 40,
+      "base_annual_salary_cash": 300000,
+      "affected_by_location_multiplier": false,
+      "req_stats": { "health": 60 },
+      "req_all_flags": [],
+      "req_any_flags": [],
+      "forbidden_flags": ["flag_conscript_soldier_2yrs"],
+      "grants_flags_while_employed": ["flag_regular_income"],
+      "yearly_stat_effects": { "health": 1, "happiness": 2, "intelligence": 0, "connections": 2, "merit": 0, "appearance": 0 },
+      "description_th": "ฝึกทักษะและลงแข่งบาสเกตบอลอาชีพ สร้างผลงานร่วมกับทีมและรับค่าจ้างจากสโมสร"
+    },
+    {
+      "job_id": "career_seven_light_football_player",
+      "name_th": "นักกีฬา (บอล 7 แสง)",
+      "ui_location": "tab_work_study_sub_careers",
+      "min_age": 18,
+      "retirement_age": 38,
+      "base_annual_salary_cash": 420000,
+      "affected_by_location_multiplier": false,
+      "req_stats": { "health": 70, "connections": 35 },
+      "req_all_flags": [],
+      "req_any_flags": [],
+      "forbidden_flags": ["flag_conscript_soldier_2yrs"],
+      "grants_flags_while_employed": ["flag_regular_income"],
+      "yearly_stat_effects": { "health": 1, "happiness": 3, "intelligence": 0, "connections": 3, "merit": 0, "appearance": 0 },
+      "description_th": "ลงแข่งบอล 7 แสง ฝึกซ้อมกับทีมและลุ้นรางวัลจากผลงานในสนาม"
     }
   ],
   "civil_service_careers": [

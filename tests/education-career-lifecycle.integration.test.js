@@ -278,6 +278,17 @@ test('applies for an eligible professional job and enforces one main job plus co
   assert.equal(state.careerAndEdu.mainJobId, 'career_junior_office');
 });
 
+test('sports careers appear in the work tab and can be taken as a main job', () => {
+  const state = createCareerState(22);
+  const ids = ['career_football_player', 'career_basketball_player', 'career_seven_light_football_player'];
+  const cards = getCategorizedJobsForUI(state).corporate;
+  for (const id of ids) assert.equal(cards.some((job) => job.job_id === id && !job.isLocked), true);
+
+  const result = applyForJob(state, 'career_seven_light_football_player');
+  assert.equal(result.success, true);
+  assert.equal(state.careerAndEdu.mainJobId, 'career_seven_light_football_player');
+});
+
 test('allows only a study-compatible part-time job while enrolled and rejects full-time careers', () => {
   const state = createCareerState(17);
   state.careerAndEdu.activeStudy = {
