@@ -306,6 +306,10 @@ test('marriage requires the ring, legal-age flag, full relationship, and suffici
   const state = createSocialState(25);
   state.relationships.partner = makePartner({ relationship: 100, status: 'dating', dowryCostCash: 50_000 });
   state.flags.push('flag_sui_juris_20', 'flag_has_wedding_ring', 'flag_partner_hearts_5');
+  assert.equal(performRelationshipAction(state, 'rel_act_propose_marriage').success, false, 'must propose first');
+  const proposed = performRelationshipAction(state, 'rel_act_propose_engagement');
+  assert.equal(proposed.success, true);
+  assert.equal(state.relationships.partner.engaged, true);
   state.finance.cash = 10_000;
 
   const insufficientFunds = performRelationshipAction(state, 'rel_act_propose_marriage');

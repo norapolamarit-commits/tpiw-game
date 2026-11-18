@@ -191,11 +191,15 @@ function renderRomanceTab(state) {
     `;
   }
 
-  const statusLabel = partner.status === 'married' ? 'คู่สมรส' : (partner.status === 'dating' ? 'คนรัก/แฟน' : 'คนคุย');
+  const statusLabel = partner.status === 'married' ? 'คู่สมรส' : (partner.engaged ? 'คู่หมั้น' : partner.status === 'dating' ? 'คนรัก/แฟน' : 'คนคุย');
   const spTrait = partner.financialTraitId ? db.indexes.spouseTraits.get(partner.financialTraitId) : null;
   const partnerActions = getAvailableRelationshipActions(state, partner.id).filter(
     (a) => a.target_npc_group === 'partner'
   );
+  const milestoneIds = ['rel_act_ask_to_be_couple', 'rel_act_propose_engagement', 'rel_act_propose_marriage'];
+  const nextMilestoneId = partner.status === 'married' ? null : partner.engaged ? milestoneIds[2] : partner.status === 'dating' ? milestoneIds[1] : milestoneIds[0];
+  const nextMilestone = partnerActions.find((action) => action.action_id === nextMilestoneId);
+  const regularActions = partnerActions.filter((action) => !milestoneIds.includes(action.action_id));
 
   return `
     <div class="list-stack">
@@ -218,7 +222,12 @@ function renderRomanceTab(state) {
             : ''
         }
 
-        ${renderRelActionsButtons(partnerActions, partner.id)}
+        <div class="card" style="margin-top:12px;">
+          <strong>เส้นทางความสัมพันธ์</strong>
+          <p style="font-size:12px;color:var(--text-secondary);margin-top:4px;">คนคุย → แฟน → หมั้น → แต่งงาน</p>
+          ${nextMilestone ? renderRelActionsButtons([nextMilestone], partner.id) : '<p style="font-size:12px;margin-top:8px;">คุณทั้งสองแต่งงานกันแล้ว</p>'}
+        </div>
+        ${renderRelActionsButtons(regularActions, partner.id)}
 
         ${
           partner.status !== 'married'

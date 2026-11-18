@@ -33,6 +33,7 @@ import { collectAnnualPassiveStatEffects } from '../core/annual_passive_stats.js
  */
 const ZERO_AP_MILESTONE_REL_ACTIONS = new Set([
   'rel_act_ask_to_be_couple',
+  'rel_act_propose_engagement',
   'rel_act_propose_marriage',
   'rel_act_plan_have_baby',
   'rel_act_file_divorce'
@@ -622,6 +623,10 @@ export function getAvailableRelationshipActions(state, specificTargetId = null) 
       const alreadyCoupleBlocked =
         act.action_id === 'rel_act_ask_to_be_couple' &&
         (state.relationships?.partner?.status === 'dating' || state.relationships?.partner?.status === 'married');
+      const engagementBlocked = act.action_id === 'rel_act_propose_engagement' &&
+        (state.relationships?.partner?.status !== 'dating' || state.relationships?.partner?.engaged);
+      const weddingBlocked = act.action_id === 'rel_act_propose_marriage' &&
+        (state.relationships?.partner?.status !== 'dating' || !state.relationships?.partner?.engaged);
 
       const cooldownKey = makeActionCooldownKey(act.action_id, specificTargetId);
       const alreadyUsedThisYear = !isMilestoneAction && usedTracker.includes(cooldownKey);
@@ -636,6 +641,10 @@ export function getAvailableRelationshipActions(state, specificTargetId = null) 
         lockReasonTh = 'ไม่มีบุคคลเป้าหมายในหมวดนี้';
       } else if (alreadyCoupleBlocked) {
         lockReasonTh = 'คุณเลื่อนสถานะเป็นคนรักกันแล้ว';
+      } else if (engagementBlocked) {
+        lockReasonTh = 'ต้องเป็นแฟนกันก่อน และยังไม่ได้หมั้นหมาย';
+      } else if (weddingBlocked) {
+        lockReasonTh = 'ต้องขอแต่งงานและหมั้นหมายก่อน';
       } else if (gateLockedMsg) {
         lockReasonTh = gateLockedMsg;
       } else if (!meetsRelMin) {
@@ -658,6 +667,8 @@ export function getAvailableRelationshipActions(state, specificTargetId = null) 
       const isLocked =
         !hasValidTarget ||
         alreadyCoupleBlocked ||
+        engagementBlocked ||
+        weddingBlocked ||
         Boolean(gateLockedMsg) ||
         !meetsRelMin ||
         !meetsFlags ||
@@ -765,7 +776,19 @@ export function performRelationshipAction(state, actionId, targetId = null) {
     };
   }
 
-  // --- กรณีพิเศษ B: คุกเข่าขอแต่งงานและจดทะเบียนสมรส (rel_act_propose_marriage) ---
+  // --- กรณีพิเศษ B: ขอแต่งงานและหมั้นหมาย ---
+  if (actionId === 'rel_act_propose_engagement') {
+    const partner = state.relationships.partner;
+    partner.engaged = true;
+    partner.relationship = clampStat(Number(partner.relationship || 0) + Number(actEval.relationship_change || 5), 0, 100);
+    if (partner.relationship >= 100) addFlagOrStatus(state, 'flag_partner_hearts_5');
+    const statDeltas = applySocialStatEffects(state, actEval.stat_effects || {});
+    pushSocialLog(state, `หมั้นหมายกับ ${partner.name}`, `คุณขอแต่งงานและ ${partner.name} ตอบตกลง เตรียมพร้อมสำหรับงานแต่ง`, 'heart', 'กุมภาพันธ์');
+    saveGame(state);
+    return { success: true, iconKey: 'heart', statDeltas, message: `${partner.name} ตอบตกลงแต่งงานกับคุณแล้ว ตอนนี้หมั้นหมายกัน` };
+  }
+
+  // --- กรณีพิเศษ C: จัดงานแต่งและจดทะเบียนสมรส (rel_act_propose_marriage) ---
   if (actionId === 'rel_act_propose_marriage') {
     const partner = state.relationships.partner;
     const partArch = db.indexes.partnerArchetypes.get(partner.archetypeId);

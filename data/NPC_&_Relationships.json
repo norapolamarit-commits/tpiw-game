@@ -1140,8 +1140,23 @@
       "description_th": "เลื่อนสถานะจากคนคุยเป็นคนรู้ใจเมื่อค่าความสัมพันธ์ถึง 60 แต้ม (หัวใจ 3 ดวง)"
     },
     {
+      "action_id": "rel_act_propose_engagement",
+      "name_th": "ขอแต่งงานและหมั้นหมาย",
+      "target_npc_group": "partner",
+      "min_age": 18,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "req_relationship_min": 80,
+      "req_flags": ["flag_has_wedding_ring"],
+      "forbidden_flags": ["flag_monkhood_active", "flag_married_registered"],
+      "grants_flags": [],
+      "relationship_change": 5,
+      "stat_effects": { "health": 0, "happiness": 5, "intelligence": 0, "connections": 1, "merit": 0, "appearance": 0 },
+      "description_th": "เมื่อเป็นแฟนและสนิทกันอย่างน้อย 80 แต้ม ใช้แหวนที่ซื้อไว้ขอแต่งงาน ก่อนเตรียมจัดงานและจดทะเบียน"
+    },
+    {
       "action_id": "rel_act_propose_marriage",
-      "name_th": "คุกเข่าขอแต่งงาน & จดทะเบียนสมรส 💍",
+      "name_th": "จัดงานแต่งและจดทะเบียนสมรส",
       "target_npc_group": "partner",
       "min_age": 20,
       "cost_cash_student": 0,
