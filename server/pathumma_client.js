@@ -17,9 +17,15 @@ export async function callPathumma({ system, user, temperature = 0.4, maxTokens 
     body,
     signal: AbortSignal.timeout(30000)
   });
-  if (!response.ok) throw new Error(`Pathumma ตอบกลับสถานะ ${response.status}`);
+  if (!response.ok) {
+    console.warn(`Pathumma API status: ${response.status}`);
+    throw new Error(`Pathumma ตอบกลับสถานะ ${response.status}`);
+  }
   const data = await response.json();
   const content = data?.content;
-  if (typeof content !== 'string' || !content.trim()) throw new Error('Pathumma ไม่ส่งข้อความกลับมา');
+  if (typeof content !== 'string' || !content.trim()) {
+    console.warn(`Pathumma response missing content; fields: ${Object.keys(data || {}).join(', ')}`);
+    throw new Error('Pathumma ไม่ส่งข้อความกลับมา');
+  }
   return content.replace(/<think>[\s\S]*?<\/think>/g, '');
 }

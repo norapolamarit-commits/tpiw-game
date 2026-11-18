@@ -81,7 +81,10 @@ export async function handleContentRequest(request, response, kind, generators =
   let context;
   try { context = schema.parse(await readBody(request)); } catch { json(response, 400, { error: 'ข้อมูลไม่ถูกต้อง' }); return; }
   try { const data = await generators[kind](context); json(response, 200, { aiGenerated: true, data: kind === 'scenario' ? validateScenario(data, context.age) : validateDialogue(data, context.age) }); }
-  catch { json(response, 200, { aiGenerated: false, data: null }); }
+  catch (error) {
+    console.warn(`AI ${kind} fallback: ${error?.name || 'unknown error'}`);
+    json(response, 200, { aiGenerated: false, data: null });
+  }
 }
 
 export function createGameServer() {
