@@ -13,6 +13,7 @@ import { escapeHtml, renderIcon } from './icons.js';
 import { closeModal, openModal, showToast } from './modals_ending_ui.js';
 import { getPlayerIdentityLabel } from '../engine/gender_identity_engine.js';
 import { openIdentityModal } from './identity_ui.js';
+import { openTutorial } from './tutorial_ui.js';
 
 export const BOTTOM_TABS = [
   { id: 'tab1', label: 'บันทึกชีวิต', iconKey: 'book' },
@@ -119,11 +120,14 @@ function openGameSettingsModal(state, onReturnToLobby) {
       ปรับระดับเสียงแยกกันได้ การตั้งค่าจะถูกบันทึกไว้ในอุปกรณ์นี้
     </div>
 
+    <button id="btn-game-tutorial" class="btn btn--outline btn--block" type="button">วิธีเล่นเกม</button>
     <button id="btn-game-return-lobby" class="btn btn--outline btn--block" type="button">
       ${renderIcon('home', 'svg-icon--sm')}
       <span>บันทึกและออกไปหน้าล็อบบี้</span>
     </button>
   `);
+
+  document.getElementById('btn-game-tutorial')?.addEventListener('click', () => openTutorial(state));
 
   document.getElementById('btn-game-toggle-bgm')?.addEventListener('click', (e) => {
     const enabled = toggleBgm();

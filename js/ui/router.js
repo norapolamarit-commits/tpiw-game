@@ -23,6 +23,7 @@ import { saveGame } from '../core/state.js';
 import { bindGameClock, renderGameClockHtml, tickClock, updateGameClockDom } from './game_clock.js';
 import { renderTab4AssetsDebt } from './tab4_assets_debt.js';
 import { renderTab5LifestyleShop } from './tab5_lifestyle_shop.js';
+import { openTutorial } from './tutorial_ui.js';
 
 let currentScreen = 'lobby';
 let activeTab = 'tab1';
@@ -194,6 +195,7 @@ export function renderCurrentScreen() {
       maybeOpenGreeting(state, () => renderCurrentScreen());
     }
   }
+  if (!state.meta?.tutorialSeen && !isModalOpen()) openTutorial(state);
 }
 
 export function refreshUI() {
