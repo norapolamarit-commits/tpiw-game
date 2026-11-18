@@ -54,18 +54,20 @@ export function validateDialogue(raw, age = 18) {
 
 const SCENARIO_SYSTEM = 'คุณเขียนสถานการณ์พบปะสำหรับเกมที่ปลูกฝังการเคารพความแตกต่างทางเพศ แนวตลกปั่นๆ เบาสมอง ล้อเลียนเฉพาะคนที่มีอคติหรือสถานการณ์ ห้ามล้อเลียนตัวตนทางเพศของใคร ข้อความภาษาไทยเท่านั้น ห้ามอีโมจิ ใช้ ({who}) แทนป้ายเพศของอีกฝ่ายอย่างน้อยหนึ่งครั้ง เหมาะกับช่วงอายุที่กำหนด สร้างสถานการณ์ที่ผู้เล่นฝึกจุดอ่อนตามข้อมูลสถิติรวม';
 const DIALOGUE_SYSTEM = 'คุณเขียนบทพูดสำหรับบทสนทนาพบปะในเกมที่ปลูกฝังการเคารพความแตกต่างทางเพศ แนวตลกเบาๆ เป็นกันเอง ข้อความภาษาไทยเท่านั้น ห้ามอีโมจิ ไม่ตีตราใคร ปฏิกิริยาของอีกฝ่ายขึ้นกับน้ำเสียงของผู้เล่น (ปกป้อง/เคารพ/เมินเฉย/เหยียด) คำถามต้องเข้ากับบริบท แต่ละคำถามต้องมีคำตอบของผู้เล่น 3 แบบ (good/mid/bad) เป็น "ประโยคที่คนพูดกันจริงในชีวิตประจำวัน" เป็นคำพูดตรงๆ ไม่ใช่คำบรรยาย และตอบตรงกับคำถามนั้น';
+const SCENARIO_FORMAT = `ตอบ JSON object เท่านั้น ใช้คีย์ครบตามนี้: {"title":"ชื่อสถานการณ์ภาษาไทย 5-90 ตัวอักษร","text":"เรื่องภาษาไทย 30-420 ตัวอักษร มี ({who})","lesson":"ข้อคิดภาษาไทย 20-260 ตัวอักษร","context":"school|work|family|public","identities":["woman"],"minAge":18,"maxAge":110} context ต้องตรงกับข้อมูลที่ส่งมา identities เลือก 1-4 ค่าจาก ${IDENTITY_IDS.join(', ')} minAge ไม่เกินอายุที่ส่งมาและ maxAge ไม่น้อยกว่าอายุที่ส่งมา`;
+const DIALOGUE_FORMAT = 'ตอบ JSON object เท่านั้น ใช้คีย์ครบตามนี้: {"reactions":{"defend":["ประโยคตอบกลับ"],"respect":["ประโยคตอบกลับ"],"ignore":["ประโยคตอบกลับ"],"disrespect":["ประโยคตอบกลับ"]},"questions":[{"q":"คำถาม","good":"คำตอบที่เคารพ","mid":"คำตอบกลางๆ","bad":"คำตอบที่ไม่เหมาะ"},{"q":"คำถามที่สอง","good":"คำตอบที่เคารพ","mid":"คำตอบกลางๆ","bad":"คำตอบที่ไม่เหมาะ"}],"closings":{"good":["ประโยคปิดท้าย"],"mid":["ประโยคปิดท้าย"],"bad":["ประโยคปิดท้าย"]}} ทุกประโยคยาว 6-220 ตัวอักษร เขียน 2 คำถามและหนึ่งประโยคต่อช่องเพื่อให้ JSON จบครบ';
 
 /** เรียก Pathumma ตามรูปแบบ textqa.generate ของ AIforThai */
 export async function callStructured({ system, user }, options = {}) {
-  return extractJson(await callPathumma({ system, user, temperature: 0.8 }, options));
+  return extractJson(await callPathumma({ system, user, temperature: 0.3, maxTokens: 2048 }, options));
 }
 
 export async function generateScenario(req, opts = {}) {
-  const raw = await callStructured({ schema: ScenarioSchema, name: 'equality_scenario', system: SCENARIO_SYSTEM, user: JSON.stringify(req) }, opts);
+  const raw = await callStructured({ system: `${SCENARIO_SYSTEM}\n${SCENARIO_FORMAT}`, user: JSON.stringify(req) }, opts);
   return validateScenario(raw, req.age);
 }
 
 export async function generateDialogue(req, opts = {}) {
-  const raw = await callStructured({ schema: DialogueSchema, name: 'encounter_dialogue', system: DIALOGUE_SYSTEM, user: JSON.stringify(req) }, opts);
+  const raw = await callStructured({ system: `${DIALOGUE_SYSTEM}\n${DIALOGUE_FORMAT}`, user: JSON.stringify(req) }, opts);
   return validateDialogue(raw, req.age);
 }
