@@ -576,20 +576,21 @@ export function getAvailableRelationshipActions(state, specificTargetId = null) 
 
       if (act.target_npc_group === 'parents') {
         const aliveParents = (state.relationships?.npcs || []).filter(
-          (n) => (n.archetypeId === 'npc_arch_father' || n.archetypeId === 'npc_arch_mother') && n.isAlive
+          (n) => (n.archetypeId === 'npc_arch_father' || n.archetypeId === 'npc_arch_mother') && n.isAlive && (!specificTargetId || n.id === specificTargetId)
         );
         hasValidTarget = aliveParents.length > 0;
       } else if (act.target_npc_group === 'friends') {
         const aliveFriends = (state.relationships?.npcs || []).filter(
-          (n) => n.archetypeId !== 'npc_arch_father' && n.archetypeId !== 'npc_arch_mother' && n.isAlive
+          (n) => n.archetypeId !== 'npc_arch_father' && n.archetypeId !== 'npc_arch_mother' && n.isAlive && (!specificTargetId || n.id === specificTargetId)
         );
         hasValidTarget = aliveFriends.length > 0;
       } else if (act.target_npc_group === 'partner') {
         hasValidTarget = Boolean(state.relationships?.partner);
         targetCurrentRel = Number(state.relationships?.partner?.relationship || 0);
       } else if (act.target_npc_group === 'children') {
-        hasValidTarget = (state.relationships?.children || []).length > 0;
+        hasValidTarget = (state.relationships?.children || []).some((child) => !specificTargetId || child.id === specificTargetId);
       }
+      if (act.requires_specific_target && !specificTargetId) hasValidTarget = false;
 
       // เช็ก Feature Gate ของระบบแชทออนไลน์ และระบบแต่งงาน
       let gateLockedMsg = '';

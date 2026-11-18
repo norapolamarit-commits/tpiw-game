@@ -249,6 +249,24 @@ test('parent relationship activity increases living parents, applies stats, and 
   assert.ok(state.relationships.usedRelActionsThisYear.includes('rel_act_talk_parents'));
 });
 
+test('friendship activities grow one chosen friendship with a per-person yearly cooldown', () => {
+  const state = createSocialState(25);
+  state.relationships.npcs.push(
+    { id: 'friend_1', archetypeId: 'npc_arch_primary_friend', name: 'เพื่อนหนึ่ง', relationship: 40, isAlive: true },
+    { id: 'friend_2', archetypeId: 'npc_arch_primary_friend', name: 'เพื่อนสอง', relationship: 50, isAlive: true }
+  );
+
+  assert.equal(performRelationshipAction(state, 'rel_act_talk_friend').success, false);
+  assert.equal(performRelationshipAction(state, 'rel_act_talk_friend', 'missing').success, false);
+  const first = performRelationshipAction(state, 'rel_act_talk_friend', 'friend_1');
+  assert.equal(first.success, true);
+  assert.equal(state.relationships.npcs[0].relationship, 46);
+  assert.equal(state.relationships.npcs[1].relationship, 50);
+  assert.equal(performRelationshipAction(state, 'rel_act_talk_friend', 'friend_1').success, false);
+  assert.equal(performRelationshipAction(state, 'rel_act_talk_friend', 'friend_2').success, true);
+  assert.equal(state.relationships.npcs[1].relationship, 56);
+});
+
 test('annual social progression resets ordinary relationship-action cooldowns', () => {
   const state = createSocialState(25);
   state.relationships.npcs.push({

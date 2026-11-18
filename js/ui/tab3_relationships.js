@@ -101,7 +101,7 @@ function renderFamilyAndFriendsTab(state) {
 
   const allActions = getAvailableRelationshipActions(state, null);
   const parentActions = allActions.filter((a) => a.target_npc_group === 'parents');
-  const friendActions = allActions.filter((a) => a.target_npc_group === 'friends');
+  const friendActions = allActions.filter((a) => a.target_npc_group === 'friends' && !a.requires_specific_target);
 
   const parentsHtml = parents
     .map(
@@ -114,6 +114,7 @@ function renderFamilyAndFriendsTab(state) {
           </div>
           ${p.isAlive ? renderHeartsMeter(p.relationship) : ''}
         </div>
+        ${p.isAlive ? renderRelActionsButtons(getAvailableRelationshipActions(state, p.id).filter((a) => a.action_id === 'rel_act_talk_parents'), p.id) : ''}
       </div>`
     )
     .join('');
@@ -130,6 +131,7 @@ function renderFamilyAndFriendsTab(state) {
               </div>
               ${renderHeartsMeter(f.relationship)}
             </div>
+            ${f.isAlive ? renderRelActionsButtons(getAvailableRelationshipActions(state, f.id).filter((a) => a.requires_specific_target && a.target_npc_group === 'friends'), f.id) : ''}
           </div>`
         )
         .join('')

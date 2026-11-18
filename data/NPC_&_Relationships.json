@@ -990,6 +990,36 @@
       "description_th": "มอบเงินน้ำพักน้ำแรงให้พ่อแม่ไว้ใช้จ่ายยามแก่เฒ่า ได้รับพรอันประเสริฐและแต้มบุญก้อนโต"
     },
     {
+      "action_id": "rel_act_talk_friend",
+      "requires_specific_target": true,
+      "name_th": "คุยและรับฟังเพื่อน",
+      "target_npc_group": "friends",
+      "min_age": 6,
+      "cost_cash_student": 0,
+      "cost_cash_adult": 0,
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "relationship_change": 6,
+      "stat_effects": { "health": 0, "happiness": 1, "intelligence": 0, "connections": 1, "merit": 0, "appearance": 0 },
+      "description_th": "เลือกเพื่อนหนึ่งคนเพื่อพูดคุยและรับฟังกันอย่างตั้งใจ"
+    },
+    {
+      "action_id": "rel_act_spend_time_friend",
+      "requires_specific_target": true,
+      "name_th": "ใช้เวลาร่วมกับเพื่อน",
+      "target_npc_group": "friends",
+      "min_age": 8,
+      "cost_cash_student": 50,
+      "cost_cash_adult": 300,
+      "req_flags": [],
+      "forbidden_flags": [],
+      "grants_flags": [],
+      "relationship_change": 10,
+      "stat_effects": { "health": 0, "happiness": 2, "intelligence": 0, "connections": 1, "merit": 0, "appearance": 0 },
+      "description_th": "เลือกเพื่อนหนึ่งคนไปทำกิจกรรมด้วยกันและสร้างความทรงจำดีๆ"
+    },
+    {
       "action_id": "rel_act_group_chat_friends",
       "name_th": "ส่งมีมและคุยแชทกลุ่มแก๊งเพื่อน",
       "target_npc_group": "friends",
