@@ -29,7 +29,11 @@ export function canChangeIdentity(state) {
   return { ok: true, reason: '' };
 }
 
-const titleFor = (identity) => (['woman', 'trans_woman', 'lesbian'].includes(identity) ? 'ด.ญ.' : ['man', 'trans_man', 'gay_man'].includes(identity) ? 'ด.ช.' : 'คุณ');
+export function getIdentityTitlePrefix(identity, age) {
+  if (['woman', 'trans_woman', 'lesbian'].includes(identity)) return age >= 15 ? 'น.ส.' : 'ด.ญ.';
+  if (['man', 'trans_man', 'gay_man'].includes(identity)) return age >= 15 ? 'นาย' : 'ด.ช.';
+  return 'คุณ';
+}
 const cleanNick = (t) => String(t || '').replace(/[()<>]/g, '').trim().slice(0, 20);
 
 /** ท่าทีของครอบครัวที่จะตอบรับ คำนวณจากความสัมพันธ์กับพ่อแม่ + บรรยากาศความเท่าเทียมของเมือง (คงที่ตามเซฟ) */
@@ -67,7 +71,7 @@ export function changeGenderIdentity(state, newId, { nickname = '' } = {}) {
   profile.identityHistory.push({ age, from: oldId, to: newId });
   profile.genderIdentity = newId;
   profile.identityChangedAge = age;
-  profile.titlePrefix = titleFor(newId);
+  profile.titlePrefix = getIdentityTitlePrefix(newId, age);
   const nick = cleanNick(nickname);
   if (nick) {
     profile.nickname = nick;

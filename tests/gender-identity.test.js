@@ -19,7 +19,7 @@ test('identity change is age-gated, once per year, and updates label/title/nickn
   const r = changeGenderIdentity(s, 'trans_woman', { nickname: 'ใบเตย' });
   assert.equal(r.success, true);
   assert.equal(getPlayerIdentityLabel(s), 'Trans woman');
-  assert.equal(s.profile.titlePrefix, 'ด.ญ.');
+  assert.equal(s.profile.titlePrefix, 'น.ส.');
   assert.ok(s.profile.name.endsWith('(ใบเตย)'));
   assert.equal(playerIdentity(s), 'trans_woman');
   assert.equal(s.stats.happiness > 50, true);

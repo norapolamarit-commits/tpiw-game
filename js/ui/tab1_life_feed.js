@@ -10,6 +10,7 @@ import { selectCurrentEventChoice } from '../engine/turn_manager.js';
 import { escapeHtml, renderIcon } from './icons.js';
 import { bindPixelTown, renderPixelTownCard } from './pixel_town.js';
 import { getPlayerIdentityLabel } from '../engine/gender_identity_engine.js';
+import { openIdentityModal } from './identity_ui.js';
 import { openAnnualSlipModal, openEmergencyDebtModal, showToast } from './modals_ending_ui.js';
 
 const DELTA_LABELS = {
@@ -303,7 +304,8 @@ export function renderTab1LifeFeed(state, { onRefresh }) {
       <div class="dashboard-portrait" aria-hidden="true">${escapeHtml((state.profile.firstName || state.profile.name || 'ช').slice(0, 1))}</div>
       <h2>${escapeHtml(stripEmojis(state.profile.name || 'ชีวิตใหม่'))}</h2>
       <dl class="dashboard-facts"><div><dt>อายุ</dt><dd>${age} ปี</dd></div><div><dt>เพศ</dt><dd>${escapeHtml(getPlayerIdentityLabel(state))}</dd></div>
-      <div><dt>จังหวัด</dt><dd>${escapeHtml(stripEmojis(location?.name_th || ''))}</dd></div><div><dt>พื้นฐานครอบครัว</dt><dd>${escapeHtml(stripEmojis(className?.name_th || ''))}</dd></div></dl></div>
+      <div><dt>จังหวัด</dt><dd>${escapeHtml(stripEmojis(location?.name_th || ''))}</dd></div><div><dt>พื้นฐานครอบครัว</dt><dd>${escapeHtml(stripEmojis(className?.name_th || ''))}</dd></div></dl>
+      ${age >= 13 ? '<button type="button" class="btn btn--outline btn--sm btn--block" data-life-identity>เปลี่ยนอัตลักษณ์ทางเพศ</button>' : ''}</div>
     <div class="dashboard-panel"><h3>สถานะ <small>0–100</small></h3>
       ${renderStatBarRow('heart_pulse', 'สุขภาพ', state.stats.health)}
       ${renderStatBarRow('smile', 'ความสุข', state.stats.happiness)}
@@ -331,6 +333,8 @@ export function renderTab1LifeFeed(state, { onRefresh }) {
       ` : `
       ${renderPixelTownCard(state, { compact: true })}
 
+      ${age >= 13 ? `<div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><div><strong>ตัวตนทางเพศ</strong><div style="font-size:13px;color:var(--text-secondary);">${escapeHtml(getPlayerIdentityLabel(state))}</div></div><button type="button" class="btn btn--outline btn--sm" data-life-identity>เปลี่ยน</button></div>` : ''}
+
       <div class="card stats-card dashboard-mobile-stats">
         ${renderStatBarRow('heart_pulse', 'สุขภาพ', state.stats.health)}
         ${renderStatBarRow('smile', 'ความสุข', state.stats.happiness)}
@@ -353,6 +357,7 @@ export function renderTab1LifeFeed(state, { onRefresh }) {
       </div>${socialPanel}</div>
     `,
     bind(container) {
+      container.querySelectorAll('[data-life-identity]').forEach((button) => button.addEventListener('click', () => openIdentityModal(state, { onRefresh })));
       if (!showingRandomHistory) bindPixelTown(container, state, { onRefresh });
       container.querySelector('#btn-random-history')?.addEventListener('click', () => {
         showingRandomHistory = !showingRandomHistory;

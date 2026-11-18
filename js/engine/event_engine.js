@@ -1686,8 +1686,15 @@ function executeSpecialChoiceHandler(state, handlerName, payload = {}) {
   }
 
   if (handlerName === 'update_adult_title_prefix_15') {
-    state.profile.titlePrefix = state.profile.gender === 'female' ? 'น.ส.' : 'นาย';
-    return `เปลี่ยนคำนำหน้าบัตรประชาชนเป็น "${state.profile.titlePrefix}" อย่างเป็นทางการ`;
+    const identity = state.profile.genderIdentity;
+    state.profile.titlePrefix = ['woman', 'trans_woman', 'lesbian'].includes(identity)
+      ? 'น.ส.'
+      : ['man', 'trans_man', 'gay_man'].includes(identity)
+        ? 'นาย'
+        : identity
+          ? 'คุณ'
+          : state.profile.gender === 'female' ? 'น.ส.' : 'นาย';
+    return `ปรับคำนำหน้าที่ใช้ในเกมเป็น "${state.profile.titlePrefix}" ตามตัวตนของคุณ`;
   }
 
   if (handlerName === 'conscript_red_card_2yrs') {
