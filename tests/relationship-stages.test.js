@@ -133,6 +133,27 @@ test('secret relationship: needs a partner, is risky, can be covered, confessed,
   assert.ok(unlocked > 0);
 });
 
+test('talking to another person starts a secret talking stage with yearly risk and can be ended', () => {
+  const { s } = withPartner(25);
+  const other = { id: 'talk_other', name: 'พลอย', relationship: 80, genderIdentity: 'woman', isAlive: true, stage: 'friend' };
+  s.relationships.npcs.push(other);
+  assert.equal(getMoves(s, other).find((m) => m.id === 'secret_talk').locked, false);
+  let result;
+  for (let i = 0; i < 300; i++) {
+    s.meta.runId = `talk${i}`;
+    result = performMove(s, other.id, 'secret_talk');
+    if (result.success) break;
+    other.declinedAge = undefined;
+  }
+  assert.equal(result.success, true);
+  assert.equal(other.secretKind, 'talk');
+  assert.equal(other.stage, 'secret');
+  assert.ok(secretRiskPct(s) > 0);
+  assert.equal(getMoves(s, other).find((m) => m.id === 'end_secret').locked, false);
+  assert.equal(performMove(s, other.id, 'end_secret').success, true);
+  assert.equal(other.stage, 'friend');
+});
+
 test('yearly check can expose the secret; consequences differ by how you respond; unforgiven leaves -> ex', () => {
   const { s } = withPartner(25);
   const other = { id: 'friend_y', name: 'ใบบัว', relationship: 90, genderIdentity: 'woman', isAlive: true, stage: 'secret', secrecy: 5 };

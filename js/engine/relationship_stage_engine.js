@@ -35,6 +35,7 @@ const hasPartner = (state) => Boolean(state.relationships?.partner);
 const partnerIs = (state, npc) => state.relationships?.partner?.sourceNpcId === npc.id;
 
 export function getStageLabel(npc) {
+  if (npc.stage === 'secret' && npc.secretKind === 'talk') return 'คุยซ้อน';
   if (EXTRA_LABELS[npc.stage]) return EXTRA_LABELS[npc.stage];
   return (STAGES.find((x) => x.id === npc.stage) || STAGES[0]).label;
 }
@@ -102,11 +103,13 @@ export function getMoves(state, npc) {
   }
   if (stage === 'crush' || stage === 'dating' || stage === 'fling' || stage === 'engaged') moves.push(open('step_back', stage === 'engaged' ? 'ยกเลิกการหมั้น' : stage === 'dating' ? 'เลิกเป็นแฟน' : stage === 'fling' ? 'ยุติความเป็นกิ๊ก (กลับไปเป็นเพื่อน)' : 'พอแค่เพื่อน (เลิกคุย)'));
   if (stage === 'secret') {
+    if (npc.secretKind === 'talk') moves.push(rel >= 70 ? open('secret_date', 'พัฒนาจากคุยซ้อนเป็นแอบคบ') : lock('secret_date', 'พัฒนาจากคุยซ้อนเป็นแอบคบ', 'ต้องสนิทกันถึง 70% ก่อน'));
     moves.push(Number(state.finance?.cash || 0) < COVER_COST || npc.coveredAge === age ? lock('cover_tracks', `ระวังตัวไม่ให้ใครรู้ (${COVER_COST} บาท)`, npc.coveredAge === age ? 'ปีนี้ระวังตัวไปแล้ว' : 'เงินสดไม่พอ') : open('cover_tracks', `ระวังตัวไม่ให้ใครรู้ (${COVER_COST} บาท)`));
-    moves.push(open('confess', 'สารภาพกับคู่ของคุณตรงๆ'), open('end_secret', 'เลิกแอบคบ แล้วกลับไปเป็นเพื่อน'));
+    moves.push(open('confess', 'สารภาพกับคู่ของคุณตรงๆ'), open('end_secret', npc.secretKind === 'talk' ? 'หยุดคุยซ้อน แล้วกลับไปเป็นเพื่อน' : 'เลิกแอบคบ แล้วกลับไปเป็นเพื่อน'));
   }
   if (hasPartner(state) && !partnerIs(state, npc) && ['friend', 'close_friend', 'fling'].includes(stage)) {
     const risk = Math.round(secretRiskPct(state, { secrecy: 70 }) * 100);
+    moves.push(age < MIN_AGE.talk ? lock('secret_talk', 'เริ่มคุยซ้อน', `ต้องอายุ ${MIN_AGE.talk} ปีขึ้นไป`) : rel < 65 ? lock('secret_talk', 'เริ่มคุยซ้อน', 'ต้องสนิทกันถึง 65% ก่อน') : open('secret_talk', `เริ่มคุยซ้อน (เสี่ยงถูกจับได้ราว ${risk}% ต่อปี)`));
     moves.push(age < MIN_AGE.secret ? lock('secret_date', 'แอบคบซ้อน', `ต้องอายุ ${MIN_AGE.secret} ปีขึ้นไป`) : rel < 70 ? lock('secret_date', 'แอบคบซ้อน (ผิดคำมั่นกับคู่)', 'ต้องสนิทกันถึง 70% ก่อน') : open('secret_date', `แอบคบซ้อน (เสี่ยงถูกจับได้ราว ${risk}% ต่อปี)`));
   }
   return moves;
@@ -166,7 +169,7 @@ export function performMove(state, npcId, moveId) {
   if (!move) return { success: false, message: 'ตอนนี้ยังทำขั้นนี้ไม่ได้' };
   if (move.locked) return { success: false, message: move.reason };
   const age = Number(state.profile.age || 0);
-  if (npc.declinedAge === age && ['talk', 'ask_dating', 'fling'].includes(moveId)) return { success: false, message: 'ปีนี้คุณเพิ่งถามไปแล้ว ให้เวลาเขาสักหน่อยนะ การรออย่างเคารพก็เป็นความใจดี' };
+  if (npc.declinedAge === age && ['talk', 'ask_dating', 'fling', 'secret_talk', 'secret_date'].includes(moveId)) return { success: false, message: 'ปีนี้คุณเพิ่งถามไปแล้ว ให้เวลาเขาสักหน่อยนะ การรออย่างเคารพก็เป็นความใจดี' };
   const o = openness(state, npc);
   const eq = ensureEquality(state);
   const ok = (stage, msg, fx = {}) => {
@@ -219,10 +222,21 @@ export function performMove(state, npcId, moveId) {
       const p = makePartnerFromNpc(state, npc, 'dating'); p.relationship = Math.max(p.relationship, 70);
       return ok('dating', `${npc.name} คิดอยู่นาน "เราลองเริ่มใหม่ด้วยความซื่อสัตย์ต่อกันนะ" คุณทั้งสองกลับมาคบกันอีกครั้ง`, { rel: 8, effects: { happiness: 4 } });
     }
+    case 'secret_talk': {
+      if (!o.romance) return no(`${npc.name} บอกว่าอยากเป็นเพื่อนกันต่อ คุณเคารพคำตอบของเขา`);
+      npc.secrecy = 70; npc.secretSinceAge = age; npc.secretKind = 'talk';
+      state.social ||= {}; state.social.infidelity = (state.social.infidelity || 0) + 1;
+      applyStatEffects(state, { merit: -1, happiness: 1 });
+      npc.stage = 'secret';
+      log(state, `เริ่มคุยซ้อนกับ ${npc.name}`, 'คุณเริ่มคุยกับอีกคนโดยไม่บอกคู่ปัจจุบัน ความไว้ใจอาจได้รับผลกระทบ');
+      return { success: true, message: `คุณเริ่มคุยซ้อนกับ ${npc.name} แล้ว ความลับนี้มีโอกาสถูกพบในแต่ละปี`, stage: 'คุยซ้อน' };
+    }
     case 'secret_date': {
       if (!o.romance) return no(`${npc.name} ปฏิเสธทันที "ไม่ล่ะ ฉันไม่อยากเป็นฝ่ายที่ทำให้ใครต้องเจ็บ" และถามว่าคุณมีแฟนอยู่ไม่ใช่เหรอ`);
+      const upgrading = npc.stage === 'secret' && npc.secretKind === 'talk';
       npc.secrecy = 70; npc.secretSinceAge = age;
-      state.social ||= {}; state.social.infidelity = (state.social.infidelity || 0) + 1;
+      npc.secretKind = 'date';
+      if (!upgrading) { state.social ||= {}; state.social.infidelity = (state.social.infidelity || 0) + 1; }
       applyStatEffects(state, { merit: -2, happiness: 1 });
       npc.stage = 'secret';
       log(state, `แอบคบซ้อนกับ ${npc.name}`, 'คุณเลือกแอบคบโดยไม่บอกคู่ของคุณ ซึ่งทำให้เสี่ยงต่อการถูกจับได้และอาจทำร้ายความไว้ใจที่มี');
@@ -245,9 +259,11 @@ export function performMove(state, npcId, moveId) {
       return { success: true, message: 'คู่ของคุณร้องไห้ แล้วบอกว่า "ฉันยังเจ็บอยู่ แต่ขอบคุณที่ไม่โกหกต่อ" ความไว้ใจต้องใช้เวลาสร้างใหม่', stage: 'เพื่อน' };
     }
     case 'end_secret': {
+      const wasTalking = npc.secretKind === 'talk';
       npc.stage = 'friend'; npc.relationship = clamp(Number(npc.relationship || 0) - 12, 0, 100);
+      delete npc.secretKind;
       applyStatEffects(state, { merit: 1 });
-      return { success: true, message: `คุณบอกเลิกการแอบคบกับ ${npc.name} อย่างสุภาพและกลับไปเป็นเพื่อน (คู่ของคุณยังไม่รู้เรื่องนี้ แต่คุณรู้สึกเบาขึ้นที่เลิกปิดบัง)`, stage: 'เพื่อน' };
+      return { success: true, message: `คุณหยุด${wasTalking ? 'คุยซ้อน' : 'แอบคบ'}กับ ${npc.name} อย่างสุภาพและกลับไปเป็นเพื่อน (คู่ของคุณยังไม่รู้เรื่องนี้ แต่คุณรู้สึกเบาขึ้นที่เลิกปิดบัง)`, stage: 'เพื่อน' };
     }
     case 'propose': {
       const res = performRelationshipAction(state, 'rel_act_propose_marriage', null);
