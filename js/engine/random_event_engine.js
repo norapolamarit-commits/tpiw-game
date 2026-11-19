@@ -80,6 +80,7 @@ function conditionValue(condition, state) {
 export function selectRandomEvents(state, templates, selectedIds = new Set(), config = EVENT_CONFIG) {
   if (nextSeededRandom(state) >= config.eventTriggerChance) return [];
   const history = state.turn.randomEventHistory || [];
+  const seenIds = new Set(history.map((entry) => entry.id));
   const counts = new Map();
   for (const entry of history.slice(-12)) counts.set(entry.category, (counts.get(entry.category) || 0) + 1);
   const result = [];
@@ -87,10 +88,12 @@ export function selectRandomEvents(state, templates, selectedIds = new Set(), co
   for (let index = 0; index < count; index++) {
     const eligible = templates.filter((event) => isRandomEventEligible(event, state, selectedIds));
     if (!eligible.length) break;
-    const availableRarities = new Set(eligible.map((event) => event.rarity));
+    const fresh = eligible.filter((event) => !seenIds.has(event.id));
+    const candidates = fresh.length ? fresh : eligible;
+    const availableRarities = new Set(candidates.map((event) => event.rarity));
     const availableWeights = Object.fromEntries(Object.entries(config.rarityWeights).filter(([rarity]) => availableRarities.has(rarity)));
     const rarity = chooseRarity(() => nextSeededRandom(state), availableWeights);
-    const pool = eligible.filter((event) => event.rarity === rarity);
+    const pool = candidates.filter((event) => event.rarity === rarity);
     const chosen = weightedPick(pool, (event) => contextualWeight(event, state) / (1 + (counts.get(event.category) || 0)), () => nextSeededRandom(state));
     if (!chosen) break;
     selectedIds.add(chosen.id);

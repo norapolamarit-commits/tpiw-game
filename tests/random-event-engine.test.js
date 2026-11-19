@@ -54,6 +54,17 @@ test('trigger chance gates draws before rarity and selection', () => {
   assert.equal(new Set(selected.map((event) => event.id)).size, selected.length);
 });
 
+test('random events prefer unseen stories and repeat only after the eligible pool is exhausted', () => {
+  const state = createEmptyGameState();
+  state.profile.age = 30;
+  const templates = ['old', 'new'].map((id) => ({ id, category: 'daily_life', rarity: 'common', minAge: 5, maxAge: 100, cooldownTurns: 2, probabilityWeight: 1 }));
+  const config = { eventTriggerChance: 1, maxEventsPerTurn: 1, extraEventChance: 0, rarityWeights: { common: 1 } };
+  state.turn.randomEventHistory.push({ id: 'old', age: 20, category: 'daily_life' });
+  assert.equal(selectRandomEvents(state, templates, new Set(), config)[0].id, 'new');
+  state.turn.randomEventHistory.push({ id: 'new', age: 21, category: 'daily_life' });
+  assert.ok(['old', 'new'].includes(selectRandomEvents(state, templates, new Set(), config)[0].id));
+});
+
 test('trigger and rarity frequencies follow separate configured weights', () => {
   const rarities = ['common', 'uncommon', 'rare', 'legendary'];
   const templates = rarities.map((rarity) => ({ id: rarity, category: rarity, rarity, minAge: 0, maxAge: 100, triggerConditions: [], probabilityWeight: 1 }));
