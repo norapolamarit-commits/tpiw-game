@@ -197,6 +197,22 @@ const dialogueSet = (npc, state) => {
   return npc?.isOther ? OTHER_DIALOGUES : DIALOGUES;
 };
 
+function pickUnusedDialogue(state, contactId, age, set, group) {
+  const social = ensureSocial(state);
+  social.dialogueHistory ||= {};
+  social.dialogueGroupHistory ||= {};
+  const availableIds = new Set(set.map((dialogue) => dialogue.id));
+  const history = (social.dialogueHistory[contactId] || []).filter((id) => availableIds.has(id));
+  const groupHistory = (social.dialogueGroupHistory[group] || []).filter((id) => availableIds.has(id));
+  const fresh = set.filter((dialogue) => !history.includes(dialogue.id));
+  const globallyFresh = fresh.filter((dialogue) => !groupHistory.includes(dialogue.id));
+  const pool = globallyFresh.length ? globallyFresh : fresh.length ? fresh : set;
+  const choice = pool[hashString(`${contactId}|${age}|${state.meta?.runId || ''}|${history.length}`) % pool.length];
+  social.dialogueHistory[contactId] = fresh.length ? [...history, choice.id] : [choice.id];
+  social.dialogueGroupHistory[group] = groupHistory.length < set.length ? [...groupHistory, choice.id] : [choice.id];
+  return choice;
+}
+
 export function getThread(state, contactId) {
   const s = ensureSocial(state);
   s.threads ||= {};
@@ -214,7 +230,8 @@ export function startChat(state, contactId) {
   if (existing && existing.age === age) return { success: true, thread: existing, readonly: existing.finished };
   const set = dialogueSet(npc, state);
   if (STORY_CHARACTERS.some((c) => c.id === npc.id)) (ensureSocial(state).storyMet ||= {})[npc.id] = true;
-  const dlg = set[hashString(`${contactId}|${age}|${state.meta?.runId || ''}`) % set.length];
+  const group = STORY_CHARACTERS.some((c) => c.id === npc.id) ? npc.id : npc.isOther ? 'other' : 'friend';
+  const dlg = pickUnusedDialogue(state, contactId, age, set, group);
   const thread = { age, dialogueId: dlg.id, title: dlg.title, turn: 0, score: 0, finished: false, lines: [{ from: 'them', text: dlg.turns[0].them }] };
   s.threads[contactId] = thread;
   s.dmAge[contactId] = age;

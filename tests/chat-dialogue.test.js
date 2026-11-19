@@ -36,6 +36,32 @@ test('rude answers lower closeness and equality index', () => {
   assert.equal(startChat(s, 'friend_a').readonly, false);
 });
 
+test('chat topics do not repeat for a contact or across friends until the pool is exhausted', () => {
+  const s = mk();
+  const personal = new Set();
+  for (let age = 15; age < 20; age++) {
+    s.profile.age = age;
+    startChat(s, 'friend_a');
+    const id = getThread(s, 'friend_a').dialogueId;
+    assert.equal(personal.has(id), false);
+    personal.add(id);
+  }
+  assert.equal(personal.size, 5);
+  s.profile.age = 20;
+  assert.equal(startChat(s, 'friend_a').success, true, 'a new cycle starts when all topics were used');
+
+  const otherState = mk();
+  for (let i = 0; i < 4; i++) otherState.relationships.npcs.push({ id: `friend_${i}`, name: `เพื่อน ${i}`, relationship: 50 });
+  const group = new Set();
+  for (const npc of otherState.relationships.npcs) {
+    startChat(otherState, npc.id);
+    const id = getThread(otherState, npc.id).dialogueId;
+    assert.equal(group.has(id), false);
+    group.add(id);
+  }
+  assert.equal(group.size, 5);
+});
+
 import { getOthers } from '../js/engine/chat_dialogue_engine.js';
 import { markConsequenceShown, nextConsequence, resolveConsequence, socialReputation } from '../js/engine/social_consequence_engine.js';
 import { interactWithPost, generateFeed } from '../js/engine/social_media_engine.js';
