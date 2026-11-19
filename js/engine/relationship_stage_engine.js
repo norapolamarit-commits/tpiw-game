@@ -50,7 +50,11 @@ export function stageOf(npc) {
 /** ความสนใจ/ความเปิดใจของอีกฝ่าย (คงที่ต่อคน ไม่ผูกกับเพศใดๆ) */
 export function openness(state, npc) {
   const h = hashString(`${state.meta?.runId || 'x'}|open|${npc.id}`);
-  return { romance: h % 100 < 55, casual: (h >> 7) % 100 < 40 };
+  const playerIdentity = state.profile?.genderIdentity || (state.profile?.gender === 'female' ? 'woman' : 'man');
+  const compatible = npc.genderIdentity === 'gay_man' ? ['man', 'trans_man', 'gay_man'].includes(playerIdentity)
+    : npc.genderIdentity === 'lesbian' ? ['woman', 'trans_woman', 'lesbian'].includes(playerIdentity)
+      : true;
+  return { romance: compatible && h % 100 < 55, casual: compatible && (h >> 7) % 100 < 40 };
 }
 
 export function listRelationshipNpcs(state) {

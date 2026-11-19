@@ -23,6 +23,7 @@ import {
 import { isPlayerCurrentlyStudying } from './career_edu_engine.js';
 import { stripEmojis } from './event_engine.js';
 import { collectAnnualPassiveStatEffects } from '../core/annual_passive_stats.js';
+import { IDENTITIES } from './gender_encounter_engine.js';
 
 // ============================================================================
 // Constants & Internal Helpers
@@ -367,7 +368,12 @@ export function discoverPotentialPartners(state) {
   }
 
   // ผู้เล่นได้พบคนคุยหลายอัตลักษณ์โดยไม่ผูกกับเพศของผู้เล่น
-  const identities = shuffleArray(['woman', 'man', 'trans_woman', 'trans_man', 'nonbinary', 'genderfluid']);
+  const playerIdentity = state.profile.genderIdentity || (state.profile.gender === 'female' ? 'woman' : 'man');
+  const identities = shuffleArray(IDENTITIES.map((identity) => identity.id).filter((id) => {
+    if (id === 'gay_man') return ['man', 'trans_man', 'gay_man'].includes(playerIdentity);
+    if (id === 'lesbian') return ['woman', 'trans_woman', 'lesbian'].includes(playerIdentity);
+    return true;
+  }));
   const candidates = [];
   const usedArchIds = new Set();
 
@@ -378,10 +384,10 @@ export function discoverPotentialPartners(state) {
 
     usedArchIds.add(chosenArch.archetype_id);
     const genderIdentity = identities[i];
-    const candGender = genderIdentity === 'woman' || genderIdentity === 'trans_woman' ? 'female'
-      : genderIdentity === 'man' || genderIdentity === 'trans_man' ? 'male'
+    const candGender = ['woman', 'trans_woman', 'lesbian'].includes(genderIdentity) ? 'female'
+      : ['man', 'trans_man', 'gay_man'].includes(genderIdentity) ? 'male'
         : (i % 2 ? 'female' : 'male');
-    const identityLabel = { woman: 'ผู้หญิง', man: 'ผู้ชาย', trans_woman: 'ผู้หญิงข้ามเพศ', trans_man: 'ผู้ชายข้ามเพศ', nonbinary: 'นอนไบนารี', genderfluid: 'เจนเดอร์ฟลูอิด' }[genderIdentity];
+    const identityLabel = { woman: 'ผู้หญิง', man: 'ผู้ชาย', gay_man: 'ผู้ชายเกย์', lesbian: 'เลสเบี้ยน', bisexual: 'ไบเซ็กชวล', trans_woman: 'ผู้หญิงข้ามเพศ', trans_man: 'ผู้ชายข้ามเพศ', nonbinary: 'นอนไบนารี', genderfluid: 'เจนเดอร์ฟลูอิด' }[genderIdentity];
     const iden = generatePartnerIdentityFromTier(chosenArch, candGender);
     const econ = chosenArch.spouse_economy_after_marriage || {};
 

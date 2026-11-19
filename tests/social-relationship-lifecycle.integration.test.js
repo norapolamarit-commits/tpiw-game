@@ -168,7 +168,7 @@ test('starts a valid talking-stage relationship and rejects invalid or duplicate
 });
 
 test('every player identity can meet varied candidates without creating a second partner', () => {
-  for (const identity of ['woman', 'man', 'trans_woman', 'trans_man', 'nonbinary', 'genderfluid']) {
+  for (const identity of ['woman', 'man', 'gay_man', 'lesbian', 'bisexual', 'trans_woman', 'trans_man', 'nonbinary', 'genderfluid']) {
     const state = createSocialState(25);
     state.profile.genderIdentity = identity;
     const candidates = discoverPotentialPartners(state).candidates;
@@ -179,6 +179,22 @@ test('every player identity can meet varied candidates without creating a second
     assert.equal(startTalkingToPartner(state, chosen.candidateId).success, true);
     assert.equal(startTalkingToPartner(state, chosen.candidateId).success, false);
   }
+});
+
+test('partner search includes every identity over repeat searches while respecting stated orientation', () => {
+  const found = new Set();
+  for (const playerIdentity of ['woman', 'man', 'nonbinary']) {
+    const state = createSocialState(25);
+    state.profile.genderIdentity = playerIdentity;
+    for (let i = 0; i < 60; i++) {
+      for (const candidate of discoverPotentialPartners(state).candidates) {
+        found.add(candidate.genderIdentity);
+        if (playerIdentity === 'woman') assert.notEqual(candidate.genderIdentity, 'gay_man');
+        if (playerIdentity === 'man') assert.notEqual(candidate.genderIdentity, 'lesbian');
+      }
+    }
+  }
+  assert.deepEqual([...found].sort(), ['woman', 'man', 'gay_man', 'lesbian', 'bisexual', 'trans_woman', 'trans_man', 'nonbinary', 'genderfluid'].sort());
 });
 
 test('breaks up a non-married partner and clears relationship flags', () => {

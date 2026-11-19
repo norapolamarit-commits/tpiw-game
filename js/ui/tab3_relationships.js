@@ -67,7 +67,7 @@ function renderRelActionsButtons(actions, targetId = null) {
 
 function sharedGenderLabel(person) {
   if (!person?.identityShared) return '';
-  const labels = { woman: 'Woman', man: 'Man', trans_woman: 'Trans woman', trans_man: 'Trans man', nonbinary: 'Non-binary', genderfluid: 'Genderfluid', agender: 'Agender' };
+  const labels = { woman: 'Woman', man: 'Man', gay_man: 'Gay', lesbian: 'Lesbian', bisexual: 'Bisexual', trans_woman: 'Trans woman', trans_man: 'Trans man', nonbinary: 'Non-binary', genderfluid: 'Genderfluid' };
   return labels[person.genderIdentity] ? ` • ${escapeHtml(labels[person.genderIdentity])}` : '';
 }
 
