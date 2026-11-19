@@ -75,6 +75,7 @@ export function maybeEnhanceRandomEventWithAi(state, normalizeCard, { fetchImpl 
     card.rarity = state.turn.pendingEvents[currentIndex].rarity;
     card.monthNum = state.turn.pendingEvents[currentIndex].monthNum;
     card.monthTh = state.turn.pendingEvents[currentIndex].monthTh;
+    card.eventDialogueTh = state.turn.pendingEvents[currentIndex].eventDialogueTh;
     state.turn.pendingEvents[currentIndex] = normalizeCard(card, 'random_event', 'sparkle');
     saveGame(state);
     if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof CustomEvent === 'function') {

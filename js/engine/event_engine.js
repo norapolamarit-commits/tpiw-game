@@ -27,6 +27,7 @@ import { selectRandomEvents, recordRandomEvent } from './random_event_engine.js'
 import { RANDOM_EVENT_TEMPLATES, toLegacyEventCard } from './random_event_templates.js';
 import { buildCuratedLegacyTemplates } from './legacy_random_templates.js';
 import { maybeEnhanceRandomEventWithAi } from './ai_event_client.js';
+import { addRandomEventDialogue } from './event_dialogue_engine.js';
 import { applyRandomNpcMeeting } from './random_npc_meeting.js';
 
 // ============================================================================
@@ -1522,7 +1523,7 @@ export function buildAnnualEventQueue(state) {
   }
 
   // จัดเรียงเดือนไทย 1-12 ให้สอดคล้องบริบทและไม่ย้อนกลับ
-  const finalizedQueue = assignFlavorMonthsToQueue(rawQueue);
+  const finalizedQueue = assignFlavorMonthsToQueue(rawQueue).map((card) => addRandomEventDialogue(state, card));
 
   state.turn.pendingEvents = finalizedQueue;
   state.turn.currentEventIndex = 0;

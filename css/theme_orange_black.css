@@ -47,6 +47,7 @@ html, body { background:#060504; color:var(--text-primary); }
 .toast { background:#ff8a1f; color:#140c05; }
 .random-event-card { border-left-color:#ff8a1f; background-image:none; }
 .random-event-card--legendary { border-left-color:#ffc266; }
+.event-dialogue-line { margin:10px 0 14px; padding:10px 12px; border-left:3px solid #ff8a1f; background:#211810; color:#ffe7ca; font-size:14px; line-height:1.55; }
 .boot-spinner { border-color:#4a3b2d; border-top-color:#ff8a1f; }
 /* ปุ่มหลักด้านล่างแบบกล่องหนา ๆ คล้ายแถบเครื่องมือ WorldBox */
 .sticky-action-wrap .btn { border-radius:4px; border:2px solid #ffb24d; letter-spacing:.02em; }

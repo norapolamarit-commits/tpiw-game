@@ -231,6 +231,7 @@ function renderActiveTurnCardHtml(state) {
           <p style="font-size:14px;line-height:1.55;color:var(--text-secondary);margin-top:8px;">
             ${escapeHtml(evt.description_th)}
           </p>
+          ${evt.eventDialogueTh ? `<p class="event-dialogue-line">${escapeHtml(evt.eventDialogueTh)}</p>` : ''}
 
           <div class="choice-list">${choicesHtml}</div>
         </div>
