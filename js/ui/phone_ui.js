@@ -12,7 +12,6 @@ import {
 } from '../engine/social_media_engine.js';
 import { getIdentity } from '../engine/gender_encounter_engine.js';
 import { chatReply, ensureStoryCharacters, getChatOptions, getOthers, getThread, startChat } from '../engine/chat_dialogue_engine.js';
-import { drawPhoto } from './pixel_photos.js';
 import { escapeHtml, renderIcon } from './icons.js';
 import { openModal, showToast } from './modals_ending_ui.js';
 
@@ -34,10 +33,16 @@ const authorHead = (name, handle, identity) => {
   return `<div class="ph-head"><i class="ph-dot" style="background:${idn.color}"></i><div><strong>${escapeHtml(name)}</strong>${handle ? ` <span class="ph-handle">${escapeHtml(handle)}</span>` : ''}<div class="ph-id">${escapeHtml(idn.label)}</div></div></div>`;
 };
 
+const ILLUSTRATED_SCENES = new Set(['cat', 'food', 'game', 'study', 'run', 'art', 'guitar', 'sea', 'friends', 'pride', 'selfie']);
+const illustratedPhoto = (kind) => {
+  const scene = ILLUSTRATED_SCENES.has(kind) ? kind : 'camera';
+  return `<img class="ph-photo" src="./assets/ik_illustrations/${scene}.webp" alt="ภาพวาดประกอบโพสต์" loading="lazy">`;
+};
+
 function postHtml(state, post) {
   const a = ensureSocial(state).acted[post.id] || {};
   const head = authorHead(post.author.name, post.author.handle, post.author.identity);
-  const photo = `<canvas class="ph-photo" data-photo="${post.kind}" data-seed="${Math.abs(post.likes) + 3}" aria-label="รูปโพสต์"></canvas>`;
+  const photo = illustratedPhoto(post.kind);
   if (post.suspicious) {
     return `<div class="ph-post ph-post--warn">${head}${photo}<p class="ph-cap">${escapeHtml(post.text)}</p>
       ${a.handled ? '<p class="ph-done">จัดการแล้ว</p>' : `<p class="ph-warn">ข้อความนี้น่าสงสัย คนแปลกหน้าขอข้อมูลส่วนตัวและให้ปิดบังผู้ปกครอง</p>
@@ -94,7 +99,7 @@ function cameraHtml(state) {
   const s = ensureSocial(state);
   const posted = s.postedAge === Number(state.profile.age);
   const last = s.lastPost && s.lastPost.age === Number(state.profile.age) ? s.lastPost : null;
-  const preview = `<canvas class="ph-photo" data-photo="${cameraScene}" data-seed="5"></canvas>`;
+  const preview = illustratedPhoto(cameraScene);
   if (posted && last) {
     return `<div class="ph-post">${preview}<p class="ph-cap">${escapeHtml(last.caption)}</p><p class="ph-sum">ไลก์ ${last.likes}</p>
       ${last.reactions.map((x) => `<p class="ph-punch"><strong>${escapeHtml(x.name)}</strong> (${escapeHtml(getIdentity(x.identity).label)}): ${escapeHtml(x.text)}</p>`).join('')}
@@ -139,7 +144,6 @@ export function openPhoneModal(state, { onRefresh } = {}) {
       <div class="ph-top">${app === 'home' ? '<h3>โทรศัพท์</h3>' : `<button type="button" class="btn btn--soft btn--sm" data-ph-app="home">หน้าหลัก</button><h3>${escapeHtml(title)}</h3>`}<button type="button" class="btn btn--soft btn--sm" data-close-modal>ปิด</button></div>
       <div class="ph-list">${body}</div></div>`);
     const root = document.getElementById('modal-root');
-    root.querySelectorAll('canvas[data-photo]').forEach((c) => drawPhoto(c, c.getAttribute('data-photo'), Number(c.getAttribute('data-seed')) || 1));
     const done = (res, ok = 'success') => { saveGame(state); showToast(res.message, res.success ? ok : 'error'); render(); onRefresh?.(); };
     root.querySelectorAll('[data-ph-app]').forEach((b) => b.addEventListener('click', () => { app = b.getAttribute('data-ph-app'); commentingOn = null; chatWith = null; render(); }));
     root.querySelectorAll('[data-ph-open-comment]').forEach((b) => b.addEventListener('click', () => { commentingOn = b.getAttribute('data-ph-open-comment'); render(); }));

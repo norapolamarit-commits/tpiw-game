@@ -45,7 +45,7 @@
 .ph-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:6px 2px 12px}
 .ph-app{display:flex;flex-direction:column;align-items:center;gap:6px;background:transparent;border:0;color:var(--text-primary);font-size:12px;cursor:pointer;font-family:inherit}
 .ph-app-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;border:2px solid rgba(0,0,0,.35)}
-.ph-photo{width:100%;aspect-ratio:4/3;image-rendering:pixelated;image-rendering:crisp-edges;border:2px solid #2a221b;display:block;margin:4px 0 6px;background:#000}
+.ph-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border:2px solid #2a221b;display:block;margin:4px 0 6px;background:#000}
 .ph-cap{font-size:13.5px !important}
 .ph-tags{color:#ffb24d;font-size:12px !important}
 /* แชตแบบโต้ตอบ */
